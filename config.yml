@@ -1,10 +1,7 @@
-baseURL: http://example.org/
+baseURL: https://jade-sable-e0c36b.netlify.app/
 languageCode: en-us
 title: Rishikesh Sreehari
 theme: "hugo-PaperMod"
-
-baseURL: "https://examplesite.com/"
-
 paginate: 5
 
 
