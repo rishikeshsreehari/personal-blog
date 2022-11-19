@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Review on Rishikesh Sreehari</title>
+    <link>https://jade-sable-e0c36b.netlify.app/categories/review/</link>
+    <description>Recent content in Review on Rishikesh Sreehari</description>
+    <image>
+      <url>https://jade-sable-e0c36b.netlify.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://jade-sable-e0c36b.netlify.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jun 2021 18:09:15 +0000</lastBuildDate><atom:link href="https://jade-sable-e0c36b.netlify.app/categories/review/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Readwise Review: How to remember what you read?</title>
+      <link>https://jade-sable-e0c36b.netlify.app/readwise-review/</link>
+      <pubDate>Sat, 12 Jun 2021 18:09:15 +0000</pubDate>
+      
+      <guid>https://jade-sable-e0c36b.netlify.app/readwise-review/</guid>
+      <description>My Current Reading Flow Readwisehas many features which personally helped me a lot to remember what I’ve read. Readwise is now an integral part of my personal knowledge management flow. To give a quick idea, this is the reading workflow which I use to remember what I’ve read:
+ Mark highlights and take notes while reading on my Kindle. Export highlights and notes from Readwise to Obsidian(The software I use for personal knowledge management).</description>
+    </item>
+    
+  </channel>
+</rss>

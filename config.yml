@@ -17,11 +17,11 @@ minify:
   minifyOutput: true
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  #env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Rishikesh Sreehari
   description: "ExampleSite description"
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  #author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -123,7 +123,7 @@ menu:
       weight: 10
     - identifier: tags
       name: Archive
-      url: /archive/
+      url: /archives/
       weight: 20
     - identifier: example
       name: Art
