@@ -12,6 +12,8 @@ ssb_cache_timestamp:
 categories:
   - Learning
 
+weight: 2
+
 ---
 <blockquote class="wp-block-quote">
   <p>

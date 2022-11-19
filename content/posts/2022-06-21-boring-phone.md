@@ -13,6 +13,8 @@ ssb_cache_timestamp:
 categories:
   - Productivity
 
+weight: 5
+
 ---
 <p class="has-drop-cap">
   I must admit, I&#8217;m quite addicted to my smartphone. My average daily screen time used to touch 9+ hours, which was not clearly healthy. This article is a follow-up to the one I published last year on <a href="https://rishikeshs.com/attention-diet/" target="_blank" rel="noreferrer noopener" title="How to Start an Attention Diet?">the importance of an attention diet.</a> My smartphone addiction had bad effects on me like neck and back pain due to poor posture, lack of attention and inability to concentrate on things. Since we are living in the 21st century and our world is quite interconnected, there was no point in disowning a smartphone. I came across the idea that the only way to stop my phone addiction was to make my phone a boring one. The boring phone is a sequence of steps or methods one take to ensure that his/her/their smartphone is so boring to use. This can sound quite funny, but the trick clearly worked for me and within a few months of implementing this in my life, I could see my screen times reducing to over 70%.

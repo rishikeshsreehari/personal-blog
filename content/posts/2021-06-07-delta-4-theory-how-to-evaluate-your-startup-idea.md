@@ -12,6 +12,8 @@ ssb_cache_timestamp:
 categories:
   - Learning
 
+weight: 3
+
 ---
 <p class="has-drop-cap">
   Delta-4 is a theory coined by <a href="https://www.linkedin.com/in/kunalshah1" target="_blank" rel="noreferrer noopener" title="https://www.linkedin.com/in/kunalshah1">Kunal Shah</a>, the founder of <a href="https://app.cred.club/spQx/49ddd404" target="_blank" rel="noreferrer noopener sponsored" title="https://app.cred.club/spQx/49ddd404">CRED</a> App and former founder of Freecharge(Acquired by <a href="https://blog.ipleaders.in/snapdeals-acquisition-of-freecharge/" target="_blank" rel="noreferrer noopener" title="https://blog.ipleaders.in/snapdeals-acquisition-of-freecharge/">Snapdeal</a> for $450M) on &#8216;How to evaluate your startup idea?&#8217;. It can be used as a framework for self-assessment for evaluating ideas or startups to see whether they are on a path towards creating wealth. This blog post is a summary of some research and notes prepared by me while watching Kunal&#8217;s talk at TechSparks Summit. If you prefer watching a video(it&#8217;s 30 min long!) instead of reading this post,<a href="https://www.youtube.com/watch?v=76eNxRSyOyE" target="_blank" rel="noreferrer noopener" title="https://www.youtube.com/watch?v=76eNxRSyOyE"> click here</a>.
