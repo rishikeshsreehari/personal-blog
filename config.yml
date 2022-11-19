@@ -133,7 +133,20 @@ menu:
       name: Contact
       url: /archivfe/
       weight: 40
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 50
      
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
@@ -144,3 +157,7 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+
+
+
+
