@@ -35,6 +35,13 @@
   </div>
   {{- end }}
 
+  <div>
+    {{ partial "disqus.html" . }}
+</div>
+
+{{ template "_internal/disqus.html" . }}
+
+
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
     <ul class="post-tags">
