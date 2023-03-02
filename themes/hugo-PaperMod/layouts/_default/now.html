@@ -1,5 +1,6 @@
 {{- define "main" }}
 
+
 <article class="post-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
@@ -27,13 +28,31 @@
   {{- partial "toc.html" . }}
   {{- end }}
 
+
+ 
+
+
   {{- if .Content }}
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
   </div>
+
+  {{range.Site.Data.states}}
+
+  {{.name}} <br>
+
+  {{end}}
+
   {{- end }}
+
+  <div>
+    {{ partial "disqus.html" . }}
+</div>
+
+{{ template "_internal/disqus.html" . }}
+
 
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}

@@ -1,0 +1,46 @@
+{
+    "AL": {
+      "name": "Run",
+      "capital": "Montgomery",
+      "lat": "32.361538",
+      "long": "-86.279118"
+    },
+    "AK": {
+      "name": "Cycle",
+      "capital": "Juneau",
+      "lat": "58.301935",
+      "long": "-134.419740"
+    },
+    "AZ": {
+      "name": "Steps",
+      "capital": "Phoenix",
+      "lat": "33.448457",
+      "long": "-112.073844"
+    },
+    "AR": {
+      "name": "Mindfulness",
+      "capital": "Little Rock",
+      "lat": "34.736009",
+      "long": "-92.331122"
+    },
+    "CA": {
+      "name": "Swim",
+      "capital": "Sacramento",
+      "lat": "38.555605",
+      "long": "-121.468926"
+    },
+
+    "CA": {
+        "name": "Swim",
+        "capital": "Sacramento",
+        "lat": "38.555605",
+        "long": "-121.468926"
+      }
+
+
+
+
+
+
+  }
+  

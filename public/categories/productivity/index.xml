@@ -12,6 +12,25 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 16 Aug 2022 20:39:24 +0000</lastBuildDate><atom:link href="https://jade-sable-e0c36b.netlify.app/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>How I Curate my Newsletter</title>
+      <link>https://jade-sable-e0c36b.netlify.app/how-i-curate-my-newsletter/</link>
+      <pubDate>Tue, 19 Jul 2022 23:44:03 +0000</pubDate>
+      
+      <guid>https://jade-sable-e0c36b.netlify.app/how-i-curate-my-newsletter/</guid>
+      <description>The Structure Before I start explaining my process, it is important to discuss the structure of my newsletter. I’ve structured my newsletter in such a way that it explores some key areas/topics that I’m exploring in my life and during the week. Every edition of my newsletter follows this structure (it has evolved a bit over time) as described below:
+ ✍️An article on my blog: The first link is generally a blog post on this blog.</description>
+    </item>
+    
+    <item>
+      <title>Boring Phone: How to Stop Phone Addiction</title>
+      <link>https://jade-sable-e0c36b.netlify.app/boring-phone/</link>
+      <pubDate>Tue, 21 Jun 2022 23:07:08 +0000</pubDate>
+      
+      <guid>https://jade-sable-e0c36b.netlify.app/boring-phone/</guid>
+      <description>The idea was to ensure that I consume as less information as possible via my smartphone and reduce as many triggers that force me to pick up my phone. My primary means of information consumption was through my laptop and I used my phone to consume content only while travelling or during unavoidable circumstances. Following are some steps, and tips that I followed in the Boring Phone framework such that I’m less addicted to my smartphone.</description>
+    </item>
+    
+    <item>
       <title>Importance of Single Purpose Devices in a Distracted World</title>
       <link>https://jade-sable-e0c36b.netlify.app/single-purpose-devices/</link>
       <pubDate>Tue, 16 Aug 2022 20:39:24 +0000</pubDate>
@@ -30,32 +49,13 @@
     </item>
     
     <item>
-      <title>How I Curate my Newsletter</title>
-      <link>https://jade-sable-e0c36b.netlify.app/how-i-curate-my-newsletter/</link>
-      <pubDate>Tue, 19 Jul 2022 23:44:03 +0000</pubDate>
-      
-      <guid>https://jade-sable-e0c36b.netlify.app/how-i-curate-my-newsletter/</guid>
-      <description>The Structure Before I start explaining my process, it is important to discuss the structure of my newsletter. I’ve structured my newsletter in such a way that it explores some key areas/topics that I’m exploring in my life and during the week. Every edition of my newsletter follows this structure (it has evolved a bit over time) as described below:
- ✍️An article on my blog: The first link is generally a blog post on this blog.</description>
-    </item>
-    
-    <item>
       <title>Energy Calendar: How to take Control of Your Time</title>
       <link>https://jade-sable-e0c36b.netlify.app/energy-calendar/</link>
       <pubDate>Tue, 05 Jul 2022 23:48:50 +0000</pubDate>
       
       <guid>https://jade-sable-e0c36b.netlify.app/energy-calendar/</guid>
-      <description>&amp;lt;a href=&amp;quot;https://twitter.com/SahilBloom/status/1542867629047746561?ref_src=twsrc%5Etfw&amp;quot;&amp;gt;July 1, 2022&amp;lt;/a&amp;gt;  The Method The framework or method is simple. Simply, colour code the events in your calendar at the end of the activity or day using the following or something similar:
+      <description>&amp;lt;a href=&amp;quot;https://twitter.com/SahilBloom/status/1542867629047746561?ref_src=twsrc%5Etfw&amp;quot;&amp;gt;July 1, 2022&amp;lt;/a&amp;gt; The Method The framework or method is simple. Simply, colour code the events in your calendar at the end of the activity or day using the following or something similar:
  🌲Energizer: Energized me and made me think about it for hours 🔵Energy Gainer: Created some energy. ⭐️Neutral: Not too great or too bad 🔺Energy Drainer: Sucked the energy out of me  A screenshot of last Friday’s calendar.</description>
-    </item>
-    
-    <item>
-      <title>Boring Phone: How to Stop Phone Addiction</title>
-      <link>https://jade-sable-e0c36b.netlify.app/boring-phone/</link>
-      <pubDate>Tue, 21 Jun 2022 23:07:08 +0000</pubDate>
-      
-      <guid>https://jade-sable-e0c36b.netlify.app/boring-phone/</guid>
-      <description>The idea was to ensure that I consume as less information as possible via my smartphone and reduce as many triggers that force me to pick up my phone. My primary means of information consumption was through my laptop and I used my phone to consume content only while travelling or during unavoidable circumstances. Following are some steps, and tips that I followed in the Boring Phone framework such that I’m less addicted to my smartphone.</description>
     </item>
     
     <item>
@@ -102,16 +102,6 @@
       <guid>https://jade-sable-e0c36b.netlify.app/readwise-review/</guid>
       <description>My Current Reading Flow Readwisehas many features which personally helped me a lot to remember what I’ve read. Readwise is now an integral part of my personal knowledge management flow. To give a quick idea, this is the reading workflow which I use to remember what I’ve read:
  Mark highlights and take notes while reading on my Kindle. Export highlights and notes from Readwise to Obsidian(The software I use for personal knowledge management).</description>
-    </item>
-    
-    <item>
-      <title>5 Reasons Why I Decided to Start a Blog</title>
-      <link>https://jade-sable-e0c36b.netlify.app/5-reasons-why-i-decided-to-start-a-blog/</link>
-      <pubDate>Tue, 11 May 2021 10:41:47 +0000</pubDate>
-      
-      <guid>https://jade-sable-e0c36b.netlify.app/5-reasons-why-i-decided-to-start-a-blog/</guid>
-      <description>I have always loved reading but somewhere in the past few years, I had lost the habit of reading. I decided to take up 52 books in 52 weeks challenge in 2021 and was in constant search of finding books to read. That’s when I stumbled upon the book, ‘‘Show your Work!’by Austin Kleon, shared by the productivity Youtuber Ali Abdaalwhom I have been followingfor a while.
-I read the book and was surprised by the gist of it.</description>
     </item>
     
   </channel>

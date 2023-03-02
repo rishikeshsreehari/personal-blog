@@ -16,6 +16,10 @@ minify:
   disableXML: true
   minifyOutput: true
 
+
+
+
+
 params:
   #env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Rishikesh Sreehari
@@ -27,6 +31,11 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
+  contentDir: "content"
+  dataDir: "data"
+
+
+  
 
   ShowReadingTime: true
   ShowShareButtons: true
@@ -165,7 +174,5 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
-
-
 
 

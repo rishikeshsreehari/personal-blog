@@ -1,0 +1,6 @@
+- name: "Book Name"
+  rating: 5
+  date: "Month Year"
+- name: "Book Name"
+  rating: 4
+  date: "Month Year"
