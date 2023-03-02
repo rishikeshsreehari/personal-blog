@@ -31,6 +31,16 @@
 
  
 
+ This is a now page.
+  
+  {{range.Site.Data.my_data}}
+  This Year I've 🚴🏾‍♂️🚴🏾
+  {{.Run}} <br>
+  {{.Walk}} <br>
+  {{.Ride}} <br>
+  {{.Swim}} <br>
+
+  {{end}}
 
   {{- if .Content }}
   <div class="post-content">
@@ -39,11 +49,6 @@
     {{- else }}{{ .Content }}{{ end }}
   </div>
 
-  {{range.Site.Data.states}}
-
-  {{.name}} <br>
-
-  {{end}}
 
   {{- end }}
 
