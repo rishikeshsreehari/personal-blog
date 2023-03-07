@@ -38,6 +38,7 @@ params:
   dataDir: "data"
   staticDir: "static"
   books_file: data/books.yaml
+  workingDir: "scripts"
 
 
 
