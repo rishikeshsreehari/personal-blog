@@ -36,6 +36,7 @@ def main():
     plt.savefig("static/images/books_read_per_year.png")
 
     print("Python script executed successfully")
+    print("Running count_books.py script...")
 
 if __name__ == "__main__":
     main()

@@ -1,6 +1,5 @@
 [build]
 publishDir = "public"
 
-
 [build.hooks.pre]
-command = "python scripts/count_books.py "
+command = "python scripts/count_books.py && echo 'count_books.py script has been run'"
