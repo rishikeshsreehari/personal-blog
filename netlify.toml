@@ -1,2 +1,2 @@
 [build]
-  command = "python scripts/count_books.py && hugo"
+  command = "pip install pyyaml && python scripts/count_books.py && hugo"
