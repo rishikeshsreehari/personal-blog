@@ -17,11 +17,12 @@ minify:
   minifyOutput: true
 
 build:
-    hooks:
-      pre:
-        - command: python scripts/count_books.py
-      post:
-        - command: echo "Build complete."
+  publishDir: "public"
+  command: "hugo --gc --minify"
+  hooks:
+    pre:
+      - command: "python scripts/count_books.py && hugo"
+
 
 params:
   #env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -38,7 +39,7 @@ params:
   dataDir: "data"
   staticDir: "static"
   books_file: data/books.yaml
-  workingDir: "scripts"
+ 
 
 
 
