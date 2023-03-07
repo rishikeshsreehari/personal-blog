@@ -1,0 +1,6 @@
+[build]
+publishDir = "public"
+
+
+[build.hooks.pre]
+command = "python scripts/count_books.py "
