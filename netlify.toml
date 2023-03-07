@@ -1,2 +1,2 @@
 [build]
-  command = "apt-get install python-tk -y && python scripts/count_books.py && hugo"
+  command = "pip install tk --user && python scripts/count_books.py && hugo"
