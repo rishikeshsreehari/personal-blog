@@ -1,0 +1,14 @@
+Start building sites … 
+
+                   | EN  
+-------------------+-----
+  Pages            | 66  
+  Paginator pages  | 11  
+  Non-page files   |  0  
+  Static files     |  1  
+  Processed images |  0  
+  Aliases          | 15  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 1136 ms

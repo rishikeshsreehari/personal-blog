@@ -16,7 +16,12 @@ minify:
   disableXML: true
   minifyOutput: true
 
-
+build:
+    hooks:
+      pre:
+        - command: python scripts/count_books.py
+      post:
+        - command: echo "Build complete."
 
 params:
   #env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -33,10 +38,7 @@ params:
   dataDir: "data"
   staticDir: "static"
   books_file: data/books.yaml
-  build:
-    hooks:
-      - command: python scripts/count_books.py
-        trigger: after
+
 
 
 
