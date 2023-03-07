@@ -1,2 +1,2 @@
 [build]
-  command = "apt-get update && apt-get install -y python-tk && python scripts/count_books.py && hugo"
+  command = "sudo apt-get update && sudo apt-get install -y python-tk && python scripts/count_books.py && hugo"
