@@ -2,7 +2,9 @@
 
 <article class="post-single">
   <header class="post-header">
-    {{ partial "breadcrumbs.html" . }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.css" integrity="sha512-+hZwO76Zf03lOgHbZrEW1rW8b8C06+mIf2BzPMvC/ToZJ8KkM6F/NTcqLgN9rKjJnpN/2TrOKQfNjxqJIB5vrw==" crossorigin="anonymous" />
+    
+    {{ partial "breadcrumbs.html" . }} 
     <h1 class="post-title">
       {{ .Title }}
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
@@ -20,7 +22,16 @@
       {{- partial "post_canonical.html" . -}}
     </div>
     {{- end }}
+
+    <script src="{{ "js/Sortable.min.js" | relURL }}"></script>
+    <script src="{{ "js/sort-table.js" | relURL }}"></script>
+
   </header>
+
+
+
+
+
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
   {{- if (.Param "ShowToc") }}
@@ -31,8 +42,30 @@
 
   {{- if .Content }}
 
+  <table class="sortable">
+    <thead>
+      <tr>
+        <th class="sort-header">Book Name</th>
+        <th class="sort-header">Rating</th>
+        <th class="sort-header">Date Read</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ range $book := .Site.Data.books }}
+      <tr>
+        <td>{{ $book.name }}</td>
+        <td>{{ $book.rating }}</td>
+        <td>{{ $book.date_read }}</td>
+      </tr>
+      {{ end }}
+    </tbody>
+  </table>
 
-
+  <div class="sort-buttons">
+    <button data-sort="rating">Sort by rating</button>
+    <button data-sort="date">Sort by date</button>
+  </div>
+  
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}

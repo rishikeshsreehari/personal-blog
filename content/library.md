@@ -16,39 +16,8 @@ Starting in 2021, I decided to track all the books I read.
 
 
 
-<table id="myTable" data-sort="table">
-  <thead>
-    <tr>
-      <th>Book Name</th>
-      <th>Rating</th>
-      <th>Date Read</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Jonathan Livingston Seagull</td>
-      <td>★★★☆☆</td>
-      <td>Feb 2023</td>
-    </tr>
-    <tr>
-      <td>Doglapan</td>
-      <td>★★☆☆☆</td>
-      <td>Feb 2023</td>
-    </tr>
-    <tr>
-      <td>So Good that They Can't Ignore You</td>
-      <td>★★★★☆</td>
-      <td>Jan 2023</td>
-    </tr>
-  </tbody>
-</table>
 
 
-
-
-
-<button id="sort-date">Sort by Date Read</button>
-<button id="sort-rating">Sort by Rating</button>
 
 | Book Name |  Rating | Date Read |
 | ---------|-------|-----------|
