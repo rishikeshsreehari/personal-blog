@@ -1,6 +1,7 @@
 import csv
 import yaml
 import matplotlib.pyplot as plt
+matplotlib.use('Agg')
 
 
 def main():
