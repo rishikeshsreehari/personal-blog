@@ -2,3 +2,4 @@ matplotlib
 pyyaml
 plotly
 psutil
+requests
