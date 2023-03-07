@@ -1,8 +1,6 @@
 import csv
-import os
 import yaml
 import matplotlib.pyplot as plt
-from datetime import datetime
 
 
 def main():
@@ -37,6 +35,7 @@ def main():
 
     print("Python script executed successfully")
     print("Running count_books.py script...")
+
 
 if __name__ == "__main__":
     main()
