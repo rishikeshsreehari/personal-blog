@@ -35,5 +35,7 @@ def main():
     plt.title("Books Read Per Year")
     plt.savefig("static/images/books_read_per_year.png")
 
+    print("Python script executed successfully")
+
 if __name__ == "__main__":
     main()
