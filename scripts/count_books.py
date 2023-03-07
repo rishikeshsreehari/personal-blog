@@ -1,7 +1,6 @@
-import csv
 import yaml
-import matplotlib.pyplot as plt
-matplotlib.use('Agg')
+import plotly.graph_objs as go
+import plotly.io as pio
 
 
 def main():
@@ -26,13 +25,10 @@ def main():
     # Sort the book counts by year
     book_counts = dict(sorted(book_counts.items()))
 
-    # Plot the book counts
-    plt.bar(list(book_counts.keys()), list(book_counts.values()), align='center')
-    plt.xticks(list(book_counts.keys()))
-    plt.xlabel("Year")
-    plt.ylabel("Number of Books Read")
-    plt.title("Books Read Per Year")
-    plt.savefig("static/images/books_read_per_year.png")
+    fig = go.Figure(data=[go.Bar(x=list(book_counts.keys()), y=list(book_counts.values()))])
+    fig.update_layout(title="Books Read Per Year", xaxis_title="Year", yaxis_title="Number of Books Read")
+    pio.write_image(fig, "static/images/books_read_per_year.png")
+
 
     print("Python script executed successfully")
     print("Running count_books.py script...")
