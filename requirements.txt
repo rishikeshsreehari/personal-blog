@@ -1,4 +1,4 @@
 matplotlib
 pyyaml
 plotly
-plotly_io
+plotlyio
