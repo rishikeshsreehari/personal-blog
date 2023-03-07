@@ -1,2 +1,2 @@
 [build]
-  command = "python3 scripts/count_books.py && hugo"
+  command = "python scripts/count_books.py && hugo"
