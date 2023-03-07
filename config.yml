@@ -19,7 +19,6 @@ minify:
 
 
 
-
 params:
   #env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Rishikesh Sreehari
@@ -33,6 +32,13 @@ params:
   disableThemeToggle: false
   contentDir: "content"
   dataDir: "data"
+  staticDir: "static"
+  books_file: data/books.yaml
+  build:
+    hooks:
+      - command: python3 scripts/count_books.py
+        trigger: after
+
 
 
   

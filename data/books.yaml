@@ -1,9 +1,75 @@
-- name: Jonathan Livingston Seagull
-  rating: "★★★☆☆"
-  date_read: Feb 2023
-- name: Doglapan
-  rating: "★★☆☆☆"
-  date_read: Feb 2023
-- name: So Good that They Can't Ignore You
-  rating: "★★★★☆"
-  date_read: Jan 2023
+- book: Book 1
+  rating: 4
+  date: 2021-01-01
+- book: Book 2
+  rating: 3
+  date: 2021-01-02
+- book: Book 3
+  rating: 1
+  date: 2021-01-03
+- book: Book 4
+  rating: 4
+  date: 2021-01-04
+- book: Book 5
+  rating: 3
+  date: 2021-01-05
+- book: Book 6
+  rating: 1
+  date: 2022-03-08
+- book: Book 7
+  rating: 4
+  date: 2022-03-09
+- book: Book 8
+  rating: 3
+  date: 2022-03-10
+- book: Book 9
+  rating: 1
+  date: 2022-03-11
+- book: Book 10
+  rating: 4
+  date: 2022-03-12
+- book: Book 11
+  rating: 3
+  date: 2022-03-13
+- book: Book 12
+  rating: 1
+  date: 2023-03-07
+- book: Book 13
+  rating: 4
+  date: 2023-03-07
+- book: Book 14
+  rating: 3
+  date: 2023-03-07
+- book: Book 15
+  rating: 1
+  date: 2023-03-07
+- book: Book 15
+  rating: 1
+  date: 2023-03-08
+- book: Book 14
+  rating: 3
+  date: 2023-03-07
+- book: Book 15
+  rating: 1
+  date: 2023-03-07
+- book: Book 15
+  rating: 1
+  date: 2023-03-08
+- book: Book 14
+  rating: 3
+  date: 2023-03-07
+- book: Book 15
+  rating: 1
+  date: 2023-03-07
+- book: Book 15
+  rating: 1
+  date: 2023-03-08
+- book: Book 14
+  rating: 3
+  date: 2023-03-07
+- book: Book 15
+  rating: 1
+  date: 2023-03-07
+- book: Book 15
+  rating: 1
+  date: 2023-03-08
