@@ -1,0 +1,6 @@
+build:
+  publishDir: "public"
+  command: "hugo --gc --minify"
+  hooks:
+    pre:
+      - command: "python scripts/count_books.py && hugo"
