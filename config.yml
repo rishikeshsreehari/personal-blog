@@ -16,13 +16,6 @@ minify:
   disableXML: true
   minifyOutput: true
 
-build:
-  publishDir: "public"
-  command: "hugo --gc --minify"
-  hooks:
-    pre:
-      - command: "python scripts/count_books.py && hugo"
-
 
 params:
   #env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -37,8 +30,9 @@ params:
   disableThemeToggle: false
   contentDir: "content"
   dataDir: "data"
-  staticDir: "static"
   books_file: data/books.yaml
+  staticDir: "static"
+  
  
 
 

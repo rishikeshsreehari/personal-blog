@@ -13,6 +13,10 @@ dataDir: "data"
 Hello How are you? Which tempalte is this using?
 
 
+
+![Books read per year](images/books_read_per_year.png)
+
+
 ### What Am I Reading?
 
 - 
