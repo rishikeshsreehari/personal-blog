@@ -3,3 +3,4 @@ pyyaml
 plotly
 psutil
 requests
+plotly-orca==1.5.0
