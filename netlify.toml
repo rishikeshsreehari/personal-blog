@@ -1,4 +1,0 @@
-[[plugins]]
-  package = "scripts/run-script.js"
-  [plugins.inputs]
-    scriptPath = "scripts/count_books.py"
