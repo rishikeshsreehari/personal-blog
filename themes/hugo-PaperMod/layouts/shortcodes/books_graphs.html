@@ -5,6 +5,6 @@
 {{- $imgSrc := resources.Get $imgRelPath | safeURL -}}
 
 <figure>
-  <img src="{{ $imgSrc }}" alt="{{ .Get "name" }}">
+  <img src="{{ $imgSrc }}" alt="{{ .Get "name" }}">>
   <figcaption>{{ .Get "caption" }}</figcaption>
 </figure>

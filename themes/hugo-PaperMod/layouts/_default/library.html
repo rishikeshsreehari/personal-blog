@@ -3,7 +3,6 @@
 <article class="post-single">
   <header class="post-header">
    
-    
     {{ partial "breadcrumbs.html" . }} 
     <h1 class="post-title">
       {{ .Title }}
@@ -22,20 +21,10 @@
       {{- partial "post_canonical.html" . -}}
     </div>
     {{- end }}
-
- 
-
   </header>
 
-
-
-
-
-
-
-
-
-
+  <!-- Add this code to the <article> section of your library.html file -->
+  <img id="books-read-per-year"  alt="Books Read Per Year">
 
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
@@ -43,25 +32,12 @@
   {{- partial "toc.html" . }}
   {{- end }}
 
-
-
   {{- if .Content }}
-
- 
-
-
-  
-
-
-  
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
   </div>
-
-   
-
   {{- end }}
 
   <footer class="post-footer">
@@ -77,9 +53,27 @@
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}
-    </footer>
+  </footer>
 
- 
+  <script>
+    window.onload = function() {
+      // Get the <img> tag for the books-read-per-year graph
+      const booksReadPerYear = document.getElementById('books-read-per-year');
+  
+      // Check the website's theme
+      const isDarkTheme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+      // Update the src attribute of the <img> tag based on the website's theme
+      if (document.body.className.includes("dark")) {
+        booksReadPerYear.src = '/images/books_read_per_year_dark.svg';
+      } else {
+        booksReadPerYear.src = '/images/books_read_per_year.svg';
+      }
+    }
+  </script>
+  
+
 </article>
+
 
 {{- end }}{{/* end main */}}
