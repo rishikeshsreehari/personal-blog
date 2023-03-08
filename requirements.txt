@@ -1,6 +1,4 @@
 matplotlib
 pyyaml
-plotly
 psutil
 requests
-plotly-orca

@@ -1,6 +1,5 @@
 import yaml
-import plotly.graph_objs as go
-import plotly.io as pio
+import matplotlib.pyplot as plt
 
 
 def main():
@@ -25,10 +24,13 @@ def main():
     # Sort the book counts by year
     book_counts = dict(sorted(book_counts.items()))
 
-    fig = go.Figure(data=[go.Bar(x=list(book_counts.keys()), y=list(book_counts.values()))])
-    fig.update_layout(title="Books Read Per Year", xaxis_title="Year", yaxis_title="Number of Books Read")
-    pio.write_image(fig, "static/images/books_read_per_year.png")
-
+    # Create a bar chart of the book counts
+    fig, ax = plt.subplots()
+    ax.bar(book_counts.keys(), book_counts.values())
+    ax.set_title("Books Read Per Year")
+    ax.set_xlabel("Year")
+    ax.set_ylabel("Number of Books Read")
+    fig.savefig("static/images/books_read_per_year.png")
 
     print("Python script executed successfully")
     print("Running count_books.py script...")
