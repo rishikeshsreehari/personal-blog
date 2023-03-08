@@ -48,7 +48,7 @@ if not os.path.exists("static/images"):
     os.makedirs("static/images")
 
 # Create the SVG drawing
-dwg = svgwrite.Drawing("static/images/books_read_per_year.svg", size=(width, height))
+dwg = svgwrite.Drawing("static/images/books_read_per_year_light.svg", size=(width, height))
 
 # Create the chart area
 chart_area = dwg.rect((chart_margin, chart_margin), (chart_width, chart_height), stroke="black", fill="white")
