@@ -4,7 +4,6 @@ matplotlib.use('Agg')
 
 
 
-def main():
     # Load the books YAML file
     with open("data/books.yaml", "r") as f:
         books = yaml.safe_load(f)
@@ -37,5 +36,3 @@ def main():
     print("Running count_books.py script...")
 
 
-if __name__ == "__main__":
-    main()
