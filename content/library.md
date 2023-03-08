@@ -9,7 +9,7 @@ ShowReadingTime: false
 
 ---
 
-![Books read per year](/images/books_read_per_year.png)
+![Books read per year](/images/books_read_per_year.svg)
 
 
 

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://jade-sable-e0c36b.netlify.app/sitemap.xml
