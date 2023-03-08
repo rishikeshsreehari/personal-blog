@@ -1,42 +1,139 @@
-- book: Book 1
-  rating: 4
-  date: 2021-01-01
-- book: Book 2
-  rating: 3
-  date: 2021-01-02
-- book: Book 3
+- book: Zero to One
+  rating: 5
+  date: 2023-03-02
+  url: https://www.google.com/
+- book: Surrender Experiment
   rating: 1
-  date: 2021-01-03
-- book: Book 4
+  date: 2023-02-23
+  url: https://www.google.com/
+- book: Jonathan Livingston Seagull 
+  rating: 3
+  date: 2023-02-14
+  url: https://www.google.com/
+- book: So Good They Can't Ignore You
+  rating: 5
+  date: 2023-01-15
+- book: Doglapan
+  rating: 3
+  date: 2023-01-14
+- book: Four Thousand Weeks
   rating: 4
+  date: 2022-11-04
+- book: Masala Lab
+  rating: 3
+  date: 2022-10-30
+- book: Make Your Bed
+  rating: 3
+  date: 2022-10-05
+- book: Do Epic Shit
+  rating: 3
+  date: 2022-10-01
+- book: Millionaire Fast Lane
+  rating: 4
+  date: 2022-09-09
+- book: The Happiness Pursuit
+  rating: 4
+  date: 2022-08-18
+- book: How to Fight a Hydra
+  rating: 3
+  date: 2022-07-17
+- book: The Little Black Book of Workout Motivation
+  rating: 2
+  date: 2022-06-26
+- book: Finding Ultra
+  rating: 5
+  date: 2022-06-08
+- book: What I talk about when I talk about running
+  rating: 5
+  date: 2022-05-13
+- book: Einstein's Dreams
+  rating: 3
+  date: 2022-04-24
+- book: Keep Sharp
+  rating: 4
+  date: 2022-03-15
+- book: Seeking Wisdom
+  rating: 4
+  date: 2022-02-02
+- book: 4-Hour Work Week
+  rating: 2
+  date: 2022-01-26
+- book: How to Live
+  rating: 5
+  date: 2021-12-07
+- book: The Great Mental Models
+  rating: 4
+  date: 2021-12-01
+- book: Superhuman by Habit
+  rating: 2
+  date: 2021-11-16
+- book: Take Your Shot
+  rating: 3
+  date: 2021-11-27
+- book: The Little Book of Talent
+  rating: 3
+  date: 2021-10-04
+- book: The Obstacle is the Way
+  rating: 4
+  date: 2021-09-07
+- book: Hell Yeah or No
+  rating: 4
+  date: 2021-08-25
+- book: The Toaster Project
+  rating: 5
+  date: 2021-08-01
+- book: Who Moved my Cheese?
+  rating: 3
+  date: 2021-07-14
+- book: Steal Like an Artist
+  rating: 5
+  date: 2021-07-07
+- book: Keep Going
+  rating: 4
+  date: 2021-06-18
+- book: Sum-Forty Tales from the Afterlives
+  rating: 3
+  date: 2021-06-12
+- book: Food Rules
+  rating: 5
+  date: 2021-05-28
+- book: Richest Man in Babylon
+  rating: 3
+  date: 2021-05-11
+- book: The Psychology of Money
+  rating: 5
+  date: 2021-04-19
+- book: Rich Dad Poor Dad
+  rating: 1
+  date: 2021-04-17
+- book: The Little Book of Hygge
+  rating: 1
+  date: 2021-04-16
+- book: Megaliving
+  rating: 1
+  date: 2021-04-07
+- book: Anything You Want
+  rating: 5
+  date: 2021-04-01
+- book: Slipstream Time Hacking
+  rating: 0
+  date: 2021-03-27
+- book: Sapiens - Brief History of Mankind
+  rating: 5
+  date: 2021-03-19
+- book: Almanack of Naval Ravikant
+  rating: 5
+  date: 2021-03-04
+- book: Atomic Habits
+  rating: 4
+  date: 2021-02-27
+- book: The Listening Book
+  rating: 4
+  date: 2021-01-31
+- book: iWoz
+  rating: 3
+  date: 2021-01-24
+- book: Think Like a Monk
+  rating: 1
   date: 2021-01-04
-- book: Book 5
-  rating: 3
-  date: 2021-01-05
-- book: Book 6
-  rating: 1
-  date: 2022-03-08
-- book: Book 7
-  rating: 4
-  date: 2022-03-09
-- book: Book 8
-  rating: 3
-  date: 2022-03-10
-- book: Book 9
-  rating: 1
-  date: 2022-03-11
-- book: Book 10
-  rating: 4
-  date: 2022-03-12
-- book: Book 11
-  rating: 3
-  date: 2022-03-13
-- book: Book 12
-  rating: 1
-  date: 2023-03-07
-- book: Book 13
-  rating: 4
-  date: 2023-03-07
-- book: Book 14
-  rating: 3
-  date: 2023-03-07
+

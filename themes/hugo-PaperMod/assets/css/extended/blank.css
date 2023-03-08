@@ -3,3 +3,60 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  th, td {
+    min-width: 80px;
+    padding: 8px 8px;
+    line-height: 1;
+    border-bottom: 0.5px solid var(--border);
+    
+  }
+  
+  th {
+    background-color: #1D1E20;
+    text-align: left;
+    
+    font-weight: bold;
+  }
+  
+
+tr {
+
+    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+
+}
+
+
+
+td {
+
+    font-family: monospace;
+
+}
+
+  td:nth-child(1) {
+    width: 60%;
+  }
+  
+  td:nth-child(2) {
+    width: 20%;
+  }
+  
+  td:nth-child(3) {
+    width: 20%;
+  }
+
+
+ 

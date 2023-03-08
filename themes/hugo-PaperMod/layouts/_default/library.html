@@ -33,13 +33,62 @@
 
   {{- if .Content }}
   
-
+  
+  
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
   </div>
   {{- end }}
+  
+
+ 
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>Book</th>
+        <th>Rating</th>
+        <th>Read on</th>
+      </tr>
+    </thead>
+    
+    <tbody  id="book-table">
+      {{ range .Site.Data.books }}
+
+        <tr>
+          <td>
+            {{ if .url }}
+              <a href="{{ .url }}" style="text-decoration: underline;">{{ .book }}</a>
+            {{ else }}
+              {{ .book }}
+            {{ end }}
+          </td>
+          <td>
+            <span class="star-rating">
+              {{ if eq .rating 0 }}&#9734;&#9734;&#9734;&#9734;&#9734;{{ end }}
+              {{ if eq .rating 1 }}&#9733;&#9734;&#9734;&#9734;&#9734;{{ end }}
+              {{ if eq .rating 2 }}&#9733;&#9733;&#9734;&#9734;&#9734;{{ end }}
+              {{ if eq .rating 3 }}&#9733;&#9733;&#9733;&#9734;&#9734;{{ end }}
+              {{ if eq .rating 4 }}&#9733;&#9733;&#9733;&#9733;&#9734;{{ end }}
+              {{ if eq .rating 5 }}&#9733;&#9733;&#9733;&#9733;&#9733;{{ end }}
+              
+            </span>
+          </td>
+          <td data-date="{{ .date }}">{{ dateFormat "Jan 2006" (.date) }}</td>
+        </tr>
+      {{ end }}
+    </tbody>
+
+
+    
+    
+  </table>
+  
+  <p style="font-size: 11px"><br>This page was inspired from Simon Hørup Eskildsen's <a href='https://sirupsen.com/books' style="text-decoration: underline;">blog</a>.</p>
+
 
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
