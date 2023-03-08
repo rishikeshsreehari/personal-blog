@@ -1,5 +1,7 @@
 import yaml
 import matplotlib.pyplot as plt
+matplotlib.use('Agg')
+
 
 
 def main():
@@ -24,13 +26,12 @@ def main():
     # Sort the book counts by year
     book_counts = dict(sorted(book_counts.items()))
 
-    # Create a bar chart of the book counts
-    fig, ax = plt.subplots()
-    ax.bar(book_counts.keys(), book_counts.values())
-    ax.set_title("Books Read Per Year")
-    ax.set_xlabel("Year")
-    ax.set_ylabel("Number of Books Read")
-    fig.savefig("static/images/books_read_per_year.png")
+    # Generate a bar plot of the book counts
+    plt.bar(book_counts.keys(), book_counts.values())
+    plt.title("Books Read Per Year")
+    plt.xlabel("Year")
+    plt.ylabel("Number of Books Read")
+    plt.savefig("static/images/books_read_per_year.png")
 
     print("Python script executed successfully")
     print("Running count_books.py script...")
