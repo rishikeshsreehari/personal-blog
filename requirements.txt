@@ -2,3 +2,4 @@ matplotlib
 pyyaml
 psutil
 requests
+svgwrite
