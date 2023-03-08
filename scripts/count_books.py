@@ -1,6 +1,10 @@
 import yaml
 import svgwrite
 
+import os
+
+
+
 # Load the books YAML file
 with open("data/books.yaml", "r") as f:
     books = yaml.safe_load(f)
@@ -39,6 +43,9 @@ max_value = max(book_counts.values())
 
 # Calculate the height of each bar
 bar_heights = {year: (count / float(max_value)) * chart_height for year, count in book_counts.items()}
+
+if not os.path.exists("static/images"):
+    os.makedirs("static/images")
 
 # Create the SVG drawing
 dwg = svgwrite.Drawing("static/images/books_read_per_year.svg", size=(width, height))
