@@ -26,8 +26,8 @@ for book in books:
 book_counts = dict(sorted(book_counts.items()))
 
 # Set the size of the SVG image
-width = 666
-height = 300
+width = 580
+height = 230
 
 # Set the size and margin of the chart area
 chart_width = 580

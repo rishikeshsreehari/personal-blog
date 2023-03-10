@@ -1,3 +1,5 @@
+
+
 {{- define "main" }}
 
 <article class="post-single">
@@ -23,8 +25,6 @@
     {{- end }}
   </header>
 
-  
-
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
   {{- if (.Param "ShowToc") }}
@@ -32,21 +32,21 @@
   {{- end }}
 
   {{- if .Content }}
-  
-  
-  
   <div class="post-content">
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
   </div>
   {{- end }}
+
   
+  <div id="table-container">
+  <select id="book-sort">
+    <option value="date-desc">Newest &rarr; Oldest</option>
+    <option value="rating-desc">Best &rarr; Worst</option>
+  </select>
 
- 
-
-  <table>
-
+  <table id="book-table">
     <thead>
       <tr>
         <th>Book</th>
@@ -55,9 +55,15 @@
       </tr>
     </thead>
     
-    <tbody  id="book-table">
-      {{ range .Site.Data.books }}
-
+    <tbody>
+      {{ $sort := .Page.Params.sort }}
+      {{ $books := .Site.Data.books }}
+      {{- if eq $sort "rating-desc" }}
+        {{ $books = sort $books "rating" "desc" }}
+      {{- else if eq $sort "date-desc" }}
+        {{ $books = sort $books "date" "desc" }}
+      {{- end }}
+      {{- range $books }}
         <tr>
           <td>
             {{ if .url }}
@@ -66,7 +72,7 @@
               {{ .book }}
             {{ end }}
           </td>
-          <td>
+          <td data-rating="{{ .rating }}">
             <span class="star-rating">
               {{ if eq .rating 0 }}&#9734;&#9734;&#9734;&#9734;&#9734;{{ end }}
               {{ if eq .rating 1 }}&#9733;&#9734;&#9734;&#9734;&#9734;{{ end }}
@@ -74,21 +80,41 @@
               {{ if eq .rating 3 }}&#9733;&#9733;&#9733;&#9734;&#9734;{{ end }}
               {{ if eq .rating 4 }}&#9733;&#9733;&#9733;&#9733;&#9734;{{ end }}
               {{ if eq .rating 5 }}&#9733;&#9733;&#9733;&#9733;&#9733;{{ end }}
-              
             </span>
           </td>
           <td data-date="{{ .date }}">{{ dateFormat "Jan 2006" (.date) }}</td>
         </tr>
-      {{ end }}
+      {{- end }}
     </tbody>
+    </table>
+  </div>  
 
+  <script>
+    function sortBooks() {
+        let books = document.getElementById("book-table");
+        let sortValue = document.getElementById("book-sort").value;
+        let rows = Array.prototype.slice.call(books.querySelectorAll("tr"));
+        rows.shift();
+        rows.sort(function(a, b) {
+            let aVal, bVal;
+            if (sortValue === "rating-desc") {
+                aVal = parseFloat(a.querySelector("td:nth-child(2)").getAttribute("data-rating"));
+                bVal = parseFloat(b.querySelector("td:nth-child(2)").getAttribute("data-rating"));
+            } else if (sortValue === "date-desc") {
+                aVal = new Date(a.querySelector("td:nth-child(3)").getAttribute("data-date")).getTime();
+                bVal = new Date(b.querySelector("td:nth-child(3)").getAttribute("data-date")).getTime();
+            }
+            return (aVal > bVal) ? -1 : (aVal < bVal) ? 1 : 0;
+        });
+        rows.forEach(function(row) {
+            books.appendChild(row);
+        });
+    }
+    document.getElementById("book-sort").addEventListener("change", sortBooks);
+    sortBooks();
+  </script>
 
-    
-    
-  </table>
-  
-  <p style="font-size: 11px"><br>This page was inspired from Simon Hørup Eskildsen's <a href='https://sirupsen.com/books' style="text-decoration: underline;">blog</a>.</p>
-
+  <p style="font-size: 11px"><br>This page was inspired from Simon Hørup Eskildsen's <a href='https://sirupsen.com/books' style="text-decoration: underline;">book page</a>.</p>
 
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
@@ -105,10 +131,6 @@
     {{- end }}
   </footer>
 
- 
-  
-
 </article>
-
 
 {{- end }}{{/* end main */}}
