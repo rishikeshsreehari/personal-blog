@@ -28,11 +28,15 @@
   {{- partial "toc.html" . }}
   {{- end }}
 
-  {{range.Site.Data.my_data}}
  
-    {{.Run}} 
   
-  {{end}}
+
+
+
+
+
+
+
  
 
   <h2>My Fitness Statistics</h2>
@@ -55,6 +59,8 @@
       <p>{{ index .Site.Data.my_data 0 "Swim" }} kms</p>
     </div>
   </div>
+  <div class="now-tile-desc"><i>This data is updated daily and was last updated on  {{ range .Site.Data.my_data }}{{ replace .Updated "?" " " }}{{ end }} IST using a <a href="https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/google_sheet_to_json.gs" target="_blank" style="text-decoration: underline;">script.</a> This experiment is a part of a personal dashboard I'm working on, inspired by the <a href="https://en.wikipedia.org/wiki/Quantified_self" target="_blank" style="text-decoration: underline;">Quatified Self concept.</a></i></h6></div>
+
   
 
 
