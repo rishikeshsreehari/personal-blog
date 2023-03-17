@@ -28,19 +28,36 @@
   {{- partial "toc.html" . }}
   {{- end }}
 
-
+  {{range.Site.Data.my_data}}
+ 
+    {{.Run}} 
+  
+  {{end}}
  
 
- This is a now page.
+  <h2>My Fitness Statistics</h2>
+  <br>
+  <div class="stats-grid">
+    <div class="stats-tile">
+      <h2>🏃 Run</h2>
+      <p>{{ index .Site.Data.my_data 0 "Run" }} kms</p>
+    </div>
+    <div class="stats-tile">
+      <h2>🚴 Ride</h2>
+      <p>{{ index .Site.Data.my_data 0 "Ride" }} kms</p>
+    </div>
+    <div class="stats-tile">
+      <h2>🚶 Walk</h2>
+      <p>{{ index .Site.Data.my_data 0 "Walk" }} kms</p>
+    </div>
+    <div class="stats-tile">
+      <h2>🏊 Swim</h2>
+      <p>{{ index .Site.Data.my_data 0 "Swim" }} kms</p>
+    </div>
+  </div>
   
-  {{range.Site.Data.my_data}}
-  This Year I've 🚴🏾‍♂️🚴🏾
-  {{.Run}} <br>
-  {{.Walk}} <br>
-  {{.Ride}} <br>
-  {{.Swim}} <br>
 
-  {{end}}
+
 
   {{- if .Content }}
   <div class="post-content">

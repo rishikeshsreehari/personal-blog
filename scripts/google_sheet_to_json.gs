@@ -28,6 +28,9 @@ function convertSheetToJson() {
     jsonData.push(obj);
   }
   
+  // Add Updated item with current datetime value
+  jsonData.push({Updated: new Date().toLocaleString()});
+
   // Convert the JSON data to a string
   var jsonString = JSON.stringify(jsonData, null, 2);
   
