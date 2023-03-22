@@ -83,3 +83,20 @@ for i, year in enumerate(book_counts.keys()):
 # Save the SVG image
 dwg.save()
 
+import plotly.graph_objs as go
+import plotly.io as pio
+import numpy as np
+
+fig = go.Figure(
+    layout=go.Layout(
+        title="Random Graph Title",
+        xaxis=dict(title="X-axis"),
+        yaxis=dict(title="Y-axis")
+    )
+)
+
+# Export the graph as a PNG file
+pio.write_image(fig, 'static/images/random_graph.png', width=800, height=600)
+
+
+
