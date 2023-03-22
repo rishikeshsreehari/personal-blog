@@ -3,3 +3,4 @@ pyyaml
 psutil
 requests
 svgwrite
+plotly==5.13.1
