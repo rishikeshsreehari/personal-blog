@@ -83,20 +83,49 @@ for i, year in enumerate(book_counts.keys()):
 # Save the SVG image
 dwg.save()
 
-import plotly.graph_objs as go
-import plotly.io as pio
-import numpy as np
 
-# Create a random graph with no data
+import yaml
+import plotly.graph_objs as go
+
+# Load the books YAML file
+with open("data/books.yaml", "r") as f:
+    books = yaml.safe_load(f)
+
+# Initialize a dictionary to store the book count for each year
+book_counts = {}
+
+# Loop through each book and count the books read in each year
+for book in books:
+    rating = int(book["rating"])
+    date_str = book["date"].strftime("%Y-%m-%d")
+    year = book["date"].year
+    month = book["date"].month
+    if year in book_counts:
+        book_counts[year] += 1
+    else:
+        book_counts[year] = 1
+
+# Sort the book counts by year
+book_counts = dict(sorted(book_counts.items()))
+
+# Create a list of years and a list of book counts for each year
+years = list(book_counts.keys())
+counts = list(book_counts.values())
+
+# Create a bar chart using Plotly
 fig = go.Figure(
+    data=[
+        go.Bar(x=years, y=counts)
+    ],
     layout=go.Layout(
-        title="Random Graph Title",
-        xaxis=dict(title="X-axis"),
-        yaxis=dict(title="Y-axis")
+        title="Books Read Per Year",
+        xaxis=dict(title="Year"),
+        yaxis=dict(title="Number of Books Read")
     )
 )
 
-# Export the graph as a PNG file
-pio.write_image(fig, 'static/images/random_graph1.png', width=800, height=600)
+# Save the plot as an HTML file
+#fig.write_html("books_read_per_year.html")
+pio.write_image(fig, 'static/images/jrandom_graph.png', width=800, height=600)
 
 
