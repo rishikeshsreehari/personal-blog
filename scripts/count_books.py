@@ -86,6 +86,8 @@ dwg.save()
 
 import yaml
 import plotly.graph_objs as go
+import plotly.io as pio
+
 
 # Load the books YAML file
 with open("data/books.yaml", "r") as f:
