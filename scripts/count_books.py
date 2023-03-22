@@ -87,6 +87,7 @@ import plotly.graph_objs as go
 import plotly.io as pio
 import numpy as np
 
+# Create a random graph with no data
 fig = go.Figure(
     layout=go.Layout(
         title="Random Graph Title",
@@ -96,7 +97,6 @@ fig = go.Figure(
 )
 
 # Export the graph as a PNG file
-pio.write_image(fig, 'static/images/random_graph.png', width=800, height=600)
-
+pio.write_image(fig, 'static/images/random_graph1.png', width=800, height=600)
 
 
