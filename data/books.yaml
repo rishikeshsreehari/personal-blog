@@ -30,7 +30,7 @@
 - book: The Subtle Art of Not Giving a F*ck
   rating: 3
   date: 2023-04-17
-  url: https://www.google.com/
+  url: https://geni.us/rsh-subtle-art
 - book: Freedom Manifesto
   rating: 3
   date: 2023-03-26
@@ -38,11 +38,11 @@
 - book: Managing Oneself
   rating: 3
   date: 2023-03-14
-  url: https://www.google.com/
+  url: 
 - book: Zero to One
   rating: 5
   date: 2023-03-02
-  url: https://www.google.com/
+  url: https://geni.us/rsh-zero-to-one
 - book: Surrender Experiment
   rating: 1
   date: 2023-02-23
@@ -54,15 +54,19 @@
 - book: So Good They Can't Ignore You
   rating: 5
   date: 2023-01-15
+  url: https://geni.us/rsh-so-good
 - book: Doglapan
   rating: 2
   date: 2023-01-14
+  url: https://geni.us/rsh-doglapan
 - book: Four Thousand Weeks
   rating: 4
   date: 2022-11-04
+  url: https://geni.us/rsh-4000-weeks
 - book: Masala Lab
   rating: 3
   date: 2022-10-30
+  url: https://geni.us/rsh-so-good
 - book: Make Your Bed
   rating: 3
   date: 2022-10-05
@@ -72,30 +76,38 @@
 - book: Millionaire Fast Lane
   rating: 4
   date: 2022-09-09
+  url: https://geni.us/rsh-mil-fastlane
 - book: The Happiness Pursuit
   rating: 4
   date: 2022-08-18
+  url: https://geni.us/rsh-happiness-pursuit
 - book: How to Fight a Hydra
   rating: 3
   date: 2022-07-17
+  url: https://geni.us/rsh-fight-hydra
 - book: The Little Black Book of Workout Motivation
   rating: 2
   date: 2022-06-26
 - book: Finding Ultra
   rating: 5
   date: 2022-06-08
+  url: https://geni.us/rsh-finding-ultra
 - book: What I talk about when I talk about running
   rating: 5
   date: 2022-05-13
+  url: https://geni.us/rsh-when-i-run
 - book: Einstein's Dreams
   rating: 3
   date: 2022-04-24
+  url: https://geni.us/rsh-einsteins-dream
 - book: Keep Sharp
   rating: 4
   date: 2022-03-15
+  url: https://geni.us/rsh-keep-sharp
 - book: Seeking Wisdom
   rating: 4
   date: 2022-02-02
+  url: https://geni.us/rsh-seeking-wisdom
 - book: 4-Hour Work Week
   rating: 2
   date: 2022-01-26
@@ -111,36 +123,49 @@
 - book: Take Your Shot
   rating: 3
   date: 2021-11-27
+  url: https://geni.us/rsh-take-your-shot
 - book: The Little Book of Talent
   rating: 3
   date: 2021-10-04
+  url: https://geni.us/rsh-little-book-talent
 - book: The Obstacle is the Way
   rating: 4
   date: 2021-09-07
+  url: https://geni.us/rsh-obstacle-way
 - book: Hell Yeah or No
   rating: 4
   date: 2021-08-25
 - book: The Toaster Project
   rating: 5
   date: 2021-08-01
+  url: https://geni.us/rsh-toaster-project
 - book: Who Moved my Cheese?
   rating: 3
   date: 2021-07-14
 - book: Steal Like an Artist
   rating: 5
   date: 2021-07-07
+  url: https://geni.us/rsh-steal-like-artistt
 - book: Keep Going
   rating: 4
   date: 2021-06-18
+  url: https://geni.us/rsh-keep-going
 - book: Sum-Forty Tales from the Afterlives
   rating: 3
   date: 2021-06-12
+  url: https://geni.us/rsh-sum-afterlives
+- book: Show Your Work!
+  rating: 5
+  date: 2021-06-04
+  url: https://geni.us/rsh-ShowYourWork
 - book: Food Rules
   rating: 5
   date: 2021-05-28
+  url: https://geni.us/rsh-food-rules
 - book: Richest Man in Babylon
   rating: 3
   date: 2021-05-11
+  url: https://geni.us/rsh-richestman-babylon
 - book: The Psychology of Money
   rating: 5
   date: 2021-04-19
@@ -150,27 +175,33 @@
 - book: The Little Book of Hygge
   rating: 1
   date: 2021-04-16
+  url: https://geni.us/rsh-hygge
 - book: Megaliving
   rating: 1
   date: 2021-04-07
 - book: Anything You Want
   rating: 5
   date: 2021-04-01
+  url: https://geni.us/rsh-anythingyouwant
 - book: Slipstream Time Hacking
   rating: 0
   date: 2021-03-27
 - book: Sapiens - Brief History of Mankind
   rating: 5
   date: 2021-03-19
+  url: https://geni.us/SapiensBook
 - book: Almanack of Naval Ravikant
   rating: 5
   date: 2021-03-04
+  url: https://geni.us/rsh-naval-ravikant
 - book: Atomic Habits
   rating: 4
   date: 2021-02-27
+  url: https://geni.us/AlmanackNaval
 - book: The Listening Book
   rating: 4
   date: 2021-01-31
+  url: https://geni.us/rsh-listening-book
 - book: iWoz
   rating: 3
   date: 2021-01-24
