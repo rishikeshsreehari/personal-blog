@@ -130,4 +130,3 @@ fig = go.Figure(
 #fig.write_html("books_read_per_year.html")
 pio.write_image(fig, 'static/images/jrandom_graph.png', width=800, height=600)
 
-
