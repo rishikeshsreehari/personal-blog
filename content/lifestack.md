@@ -44,21 +44,17 @@ A list of things that I plan to buy in the future can be found on the 'Future St
 
 ## Fitness
 
-**Fitness Tracker**: I use [Amazfit T-Rex Pro](https://geni.us/rsh-trex-pro) as my fitness tracker. It tracks my cycling, running and swimming workouts. The accuracy is pretty decent for the price and heart rate values are comparable to Apple Watch. It's rugged and battery life is awesome. The only downside for me is that it doesn't measure heart rate while swimming and also doesn't allow to pair any external sensors.
+**Fitness Tracker**: I use [Amazfit T-Rex Pro](https://geni.us/rsh-trex-pro) as my fitness tracker. It tracks my cycling, running and swimming workouts. The accuracy is pretty decent for the price and heart rate values are comparable to Apple Watch. It's rugged and battery life is awesome. The only downside for me is that it doesn't measure heart rate while swimming and also doesn't allow to pair any external sensors. All my activities are recorded via this and is synced to [Strava](https://www.strava.com/athletes/67526871). 
 
-**Cycling**: I've been using a [Triban RC 100](https://www.decathlon.in/p/8810364/road-bikes/road-bike-triban-rc100-drop-bar?id=8810364&type=p) road bike for last 2 years now. It's a decent bike and I've clocked close to 10,000 kms so far. The one I have does not have drop bar shifters and came with 1x7 configuration. I've upgraded the bike with a [Shimano FC-R2000 Claris Crankset](https://bumsonthesaddle.com/products/shimano-fc-r2000-claris-double-crankset-8-speed) and a [Shimano Claris Front Derailleur](https://www.cyclop.in/products/shimano-claris-front-derailleur). I wear these [Endura Xtract Gel Shorts II](https://www.endurasport.com/xtract-gel-short-ii-black/12926408.html) for my long rides and I've wore them over 400kms in one-go. I also use these [Endura Aerogel Mitt](https://www.endurasport.com/fs260-pro-aerogel-mitt-navy/12929042.html) gloves for long endurance rides. I use these these [CateEye Omni 5](https://geni.us/rsh-cateye-omni5) rear LEDs that are battery powered and also these rechargable [cheap front lights](https://geni.us/rsh-bike-front-light) that can be charged using a power bank. For lubing the chain, I use [Squirt Lube](https://geni.us/rsh-squirt-lube), for punctures on the go, I use the [Park Tool's VP-1](https://geni.us/rsh-park-tool-vp1) patch kit alongwith the [Giyo GM-71 Hand Pump](https://www.cyclop.in/products/giyo-gm-71-pump). All other accessories like spare tubes, multitool, bags, jerseys,helmet,rain covers etc are from Decathlon.
+**Cycling**: I've been using a [Triban RC 100](https://www.decathlon.in/p/8810364/road-bikes/road-bike-triban-rc100-drop-bar?id=8810364&type=p) road bike for last 2 years now. It's a decent bike and I've clocked close to 10,000 kms so far. The one I have does not have drop bar shifters and came with 1x7 configuration. I've upgraded the bike with a [Shimano FC-R2000 Claris Crankset](https://bumsonthesaddle.com/products/shimano-fc-r2000-claris-double-crankset-8-speed) and a [Shimano Claris Front Derailleur](https://www.cyclop.in/products/shimano-claris-front-derailleur). I wear these [Endura Xtract Gel Shorts II](https://www.endurasport.com/xtract-gel-short-ii-black/12926408.html) for my long rides and I've wore them over 400kms in one-go. I also use these [Endura Aerogel Mitt](https://www.endurasport.com/fs260-pro-aerogel-mitt-navy/12929042.html) gloves for long endurance rides. I use these these [CateEye Omni 5](https://geni.us/rsh-cateye-omni5) rear LEDs that are battery powered and also these rechargable [cheap front lights](https://geni.us/rsh-bike-front-light) that can be charged using a power bank. For lubing the chain, I use [Squirt Lube](https://geni.us/rsh-squirt-lube), for punctures on the go, I use the [Park Tool's VP-1](https://geni.us/rsh-park-tool-vp1) patch kit alongwith the [Giyo GM-71 Hand Pump](https://www.cyclop.in/products/giyo-gm-71-pump). All other accessories like spare tubes, multitool, bags, jerseys,helmet,rain covers etc are from Decathlon. I use [Strava].(https://www.strava.com/athletes/67526871) for recording my rides and if the rides are longer (>200kms), I usually split it into multiple records and combine them using [GOTOES](https://gotoes.org/strava/Combine_GPX_TCX_FIT_Files.php)
 
 
 **Running**: My primary running shoe is [Hoka Mach 5](https://geni.us/rsh-hoka-mach5). These are great shoes as they offer quite cushioning and are light. I also own a pair of [Hoka Rinon 3](https://geni.us/rsh-hoka-rincon3). I bought since I got it at a very good deal. These are not as premium as the Mach 5, but still very light and fast. I use [these](https://www.decathlon.com/collections/running-shorts/products/running-breathable-shorts-dry-333374) and [these](https://www.decathlon.com/collections/running-shorts/products/running-lightweight-shorts-dry-119678) pair of shorts by Decathlon for running. My training app of choice for running is [TrainAsOne](https://trainasone.com/), an AI based training app that adapts with your performance. 
 
-**Nutrition**: I do not take much supplements apart from whey Protein and fish oil. For whey protein, I prefer N[utrabox 100% Whey Protein](https://nutrabox.in/products/flavoured-whey-protein-with-dha-mct) as it has performed well in multiple [tests](https://twitter.com/theliverdr/status/1629670100595888128?lang=en). I also take [Swisse High Strength Odourless Wild Fish Oil](https://geni.us/rsh-swisse-fish-oil) as a supplement since I feel that my fish intake has been low ever since I moved to Delhi. I'm not 100% convinced on its benefits, but you can read some studies on it [here](https://examine.com/supplements/fish-oil/).
+**Nutrition**: I do not take much supplements apart from whey Protein and fish oil. For whey protein, I prefer [Nutrabox 100% Whey Protein](https://nutrabox.in/products/flavoured-whey-protein-with-dha-mct) as it has performed well in multiple [tests](https://twitter.com/theliverdr/status/1629670100595888128?lang=en). I also take [Swisse High Strength Odourless Wild Fish Oil](https://geni.us/rsh-swisse-fish-oil) as a supplement since I feel that my fish intake has been low ever since I moved to Delhi. I'm not 100% convinced on its benefits, but you can read some studies on it [here](https://examine.com/supplements/fish-oil/). I use these [FAST&UP] effervescent tablets while running and cycling. 
 
 
-**Recovery**: 
-
-**Apps**: 
-
-**Hiking**:
+**Strength & Recovery**: 
 
 **Meditation**:
 
@@ -81,8 +77,7 @@ A list of things that I plan to buy in the future can be found on the 'Future St
 
 
 Fitness
-- Gotoes for merging strava
-- Strava
+
 - Muscle Wiki
 - Strong
 - Strengthlevel.com

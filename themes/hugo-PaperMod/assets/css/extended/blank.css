@@ -5,35 +5,35 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 */
 
 table {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 100%;
-  }
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+}
+
+th, td {
+  min-width: 80px;
+  padding: 8px 8px;
+  line-height: 1;
+  border-bottom: 0.5px solid var(--border);
   
-  th, td {
-    min-width: 80px;
-    padding: 8px 8px;
-    line-height: 1;
-    border-bottom: 0.5px solid var(--border);
-    
-  }
+}
+
+th {
+  background-color: #1D1E20;
+  text-align: left;
   
-  th {
-    background-color: #1D1E20;
-    text-align: left;
-    
-    font-weight: bold;
-  }
-  
+  font-weight: bold;
+}
+
 
 tr {
 
-    
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+  
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 
 
 }
@@ -42,106 +42,139 @@ tr {
 
 td {
 
-    font-family: monospace;
+  font-family: monospace;
 
 }
 
-  td:nth-child(1) {
-    width: 60%;
-  }
-  
-  td:nth-child(2) {
-    width: 20%;
-  }
-  
-  td:nth-child(3) {
-    width: 20%;
+td:nth-child(1) {
+  width: 60%;
+}
+
+td:nth-child(2) {
+  width: 20%;
+}
+
+td:nth-child(3) {
+  width: 20%;
+}
+
+
+#book-sort {
+  font-size: 11px;
+  padding: 2px 2px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  color: #1D1E20;
+  background-color: #DADADB;
+  cursor: pointer;
+  width: 116px;
+  height: 20px;
+  float: right;
+  text-align: center;
   }
 
 
+
+
+#book-sort {
+  display: block;
+  margin: 0;
+  margin-right: auto;
+}
+
+#book-table {
+  margin: 0;
+}
+
+#book-table th,td {
+  padding-left: 0;
+  
+  }
+
+
+@media only screen and (max-width: 480px) {
   #book-sort {
+    margin-bottom: 10px;
+  }
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the minimum width (250px) as needed */
+  grid-gap: 20px;
+  margin-bottom: 10px;
+}
+
+  
+  .stats-tile {
+  background-color: #DADADB;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stats-tile h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  }
+  
+  .stats-tile p {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+  }
+  .stats-tile:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+  }
+  
+  .stats-tile:hover h3, .stats-tile:hover p {
+  color: #0080ff;
+  }
+  
+
+  .now-tile-desc {
     font-size: 11px;
-    padding: 2px 2px;
-    border-radius: 1px;
-    border: 1px solid #ccc;
-    color: #1D1E20;
-    background-color: #DADADB;
-    cursor: pointer;
-    width: 116px;
-    height: 20px;
-    float: right;
-    text-align: center;
-    }
-
-  
-
-
-  #book-sort {
-    display: block;
-    margin: 0;
-    margin-right: auto;
+    font-weight: normal;
   }
   
-  #book-table {
-    margin: 0;
-  }
-  
-  #book-table th,td {
-    padding-left: 0;
-    
-    }
-  
-  
-  @media only screen and (max-width: 480px) {
-    #book-sort {
-      margin-bottom: 10px;
-    }
-  }
-  
-  .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 20px;
-    margin-bottom: 10px;
-    }
-    
-    .stats-tile {
-    background-color: #DADADB;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    
-    .stats-tile h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-    }
-    
-    .stats-tile p {
-    font-size: 48px;
-    font-weight: bold;
-    margin: 0;
-    color: #333;
-    }
-    .stats-tile:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transform: translateY(-5px);
-    transition: all 0.3s ease-in-out;
-    }
-    
-    .stats-tile:hover h3, .stats-tile:hover p {
-    color: #0080ff;
-    }
-    
-  
-    .now-tile-desc {
-      font-size: 11px;
-      font-weight: normal;
-    }
-    
 
-  
- 
+
+/* Add this to your CSS file */
+.progress {
+width: 100%;
+height: 20px;
+background-color: #ccc; /* Background color of the progress bar container */
+}
+
+.progress-bar {
+height: 100%;
+background-color: #4CAF50; /* Color of the filled progress bar */
+}
+
+
+/* Add this to your CSS file */
+.progress-bar {
+/* Existing styles for the progress bar */
+position: relative;
+text-align: center;
+
+}
+
+.progress-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white; /* Customize the text color */
+white-space: nowrap; /* Prevent text from wrapping */
+
+}
+
+
+

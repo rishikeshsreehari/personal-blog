@@ -28,38 +28,89 @@
   {{- partial "toc.html" . }}
   {{- end }}
 
- 
+  <i><h4>Last updated on 03-09-2023, somewhere near <a href="https://what3words.com/siblings.twitches.scan" target="_blank" style="text-decoration: underline;" >siblings.twitches.scan.</a></h4></i><br>
+
+  <p>This is now a page and gives a glimpse on what I'm upto now.</p>
+
+  <br>
+
+
+  <div class="stats-grid">
+    
+
+
+    <div class="stats-tile">
+      <h2>🏃 Running</h2>
+      <p>{{ index .Site.Data.my_data 0 "Run" }} km</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: {{ div (index .Site.Data.my_data 0 "Run") 6 | int }}%;">
+          <span class="progress-text">{{ div (index .Site.Data.my_data 0 "Run") 6 | int }}%</span>
+        </div>
+      </div>
+      <p style="font-size: 12px; text-align: right;">Goal: 600 km</p>
+    </div>
+  
+    
+    <div class="stats-tile">
+      <h2>🚴 Cycling</h2>
+      <p>{{ index .Site.Data.my_data 0 "Ride" }} km</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: {{ div (index .Site.Data.my_data 0 "Ride") 40 | int }}%;">
+          <span class="progress-text">{{ div (index .Site.Data.my_data 0 "Ride") 40 | int }}%</span>
+        </div>
+      </div>
+      <p style="font-size: 12px; text-align: right;">Goal: 4000 km</p>
+
+    </div>
+
+    
+    <div class="stats-tile">
+      <h2>🏊 Swimming</h2>
+      <p>{{ index .Site.Data.my_data 0 "Swim" }} km</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: {{ div (index .Site.Data.my_data 0 "Swim") 0.3 | int }}%;">
+          <span class="progress-text">{{ div (index .Site.Data.my_data 0 "Swim") 0.3 | int }}%</span>
+        </div>
+      </div>
+      <p style="font-size: 12px; text-align: right;">Goal: 30 km</p>
+
+      
+    </div>
+
+    <div class="stats-tile">
+      <h2>📰  Subscribers</h2>
+      <p>{{ index .Site.Data.my_data 0 "Subscribers" }} </p>
+      <div class="progress">
+        <div class="progress-bar" style="width: {{ div (index .Site.Data.my_data 0 "Subscribers") 40 | int }}%;">
+          <span class="progress-text">{{ div (index .Site.Data.my_data 0 "Subscribers") 40 | int }}%</span>
+        </div>
+      </div>
+      <p style="font-size: 12px; text-align: right;">Goal: 4000</p>
+
+      
+    </div>
+
+    <div class="stats-tile">
+      <h2> 📈 Portfolio Performance</h2>
+      <p>{{ index .Site.Data.my_data 0 "Portfolio Performance" }} </p>
+      <p style="font-size: 12px; text-align: center;">Target: +11%</p>
+
+     
+    </div>
+    
+
+    <div class="stats-tile">
+      <h2>🧍 Body Weight</h2>
+      <p>{{ index .Site.Data.my_data 0 "Weight" }} kg</p>
+      <p style="font-size: 12px; text-align: center;">Target: 68 kg</p>
+
+      
+    </div>
   
 
-
-
-
-
-
-
- 
-
-  <h2>My Fitness Statistics</h2>
-  <br>
-  <div class="stats-grid">
-    <div class="stats-tile">
-      <h2>🏃 Run</h2>
-      <p>{{ index .Site.Data.my_data 0 "Run" }} kms</p>
-    </div>
-    <div class="stats-tile">
-      <h2>🚴 Ride</h2>
-      <p>{{ index .Site.Data.my_data 0 "Ride" }} kms</p>
-    </div>
-    <div class="stats-tile">
-      <h2>🚶 Walk</h2>
-      <p>{{ index .Site.Data.my_data 0 "Walk" }} kms</p>
-    </div>
-    <div class="stats-tile">
-      <h2>🏊 Swim</h2>
-      <p>{{ index .Site.Data.my_data 0 "Swim" }} kms</p>
-    </div>
   </div>
-  <div class="now-tile-desc"><i>This data is updated daily and was last updated on  {{ range .Site.Data.my_data }}{{ replace .Updated "?" " " }}{{ end }} IST using a <a href="https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/google_sheet_to_json.gs" target="_blank" style="text-decoration: underline;">script.</a> This experiment is a part of a personal dashboard I'm working on, inspired by the <a href="https://en.wikipedia.org/wiki/Quantified_self" target="_blank" style="text-decoration: underline;">Quatified Self concept.</a></i></h6></div>
+ 
+  <div class="now-tile-desc"><i>This tile data is updated daily from my <a href="https://www.strava.com/athletes/67526871"  target="_blank" style="text-decoration: underline;">Strava</a> feed and was last updated on  {{ range .Site.Data.my_data }}{{ replace .Updated "?" " " }}{{ end }} IST using this <a href="https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/google_sheet_to_json.gs" target="_blank" style="text-decoration: underline;">script.</a> This experiment is a part of a personal dashboard I'm working on, inspired by the <a href="https://en.wikipedia.org/wiki/Quantified_self" target="_blank" style="text-decoration: underline;">Quatified Self concept.</a></i></h6></div>
 
   
 

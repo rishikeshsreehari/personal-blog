@@ -1,0 +1,2 @@
+-  Update Now page link in Lifestack
+- Update Future stack link in lifestack
