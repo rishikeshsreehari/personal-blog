@@ -1,5 +1,5 @@
 ---
-title: "⚒️Life Stack"
+title: "Life Stack"
 #layout: "library"
 url: "/lifestack/"
 summary: single
@@ -14,7 +14,7 @@ ShowReadingTime: false
 
 This page is an attempt to document the tools, apps, gadgets, gear, and other stuff I use regularly. This is quite an extensive list, and I've tried my best to categorize them to the best of my abilities. Everything listed on this page is what I use. The things I no longer use are moved to the Graveyard section at the bottom with justification. Some of the links below contain affiliate tags that allow me to earn some income if you make purchases using the links. It does not cost you anything extra and supports my work. If you have any better suggestions for the items listed below, please let me know.
 
-A list of things that I plan to buy in the future can be found on the 'Future Stack' page.
+A list of things that I plan to buy in the future can be found on the ['Future Stack'](/futurestack/) page.
 
 
 <div id="top"></div>
@@ -22,10 +22,6 @@ A list of things that I plan to buy in the future can be found on the 'Future St
 
 - [Gadgets](#gadgets)
 - [Fitness](#fitness)
-- [Website](#Website)
-- [Social-Media](#Social Media)
-- [Subsriptions](#Subscriptions)
-- [Misc](#Misc)
 - [Graveyard](#Graveyard)
 
 ## Gadgets
@@ -37,7 +33,7 @@ A list of things that I plan to buy in the future can be found on the 'Future St
 **E-Reader**: I own a [Kindle Paperwhite 2017](https://geni.us/rsh-kindle-paperwhite) edition and it's unarguable the best purchase of my life. I use it before going to bed, while traveling, during hikes, toilet and everywhere you can imagine. It has survived well over the years and have zero complaints. Paired with a [ReadWise account](https://readwise.io/rishikesh/), all my highlights from books are synced the cloud and I get an email everyday morning with 10 highlights from Readwise. If you are into e-books, then definitely checkout [Readwise(Free!)](https://readwise.io/rishikesh/).
 
 
-**Audio**: In terms of Audio, I recently purchased [Oneplus's Nord Buds 2](https://geni.us/rsh-nord-buds-2), that are great value for money with ANC upto 25 dB, but not the best. Apart from these, I use the classic [Apple wired EarPods](https://geni.us/rsh-earpods)with lightning connector. They sound awesome for the price and even with couple of accidental washes, they still work fine. The only downside is how messy they tangle while in pocket or in bag. I also use a pair of Anker Soundcore neckband headphones while running & cycling. They sound terrible and I'm looking for an alternative.
+**Audio**: In terms of Audio, I recently purchased [Oneplus's Nord Buds 2](https://geni.us/rsh-nord-buds-2), that are great value for money with ANC upto 25 dB, but not the best. Apart from these, I use the classic [Apple wired EarPods](https://geni.us/rsh-earpods) with lightning connector. They sound awesome for the price and even with couple of accidental washes, they still work fine. The only downside is how messy they tangle while in pocket or in bag. I also use a pair of Anker Soundcore neckband headphones while running & cycling. They sound terrible and I'm looking for an alternative.
 
 **Camera**: I also own a [Canon 700D/Rebel T5i](https://geni.us/rsh-700d) crop sensor DSLR camera since 2015. I pair it with a [Canon EF 50mm f/1.8 STM] or a [Canon EF-S 24mm f/2.8 STM Lens](https://geni.us/rsh-canon-24mm). These are great prime lenses and I love the extra sharpness and the creatve limitness due to the lack of zoom.  It also came with an [EF-S 18-55mm f/3.5-5.6 IS II](https://geni.us/rsh-canon-18-55) and [EF-S 55-250mm f/4-5.6](https://geni.us/rsh-canon-55-250) lenses, but I rarely use them as the lenses have aged and I prefer prime lenses over zoom.
 
@@ -51,12 +47,17 @@ A list of things that I plan to buy in the future can be found on the 'Future St
 
 **Running**: My primary running shoe is [Hoka Mach 5](https://geni.us/rsh-hoka-mach5). These are great shoes as they offer quite cushioning and are light. I also own a pair of [Hoka Rinon 3](https://geni.us/rsh-hoka-rincon3). I bought since I got it at a very good deal. These are not as premium as the Mach 5, but still very light and fast. I use [these](https://www.decathlon.com/collections/running-shorts/products/running-breathable-shorts-dry-333374) and [these](https://www.decathlon.com/collections/running-shorts/products/running-lightweight-shorts-dry-119678) pair of shorts by Decathlon for running. My training app of choice for running is [TrainAsOne](https://trainasone.com/), an AI based training app that adapts with your performance. 
 
-**Nutrition**: I do not take much supplements apart from whey Protein and fish oil. For whey protein, I prefer [Nutrabox 100% Whey Protein](https://nutrabox.in/products/flavoured-whey-protein-with-dha-mct) as it has performed well in multiple [tests](https://twitter.com/theliverdr/status/1629670100595888128?lang=en). I also take [Swisse High Strength Odourless Wild Fish Oil](https://geni.us/rsh-swisse-fish-oil) as a supplement since I feel that my fish intake has been low ever since I moved to Delhi. I'm not 100% convinced on its benefits, but you can read some studies on it [here](https://examine.com/supplements/fish-oil/). I use these [FAST&UP] effervescent tablets while running and cycling. 
+**Nutrition**: I do not take much supplements apart from whey Protein and fish oil. For whey protein, I prefer [Nutrabox 100% Whey Protein](https://nutrabox.in/products/flavoured-whey-protein-with-dha-mct) as it has performed well in multiple [tests](https://twitter.com/theliverdr/status/1629670100595888128?lang=en). I also take [Swisse High Strength Odourless Wild Fish Oil](https://geni.us/rsh-swisse-fish-oil) as a supplement since I feel that my fish intake has been low ever since I moved to Delhi. I'm not 100% convinced on its benefits, but you can read some studies on it [here](https://examine.com/supplements/fish-oil/). I use these [FAST&UP](https://www.fastandup.in/product/reload-electrolyte-drinks-orange-flavour) effervescent tablets and also there energy gels while running and cycling. 
 
 
-**Strength & Recovery**: 
+**Strength & Recovery**: My current training plan can be read [here](https://www.rishikeshs.com/). I mainly use [Strong](https://www.strong.app/?utm_source=rishikeshs.com) app for tracking my workouts. At the end of the workout, I usually copy the exercises and the reps to my Strava workout as a backup. At times, I also use [StrenghtLevel](https://strengthlevel.com/?utm_source=rishikeshs.com) for checking my strength level and see how I compare with others. My go to resource for workouts and stretching is [MuscleWiki](https://musclewiki.com/?utm_source=rishikeshs.com). I also use the [Recover](https://recoverathletics.com/?utm_source=rishikeshs.com) app for doing stretching especially after my cardio workouts or when I'm nusring an injury. Other than this, I use this weird [Shiatsu Massager](https://geni.us/rsh-shiatsu-massager) after my runs and also foam roll ocassionally. For my calves, knees and shin, I use this [cold gel pack](https://geni.us/rsh-inyx-cold-gel) for easy recovery.
 
-**Meditation**:
+
+**Meditation**: My goto app for meditation is [Waking Up](https://dynamic.wakingup.com/shareOpenAccess/SC0DD5FAC) and I try to meditate listening to the daily meditations everyday. At times when I don't need a guided meditation, I use the [Oak](https://apps.apple.com/us/app/oak-meditation-breathing/id1210209691) for creating a custom meditation with background noise.
+
+**Diet**: I try to be on calorie deficit on most of the days and use [HealthifyMe](https://www.healthifyme.com/in/?utm_source=rishikeshs.com) for tracking. I prefer it over MyFitnessPal since lot of the dishes I eat in Kerala cuisine is not available on MyFitnessPal. I occasionally do fasting and I prefer [Zero](https://zerolongevity.com/?utm_source=rishikeshs.com) to track these. I use [Libra](https://libra-app.eu/?utm_source=rishikeshs.com) for tracking my weight manually using a scale. I also use [MeThreeSixty](https://www.methreesixty.com/?utm_source=rishikeshs.com) app for determining my body fat composition. Lately the app has been performing quite buggy, so not really happy about that.
+
+**Misc**: For treking I use the Decathlon's [Forclaz Trek 100](https://www.decathlon.in/p/8319097/men-s-shoes/men-waterproof-trekking-boots-100-grey?id=8319097&type=p) shoes. 
 
 
 
@@ -69,72 +70,7 @@ A list of things that I plan to buy in the future can be found on the 'Future St
 
 
 
-
 [Back to Top](#top)
-
-
-
-
-
-Fitness
-
-- Muscle Wiki
-- Strong
-- Strengthlevel.com
-- MeThreeSixty for Fitness
-- Recover
-
-
-
-Flexibility
-- Recover
-- Fitness Fatigue
-- Massager
-- Foam Roller
-
-
-
-Nutrition
-- ON
-- Nutrabox
-- Fast & Up
-
-Running
-
-- Run Support
-- Hoka Rincon 3
-- Train As One
-
-
-Hike
-- Trek 100
-- 
-
-
-
-Meditation
-
-- Waking Up
-- Oak
-
-Diet
-- Healthify
-- Zero
-- Strong
-
-Information
-- Reddit
-- Hackernewa
-- 
-
-
-
-https://geni.us/rsh-goprohero5
-
-
-
-
-
 
 
 
