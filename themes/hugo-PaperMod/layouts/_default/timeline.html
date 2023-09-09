@@ -36,44 +36,46 @@
   </div>
   {{- end }}
 
-
-
-
   {{- $timelineData := index .Site.Data "timeline" }}
-  {{- with index $timelineData "totalYears" }}
+  {{- $totalYears := index $timelineData "totalYears" }}
+  {{- $boxesPerRow := 26 }} <!-- Number of boxes per row -->
+  {{- with index $timelineData "dateOfBirth" }}
+  {{- $dateOfBirth := . }}
+  {{- $dob := (time $dateOfBirth) }}
   <div class="timeline-container">
       <div class="timeline">
-          {{- $totalYears := . }} <!-- Total number of years -->
-          {{- $boxesPerRow := 26 }} <!-- Number of boxes per row -->
-  
-          <!-- Print the dateOfBirth to check if it's being read properly -->
-          {{- $dateOfBirth := index $timelineData "dateOfBirth" }}
-  
           <!-- Calculate the number of weeks lived based on date of birth -->
-          {{- $dob := (time $dateOfBirth) }}
           {{- $today := now }}
           {{- $unixDob := $dob.Unix }}
           {{- $unixToday := $today.Unix }}
           {{- $secondsLived := sub $unixToday $unixDob }}
           {{- $weeksLived := div $secondsLived 604800 }} <!-- 604800 seconds in a week -->
-  
           <!-- Display the number of weeks lived and date of birth -->
           <div class="timeline-info">
               <p>Weeks Lived: {{ $weeksLived }}</p>
               <p>Date of Birth: {{ dateFormat "January 2, 2006" $dob }}</p>
           </div>
-  
           {{- $totalRows := mul $totalYears 2 }} <!-- Total number of rows for all years -->
-  
+          {{- $eventData := index $timelineData "events" }}
           {{- range $rowIndex := seq 1 $totalRows }}
               <!-- Start a new row -->
               <div class="row">
                   {{- range seq 1 $boxesPerRow }}
                       {{- $boxIndex := add (mul $boxesPerRow (sub $rowIndex 1)) . }}
                       {{- $isWeekLived := le $boxIndex $weeksLived }}
-                      <div class="week-box {{ if $isWeekLived }}week-box-lived{{ end }}" {{ if $isWeekLived }}style="background-color: lightgreen;"{{ end }}>
-                       
-                    </div>
+                      {{- $eventFound := false }}
+                      {{- range $event := $eventData }}
+                          {{- $eventDate := index $event "date" }}
+                          {{- $eventWeeks := sub (div (sub (time $eventDate).Unix $unixDob) 604800) 1 }}
+                          {{- if eq $boxIndex $eventWeeks }}
+                              {{- $eventFound = true }}
+                              <div class="event-marker">
+                                  <span class="event-text">{{ index $event "text" }}</span>
+                              </div>
+                          {{- end }}
+                      {{- end }}
+                      <div class="week-box  {{ if $eventFound }}week-box-event{{ end }}{{ if $isWeekLived }}week-box-lived{{ end }}" {{ if $eventFound }}style="background-color: yellow;"{{ end }}{{ if $isWeekLived }}style="background-color: lightgreen;"{{ end }}>
+                      </div>
                   {{- end }}
                   {{- if mod $rowIndex 2 | eq 0 }}
                   <!-- Add some space and make the text smaller for the year label after two rows -->
@@ -84,6 +86,11 @@
       </div>
   </div>
   {{- end }}
+
+  
+  
+  
+  
   <a><br></a>
   <h5>Inspired by <a href="https://waitbutwhy.com/2014/05/life-weeks.html" style="text-decoration: underline;">Tim Urban</a>, <a href="https://www.bryanbraun.com/your-life/weeks.html" style="text-decoration: underline;">Bryan Braun</a>, <a href="https://www.failflow.com/die/1487" style="text-decoration: underline;">FailFlow</a>, <a href="https://lifecal.me/" style="text-decoration: underline;">Life Calendar</a>, <a href="https://busterbenson.com/life-in-weeks" style="text-decoration: underline;">Buster Benson</a>, and many more.</h5>
 

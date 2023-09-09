@@ -210,3 +210,24 @@ white-space: nowrap; /* Prevent text from wrapping */
 }
 
 
+
+/* Add this CSS to your stylesheets */
+.week-box-event {
+  background-color: yellow;
+  /* Add any other styles you want for the event box */
+}
+
+.event-text-tooltip {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.week-box-event:hover .event-text-tooltip {
+  display: block;
+}
+

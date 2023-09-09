@@ -1,3 +1,11 @@
-# timeline.yaml
 totalYears: 90
 dateOfBirth: "1994-11-26"
+
+events:
+  - date: '2010-06-29' # Event date
+    text: "I graduated"
+    weeksFromDOB: 757
+
+  - date: '2026-06-29' # Event date
+    text: "Beep"
+    weeksFromDOB: 757
