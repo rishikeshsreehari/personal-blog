@@ -26,7 +26,10 @@
   {{- if (.Param "ShowToc") }}
   {{- partial "toc.html" . }}
   {{- end }}
- 
+
+
+
+
 
 
 
@@ -48,54 +51,35 @@
           {{- $secondsLived := sub $unixToday $unixDob }}
           {{- $weeksLived := div $secondsLived 604800 }} <!-- 604800 seconds in a week -->
   
+          <!-- Display the number of weeks lived and date of birth -->
+          <div class="timeline-info">
+              <p>Weeks Lived: {{ $weeksLived }}</p>
+              <p>Date of Birth: {{ dateFormat "January 2, 2006" $dob }}</p>
+          </div>
+  
           {{- $totalRows := mul $totalYears 2 }} <!-- Total number of rows for all years -->
   
           {{- range $rowIndex := seq 1 $totalRows }}
               <!-- Start a new row -->
               <div class="row">
                   {{- range seq 1 $boxesPerRow }}
-                      {{- $weekNumber := add (mul (add $boxesPerRow 1) (sub (div $rowIndex 2) 1)) . }}
-                      {{- $isWeekLived := le $weekNumber $weeksLived }}
-                      <div class="week-box" {{ if $isWeekLived }}style="background-color: lightgreen;"{{ end }}></div>
+                      {{- $boxIndex := add (mul $boxesPerRow (sub $rowIndex 1)) . }}
+                      {{- $isWeekLived := le $boxIndex $weeksLived }}
+                      <div class="week-box {{ if $isWeekLived }}week-box-lived{{ end }}" {{ if $isWeekLived }}style="background-color: lightgreen;"{{ end }}>
+                       
+                    </div>
                   {{- end }}
                   {{- if mod $rowIndex 2 | eq 0 }}
                   <!-- Add some space and make the text smaller for the year label after two rows -->
-                  <div class="year-label">{{ div $rowIndex 2 }}</div>
-              {{- end }}
+                  <div class="year-label">{{ add 1 (div (sub $rowIndex 1) 2) }}</div>
+                  {{- end }}
               </div>
-  
-              
           {{- end }}
       </div>
   </div>
   {{- end }}
   
-
   
-
-  
-  
-
-  
-  
-  
-
-  
-
-  
-  {{- if .Content }}
-  <div class="post-content">
-    {{- if not (.Param "disableAnchoredHeadings") }}
-    {{- partial "anchored_headings.html" .Content -}}
-    {{- else }}{{ .Content }}{{ end }}
-  </div>
-  {{- end }}
-
-  
-
-
-
-
 
   
 </article>
