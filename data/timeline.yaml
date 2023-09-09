@@ -2,19 +2,22 @@ totalYears: 100
 dateOfBirth: "1994-11-26"
 
 events:
-  - date: '2010-06-29' # Event date
-    text: "I graduated"
-    
 
-  - date: '2026-06-29' # Event date
-    text: "Beep"
+  - date: '2012-08-08'
+    text: "Joined Cochin University for B.Tech in Mechanical Engineering"
+
+  - date: '2017-08-04'
+    text: "Awarded CommonWealth Scholarship by UK Government"
+
   
+  - date: '2010-06-29'
+    text: "I graduated. <u><a href='https://www.example.com' target='_blank'>Visit Example.com</a></u>"
 
+  - date: '2026-06-29'
+    text: "Beep"
 
-  - date: '2024-11-26' # Event date
-    text: "Became a millionaire at the age of 31"
- 
+  - date: '2024-11-26'
+    text: "Became a millionaire at the age of 31. <u><a href='https://www.example.com/millionaire' target='_blank'>Read more</a></u>"
 
-  - date: '2092-11-26' # Event date
-    text: "Became a millionaire at the age of 31Became a millionaire at the age of 31"
- 
+  - date: '2092-11-26'
+    text: "Became a millionaire at the age of 31. <u><a href='https://www.example.com/learn' target='_blank'>Learn more</a></u>"
