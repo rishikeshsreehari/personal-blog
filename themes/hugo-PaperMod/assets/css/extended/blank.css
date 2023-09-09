@@ -219,6 +219,8 @@ white-space: nowrap; /* Prevent text from wrapping */
 /* Tooltip styles */
 .tooltip {
   visibility: hidden;
+  display: inline-block;
+  min-width: 200px;
   width: auto; /* Allow the tooltip to expand horizontally based on content */
   background-color: #333;
   color: #fff;
@@ -232,10 +234,17 @@ white-space: nowrap; /* Prevent text from wrapping */
   margin-left: -80px;
   opacity: 0;
   transition: opacity 0.2s;
+  white-space: normal; /* Allow text to wrap within the tooltip */
+  text-align: left;
 }
 
 /* Show the tooltip when hovering over week-box-event */
 .week-box-event:hover .tooltip {
   visibility: visible;
   opacity: 1;
+}
+
+/* Left-align the text inside the tooltip */
+.tooltip .tooltiptext {
+  text-align: left;
 }
