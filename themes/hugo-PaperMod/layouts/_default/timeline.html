@@ -1,0 +1,129 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">
+      {{ .Title }}
+      {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
+    </h1>
+    {{- if .Description }}
+    <div class="post-description">
+      {{ .Description }}
+    </div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    <div class="post-meta">
+      {{- partial "post_meta.html" . -}}
+      {{- partial "translation_list.html" . -}}
+      {{- partial "edit_post.html" . -}}
+      {{- partial "post_canonical.html" . -}}
+    </div>
+    {{- end }}
+  </header>
+  {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
+  {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
+  {{- if (.Param "ShowToc") }}
+  {{- partial "toc.html" . }}
+  {{- end }}
+ 
+
+
+
+  {{- $timelineData := index .Site.Data "timeline" }}
+  {{- with index $timelineData "totalYears" }}
+  <div class="timeline-container">
+      <div class="timeline">
+          {{- $totalYears := . }} <!-- Total number of years -->
+          {{- $boxesPerRow := 26 }} <!-- Number of boxes per row -->
+  
+          <!-- Print the dateOfBirth to check if it's being read properly -->
+          {{- $dateOfBirth := index $timelineData "dateOfBirth" }}
+  
+          <!-- Calculate the number of weeks lived based on date of birth -->
+          {{- $dob := (time $dateOfBirth) }}
+          {{- $today := now }}
+          {{- $unixDob := $dob.Unix }}
+          {{- $unixToday := $today.Unix }}
+          {{- $secondsLived := sub $unixToday $unixDob }}
+          {{- $weeksLived := div $secondsLived 604800 }} <!-- 604800 seconds in a week -->
+  
+          {{- $totalRows := mul $totalYears 2 }} <!-- Total number of rows for all years -->
+  
+          {{- range $rowIndex := seq 1 $totalRows }}
+              <!-- Start a new row -->
+              <div class="row">
+                  {{- range seq 1 $boxesPerRow }}
+                      {{- $weekNumber := add (mul (add $boxesPerRow 1) (sub (div $rowIndex 2) 1)) . }}
+                      {{- $isWeekLived := le $weekNumber $weeksLived }}
+                      <div class="week-box" {{ if $isWeekLived }}style="background-color: lightgreen;"{{ end }}></div>
+                  {{- end }}
+                  {{- if mod $rowIndex 2 | eq 0 }}
+                  <!-- Add some space and make the text smaller for the year label after two rows -->
+                  <div class="year-label">{{ div $rowIndex 2 }}</div>
+              {{- end }}
+              </div>
+  
+              
+          {{- end }}
+      </div>
+  </div>
+  {{- end }}
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+
+  
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
+
+  
+
+
+
+
+
+  
+</article>
+
+  <div>
+    {{ partial "disqus.html" . }}
+  </div>
+
+  {{ template "_internal/disqus.html" . }}
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+    {{- if (.Param "ShowPostNavLinks") }}
+    {{- partial "post_nav_links.html" . }}
+    {{- end }}
+    {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
+    {{- partial "share_icons.html" . -}}
+    {{- end }}
+  </footer>
+
+  {{- if (.Param "comments") }}
+  {{- partial "comments.html" . }}
+  {{- end }}
+</article>
+
+{{- end }}{{/* end main */}}

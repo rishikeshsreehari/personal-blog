@@ -178,3 +178,33 @@ white-space: nowrap; /* Prevent text from wrapping */
 
 
 
+.timeline-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Ensure boxes start from the left */
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.week-box {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #ccc;
+  margin: 2px;
+}
+
+.year-label {
+  font-size: 12px;
+  white-space: nowrap;
+  margin-left: 6px; /* Adjust margin-right to create space between boxes and year labels */
+}
