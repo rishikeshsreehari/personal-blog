@@ -209,23 +209,17 @@ white-space: nowrap; /* Prevent text from wrapping */
   margin-left: 6px; /* Adjust margin-right to create space between boxes and year labels */
 }
 
-
-
-/* Add this CSS to your stylesheets */
+/* Style for the week-box-event when an event is found */
 .week-box-event {
-  background-color: yellow;
-  /* Add any other styles you want for the event box */
-}
-
-/* Add this CSS to your stylesheet */
-.tooltip {
   position: relative;
-  display: inline-block;
+  cursor: pointer; /* Change the cursor to a pointer to indicate interactivity */
+  background-color: yellow; /* Add any other styles you want */
 }
 
-.tooltip .tooltiptext {
+/* Tooltip styles */
+.tooltip {
   visibility: hidden;
-  width: 160px;
+  width: auto; /* Allow the tooltip to expand horizontally based on content */
   background-color: #333;
   color: #fff;
   text-align: center;
@@ -240,9 +234,8 @@ white-space: nowrap; /* Prevent text from wrapping */
   transition: opacity 0.2s;
 }
 
-.tooltip:hover .tooltiptext {
+/* Show the tooltip when hovering over week-box-event */
+.week-box-event:hover .tooltip {
   visibility: visible;
   opacity: 1;
 }
-
-

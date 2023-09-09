@@ -79,19 +79,18 @@
         {{- end }}
         
         <div class="week-box
-  {{ if $eventFound }}week-box-event tooltip-container{{ end }}
-  {{ if $isWeekLived }}week-box-lived{{ end }}"
-  {{ if $eventFound }}style="background-color: yellow;"{{ end }}
-  {{ if $isWeekLived }}style="background-color: #7DAF93;"{{ end }}
->
-  {{ if $eventFound }}
-    <!-- Tooltip -->
-    <div class="tooltip">
-      a
-      <span class="tooltiptext">{{ $currentEvent.text }}</span>
-    </div>
-  {{ end }}
-</div>
+        {{ if $eventFound }}week-box-event{{ end }}
+        {{ if $isWeekLived }}week-box-lived{{ end }}"
+      >
+        {{ if $eventFound }}
+          <!-- Tooltip -->
+          <div class="tooltip">
+            <span class="tooltiptext">{{ $currentEvent.text }}</span>
+          </div>
+        {{ end }}
+      </div>
+      
+      
 
 
         
