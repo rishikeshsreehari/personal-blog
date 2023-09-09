@@ -28,7 +28,13 @@
   {{- end }}
 
 
-
+  {{- if .Content }}
+  <div class="post-content">
+    {{- if not (.Param "disableAnchoredHeadings") }}
+    {{- partial "anchored_headings.html" .Content -}}
+    {{- else }}{{ .Content }}{{ end }}
+  </div>
+  {{- end }}
 
 
 
@@ -78,8 +84,9 @@
       </div>
   </div>
   {{- end }}
-  
-  
+  <a><br></a>
+  <h5>Inspired by <a href="https://waitbutwhy.com/2014/05/life-weeks.html" style="text-decoration: underline;">Tim Urban</a>, <a href="https://www.bryanbraun.com/your-life/weeks.html" style="text-decoration: underline;">Bryan Braun</a>, <a href="https://www.failflow.com/die/1487" style="text-decoration: underline;">FailFlow</a>, <a href="https://lifecal.me/" style="text-decoration: underline;">Life Calendar</a>, <a href="https://busterbenson.com/life-in-weeks" style="text-decoration: underline;">Buster Benson</a>, and many more.</h5>
+
 
   
 </article>
