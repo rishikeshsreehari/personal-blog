@@ -217,17 +217,32 @@ white-space: nowrap; /* Prevent text from wrapping */
   /* Add any other styles you want for the event box */
 }
 
-.event-text-tooltip {
-  display: none;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 5px;
-  border-radius: 3px;
-  z-index: 1;
+/* Add this CSS to your stylesheet */
+.tooltip {
+  position: relative;
+  display: inline-block;
 }
 
-.week-box-event:hover .event-text-tooltip {
-  display: block;
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.2s;
 }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
 

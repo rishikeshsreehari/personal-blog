@@ -242,6 +242,24 @@ How the book has changed me? As mentioned earlier many ideas were already known 
 I read the book and was surprised by the gist of it.</description>
     </item>
     
+    <item>
+      <title>About</title>
+      <link>https://jade-sable-e0c36b.netlify.app/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jade-sable-e0c36b.netlify.app/about/</guid>
+      <description>single</description>
+    </item>
+    
+    
+    <item>
+      <title>Future Stack</title>
+      <link>https://jade-sable-e0c36b.netlify.app/futurestack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jade-sable-e0c36b.netlify.app/futurestack/</guid>
+      <description>single</description>
+    </item>
     
     <item>
       <title>Library</title>
@@ -253,14 +271,32 @@ I read the book and was surprised by the gist of it.</description>
     </item>
     
     <item>
-      <title>Now</title>
+      <title>Life in Weeks</title>
+      <link>https://jade-sable-e0c36b.netlify.app/timeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jade-sable-e0c36b.netlify.app/timeline/</guid>
+      <description>single</description>
+    </item>
+    
+    <item>
+      <title>Life Stack</title>
+      <link>https://jade-sable-e0c36b.netlify.app/lifestack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jade-sable-e0c36b.netlify.app/lifestack/</guid>
+      <description>single</description>
+    </item>
+    
+    
+    <item>
+      <title>What I&#39;m Doing Now</title>
       <link>https://jade-sable-e0c36b.netlify.app/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://jade-sable-e0c36b.netlify.app/now/</guid>
       <description>single</description>
     </item>
-    
     
   </channel>
 </rss>

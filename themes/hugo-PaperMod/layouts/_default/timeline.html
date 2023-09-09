@@ -43,52 +43,72 @@
   {{- $dateOfBirth := . }}
   {{- $dob := (time $dateOfBirth) }}
   <div class="timeline-container">
-      <div class="timeline">
-          <!-- Calculate the number of weeks lived based on date of birth -->
-          {{- $today := now }}
-          {{- $unixDob := $dob.Unix }}
-          {{- $unixToday := $today.Unix }}
-          {{- $secondsLived := sub $unixToday $unixDob }}
-          {{- $weeksLived := div $secondsLived 604800 }} <!-- 604800 seconds in a week -->
-          <!-- Display the number of weeks lived and date of birth -->
-          <div class="timeline-info">
-              <p>Weeks Lived: {{ $weeksLived }}</p>
-              <p>Date of Birth: {{ dateFormat "January 2, 2006" $dob }}</p>
-          </div>
-          {{- $totalRows := mul $totalYears 2 }} <!-- Total number of rows for all years -->
-          {{- $eventData := index $timelineData "events" }}
-          {{- range $rowIndex := seq 1 $totalRows }}
-              <!-- Start a new row -->
-              <div class="row">
-                  {{- range seq 1 $boxesPerRow }}
-                      {{- $boxIndex := add (mul $boxesPerRow (sub $rowIndex 1)) . }}
-                      {{- $isWeekLived := le $boxIndex $weeksLived }}
-                      {{- $eventFound := false }}
-                      {{- range $event := $eventData }}
-                          {{- $eventDate := index $event "date" }}
-                          {{- $eventWeeks := sub (div (sub (time $eventDate).Unix $unixDob) 604800) 1 }}
-                          {{- if eq $boxIndex $eventWeeks }}
-                              {{- $eventFound = true }}
-                              <div class="event-marker">
-                                  <span class="event-text">{{ index $event "text" }}</span>
-                              </div>
-                          {{- end }}
-                      {{- end }}
-                      <div class="week-box  {{ if $eventFound }}week-box-event{{ end }}{{ if $isWeekLived }}week-box-lived{{ end }}" {{ if $eventFound }}style="background-color: yellow;"{{ end }}{{ if $isWeekLived }}style="background-color: lightgreen;"{{ end }}>
-                      </div>
-                  {{- end }}
-                  {{- if mod $rowIndex 2 | eq 0 }}
-                  <!-- Add some space and make the text smaller for the year label after two rows -->
-                  <div class="year-label">{{ add 1 (div (sub $rowIndex 1) 2) }}</div>
-                  {{- end }}
-              </div>
-          {{- end }}
+    <div class="timeline">
+      <!-- Calculate the number of weeks lived based on date of birth -->
+      {{- $today := now }}
+      {{- $unixDob := $dob.Unix }}
+      {{- $unixToday := $today.Unix }}
+      {{- $secondsLived := sub $unixToday $unixDob }}
+      {{- $weeksLived := div $secondsLived 604800 }} <!-- 604800 seconds in a week -->
+      <!-- Display the number of weeks lived and date of birth -->
+      <div class="timeline-info">
+        <p>Weeks Lived: {{ $weeksLived }}</p>
+        <p>Date of Birth: {{ dateFormat "January 2, 2006" $dob }}</p>
       </div>
+      {{- $totalRows := mul $totalYears 2 }} <!-- Total number of rows for all years -->
+      {{- $eventData := index $timelineData "events" }}
+      {{- range $rowIndex := seq 1 $totalRows }}
+      <!-- Start a new row -->
+      <div class="row">
+        {{- range seq 1 $boxesPerRow }}
+        {{- $boxIndex := add (mul $boxesPerRow (sub $rowIndex 1)) . }}
+        {{- $isWeekLived := le $boxIndex $weeksLived }}
+        {{- $eventFound := false }}
+        {{- $currentEvent := dict "text" "" }} <!-- Initialize an empty event data variable -->
+        {{- range $event := $eventData }}
+        {{- $eventDate := index $event "date" }}
+        {{- $eventWeeks := sub (div (sub (time $eventDate).Unix $unixDob) 604800) 1 }}
+        {{- if eq $boxIndex $eventWeeks }}
+        {{- $eventFound = true }}
+        {{- $currentEvent = $event }} <!-- Assign the current event to the variable -->
+        
+        
+        
+        
+        {{- end }}
+        {{- end }}
+        
+        <div class="week-box
+  {{ if $eventFound }}week-box-event tooltip-container{{ end }}
+  {{ if $isWeekLived }}week-box-lived{{ end }}"
+  {{ if $eventFound }}style="background-color: yellow;"{{ end }}
+  {{ if $isWeekLived }}style="background-color: #7DAF93;"{{ end }}
+>
+  {{ if $eventFound }}
+    <!-- Tooltip -->
+    <div class="tooltip">
+      a
+      <span class="tooltiptext">{{ $currentEvent.text }}</span>
+    </div>
+  {{ end }}
+</div>
+
+
+        
+        {{- end }}
+
+        
+       
+        {{- if mod $rowIndex 2 | eq 0 }}
+        <!-- Add some space and make the text smaller for the year label after two rows -->
+        <div class="year-label">{{ add 1 (div (sub $rowIndex 1) 2) }}</div>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
   </div>
   {{- end }}
 
-  
-  
   
   
   <a><br></a>
@@ -123,5 +143,7 @@
   {{- partial "comments.html" . }}
   {{- end }}
 </article>
+
+
 
 {{- end }}{{/* end main */}}

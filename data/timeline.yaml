@@ -1,4 +1,4 @@
-totalYears: 90
+totalYears: 100
 dateOfBirth: "1994-11-26"
 
 events:
@@ -8,4 +8,13 @@ events:
 
   - date: '2026-06-29' # Event date
     text: "Beep"
+    weeksFromDOB: 757
+
+
+  - date: '2024-11-26' # Event date
+    text: "Became a millionaire at the age of 31"
+    weeksFromDOB: 757
+
+  - date: '2092-11-26' # Event date
+    text: "Became a millionaire at the age of 31"
     weeksFromDOB: 757
