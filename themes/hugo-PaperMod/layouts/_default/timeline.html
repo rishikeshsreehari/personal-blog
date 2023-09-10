@@ -48,7 +48,9 @@
       {{- $unixDob := $dob.Unix }}
       {{- $unixToday := $today.Unix }}
       {{- $secondsLived := sub $unixToday $unixDob }}
-      {{- $weeksLived := div $secondsLived 604800 }} <!-- 604800 seconds in a week -->
+      {{- $weeksLived := div $secondsLived 604800 | int }}
+
+
       <!-- Display the number of weeks lived and date of birth -->
       <div class="timeline-info">
         <p>Weeks Lived: {{ $weeksLived }}</p>
@@ -62,7 +64,7 @@
       <div class="row">
 
         {{ if eq $rowIndex 1 }}
-            <div class="age-label">Age &#9660;</div>
+            <div class="age-label">Years &#9660;</div>
         
         {{- else if mod $rowIndex 2 | eq 0 }}
         <!-- Add year label before the boxes after every two rows -->
@@ -78,7 +80,12 @@
         {{- $currentEvent := dict "text" "" }} <!-- Initialize an empty event data variable -->
         {{- range $event := $eventData }}
         {{- $eventDate := index $event "date" }}
-        {{- $eventWeeks := sub (div (sub (time $eventDate).Unix $unixDob) 604800) 1 }}
+        {{- $eventWeeks := add (div (sub (time $eventDate).Unix $unixDob) 604800 | int) 1 }}
+
+        
+
+
+
         {{- if eq $boxIndex $eventWeeks }}
         {{- $eventFound = true }}
         {{- $currentEvent = $event }} <!-- Assign the current event to the variable -->
@@ -100,7 +107,16 @@
       {{- end }}
     </div>
   </div>
+
+
+
+
+
   {{- end }}
+
+
+
+  
 
   <a><br></a>
   <h5>Inspired by <a href="https://waitbutwhy.com/2014/05/life-weeks.html" style="text-decoration: underline;">Tim Urban</a>, <a href="https://www.bryanbraun.com/your-life/weeks.html" style="text-decoration: underline;">Bryan Braun</a>, <a href="https://www.failflow.com/die/1487" style="text-decoration: underline;">FailFlow</a>, <a href="https://lifecal.me/" style="text-decoration: underline;">Life Calendar</a>, <a href="https://busterbenson.com/life-in-weeks" style="text-decoration: underline;">Buster Benson</a>, and many more.</h5>
