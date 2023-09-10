@@ -204,10 +204,20 @@ white-space: nowrap; /* Prevent text from wrapping */
 }
 
 .year-label {
-  font-size: 12px;
+  font-size: 14px;
   white-space: nowrap;
-  margin-left: 6px; /* Adjust margin-right to create space between boxes and year labels */
+  margin-right: 6px; /* Adjust margin-right to create space between boxes and year labels */
 }
+
+
+.year-label-odd {
+  visibility: hidden;
+  font-size: 14px;
+  white-space: nowrap;
+  margin-right: 6px; /* Adjust margin-right to create space between boxes and year labels */
+}
+
+
 
 
 /* Highlight weeks lived in green */
@@ -260,5 +270,4 @@ white-space: nowrap; /* Prevent text from wrapping */
 .tooltip .tooltiptext {
   text-align: left;
 }
-
 
