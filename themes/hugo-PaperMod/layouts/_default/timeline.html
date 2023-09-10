@@ -58,8 +58,13 @@
       {{- $eventData := index $timelineData "events" }}
       {{- range $rowIndex := seq 1 $totalRows }}
       <!-- Start a new row -->
+      
       <div class="row">
-        {{- if mod $rowIndex 2 | eq 0 }}
+
+        {{ if eq $rowIndex 1 }}
+            <div class="age-label">Age &#9660;</div>
+        
+        {{- else if mod $rowIndex 2 | eq 0 }}
         <!-- Add year label before the boxes after every two rows -->
         <div class="year-label">{{ add 1 (div (sub $rowIndex 1) 2) }}</div>
         {{- else }}
