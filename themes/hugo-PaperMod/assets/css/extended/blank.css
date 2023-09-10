@@ -262,9 +262,12 @@ white-space: nowrap; /* Prevent text from wrapping */
 }
 
 
-/* Apply hover effect for touch devices */
-@media (hover: hover) {
-  .week-box-event:hover {
-    background-color: pink; /* Change to a different color on hover */
+
+/* Apply click effect for touch devices and smaller screens */
+@media (hover: none), (max-width: 768px) {
+  .week-box-event {
+    background-color: pink; /* Change to a different color */
+    cursor: pointer; /* Change cursor to pointer */
   }
 }
+
