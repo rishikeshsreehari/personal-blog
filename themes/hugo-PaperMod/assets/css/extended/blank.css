@@ -207,14 +207,17 @@ white-space: nowrap; /* Prevent text from wrapping */
   font-size: 14px;
   white-space: nowrap;
   margin-right: 6px; /* Adjust margin-right to create space between boxes and year labels */
+  width: 20px; /* Set a fixed width for year labels to accommodate two digits */
+  text-align: center; /* Center the label within the fixed width */
 }
 
-
 .year-label-odd {
-  visibility: hidden;
   font-size: 14px;
   white-space: nowrap;
   margin-right: 6px; /* Adjust margin-right to create space between boxes and year labels */
+  width: 20px; /* Set a fixed width for year labels to accommodate two digits */
+  text-align: center; /* Center the label within the fixed width */
+  visibility: hidden;
 }
 
 
