@@ -85,7 +85,7 @@
         {{ if $eventFound }}
           <!-- Tooltip -->
           <div class="tooltip">
-            <span class="tooltiptext">{{ $currentEvent.text | safeHTML }}</span>
+            <span class="tooltiptext" onclick="">{{ $currentEvent.text | safeHTML }}</span>
           </div>
         {{ end }}
       </div>

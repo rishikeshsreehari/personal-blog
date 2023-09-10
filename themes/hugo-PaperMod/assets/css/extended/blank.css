@@ -260,3 +260,11 @@ white-space: nowrap; /* Prevent text from wrapping */
 .tooltip .tooltiptext {
   text-align: left;
 }
+
+
+/* Apply hover effect for touch devices */
+@media (hover: hover) {
+  .week-box-event:hover {
+    background-color: pink; /* Change to a different color on hover */
+  }
+}
