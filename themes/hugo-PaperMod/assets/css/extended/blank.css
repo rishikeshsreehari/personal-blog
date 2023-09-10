@@ -209,12 +209,24 @@ white-space: nowrap; /* Prevent text from wrapping */
   margin-left: 6px; /* Adjust margin-right to create space between boxes and year labels */
 }
 
-/* Style for the week-box-event when an event is found */
-.week-box-event {
-  position: relative;
-  cursor: pointer; /* Change the cursor to a pointer to indicate interactivity */
-  background-color: yellow; /* Add any other styles you want */
+
+/* Highlight weeks lived in green */
+.week-box-lived {
+  background: linear-gradient(to bottom, #4fc360, #17bc30);
 }
+
+/* Highlight weeks with events in yellow */
+.week-box-event {
+  background: linear-gradient(to bottom, #57b9ff, #0096FF);
+  border: 1.5px solid rgb(255, 255, 255);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  cursor: pointer;
+  
+  
+}
+
+
 
 /* Tooltip styles */
 .tooltip {
