@@ -66,9 +66,11 @@
         {{ if eq $rowIndex 1 }}
             <div class="age-label">Years &#9660;</div>
         
-        {{- else if mod $rowIndex 2 | eq 0 }}
+        {{- else if mod $rowIndex 10 | eq 0 }}
         <!-- Add year label before the boxes after every two rows -->
-        <div class="year-label">{{ add 1 (div (sub $rowIndex 1) 2) }}</div>
+         <!--<div class="year-label">{{ add 1 (div (sub $rowIndex 1) 2) }}</div> -->
+
+        <div class="year-label">{{ div $rowIndex 2  }}</div>
         {{- else }}
         <!-- Add empty space for odd rows to align with even rows -->
         <div class="year-label-odd">$</div>
