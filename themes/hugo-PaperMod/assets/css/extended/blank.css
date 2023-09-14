@@ -264,8 +264,9 @@ white-space: nowrap; /* Prevent text from wrapping */
   padding: 5px;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
+  top: 125%;
+  left: 150px;
+  right:150px; 
   margin-left: -80px;
   opacity: 0;
   transition: opacity 0.2s;
