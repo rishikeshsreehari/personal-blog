@@ -3,7 +3,8 @@ import pygal.maps
 import yaml
 
 # Load the countries from your YAML file
-with open(r'C:\Users\rishi\Google Drive\GitHub\personal-blog\data\countries.yaml') as yaml_file:
+#with open(r'C:\Users\rishi\Google Drive\GitHub\personal-blog\data\countries.yaml') as yaml_file:
+with open(r'data\countries.yaml') as yaml_file:
     countries_yaml = yaml.load(yaml_file, Loader=yaml.FullLoader)
 
 # Create a world map
