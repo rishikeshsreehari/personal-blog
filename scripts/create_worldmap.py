@@ -13,7 +13,7 @@ worldmap.title = 'My Traveled Countries'
 
 # Parse the SVG file
 #tree = ET.parse(r'C:\Users\rishi\Google Drive\GitHub\personal-blog\static\images\worldmap_base.svg')
-tree = ET.parse("static\images\worldmap_base.svg")
+tree = ET.parse("static/images/worldmap_base.svg")
 
 
 root = tree.getroot()
@@ -26,4 +26,4 @@ for path in root.iter('{http://www.w3.org/2000/svg}path'):
 
 # Save the updated SVG file
 #tree.write(r'C:\Users\rishi\Google Drive\GitHub\personal-blog\static\images\worldmap.svg')
-tree.write("static\images\worldmap.svg")
+tree.write("static/images/worldmap.svg")
