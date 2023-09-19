@@ -4,7 +4,7 @@ import yaml
 
 # Load the countries from your YAML file
 #with open(r'C:\Users\rishi\Google Drive\GitHub\personal-blog\data\countries.yaml') as yaml_file:
-with open(r'data\countries.yaml') as yaml_file:
+with open("data/books.yaml", "r") as yaml_file:
     countries_yaml = yaml.load(yaml_file, Loader=yaml.FullLoader)
 
 # Create a world map
@@ -13,9 +13,8 @@ worldmap.title = 'My Traveled Countries'
 
 # Parse the SVG file
 #tree = ET.parse(r'C:\Users\rishi\Google Drive\GitHub\personal-blog\static\images\worldmap_base.svg')
-tree = ET.parse(r'static\images\worldmap_base.svg')
+tree = ET.parse("static\images\worldmap_base.svg")
 
-#with open("data/books.yaml", "r") as f:
 
 root = tree.getroot()
 
@@ -27,4 +26,4 @@ for path in root.iter('{http://www.w3.org/2000/svg}path'):
 
 # Save the updated SVG file
 #tree.write(r'C:\Users\rishi\Google Drive\GitHub\personal-blog\static\images\worldmap.svg')
-tree.write(r'static\images\worldmap.svg')
+tree.write("static\images\worldmap.svg")
