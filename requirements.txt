@@ -6,3 +6,5 @@ svgwrite
 plotly
 numpy
 kaleido
+elementpath
+pygal_maps_world

@@ -4,6 +4,7 @@ author: Rishikesh
 date: 2021-05-11
 excerpt: I decided to document my personal transformation journey through this blog. I have summarized the 5 reasons why I decided to start a blog on this post.
 url: /5-reasons-why-i-decided-to-start-a-blog/
+
 ---
 <p class="has-drop-cap">
   End of 2020, I decided to quit my job and backpack for the next 6 months on a journey towards self-discovery. Fast-forward to April 2020, I had to stop traveling and go back home due to the <a href="https://www.bbc.com/news/world-asia-india-56771766" target="_blank" rel="noreferrer noopener" title="https://www.bbc.com/news/world-asia-india-56771766">second wave of the pandemic in India</a>. The journey had changed me a lot and I decided to make small changes in my daily routine for a fulfilled life with happiness and financial freedom. Among the daily habits which I decided to follow, reading was one of them.
