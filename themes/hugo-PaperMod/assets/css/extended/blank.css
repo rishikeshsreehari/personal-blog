@@ -235,7 +235,7 @@ white-space: nowrap; /* Prevent text from wrapping */
 
 /* Highlight weeks lived in green */
 .week-box-lived {
-  background: linear-gradient(to bottom, #4fc360, #17bc30);
+  background: linear-gradient(to right, #17bc30 ,  #4fc360); /* Color of the filled progress (green) */
 }
 
 /* Highlight weeks with events in yellow */
@@ -265,7 +265,7 @@ white-space: nowrap; /* Prevent text from wrapping */
   position: absolute;
   z-index: 1;
   top: 125%;
-  left: 150px;
+  left: 100px;
   right:150px; 
   margin-left: -80px;
   opacity: 0;
@@ -283,5 +283,43 @@ white-space: nowrap; /* Prevent text from wrapping */
 /* Left-align the text inside the tooltip */
 .tooltip .tooltiptext {
   text-align: left;
+  font-size: 16px;
+}
+
+
+/* Style for the progress bar container */
+.progress-bar-timeline {
+  width: 90%;
+  background-color: #ccc; /* Background color of the progress bar container */
+  height: 20px; /* Adjust the height of the progress bar */
+  border-radius: 5px; /* Rounded corners for the container */
+}
+
+.progress-bar-timeline {
+  width: 100%;
+  background-color: #ccc; /* Background color of the progress bar container */
+  height: 20px; /* Adjust the height of the progress bar */
+  border-radius: 5px; /* Rounded corners for the container */
+  position: relative; /* Enable relative positioning for child elements */
+}
+
+/* Style for the progress bar itself */
+.progress-timeline {
+  height: 100%;
+  background: linear-gradient(to right, #17bc30 ,  #4fc360); /* Color of the filled progress (green) */
+  width: {{ $percentage }}%; /* Set the width based on the percentage */
+  border-radius: 5px; /* Rounded corners for the progress bar */
+  position: relative; /* Position the progress bar relative to its container */
+}
+
+/* Style for the percentage text inside the progress bar */
+.progress-text-timeline {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* Text color */
+  font-size: 14px;
+  font-weight: bold;
 }
 

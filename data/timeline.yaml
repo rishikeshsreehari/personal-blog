@@ -1,34 +1,120 @@
 totalYears: 100
 dateOfBirth: "1994-11-26"
+GlobalLifeSpan: 73.4
 
 events:
 
   - date: '1994-11-26'
     text: "Born on 26th November 1994 on a a strike day in a <u><a href='https://en.wikipedia.org/wiki/Pallippuram,_Ernakulam' target='_blank'>small village</a></u> in Kerala."
 
+  - date: '2004-11-26'
+    text: "Turned 10. I think from the time I was born and until I turned 18, my life was quite uneventful and nothing major happened!"
 
-  - date: '1995-04-26'
-    text: "Born on 26th November 1994 on a a strike day in a <u><a href='https://en.wikipedia.org/wiki/Pallippuram,_Ernakulam' target='_blank'>small village</a></u> in Kerala."
 
+  - date: '2012-08-08'
+    text: "Joined Cochin University for bachelors in engineering and had the best phase of my life so far. Explored freedom to the core."
 
   - date: '2012-11-26'
     text: "Turned 18, legally able to drink and drive! :D"
   
-  - date: '2012-08-08'
-    text: "Joined Cochin University for B.Tech in Mechanical Engineering"
+  - date: '2017-08-30'
+    text: "Moved to Edinburgh in United Kingdom for studies"
 
-  - date: '2017-08-04'
-    text: "Awarded CommonWealth Scholarship by UK Government"
+  - date: '2018-08-30'
+    text: "Graduated with a MSc in Renewable Energy and Distributed Generation"
 
+  - date: '2019-01-01'
+    text: "Started a 2-month backpacking trip in Europe"
   
-  - date: '2010-06-29'
-    text: "I graduated. <u><a href='https://www.example.com' target='_blank'>Visit Example.com</a></u>"
+  - date: '2019-07-01'
+    text: "Moved to Bihar, India to work in the mini-grid sector in rural India and also to learn Hindi"
+  
+  - date: '2020-03-31'
+    text: "Moved to Kerala, India because of Covid-19 lockdown and started working from home."
 
-  - date: '2026-06-29'
-    text: "Beep"
+  - date: '2020-08-18'
+    text: "Did my first ever <u><a href='https://en.wikipedia.org/wiki/Pallippuram,_Ernakulam' target='_blank'>100 km cycle ride.</a></u>"
+  
+
+  - date: '2020-12-03'
+    text: "After 1 year 7 months of working, I decided to quit my job and decided to travel within India. Even though this resulted in a career break, this was one of the best decisions of my life."
+  
+  - date: '2021-04-01'
+    text: "Had to cut short travel due to 3rd wave of pandemic."
+  
+  - date: '2021-05-01'
+    text: "Decided to start this blog."
+
+  - date: '2021-05-31'
+    text: "Started my newsletter called <u><a href='https://rishikesh.substack.com/' target='_blank'>10+1 Things</a></u>"
+
+  - date: '2021-08-01'
+    text: "Joined back my previous organisation working on minigrids, but this time working fully from home!"
+
+  - date: '2021-08-09'
+    text: "My <u><a href='https://rishikesh.substack.com/' target='_blank'>newsletter</a></u> hit 100 subscribers!"
+
+  - date: '2021-09-02'
+    text: "My grandmother passed away due to ALS. This was one such event which shook me and made me realize the finite nature of our lives."
+
+  - date: '2022-02-05'
+    text: "My first <u><a href='https://strava.app.link/W9RNzRrTdDb' target='_blank'>5k</a></u> run!"
+
+
+  - date: '2022-02-27'
+    text: "My fastest <u><a href='https://strava.app.link/ljeVAwVTdDb' target='_blank'>100k ride </a></u>under 4 hours. I was at my peak fitness during this time and was at my lowest ever body weight of 67kg as well!"
+
+
+
+
+  - date: '2022-04-01'
+    text: "My <u><a href='https://strava.app.link/ppnBZDETdDb' target='_blank'>5k</a></u> PR under 30 minutes!"
+
+
+
+  - date: '2022-04-07'
+    text: "My first <u><a href='https://strava.app.link/hBDpf5zTdDb' target='_blank'>10k</a></u> run!"
+
+
+  - date: '2022-06-10'
+    text: "My <u><a href='https://rishikesh.substack.com/' target='_blank'>newsletter</a></u> hit 1000 subscribers!"
+
+  - date: '2022-09-20'
+    text: "Got engaged!"
+
+
+  - date: '2022-09-30'
+    text: "Did a 600km ride and became a <u><a href='https://rishikeshs.com/super-randonneur/' target='_blank'>Super Randonneur!</a></u>"
+
+
+  - date: '2022-10-05'
+    text: "My <u><a href='https://rishikesh.substack.com/' target='_blank'>newsletter</a></u> hit 2000 subscribers!"
+
+  - date: '2022-10-08'
+    text: "Moved to Delhi,India for a career switch to energy policy sector"
 
   - date: '2024-11-26'
-    text: "Became a millionaire at the age of 31. <u><a href='https://www.example.com/millionaire' target='_blank'>Read more</a></u>"
+    text: "I will turn 30 and I want to be the fittest version of myself by this time."
 
-  - date: '2092-11-26'
-    text: "Became a millionaire at the age of 31. <u><a href='https://www.example.com/learn' target='_blank'>Learn more</a></u>"
+
+  - date: '2039-11-26'
+    text: "At the age of 45, I hope to retire. Let's see how it pans out!"
+
+
+
+
+
+  - date: '2054-11-26'
+    text: "I will turn 60 and I want to run a marathon on this day!"
+
+
+
+
+  - date: '2060-09-04'
+    text: "If I continue to live in India, my lifespan reduces considerably and I'll die somewhere around <u><a href='https://www.worlddata.info/life-expectancy.php' target='_blank'>66 years</a></u>"
+
+
+
+
+  - date: '2068-04-21'
+    text: "I will die somewhere around the age of 73 based on the average <u><a href='https://www.who.int/data/gho/data/themes/mortality-and-global-health-estimates/ghe-life-expectancy-and-healthy-life-expectancy' target='_blank'>global life expectancy.</a></u>"

@@ -37,25 +37,56 @@
 
   {{- $timelineData := index .Site.Data "timeline" }}
   {{- $totalYears := index $timelineData "totalYears" }}
+  {{- $LifeSpan := index $timelineData "GlobalLifeSpan" }}
   {{- $boxesPerRow := 26 }} <!-- Number of boxes per row -->
   {{- with index $timelineData "dateOfBirth" }}
   {{- $dateOfBirth := . }}
   {{- $dob := (time $dateOfBirth) }}
+  {{- $today := now }}
+  {{- $unixDob := $dob.Unix }}
+  {{- $unixToday := $today.Unix }}
+  {{- $secondsLived := sub $unixToday $unixDob }}
+  {{- $weeksLived := div $secondsLived 604800 | int }}
+  {{- $totalWeeks := mul $LifeSpan 52.1755 }}
+  {{ $percentage := div (mul $weeksLived 100) $totalWeeks | int }}
+
+  
+  <div class="progress-bar-timeline">
+    <div class="progress-timeline" style="width: {{ $percentage }}%;"></div>
+    <span class="progress-text-timeline">{{ $percentage }}% of Life lived</span>
+    <p style="font-size: 12px; text-align: right;">Global Life Span: {{$LifeSpan}}</p>
+
+  </div>
+  <p><br></p> <!-- Add <br> for the line break -->
+
+  <style>
+    ul.no-bullet {
+      list-style-type: none;
+    }
+  </style>
+  
+  <ul class="no-bullet">
+    <li><span style="color: green;">🟩</span> - Lived</li>
+    <li><span style="color: gray;">🔳</span> - To Live</li>
+    <li><span style="color: blue;">🟦</span> - Milestone<br></li>
+    <li><br></li>
+
+  </ul>
+  
+  
+
+
+
   <div class="timeline-container">
     <div class="timeline">
-      <!-- Calculate the number of weeks lived based on date of birth -->
-      {{- $today := now }}
-      {{- $unixDob := $dob.Unix }}
-      {{- $unixToday := $today.Unix }}
-      {{- $secondsLived := sub $unixToday $unixDob }}
-      {{- $weeksLived := div $secondsLived 604800 | int }}
+      
 
 
-      <!-- Display the number of weeks lived and date of birth -->
-      <div class="timeline-info">
-        <p>Weeks Lived: {{ $weeksLived }}</p>
-        <p>Date of Birth: {{ dateFormat "January 2, 2006" $dob }}</p>
-      </div>
+
+
+
+  
+  
       {{- $totalRows := mul $totalYears 2 }} <!-- Total number of rows for all years -->
       {{- $eventData := index $timelineData "events" }}
       {{- range $rowIndex := seq 1 $totalRows }}
