@@ -3,8 +3,14 @@ import pygal.maps
 import yaml
 import os
 
+# Get the root directory of your project
+base_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+
+# Construct file paths using the base directory
+yaml_file_path = os.path.join(base_directory, "data", "countries.yaml")
+svg_file_path = os.path.join(base_directory, "static", "images", "worldmap_base.svg")
+
 # Load the countries from your YAML file
-yaml_file_path = os.path.join(os.path.dirname(__file__), 'data', 'countries.yaml')
 with open(yaml_file_path, "r") as yaml_file:
     countries_yaml = yaml.load(yaml_file, Loader=yaml.FullLoader)
 
@@ -13,7 +19,6 @@ worldmap = pygal.maps.world.World(width=300, height=100)  # Set the width and he
 worldmap.title = 'My Traveled Countries'
 
 # Parse the SVG file
-svg_file_path = os.path.join(os.path.dirname(__file__), 'static', 'images', 'worldmap_base.svg')
 tree = ET.parse(svg_file_path)
 root = tree.getroot()
 
@@ -29,6 +34,8 @@ for path in paths:
     else:
         print(f"Country code not found in YAML: {country_code}")
 
+# Full path to the updated SVG file
+output_svg_file_path = os.path.join(base_directory, "static", "images", "worldmap.svg")
+
 # Save the updated SVG file
-output_svg_file_path = os.path.join(os.path.dirname(__file__), 'static', 'images', 'worldmap.svg')
 tree.write(output_svg_file_path, encoding="utf-8")
