@@ -22,7 +22,7 @@ tree = ET.parse("static/images/worldmap_base.svg")
 root = tree.getroot()
 
 # Iterate through the SVG paths and update their fill attribute
-for path in root.findall('.//svg:path'):
+for path in root.iter('{http://www.w3.org/2000/svg"}path'):
     country_code = path.get('id')
     if country_code in countries_yaml:
         print(country_code)
