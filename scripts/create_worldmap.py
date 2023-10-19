@@ -1,36 +1,34 @@
 import xml.etree.ElementTree as ET
 import pygal.maps
 import yaml
-
-
+import os
 
 # Load the countries from your YAML file
-#with open(r'C:\Users\rishi\Google Drive\GitHub\personal-blog\data\countries.yaml') as yaml_file:
-with open("data/countries.yaml", "r") as yaml_file:
+yaml_file_path = os.path.join(os.path.dirname(__file__), 'data', 'countries.yaml')
+with open(yaml_file_path, "r") as yaml_file:
     countries_yaml = yaml.load(yaml_file, Loader=yaml.FullLoader)
-
 
 # Create a world map
 worldmap = pygal.maps.world.World(width=300, height=100)  # Set the width and height here
 worldmap.title = 'My Traveled Countries'
 
 # Parse the SVG file
-#tree = ET.parse(r'C:\Users\rishi\Google Drive\GitHub\personal-blog\static\images\worldmap_base.svg')
-tree = ET.parse("static/images/worldmap_base.svg")
-
-
+svg_file_path = os.path.join(os.path.dirname(__file__), 'static', 'images', 'worldmap_base.svg')
+tree = ET.parse(svg_file_path)
 root = tree.getroot()
 
-# Iterate through the SVG paths and update their fill attribute
-for path in root.iter('{http://www.w3.org/2000/svg"}path'):
+# Find all SVG path elements in the SVG file
+paths = root.findall(".//{http://www.w3.org/2000/svg}path")
+
+# Iterate through the found path elements
+for path in paths:
     country_code = path.get('id')
     if country_code in countries_yaml:
-        print(country_code)
-        path.set('fill', 'orange')  # You can change the fill color to orange or any color you prefer
+        print(f"Found country code in YAML: {country_code}")
+        path.set('fill', 'orange')
+    else:
+        print(f"Country code not found in YAML: {country_code}")
 
 # Save the updated SVG file
-#tree.write(r'C:\Users\rishi\Google Drive\GitHub\personal-blog\static\images\worldmap.svg', encoding="utf-8")
-tree.write("static/images/worldmap.svg", encoding="utf-8")
-
-
-
+output_svg_file_path = os.path.join(os.path.dirname(__file__), 'static', 'images', 'worldmap.svg')
+tree.write(output_svg_file_path, encoding="utf-8")
