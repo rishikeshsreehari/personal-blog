@@ -10,4 +10,4 @@ ShowReadingTime: false
 ---
 
 
-![Books read per year](/images/worldmap.svg)
+![World Map](/images/worldmap.svg)
