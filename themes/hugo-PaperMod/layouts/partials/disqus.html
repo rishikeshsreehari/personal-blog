@@ -1,18 +1,15 @@
 
 
 {{ if not .Params.disable_comments }}
-  <div id="disqus_thread"></div>
-  <script>
-    var disqus_config = function () {
-        this.page.url = '{{ .Permalink }}';
-        this.page.identifier = '{{ .Permalink }}';
-    };
-    (function() {  // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://rishikeshs.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="b28207a0-824c-40e1-9b5b-cf9e8ef4b6ef"
+  data-page-id="{{ .File.UniqueID }}" data-page-url="{{ .Permalink }}"
+        data-page-title="{{ .Title }}"></div>
+<script async defer src="/js/cusdis.es.js"></script>
+
+
 {{ end }}
+
+

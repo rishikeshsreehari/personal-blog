@@ -38,6 +38,7 @@ The following list lays out the plan I have for this blog in the long run:
 - Build a guestbook section for the blog where users can post testimonials.
 - Implement automatic versioning during deployment.
 - Implement grammar and broken link check during deployment.
+- Add a family tree in About page
 
 ## Known Issues
 

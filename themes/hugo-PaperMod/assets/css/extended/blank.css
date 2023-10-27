@@ -324,3 +324,35 @@ white-space: nowrap; /* Prevent text from wrapping */
 }
 
 
+.text-sm bg-gray-200 p-2 px-4 font-bold dark:bg-transparent dark:border dark:border-gray-100 {
+-webkit-text-size-adjust: 100%;
+--rem: 16;
+tab-size: 4;
+color-scheme: light;
+box-sizing: border-box;
+border-width: 0;
+border-style: solid;
+border-color: #073185;
+--tw-shadow: 0 0 #0000;
+--tw-ring-inset: var(--tw-empty, );
+--tw-ring-offset-width: 0px;
+--tw-ring-offset-color: #fff;
+--tw-ring-color: rgba(59, 130, 246, 0.5);
+--tw-ring-offset-shadow: 0 0 #0000;
+--tw-ring-shadow: 0 0 #0000;
+font-family: inherit;
+margin: 0;
+text-transform: none;
+-webkit-appearance: button;
+background-image: none;
+cursor: pointer;
+color: inherit;
+--tw-bg-opacity: 1;
+background-color: rgba(229,231,235,var(--tw-bg-opacity));
+font-weight: 1000;
+font-size: .875rem;
+line-height: 1.25rem;
+padding: .5rem;
+padding-left: 1rem;
+padding-right: 1rem;
+}
