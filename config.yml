@@ -152,34 +152,24 @@ menu:
       name: Archive
       url: /archives/
       weight: 20
-    - identifier: example
-      name: Art
-      url: https://example.org
-      weight: 30
     - identifier: tagss
       name: Contact
-      url: /archivfe/
-      weight: 40
+      url: /archive/
+      weight: 30
     - identifier: search
       name: Search
       url: /search/
-      weight: 50
-
+      weight: 40
     - identifier: library
       name: Library
       url: /library/
-      weight: 60
-     
-
+      weight: 50
 
 outputs:
   home:
     - HTML
     - RSS
     - JSON # is necessary
-
-
-
 
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
