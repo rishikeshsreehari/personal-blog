@@ -2,17 +2,19 @@
 
 {{ if not .Params.disable_comments }}
 
-<form name="contact" netlify>
-  <p>
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+<script defer src="https://chirpy.dev/bootstrapper.js" data-chirpy-domain="jade-sable-e0c36b.netlify.app"></script>
+
+<!--
+  The widget follows "system" settings for light/dark mode
+  by default, but you can manually select "light" or "dark"
+  mode for a consistent display
+-->
+<div
+  data-chirpy-theme="system"
+  data-chirpy-comment="true"
+  id="chirpy-comment"
+></div>
+
 
 {{ end }}
 
