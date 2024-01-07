@@ -358,3 +358,39 @@ padding-right: 1rem;
 }
 
 
+
+
+
+/* Comments for the comment section */
+
+
+.comments-section {
+  margin-top: 30px;
+}
+
+.comment {
+  
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.comment p {
+  margin: 5px 0;
+}
+
+.comment strong {
+  font-weight: bold;
+}
+
+.avatar {
+  background-color: #ccc;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}

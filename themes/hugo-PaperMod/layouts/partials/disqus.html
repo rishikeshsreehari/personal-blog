@@ -2,16 +2,39 @@
 
 {{ if not .Params.disable_comments }}
 
+
+
+
+<h1>Comments</h1>
+
+<!-- Encapsulate comments section with a class -->
+<div class="comments-section">
+    {{ range .Site.Data.comments }}
+        <div class="comment">
+          <p><div class="avatar"><img src="https://api.dicebear.com/7.x/pixel-art/svg?seed={{ .Name }}+{{ .Date }}" alt="avatar"/></div>
+            <strong>{{ .Name }}</strong> on {{ .Date }}</p>
+            <p><strong></strong> {{ .Comment }}</p>
+        </div>
+    {{ end }}
+</div>
+
+
 <form name="contact" netlify>
   <input type="hidden" name="url" value= {{ .Params.url }} >
   <p>
+    
+
+    
     <label>Name <input type="text" name="name" /></label>
   </p>
   <p>
     <label>Email <input type="email" name="email" /></label>
   </p>
+  
+  <label>Comment <textarea name="message"></textarea></label>
+
   <p>
-    <button type="submit">Send</button>
+    <button type="submit">Post Comment</button>
   </p>
 </form>
 
