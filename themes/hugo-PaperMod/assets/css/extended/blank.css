@@ -393,4 +393,16 @@ padding-right: 1rem;
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; /* Adjust as needed */
+}
+.comment-details {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.date {
+  font-size: smaller; /* Or adjust to your preferred smaller size */
+  margin-left: 5px; /* Add some space between name and date */
 }

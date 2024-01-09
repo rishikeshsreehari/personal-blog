@@ -7,15 +7,18 @@
 
 <h1>Comments</h1>
 
-<!-- Encapsulate comments section with a class -->
 <div class="comments-section">
-    {{ range .Site.Data.comments }}
-        <div class="comment">
-          <p><div class="avatar"><img src="https://api.dicebear.com/7.x/pixel-art/svg?seed={{ .Name }}+{{ .Date }}" alt="avatar"/></div>
-            <strong>{{ .Name }}</strong> on {{ .Date }}</p>
-            <p><strong></strong> {{ .Comment }}</p>
-        </div>
-    {{ end }}
+  {{ range .Site.Data.comments }}
+      <div class="comment">
+          <div class="avatar">
+              <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}+{{ .Date }}" alt="avatar">
+          </div>
+          <div class="comment-details">
+              <strong>{{ .Name }}</strong><span class="date">| {{ .Date }}</span>
+              <p>{{ .Comment }}</p>
+          </div>
+      </div>
+  {{ end }}
 </div>
 
 
