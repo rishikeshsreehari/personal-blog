@@ -3,7 +3,7 @@ title: 'Curator Economy: Why Human Curation matters'
 author: Rishikesh
 date: 2021-07-18T17:16:24+00:00
 excerpt: This article looks at the concept of curator economy, why it is important and its present state in the age of information overload.
-url: curator-economy
+url: /curator-economy/
 featured_image: /wp-content/uploads/2021/07/curator-economy.jpg
 ssb_old_counts:
   - 'a:5:{s:7:"twitter";i:0;s:9:"pinterest";i:0;s:7:"fbshare";i:0;s:6:"reddit";i:0;s:6:"tumblr";N;}'

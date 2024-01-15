@@ -14,7 +14,7 @@
               <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}+{{ .Date }}" alt="avatar">
           </div>
           <div class="comment-details">
-              <strong>{{ .Name }}</strong><span class="date">| {{ .Date }}</span>
+              <strong class="comment-author-name">{{ .Name }}</strong><span class="date">on {{ .Date }}</span>
               <p>{{ .Comment }}</p>
           </div>
       </div>
@@ -22,24 +22,28 @@
 </div>
 
 
-<form name="contact" netlify>
-  <input type="hidden" name="url" value= {{ .Params.url }} >
-  <p>
-    
 
-    
-    <label>Name <input type="text" name="name" /></label>
-  </p>
-  <p>
-    <label>Email <input type="email" name="email" /></label>
-  </p>
-  
-  <label>Comment <textarea name="message"></textarea></label>
-
-  <p>
-    <button type="submit">Post Comment</button>
-  </p>
+<form 
+  id="commentForm" 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbydvUUUzx6eD8OWmQRo-WDCaes0Y-qHi9cWspwS_02LZwJ2vuScnDdN01_FyupNdDaTXA/exec"
+>
+  <div class="comment-form">
+    <input type="hidden" name="timestamp" id="timestamp" value="" />
+    <input type="hidden" name="url" value="{{ .Params.url }}" />
+    <p>
+      <label>Name <input type="text" name="name" required /></label>
+    </p>
+    <p>
+      <label>Email <input type="email" name="email" /></label>
+    </p>
+    <label>Comment <textarea name="message" required></textarea></label>
+    <p>
+      <button type="submit comment">Post Comment</button>
+    </p>
+  </div>
 </form>
+
 
 
 

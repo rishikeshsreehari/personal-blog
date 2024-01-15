@@ -370,7 +370,7 @@ padding-right: 1rem;
 
 .comment {
   
-  border: 1px solid #ccc;
+  border: 0.5px ridge #717171;
   padding: 10px;
   margin-bottom: 15px;
 }
@@ -403,6 +403,45 @@ padding-right: 1rem;
 }
 
 .date {
-  font-size: smaller; /* Or adjust to your preferred smaller size */
+  font-size: 12px; /* Or adjust to your preferred smaller size */
   margin-left: 5px; /* Add some space between name and date */
+}
+
+
+
+/* Style for the comment form container */
+/* Style for the comment form container */
+
+
+.comment-form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.comment-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+.comment-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
 }
