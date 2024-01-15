@@ -8,7 +8,7 @@
 <h1>Comments</h1>
 
 <div class="comments-section">
-  {{ range .Site.Data.comments }}
+  {{ range .Site.Data.comments.comments }}
       <div class="comment">
           <div class="avatar">
               <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}+{{ .Date }}" alt="avatar">
@@ -34,7 +34,9 @@
   }
 </style>
 
-<h2>Leave a Comment</h2>
+<h5>Leave a comment using the form below. All comments are held for moderation and will only appear after they have been reviewed and approved. If you wish to stay in touch with me, feel free to fill in the email field or leave it blank. This is optional and solely for contact purposes; rest assured, your email address will not be published or shared with anyone. These comments are <a href= "https://rishikeshs.com/static-comments" style = "text-decoration: underline;">static</a>.
+</h5>
+<br>
 
 <form 
   id="commentForm" 
@@ -47,11 +49,11 @@
     <div class="form-row">
       <div class="column">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+        <input type="text" id="name" name="name" required placeholder="Tibetan Yeti"/>
       </div>
       <div class="column">
-        <label for="email">Email (optional)</label>
-        <input type="email" id="email" name="email" />
+        <label for="email">Email [optional]</label>
+        <input type="email" id="email" name="email" placeholder="tibetanyeti@example.com" />
       </div>
     </div>
 
@@ -62,7 +64,7 @@
 
     <div class="form-row">
       <label for="message">Comment</label>
-      <textarea id="message" name="message" required></textarea>
+      <textarea id="message" name="message" required placeholder="Leave a message for the Yeti, they might be reading!"></textarea>
     </div>
    
     <div class="form-row">
@@ -70,9 +72,7 @@
     </div>
   </div>
 </form>
-<h6>Leave a comment using the form below. Comments are moderated and will be published only if they add to the discussion in a constructive way. Fill the email field if you wish to contact me or leave it blank.</h6>
 
-All comments are held for moderation and will be published only after approval. Emails are optional and collected for contact purposes only. No email is published
 
 
 {{ end }}

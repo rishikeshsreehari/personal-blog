@@ -1,0 +1,106 @@
+
+/* CSS for comments */
+
+.comments-section {
+    margin-top: 30px;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top of the container */
+    border: 0.5px ridge #717171;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .comment p {
+    margin: 5px 0;
+  }
+  
+  .comment strong {
+    font-weight: bold;
+  }
+  
+  .avatar {
+    background-color: #ccc;
+    color: #fff;
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+    flex-shrink: 0; /* Prevents shrinking */
+    flex-grow: 0; /* Prevents growing */
+    flex-basis: 50px; /* Fixed base size */
+  }
+  
+  .comment-details {
+    flex-grow: 1;
+    display: block;
+  }
+  
+  .date {
+    font-size: 12px; /* Or adjust to your preferred smaller size */
+    margin-left: 5px; /* Add some space between name and date */
+  }
+  
+  
+  
+  
+  /* CSS for comment form */
+  
+  .comment-form {
+    width: 100%;
+    margin: auto;
+    padding: 1px;
+    box-sizing: border-box;
+  }
+  
+  .form-row {
+    margin-bottom: 15px;
+  }
+  
+  .form-row label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .form-row input,
+  .form-row textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #717171;
+  }
+  
+  .column {
+    width: calc(50% - 1%); /* Set the width to 50%, accounting for a 1% gap on each side */
+    float: left;
+    margin-right: 2%; /* Add margin to create the gap */
+  }
+  
+  .column:last-child {
+    margin-right: 0; /* Remove margin on the last column */
+  }
+  
+  .comment-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .comment-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  

@@ -19,6 +19,7 @@ categories:
   - Project
   - Writing
 weight: 4
+pid : 5
 ---
 <p class="has-drop-cap">
   Sometime in mid-2021, I came to know about the idea of the <a href="https://rishikeshs.com/curator-economy/" title="Curator Economy: Why Human Curation matters">curator economy</a> and I realised its immense potential in an era where we are struggling with <a href="https://rishikeshs.com/attention-diet/" title="How to Start an Attention Diet?">our attention span</a>. I wanted to create and contribute something to the curator economy space and started a newsletter called <a href="https://rishikesh.substack.com/" target="_blank" rel="noreferrer noopener" title="10+1 Things">10+1 Things</a>, a curated newsletter sharing 11 interesting things catered for generalists. It started as a personal project to keep me on track and commit to a routine, but fast-forward to 2022, the newsletter has close to 2000 subscribers with excellent engagement. As the newsletter started to grow and gain some attention, I&#8217;ve been getting constant queries from people around the world inquiring about how I curate my newsletter. I thought of describing my process in this blog post so that it can beneficial to others who want to pursue something similar.
