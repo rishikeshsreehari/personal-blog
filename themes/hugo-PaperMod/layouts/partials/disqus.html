@@ -35,37 +35,43 @@
 </style>
 
 
+
 <form 
   id="commentForm" 
   method="POST" 
-  action="https://script.google.com/macros/s/AKfycbybzIVhZ6DyJQD8nl0suisVDVly07c87524X84iORIBdkekzQ68ugrCG8TrTB5HnJdtuQ/exec"
-
-  
->
+  action="https://script.google.com/macros/s/AKfycbybzIVhZ6DyJQD8nl0suisVDVly07c87524X84iORIBdkekzQ68ugrCG8TrTB5HnJdtuQ/exec">
   <div class="comment-form">
     <input type="hidden" name="timestamp" id="timestamp" value="" />
     <input type="hidden" name="url" value="{{ .Params.url }}" />
-    <p>
-      <label>Name <input type="text" name="name" required /></label>
-    </p>
-    <p>
-      <label>Email <input type="email" name="email" /></label>
-    </p>
+
+    <div class="form-row">
+      <div class="column">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="column">
+        <label for="email">Email (optional)</label>
+        <input type="email" id="email" name="email" />
+      </div>
+    </div>
+
     <!-- Honeypot field -->
     <div style="display:none;">
       <label>If you're a human, leave this field blank!<input type="text" name="honeypot" /></label>
     </div>
-    <label>Comment <textarea name="message" required></textarea></label>
-    <p>
-      <button type="submit comment">Post Comment</button>
-    </p>
+
+    <div class="form-row">
+      <label for="message">Comment</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+
+    <div class="form-row">
+      <button type="submit comment">Submit Comment</button>
+    </div>
   </div>
 </form>
-
-
+<h6>Leave a comment using the form below. Comments are moderated and will be published only if they add to the discussion in a constructive way. Fill the email field if you wish to contact me or leave it blank.</h6>
 
 
 
 {{ end }}
-
-

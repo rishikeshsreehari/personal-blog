@@ -414,7 +414,7 @@ padding-right: 1rem;
 
 
 .comment-form {
-  max-width: 400px;
+  max-width: 100%;
   margin: auto;
   padding: 20px;
   box-sizing: border-box;
@@ -444,4 +444,59 @@ padding-right: 1rem;
 
 .comment-form button:hover {
   background-color: #0056b3;
+}
+
+/* Style for the comment form container */
+/* Style for the comment form container */
+
+.comment-form {
+  width: 100%;
+  margin: auto;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+.form-row {
+  margin-bottom: 16px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+.column {
+  width: calc(50% - 1%); /* Set the width to 50%, accounting for a 1% gap on each side */
+  float: left;
+  margin-right: 2%; /* Add margin to create the gap */
+}
+
+.column:last-child {
+  margin-right: 0; /* Remove margin on the last column */
+}
+
+.comment-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
