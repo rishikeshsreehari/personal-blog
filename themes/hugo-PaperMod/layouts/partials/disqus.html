@@ -22,11 +22,25 @@
 </div>
 
 
+<style>
+  .ohnohoney{
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 0;
+      width: 0;
+      z-index: -1;
+  }
+</style>
+
 
 <form 
   id="commentForm" 
   method="POST" 
-  action="https://script.google.com/macros/s/AKfycbydvUUUzx6eD8OWmQRo-WDCaes0Y-qHi9cWspwS_02LZwJ2vuScnDdN01_FyupNdDaTXA/exec"
+  action="https://script.google.com/macros/s/AKfycbybzIVhZ6DyJQD8nl0suisVDVly07c87524X84iORIBdkekzQ68ugrCG8TrTB5HnJdtuQ/exec"
+
+  
 >
   <div class="comment-form">
     <input type="hidden" name="timestamp" id="timestamp" value="" />
@@ -37,6 +51,10 @@
     <p>
       <label>Email <input type="email" name="email" /></label>
     </p>
+    <!-- Honeypot field -->
+    <div style="display:none;">
+      <label>If you're a human, leave this field blank!<input type="text" name="honeypot" /></label>
+    </div>
     <label>Comment <textarea name="message" required></textarea></label>
     <p>
       <button type="submit comment">Post Comment</button>
