@@ -155,7 +155,7 @@ menu:
       weight: 20
     - identifier: tagss
       name: Contact
-      url: /archive/
+      url: /contact/
       weight: 30
     - identifier: search
       name: Search
