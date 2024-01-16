@@ -20,7 +20,7 @@
       {{ range $comments }} <!-- Iterate over the comments -->
         <div class="comment">
           <div class="avatar">
-            <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}+{{ .Date }}" alt="avatar">
+            <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}" alt="avatar">
           </div>
           <div class="comment-details">
             <strong class="comment-author-name">{{ .Name }}</strong><span class="date">on {{ .Date }}</span>
