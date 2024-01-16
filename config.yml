@@ -32,6 +32,7 @@ params:
   dataDir: "data"
   books_file: data/books.yaml
   staticDir: "static"
+  ignoreErrors: ["error-remote-getjson"]
   
  
 
