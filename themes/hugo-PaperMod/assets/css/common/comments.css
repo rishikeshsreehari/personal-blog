@@ -22,18 +22,15 @@
   }
   
   .avatar {
-    background-color: #ccc;
-    color: #fff;
-    width: 50px; /* Fixed width */
-    height: 50px; /* Fixed height */
-    border-radius: 60%;
+    
+    
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
     margin-right: 10px;
     flex-shrink: 0; /* Prevents shrinking */
-    flex-grow: 0; /* Prevents growing */
+   
     flex-basis: 50px; /* Fixed base size */
   }
 
