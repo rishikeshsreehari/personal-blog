@@ -34,14 +34,6 @@
     flex-basis: 50px; /* Fixed base size */
   }
 
-  /* Media query for smaller screens, e.g., mobile devices */
-@media (max-width: 768px) {
-  .avatar {
-    width: 40px; /* Adjust the width for smaller screens */
-    height: 40px; /* Adjust the height for smaller screens */
-    flex-basis: 40px; /* Adjust the base size for smaller screens */
-  }
-}
   
   .comment-details {
     flex-grow: 1;
