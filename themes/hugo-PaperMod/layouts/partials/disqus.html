@@ -5,36 +5,38 @@
 
 
 
+
+
 <h1>Comments</h1>
 
 <div class="comments-section">
-  {{ $url := .Params.url }} <!-- Retrieve the url parameter -->
-  {{ if $url }}
-    {{ $url = trim $url "/" }} <!-- Remove leading and trailing slashes if any -->
-    {{ $commentsFile := print $url ".json" }} <!-- Construct the file name based on the url parameter -->
-    {{ $commentsPath := print "data/comments/" $commentsFile }} <!-- Construct the full path -->
-    {{ if fileExists $commentsPath }} <!-- Check if the JSON file exists -->
-      {{ $comments := getJSON $commentsPath | default (slice) }} <!-- Load the comments or set default empty slice if error occurs -->
-      {{ if gt (len $comments) 0 }} <!-- Check if comments are not empty -->
-        {{ range $comments }} <!-- Iterate over the comments directly -->
-            <div class="comment">
-                <div class="avatar">
-                    <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}+{{ .Date }}" alt="avatar">
-                </div>
-                <div class="comment-details">
-                    <strong class="comment-author-name">{{ .Name }}</strong><span class="date">on {{ .Date }}</span>
-                    <p>{{ .Comment }}</p>
-                </div>
-            </div>
-        {{ end }}
-      {{ else }}
-        <p>No comments yet.</p>
+  {{ $url := .Params.url }} <!-- Get the permalink (URL) of the current page -->
+  {{ $url = trim $url "/" }} 
+  {{ $commentsPath := "data/comments.json" }} <!-- Set the path to the comments JSON file -->
+  {{ $commentsData := getJSON $commentsPath | default (dict) }} <!-- Load the comments data or set default empty dictionary if error occurs -->
+  {{ with index $commentsData $url }} <!-- Retrieve comments for the current page -->
+    {{ $comments := . | default (slice) }} <!-- Assign comments data for the current page to $comments variable, using a default empty slice if error occurs -->
+    {{ if gt (len $comments) 0 }} <!-- Check if comments are not empty -->
+      {{ range $comments }} <!-- Iterate over the comments -->
+        <div class="comment">
+          <div class="avatar">
+            <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}+{{ .Date }}" alt="avatar">
+          </div>
+          <div class="comment-details">
+            <strong class="comment-author-name">{{ .Name }}</strong><span class="date">on {{ .Date }}</span>
+            <p>{{ .Comment }}</p>
+          </div>
+        </div>
       {{ end }}
     {{ else }}
       <p>No comments yet.</p>
     {{ end }}
+  {{ else }}
+    <p>No comments yet.</p>
   {{ end }}
 </div>
+
+
 <br>
 
 
