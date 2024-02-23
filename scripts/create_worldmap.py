@@ -31,6 +31,8 @@ for path in paths:
     if country_code in countries_yaml:
         print(f"Found country code in YAML: {country_code}")
         path.set('fill', 'orange')
+        path.set('stroke', 'black')  # Add black border
+        path.set('stroke-width', '0.4')  # Set the thickness of the border
     else:
         print(f"Country code not found in YAML: {country_code}")
 
