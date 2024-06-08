@@ -1,5 +1,0 @@
-# cloudflare-pages.yml
-
-build:
-  command: python scripts/count_books.py && python scripts/create_worldmap.py && python update_version.py && hugo
-  
