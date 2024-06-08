@@ -21,27 +21,19 @@ params:
   #env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Rishikesh Sreehari
   description: "ExampleSite description"
-  version: "10.8.0"
+  version: "1.1.14"
   keywords: [Blog, Portfolio, PaperMod]
   #author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  defaultTheme: dark # dark, light
   disableThemeToggle: true
   contentDir: "content"
   dataDir: "data"
   books_file: data/books.yaml
   staticDir: "static"
   ignoreErrors: ["error-remote-getjson"]
-  
- 
-
-
-
-
-  
-
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true

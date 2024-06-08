@@ -9,8 +9,12 @@
         | Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
-        |
-        <a href="/colophon/">Colophon</a>
+        
+    </span>
+    <br>
+    <span>
+        <a href="/colophon/">v{{ site.Data.version.Version }}</a> |
+        <a href="https://github.com/rishikeshsreehari/personal-blog/commit/{{ site.Data.version.Commit }}" rel="noopener noreferrer" target="_blank">{{ site.Data.version.Commit }}</a>
     </span>
 </footer>
 {{- end }}

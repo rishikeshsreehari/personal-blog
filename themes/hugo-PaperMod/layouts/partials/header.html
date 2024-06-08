@@ -100,7 +100,7 @@
                 {{- $separator := or $label_text (not site.Params.disableThemeToggle)}}
                 {{- with site.Home.AllTranslations }}
                 <ul class="lang-switch">
-                    {{- if $separator }}<li>|</li>{{ end }}
+                    {{- if $separator }}<li></li>{{ end }} {{- /* If multiple languages, add a '|' separator. */}}
                     {{- range . -}}
                     {{- if ne $lang .Lang }}
                     <li>
