@@ -1,7 +1,5 @@
-
 ---
 title: "Changelog"
-
 url: "/Changelog"
 summary: single
 type: page
