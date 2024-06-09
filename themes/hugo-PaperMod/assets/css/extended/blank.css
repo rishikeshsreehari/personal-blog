@@ -383,9 +383,56 @@ padding-left: 1rem;
 padding-right: 1rem;
 }
 
+/* CSS for Comments*/
+
+.ohnohoney {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 0;
+      width: 0;
+      z-index: -1;
+  }
+
+.comment {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+
+.highlight {
+      border-left: 5px solid #005d52; /* Reply comment border */
+      padding-left: 15px;
+      margin-left: 50px; /* Indent to indicate a reply */
+  }
+
+.comments-section .comment .avatar {
+      float: left;
+      margin-right: 10px;
+  }
+
+.comments-section .comment .comment-details {
+      overflow: hidden;
+  }
+
+.comments-section .comment .comment-author-name {
+      font-weight: bold;
+  }
+
+.comments-section .comment .date {
+      font-size: 0.9em;
+      color: #555;
+  }
 
 
-
-
-/* Comments for the comment section */
+.author-reply-label {
+    background-color: #005d52;
+    color: white;
+    font-size: 0.8em;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
 
