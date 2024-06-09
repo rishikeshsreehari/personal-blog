@@ -10,14 +10,14 @@
     {{ $comments := . | default (slice) }} <!-- Assign comments data for the current page to $comments variable, using a default empty slice if error occurs -->
     {{ if gt (len $comments) 0 }} <!-- Check if comments are not empty -->
       {{ range $comments }} <!-- Iterate over the comments -->
-        <div class="comment {{ if eq .Name "Rishikesh" }}highlight{{ end }}">
+        <div class="comment {{ if in .Comment "author-marker" }}highlight{{ end }}">
           <div class="avatar">
             <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}" alt="avatar">
           </div>
           <div class="comment-details">
             <strong class="comment-author-name">{{ .Name }}</strong><span class="date">on {{ .Date }}</span>
-            {{ if eq .Name "Rishikesh" }}<span class="author-reply-label">Reply</span>{{ end }}
-            <p>{{ .Comment }}</p>
+            {{ if in .Comment "author-marker" }}<span class="author-reply-label">Author Reply</span>{{ end }}
+            <p>{{ .Comment | safeHTML }}</p>
           </div>
         </div>
       {{ end }}
@@ -30,6 +30,8 @@
 </div>
 
 <br>
+
+
 
 <h5>Leave a comment using the form below. All comments are held for moderation and will only appear after they have been reviewed and approved. If you wish to stay in touch with me, feel free to fill in the email field or leave it blank. This is optional and solely for contact purposes; rest assured, your email address will not be published or shared with anyone. There are no reply notifications or editing of comments. These comments are <a href="https://rishikeshs.com/static-comments" style="text-decoration: underline;">static</a> and do not allow any backlinks.
 </h5>
