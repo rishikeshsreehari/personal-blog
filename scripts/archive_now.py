@@ -4,9 +4,9 @@ from datetime import datetime
 
 # Define paths
 now_page = "content/now.md"
-archive_dir = "content/then"
+archive_dir = "content/now-archive"
 archive_page = "content/then.md"
-hash_file = "content/then/now_hash.txt"
+hash_file = "content/now-archive/now_hash.txt"
 
 # Function to read file content
 def read_file(filepath):
