@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Project on Rishikesh Sreehari</title>
-    <link>http://localhost:1313/categories/project/</link>
+    <link>https://rishikeshs.pages.dev/categories/project/</link>
     <description>Recent content in Project on Rishikesh Sreehari</description>
     <image>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://rishikeshs.pages.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://rishikeshs.pages.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Jul 2022 23:44:03 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/project/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Jul 2022 23:44:03 +0000</lastBuildDate><atom:link href="https://rishikeshs.pages.dev/categories/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Curate my Newsletter</title>
-      <link>http://localhost:1313/how-i-curate-my-newsletter/</link>
+      <link>https://rishikeshs.pages.dev/how-i-curate-my-newsletter/</link>
       <pubDate>Tue, 19 Jul 2022 23:44:03 +0000</pubDate>
       
-      <guid>http://localhost:1313/how-i-curate-my-newsletter/</guid>
+      <guid>https://rishikeshs.pages.dev/how-i-curate-my-newsletter/</guid>
       <description>The Structure Before I start explaining my process, it is important to discuss the structure of my newsletter. I’ve structured my newsletter in such a way that it explores some key areas/topics that I’m exploring in my life and during the week. Every edition of my newsletter follows this structure (it has evolved a bit over time) as described below:
 ✍️An article on my blog: The first link is generally a blog post on this blog.</description>
     </item>
     
     <item>
       <title>What I learnt from my  first 100 Email Subscribers on Substack</title>
-      <link>http://localhost:1313/first-100-email-subscribers/</link>
+      <link>https://rishikeshs.pages.dev/first-100-email-subscribers/</link>
       <pubDate>Sun, 08 Aug 2021 11:17:58 +0000</pubDate>
       
-      <guid>http://localhost:1313/first-100-email-subscribers/</guid>
+      <guid>https://rishikeshs.pages.dev/first-100-email-subscribers/</guid>
       <description>Just Start! I created the first logo using some random font from the internet!
 I have always struggled to start. Being a person who cares a lot about design and aesthetics, I usually spend a crazy amount of time tweaking things to launch the perfect product. When I started 10+1 Things, I decided that I’m gonna start anyway irrespective of the design or clarity. If you check the initial few issues in the archive, you can see that the style was different and not uniform.</description>
     </item>
     
     <item>
       <title>How I built my Digital Garden using Hugo</title>
-      <link>http://localhost:1313/build-a-digital-garden/</link>
+      <link>https://rishikeshs.pages.dev/build-a-digital-garden/</link>
       <pubDate>Fri, 09 Jul 2021 21:44:03 +0000</pubDate>
       
-      <guid>http://localhost:1313/build-a-digital-garden/</guid>
+      <guid>https://rishikeshs.pages.dev/build-a-digital-garden/</guid>
       <description>Read more about the History and Ethos of Digital gardens.
 Features Publication Dates are not important to Digital Gardeners. Posts are connected via references or common themes. There are no featured posts or chronological list of items. Readers can enter through any note, follow any trail and exit as they wish. Digital Gardens are constantly evolving over time and are never complete. There is no pressure to publish a perfect post in digital gardens as notes grow over time just like plants in a garden.</description>
     </item>

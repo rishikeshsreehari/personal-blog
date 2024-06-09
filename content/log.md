@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-url: "/changelog"
+url: "/log"
 summary: single
 type: page
 disable_comments: true
