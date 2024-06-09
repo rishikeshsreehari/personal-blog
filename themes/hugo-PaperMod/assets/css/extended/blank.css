@@ -98,85 +98,111 @@ td:nth-child(3) {
   }
 }
 
+/* CSS of Tiles on Now page*/
+
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the minimum width (250px) as needed */
+  grid-template-columns: repeat(3, 1fr); /* Default to three columns */
   grid-gap: 20px;
   margin-bottom: 10px;
 }
 
-  
-  .stats-tile {
+.stats-tile {
   background-color: #DADADB;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px; /* Reduced padding */
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .stats-tile h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  height: auto; /* Allow height to adjust based on content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stats-tile h2 {
+  font-size: 20px; /* Adjusted font size */
+  margin-bottom: 5px; /* Adjusted margin */
   color: #333;
-  }
-  
-  .stats-tile p {
-  font-size: 48px;
+}
+
+.stats-tile p {
+  font-size: 24px; /* Adjusted font size */
   font-weight: bold;
-  margin: 0;
+  margin: 5px 0; /* Adjusted margin */
   color: #333;
-  }
-  .stats-tile:hover {
+}
+
+.stats-tile:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transform: translateY(-5px);
   transition: all 0.3s ease-in-out;
-  }
-  
-  .stats-tile:hover h3, .stats-tile:hover p {
+}
+
+.stats-tile:hover h2, .stats-tile:hover p {
   color: #0080ff;
-  }
-  
+}
 
-  .now-tile-desc {
-    font-size: 11px;
-    font-weight: normal;
-  }
-  
+.now-tile-desc {
+  font-size: 11px;
+  font-weight: normal;
+}
 
-
-/* Add this to your CSS file */
 .progress {
-width: 100%;
-height: 20px;
-background-color: #ccc; /* Background color of the progress bar container */
+  width: 100%;
+  height: 20px; /* Reduced height */
+  background-color: #ccc; /* Background color of the progress bar container */
+  border-radius: 5px; /* Added border-radius for better appearance */
+  overflow: hidden; /* Ensure content stays within the container */
+  margin-top: 10px; /* Add some space above the progress bar */
 }
 
 .progress-bar {
-height: 100%;
-background-color: #4CAF50; /* Color of the filled progress bar */
-}
-
-
-/* Add this to your CSS file */
-.progress-bar {
-/* Existing styles for the progress bar */
-position: relative;
-text-align: center;
-
+  height: 100%;
+  background-color: #4CAF50; /* Color of the filled progress bar */
+  position: relative;
+  text-align: center;
+  border-radius: 5px; /* Match the border radius with the container */
 }
 
 .progress-text {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: white; /* Customize the text color */
-white-space: nowrap; /* Prevent text from wrapping */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* Customize the text color */
+  white-space: nowrap; /* Prevent text from wrapping */
+  font-size: 0.8em; /* Adjust the font size of the progress text */
+  z-index: 1; /* Ensure text is on top */
+}
 
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr; /* One column layout on small screens */
+  }
+
+  .stats-tile {
+    padding: 5px; /* Further reduce padding */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .stats-tile h2 {
+    font-size: 16px; /* Reduce font size for mobile */
+  }
+
+  .stats-tile p {
+    font-size: 18px; /* Reduce font size for mobile */
+  }
+
+  .progress {
+    height: 15px; /* Reduce height of the progress bar for mobile */
+  }
 }
 
 
+
+/* Timeline CSS */
 
 .timeline-container {
   width: 100%;

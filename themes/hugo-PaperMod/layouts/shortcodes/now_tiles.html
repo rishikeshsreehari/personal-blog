@@ -1,0 +1,63 @@
+{{ $goals := site.Data.goals }}
+
+<div class="stats-grid">
+  <div class="stats-tile">
+    <h2>🏃 Running</h2>
+    <p>{{ $run := index .Site.Data.my_data 0 "Run" }}{{ $run }} km</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: {{ math.Floor (div (mul $run 100) $goals.run) }}%;">
+        <span class="progress-text">{{ math.Floor (div (mul $run 100) $goals.run) }}%</span>
+      </div>
+    </div>
+    <p style="font-size: 12px; text-align: right;">Goal: {{ $goals.run }} km</p>
+  </div>
+  
+  <div class="stats-tile">
+    <h2>🚴 Cycling</h2>
+    <p>{{ $ride := index .Site.Data.my_data 0 "Ride" }}{{ $ride }} km</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: {{ math.Floor (div (mul $ride 100) $goals.ride) }}%;">
+        <span class="progress-text">{{ math.Floor (div (mul $ride 100) $goals.ride) }}%</span>
+      </div>
+    </div>
+    <p style="font-size: 12px; text-align: right;">Goal: {{ $goals.ride }} km</p>
+  </div>
+
+  <div class="stats-tile">
+    <h2>🏊 Swimming</h2>
+    <p>{{ $swim := index .Site.Data.my_data 0 "Swim" }}{{ $swim }} km</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: {{ math.Floor (div (mul $swim 100) $goals.swim) }}%;">
+        <span class="progress-text">{{ math.Floor (div (mul $swim 100) $goals.swim) }}%</span>
+      </div>
+    </div>
+    <p style="font-size: 12px; text-align: right;">Goal: {{ $goals.swim }} km</p>
+  </div>
+
+  <div class="stats-tile">
+    <h2>📰 Subscribers</h2>
+    <p>{{ $subscribers := index .Site.Data.my_data 0 "Subscribers" }}{{ $subscribers }}</p>
+    <div class="progress">
+      <div class="progress-bar" style="width: {{ math.Floor (div (mul $subscribers 100) $goals.subscribers) }}%;">
+        <span class="progress-text">{{ math.Floor (div (mul $subscribers 100) $goals.subscribers) }}%</span>
+      </div>
+    </div>
+    <p style="font-size: 12px; text-align: right;">Goal: {{ $goals.subscribers }}</p>
+  </div>
+
+  <div class="stats-tile">
+    <h2>📈 Portfolio Returns</h2>
+    <p>{{ index .Site.Data.my_data 0 "Portfolio Performance" }}</p>
+    <p style="font-size: 12px; text-align: center;">Target: {{ $goals.portfolio_performance }}</p>
+  </div>
+
+  <div class="stats-tile">
+    <h2>🧍 Body Fat %</h2>
+    <p>{{ index .Site.Data.my_data 0 "Weight" }} %</p>
+    <p style="font-size: 12px; text-align: center;">Target: <{{ $goals.weight }}%</p>
+  </div>
+</div>
+
+<div class="now-tile-desc">
+  <i>Unlike other information, this tile data is updated daily from my <a href="https://www.strava.com/athletes/67526871" target="_blank" style="text-decoration: underline;">Strava</a> feed and was last updated on {{ range .Site.Data.my_data }}{{ replace .Updated "?" " " }}{{ end }} IST. This experiment is a part of a personal dashboard I'm working on, inspired by the <a href="https://en.wikipedia.org/wiki/Quantified_self" target="_blank" style="text-decoration: underline;">Quantified Self concept.</a></i>
+</div>

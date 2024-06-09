@@ -20,19 +20,22 @@
     <loc>http://localhost:1313/ovarian-lottery/</loc>
     <lastmod>2021-10-02T22:54:04+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/blog-version-manifesto/</loc>
+    <lastmod>2024-06-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-06-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-06-09T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2022-08-16T20:39:24+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/single-purpose-devices/</loc>
     <lastmod>2022-08-16T20:39:24+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2022-08-16T20:39:24+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/productivity/</loc>
-    <lastmod>2022-08-16T20:39:24+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
     <lastmod>2022-08-16T20:39:24+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/72-hour-rule/</loc>
@@ -129,6 +132,8 @@
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
   </url><url>
+    <loc>http://localhost:1313/Changelog/</loc>
+  </url><url>
     <loc>http://localhost:1313/colophon/</loc>
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
@@ -146,6 +151,8 @@
     <loc>http://localhost:1313/search/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/then/</loc>
   </url><url>
     <loc>http://localhost:1313/travel/UAE/</loc>
   </url><url>

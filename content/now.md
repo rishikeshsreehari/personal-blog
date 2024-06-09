@@ -1,6 +1,6 @@
 ---
 title: "What I'm Doing Now"
-layout: "now"
+
 url: "/now"
 summary: single
 type: page
@@ -9,40 +9,52 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
+*Last updated on 09-06-2024, somewhere from [Dubai, United Arab Emirates (UAE)](https://what3words.com/siblings.twitches.scan)*
 
-Hell this is a test
+This is now a page and gives a glimpse on what I'm upto now.
+
+
+
+### What am I Working on?
+
+- I'm currently unemployed, so mostly [looking for a job](/hire) most of the time. 
+- Trying to revive [10+1 Things](https://rishikesh.substack.com/) a newsletter I started few years back.
+- Working on some [side projects](/projects) mainly focusing on [What Routine](https://whatroutine.com) and [Affliary](https://affiliary.com).
+
+
+
+### Now in Numbers
+
+{{< now_tiles >}}
+
 
 
 ### What Am I Reading?
 
-- 
-- 
-- 
+- [What Color Is Your Parachute?](https://www.amazon.com/What-Color-Your-Parachute-Meaningful/dp/1984861204/ref=sr_1_1?sr=8-1) by Richard N. Bolles
+- [Authority](https://geni.us/rsh-authority) by Nathan Barry
+- [Million Dollar Weekend](https://geni.us/rsh-million-dollar) by Noah Kagan
+- [Welcome to the Hyunam-dong Bookshop](https://geni.us/rsh-hyunam) by Hwang Bo-reum
 
+*I read 3-4 books in parallel most of the time on [my e-book reader](https://geni.us/rsh-kindle-paperwhite).*
 
-### What Am I Working On
-
-
-### Where Am I Now?
-
-### Workout Regime
-
-| Day of the Week | Workout               |
-|------|-----------------------|
-| Tuesday | Short Run in the morning and Strength Training(A) in the evening|       |
-| Wednesday   | Run   |
-| Thursday        | Cycling(<40 km) + Strenght(B) |
-| Friday          | Run + Swim |
-| Saturday        | Long Run + Strenght (B)             |
-| Sunday          | Cycling(~50km) + Swim     |
-| Monday          | Complete Rest   |
+### What Am I Learning?
+- Learning more about Energy Systems and Modelling from the lectures of [Tom Brown](https://nworbmot.org/teaching.html)
+- Trying to learn more about stock markets on [Varsity](https://zerodha.com/varsity/) a great initiative by [Zerodha](https://zerodha.com/open-account?c=KSO559).
+- Trying to learn web development by following the curriculum at [The Odin Project](https://zerodha.com/open-account?c=KSO559)
 
 
 
+### My Workout Regime
+
+I'm currently focusing on transforming my body and bringing down my body fat to healthy levels. I workout 6 days a week with 3 strength training sessions and cardio in the form of running, swimming, and cycling. For strength training, I currently follow the [Phraks' Greyskull LP](https://www.boostcamp.app/coaches/r-fitness/greyskull-linear-progression) program on Boostcamp. Since it's summer here in the Middle East, I mostly run indoors on a treadmill. I do not have a bike to ride here in UAE, so all my rides are indoors to ensure that my muscle memory stays intact. I try to swim 3 times a week, trying to learn how to swim freestyle properly.
 
 
-####### The data of cycling, running, etc are updated daily from the data fetched from Strava. Learn more about it here.
+#### If you found my now page interesting, checkout ["Then"](/then), an archive of all my "Now" pages.
+
 
 ###### This is a ["now page"](https://nownownow.com/) inspired by Derek Sivers, and you should make one too.
 
-<sup><sub>This is very small text.</sub></sup>
+
+
+
