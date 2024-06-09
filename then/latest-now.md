@@ -7,11 +7,14 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 dataDir: "data"
+index: false
 ---
+
+
 
 *Last updated on 09-06-2024, somewhere from [Dubai, United Arab Emirates (UAE)](https://what3words.com/siblings.twitches.scan)*
 
-This is now a page and gives a glimpse on what I'm upto now!!
+This is now a page and gives a glimpse on what I'm upto now! y!
 
 
 

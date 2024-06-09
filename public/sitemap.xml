@@ -148,6 +148,8 @@
   </url><url>
     <loc>http://localhost:1313/name/</loc>
   </url><url>
+    <loc>http://localhost:1313/now_archive/</loc>
+  </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
@@ -161,5 +163,9 @@
     <loc>http://localhost:1313/travel-posts/</loc>
   </url><url>
     <loc>http://localhost:1313/now/</loc>
+  </url><url>
+    <loc>http://localhost:1313/now-2024-06-09/</loc>
+  </url><url>
+    <loc>http://localhost:1313/now-2024-06-09/</loc>
   </url>
 </urlset>
