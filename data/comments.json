@@ -8,7 +8,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2021-01-08",
-            "Comment": "Hi Robin!\n \n Thanks for the reply. Let me know if you're interested to collaborate. I'm actually planning to include that in the post itself, but it requires some extensive research. Also I'm planning to build a sample set of people to evaluate and score the efficiencies."
+            "Comment": "<span class='author-marker'></span>Hi Robin!\n \nThanks for the reply. Let me know if you're interested to collaborate. I'm actually planning to include that in the post itself, but it requires some extensive research. Also I'm planning to build a sample set of people to evaluate and score the efficiencies."
         },
         {
             "Name": "Vamsi Karatam",
@@ -23,12 +23,12 @@
         {
             "Name": "Rishikesh",
             "Date": "2022-02-21",
-            "Comment": "Hi Vamsi,\n \n Can you send me a message using the contact form on the website? Or send an email to rishikeshshari[at]gmail[dot]com"
+            "Comment": "<span class='author-marker'></span>Hi Vamsi,\n \n Can you send me a message using the contact form on the website? Or send an email to rishikeshshari[at]gmail[dot]com"
         },
         {
             "Name": "Rishikesh",
             "Date": "2022-02-21",
-            "Comment": "Hey Pavan!\n \n Can you send me mesage using the contact form? Let;s together write a case study about Zerodha!"
+            "Comment": "<span class='author-marker'></span>Hey Pavan!\n \n Can you send me mesage using the contact form? Let;s together write a case study about Zerodha!"
         },
         {
             "Name": "Roshaan Narkedayy",
@@ -36,9 +36,9 @@
             "Comment": "Nice Written version of Kunal Video\n \n Thanks Vamsi"
         },
         {
-            "Name": "Rishikesh Sreehari",
+            "Name": "Rishikesh",
             "Date": "2023-05-22",
-            "Comment": "THanks a lot!"
+            "Comment": "Thanks a lot! <span class='author-marker'></span>"
         }
     ],
     "5-reasons-why-i-decided-to-start-a-blog": [
@@ -50,7 +50,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2021-01-08",
-            "Comment": "Thanks Robin!\n \n Yes I'll update this by end of this year. Please subscribe to my newsletter so that you're informed about it as soon as it goes live."
+            "Comment": "<span class='author-marker'></span>Thanks Robin!\n \n Yes I'll update this by end of this year. Please subscribe to my newsletter so that you're informed about it as soon as it goes live."
         },
         {
             "Name": "Watto",
@@ -60,7 +60,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2021-01-30",
-            "Comment": "Thanks a lot! I was thinking, but I don't really like the world of YouTube!"
+            "Comment": "<span class='author-marker'></span>Thanks a lot! I was thinking, but I don't really like the world of YouTube!"
         },
         {
             "Name": "EatPanDulce",
@@ -77,7 +77,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2021-01-11",
-            "Comment": "Hey Tom!\n \n Thanks for checking the article!\n \n I actually use a free service called ZeroSSL to setup SSL across all my sites. Just follow their instructions and you're good to go. All you have to do is to upload a small file in the mentioned directory and you will have your certificate ready!"
+            "Comment": "<span class='author-marker'></span>Hey Tom!\n \n Thanks for checking the article!\n \n I actually use a free service called ZeroSSL to setup SSL across all my sites. Just follow their instructions and you're good to go. All you have to do is to upload a small file in the mentioned directory and you will have your certificate ready!"
         },
         {
             "Name": "Kip Biscoe",
@@ -92,7 +92,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2021-02-06",
-            "Comment": "Thanks a lot, Angel!"
+            "Comment": "<span class='author-marker'></span>Thanks a lot, Angel!"
         }
     ],
     "stress-journal": [
@@ -116,7 +116,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2021-02-09",
-            "Comment": "Thanks a lot Irfan! I'm curious, where did you find me?"
+            "Comment": "<span class='author-marker'></span>Thanks a lot Irfan! I'm curious, where did you find me?"
         },
         {
             "Name": "Aakarsh",
@@ -126,7 +126,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2021-02-19",
-            "Comment": "Hey Aakarsh! Thanks for checking out my website. It's great to connect with like minded people. I have pinged you on Twitter! Would love to hear more from you."
+            "Comment": "<span class='author-marker'></span>Hey Aakarsh! Thanks for checking out my website. It's great to connect with like minded people. I have pinged you on Twitter! Would love to hear more from you."
         },
         {
             "Name": "Irfan",
@@ -143,12 +143,12 @@
         {
             "Name": "Rishikesh",
             "Date": "2021-02-06",
-            "Comment": ":)"
+            "Comment": "<span class='author-marker'></span>:)"
         },
         {
             "Name": "Rishikesh",
             "Date": "2021-02-06",
-            "Comment": "Thanks!"
+            "Comment": "<span class='author-marker'></span>Thanks!"
         }
     ],
     "man-from-the-future": [
@@ -160,7 +160,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2022-03-29",
-            "Comment": "The whole point of the experiment was to see what we can think of."
+            "Comment": "<span class='author-marker'></span>The whole point of the experiment was to see what we can think of."
         },
         {
             "Name": "D Scott",
@@ -170,7 +170,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2022-03-30",
-            "Comment": "Even I'm thinking of expanding it into a book or a short story! :)"
+            "Comment": "Even I'm thinking of expanding it into a book or a short story! :)<span class='author-marker'></span>"
         },
         {
             "Name": "ABC",
@@ -180,7 +180,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2022-04-02",
-            "Comment": "Thanks for the great points.\n \n I have couple of questions:\n \n - How can i define time? How do I define 1s. Or will I have to resort something like a sand clock and calibrate it?\n - Toilets I was planning to dig trench holes few metres deep ideally 200 metres from the water body.\n - Do you think deforestation matters at this small scale?"
+            "Comment": "Thanks for the great points.\n \n I have couple of questions:\n \n - How can i define time? How do I define 1s. Or will I have to resort something like a sand clock and calibrate it?\n - Toilets I was planning to dig trench holes few metres deep ideally 200 metres from the water body.\n - Do you think deforestation matters at this small scale?<span class='author-marker'></span>"
         },
         {
             "Name": "S Buch",
@@ -190,7 +190,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2022-04-04",
-            "Comment": "Hey! Sapiens is one of my favorite books of all time. I think Sapiens influenced me in a bit in this thought process."
+            "Comment": "Hey! Sapiens is one of my favorite books of all time. I think Sapiens influenced me in a bit in this thought process.<span class='author-marker'></span>"
         },
         {
             "Name": "Alpha",
@@ -205,7 +205,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2022-04-08",
-            "Comment": "That's a good point. Also, I can calibrate it to get 15 minute variations right?"
+            "Comment": "That's a good point. Also, I can calibrate it to get 15 minute variations right?<span class='author-marker'></span>"
         },
         {
             "Name": "John C",
@@ -234,7 +234,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2022-04-21",
-            "Comment": "That's great ! Do ping me once you've tried the approach!"
+            "Comment": "That's great ! Do ping me once you've tried the approach!<span class='author-marker'></span>"
         },
         {
             "Name": "Dipankar",
@@ -244,7 +244,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2022-04-07",
-            "Comment": "Try it out and let me know how it went. I realised that many of the meetings were actually draining!"
+            "Comment": "Try it out and let me know how it went. I realised that many of the meetings were actually draining!<span class='author-marker'></span>"
         }
     ],
     "how-i-curate-my-newsletter": [
@@ -256,7 +256,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2022-04-24",
-            "Comment": "Thanks a lot Susan for the feedback! Please ping me if you need any help in optimizing your newsletter! :)"
+            "Comment": "Thanks a lot Susan for the feedback! Please ping me if you need any help in optimizing your newsletter! :)<span class='author-marker'></span>"
         }
     ],
     "single-purpose-devices": [
@@ -268,7 +268,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2022-04-17",
-            "Comment": "I agree on the convenience part. But this came at a cost and we are distracted like never before due to this. I also enjoy carrying my iPhone instead of my bulky DSLR, but I feel like I???m more mindful when I???m using my camera!"
+            "Comment": "I agree on the convenience part. But this came at a cost and we are distracted like never before due to this. I also enjoy carrying my iPhone instead of my bulky DSLR, but I feel like I???m more mindful when I???m using my camera!<span class='author-marker'></span>"
         },
         {
             "Name": "Sam",
@@ -297,7 +297,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2022-05-24",
-            "Comment": "Yes. I should have added that part! :D"
+            "Comment": "Yes. I should have added that part! :D <span class='author-marker'></span>"
         },
         {
             "Name": "Rahul Chowdhury",
@@ -312,7 +312,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2023-05-19",
-            "Comment": "Yes I do agree with that. But what I've learnt over the years is not to interfere in other people's beliefs. I was very defensive at one point in my life and used to question or correct people on their beliefs. Over time I realised if it gives them peace, let it be as long as they don't bother me!"
+            "Comment": "Yes I do agree with that. But what I've learnt over the years is not to interfere in other people's beliefs. I was very defensive at one point in my life and used to question or correct people on their beliefs. Over time I realised if it gives them peace, let it be as long as they don't bother me! <span class='author-marker'></span>"
         }
     ],
     "super-randonneur": [
@@ -324,7 +324,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2023-05-16",
-            "Comment": "Thanks a lot for the support!"
+            "Comment": "Thanks a lot for the support!<span class='author-marker'></span>"
         },
         {
             "Name": "Sathyan Anbalakan",
@@ -337,14 +337,14 @@
             "Comment": "Congratulations Brother! I completed the series twice (2018 and 2022), and hope to complete this year as well, since I do have plans for the PBP2023. Reading your testimony brought me all the good memories and consolidated the image that we, Randonneurs, are brothers on the road all over the world."
         },
         {
-            "Name": "Rishikesh Sreehari",
+            "Name": "Rishikesh",
             "Date": "2023-05-22",
-            "Comment": "Hey Jeff!\n It is indeed a great experience!"
+            "Comment": "Hey Jeff!\n It is indeed a great experience!<span class='author-marker'></span>"
         },
         {
-            "Name": "Rishikesh Sreehari",
+            "Name": "Rishikesh",
             "Date": "2023-05-22",
-            "Comment": "I would love to ride in Malaysia some day! I heard the community is great! Wow elevation of 8300m is next level!"
+            "Comment": "I would love to ride in Malaysia some day! I heard the community is great! Wow elevation of 8300m is next level! <span class='author-marker'></span>"
         }
     ],
     "2023-plan": [
@@ -356,7 +356,7 @@
         {
             "Name": "Rishikesh",
             "Date": "2023-05-21",
-            "Comment": "Hi Soren!\n \n Yes you are right. I guess I should set some actionable items rather than focusing on the goal. Like I will workout everyday at least for 30minutes. Thanks a lot for your suggestion, I guess I need to relook into my objectives and set actions based on it!\n \n Im curious how did you find my blog"
+            "Comment": "Hi Soren!\n \n Yes you are right. I guess I should set some actionable items rather than focusing on the goal. Like I will workout everyday at least for 30minutes. Thanks a lot for your suggestion, I guess I need to relook into my objectives and set actions based on it!\n \n Im curious how did you find my blog<span class='author-marker'></span>"
         },
         {
             "Name": "Soeren Koenig",
@@ -371,9 +371,9 @@
             "Comment": "Hi Rishikesh. \n \n Came across this in my search for zone 2 stuff, thanks for the info! Went on my first zone 2 \"run\" today and found it hard to stay so slow. Any update? How did it work out for you?\n \n Cheers,\n \n James"
         },
         {
-            "Name": "Rishikesh Sreehari",
+            "Name": "Rishikesh",
             "Date": "2024-01-16",
-            "Comment": "It was quite hard at the beginning. I think overtime your body adapts. When I started I had to walk at times because my heart rate was shooting!"
+            "Comment": "It was quite hard at the beginning. I think overtime your body adapts. When I started I had to walk at times because my heart rate was shooting! <span class='author-marker'></span>"
         }
     ]
 }
