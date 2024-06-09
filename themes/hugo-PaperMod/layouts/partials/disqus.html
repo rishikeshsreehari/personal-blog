@@ -1,12 +1,4 @@
-
-
 {{ if not .Params.disable_comments }}
-
-
-
-
-
-
 <h1>Comments</h1>
 
 <div class="comments-section">
@@ -18,12 +10,13 @@
     {{ $comments := . | default (slice) }} <!-- Assign comments data for the current page to $comments variable, using a default empty slice if error occurs -->
     {{ if gt (len $comments) 0 }} <!-- Check if comments are not empty -->
       {{ range $comments }} <!-- Iterate over the comments -->
-        <div class="comment">
+        <div class="comment {{ if eq .Name "Rishikesh" }}highlight{{ end }}">
           <div class="avatar">
             <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}" alt="avatar">
           </div>
           <div class="comment-details">
             <strong class="comment-author-name">{{ .Name }}</strong><span class="date">on {{ .Date }}</span>
+            {{ if eq .Name "Rishikesh" }}<span class="author-reply-label">Reply</span>{{ end }}
             <p>{{ .Comment }}</p>
           </div>
         </div>
@@ -36,26 +29,9 @@
   {{ end }}
 </div>
 
-
 <br>
 
-
-
-
-
-<style>
-  .ohnohoney{
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 0;
-      width: 0;
-      z-index: -1;
-  }
-</style>
-
-<h5>Leave a comment using the form below. All comments are held for moderation and will only appear after they have been reviewed and approved. If you wish to stay in touch with me, feel free to fill in the email field or leave it blank. This is optional and solely for contact purposes; rest assured, your email address will not be published or shared with anyone. There are no reply notifications or editing of comments.These comments are <a href= "https://rishikeshs.com/static-comments" style = "text-decoration: underline;">static</a> and does not allow any backlinks.
+<h5>Leave a comment using the form below. All comments are held for moderation and will only appear after they have been reviewed and approved. If you wish to stay in touch with me, feel free to fill in the email field or leave it blank. This is optional and solely for contact purposes; rest assured, your email address will not be published or shared with anyone. There are no reply notifications or editing of comments. These comments are <a href="https://rishikeshs.com/static-comments" style="text-decoration: underline;">static</a> and do not allow any backlinks.
 </h5>
 <br>
 
@@ -93,7 +69,5 @@
     </div>
   </div>
 </form>
-
-
 
 {{ end }}

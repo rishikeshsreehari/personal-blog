@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Travel-Posts on Rishikesh Sreehari</title>
-    <link>https://rishikeshs.pages.dev/travel-posts/</link>
+    <link>http://localhost:1313/travel-posts/</link>
     <description>Recent content in Travel-Posts on Rishikesh Sreehari</description>
     <image>
-      <url>https://rishikeshs.pages.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://rishikeshs.pages.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://rishikeshs.pages.dev/travel-posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="http://localhost:1313/travel-posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thoughts on UAE</title>
-      <link>https://rishikeshs.pages.dev/travel/UAE/</link>
+      <link>http://localhost:1313/travel/UAE/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://rishikeshs.pages.dev/travel/UAE/</guid>
+      <guid>http://localhost:1313/travel/UAE/</guid>
       <description></description>
     </item>
     
