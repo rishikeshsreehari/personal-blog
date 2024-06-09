@@ -7,9 +7,7 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 dataDir: "data"
-index: false
 ---
-
 
 The idea of a then page was stolen from [Matthew Smith](https://matthewsmith.website/then)
 
