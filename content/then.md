@@ -1,6 +1,5 @@
 ---
 title: "Then"
-
 url: "/then"
 summary: single
 type: page
@@ -16,7 +15,4 @@ This page is an archive of all my 'Now' page updates. I view it more as a journa
 ### Archives
 [2024-06-09](/now-2024-06-09)
 
-[2024-06-09](/now-2024-06-09)
-
-[2024-06-09](/now-2024-06-09)
 

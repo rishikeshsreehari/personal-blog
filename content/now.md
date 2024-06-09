@@ -1,6 +1,5 @@
 ---
 title: "What I'm Doing Now"
-
 url: "/now"
 summary: single
 type: page
