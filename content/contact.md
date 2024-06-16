@@ -32,3 +32,5 @@ I also accept cryptocurrency donations at the following addresses:
 - Bitcoin (BTC): 14SXDGhFWiHToVSpxYuLVW5tSnESiqFjd2
 - Solana (SOL): 7xxg9ah3kJ4sZ2RnYp3KMNuVmYKWKcryptKn5bQU2Uge
 
+
+{{< contactform >}}

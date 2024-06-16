@@ -101,6 +101,7 @@
   box-sizing: border-box;
   border: 1px solid #717171;
   font-size: 0.9em; /* Match input font size to comment font size */
+  color: whitesmoke;
 }
 
 .column {
