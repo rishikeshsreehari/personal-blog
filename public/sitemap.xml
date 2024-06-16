@@ -134,6 +134,8 @@
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
   </url><url>
+    <loc>http://localhost:1313/ama/</loc>
+  </url><url>
     <loc>http://localhost:1313/log/</loc>
   </url><url>
     <loc>http://localhost:1313/colophon/</loc>
@@ -141,6 +143,8 @@
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
     <loc>http://localhost:1313/futurestack/</loc>
+  </url><url>
+    <loc>http://localhost:1313/guestbook/</loc>
   </url><url>
     <loc>http://localhost:1313/library/</loc>
   </url><url>

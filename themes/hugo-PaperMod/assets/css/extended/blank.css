@@ -495,3 +495,49 @@ padding-right: 1rem;
   width: 0;
   z-index: -1;
 }
+
+
+.avatar-guestbook {
+  background-color: #ccc;
+  color: #fff;
+  width: 50px; /* Fixed width */
+  height: 50px; /* Fixed height */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 10px;
+  flex-shrink: 0; /* Prevents shrinking */
+  flex-grow: 0; /* Prevents growing */
+  flex-basis: 50px; /* Fixed base size */
+  position: relative;
+  overflow: visible; /* Allow overflow */
+}
+
+.avatar-guestbook img {
+  width: 60px; /* Larger than the container */
+  height: 60px; /* Larger than the container */
+  object-fit: cover; /* Ensure the image covers the avatar without distortion */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the image */
+}
+
+
+.author-reply-label {
+  background-color: #005d52;
+  color: white;
+  font-size: 0.8em;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 10px; 
+} 
+
+
+.highlight-ama {
+  border-left: 5px solid #005d52; /* Reply comment border */
+  padding-left: 15px;
+  margin-left: 50px; /* Indent to indicate a reply */
+}

@@ -282,6 +282,15 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
     
     
     <item>
+      <title>Ask Me Anything</title>
+      <link>http://localhost:1313/ama/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ama/</guid>
+      <description>single</description>
+    </item>
+    
+    <item>
       <title>Changelog</title>
       <link>http://localhost:1313/log/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -314,6 +323,15 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/futurestack/</guid>
+      <description>single</description>
+    </item>
+    
+    <item>
+      <title>Guestbook</title>
+      <link>http://localhost:1313/guestbook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/guestbook/</guid>
       <description>single</description>
     </item>
     

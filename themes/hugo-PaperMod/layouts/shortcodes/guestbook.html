@@ -46,7 +46,7 @@
     {{ range $index := seq (sub $numComments 1) 0 }} <!-- Iterate over the comments in reverse order -->
       {{ $element := index $commentsData $index }}
       <div class="comment">
-        <div class="avatar">
+        <div class="avatar-guestbook">
           <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ $element.Name }}" alt="avatar">
         </div>
         <div class="comment-details">

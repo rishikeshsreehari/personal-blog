@@ -1,0 +1,58 @@
+
+<form 
+  id="commentForm" 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbxF8ah6vOcJjiEDrss_ha8VxJTHehVzGaeBgtkZgj_lsuWNgiOtLceekyIqbcwf3AGB/exec">
+  <div class="comment-form">
+    <input type="hidden" name="timestamp" id="timestamp" value="" />
+
+    <div class="form-row">
+      <div class="column">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Tibetan Yeti"/>
+      </div>
+      <div class="column">
+        <label for="email">Email [optional]</label>
+        <input type="email" id="email" name="email" placeholder="tibetanyeti@example.com" />
+      </div>
+    </div>
+
+    <!-- Honeypot field -->
+    <div style="display:none;">
+      <label>If you're a human, leave this field blank!<input type="text" name="honeypot" /></label>
+    </div>
+
+    <div class="form-row">
+      <label for="question">Question</label>
+      <textarea id="question" name="question" required placeholder="Leave a question for the Yeti, they might be reading!"></textarea>
+    </div>
+   
+    <div class="form-row">
+      <button type="submit">Ask</button>
+    </div>
+  </div>
+</form>
+
+
+<div class="comments-section">
+  {{ $commentsPath := "data/ama.json" }} <!-- Set the path to the AMA JSON file -->
+  {{ $commentsData := getJSON $commentsPath | default (slice) }} <!-- Load the AMA data or set default empty slice if error occurs -->
+  {{ if gt (len $commentsData) 0 }} <!-- Check if comments are not empty -->
+    {{ range $commentsData }} <!-- Iterate over the comments -->
+    <div class="comment {{ if in .Comment "author-marker" }}highlight-ama{{ end }}">
+      <div class="avatar">
+          <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}" alt="avatar">
+        </div>
+        <div class="comment-details">
+          <strong class="comment-author-name">{{ .Name }}</strong><span class="date">on {{ .Date }}</span>
+          {{ if in .Comment "<author-marker>" }}<span class="author-reply-label">Answer</span>{{ end }}
+          <p>{{ .Comment | safeHTML }}</p>
+        </div>
+      </div>
+    {{ end }}
+  {{ else }}
+    <p>No questions yet.</p>
+  {{ end }}
+</div>
+
+<br>
