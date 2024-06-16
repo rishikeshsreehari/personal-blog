@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const initialDisplayCount = 20;
-    let displayedCount = initialDisplayCount;
-    const books = document.querySelectorAll('.book');
-    const showMoreButton = document.getElementById('show-more');
+  const initialDisplayCount = {{ .Site.Params.BookShelfDisplayCount }};
+  let displayedCount = initialDisplayCount;
+  const books = document.querySelectorAll('.book');
+  const showMoreButton = document.getElementById('show-more');
   
     // Hide all books initially
     books.forEach((book, index) => {

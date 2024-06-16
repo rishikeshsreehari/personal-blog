@@ -49,6 +49,8 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+  BookShelfDisplayCount: 20
+
 
   assets:
     # disableHLJS: true # to disable highlight.js
