@@ -1,0 +1,63 @@
+
+
+<form 
+  id="commentForm" 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycbxRnpRKhwn5z53IYDN1ptNVd5veYstwlUlj93KMTkirjayYxHLZZ6Dm1IeYDIkoXUPBlw/exec">
+  <div class="comment-form">
+    <input type="hidden" name="timestamp" id="timestamp" value="" />
+
+    <div class="form-row">
+      <div class="column">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Tibetan Yeti"/>
+      </div>
+      <div class="column">
+        <label for="email">Email [optional]</label>
+        <input type="email" id="email" name="email" placeholder="tibetanyeti@example.com" />
+      </div>
+    </div>
+
+    <!-- Honeypot field -->
+    <div style="display:none;">
+      <label>If you're a human, leave this field blank!<input type="text" name="honeypot" /></label>
+    </div>
+
+    <div class="form-row">
+      <label for="message">Comment</label>
+      <textarea id="message" name="message" required placeholder="Leave a message for the Yeti, they might be reading!"></textarea>
+    </div>
+   
+    <div class="form-row">
+      <button type="submit comment">Comment</button>
+    </div>
+  </div>
+</form>
+
+
+<div class="comments-section">
+
+  
+
+  {{ $commentsPath := "data/guestbook.json" }} <!-- Set the path to the guestbook JSON file -->
+  {{ $commentsData := getJSON $commentsPath | default (slice) }} <!-- Load the guestbook data or set default empty slice if error occurs -->
+  {{ if gt (len $commentsData) 0 }} <!-- Check if comments are not empty -->
+    {{ $numComments := len $commentsData }}
+    {{ range $index := seq (sub $numComments 1) 0 }} <!-- Iterate over the comments in reverse order -->
+      {{ $element := index $commentsData $index }}
+      <div class="comment">
+        <div class="avatar">
+          <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ $element.Name }}" alt="avatar">
+        </div>
+        <div class="comment-details">
+          <strong class="comment-author-name">{{ $element.Name }}</strong><span class="date">on {{ $element.Date }}</span>
+          <p>{{ $element.Comment | safeHTML }}</p>
+        </div>
+      </div>
+    {{ end }}
+  {{ else }}
+    <p>No comments yet.</p>
+  {{ end }}
+</div>
+
+

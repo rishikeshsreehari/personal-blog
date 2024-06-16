@@ -1,13 +1,17 @@
 ---
-title: "About"
+title: "Guestbook"
 #layout: "library"
-url: "/about/"
+url: "/guestbook/"
 summary: single
 type: page
 disable_comments: true
 ShowReadingTime: false
-
 ---
 
+I miss guestbooks of ear
 
-I also host an [AMA](/ama)
+
+
+{{< guestbook >}}
+
+

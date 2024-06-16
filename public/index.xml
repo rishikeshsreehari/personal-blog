@@ -263,15 +263,6 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/donate/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/donate/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -364,6 +355,15 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
     
     
     <item>
+      <title>Suport</title>
+      <link>http://localhost:1313/support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/support/</guid>
+      <description>single</description>
+    </item>
+    
+    <item>
       <title>Then</title>
       <link>http://localhost:1313/then/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -387,6 +387,15 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/travel/</guid>
+      <description>single</description>
+    </item>
+    
+    <item>
+      <title>Unoffice Hours</title>
+      <link>http://localhost:1313/unoffice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/unoffice/</guid>
       <description>single</description>
     </item>
     

@@ -1,13 +1,10 @@
 ---
-title: "About"
+title: "Unoffice Hours"
 #layout: "library"
-url: "/about/"
+url: "/unoffice/"
 summary: single
 type: page
 disable_comments: true
 ShowReadingTime: false
-
 ---
 
-
-I also host an [AMA](/ama)

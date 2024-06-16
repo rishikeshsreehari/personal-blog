@@ -1,4 +1,3 @@
-
 ---
 title: "Contact"
 #layout: "library"
@@ -7,8 +6,15 @@ summary: single
 type: page
 disable_comments: true
 ShowReadingTime: false
-
 ---
+
+The best and quickest way to connect with me is by filling the form below. I usually reply back within 3-4 days unless I'm traveling or out of network.
+
+I love interacting with new people and talking about interesting stuffs. If you wish to have an open conversation with me, checkout [unoffice hours](/unoffice) where I dedicate 2 slots every week to talk to random people. I also love meeting people in person, so if you are in the [same city](/now) as me, fill out the form below. 
+
+If you loved my site, sign the [guestbook](/guestbook)!
+
+
 
 You can also find me on:
 
@@ -23,14 +29,9 @@ You can also find me on:
 
 
 
-### Donate
-
-If you wish to support my work, consider [buying me a coffee($1 or ₹75)](https://tracking.rishikeshs.com/nl-intro-coffee)
-I also accept cryptocurrency donations at the following addresses:
-
-- Ethereum (ETH): 0x38f924efad4395708c113c43593de0d5fa1a1e6d
-- Bitcoin (BTC): 14SXDGhFWiHToVSpxYuLVW5tSnESiqFjd2
-- Solana (SOL): 7xxg9ah3kJ4sZ2RnYp3KMNuVmYKWKcryptKn5bQU2Uge
-
+### Contact Me
 
 {{< contactform >}}
+
+{{< guestbook >}}
+
