@@ -1,16 +1,15 @@
 <div class="bookshelf" id="bookshelf">
-    {{ with site.Data.books_unread }}
-      {{ range $index, $element := . }}
-        <div class="book" data-index="{{ $index }}">
-          <a href="{{ $element.link }}" target="_blank">
-            <img src="{{ $element.cover }}" alt="{{ $element.name }}" loading="lazy">
-            <div class="book-title">{{ $element.name }}</div>
-          </a>
-        </div>
-      {{ end }}
+  {{ with sort (site.Data.books_unread) "priority" "desc" }}
+    {{ range $index, $element := . }}
+      <div class="book" data-index="{{ $index }}">
+        <a href="{{ $element.link }}" target="_blank">
+          <img src="{{ $element.cover }}" alt="{{ $element.name }}">
+          <div class="book-title">{{ $element.name }}</div>
+        </a>
+      </div>
     {{ end }}
-  </div>
-  <button id="show-more" onclick="showMoreBooks()">Show More</button>
-  
-  <script src="{{ "js/show-more-books.js" | relURL }}"></script>
-  
+  {{ end }}
+</div>
+<button id="show-more" onclick="showMoreBooks()">Show More</button>
+
+<script src="{{ "js/show-more-books.js" | relURL }}"></script>
