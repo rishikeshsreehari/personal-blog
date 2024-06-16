@@ -384,3 +384,56 @@ padding-right: 1rem;
 }
 
 
+
+/* Antilibrary Bookshelf CSS below */
+
+.bookshelf {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book {
+  width: 150px; /* Set the width of each book container */
+  text-align: center;
+}
+
+.book img {
+  width: 100%; /* Make the image fill the width of the book container */
+  height: 200px; /* Set a fixed height for all book covers */
+  object-fit: cover; /* Ensures the image covers the entire container without stretching */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.book-title {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#show-more {
+  display: block;
+  margin: 10px auto;
+  padding: 5px 10px; /* Reduced padding */
+  font-size: 14px; /* Smaller font size */
+  cursor: pointer;
+  background-color: #737373; /* Primary color */
+  color: white;
+  border: none;
+  border-radius: 3px; /* Smaller border radius */
+  transition: background-color 0.3s ease;
+  margin-top: 25px;
+}
+
+#show-more:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+#show-more:active {
+  background-color: #004080; /* Even darker shade for active effect */
+}
+
+#show-more:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5); /* Add focus outline */
+}
