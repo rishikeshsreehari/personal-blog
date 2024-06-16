@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
       "Name": "Swapnil Thakare",
       "Date": "2024-01-01",
       "Comment": "What inspired you to start this blog?"
@@ -11,3 +12,10 @@
     }
   ]
   
+=======
+        "Name": "Rishikesh Sreehari",
+        "Date": "2024-06-17",
+        "Comment": "This is test AMA"
+    }
+]
+>>>>>>> de868b2ea7c335446fa84d029d10d5c1d2f04bb4
