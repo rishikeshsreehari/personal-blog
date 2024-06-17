@@ -23,7 +23,7 @@ If the above timeslots, do not work for you due to timezone differnces, [contact
 
 As an experiment, [Matt Webb](https://interconnected.org/home/2020/09/24/unoffice_hours) came up with the idea of [Unoffice hours](https://unofficehours.com/) in 2020 as a twist to office hours and opened up his calendar to discuss random things.
 
-This site is a [part of a webring](https://unofficehours.com) by [Dave Smyth](https://davesmyth.com/unoffice-hours) that consists of other people offering Unoffice Hours.
+This site is a [part of a webring](https://unofficehours.com) by [Dave Smyth](https://davesmyth.com/unoffice-hours) that consists of other people offering Unoffice Hours. Check them out:
 
 [Previous site](https://unofficehours.com/prev.html)	
 
