@@ -40,8 +40,8 @@
   {{ if gt (len $commentsData) 0 }} <!-- Check if comments are not empty -->
     {{ range $commentsData }} <!-- Iterate over the comments -->
     <div class="comment {{ if in .Comment "author-marker" }}highlight-ama{{ end }}">
-      <div class="avatar">
-          <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}" alt="avatar">
+      <div class="avatar-ama">
+          <img src="https://api.dicebear.com/9.x/personas/svg?seed={{ .Name }}" alt="avatar">
         </div>
         <div class="comment-details">
           <strong class="comment-author-name">{{ .Name }}</strong><span class="date">on {{ .Date }}</span>
