@@ -410,10 +410,10 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
     
     <item>
       <title>Unoffice Hours</title>
-      <link>http://localhost:1313/unoffice/</link>
+      <link>http://localhost:1313/unoffice-hours/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/unoffice/</guid>
+      <guid>http://localhost:1313/unoffice-hours/</guid>
       <description>single</description>
     </item>
     
