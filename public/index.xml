@@ -78,6 +78,15 @@ Guiding Principles Changelogs are for humans, not machines: Entries should be wr
     </item>
     
     <item>
+      <title>The Test Series</title>
+      <link>http://localhost:1313/the-test/</link>
+      <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/the-test/</guid>
+      <description>Introduction Maintaining a clear and organized record of changes to your blog is essential for both your readers and yourself. This manifesto outlines the principles and practices for effective versioning and changelog management tailored specifically for a personal blog.</description>
+    </item>
+    
+    <item>
       <title>Importance of Single Purpose Devices in a Distracted World</title>
       <link>http://localhost:1313/single-purpose-devices/</link>
       <pubDate>Tue, 16 Aug 2022 20:39:24 +0000</pubDate>
@@ -423,6 +432,15 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/unoffice-hours/</guid>
+      <description>single</description>
+    </item>
+    
+    <item>
+      <title>Watch</title>
+      <link>http://localhost:1313/watch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/watch/</guid>
       <description>single</description>
     </item>
     
