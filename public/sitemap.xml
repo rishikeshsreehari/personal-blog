@@ -142,6 +142,8 @@
   </url><url>
     <loc>http://localhost:1313/contact/</loc>
   </url><url>
+    <loc>http://localhost:1313/dream/</loc>
+  </url><url>
     <loc>http://localhost:1313/futurestack/</loc>
   </url><url>
     <loc>http://localhost:1313/guestbook/</loc>

@@ -18,20 +18,14 @@ If you loved my site, leave a message and sign my [guestbook](/guestbook)!
 
 You can also find me on:
 
-- GitHub
-- Keybase
-- Patreon
-- Twitch
-- Fediverse
-- Telegram
-- IRC
-- Bluesky
 
-
+- [ X ](https://x.com/rishikeshshari)
+- [LinkedIn](https://www.linkedin.com/in/rishikeshshari/)
+- [Strava](https://www.strava.com/athletes/67526871)
+- [GitHub](https://github.com/rishikeshsreehari/)
+- [HackerNews](https://news.ycombinator.com/user?id=rishikeshs)
+- [Reddit](https://www.reddit.com/user/rishikeshshari/)
 
 ### Contact Me
 
 {{< contactform >}}
-
-{{< guestbook >}}
-
