@@ -39,7 +39,6 @@ The following list lays out the plan I have for this blog in the long run:
 - Lay outa plan for longevity of the blog by sticking with pure html and CSS. 
 - Setup a URL shortner and also use it instead of [Genius Link](https://my.geni.us/home).
 - Selfhost my newsletter using a service like [listmonk](https://listmonk.app/).
-- Build a guestbook section for the blog where users can post testimonials.
 - Implement grammar and broken link check during deployment.
 - Add a family tree in About page
 
