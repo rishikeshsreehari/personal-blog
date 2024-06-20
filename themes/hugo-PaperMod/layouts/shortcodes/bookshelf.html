@@ -1,3 +1,4 @@
+<p>BookShelfDisplayCount: {{ .Site.Params.BookShelfDisplayCount }}</p>
 <div class="bookshelf" id="bookshelf">
   {{ with sort (site.Data.books_unread) "priority" "desc" }}
     {{ range $index, $element := . }}
@@ -10,6 +11,39 @@
     {{ end }}
   {{ end }}
 </div>
-<button id="show-more" onclick="showMoreBooks()">Show More</button>
 
-<script src="{{ "js/show-more-books.js" | relURL }}"></script>
+{{ if gt (len (site.Data.books_unread)) .Site.Params.BookShelfDisplayCount }}
+  <button id="show-more" onclick="showMoreBooks()">Show More</button>
+{{ end }}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const initialDisplayCount = {{ .Site.Params.BookShelfDisplayCount }};
+    let displayedCount = initialDisplayCount;
+    const books = document.querySelectorAll('.book');
+    const showMoreButton = document.getElementById('show-more');
+    
+    // Hide all books initially
+    books.forEach(function(book, index) {
+      if (index >= initialDisplayCount) {
+        book.style.display = 'none';
+      }
+    });
+
+    // Define the function to show more books
+    window.showMoreBooks = function() {
+      const nextCount = displayedCount + initialDisplayCount;
+      books.forEach(function(book, index) {
+        if (index < nextCount) {
+          book.style.display = 'block';
+        }
+      });
+      displayedCount = nextCount;
+
+      // Hide the button if all books are displayed
+      if (displayedCount >= books.length) {
+        showMoreButton.style.display = 'none';
+      }
+    };
+  });
+</script>
