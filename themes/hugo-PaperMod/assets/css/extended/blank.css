@@ -563,3 +563,89 @@ padding-right: 1rem;
   padding-left: 15px;
   margin-left: 50px; /* Indent to indicate a reply */
 }
+
+/* CSS for watch page. */
+
+#watch-table-container {
+  margin: 20px 0;
+}
+
+#watch-sort {
+  font-size: 11px;
+  padding: 2px 2px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  color: #1D1E20;
+  background-color: #DADADB;
+  cursor: pointer;
+  width: 116px;
+  height: 20px;
+  float: right;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#watch-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+}
+
+#watch-table th, #watch-table td {
+  min-width: 80px;
+  padding: 8px 8px;
+  line-height: 1;
+  border-bottom: 0.5px solid var(--border);
+}
+
+#watch-table th {
+  background-color: #1D1E20;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1em;
+  color: #fff; /* Add color for better readability */
+}
+
+#watch-table tr {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+#watch-table td {
+  font-family: inherit; /* Use default theme font */
+  font-size: 1em;
+}
+
+#watch-table td:nth-child(1) {
+  width: 40%;
+}
+
+#watch-table td:nth-child(2) {
+  width: 30%;
+}
+
+#watch-table td:nth-child(3) {
+  width: 20%;
+}
+
+#watch-table td:nth-child(4) {
+  width: 20%;
+  white-space: nowrap; /* Prevent date wrapping */
+}
+
+#watch-table td a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#watch-table td a:hover {
+  color: #0073e6;
+}
+
+.star-rating {
+  font-size: 14px;
+  color: #ffcc00;
+}

@@ -1,0 +1,29 @@
+- name: "Breaking Bad"
+  language: "English"
+  rating: 5
+  date: "2013-09-29"
+  url: "https://www.imdb.com/title/tt0903747/"
+
+- name: "Money Heist"
+  language: "Spanish"
+  rating: 4
+  date: "2020-07-03"
+  url: "https://www.imdb.com/title/tt6468322/"
+
+- name: "Dark"
+  language: "German"
+  rating: 5
+  date: "2020-06-27"
+  url: "https://www.imdb.com/title/tt5753856/"
+
+- name: "Stranger Things"
+  language: "English"
+  rating: 4
+  date: "2022-07-01"
+  url: "https://www.imdb.com/title/tt4574334/"
+
+- name: "Squid Game"
+  language: "Korean"
+  rating: 4
+  date: "2021-09-17"
+  url: "https://www.imdb.com/title/tt10919420/"

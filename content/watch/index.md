@@ -1,5 +1,6 @@
 ---
 title: "Watch"
+#layout: "library"
 url: "/watch/"
 summary: single
 type: page
@@ -7,7 +8,12 @@ disable_comments: true
 ShowReadingTime: false
 ---
 
+This is a watch page
 
 
 
-[The Test](/the-test)
+
+[Thetest](/thetest)
+
+
+{{< watch >}}

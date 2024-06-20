@@ -174,6 +174,8 @@
   </url><url>
     <loc>http://localhost:1313/unoffice-hours/</loc>
   </url><url>
+    <loc>http://localhost:1313/watch/</loc>
+  </url><url>
     <loc>http://localhost:1313/now-2024-06-09/</loc>
   </url><url>
     <loc>http://localhost:1313/now/</loc>

@@ -1,0 +1,76 @@
+<div id="watch-table-container">
+    <select id="watch-sort">
+      <option value="date-desc">Newest &rarr; Oldest</option>
+      <option value="rating-desc">Best &rarr; Worst</option>
+    </select>
+  
+    <table id="watch-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Language</th>
+          <th>Rating</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        {{ $sort := .Page.Params.sort }}
+        {{ $watch := .Site.Data.watch }}
+        {{- if eq $sort "rating-desc" }}
+          {{ $watch = sort $watch "rating" "desc" }}
+        {{- else if eq $sort "date-desc" }}
+          {{ $watch = sort $watch "date" "desc" }}
+        {{- end }}
+        {{- range $watch }}
+          <tr>
+            <td>
+              {{ if .url }}
+                <a href="{{ .url }}">{{ .name }}</a>
+              {{ else }}
+                {{ .name }}
+              {{ end }}
+            </td>
+            <td>{{ .language }}</td>
+            <td data-rating="{{ .rating }}">
+              <span class="star-rating">
+                {{ if eq .rating 0 }}&#9734;&#9734;&#9734;&#9734;&#9734;{{ end }}
+                {{ if eq .rating 1 }}&#9733;&#9734;&#9734;&#9734;&#9734;{{ end }}
+                {{ if eq .rating 2 }}&#9733;&#9733;&#9734;&#9734;&#9734;{{ end }}
+                {{ if eq .rating 3 }}&#9733;&#9733;&#9733;&#9734;&#9734;{{ end }}
+                {{ if eq .rating 4 }}&#9733;&#9733;&#9733;&#9733;&#9734;{{ end }}
+                {{ if eq .rating 5 }}&#9733;&#9733;&#9733;&#9733;&#9733;{{ end }}
+              </span>
+            </td>
+            <td data-date="{{ .date }}">{{ dateFormat "Jan 2006" (.date) }}</td>
+          </tr>
+        {{- end }}
+      </tbody>
+    </table>
+  </div>  
+  
+  <script>
+    function sortWatch() {
+        let watchTable = document.getElementById("watch-table");
+        let sortValue = document.getElementById("watch-sort").value;
+        let rows = Array.prototype.slice.call(watchTable.querySelectorAll("tr"));
+        rows.shift();
+        rows.sort(function(a, b) {
+            let aVal, bVal;
+            if (sortValue === "rating-desc") {
+                aVal = parseFloat(a.querySelector("td:nth-child(3)").getAttribute("data-rating"));
+                bVal = parseFloat(b.querySelector("td:nth-child(3)").getAttribute("data-rating"));
+            } else if (sortValue === "date-desc") {
+                aVal = new Date(a.querySelector("td:nth-child(4)").getAttribute("data-date")).getTime();
+                bVal = new Date(b.querySelector("td:nth-child(4)").getAttribute("data-date")).getTime();
+            }
+            return (aVal > bVal) ? -1 : (aVal < bVal) ? 1 : 0;
+        });
+        rows.forEach(function(row) {
+            watchTable.appendChild(row);
+        });
+    }
+    document.getElementById("watch-sort").addEventListener("change", sortWatch);
+    sortWatch();
+  </script>
+  
