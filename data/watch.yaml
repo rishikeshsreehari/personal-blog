@@ -22,8 +22,52 @@
   date: "2022-07-01"
   url: "https://www.imdb.com/title/tt4574334/"
 
-- name: "Squid Game"
-  language: "Korean"
+
+- name: "Ela Veezha Poonchira"
+  language: "Malayalam"
+  rating: 3
+  date: "2023-12-23"
+  url: "https://letterboxd.com/film/ela-veezha-poonchira/"
+
+- name: "Gargi"
+  language: "Tamil"
+  rating: 3
+  date: "2023-12-23"
+  url: "https://letterboxd.com/film/gargi/"
+
+- name: "Iratta"
+  language: "Malayalam"
   rating: 4
-  date: "2021-09-17"
-  url: "https://www.imdb.com/title/tt10919420/"
+  date: "2024-02-20"
+  url: "https://letterboxd.com/film/iratta/"
+
+- name: "Paava Kadhaigal"
+  language: "Tamil"
+  rating: 5
+  date: "2024-06-05"
+  url: "https://letterboxd.com/film/paava-kadhaigal/"
+
+
+- name: "3 Body Problem"
+  language: "English"
+  rating: 2
+  date: "2024-06-15"
+  url: "https://letterboxd.com/film/three-body/"
+
+- name: "The Test: A New Era for Australia's Team"
+  language: "English"
+  rating: 4
+  date: "2024-06-20"
+  url: "https://letterboxd.com/film/the-test-2020/"
+
+- name: "Madgaon Express"
+  language: "Hindi"
+  rating: 1
+  date: "2024-04-14"
+  url: "https://letterboxd.com/film/madgaon-express/"
+
+- name: "The Goat Life"
+  language: "Malayalam"
+  rating: 3
+  date: "2024-03-29"
+  url: "https://letterboxd.com/film/the-goat-life/"

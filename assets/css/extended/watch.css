@@ -1,0 +1,113 @@
+/* CSS for watch page. */
+
+#watch-table-container {
+  margin: 20px 0;
+}
+
+#watch-sort {
+  font-size: 11px;
+  padding: 2px 2px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  color: #1D1E20;
+  background-color: #DADADB;
+  cursor: pointer;
+  width: 116px;
+  height: 20px;
+  float: right;
+  text-align: center;
+  margin-bottom: 10px; /* Added margin-bottom for spacing */
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+#watch-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+}
+
+#watch-table th, #watch-table td {
+  min-width: 80px;
+  padding: 8px 8px;
+  line-height: 1.5; /* Adjust line-height for better spacing */
+  border-bottom: 0.5px solid var(--border);
+}
+
+#watch-table th {
+  background-color: #1D2020;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1em;
+  color: #fff; /* Ensuring readability */
+}
+
+#watch-table tr {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+#watch-table th:nth-child(2), 
+#watch-table th:nth-child(3) {
+  text-align: center; /* Aligning specific columns to center */
+}
+
+#watch-table th:nth-child(4) {
+  text-align: right;
+}
+
+#watch-table td {
+  font-family: inherit; /* Use default theme font */
+  text-align: left; /* Align text to left */
+  letter-spacing: 0.05em; /* Add some spacing between characters */
+  font-size: 1em;
+}
+
+#watch-table td:nth-child(1) {
+  width: 40%;
+}
+
+#watch-table td:nth-child(2) {
+  width: 30%;
+  text-align: center; /* Align text to center */
+}
+
+#watch-table td:nth-child(3) {
+  width: 20%;
+  text-align: center; /* Align text to center */
+}
+
+#watch-table td:nth-child(4) {
+  width: 20%;
+  white-space: nowrap; /* Prevent date wrapping */
+  text-align: right; /* Align text to right */
+}
+
+#watch-table td a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#watch-table td a:hover {
+  color: #0073e6;
+}
+
+.star-rating {
+  font-size: 14px;
+  color: #ffcc00;
+}
+
+@media only screen and (max-width: 480px) {
+  #watch-sort {
+    margin-bottom: 10px;
+  }
+
+  #watch-table td {
+    font-size: 0.8em; /* Reduce font size for smaller screens */
+  }
+}

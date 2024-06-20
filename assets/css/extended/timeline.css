@@ -1,0 +1,185 @@
+
+
+/* Timeline CSS */
+
+.timeline-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  .timeline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Ensure boxes start from the left */
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  
+  .week-box {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    margin: 2px;
+  }
+  
+  .age-label{
+    font-size: 13px;
+    white-space: nowrap;
+    margin-right: 6px; /* Adjust margin-right to create space between boxes and year labels */
+    width: 40px; /* Set a fixed width for year labels to accommodate two digits */
+    text-align: center; /* Center the label within the fixed width */
+  }
+  
+  
+  .year-label {
+    font-size: 12px;
+    white-space: nowrap;
+    margin-right: 6px; /* Adjust margin-right to create space between boxes and year labels */
+    width: 40px; /* Set a fixed width for year labels to accommodate two digits */
+    text-align: center; /* Center the label within the fixed width */
+  }
+  
+  .year-label-odd {
+    font-size: 12px;
+    white-space: nowrap;
+    margin-right: 6px; /* Adjust margin-right to create space between boxes and year labels */
+    width: 40px; /* Set a fixed width for year labels to accommodate two digits */
+    text-align: center; /* Center the label within the fixed width */
+    visibility: hidden;
+  }
+  
+  
+  
+  
+  
+  /* Highlight weeks lived in green */
+  .week-box-lived {
+    background: linear-gradient(to right, #17bc30 ,  #4fc360); /* Color of the filled progress (green) */
+  }
+  
+  /* Highlight weeks with events in yellow */
+  .week-box-event {
+    background: linear-gradient(to bottom, #57b9ff, #0096FF);
+    border: 1.5px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+    cursor: pointer;
+    
+    
+  }
+  
+  
+  
+  /* Tooltip styles */
+  .tooltip {
+    visibility: hidden;
+    display: inline-block;
+    min-width: 200px;
+    width: auto; /* Allow the tooltip to expand horizontally based on content */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 125%;
+    left: 100px;
+    right:150px; 
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    white-space: normal; /* Allow text to wrap within the tooltip */
+    text-align: left;
+  }
+  
+  /* Show the tooltip when hovering over week-box-event */
+  .week-box-event:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /* Left-align the text inside the tooltip */
+  .tooltip .tooltiptext {
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  
+  /* Style for the progress bar container */
+  .progress-bar-timeline {
+    width: 90%;
+    background-color: #ccc; /* Background color of the progress bar container */
+    height: 20px; /* Adjust the height of the progress bar */
+    border-radius: 5px; /* Rounded corners for the container */
+  }
+  
+  .progress-bar-timeline {
+    width: 100%;
+    background-color: #ccc; /* Background color of the progress bar container */
+    height: 20px; /* Adjust the height of the progress bar */
+    border-radius: 5px; /* Rounded corners for the container */
+    position: relative; /* Enable relative positioning for child elements */
+  }
+  
+  /* Style for the progress bar itself */
+  .progress-timeline {
+    height: 100%;
+    background: linear-gradient(to right, #17bc30 ,  #4fc360); /* Color of the filled progress (green) */
+    width: {{ $percentage }}%; /* Set the width based on the percentage */
+    border-radius: 5px; /* Rounded corners for the progress bar */
+    position: relative; /* Position the progress bar relative to its container */
+  }
+  
+  /* Style for the percentage text inside the progress bar */
+  .progress-text-timeline {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Text color */
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  
+  .text-sm bg-gray-200 p-2 px-4 font-bold dark:bg-transparent dark:border dark:border-gray-100 {
+  -webkit-text-size-adjust: 100%;
+  --rem: 16;
+  tab-size: 4;
+  color-scheme: light;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #073185;
+  --tw-shadow: 0 0 #0000;
+  --tw-ring-inset: var(--tw-empty, );
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  font-family: inherit;
+  margin: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  background-image: none;
+  cursor: pointer;
+  color: inherit;
+  --tw-bg-opacity: 1;
+  background-color: rgba(229,231,235,var(--tw-bg-opacity));
+  font-weight: 1000;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  padding: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  }
+  
+  
+  

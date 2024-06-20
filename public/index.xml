@@ -432,7 +432,16 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/watch/</guid>
-      <description>single</description>
+      <description>A list of movies, tv shows and documentaries I&amp;rsquo;ve watched with my ratings and opinions.</description>
+    </item>
+    
+    <item>
+      <title>Watchlist</title>
+      <link>http://localhost:1313/watchlist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/watchlist/</guid>
+      <description>A list of movies, tv shows and documentaries I&amp;rsquo;ve watched with my ratings and opinions.</description>
     </item>
     
     <item>
