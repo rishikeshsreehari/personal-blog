@@ -17,7 +17,9 @@ Unoffice hours are informal conversations without an agenda, topic, or preparati
 - You were intrigued by some [ideas](/ideas) I listed and wanted to chat more.
 - Or anything you want to discuss.
 
-[__Book a Call here__](https://calendly.com/rishikeshshari/unoffice-hours)
+
+{{< button url="https://calendly.com/rishikeshshari/unoffice-hours" text="BOOK A CALL" align="left">}}
+
 
 If the above timeslots, do not work for you due to timezone differnces, [contact me](/contact) and we can work something out.
 

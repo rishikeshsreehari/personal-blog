@@ -272,6 +272,15 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
     </item>
     
     <item>
+      <title>Advertise</title>
+      <link>http://localhost:1313/advertise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/advertise/</guid>
+      <description>This page has been moved to newsletterIf you are not redirected automatically, follow this link.</description>
+    </item>
+    
+    <item>
       <title>Anti Library</title>
       <link>http://localhost:1313/anti-library/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -377,6 +386,15 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/name/</guid>
+      <description>single</description>
+    </item>
+    
+    <item>
+      <title>Newsletter</title>
+      <link>http://localhost:1313/newsletter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/newsletter/</guid>
       <description>single</description>
     </item>
     
