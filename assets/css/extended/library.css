@@ -1,101 +1,99 @@
-/*  Library Page CSS   */
+/* Library Page CSS */
 
-table {
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  th, td {
-    min-width: 80px;
-    padding: 8px 8px;
-    line-height: 1;
-    border-bottom: 0.5px solid var(--border);
-    
-  }
-  
-  th {
-    background-color: #1d2020;
-    text-align: left;
-    font-weight: bold;
-  }
-  
-  
-  tr {
-  
-    
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-  
-  
-  }
+#book-table-container {
+  margin: 20px 0;
+}
 
-  th:nth-child(3) {
-    text-align: right;
-  }
-  
-  
-  
-  td {
-  
-    font-family: inherit; /* Use default theme font */
-    text-align: left;
-    letter-spacing: 0.05em; /* Add some spacing between characters */
-  
-  }
-  
-  td:nth-child(1) {
-    width: 70%;
-  }
-  
-  td:nth-child(2) {
-    width: 20%;
-  }
-  
-  td:nth-child(3) {
-    width: 20%;
-    white-space: nowrap; 
-    text-align: right;
-  }
-  
-  
+#book-sort {
+  font-size: 11px;
+  padding: 2px 2px;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  color: #1D1E20;
+  background-color: #DADADB;
+  cursor: pointer;
+  width: 116px;
+  height: 20px;
+  float: right;
+  text-align: center;
+  margin-bottom: 10px; /* Added margin-bottom for spacing */
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+#book-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+}
+
+#book-table th, #book-table td {
+  min-width: 80px;
+  padding: 12px 8px; /* Increased padding for better readability */
+  line-height: 1.5; /* Adjust line-height for better spacing */
+  border-bottom: 0.5px solid var(--border);
+}
+
+#book-table th {
+  background-color: #333; /* Darker background for header */
+  text-align: left;
+  font-weight: bold;
+  font-size: 1em;
+  color: #fff; /* Ensuring readability */
+  border-bottom: 2px solid #555; /* Distinct bottom border for header */
+}
+
+#book-table tr {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+#book-table th:nth-child(1),
+#book-table td:nth-child(1) {
+  text-align: left; /* Align text to left for book titles */
+}
+
+#book-table th:nth-child(2),
+#book-table td:nth-child(2) {
+  text-align: center; /* Align text to center for rating */
+}
+
+#book-table th:nth-child(3),
+#book-table td:nth-child(3) {
+  text-align: center; /* Align text to right for dates */
+  white-space: nowrap; /* Prevent date wrapping */
+}
+
+#book-table td {
+  font-family: monospace;
+  letter-spacing: 0.05em; /* Add some spacing between characters */
+  font-size: 1em;
+}
+
+#book-table td a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#book-table td a:hover {
+  color: #0073e6;
+}
+
+@media only screen and (max-width: 480px) {
   #book-sort {
-    font-size: 11px;
-    padding: 2px 2px;
-    border-radius: 1px;
-    border: 1px solid #ccc;
-    color: #1D1E20;
-    background-color: #DADADB;
-    cursor: pointer;
-    width: 116px;
-    height: 20px;
-    float: right;
-    text-align: center;
-    }
-  
-  #book-sort {
-    display: block;
-    margin: 0;
-    margin-right: auto;
     margin-bottom: 10px;
   }
-  
-  #book-table {
-    margin: 0;
+
+  #book-table td {
+    font-size: 0.8em; /* Reduce font size for smaller screens */
   }
-  
-  #book-table th,td {
-    padding-left: 0;
-    
-    }
-  
-  
-  @media only screen and (max-width: 480px) {
-    #book-sort {
-      margin-bottom: 10px;
-    }
+
+  #book-table td:nth-child(3) {
+    font-size: 0.8em; /* Ensure date column also reduces font size */
   }
-  
+}

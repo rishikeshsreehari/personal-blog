@@ -31,17 +31,18 @@
 
 #watch-table th, #watch-table td {
   min-width: 80px;
-  padding: 8px 8px;
+  padding: 12px 8px; /* Increased padding for better readability */
   line-height: 1.5; /* Adjust line-height for better spacing */
   border-bottom: 0.5px solid var(--border);
 }
 
 #watch-table th {
-  background-color: #1D2020;
+  background-color: #333; /* Darker background for header */
   text-align: left;
   font-weight: bold;
   font-size: 1em;
   color: #fff; /* Ensuring readability */
+  border-bottom: 2px solid #555; /* Distinct bottom border for header */
 }
 
 #watch-table tr {
@@ -52,40 +53,31 @@
   padding-inline-start: 40px;
 }
 
-#watch-table th:nth-child(2), 
-#watch-table th:nth-child(3) {
-  text-align: center; /* Aligning specific columns to center */
+#watch-table th:nth-child(1),
+#watch-table td:nth-child(1) {
+  text-align: left; /* Align text to left for show/movie names */
 }
 
-#watch-table th:nth-child(4) {
-  text-align: right;
+#watch-table th:nth-child(2),
+#watch-table td:nth-child(2) {
+  text-align: center; /* Align text to center for language */
+}
+
+#watch-table th:nth-child(3),
+#watch-table td:nth-child(3) {
+  text-align: center; /* Align text to center for ratings */
+}
+
+#watch-table th:nth-child(4),
+#watch-table td:nth-child(4) {
+  text-align: center; /* Align text to right for dates */
+  white-space: nowrap; /* Prevent date wrapping */
 }
 
 #watch-table td {
-  font-family: inherit; /* Use default theme font */
-  text-align: left; /* Align text to left */
+  font-family: monospace;
   letter-spacing: 0.05em; /* Add some spacing between characters */
   font-size: 1em;
-}
-
-#watch-table td:nth-child(1) {
-  width: 40%;
-}
-
-#watch-table td:nth-child(2) {
-  width: 30%;
-  text-align: center; /* Align text to center */
-}
-
-#watch-table td:nth-child(3) {
-  width: 20%;
-  text-align: center; /* Align text to center */
-}
-
-#watch-table td:nth-child(4) {
-  width: 20%;
-  white-space: nowrap; /* Prevent date wrapping */
-  text-align: right; /* Align text to right */
 }
 
 #watch-table td a {
@@ -109,5 +101,9 @@
 
   #watch-table td {
     font-size: 0.8em; /* Reduce font size for smaller screens */
+  }
+
+  #watch-table td:nth-child(4) {
+    font-size: 0.8em; /* Ensure date column also reduces font size */
   }
 }
