@@ -128,7 +128,11 @@
     <loc>http://localhost:1313/5-reasons-why-i-decided-to-start-a-blog/</loc>
     <lastmod>2021-05-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/ideas/</loc>
+  </url><url>
     <loc>http://localhost:1313/about/</loc>
+  </url><url>
+    <loc>http://localhost:1313/advertise/</loc>
   </url><url>
     <loc>http://localhost:1313/anti-library/</loc>
   </url><url>
@@ -156,6 +160,8 @@
   </url><url>
     <loc>http://localhost:1313/name/</loc>
   </url><url>
+    <loc>http://localhost:1313/newsletter/</loc>
+  </url><url>
     <loc>http://localhost:1313/now-archive/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
@@ -167,8 +173,6 @@
     <loc>http://localhost:1313/then/</loc>
   </url><url>
     <loc>http://localhost:1313/travel/UAE/</loc>
-  </url><url>
-    <loc>http://localhost:1313/travel/</loc>
   </url><url>
     <loc>http://localhost:1313/travel-posts/</loc>
   </url><url>
