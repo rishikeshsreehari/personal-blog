@@ -263,15 +263,6 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/ideas/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/ideas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -363,6 +354,15 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
     </item>
     
     <item>
+      <title>Ideas</title>
+      <link>http://localhost:1313/ideas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/ideas/</guid>
+      <description>single</description>
+    </item>
+    
+    <item>
       <title>Library</title>
       <link>http://localhost:1313/library/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -404,6 +404,24 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/newsletter/</guid>
+      <description>single</description>
+    </item>
+    
+    <item>
+      <title>Puzzle</title>
+      <link>http://localhost:1313/puzzle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/puzzle/</guid>
+      <description>single</description>
+    </item>
+    
+    <item>
+      <title>Puzzle</title>
+      <link>http://localhost:1313/puzzle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/puzzle/</guid>
       <description>single</description>
     </item>
     
