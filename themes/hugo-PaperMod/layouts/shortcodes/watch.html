@@ -35,12 +35,18 @@
             <td data-rating="{{ .rating }}">
               <span class="star-rating">
                 {{ if eq .rating 0 }}&#9734;&#9734;&#9734;&#9734;&#9734;{{ end }}
+                {{ if eq .rating 0.5 }}<span class="half-star">&#9734;</span>&#9734;&#9734;&#9734;&#9734;{{ end }}
                 {{ if eq .rating 1 }}&#9733;&#9734;&#9734;&#9734;&#9734;{{ end }}
+                {{ if eq .rating 1.5 }}&#9733;<span class="half-star">&#9734;</span>&#9734;&#9734;&#9734;{{ end }}
                 {{ if eq .rating 2 }}&#9733;&#9733;&#9734;&#9734;&#9734;{{ end }}
+                {{ if eq .rating 2.5 }}&#9733;&#9733;<span class="half-star">&#9734;</span>&#9734;&#9734;{{ end }}
                 {{ if eq .rating 3 }}&#9733;&#9733;&#9733;&#9734;&#9734;{{ end }}
+                {{ if eq .rating 3.5 }}&#9733;&#9733;&#9733;<span class="half-star">&#9734;</span>&#9734;{{ end }}
                 {{ if eq .rating 4 }}&#9733;&#9733;&#9733;&#9733;&#9734;{{ end }}
+                {{ if eq .rating 4.5 }}&#9733;&#9733;&#9733;&#9733;<span class="half-star">&#9734;</span>{{ end }}
                 {{ if eq .rating 5 }}&#9733;&#9733;&#9733;&#9733;&#9733;{{ end }}
-              </span>
+            </span>
+            
             </td>
             <td data-date="{{ .date }}">{{ dateFormat "Jan 2006" (.date) }}</td>
           </tr>

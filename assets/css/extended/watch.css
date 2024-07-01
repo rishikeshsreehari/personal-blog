@@ -90,7 +90,7 @@
 }
 
 .star-rating {
-  font-size: 14px;
+  font-size: 18px;
   color: #ffcc00;
 }
 
@@ -106,4 +106,20 @@
   #watch-table td:nth-child(4) {
     font-size: 0.8em; /* Ensure date column also reduces font size */
   }
+}
+
+
+
+.half-star {
+  display: inline-block;
+  position: relative;
+}
+
+.half-star:before {
+  content: '\2605'; /* Use a solid star character */
+  position: absolute;
+  width: 48%; /* Adjust the width to control the filled portion */
+  overflow: hidden;
+  color: #ffcc00; /* Fill color */
+
 }
