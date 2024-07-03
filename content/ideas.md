@@ -49,12 +49,6 @@ A moderated platform where a dedicated page is present for popular topics, and p
 India is struggling with misinformation and rigged news. The magnitude is quite high, considering the huge population, the demographics, and the rising internet penetration. A platform like [News Minimalist](https://newsminimalist) that removes clickbait titles and filters relevant news would be useful for India.
 {{< /accordion >}}
 
-
-{{< accordion summary="Global Fish Database in different languages" openByDefault=false >}}
-Fishnames are tricky if you travel around the world. Within a country itself, fish names would be different. A global database of fishnames in all different languages would be great!
-{{< /accordion >}}
-
-
 {{< accordion summary="Global Fish Database in different languages" openByDefault=false >}}
 Fishnames are tricky if you travel around the world. Within a country itself, fish names would be different. A global database of fishnames in all different languages would be great!
 {{< /accordion >}}

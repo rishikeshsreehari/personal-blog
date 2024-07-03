@@ -1,12 +1,12 @@
 - name: "Ela Veezha Poonchira"
   language: "Malayalam"
-  rating: 3
+  rating: 3.5
   date: "2023-12-23"
   url: "https://letterboxd.com/film/ela-veezha-poonchira/"
 
 - name: "Gargi"
   language: "Tamil"
-  rating: 3
+  rating: 3.5
   date: "2023-12-23"
   url: "https://letterboxd.com/film/gargi/"
 
@@ -25,7 +25,7 @@
 
 - name: "3 Body Problem"
   language: "English"
-  rating: 2
+  rating: 2.5
   date: "2024-06-15"
   url: "https://www.serializd.com/show/3-Body-Problem-108545"
 
@@ -37,7 +37,7 @@
 
 - name: "Madgaon Express"
   language: "Hindi"
-  rating: 1
+  rating: 0
   date: "2024-04-14"
   url: "https://letterboxd.com/film/madgaon-express/"
 
@@ -55,20 +55,20 @@
 
 - name: "Premalu"
   language: "Malayalam"
-  rating: 2
+  rating: 2.5
   date: "2024-02-21"
   url: "https://letterboxd.com/film/premalu/"
 
 - name: "Bramayugam"
   language: "Malayalam"
-  rating: 3
+  rating: 3.5
   date: "2024-02-21"
   url: "https://letterboxd.com/film/bramayugam/"
 
 
 - name: "Malaikottai Vaaliban"
   language: "Malayalam"
-  rating: 3
+  rating: 3.5
   date: "2024-02-10"
   url: "https://letterboxd.com/film/malaikottai-vaaliban/"
 
@@ -98,14 +98,14 @@
 
 - name: "Kerala Crime Files"
   language: "Malayalam"
-  rating: 2
+  rating: 2.5
   date: "2024-01-12"
   url: "https://www.serializd.com/show/Kerala-Crime-Files%3A-Shiju%2C-Parayil-Veedu%2C-Neendakara-228658"
 
 
 - name: "Anweshippin Kandethum"
   language: "Malayalam"
-  rating: 2
+  rating: 2.5
   date: "2024-03-19"
   url: "https://letterboxd.com/film/anweshippin-kandethum/"
 
@@ -142,7 +142,7 @@
 
 - name: "The Rat Catcher"
   language: "English"
-  rating: 4
+  rating: 3.5
   date: "2024-06-20"
   url: "https://letterboxd.com/film/the-rat-catcher-2023/"
 

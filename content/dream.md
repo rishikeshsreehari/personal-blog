@@ -65,9 +65,11 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 53. Run a marathon under 3 hours.
 54. Ride 100kms on bike under 3 hours.
 55. Learn falconry.
-56. Start a Cult
+56. Start a Cult.
+57. Create a personal NFT collection for 1000 fans.
+58. 
 
 
 
 
-*Inspired by [Taylor](https://taylor.town/bucket-list),[Laura](https://lauravanderkam.com/2015/06/2015-list-100-dreams/) and more.*
+*Partially inspired by [Taylor](https://taylor.town/bucket-list),[Laura](https://lauravanderkam.com/2015/06/2015-list-100-dreams/) and more.*

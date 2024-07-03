@@ -8,7 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-*Last updated on 09-06-2024, somewhere from [Dubai, United Arab Emirates (UAE)](https://what3words.com/siblings.twitches.scan)*
+*Last updated on 03-07-2024, somewhere from [Dubai, United Arab Emirates (UAE)](https://what3words.com/siblings.twitches.scan)*
 
 This is now a page and gives a glimpse on what I'm upto now!
 
@@ -18,7 +18,7 @@ This is now a page and gives a glimpse on what I'm upto now!
 
 - I'm currently unemployed, so mostly [looking for a job](/hire) most of the time. 
 - Trying to revive [10+1 Things](https://rishikesh.substack.com/) a newsletter I started few years back.
-- Working on some [side projects](/projects) mainly focusing on [What Routine](https://whatroutine.com) and [Affliary](https://affiliary.com).
+- Working on some [side projects](/projects)!
 
 
 
@@ -33,7 +33,7 @@ This is now a page and gives a glimpse on what I'm upto now!
 - [What Color Is Your Parachute?](https://www.amazon.com/What-Color-Your-Parachute-Meaningful/dp/1984861204/ref=sr_1_1?sr=8-1) by Richard N. Bolles
 - [Authority](https://geni.us/rsh-authority) by Nathan Barry
 - [Million Dollar Weekend](https://geni.us/rsh-million-dollar) by Noah Kagan
-- [Welcome to the Hyunam-dong Bookshop](https://geni.us/rsh-hyunam) by Hwang Bo-reum
+- [Cashvertising](https://geni.us/rsh-cashvertising) by Drew Eric Whitman
 
 *I read 3-4 books in parallel most of the time on [my e-book reader](https://geni.us/rsh-kindle-paperwhite).*
 
@@ -46,7 +46,7 @@ This is now a page and gives a glimpse on what I'm upto now!
 
 ### My Workout Regime
 
-I'm currently focusing on transforming my body and bringing down my body fat to healthy levels. I workout 6 days a week with 3 strength training sessions and cardio in the form of running, swimming, and cycling. For strength training, I currently follow the [Phraks' Greyskull LP](https://www.boostcamp.app/coaches/r-fitness/greyskull-linear-progression) program on Boostcamp. Since it's summer here in the Middle East, I mostly run indoors on a treadmill. I do not have a bike to ride here in UAE, so all my rides are indoors to ensure that my muscle memory stays intact. I try to swim 3 times a week, trying to learn how to swim freestyle properly.
+I'm currently focusing on transforming my body and bringing down my body fat to below 25%. I workout 6 days a week with 4 strength training sessions and cardio in the form of running, swimming, and cycling. For strength training, I currently follow the Trainer Winny's [beginner plan](hhttps://www.youtube.com/watch?v=U9ENCvFf9yQ) fousing on  4 days of fullbody workouts. Since it's summer here in the Middle East, I mostly run indoors on a treadmill. I do not have a bike to ride here in UAE, so all my rides are indoors to ensure that my muscle memory stays intact. I try to swim 3 times a week, trying to learn how to swim freestyle properly.
 
 
 #### If you found my now page interesting, checkout ["Then"](/then), an archive of all my "Now" pages.
