@@ -182,6 +182,8 @@
   </url><url>
     <loc>http://localhost:1313/unoffice-hours/</loc>
   </url><url>
+    <loc>http://localhost:1313/button/</loc>
+  </url><url>
     <loc>http://localhost:1313/watch/</loc>
   </url><url>
     <loc>http://localhost:1313/watch-posts/</loc>

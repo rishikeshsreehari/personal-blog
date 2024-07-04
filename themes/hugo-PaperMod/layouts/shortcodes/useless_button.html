@@ -1,0 +1,19 @@
+<div style="text-align: center; margin-top: 20px;">
+    <button hx-post="https://uselessbutton.vercel.app/increment_count" 
+            hx-target="#countText" 
+            hx-swap="innerHTML"
+            hx-headers='{"Authorization": "Basic YWRtaW46c2VjcmV0"}'
+            style="font-size: 24px; padding: 15px 30px; border-radius: 10px; background-color: #007BFF; color: white; border: none; cursor: pointer;"> Do not click    </button>
+
+            
+    <p style="font-size: 20px; margin-top: 20px;">This button has been clicked 
+        <span id="countText" 
+              hx-get="https://uselessbutton.vercel.app/get_count"
+              hx-headers='{"Authorization": "Basic YWRtaW46c2VjcmV0"}'
+              hx-trigger="load">
+            Loading...
+        </span>&nbsp;times for no reason. Why? I have no idea.
+    </p>
+</div>
+
+<script src="https://unpkg.com/htmx.org@1.7.0/dist/htmx.min.js"></script>
