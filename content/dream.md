@@ -67,7 +67,7 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 55. Learn falconry.
 56. Start a Cult.
 57. Create a personal NFT collection for 1000 fans.
-58. 
+58. Write a [Haiku](https://en.wikipedia.org/wiki/Haiku)
 
 
 
