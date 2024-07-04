@@ -1,12 +1,12 @@
 [
   {
-    "Run": 193.1,
-    "Walk": 302.2,
+    "Run": 196.1,
+    "Walk": 314.7,
     "Ride": 127.5,
     "Swim": 19.7,
-    "Portfolio Performance": "15.08%",
+    "Portfolio Performance": "#N/A",
     "Subscribers": 2700,
-    "Weight": 32.5
+    "Weight": "32.5."
   },
   {
     "Run": "",
@@ -18,6 +18,6 @@
     "Weight": "."
   },
   {
-    "Updated": "7/3/2024, 12:37:18 AM"
+    "Updated": "7/5/2024, 12:37:18 AM"
   }
 ]
