@@ -18,7 +18,7 @@
 
 - name: "Oor Iravu (Paava Kadhaigal)"
   language: "Tamil"
-  rating: 5
+  rating: 4.5
   date: "2024-05-24"
   url: "https://letterboxd.com/film/paava-kadhaigal/"
 
@@ -170,6 +170,6 @@
 
 - name: "Ullozhukku"
   language: "Malayalam"
-  rating: 4.5
+  rating: 4
   date: "2024-06-29"
   url: "https://letterboxd.com/film/ullozhukku/"
