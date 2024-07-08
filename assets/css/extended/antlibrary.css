@@ -1,30 +1,52 @@
-
-/* Antilibrary Bookshelf CSS below */
+/* Antilibrary Bookshelf CSS */
 
 .bookshelf {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the books */
+}
+
+.book {
+  width: 150px;
+  text-align: center;
+  margin-bottom: 20px; /* Add some bottom margin */
+}
+
+.book img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}
+
+.book-title {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2; /* Improve readability */
+  max-height: 3.6em; /* Limit to 3 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Remove #show-more button styles as it's no longer used */
+
+/* Add some responsive design */
+@media (max-width: 768px) {
   .book {
-    width: 150px; /* Set the width of each book container */
-    text-align: center;
+    width: 120px; /* Slightly smaller on mobile */
   }
   
   .book img {
-    width: 100%; /* Make the image fill the width of the book container */
-    height: 200px; /* Set a fixed height for all book covers */
-    object-fit: cover; /* Ensures the image covers the entire container without stretching */
-    border-radius: 5px; /* Optional: Add rounded corners */
+    height: 160px;
   }
   
   .book-title {
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 12px;
   }
-  
+}
   #show-more {
     display: block;
     margin: 10px auto;
@@ -53,3 +75,19 @@
   }
   
   
+
+  .book img.lazy {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .book img.lazy.loaded {
+    opacity: 1;
+  }
+
+  #loading {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #737373;
+  }

@@ -110,16 +110,3 @@
 
 
 
-.half-star {
-  display: inline-block;
-  position: relative;
-}
-
-.half-star:before {
-  content: '\2605'; /* Use a solid star character */
-  position: absolute;
-  width: 48%; /* Adjust the width to control the filled portion */
-  overflow: hidden;
-  color: #ffcc00; /* Fill color */
-
-}

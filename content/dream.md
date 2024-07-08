@@ -64,13 +64,14 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 52. Get to 15% body fat.
 53. Run a marathon under 3 hours.
 54. Ride 100kms on bike under 3 hours.
-55. Learn falconry.
+55. Learn [falconry(https://en.wikipedia.org/wiki/Bartender#Mixologist)].
 56. Start a Cult.
 57. Create a personal NFT collection for 1000 fans.
 58. Write a [Haiku](https://en.wikipedia.org/wiki/Haiku)
 59. Circumnavigate navigate earth on cycle - min 29,000 kilometers, cross 2 antipodal points and travel in one direction.
-60. Become a mixologist.
-
+60. Become a [mixologist](https://en.wikipedia.org/wiki/Bartender#Mixologist).
+61. Learn to speak, read and write [Tamil](https://en.wikipedia.org/wiki/Tamil_language), my wife's mother tongue, and also one of the oldest languages in the world.
+62. Learn [Foiling](https://www.youtube.com/watch?v=UhSuIcryDAM).
 
 
 

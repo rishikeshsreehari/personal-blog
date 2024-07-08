@@ -1,10 +1,9 @@
-<p>BookShelfDisplayCount: {{ .Site.Params.BookShelfDisplayCount }}</p>
 <div class="bookshelf" id="bookshelf">
   {{ with sort (site.Data.books_unread) "priority" "desc" }}
     {{ range $index, $element := . }}
       <div class="book" data-index="{{ $index }}">
         <a href="{{ $element.link }}" target="_blank">
-          <img src="{{ $element.cover }}" alt="{{ $element.name }}">
+          <img src="{{ $element.cover }}" alt="{{ $element.name }}" loading="lazy">
           <div class="book-title">{{ $element.name }}</div>
         </a>
       </div>

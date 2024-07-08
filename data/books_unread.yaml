@@ -1,8 +1,792 @@
 - name: "Why Zebras Don't Get Ulcers"
   link: "https://geni.us/OHkm"
-  cover: "https://covers.openlibrary.org/b/isbn/9780805073690-L.jpg"
+  cover: "https://covers.openlibrary.org/b/isbn/9780805073690-M .jpg"
   priority: 10
 - name: "How to Know Higher Worlds: A Modern Path of Initiation"
   link: "https://geni.us/h35Tk"
-  cover: "https://covers.openlibrary.org/b/isbn/9780880103725-L.jpg"
+  cover: "https://covers.openlibrary.org/b/isbn/9780880103725-M.jpg"
   priority: 1
+- name: "How to Hide an Empire: A History of the Greater United States"
+  link: "https://en.wikipedia.org/wiki/How_to_Hide_an_Empire"
+  cover: "https://covers.openlibrary.org/b/isbn/9780549733037-S.jpg"
+  priority: 10
+- name: "The Invention of Brownstone Brooklyn"
+  link: "https://bookshop.org/books/the-invention-of-brownstone-brooklyn/9780195387316"
+  cover: "https://covers.openlibrary.org/b/isbn/9780195387316-S.jpg"
+  priority: 9
+- name: "No One Is Talking About This"
+  link: "https://en.wikipedia.org/wiki/No_One_Is_Talking_About_This"
+  cover: "https://covers.openlibrary.org/b/isbn/9780593270327-S.jpg"
+  priority: 8
+- name: "Nomadland: Surviving America in the Twenty-First Century"
+  link: "https://en.wikipedia.org/wiki/Nomadland_(book)"
+  cover: "https://covers.openlibrary.org/b/isbn/9780393247130-S.jpg"
+  priority: 7
+- name: "Annapurna: The First Conquest of an 8000-Meter Peak"
+  link: "https://en.wikipedia.org/wiki/Annapurna_(book)"
+  cover: "https://covers.openlibrary.org/b/isbn/9780898866853-S.jpg"
+  priority: 6
+- name: "The Ocean at the End of the Lane"
+  link: "https://en.wikipedia.org/wiki/The_Ocean_at_the_End_of_the_Lane"
+  cover: "https://covers.openlibrary.org/b/isbn/9780062255662-S.jpg"
+  priority: 5
+- name: "Determined: A Science of Life Without Free Will"
+  link: "https://bookshop.org/books/determined-a-science-of-life-without-free-will/9780674979581"
+  cover: "https://covers.openlibrary.org/b/isbn/9780674979581-S.jpg"
+  priority: 4
+- name: "Proof Of Stake: The Making of Ethereum and the Philosophy of Blockchains"
+  link: "https://bookshop.org/books/proof-of-stake-the-making-of-ethereum-and-the-philosophy-of-blockchains/9781644212482"
+  cover: "https://covers.openlibrary.org/b/isbn/9781644212482-S.jpg"
+  priority: 3
+- name: "The Perfectionists: How Precision Engineers Created the Modern World"
+  link: "https://en.wikipedia.org/wiki/The_Perfectionists:_How_Precision_Engineers_Created_the_Modern_World"
+  cover: "https://covers.openlibrary.org/b/isbn/9780062852687-S.jpg"
+  priority: 2
+- name: "Radical Acceptance: Embracing Your Life With the Heart of a Buddha"
+  link: "https://bookshop.org/books/radical-acceptance-embracing-your-life-with-the-heart-of-a-buddha/9780553380996"
+  cover: "https://covers.openlibrary.org/b/isbn/9780553380996-S.jpg"
+  priority: 1
+- name: "The Knowledge: How to Rebuild our World from Scratch"
+  link: "https://en.wikipedia.org/wiki/The_Knowledge:_How_to_Rebuild_Our_World_from_Scratch"
+  cover: "https://covers.openlibrary.org/b/isbn/9781594205231-L.jpg"
+  priority: 10
+- name: "Dangerous Book for Boys"
+  link: "https://en.wikipedia.org/wiki/The_Dangerous_Book_for_Boys"
+  cover: "https://covers.openlibrary.org/b/isbn/9780062208972-L.jpg"
+  priority: 9
+- name: "David Broom: Gin: How to Drink it"
+  link: "https://bookshop.org/books/gin-how-to-drink-it/9781784726634"
+  cover: "https://covers.openlibrary.org/b/isbn/9781784726634-L.jpg"
+  priority: 8
+- name: "Other Minds: The Octopus and the Evolution of Intelligent Life"
+  link: "https://en.wikipedia.org/wiki/Other_Minds"
+  cover: "https://covers.openlibrary.org/b/isbn/9780374227760-L.jpg"
+  priority: 7
+- name: "Debt: The First 5000 Years"
+  link: "https://en.wikipedia.org/wiki/Debt:_The_First_5000_Years"
+  cover: "https://covers.openlibrary.org/b/isbn/9781933633862-L.jpg"
+  priority: 6
+- name: "What You Do Is Who You Are: How to Create Your Business Culture"
+  link: "https://bookshop.org/books/what-you-do-is-who-you-are-how-to-create-your-business-culture/9780062871336"
+  cover: "https://covers.openlibrary.org/b/isbn/9780062871336-L.jpg"
+  priority: 5
+- name: "Impactful Data Visualization: Hide and Seek with Graphs"
+  link: "https://bookshop.org/books/impactful-data-visualization-hide-and-seek-with-graphs/9781951527052"
+  cover: "https://covers.openlibrary.org/b/isbn/9781951527052-L.jpg"
+  priority: 4
+- name: "The Fabric of Reality: The Science of Parallel Universes and Its Implications"
+  link: "https://en.wikipedia.org/wiki/The_Fabric_of_Reality"
+  cover: "https://covers.openlibrary.org/b/isbn/9780140275414-L.jpg"
+  priority: 3
+- name: "Self-Made Olympian by Ron Daws"
+  link: "https://bookshop.org/books/self-made-olympian/9780915297038"
+  cover: "https://covers.openlibrary.org/b/isbn/9780915297038-L.jpg"
+  priority: 2
+- name: "Size Vaclav"
+  link: "https://bookshop.org/books/size/9780374267773"
+  cover: "https://covers.openlibrary.org/b/isbn/9780374267773-L.jpg"
+  priority: 1
+- name: "Lady Testing Tea"
+  link: "https://bookshop.org/books/the-lady-testing-tea/9781934356005"
+  cover: "https://covers.openlibrary.org/b/isbn/9781934356005-L.jpg"
+  priority: 10
+- name: "A Grain of Sand: The Story of One Man and an Island"
+  link: "https://bookshop.org/books/a-grain-of-sand-the-story-of-one-man-and-an-island/9781732897821"
+  cover: "https://covers.openlibrary.org/b/isbn/9781732897821-L.jpg"
+  priority: 9
+- name: "Zurich Axioms"
+  link: "https://en.wikipedia.org/wiki/The_Zurich_Axioms"
+  cover: "https://covers.openlibrary.org/b/isbn/9780684830610-L.jpg"
+  priority: 8
+- name: "History of Kerala"
+  link: "https://en.wikipedia.org/wiki/History_of_Kerala"
+  cover: "https://covers.openlibrary.org/b/isbn/9788120407764-L.jpg"
+  priority: 7
+- name: "Feed Zone Portables"
+  link: "https://bookshop.org/books/feed-zone-portables/9781937715007"
+  cover: "https://covers.openlibrary.org/b/isbn/9781937715007-L.jpg"
+  priority: 6
+- name: "Think Like a Street Photographer"
+  link: "https://bookshop.org/books/think-like-a-street-photographer/9780711255510"
+  cover: "https://covers.openlibrary.org/b/isbn/9780711255510-L.jpg"
+  priority: 5
+- name: "Hacking Health: The Only Book You’ll Ever Need to Live Your Healthiest Life"
+  link: "https://bookshop.org/books/hacking-health-the-only-book-you-ll-ever-need-to-live-your-healthiest-life/9781788174004"
+  cover: "https://covers.openlibrary.org/b/isbn/9781788174004-L.jpg"
+  priority: 4
+- name: "No Limits: The Art And Science Of High P: The Art and Science of High Performance"
+  link: "https://bookshop.org/books/no-limits-the-art-and-science-of-high-performance/9780735223509"
+  cover: "https://covers.openlibrary.org/b/isbn/9780735223509-L.jpg"
+  priority: 3
+- name: "The Good Gut"
+  link: "https://en.wikipedia.org/wiki/The_Good_Gut"
+  cover: "https://covers.openlibrary.org/b/isbn/9781594206283-L.jpg"
+  priority: 2
+- name: "How Will You Measure Your Life?"
+  link: "https://en.wikipedia.org/wiki/How_Will_You_Measure_Your_Life%3F"
+  cover: "https://covers.openlibrary.org/b/isbn/9780062102416-L.jpg"
+  priority: 1
+- name: "How Computers Work: The Evolution of Technology, 10th Edition"
+  link: "https://bookshop.org/books/how-computers-work-the-evolution-of-technology-10th-edition/9780789749840"
+  cover: "https://covers.openlibrary.org/b/isbn/9780789749840-L.jpg"
+  priority: 10
+- name: "Introduction to Systems Analysis: Mathematically Modeling Natural Systems"
+  link: "https://bookshop.org/books/introduction-to-systems-analysis-mathematically-modeling-natural-systems/9780123847031"
+  cover: "https://covers.openlibrary.org/b/isbn/9780123847031-L.jpg"
+  priority: 9
+- name: "Off the Clock: Feel Less Busy While Getting More Done"
+  link: "https://en.wikipedia.org/wiki/Off_the_Clock:_Feel_Less_Busy_While_Getting_More_Done"
+  cover: "https://covers.openlibrary.org/b/isbn/9780735219816-L.jpg"
+  priority: 8
+- name: "Difficult Conversations: How to Discuss What Matters Most"
+  link: "https://bookshop.org/books/difficult-conversations-how-to-discuss-what-matters-most/9780143118442"
+  cover: "https://covers.openlibrary.org/b/isbn/9780143118442-L.jpg"
+  priority: 7
+- name: "The Elegant Universe"
+  link: "https://en.wikipedia.org/wiki/The_Elegant_Universe"
+  cover: "https://covers.openlibrary.org/b/isbn/9780393338104-L.jpg"
+  priority: 6
+- name: "How to Teach Quantum Physics to Your Dog"
+  link: "https://bookshop.org/books/how-to-teach-quantum-physics-to-your-dog/9781439195445"
+  cover: "https://covers.openlibrary.org/b/isbn/9781439195445-L.jpg"
+  priority: 5
+- name: "In My Own Way: An Autobiography"
+  link: "https://en.wikipedia.org/wiki/In_My_Own_Way"
+  cover: "https://covers.openlibrary.org/b/isbn/9781577315841-L.jpg"
+  priority: 4
+- name: "Limits to Growth: The 30-Year Update"
+  link: "https://en.wikipedia.org/wiki/The_Limits_to_Growth"
+  cover: "https://covers.openlibrary.org/b/isbn/9781931498586-L.jpg"
+  priority: 3
+- name: "Life in Five Senses: How Exploring the Senses Got Me Out of My Head and Into the World"
+  link: "https://bookshop.org/books/life-in-five-senses-how-exploring-the-senses-got-me-out-of-my-head-and-into-the-world/9780593442748"
+  cover: "https://covers.openlibrary.org/b/isbn/9780593442748-L.jpg"
+  priority: 2
+- name: "Endurance by Alfred Lansing"
+  link: "https://en.wikipedia.org/wiki/Endurance:_Shackleton%27s_Incredible_Voyage"
+  cover: "https://covers.openlibrary.org/b/isbn/9780465062881-L.jpg"
+  priority: 1
+- name: "Against Hate"
+  link: "https://bookshop.org/books/against-hate/9781632062055"
+  cover: "https://covers.openlibrary.org/b/isbn/9781632062055-L.jpg"
+  priority: 10
+- name: "Turbaned Tornado: The Oldest Marathon Runner"
+  link: "https://bookshop.org/books/the-turbaned-tornado/9788183282525"
+  cover: "https://covers.openlibrary.org/b/isbn/9788183282525-L.jpg"
+  priority: 9
+- name: "Outsider: An Old Man, a Mountain and the Search for a Hidden Past"
+  link: "https://bookshop.org/books/outsider-an-old-man-a-mountain-and-the-search-for-a-hidden-past/9781787464083"
+  cover: "https://covers.openlibrary.org/b/isbn/9781787464083-L.jpg"
+  priority: 8
+- name: "The Escapist: Cheating Death on the World's Highest Mountains"
+  link: "https://bookshop.org/books/the-escapist-cheating-death-on-the-world-s-highest-mountains/9781912560202"
+  cover: "https://covers.openlibrary.org/b/isbn/9781912560202-L.jpg"
+  priority: 7
+- name: "The Marathon Monks of Mount Hiei"
+  link: "https://bookshop.org/books/the-marathon-monks-of-mount-hiei/9780870119039"
+  cover: "https://covers.openlibrary.org/b/isbn/9780870119039-L.jpg"
+  priority: 6
+- name: "Last Chance to See"
+  link: "https://en.wikipedia.org/wiki/Last_Chance_to_See"
+  cover: "https://covers.openlibrary.org/b/isbn/9780345371980-L.jpg"
+  priority: 5
+- name: "e: The Story of a Number"
+  link: "https://bookshop.org/books/e-the-story-of-a-number/9780691141343"
+  cover: "https://covers.openlibrary.org/b/isbn/9780691141343-L.jpg"
+  priority: 4
+- name: "Why Math? by R.D. Driver"
+  link: "https://bookshop.org/books/why-math/9781470439294"
+  cover: "https://covers.openlibrary.org/b/isbn/9781470439294-L.jpg"
+  priority: 3
+- name: "Cave in the Snow"
+  link: "https://bookshop.org/books/cave-in-the-snow/9781582340456"
+  cover: "https://covers.openlibrary.org/b/isbn/9781582340456-L.jpg"
+  priority: 2
+- name: "Good Calories, Bad Calories: Fats, Carbs, and the Controversial Science of Diet and Health"
+  link: "https://en.wikipedia.org/wiki/Good_Calories,_Bad_Calories"
+  cover: "https://covers.openlibrary.org/b/isbn/9781400033461-L.jpg"
+  priority: 1
+- name: "The Last Nomad: Coming of Age in the Somali Desert"
+  link: "https://bookshop.org/books/the-last-nomad-coming-of-age-in-the-somali-desert/9781632062956"
+  cover: "https://covers.openlibrary.org/b/isbn/9781632062956-L.jpg"
+  priority: 9
+- name: "Weather For Dummies"
+  link: "https://bookshop.org/books/weather-for-dummies/9780764552434"
+  cover: "https://covers.openlibrary.org/b/isbn/9780764552434-L.jpg"
+  priority: 8
+- name: "Can't Hurt Me: Master Your Mind and Defy the Odds"
+  link: "https://bookshop.org/books/can-t-hurt-me-master-your-mind-and-defy-the-odds/9781544512280"
+  cover: "https://covers.openlibrary.org/b/isbn/9781544512280-L.jpg"
+  priority: 7
+- name: "12 Rules for Life: An Antidote to Chaos"
+  link: "https://en.wikipedia.org/wiki/12_Rules_for_Life"
+  cover: "https://covers.openlibrary.org/b/isbn/9780345816023-L.jpg"
+  priority: 6
+- name: "This Mortal Coil: A History of Death"
+  link: "https://bookshop.org/books/this-mortal-coil-a-history-of-death/9781784708715"
+  cover: "https://covers.openlibrary.org/b/isbn/9781784708715-L.jpg"
+  priority: 5
+- name: "The Omnivore's Dilemma: A Natural History of Four Meals"
+  link: "https://en.wikipedia.org/wiki/The_Omnivore%27s_Dilemma"
+  cover: "https://covers.openlibrary.org/b/isbn/9781594200823-L.jpg"
+  priority: 4
+- name: "The Character of Physical Law"
+  link: "https://bookshop.org/books/the-character-of-physical-law/9780262533416"
+  cover: "https://covers.openlibrary.org/b/isbn/9780262533416-L.jpg"
+  priority: 3
+- name: "Make Ink: A Forager's Guide to Natural Inkmaking"
+  link: "https://bookshop.org/books/make-ink-a-forager-s-guide-to-natural-inkmaking/9781419732434"
+  cover: "https://covers.openlibrary.org/b/isbn/9781419732434-L.jpg"
+  priority: 2
+- name: "Hackers & Painters"
+  link: "https://en.wikipedia.org/wiki/Hackers_%26_Painters"
+  cover: "https://covers.openlibrary.org/b/isbn/9780596006626-L.jpg"
+  priority: 1
+- name: "Around the World on a Bicycle"
+  link: "https://bookshop.org/books/around-the-world-on-a-bicycle/9781635618112"
+  cover: "https://covers.openlibrary.org/b/isbn/9781635618112-L.jpg"
+  priority: 10
+- name: "The Chimp Paradox"
+  link: "https://bookshop.org/books/the-chimp-paradox/9781785040579"
+  cover: "https://covers.openlibrary.org/b/isbn/9781785040579-L.jpg"
+  priority: 9
+- name: "No More Mr Nice Guy"
+  link: "https://bookshop.org/books/no-more-mr-nice-guy/9780762415335"
+  cover: "https://covers.openlibrary.org/b/isbn/9780762415335-L.jpg"
+  priority: 8
+- name: "Outlive"
+  link: "https://bookshop.org/books/outlive/9781529910052"
+  cover: "https://covers.openlibrary.org/b/isbn/9781529910052-L.jpg"
+  priority: 7
+- name: "When I Stop Talking, You'll Know I'm Dead"
+  link: "https://bookshop.org/books/when-i-stop-talking-you-ll-know-i-m-dead/9780446562014"
+  cover: "https://covers.openlibrary.org/b/isbn/9780446562014-L.jpg"
+  priority: 6
+- name: "438 Days: An Extraordinary True Story of Survival at Sea"
+  link: "https://en.wikipedia.org/wiki/438_Days:_An_Extraordinary_True_Story_of_Survival_at_Sea"
+  cover: "https://covers.openlibrary.org/b/isbn/9781501116292-L.jpg"
+  priority: 5
+- name: "Exhalation: Stories"
+  link: "https://bookshop.org/books/exhalation-stories/9781101972083"
+  cover: "https://covers.openlibrary.org/b/isbn/9781101972083-L.jpg"
+  priority: 4
+- name: "When McKinsey Comes to Town: The Hidden Influence of the World's Most Powerful Consulting Firm"
+  link: "https://bookshop.org/books/when-mckinsey-comes-to-town-the-hidden-influence-of-the-world-s-most-powerful-consulting-firm/9780385549883"
+  cover: "https://covers.openlibrary.org/b/isbn/9780385549883-L.jpg"
+  priority: 3
+- name: "The Braider River"
+  link: "https://bookshop.org/books/the-braided-river/9780358213156"
+  cover: "https://covers.openlibrary.org/b/isbn/9780358213156-L.jpg"
+  priority: 2
+- name: "Monsoon Economies"
+  link: "https://bookshop.org/books/monsoon-economies/9780674916487"
+  cover: "https://covers.openlibrary.org/b/isbn/9780674916487-L.jpg"
+  priority: 1
+- name: "Whole Numbers and Half Truths: What Data Can and Cannot Tell Us About Modern India"
+  link: "https://bookshop.org/books/whole-numbers-and-half-truths-what-data-can-and-cannot-tell-us-about-modern-india/9789353451441"
+  cover: "https://covers.openlibrary.org/b/isbn/9789353451441-L.jpg"
+  priority: 10
+- name: "Everyday Data Science: Optimize Your Life"
+  link: "https://bookshop.org/books/everyday-data-science-optimize-your-life/9781732964820"
+  cover: "https://covers.openlibrary.org/b/isbn/9781732964820-L.jpg"
+  priority: 9
+- name: "Your Life, Uploaded: The Digital Way to Better Memory, Health, and Productivity"
+  link: "https://bookshop.org/books/your-life-uploaded-the-digital-way-to-better-memory-health-and-productivity/9780670022205"
+  cover: "https://covers.openlibrary.org/b/isbn/9780670022205-L.jpg"
+  priority: 8
+- name: "Geek in Japan"
+  link: "https://bookshop.org/books/geek-in-japan/9784805311295"
+  cover: "https://covers.openlibrary.org/b/isbn/9784805311295-L.jpg"
+  priority: 10
+- name: "We Learn Nothing"
+  link: "https://bookshop.org/books/we-learn-nothing/9781455508737"
+  cover: "https://covers.openlibrary.org/b/isbn/9781455508737-L.jpg"
+  priority: 9
+- name: "Richest Man in Babylon"
+  link: "https://bookshop.org/books/the-richest-man-in-babylon/9781505297393"
+  cover: "https://covers.openlibrary.org/b/isbn/9781505297393-L.jpg"
+  priority: 8
+- name: "Happy by Derren Brown"
+  link: "https://bookshop.org/books/happy-why-more-or-less-everything-is-absolutely-fine/9780552172356"
+  cover: "https://covers.openlibrary.org/b/isbn/9780552172356-L.jpg"
+  priority: 7
+- name: "So Good They Can't Ignore You"
+  link: "https://bookshop.org/books/so-good-they-can-t-ignore-you-why-skills-trump-passion-in-the-quest-for-work-you-love/9781455509123"
+  cover: "https://covers.openlibrary.org/b/isbn/9781455509123-L.jpg"
+  priority: 6
+- name: "Pragmatic Programmer"
+  link: "https://bookshop.org/books/the-pragmatic-programmer-your-journey-to-mastery-20th-anniversary-edition/9780135957059"
+  cover: "https://covers.openlibrary.org/b/isbn/9780135957059-L.jpg"
+  priority: 5
+- name: "Writing Well"
+  link: "https://bookshop.org/books/on-writing-well-the-classic-guide-to-writing-nonfiction/9780060891541"
+  cover: "https://covers.openlibrary.org/b/isbn/9780060891541-L.jpg"
+  priority: 4
+- name: "Made to Stick"
+  link: "https://bookshop.org/books/made-to-stick-why-some-ideas-survive-and-others-die/9781400064281"
+  cover: "https://covers.openlibrary.org/b/isbn/9781400064281-L.jpg"
+  priority: 3
+- name: "First 20 Hours"
+  link: "https://bookshop.org/books/the-first-20-hours-how-to-learn-anything-fast/9781591845552"
+  cover: "https://covers.openlibrary.org/b/isbn/9781591845552-L.jpg"
+  priority: 2
+- name: "Storyworthy"
+  link: "https://bookshop.org/books/storyworthy-engage-teach-persuade-and-change-your-life-through-the-power-of-storytelling/9781608685486"
+  cover: "https://covers.openlibrary.org/b/isbn/9781608685486-L.jpg"
+  priority: 1
+- name: "Selfish Gene"
+  link: "https://bookshop.org/books/the-selfish-gene-40th-anniversary-edition/9780198788608"
+  cover: "https://covers.openlibrary.org/b/isbn/9780198788608-L.jpg"
+  priority: 10
+- name: "The Power of Now"
+  link: "https://bookshop.org/books/the-power-of-now-a-guide-to-spiritual-enlightenment/9781577314806"
+  cover: "https://covers.openlibrary.org/b/isbn/9781577314806-L.jpg"
+  priority: 9
+- name: "Floating Gold: A Natural (and Unnatural) History of Ambergris"
+  link: "https://bookshop.org/books/floating-gold-a-natural-and-unnatural-history-of-ambergris/9780226101615"
+  cover: "https://covers.openlibrary.org/b/isbn/9780226101615-L.jpg"
+  priority: 8
+- name: "Era of Darkness"
+  link: "https://bookshop.org/books/an-era-of-darkness-the-british-empire-in-india/9780141980713"
+  cover: "https://covers.openlibrary.org/b/isbn/9780141980713-L.jpg"
+  priority: 7
+- name: "How to Fail at Almost Everything and Still Win Big"
+  link: "https://bookshop.org/books/how-to-fail-at-almost-everything-and-still-win-big-kind-of-the-story-of-my-life/9781591847747"
+  cover: "https://covers.openlibrary.org/b/isbn/9781591847747-L.jpg"
+  priority: 6
+- name: "A Beautiful Constraint"
+  link: "https://bookshop.org/books/a-beautiful-constraint-how-to-transform-your-limitations-into-advantages-and-why-it-s-everyone-s-business/9781118899014"
+  cover: "https://covers.openlibrary.org/b/isbn/9781118899014-L.jpg"
+  priority: 5
+- name: "The Art of Possibility"
+  link: "https://bookshop.org/books/the-art-of-possibility-transforming-professional-and-personal-life/9780142001103"
+  cover: "https://covers.openlibrary.org/b/isbn/9780142001103-L.jpg"
+  priority: 4
+- name: "Tribes"
+  link: "https://bookshop.org/books/tribes-we-need-you-to-lead-us/9781591842339"
+  cover: "https://covers.openlibrary.org/b/isbn/9781591842339-L.jpg"
+  priority: 3
+- name: "You and Your Life"
+  link: "https://bookshop.org/books/you-your-life/"
+  cover: "https://covers.openlibrary.org/b/isbn/9781591842339-L.jpg"
+  priority: 2
+- name: "Thinking in Systems"
+  link: "https://bookshop.org/books/thinking-in-systems-international-edition-a-primer/9781603580557"
+  cover: "https://covers.openlibrary.org/b/isbn/9781603580557-L.jpg"
+  priority: 1
+- name: "Tipping Point"
+  link: "https://bookshop.org/books/the-tipping-point-how-little-things-can-make-a-big-difference/9780316346627"
+  cover: "https://covers.openlibrary.org/b/isbn/9780316346627-L.jpg"
+  priority: 10
+- name: "Elements of User Experience"
+  link: "https://bookshop.org/books/the-elements-of-user-experience-user-centered-design-for-the-web-and-beyond/9780321683687"
+  cover: "https://covers.openlibrary.org/b/isbn/9780321683687-L.jpg"
+  priority: 9
+- name: "Deep Work"
+  link: "https://bookshop.org/books/deep-work-rules-for-focused-success-in-a-distracted-world/9781455586698"
+  cover: "https://covers.openlibrary.org/b/isbn/9781455586698-L.jpg"
+  priority: 8
+- name: "Obstacle is the Way"
+  link: "https://bookshop.org/books/the-obstacle-is-the-way-the-timeless-art-of-turning-trials-into-triumph/9781591846351"
+  cover: "https://covers.openlibrary.org/b/isbn/9781591846351-L.jpg"
+  priority: 7
+- name: "A Guide to the Good Life"
+  link: "https://bookshop.org/books/a-guide-to-the-good-life-the-ancient-art-of-stoic-joy/9780195374613"
+  cover: "https://covers.openlibrary.org/b/isbn/9780195374613-L.jpg"
+  priority: 6
+- name: "Undeniable"
+  link: "https://bookshop.org/books/undeniable-evolution-and-the-science-of-creation/9781250074225"
+  cover: "https://covers.openlibrary.org/b/isbn/9781250074225-L.jpg"
+  priority: 5
+- name: "Embedded Entrepreneur"
+  link: "https://bookshop.org/books/the-embedded-entrepreneur-how-to-build-an-audience-driven-business/9781736031504"
+  cover: "https://covers.openlibrary.org/b/isbn/9781736031504-L.jpg"
+  priority: 4
+- name: "Zero to Sold"
+  link: "https://bookshop.org/books/zero-to-sold-how-to-start-run-and-sell-a-bootstrapped-business/9781951404483"
+  cover: "https://covers.openlibrary.org/b/isbn/9781951404483-L.jpg"
+  priority: 3
+- name: "Making Work Visible"
+  link: "https://bookshop.org/books/making-work-visible-exposing-time-theft-to-optimize-work-flow/9781942788157"
+  cover: "https://covers.openlibrary.org/b/isbn/9781942788157-L.jpg"
+  priority: 2
+- name: "Beginners: The Joy and Transformative Power of Lifelong Learning"
+  link: "https://bookshop.org/books/beginners-the-joy-and-transformative-power-of-lifelong-learning/9781524732161"
+  cover: "https://covers.openlibrary.org/b/isbn/9781524732161-L.jpg"
+  priority: 1
+- name: "The Hidden Life of Trees"
+  link: "https://bookshop.org/books/the-hidden-life-of-trees-what-they-feel-how-they-communicate-discoveries-from-a-secret-world/9781771642484"
+  cover: "https://covers.openlibrary.org/b/isbn/9781771642484-L.jpg"
+  priority: 10
+- name: "Guns, Germs, and Steel"
+  link: "https://bookshop.org/books/guns-germs-and-steel-the-fates-of-human-societies/9780393317550"
+  cover: "https://covers.openlibrary.org/b/isbn/9780393317550-L.jpg"
+  priority: 9
+- name: "The Omnivore's Dilemma"
+  link: "https://bookshop.org/books/the-omnivore-s-dilemma-a-natural-history-of-four-meals/9780143038580"
+  cover: "https://covers.openlibrary.org/b/isbn/9780143038580-L.jpg"
+  priority: 8
+- name: "Stillness is the Key"
+  link: "https://bookshop.org/books/stillness-is-the-key/9780525538585"
+  cover: "https://covers.openlibrary.org/b/isbn/9780525538585-L.jpg"
+  priority: 7
+- name: "Letters from a Stoic"
+  link: "https://bookshop.org/books/letters-from-a-stoic-epistulae-morales-ad-lucilium/9780140442105"
+  cover: "https://covers.openlibrary.org/b/isbn/9780140442105-L.jpg"
+  priority: 6
+- name: "Ignore Everybody"
+  link: "https://bookshop.org/books/ignore-everybody-and-39-other-keys-to-creativity/9781591842599"
+  cover: "https://covers.openlibrary.org/b/isbn/9781591842599-L.jpg"
+  priority: 5
+- name: "Hackers and Painters"
+  link: "https://bookshop.org/books/hackers-painters-big-ideas-from-the-computer-age/9780596006626"
+  cover: "https://covers.openlibrary.org/b/isbn/9780596006626-L.jpg"
+  priority: 4
+- name: "Buzz: The Nature and Necessity of Bees"
+  link: "https://bookshop.org/books/buzz-the-nature-and-necessity-of-bees/9780465052615"
+  cover: "https://covers.openlibrary.org/b/isbn/9780465052615-L.jpg"
+  priority: 3
+- name: "It's All About the Bike"
+  link: "https://bookshop.org/books/it-s-all-about-the-bike-the-pursuit-of-happiness-on-two-wheels/9780141043791"
+  cover: "https://covers.openlibrary.org/b/isbn/9780141043791-L.jpg"
+  priority: 2
+- name: "The Courage to be Disliked"
+  link: "https://bookshop.org/books/the-courage-to-be-disliked-the-japanese-phenomenon-that-shows-you-how-to-change-your-life-and-achieve-real-happiness/9781501197277"
+  cover: "https://covers.openlibrary.org/b/isbn/9781501197277-L.jpg"
+  priority: 1
+- name: "Humankind: A Hopeful History"
+  link: "https://bookshop.org/books/humankind-a-hopeful-history/9780316418539"
+  cover: "https://covers.openlibrary.org/b/isbn/9780316418539-L.jpg"
+  priority: 10
+- name: "Gorge: My Journey Up Kilimanjaro at 300 Pounds"
+  link: "https://bookshop.org/books/gorge-my-journey-up-kilimanjaro-at-300-pounds/9781580055604"
+  cover: "https://covers.openlibrary.org/b/isbn/9781580055604-L.jpg"
+  priority: 9
+- name: "Art of Thought"
+  link: "https://bookshop.org/books/the-art-of-thought/9780765809216"
+  cover: "https://covers.openlibrary.org/b/isbn/9780765809216-L.jpg"
+  priority: 8
+- name: "E-Myth Revisited"
+  link: "https://bookshop.org/books/the-e-myth-revisited-why-most-small-businesses-don-t-work-and-what-to-do-about-it/9780887307287"
+  cover: "https://covers.openlibrary.org/b/isbn/9780887307287-L.jpg"
+  priority: 7
+- name: "The Physicist and the Philosopher"
+  link: "https://bookshop.org/books/the-physicist-and-the-philosopher-einstein-bergson-and-the-debate-that-changed-our-understanding-of-time/9780691173177"
+  cover: "https://covers.openlibrary.org/b/isbn/9780691173177-L.jpg"
+  priority: 6
+- name: "Zen: The Art of Simple Living"
+  link: "https://bookshop.org/books/zen-the-art-of-simple-living/9780141984087"
+  cover: "https://covers.openlibrary.org/b/isbn/9780141984087-L.jpg"
+  priority: 5
+- name: "The Art of Noticing"
+  link: "https://bookshop.org/books/the-art-of-noticing-131-ways-to-spark-creativity-find-inspiration-and-discover-joy-in-the-everyday/9780525538318"
+  cover: "https://covers.openlibrary.org/b/isbn/9780525538318-L.jpg"
+  priority: 4
+- name: "Thich Nhat Hanh: Mindfulness Essentials"
+  link: "https://bookshop.org/books/how-to-live-1-how-to-sit-2-how-to-eat-3-how-to-love-4-how-to-walk-5-how-to-relax-6-how-to-fight/9781946764508"
+  cover: "https://covers.openlibrary.org/b/isbn/9781946764508-L.jpg"
+  priority: 3
+- name: "Metabolical"
+  link: "https://bookshop.org/books/metabolical-the-lure-and-the-lies-of-processed-food-nutrition-and-modern-medicine/9780063027718"
+  cover: "https://covers.openlibrary.org/b/isbn/9780063027718-L.jpg"
+  priority: 2
+- name: "The Emperor of All Maladies: A Biography of Cancer"
+  link: "https://bookshop.org/books/the-emperor-of-all-maladies-a-biography-of-cancer/9781439170916"
+  cover: "https://covers.openlibrary.org/b/isbn/9781439170916-L.jpg"
+  priority: 1
+- name: "Die with Zero"
+  link: "https://bookshop.org/books/die-with-zero-getting-all-you-can-from-your-money-and-your-life/9780358099767"
+  cover: "https://covers.openlibrary.org/b/isbn/9780358099767-L.jpg"
+  priority: 10
+- name: "Superintelligence"
+  link: "https://bookshop.org/books/superintelligence-paths-dangers-strategies/9780198739839"
+  cover: "https://covers.openlibrary.org/b/isbn/9780198739839-L.jpg"
+  priority: 9
+- name: "The Happiness Project"
+  link: "https://bookshop.org/books/the-happiness-project-or-why-i-spent-a-year-trying-to-sing-in-the-morning-clean-my-closets-fight-right-read-aristotle-and-generally-have-more-fun/9780061583260"
+  cover: "https://covers.openlibrary.org/b/isbn/9780061583260-L.jpg"
+  priority: 8
+- name: "Design as Art"
+  link: "https://bookshop.org/books/design-as-art/9780141035819"
+  cover: "https://covers.openlibrary.org/b/isbn/9780141035819-L.jpg"
+  priority: 7
+- name: "A Manual for Living"
+  link: "https://bookshop.org/books/a-manual-for-living/9780062511118"
+  cover: "https://covers.openlibrary.org/b/isbn/9780062511118-L.jpg"
+  priority: 6
+- name: "Too Soon Old, Too Late Smart: Thirty True Things You Need to Know Now"
+  link: "https://bookshop.org/books/too-soon-old-too-late-smart-thirty-true-things-you-need-to-know-now/9781569243731"
+  cover: "https://covers.openlibrary.org/b/isbn/9781569243731-L.jpg"
+  priority: 5
+- name: "The Dawn of Everything: A New History of Humanity"
+  link: "https://bookshop.org/books/the-dawn-of-everything-a-new-history-of-humanity/9780374157357"
+  cover: "https://covers.openlibrary.org/b/isbn/9780374157357-L.jpg"
+  priority: 4
+- name: "How Asia Works"
+  link: "https://bookshop.org/books/how-asia-works-success-and-failure-in-the-world-s-most-dynamic-region/9780802121325"
+  cover: "https://covers.openlibrary.org/b/isbn/9780802121325-L.jpg"
+  priority: 3
+- name: "Antifragile"
+  link: "https://bookshop.org/books/antifragile-things-that-gain-from-disorder-incerto/9780812979688"
+  cover: "https://covers.openlibrary.org/b/isbn/9780812979688-L.jpg"
+  priority: 2
+- name: "The Black Swan"
+  link: "https://bookshop.org/books/the-black-swan-the-impact-of-the-highly-improbable/9780812973815"
+  cover: "https://covers.openlibrary.org/b/isbn/9780812973815-L.jpg"
+  priority: 1
+- name: "Lifespan: Why We Age—and Why We Don't Have To"
+  link: "https://bookshop.org/books/lifespan-why-we-age-and-why-we-don-t-have-to/9781501191978"
+  cover: "https://covers.openlibrary.org/b/isbn/9781501191978-L.jpg"
+  priority: 10
+- name: "Whole Earth: The Many Lives of Stewart Brand"
+  link: "https://bookshop.org/books/whole-earth-the-many-lives-of-stewart-brand/9780735224025"
+  cover: "https://covers.openlibrary.org/b/isbn/9780735224025-L.jpg"
+  priority: 9
+- name: "An Astronaut's Guide to Life on Earth"
+  link: "https://bookshop.org/books/an-astronaut-s-guide-to-life-on-earth-what-going-to-space-taught-me-about-ingenuity-determination-and-being-prepared-for-anything/9780316253017"
+  cover: "https://covers.openlibrary.org/b/isbn/9780316253017-L.jpg"
+  priority: 8
+- name: "A Little History of Philosophy"
+  link: "https://bookshop.org/books/a-little-history-of-philosophy/9780300167796"
+  cover: "https://covers.openlibrary.org/b/isbn/9780300167796-L.jpg"
+  priority: 7
+- name: "Just Ride: A Radically Practical Guide to Riding Your Bike"
+  link: "https://bookshop.org/books/just-ride-a-radically-practical-guide-to-riding-your-bike/9780761155584"
+  cover: "https://covers.openlibrary.org/b/isbn/9780761155584-L.jpg"
+  priority: 6
+- name: "A Runner's High: Older, Wiser, Slower, Stronger"
+  link: "https://bookshop.org/books/a-runner-s-high-older-wiser-slower-stronger/9781984899767"
+  cover: "https://covers.openlibrary.org/b/isbn/9781984899767-L.jpg"
+  priority: 5
+- name: "Ultramarathon Man"
+  link: "https://bookshop.org/books/ultramarathon-man-confessions-of-an-all-night-runner/9781585424801"
+  cover: "https://covers.openlibrary.org/b/isbn/9781585424801-L.jpg"
+  priority: 4
+- name: "Chicken Soup for the Soul: Runners: 39 Stories About Pushing Through, Where It Takes You and Triathlons"
+  link: "https://bookshop.org/books/chicken-soup-for-the-soul-runners-101-inspirational-stories-of-energy-endurance-and-endorphins/9781935096535"
+  cover: "https://covers.openlibrary.org/b/isbn/9781935096535-L.jpg"
+  priority: 3
+- name: "Finding Ultra"
+  link: "https://bookshop.org/books/finding-ultra-revised-and-updated-edition-rejecting-middle-age-becoming-one-of-the-world-s-fittest-men-and-discovering-myself/9780307952203"
+  cover: "https://covers.openlibrary.org/b/isbn/9780307952203-L.jpg"
+  priority: 2
+- name: "First Steps: How Upright Walking Made Us Human"
+  link: "https://bookshop.org/books/first-steps-how-upright-walking-made-us-human/9780062938497"
+  cover: "https://covers.openlibrary.org/b/isbn/9780062938497-L.jpg"
+  priority: 1
+- name: "No Ego"
+  link: "https://bookshop.org/books/no-ego-how-leaders-can-cut-the-cost-of-workplace-drama-end-entitlement-and-drive-big-results/9781250170477"
+  cover: "https://covers.openlibrary.org/b/isbn/9781250170477-L.jpg"
+  priority: 10
+- name: "The Dorito Effect"
+  link: "https://bookshop.org/books/the-dorito-effect-the-surprising-new-truth-about-food-and-flavor/9781476724240"
+  cover: "https://covers.openlibrary.org/b/isbn/9781476724240-L.jpg"
+  priority: 9
+- name: "Storyworthy"
+  link: "https://bookshop.org/books/storyworthy-engage-teach-persuade-and-change-your-life-through-the-power-of-storytelling/9781608685486"
+  cover: "https://covers.openlibrary.org/b/isbn/9781608685486-L.jpg"
+  priority: 8
+- name: "The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger"
+  link: "https://bookshop.org/books/the-box-how-the-shipping-container-made-the-world-smaller-and-the-world-economy-bigger/9780691136400"
+  cover: "https://covers.openlibrary.org/b/isbn/9780691136400-L.jpg"
+  priority: 7
+- name: "Build: An Unorthodox Guide to Making Things Worth Making"
+  link: "https://bookshop.org/books/build-an-unorthodox-guide-to-making-things-worth-making/9780063046061"
+  cover: "https://covers.openlibrary.org/b/isbn/9780063046061-L.jpg"
+  priority: 6
+- name: "12 Rules for Life: An Antidote to Chaos"
+  link: "https://bookshop.org/books/12-rules-for-life-an-antidote-to-chaos/9780345816023"
+  cover: "https://covers.openlibrary.org/b/isbn/9780345816023-L.jpg"
+  priority: 5
+- name: "Zero to One: Notes on Startups, or How to Build the Future"
+  link: "https://bookshop.org/books/zero-to-one-notes-on-startups-or-how-to-build-the-future/9780804139298"
+  cover: "https://covers.openlibrary.org/b/isbn/9780804139298-L.jpg"
+  priority: 4
+- name: "How the World Really Works: The Science Behind How We Got Here and Where We're Going"
+  link: "https://bookshop.org/books/how-the-world-really-works-the-science-behind-how-we-got-here-and-where-we-re-going/9780593297072"
+  cover: "https://covers.openlibrary.org/b/isbn/9780593297072-L.jpg"
+  priority: 3
+- name: "The Polymath: Unlocking the Power of Human Versatility"
+  link: "https://bookshop.org/books/the-polymath-unlocking-the-power-of-human-versatility/9781912555956"
+  cover: "https://covers.openlibrary.org/b/isbn/9781912555956-L.jpg"
+  priority: 2
+- name: "The Practice of Groundedness: A Transformative Path to Success That Feeds--Not Crushes--Your Soul"
+  link: "https://bookshop.org/books/the-practice-of-groundedness-a-transformative-path-to-success-that-feeds-not-crushes-your-soul/9780593329896"
+  cover: "https://covers.openlibrary.org/b/isbn/9780593329896-L.jpg"
+  priority: 1
+- name: "Find Your Stride"
+  link: "https://bookshop.org/books/find-your-stride-a-personal-guide-to-self-care-creativity-and-running-feel-good-features/9781800074397"
+  cover: "https://covers.openlibrary.org/b/isbn/9781800074397-L.jpg"
+  priority: 10
+- name: "The Wright Brothers"
+  link: "https://bookshop.org/books/the-wright-brothers/9781476728750"
+  cover: "https://covers.openlibrary.org/b/isbn/9781476728750-L.jpg"
+  priority: 9
+- name: "Code as a Creative Medium"
+  link: "https://bookshop.org/books/code-as-a-creative-medium-a-handbook-for-computational-art-and-design/9780262542043"
+  cover: "https://covers.openlibrary.org/b/isbn/9780262542043-L.jpg"
+  priority: 8
+- name: "Company of One: Why Staying Small is the Next Big Thing for Business"
+  link: "https://bookshop.org/books/company-of-one-why-staying-small-is-the-next-big-thing-for-business/9781328972354"
+  cover: "https://covers.openlibrary.org/b/isbn/9781328972354-L.jpg"
+  priority: 7
+- name: "Design Emergency: Building a Better Future"
+  link: "https://bookshop.org/books/design-emergency-building-a-better-future/9781838665333"
+  cover: "https://covers.openlibrary.org/b/isbn/9781838665333-L.jpg"
+  priority: 6
+- name: "Zen and the Art of Motorcycle Maintenance"
+  link: "https://bookshop.org/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values/9780060589462"
+  cover: "https://covers.openlibrary.org/b/isbn/9780060589462-L.jpg"
+  priority: 5
+- name: "Thirst: A Story of Redemption, Compassion, and a Mission to Bring Clean Water to the World"
+  link: "https://bookshop.org/books/thirst-a-story-of-redemption-compassion-and-a-mission-to-bring-clean-water-to-the-world/9781524762847"
+  cover: "https://covers.openlibrary.org/b/isbn/9781524762847-L.jpg"
+  priority: 4
+- name: "The Happiness Project: Or Why I Spent a Year Trying to Sing in the Morning, Clean My Closets, Fight Right, Read Aristotle, and Generally Have More Fun"
+  link: "https://bookshop.org/books/the-happiness-project-or-why-i-spent-a-year-trying-to-sing-in-the-morning-clean-my-closets-fight-right-read-aristotle-and-generally-have-more-fun/9780061583260"
+  cover: "https://covers.openlibrary.org/b/isbn/9780061583260-L.jpg"
+  priority: 3
+- name: "The One-Page Financial Plan: A Simple Way to Be Smart About Your Money"
+  link: "https://bookshop.org/books/the-one-page-financial-plan-a-simple-way-to-be-smart-about-your-money/9781591847556"
+  cover: "https://covers.openlibrary.org/b/isbn/9781591847556-L.jpg"
+  priority: 2
+- name: "The Power of Moments: Why Certain Experiences Have Extraordinary Impact"
+  link: "https://bookshop.org/books/the-power-of-moments-why-certain-experiences-have-extraordinary-impact/9781501147760"
+  cover: "https://covers.openlibrary.org/b/isbn/9781501147760-L.jpg"
+  priority: 1
+- name: "One Up on Wall Street: How to Use What You Already Know to Make Money in the Market"
+  link: "https://bookshop.org/books/one-up-on-wall-street-how-to-use-what-you-already-know-to-make-money-in-the-market/9780743200400"
+  cover: "https://covers.openlibrary.org/b/isbn/9780743200400-L.jpg"
+  priority: 10
+- name: "Beating the Street"
+  link: "https://bookshop.org/books/beating-the-street/9780671891633"
+  cover: "https://covers.openlibrary.org/b/isbn/9780671891633-L.jpg"
+  priority: 9
+- name: "Fast This Way: Burn Fat, Heal Inflammation, and Eat Like the High-Performing Human You Were Meant to Be"
+  link: "https://bookshop.org/books/fast-this-way-burn-fat-heal-inflammation-and-eat-like-the-high-performing-human-you-were-meant-to-be/9780062961791"
+  cover: "https://covers.openlibrary.org/b/isbn/9780062961791-L.jpg"
+  priority: 8
+- name: "Power, Sex, Suicide: Mitochondria and the Meaning of Life"
+  link: "https://bookshop.org/books/power-sex-suicide-mitochondria-and-the-meaning-of-life/9780199205647"
+  cover: "https://covers.openlibrary.org/b/isbn/9780199205647-L.jpg"
+  priority: 7
+- name: "Life: A Natural History of the First Four Billion Years of Life on Earth"
+  link: "https://bookshop.org/books/life-a-natural-history-of-the-first-four-billion-years-of-life-on-earth/9780684865780"
+  cover: "https://covers.openlibrary.org/b/isbn/9780684865780-L.jpg"
+  priority: 6
+- name: "The Last Walk: Reflections on Our Pets at the End of Their Lives"
+  link: "https://bookshop.org/books/the-last-walk-reflections-on-our-pets-at-the-end-of-their-lives/9780226038409"
+  cover: "https://covers.openlibrary.org/b/isbn/9780226038409-L.jpg"
+  priority: 5
+- name: "What We Owe the Future"
+  link: "https://bookshop.org/books/what-we-owe-the-future/9781541618626"
+  cover: "https://covers.openlibrary.org/b/isbn/9781541618626-L.jpg"
+  priority: 4
+- name: "Rituals of Work"
+  link: "https://bookshop.org/books/the-rituals-of-work-designing-the-rhythm-of-thriving-teams/9781119389521"
+  cover: "https://covers.openlibrary.org/b/isbn/9781119389521-L.jpg"
+  priority: 3
+- name: "What Everyone Needs to Know About Islam"
+  link: "https://bookshop.org/books/what-everyone-needs-to-know-about-islam-second-edition/9780199794134"
+  cover: "https://covers.openlibrary.org/b/isbn/9780199794134-L.jpg"
+  priority: 2
+- name: "Once You're Lucky, Twice You're Good: The Rebirth of Silicon Valley and the Rise of Web 2.0"
+  link: "https://bookshop.org/books/once-you-re-lucky-twice-you-re-good-the-rebirth-of-silicon-valley-and-the-rise-of-web-2-0/9781594202017"
+  cover: "https://covers.openlibrary.org/b/isbn/9781594202017-L.jpg"
+  priority: 1
+- name: "Intuitive Eating for Every Day: 365 Daily Practices & Inspirations to Rediscover the Pleasures of Eating"
+  link: "https://bookshop.org/books/intuitive-eating-for-every-day-365-daily-practices-inspirations-to-rediscover-the-pleasures-of-eating/9781797210292"
+  cover: "https://covers.openlibrary.org/b/isbn/9781797210292-L.jpg"
+  priority: 10
+- name: "Art of Burning Man"
+  link: "https://bookshop.org/books/art-of-burning-man/9783836559474"
+  cover: "https://covers.openlibrary.org/b/isbn/9783836559474-L.jpg"
+  priority: 9
+- name: "The Second Mountain: The Quest for a Moral Life"
+  link: "https://bookshop.org/books/the-second-mountain-the-quest-for-a-moral-life/9780812983425"
+  cover: "https://covers.openlibrary.org/b/isbn/9780812983425-L.jpg"
+  priority: 8
+- name: "Hortus Malabaricus"
+  link: "https://en.wikipedia.org/wiki/Hortus_Malabaricus"
+  cover: "https://covers.openlibrary.org/b/isbn/9788120407764-L.jpg"
+  priority: 7
+- name: "Lost Objects: 50 Stories About the Things We Miss and Why They Matter"
+  link: "https://bookshop.org/books/lost-objects-50-stories-about-the-things-we-miss-and-why-they-matter/9781785633375"
+  cover: "https://covers.openlibrary.org/b/isbn/9781785633375-L.jpg"
+  priority: 6
+- name: "Toward a General Theory of Expertise: Prospects and Limits"
+  link: "https://bookshop.org/books/toward-a-general-theory-of-expertise-prospects-and-limits/9780521436168"
+  cover: "https://covers.openlibrary.org/b/isbn/9780521436168-L.jpg"
+  priority: 5
+- name: "How We Learn to Move: A Revolution in the Way We Coach & Practice Sports Skills"
+  link: "https://bookshop.org/books/how-we-learn-to-move-a-revolution-in-the-way-we-coach-practice-sports-skills/9780996240793"
+  cover: "https://covers.openlibrary.org/b/isbn/9780996240793-L.jpg"
+  priority: 4
+- name: "Arbitrary Lines: How Zoning Broke the American City and How to Fix It"
+  link: "https://bookshop.org/books/arbitrary-lines-how-zoning-broke-the-american-city-and-how-to-fix-it/9781642832545"
+  cover: "https://covers.openlibrary.org/b/isbn/9781642832545-L.jpg"
+  priority: 3
+- name: "The Body Keeps the Score: Brain, Mind, and Body in the Healing of Trauma"
+  link: "https://bookshop.org/books/the-body-keeps-the-score-brain-mind-and-body-in-the-healing-of-trauma/9780143127741"
+  cover: "https://covers.openlibrary.org/b/isbn/9780143127741-L.jpg"
+  priority: 2
+- name: "Build: An Unorthodox Guide to Making Things Worth Making"
+  link: "https://bookshop.org/books/build-an-unorthodox-guide-to-making-things-worth-making/9780063046061"
+  cover: "https://covers.openlibrary.org/b/isbn/9780063046061-L.jpg"
+  priority: 1
+- name: "A Biography of the Pixel"
+  link: "https://bookshop.org/books/a-biography-of-the-pixel/9780262044127"
+  cover: "https://covers.openlibrary.org/b/isbn/9780262044127-L.jpg"
+  priority: 10
+- name: "The Scout Mindset: Why Some People See Things Clearly and Others Don't"
+  link: "https://bookshop.org/books/the-scout-mindset-why-some-people-see-things-clearly-and-others-don-t/9780735217553"
+  cover: "https://covers.openlibrary.org/b/isbn/9780735217553-L.jpg"
+  priority: 9
+- name: "The Visual Display of Quantitative Information"
+  link: "https://bookshop.org/books/the-visual-display-of-quantitative-information-2nd-edition/9780961392147"
+  cover: "https://covers.openlibrary.org/b/isbn/9780961392147-L.jpg"
+  priority: 8
+- name: "Someday is Today: 22 Simple, Actionable Ways to Propel Your Creative Life"
+  link: "https://bookshop.org/books/someday-is-today-22-simple-actionable-ways-to-propel-your-creative-life/9780593332064"
+  cover: "https://covers.openlibrary.org/b/isbn/9780593332064-L.jpg"
+  priority: 7
+- name: "Islands of Abandonment: Nature Rebounding in the Post-Human Landscape"
+  link: "https://bookshop.org/books/islands-of-abandonment-nature-rebounding-in-the-post-human-landscape/9781529337903"
+  cover: "https://covers.openlibrary.org/b/isbn/9781529337903-L.jpg"
+  priority: 6
+- name: "The Joys of Compounding: The Passionate Pursuit of Lifelong Learning"
+  link: "https://bookshop.org/books/the-joys-of-compounding-the-passionate-pursuit-of-lifelong-learning/9780231197302"
+  cover: "https://covers.openlibrary.org/b/isbn/9780231197302-L.jpg"
+  priority: 5
+- name: "The Urge: Our History of Addiction"
+  link: "https://bookshop.org/books/the-urge-our-history-of-addiction/9781250285348"
+  cover: "https://covers.openlibrary.org/b/isbn/9781250285348-L.jpg"
+  priority: 4
+- name: "The Beginning of Infinity: Explanations That Transform the World"
+  link: "https://bookshop.org/books/the-beginning-of-infinity-explanations-that-transform-the-world/9780143121350"
+  cover: "https://covers.openlibrary.org/b/isbn/9780143121350-L.jpg"
+  priority: 3
+- name: "Notes on a Nervous Planet"
+  link: "https://bookshop.org/books/notes-on-a-nervous-planet/9780143133421"
+  cover: "https://covers.openlibrary.org/b/isbn/9780143133421-L.jpg"
+  priority: 2
+- name: "Free Will"
+  link: "https://bookshop.org/books/free-will/9781451683407"
+  cover: "https://covers.openlibrary.org/b/isbn/9781451683407-L.jpg"
+  priority: 1
+- name: "The War of Art: Break Through the Blocks and Win Your Inner Creative Battles"
+  link: "https://bookshop.org/books/the-war-of-art-break-through-the-blocks-and-win-your-inner-creative-battles/9781936891023"
+  cover: "https://covers.openlibrary.org/b/isbn/9781936891023-L.jpg"
+  priority: 10
+- name: "The Snow Leopard"
+  link: "https://bookshop.org/books/the-snow-leopard/9780143105510"
+  cover: "https://covers.openlibrary.org/b/isbn/9780143105510-L.jpg"
+  priority: 9
+- name: "Wabi Sabi: Japanese Wisdom for a Perfectly Imperfect Life"
+  link: "https://bookshop.org/books/wabi-sabi-japanese-wisdom-for-a-perfectly-imperfect-life/9780062905154"
+  cover: "https://covers.openlibrary.org/b/isbn/9780062905154-L.jpg"
+  priority: 8
+- name: "Existential Kink: Unmask Your Shadow and Embrace Your Power"
+  link: "https://bookshop.org/books/existential-kink-unmask-your-shadow-and-embrace-your-power/9781578636471"
+  cover: "https://covers.openlibrary.org/b/isbn/9781578636471-L.jpg"
+  priority: 7
