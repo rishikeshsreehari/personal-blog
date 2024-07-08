@@ -1,6 +1,6 @@
 - name: "Why Zebras Don't Get Ulcers"
   link: "https://geni.us/OHkm"
-  cover: "https://covers.openlibrary.org/b/isbn/9780805073690-M .jpg"
+  cover: "https://covers.openlibrary.org/b/isbn/9780805073690-M.jpg"
   priority: 10
 - name: "How to Know Higher Worlds: A Modern Path of Initiation"
   link: "https://geni.us/h35Tk"
@@ -9,10 +9,10 @@
 - name: "How to Hide an Empire: A History of the Greater United States"
   link: "https://en.wikipedia.org/wiki/How_to_Hide_an_Empire"
   cover: "https://covers.openlibrary.org/b/isbn/9780549733037-S.jpg"
-  priority: 10
+  priority: 1
 - name: "The Invention of Brownstone Brooklyn"
   link: "https://bookshop.org/books/the-invention-of-brownstone-brooklyn/9780195387316"
-  cover: "https://covers.openlibrary.org/b/isbn/9780195387316-S.jpg"
+  cover: "https://covers.openlibrary.org/b/isbn/9780195387315-S.jpg"
   priority: 9
 - name: "No One Is Talking About This"
   link: "https://en.wikipedia.org/wiki/No_One_Is_Talking_About_This"
@@ -169,7 +169,7 @@
 - name: "Against Hate"
   link: "https://bookshop.org/books/against-hate/9781632062055"
   cover: "https://covers.openlibrary.org/b/isbn/9781632062055-L.jpg"
-  priority: 10
+  priority: 1
 - name: "Turbaned Tornado: The Oldest Marathon Runner"
   link: "https://bookshop.org/books/the-turbaned-tornado/9788183282525"
   cover: "https://covers.openlibrary.org/b/isbn/9788183282525-L.jpg"
@@ -245,7 +245,7 @@
 - name: "Around the World on a Bicycle"
   link: "https://bookshop.org/books/around-the-world-on-a-bicycle/9781635618112"
   cover: "https://covers.openlibrary.org/b/isbn/9781635618112-L.jpg"
-  priority: 10
+  priority: 1
 - name: "The Chimp Paradox"
   link: "https://bookshop.org/books/the-chimp-paradox/9781785040579"
   cover: "https://covers.openlibrary.org/b/isbn/9781785040579-L.jpg"
@@ -285,7 +285,7 @@
 - name: "Whole Numbers and Half Truths: What Data Can and Cannot Tell Us About Modern India"
   link: "https://bookshop.org/books/whole-numbers-and-half-truths-what-data-can-and-cannot-tell-us-about-modern-india/9789353451441"
   cover: "https://covers.openlibrary.org/b/isbn/9789353451441-L.jpg"
-  priority: 10
+  priority: 1
 - name: "Everyday Data Science: Optimize Your Life"
   link: "https://bookshop.org/books/everyday-data-science-optimize-your-life/9781732964820"
   cover: "https://covers.openlibrary.org/b/isbn/9781732964820-L.jpg"
@@ -336,7 +336,7 @@
   priority: 1
 - name: "Selfish Gene"
   link: "https://bookshop.org/books/the-selfish-gene-40th-anniversary-edition/9780198788608"
-  cover: "https://covers.openlibrary.org/b/isbn/9780198788608-L.jpg"
+  cover: "https://covers.openlibrary.org/b/isbn/0195200004-M.jpg"
   priority: 10
 - name: "The Power of Now"
   link: "https://bookshop.org/books/the-power-of-now-a-guide-to-spiritual-enlightenment/9781577314806"
@@ -497,7 +497,7 @@
 - name: "Die with Zero"
   link: "https://bookshop.org/books/die-with-zero-getting-all-you-can-from-your-money-and-your-life/9780358099767"
   cover: "https://covers.openlibrary.org/b/isbn/9780358099767-L.jpg"
-  priority: 10
+  priority: 1
 - name: "Superintelligence"
   link: "https://bookshop.org/books/superintelligence-paths-dangers-strategies/9780198739839"
   cover: "https://covers.openlibrary.org/b/isbn/9780198739839-L.jpg"
@@ -529,19 +529,19 @@
 - name: "Antifragile"
   link: "https://bookshop.org/books/antifragile-things-that-gain-from-disorder-incerto/9780812979688"
   cover: "https://covers.openlibrary.org/b/isbn/9780812979688-L.jpg"
-  priority: 2
+  priority: 10
 - name: "The Black Swan"
   link: "https://bookshop.org/books/the-black-swan-the-impact-of-the-highly-improbable/9780812973815"
   cover: "https://covers.openlibrary.org/b/isbn/9780812973815-L.jpg"
-  priority: 1
+  priority: 10
 - name: "Lifespan: Why We Age—and Why We Don't Have To"
   link: "https://bookshop.org/books/lifespan-why-we-age-and-why-we-don-t-have-to/9781501191978"
   cover: "https://covers.openlibrary.org/b/isbn/9781501191978-L.jpg"
-  priority: 10
+  priority: 1
 - name: "Whole Earth: The Many Lives of Stewart Brand"
   link: "https://bookshop.org/books/whole-earth-the-many-lives-of-stewart-brand/9780735224025"
   cover: "https://covers.openlibrary.org/b/isbn/9780735224025-L.jpg"
-  priority: 9
+  priority: 1
 - name: "An Astronaut's Guide to Life on Earth"
   link: "https://bookshop.org/books/an-astronaut-s-guide-to-life-on-earth-what-going-to-space-taught-me-about-ingenuity-determination-and-being-prepared-for-anything/9780316253017"
   cover: "https://covers.openlibrary.org/b/isbn/9780316253017-L.jpg"
@@ -577,7 +577,7 @@
 - name: "No Ego"
   link: "https://bookshop.org/books/no-ego-how-leaders-can-cut-the-cost-of-workplace-drama-end-entitlement-and-drive-big-results/9781250170477"
   cover: "https://covers.openlibrary.org/b/isbn/9781250170477-L.jpg"
-  priority: 10
+  priority: 1
 - name: "The Dorito Effect"
   link: "https://bookshop.org/books/the-dorito-effect-the-surprising-new-truth-about-food-and-flavor/9781476724240"
   cover: "https://covers.openlibrary.org/b/isbn/9781476724240-L.jpg"
@@ -617,7 +617,7 @@
 - name: "Find Your Stride"
   link: "https://bookshop.org/books/find-your-stride-a-personal-guide-to-self-care-creativity-and-running-feel-good-features/9781800074397"
   cover: "https://covers.openlibrary.org/b/isbn/9781800074397-L.jpg"
-  priority: 10
+  priority: 1
 - name: "The Wright Brothers"
   link: "https://bookshop.org/books/the-wright-brothers/9781476728750"
   cover: "https://covers.openlibrary.org/b/isbn/9781476728750-L.jpg"
@@ -657,7 +657,7 @@
 - name: "One Up on Wall Street: How to Use What You Already Know to Make Money in the Market"
   link: "https://bookshop.org/books/one-up-on-wall-street-how-to-use-what-you-already-know-to-make-money-in-the-market/9780743200400"
   cover: "https://covers.openlibrary.org/b/isbn/9780743200400-L.jpg"
-  priority: 10
+  priority: 1
 - name: "Beating the Street"
   link: "https://bookshop.org/books/beating-the-street/9780671891633"
   cover: "https://covers.openlibrary.org/b/isbn/9780671891633-L.jpg"
@@ -697,7 +697,7 @@
 - name: "Intuitive Eating for Every Day: 365 Daily Practices & Inspirations to Rediscover the Pleasures of Eating"
   link: "https://bookshop.org/books/intuitive-eating-for-every-day-365-daily-practices-inspirations-to-rediscover-the-pleasures-of-eating/9781797210292"
   cover: "https://covers.openlibrary.org/b/isbn/9781797210292-L.jpg"
-  priority: 10
+  priority: 1
 - name: "Art of Burning Man"
   link: "https://bookshop.org/books/art-of-burning-man/9783836559474"
   cover: "https://covers.openlibrary.org/b/isbn/9783836559474-L.jpg"
@@ -737,7 +737,7 @@
 - name: "A Biography of the Pixel"
   link: "https://bookshop.org/books/a-biography-of-the-pixel/9780262044127"
   cover: "https://covers.openlibrary.org/b/isbn/9780262044127-L.jpg"
-  priority: 10
+  priority: 1
 - name: "The Scout Mindset: Why Some People See Things Clearly and Others Don't"
   link: "https://bookshop.org/books/the-scout-mindset-why-some-people-see-things-clearly-and-others-don-t/9780735217553"
   cover: "https://covers.openlibrary.org/b/isbn/9780735217553-L.jpg"
