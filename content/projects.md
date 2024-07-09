@@ -9,3 +9,7 @@ ShowReadingTime: false
 
 ---
 
+
+{{< projects >}}
+
+

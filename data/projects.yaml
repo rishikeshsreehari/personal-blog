@@ -1,0 +1,21 @@
+- title: "10+1 Things"
+  description: "11 interesting things, curated by a human, every week."
+  image: "/images/projects/project1.webp"
+  url: "https://rishikesh.substack.com"
+
+- title: "Exifviewer.pro"
+  description: "A privacy-friendly, browser-based EXIF viewer."
+  image: "/images/projects/project2.webp"
+  url: "https://exifviewer.pro"
+
+
+- title: "Unirank.one"
+  description: "Top 300 University Rankings in the world all at one place."
+  image: "/images/projects/project3.webp"
+  url: "https://exifviewer.pro"
+
+
+- title: "CalcBun"
+  description: "Online calculators for all applications."
+  image: "/images/projects/project4.webp"
+  url: "https://calcbun.com"
