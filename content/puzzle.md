@@ -32,7 +32,10 @@ No specific rules, just figure out the word/thing/place/item. Clues provided if 
 
 Decode the audio below to find the answer:
 
-{{< audio "/audio/puzzle1.wav" >}}
+{{< audio "/audio/puzzle1.wav" >}}  
+
+
+ 
 
 Send your answers to puzzle[at]rishikeshs.com
 
