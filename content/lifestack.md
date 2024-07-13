@@ -10,7 +10,7 @@ ShowReadingTime: false
 ---
 
 
-###### *Last Updated on 27-08-2023*
+##### Last Updated on 27-08-2023
 
 This page is an attempt to document the tools, apps, gadgets, gear, and other stuff I use regularly. This is quite an extensive list, and I've tried my best to categorize them to the best of my abilities. Everything listed on this page is what I use. The things I no longer use are moved to the Graveyard section at the bottom with justification. Some of the links below contain affiliate tags that allow me to earn some income if you make purchases using the links. It does not cost you anything extra and supports my work. If you have any better suggestions for the items listed below, please let me know.
 

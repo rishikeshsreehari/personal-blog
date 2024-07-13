@@ -1,3 +1,17 @@
+
+
+
+- name: "The Work of Art: How Something Comes from Nothing"
+  link: "https://geni.us/rsh-work-of-art"
+  cover: "https://covers.openlibrary.org/b/isbn/059329758X-M.jpg"
+  priority: 1
+
+
+- name: "The Programmer's Brain: What every programmer needs to know about cognition"
+  link: "https://geni.us/rsh-programmers-brain"
+  cover: "https://covers.openlibrary.org/b/isbn/1617298670-M.jpg"
+  priority: 10
+
 - name: "How to Expect the Unexpected: The Science of Making Predictions"
   link: "https://geni.us/rsh-how-to-expect"
   cover: "https://covers.openlibrary.org/b/isbn/9781541604933-M.jpg"

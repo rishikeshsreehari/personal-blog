@@ -8,6 +8,9 @@ disable_comments: true
 ShowReadingTime: false
 ---
 
+
+##### Last updated on 13-07-2024
+
 This is a list of things I want to do in my life. Call it a to-do list, a bucket list, or whatever you like. I love the fact that this list grows day by day and, in a way, gives me a sense of direction and excitement for the future. While I know I may never achieve everything on this list in my lifetime, that's okay. The finite nature of life gives it purpose and makes me feel profoundly grateful for every experience and quest I pursue. This list includes physical goals, things I want to achieve, places I want to visit, things I want to learn, and more. For the dreams I have already achieved, I’ve crossed them out with the date when they were accomplished. My goal is to have atleast 100 dreams at a time, but it's not easy.
 
 1. Start a business
@@ -72,6 +75,10 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 60. Become a [mixologist](https://en.wikipedia.org/wiki/Bartender#Mixologist).
 61. Learn to speak, read and write [Tamil](https://en.wikipedia.org/wiki/Tamil_language), my wife's mother tongue, and also one of the oldest languages in the world.
 62. Learn [Foiling](https://www.youtube.com/watch?v=UhSuIcryDAM).
+63. Walk the [Pampir Trail](https://www.pamirtrail.org/the-trail) once the mapping is complete.
+64. Do a tandem bikepacking tip with [Yeti](https://tibetanyeti.com)
+
+
 
 
 
