@@ -8,7 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-*Last updated on 03-07-2024, somewhere from [Dubai, United Arab Emirates (UAE)](https://what3words.com/siblings.twitches.scan)*
+*Last updated on 13-07-2024, somewhere from [Dubai, United Arab Emirates (UAE)](https://what3words.com/siblings.twitches.scan)*
 
 This is now a page and gives a glimpse on what I'm upto now!
 
@@ -30,7 +30,7 @@ This is now a page and gives a glimpse on what I'm upto now!
 
 ### What Am I Reading?
 
-- [What Color Is Your Parachute?](https://www.amazon.com/What-Color-Your-Parachute-Meaningful/dp/1984861204/ref=sr_1_1?sr=8-1) by Richard N. Bolles
+- [Days at the Morisaki Bookshop](https://geni.us/rsh-morisaki) by Satoshi Yagisawa
 - [Authority](https://geni.us/rsh-authority) by Nathan Barry
 - [Million Dollar Weekend](https://geni.us/rsh-million-dollar) by Noah Kagan
 - [Cashvertising](https://geni.us/rsh-cashvertising) by Drew Eric Whitman

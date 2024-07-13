@@ -1,12 +1,61 @@
 
-- book: Excellent Advices
-  rating: 4
+
+
+
+
+- book: Welcome to the Hyunam-dong Bookshop
+  rating: 5
+  date: 2024-05-25
+  url: https://geni.us/rsh-hyunam
+
+
+- book: "Project Hail Mary: A Novel"
+  rating: 5
+  date: 2024-05-03
+  url: https://geni.us/rsh-project-hail-mary
+
+
+- book: "Invent and Wander: The Collected Writings of Jeff Bezos"
+  rating: 2
+  date: 2024-04-25
+  url: https://geni.us/rsh-invent-wander
+
+
+
+- book: You Are a Writer (So Start Acting Like One)
+  rating: 3
+  date: 2024-04-01
+  url: https://geni.us/rsh-you-are-writer
+
+
+
+
+- book: "Wild: From Lost to Found on the Pacific Crest Trail"
+  rating: 5
+  date: 2024-03-02
+  url: https://geni.us/rsh-wild-cheryl
+
+
+
+
+- book: "The Strangest Secret: How to Live the Life You Desire"
+  rating: 3
+  date: 2024-02-10
+  url: https://geni.us/rsh-strangest-secret
+
+
+
+- book: "Outlive: The Science and Art of Longevity"
+  rating: 5
   date: 2024-01-16
-  url: https://www.google.com/
+  url: https://geni.us/hPVVBCi
+
+
+
 - book: Excellent Advice for Living
   rating: 4
   date: 2023-07-16
-  url: https://www.google.com/
+  url: https://geni.us/rsh-excellent-advice
 - book: The Diet Myth
   rating: 3
   date: 2023-07-15
@@ -22,15 +71,15 @@
 - book: World Cycling Stripped Bare
   rating: 1
   date: 2023-06-02
-  url: https://www.google.com/
+  url: https://geni.us/rsh-worldcycling-strip
 - book: How to Fail at Almost Everything and Still Win Big
   rating: 4
   date: 2023-06-02
-  url: https://www.google.com/
+  url: https://geni.us/rsh-how-to-fail
 - book: Keep Off the Grass
   rating: 3
   date: 2023-05-14
-  url: https://www.google.com/
+  url: https://geni.us/rsh-keep-off-grass
 - book: The Subtle Art of Not Giving a F*ck
   rating: 3
   date: 2023-04-17
@@ -38,11 +87,11 @@
 - book: Freedom Manifesto
   rating: 3
   date: 2023-03-26
-  url: https://www.google.com/
+  url: https://geni.us/rsh-freedom-manifesto
 - book: Managing Oneself
   rating: 3
   date: 2023-03-14
-  url: 
+  url: https://geni.us/rsh-managing-oneself
 - book: Zero to One
   rating: 5
   date: 2023-03-02
@@ -50,7 +99,7 @@
 - book: Surrender Experiment
   rating: 1
   date: 2023-02-23
-  url: https://www.google.com/
+  url: https://geni.us/rsh-surrender-exp
 - book: Jonathan Livingston Seagull 
   rating: 3
   date: 2023-02-14
@@ -70,13 +119,15 @@
 - book: Masala Lab
   rating: 3
   date: 2022-10-30
-  url: https://geni.us/rsh-so-good
+  url: https://geni.us/rsh-masala-lab
 - book: Make Your Bed
   rating: 3
   date: 2022-10-05
+  url: https://geni.us/rsh-make-your-bed
 - book: Do Epic Shit
   rating: 3
   date: 2022-10-01
+  url: https://geni.us/rsh-do-epic-shit
 - book: Millionaire Fast Lane
   rating: 4
   date: 2022-09-09
@@ -92,6 +143,7 @@
 - book: The Little Black Book of Workout Motivation
   rating: 2
   date: 2022-06-26
+  url: https://geni.us/rsh-black-book
 - book: Finding Ultra
   rating: 5
   date: 2022-06-08
@@ -113,17 +165,21 @@
   date: 2022-02-02
   url: https://geni.us/rsh-seeking-wisdom
 - book: 4-Hour Work Week
-  rating: 2
+  rating: 3
   date: 2022-01-26
+  url: https://geni.us/rsh-4hourwork
 - book: How to Live
   rating: 5
   date: 2021-12-07
-- book: The Great Mental Models
+  url: https://geni.us/rsh-how-to-live
+- book: The Great Mental Models(General Thinking Concepts)
   rating: 4
   date: 2021-12-01
+  url: https://geni.us/rsh-mental-models1
 - book: Superhuman by Habit
   rating: 2
   date: 2021-11-16
+  url: https://geni.us/rsh-superhuman-habit
 - book: Take Your Shot
   rating: 3
   date: 2021-11-27
@@ -139,6 +195,7 @@
 - book: Hell Yeah or No
   rating: 4
   date: 2021-08-25
+  url: https://geni.us/rsh-hell-yeah-no
 - book: The Toaster Project
   rating: 5
   date: 2021-08-01
@@ -146,6 +203,7 @@
 - book: Who Moved my Cheese?
   rating: 3
   date: 2021-07-14
+  url: https://geni.us/rsh-who-moved-cheese
 - book: Steal Like an Artist
   rating: 5
   date: 2021-07-07
@@ -173,9 +231,11 @@
 - book: The Psychology of Money
   rating: 5
   date: 2021-04-19
+  url: https://geni.us/rsh-psychology-money
 - book: Rich Dad Poor Dad
   rating: 1
   date: 2021-04-17
+  url: https://geni.us/rsh-richdad-poordad
 - book: The Little Book of Hygge
   rating: 1
   date: 2021-04-16
@@ -183,6 +243,7 @@
 - book: Megaliving
   rating: 1
   date: 2021-04-07
+  url: https://geni.us/rsh-megaliving
 - book: Anything You Want
   rating: 5
   date: 2021-04-01
@@ -190,6 +251,7 @@
 - book: Slipstream Time Hacking
   rating: 0
   date: 2021-03-27
+  url: https://geni.us/rsh-slipsteam-hacking
 - book: Sapiens - Brief History of Mankind
   rating: 5
   date: 2021-03-19
@@ -201,7 +263,7 @@
 - book: Atomic Habits
   rating: 4
   date: 2021-02-27
-  url: https://geni.us/AlmanackNaval
+  url: https://geni.us/rishikesh-AtomicHabits
 - book: The Listening Book
   rating: 4
   date: 2021-01-31
@@ -212,4 +274,4 @@
 - book: Think Like a Monk
   rating: 1
   date: 2021-01-04
-
+  url: https://geni.us/rsh-think-monk
