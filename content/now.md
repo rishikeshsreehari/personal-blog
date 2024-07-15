@@ -20,6 +20,10 @@ This is now a page and gives a glimpse on what I'm upto now!
 - Trying to revive [10+1 Things](https://rishikesh.substack.com/) a newsletter I started few years back.
 - Working on some [side projects](/projects)!
 
+_I'm currently working from the[ Wo-rk by the Co-Spaces](https://maps.app.goo.gl/3y33KMYfzBzqQvibA) in Burjuman, Dubai, UAE. Come say hi, if you are around!_
+
+
+
 
 
 ### Now in Numbers
