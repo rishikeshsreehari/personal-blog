@@ -1,11 +1,16 @@
 
 
+- book: Days at the Morisaki Bookshop
+  rating: 3
+  date: 2024-07-14
+  url: https://geni.us/rsh-morisaki
+
 
 
 
 - book: Welcome to the Hyunam-dong Bookshop
-  rating: 5
-  date: 2024-05-25
+  rating: 4
+  date: 2024-06-25
   url: https://geni.us/rsh-hyunam
 
 
@@ -19,6 +24,10 @@
   rating: 2
   date: 2024-04-25
   url: https://geni.us/rsh-invent-wander
+
+
+
+
 
 
 

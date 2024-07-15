@@ -30,7 +30,7 @@ This is now a page and gives a glimpse on what I'm upto now!
 
 ### What Am I Reading?
 
-- [Days at the Morisaki Bookshop](https://geni.us/rsh-morisaki) by Satoshi Yagisawa
+- [The World Beyond Your Head](https://geni.us/rsh-world-beyond) by Matthew B. Crawford
 - [Authority](https://geni.us/rsh-authority) by Nathan Barry
 - [Million Dollar Weekend](https://geni.us/rsh-million-dollar) by Noah Kagan
 - [Cashvertising](https://geni.us/rsh-cashvertising) by Drew Eric Whitman
