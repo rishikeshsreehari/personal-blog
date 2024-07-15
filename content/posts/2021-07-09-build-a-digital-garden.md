@@ -14,6 +14,8 @@ categories:
   - Productivity
   - Project
 
+hiddenInHomeList: true
+
 ---
 <p class="has-drop-cap">
   <a href="https://notes.rishikeshs.com" title="https://notes.rishikeshs.com">Digital Garden</a> is a collection of notes, resources, ideas, quotes or summaries shared in public. Unlike a blog post or a published essay, there is no publication date in a digital garden. Everything published in a <a href="https://maggieappleton.com/garden-history" target="_blank" rel="noreferrer noopener" title="https://maggieappleton.com/garden-history">Digital Garden is evergreen</a> and grows over time. Nothing is finished work and the garden evolves over time. Digital Gardens are usually lightweight and focuses on text & content over fancy styling features of modern websites.

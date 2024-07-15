@@ -5,6 +5,9 @@ date: 2024-06-09
 excerpt: I decided to document my personal transformation journey through this blog. I have summarized the 5 reasons why I decided to start a blog on this post.
 url: /blog-version-manifesto
 
+
+hiddenInHomeList: true
+
 ---
 ## Introduction
 

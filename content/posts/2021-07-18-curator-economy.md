@@ -14,6 +14,8 @@ categories:
 
 weight: 2
 
+hiddenInHomeList: true
+
 ---
 <blockquote class="wp-block-quote">
   <p>

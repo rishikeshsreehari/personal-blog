@@ -14,6 +14,7 @@ categories:
   - Thought Experiment
 
 weight: 1
+hiddenInHomeList: true
 
 
 ---

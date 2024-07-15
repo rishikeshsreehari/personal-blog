@@ -12,6 +12,8 @@ ssb_cache_timestamp:
 categories:
   - Book Notes
 
+hiddenInHomeList: true
+
 ---
 <p class="has-drop-cap">
   Naval Ravikant often called the &#8216;<a href="https://theangelphilosopher.com/" target="_blank" rel="noreferrer noopener">Angel Philosopher</a>&#8216;, is one the greatest thinkers and entrepreneurs of this generation. <a href="https://nav.al/" target="_blank" rel="noreferrer noopener">Naval</a> has this amazing ability to distil big, universal ideas and philosophies into bit-sized <a href="https://twitter.com/naval" target="_blank" rel="noreferrer noopener">Twitter tweets</a>. The book, &#8216;<a href="https://www.navalmanack.com/" target="_blank" rel="noreferrer noopener" title="https://www.navalmanack.com/">The Almanack of Naval Ravikant: A Guide to Wealth and Happiness</a>&#8216; is a collection of Naval&#8217;s wisdom from Twitter, podcasts and essays from the past decade. The author of the book <a href="https://www.ejorgenson.com/" target="_blank" rel="noreferrer noopener">Eric Jorgenson </a>created a Twitter poll asking the audience whether he should compile Naval&#8217;s tweets into a book. The tweet went viral and was retweeted by Naval itself. That&#8217;s <a href="https://www.navalmanack.com/blog-posts/how-this-book-came-together-entirely-on-twitter" target="_blank" rel="noreferrer noopener" title="https://www.navalmanack.com/blog-posts/how-this-book-came-together-entirely-on-twitter">how this book came into shape</a>. If you follow Naval on <a href="https://twitter.com/naval" target="_blank" rel="noreferrer noopener" title="https://twitter.com/naval">Twitter </a>or through other podcasts, the ideas in this book won&#8217;t be new to you.

@@ -16,6 +16,8 @@ categories:
 
 weight: 6
 
+
+hiddenInHomeList: true
 ---
 <p class="has-drop-cap">
   A thought experiment is an imagined sequence of events for evaluating the consequences and outcomes of a hypothesis, theory or principle. Ovarian Lottery is a <a href="https://en.wikipedia.org/wiki/Thought_experiment" target="_blank" rel="noreferrer noopener" title="https://en.wikipedia.org/wiki/Thought_experiment">thought experiment</a> popularized by <a href="https://en.wikipedia.org/wiki/Warren_Buffett" target="_blank" rel="noreferrer noopener" title="https://en.wikipedia.org/wiki/Warren_Buffett">Warren Buffet</a>, one of the greatest investors of all time. The experiment was inspired by the concepts from a book called <a href="https://geni.us/rsh-theory-of-justice" rel="sponsored" title="https://geni.us/rsh-theory-of-justice">&#8216;A Theory of Justice</a>&#8216; by philosopher <a href="https://en.wikipedia.org/wiki/John_Rawls" target="_blank" rel="noreferrer noopener">John Rawls</a>, which argues that a truly just society can only be created when everyone agrees to before knowing where they&#8217;ll land in the society. The thought experiment stresses the importance of luck in life and focuses on when and where we are born in this world.

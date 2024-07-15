@@ -13,6 +13,8 @@ ssb_cache_timestamp:
 categories:
   - Productivity
 
+hiddenInHomeList: true
+
 ---
 <p class="has-drop-cap">
   We are living in a century where we are bombarded with information. Thanks to the rise of social media, digital journalism and live media, we now have access to vast amounts of information than ever before. Distractions have become so common in this digital age and we have started to accept them as normal. We have reached a point where we have more ways to get distracted than to be focused.<a href="https://markmanson.net/attention-diet" target="_blank" rel="noreferrer noopener" title="https://markmanson.net/attention-diet"> Attention Diet is a term coined by Mark Manson</a>, the author of the popular book, <a href="https://geni.us/rsh-subtle-art" target="_blank" rel="noreferrer noopener sponsored" title="https://geni.us/rsh-subtle-art">The Subtle Art of Not Giving a F*ck</a>.

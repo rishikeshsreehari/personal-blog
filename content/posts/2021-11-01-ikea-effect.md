@@ -14,6 +14,8 @@ categories:
   - Concept
   - Learning
 
+hiddenInHomeList: true
+
 ---
 <p class="has-drop-cap">
   IKEA Effect is a cognitive bias in which we overvalue products that we&#8217;ve built or created than the pre-assembled items. IKEA effect is the reason why we are in love with LEGO kits and IKEA furniture. IKEA Effect was named after the Swedish manufacturer and furniture retailer who sells furniture items that require assembly. People&#8217;s love for IKEA products were explored by Michael I. Norton, Daniel Mochon and Dan Ariely in a series of 3 experiments. The results were published in a paper titled: <a href="https://www.hbs.edu/ris/Publication%20Files/11-091.pdf" target="_blank" rel="noreferrer noopener" title="https://www.hbs.edu/ris/Publication%20Files/11-091.pdf">The “IKEA Effect”: When Labor Leads to Love</a>.

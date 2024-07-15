@@ -13,6 +13,8 @@ categories:
   - Challenge
   - Learning
 
+hiddenInHomeList: true
+
 ---
 <blockquote class="wp-block-quote is-style-default">
   <p>

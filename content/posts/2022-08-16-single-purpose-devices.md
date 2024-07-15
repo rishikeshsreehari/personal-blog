@@ -13,6 +13,8 @@ ssb_cache_timestamp:
 categories:
   - Productivity
 
+hiddenInHomeList: true
+
 ---
 <p class="has-drop-cap">
   On Jan 9, 2007, Steve Jobs announced the original iPhone by saying &#8220;An iPod, a phone and internet communicator. An iPod, a phone, are you getting it?&#8221;. The original iPhone&#8217;s multiple functionalities with a touch screen interface were revolutionary and paved the way for the smartphone and the digital revolution. Undoubtedly, smartphones have changed the lives of many across the globe by providing access to information. But it is also important to look at the impact of smartphones on <a href="https://rishikeshs.com/attention-diet/" target="_blank" rel="noopener" title="How to Start an Attention Diet?">our attention</a> and the addiction it has caused us. On average a person checks his/her/their smartphone, 150+ times a day and I&#8217;m no different. Just like any other person living in this connected world, I&#8217;m addicted to my phone even though I have reduced it over the last couple of months. I&#8217;ve written about the concept of <a href="https://rishikeshs.com/boring-phone/" title="Boring Phone: How to Stop Phone Addiction">making your phone boring</a> in the past, but how do we replace smartphones in our lives if we are so dependent on them? Then came the thought of single purpose devices and this article is my reflection on the same while trying to be mindful and aware of my smartphone usage.

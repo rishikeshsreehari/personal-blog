@@ -13,6 +13,8 @@ categories:
   - Learning
   - Productivity
 
+hiddenInHomeList: true
+
 ---
 <p class="has-drop-cap">
   I came to know about the concept of Resonance Journal when I watched Ali Abdaal&#8217;s video on how he uses <a href="https://www.youtube.com/watch?v=lKYBB-Uw1IM" target="_blank" rel="noreferrer noopener" title="https://www.youtube.com/watch?v=lKYBB-Uw1IM">notion for keeping his resonance calendar</a>. After watching the video, I felt like the term &#8216;Resonance Calendar&#8217; is not apt for what I wanted to do or achieve. I decided to rename it as &#8216;<a href="https://dent-radar-d40.notion.site/2615af7fb932434c9085b4c666781d20?v=089ad185b9354ae49ab8b26ef844a214" target="_blank" rel="noreferrer noopener" title="https://dent-radar-d40.notion.site/2615af7fb932434c9085b4c666781d20?v=089ad185b9354ae49ab8b26ef844a214">Resonance Journal</a>&#8216; and set up one similar to Ali on Notion. I currently use the Resonance Journal as a tool in my journey towards self-discovery.

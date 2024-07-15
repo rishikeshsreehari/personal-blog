@@ -12,6 +12,8 @@ ssb_cache_timestamp:
 categories:
   - Book Notes
 
+hiddenInHomeList: true
+
 ---
 <p class="has-drop-cap">
   <a href="https://geni.us/rsh-ShowYourWork" target="_blank" rel="noreferrer noopener sponsored" title="https://geni.us/rsh-ShowYourWork">Show Your Work</a> by Austin Kleon is the main reason <a href="https://rishikeshs.com/5-reasons-why-i-decided-to-start-a-blog/" title="5 Reasons Why I Decided to Start a Blog">why I started this blog</a>. Through the book, <a href="https://austinkleon.com/" target="_blank" rel="noreferrer noopener" title="https://austinkleon.com/">Austin</a> teaches people how to think about their work as a never-ending process that attracts like-minded people. It explains why you don&#8217;t have to be a genius to present your ideas to the world. It stresses the importance of having a personal blog to share your ideas and how it will transform into a self-invention machine. It&#8217;s a must-read manual for anyone who is slightly interested in creativity or entrepreneurship in this digital age.

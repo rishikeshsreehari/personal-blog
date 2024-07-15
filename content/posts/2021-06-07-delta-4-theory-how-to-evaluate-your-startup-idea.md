@@ -13,6 +13,7 @@ categories:
   - Learning
 
 weight: 3
+hiddenInHomeList: true
 
 ---
 <p class="has-drop-cap">

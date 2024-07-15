@@ -17,6 +17,8 @@ categories:
   - Learning
   - Project
 
+hiddenInHomeList: true
+
 ---
 <p class="has-drop-cap">
   End of May 2021, I started a newsletter called <a href="https://rishikesh.substack.com/" target="_blank" rel="noreferrer noopener" title="https://rishikesh.substack.com/">10+1 Things</a> on Substack. The main idea behind the newsletter was to funnel some traffic to this blog and to other projects I&#8217;m working on. In fact, I came up with the name 10+1 Things in 15 mins and decided to start it on <a href="https://substack.com/" target="_blank" rel="noreferrer noopener" title="https://substack.com/">Substack</a> as it was quick to start. As I&#8217;m writing this, 10+1 Things has just crossed 100+ subscribers. From being a small fun project, the newsletter has grown to a separate project and has become a part of my routine. All this happened in a span of 2 months and the newsletter is growing strong with a +50% open rate and an expected subscriber count of 300+ by end of 2021(I extrapolated the subscriber data!). I started at zero and haven&#8217;t spent any money on ads or promotions. All growth has been organic so far, thanks to some cross-promotion with other fellow writers in the community. Here&#8217;s what I learnt from growing my newsletter from 0 to 100 subs in 2 months:

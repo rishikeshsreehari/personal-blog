@@ -14,6 +14,8 @@ categories:
   - Concept
   - Learning
 
+hiddenInHomeList: true
+
 ---
 <p class="has-drop-cap">
   Brilliance and genius are often traits associated with STEM fields like mathematics, physics, engineering, etc. Despite multiple studies showing that gender plays no role in brilliance, brilliance is often attributed to men. Brilliance bias is the tendency to consider brilliance as a male characteristic.

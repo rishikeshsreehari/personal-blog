@@ -4,6 +4,7 @@ author: Rishikesh
 date: 2021-05-11
 excerpt: I decided to document my personal transformation journey through this blog. I have summarized the 5 reasons why I decided to start a blog on this post.
 url: /5-reasons-why-i-decided-to-start-a-blog/
+hiddenInHomeList: true
 
 ---
 <p class="has-drop-cap">

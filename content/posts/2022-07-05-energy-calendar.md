@@ -13,6 +13,8 @@ ssb_cache_timestamp:
 categories:
   - Productivity
 
+hiddenInHomeList: true
+
 ---
 <p class="has-drop-cap">
   I prefer to have a schedule of things in my calendar so that I have an idea of what to focus on on a particular day. During weekends I try to plan my upcoming week in advance using Google Calendar. I&#8217;ve tried multiple calendar apps in the past, but have reverted back to Google Calendar as it is simple, free and syncs flawlessly across all my devices. I was looking at a way to track how I feel during the day and came across this method of colour-coding your calendar events by Sahil Bloom. He recently named it &#8216;<a href="https://twitter.com/SahilBloom/status/1542867629047746561" target="_blank" rel="noreferrer noopener">Energy Calendar&#8217;</a>, a method with which you can colour code a particular event in your calendar according to how you feel. Looking at the colour patterns in your calendar, you can get a holistic view of your day and prioritize tasks that are less daunting.

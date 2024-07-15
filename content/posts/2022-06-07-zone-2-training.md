@@ -14,6 +14,8 @@ categories:
   - Fitness
   - Learning
 
+hiddenInHomeList: true
+
 ---
 <pre class="wp-block-code"><code>&lt;em>Disclaimer: I'm an amateur athelete who started training seriously this year. Please do not take this as expert advice or scientific advice for zone 2 training. Everything mentioned in this article has been derived from various articles online or videos based on my research. Please do your own research or consult an expert before engaging in any training program.&lt;/em></code></pre>
 

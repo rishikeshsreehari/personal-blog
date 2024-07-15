@@ -13,6 +13,7 @@ categories:
   - Learning
   - Productivity
 
+hiddenInHomeList: true
 ---
 <p class="has-drop-cap">
   I started journaling when the second wave of Covid-19 hit India in April 2021. I&#8217;m not a daily journal guy even though I would like to make it a daily habit. I journal my thoughts occasionally on Obsidian in digital format using markdown language. I also maintain an <a href="https://rishikeshs.com/idea-journal/" title="Idea Journal">Idea Journal in public</a>, a<a href="https://rishikeshs.com/resonance-journal/" target="_blank" rel="noreferrer noopener" title="Resonance Journal as a Tool for Self-Discovery"> resonance journal in Notion</a> and a private art journal in <a href="https://obsidian.md" target="_blank" rel="noreferrer noopener" title="https://obsidian.md">Obsidian</a>. The only journal I write in physical form is my <strong>Stress Journal</strong>. I don&#8217;t know where I got the idea, but I think I read about it on <a href="https://twitter.com/rishikeshshari" target="_blank" rel="noreferrer noopener" title="https://twitter.com/rishikeshshari">Twitter</a> (I wish I knew the source so that I could credit it). If you don&#8217;t know what journaling is, it&#8217;s a self-practice where you record your thoughts and emotions in a diary be it digital or physical.
