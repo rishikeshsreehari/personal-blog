@@ -77,6 +77,7 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 62. Learn [Foiling](https://www.youtube.com/watch?v=UhSuIcryDAM).
 63. Walk the [Pampir Trail](https://www.pamirtrail.org/the-trail) once the mapping is complete.
 64. Do a tandem bikepacking tip with [Yeti](https://tibetanyeti.com)
+65. Start a [Little Free Library](https://littlefreelibrary.org/start/)
 
 
 

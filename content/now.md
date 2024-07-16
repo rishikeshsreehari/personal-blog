@@ -23,9 +23,6 @@ This is now a page and gives a glimpse on what I'm upto now!
 _I'm currently working from the[ Wo-rk by the Co-Spaces](https://maps.app.goo.gl/3y33KMYfzBzqQvibA) in Burjuman, Dubai, UAE. Come say hi, if you are around!_
 
 
-
-
-
 ### Now in Numbers
 
 {{< now_tiles >}}
@@ -34,7 +31,7 @@ _I'm currently working from the[ Wo-rk by the Co-Spaces](https://maps.app.goo.gl
 
 ### What Am I Reading?
 
-- [The World Beyond Your Head](https://geni.us/rsh-world-beyond) by Matthew B. Crawford
+- [The Wikipedia Revolution](https://geni.us/rsh-wiki-revolution) by Andrew Lih
 - [Authority](https://geni.us/rsh-authority) by Nathan Barry
 - [Million Dollar Weekend](https://geni.us/rsh-million-dollar) by Noah Kagan
 - [Cashvertising](https://geni.us/rsh-cashvertising) by Drew Eric Whitman

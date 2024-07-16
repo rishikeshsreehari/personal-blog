@@ -1,0 +1,83 @@
+/* CSS for watchlist page. */
+
+#watchlist-table-container {
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  #watchlist-table-container #watchlist-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  #watchlist-table-container #watchlist-table th, 
+  #watchlist-table-container #watchlist-table td {
+    min-width: 80px;
+    padding: 12px 8px;
+    line-height: 1.5;
+    border-bottom: 0.5px solid var(--border);
+  }
+  
+  #watchlist-table-container #watchlist-table th {
+    background-color: #333;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1em;
+    color: #fff;
+    border-bottom: 2px solid #555;
+  }
+  
+  #watchlist-table-container #watchlist-table tr {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+  
+  #watchlist-table-container #watchlist-table th:nth-child(1),
+  #watchlist-table-container #watchlist-table td:nth-child(1) {
+    text-align: left;
+  }
+  
+  #watchlist-table-container #watchlist-table th:nth-child(2),
+  #watchlist-table-container #watchlist-table td:nth-child(2) {
+    text-align: center;
+  }
+  
+  #watchlist-table-container #watchlist-table th:nth-child(3),
+  #watchlist-table-container #watchlist-table td:nth-child(3) {
+    text-align: center;
+  }
+  
+  #watchlist-table-container #watchlist-table td {
+    font-family: monospace;
+    letter-spacing: 0.05em;
+    font-size: 1em;
+  }
+  
+  #watchlist-table-container #watchlist-table td a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  #watchlist-table-container #watchlist-table td a:hover {
+    color: #0073e6;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    #watchlist-table-container #watchlist-table td {
+      font-size: 0.8em;
+    }
+  
+    #watchlist-table-container #watchlist-table td:nth-child(2),
+    #watchlist-table-container #watchlist-table td:nth-child(3) {
+      font-size: 0.8em;
+    }
+  }
+  

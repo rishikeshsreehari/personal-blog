@@ -1,0 +1,21 @@
+<div id="watchlist-table-container">
+    <table id="watchlist-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{- $watchlist := .Site.Data.watchlist -}}
+            {{- range $watchlist }}
+            <tr>
+                <td><a href="{{ .link }}">{{ .title }}</a></td>
+                <td>{{ .year }}</td>
+                <td>{{ .language }}</td>
+            </tr>
+            {{- end }}
+        </tbody>
+    </table>
+</div>

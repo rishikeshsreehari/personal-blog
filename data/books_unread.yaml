@@ -1,3 +1,22 @@
+- name: "The Song of the Cell"
+  link: "https://geni.us/rsh-song-cell"
+  cover: "https://covers.openlibrary.org/b/isbn/1982117362-M.jpg"
+  priority: 10
+
+- name: "How to Know a Person"
+  link: "https://geni.us/rsh-know-person"
+  cover: "https://covers.openlibrary.org/b/isbn/059323006X-M.jpg"
+  priority: 10
+
+
+
+- name: "Stranger in a Strange Land"
+  link: "https://geni.us/rsh-stranger-land"
+  cover: "https://covers.openlibrary.org/b/isbn/198480278X-M.jpg"
+  priority: 1
+
+
+
 
 - name: "Kinfolk Travel: Slower Ways to See the World"
   link: "https://geni.us/rsh-slower-ways"
