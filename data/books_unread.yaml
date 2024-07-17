@@ -1,3 +1,9 @@
+
+- name: "A Philosophy of Software Design"
+  link: "https://geni.us/rsh-software-design"
+  cover: "https://covers.openlibrary.org/b/isbn/1732102201-M.jpg"
+  priority: 10
+
 - name: "The Song of the Cell"
   link: "https://geni.us/rsh-song-cell"
   cover: "https://covers.openlibrary.org/b/isbn/1982117362-M.jpg"

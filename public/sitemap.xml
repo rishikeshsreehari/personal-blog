@@ -170,6 +170,8 @@
   </url><url>
     <loc>http://localhost:1313/puzzle/</loc>
   </url><url>
+    <loc>http://localhost:1313/privacy-policy/</loc>
+  </url><url>
     <loc>http://localhost:1313/projects/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
