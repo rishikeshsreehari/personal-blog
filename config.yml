@@ -51,6 +51,7 @@ params:
   tocopen: false
   BookShelfDisplayCount: 12
   UtmSource: rishikeshs.com
+  CurrentLocation: "Dubai, United Arab Emirates (UAE)"
 
 
   assets:

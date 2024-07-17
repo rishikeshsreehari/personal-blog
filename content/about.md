@@ -10,12 +10,8 @@ ShowReadingTime: false
 ---
 
 
-
-
-
-
 My name is Rishikesh (pronounced as ri-shee-kay-sh ).   
-Currently I live in {} with my wife. 
+Currently I live in {{< currentlocation >}} with my wife. 
 
 I was born when there were  [358 ppm](https://www.co2levels.org) of carbon in the atmosphere  in a small village in Southern India, exactly at `9.754` latitude and `76.363` longitude, on a national strike day. I have a bachelor's degree in Mechanical Engineering and a postgraduate degree in Renewable Energy. While my [interests](/interests) evolve, my passion lies in doing as much as I can in solving the greatest threat faced by humanity i.e. climate change. I'm currently unemployed and looking for opportunities where I can contribute and grow further. I'm working on few [side projects](/projects), mostly trying to learn how to write, code, build, ship things. 
 
