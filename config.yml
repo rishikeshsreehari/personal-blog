@@ -18,7 +18,7 @@ minify:
 
 
 params:
-  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  #env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Rishikesh Sreehari
   description: "ExampleSite description"
   version: "1.2.0"
