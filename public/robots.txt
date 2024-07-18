@@ -1,3 +1,3 @@
 User-agent: *
-Disallow: /
+Disallow: /content/now-archive/
 Sitemap: http://localhost:1313/sitemap.xml

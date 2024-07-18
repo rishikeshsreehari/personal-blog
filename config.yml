@@ -18,7 +18,7 @@ minify:
 
 
 params:
-  #env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Rishikesh Sreehari
   description: "ExampleSite description"
   version: "1.2.0"
@@ -88,30 +88,48 @@ params:
     Title: "Hi I'm /rishikesh/ \U0001F4AD"
     Content: |
 
-              
-                <p>I'm a maker of things, rider of bikes, and hiker of mountains.</p>
-                <p>I write a <a href="https://example.com/newsletter" style="text-decoration: underline;"><strong>newsletter</strong></a> that is read by 3000+ people every week.</p>
-                <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
-                <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.</p>
-                <p>Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
+              <p style="margin-bottom: 1em;">This is a nicheless blog, a space where I gather and share my interests, ideas, and document my life. I consider this blog as an <a href="/website-art" style="text-decoration: underline; color: #0066cc;"><strong>evolving art project</strong></a>.</p>
 
+              <p style="margin-bottom: 1em;">I'm currently learning to write better, code and eventually ship products. Eventually I want to create more than I consume.</p>
+
+              <p style="margin-bottom: 1em;">I also write a <a href="https://rishikesh.susbtack.com" style="text-decoration: underline; color: #0066cc;"><strong>newsletter</strong></a> read by approximately 3000+ people across 89 countries and 47 states in the US.</p>
+
+              <p style="margin-bottom: 1em;">The <a href="/archive" style="text-decoration: underline; color: #0066cc;"><strong>archive</strong></a> holds all the articles I've written, with <a href="/man-from-the-future" style="text-decoration: underline; color: #0066cc;"><strong>Man from the Future</strong></a> being the most interesting and popular one so far. On this blog, I track the books <a href="/library" style="text-decoration: underline; color: #0066cc;"><strong>I read</strong></a>, things <a href="/watch" style="text-decoration: underline; color: #0066cc;"><strong>I watch</strong></a>, things <a href="/dream" style="text-decoration: underline; color: #0066cc;"><strong>I want to do</strong></a>, projects <a href="/projects" style="text-decoration: underline; color: #0066cc;"><strong>I'm working on</strong></a>, and the stuff that <a href="/lifestack" style="text-decoration: underline; color: #0066cc;"><strong>I use</strong></a>.</p>
+
+              <p style="margin-bottom: 1em;">To see what I'm currently up to, check out the <a href="/now" style="text-decoration: underline; color: #0066cc;"><strong>now</strong></a> page. For more about me, visit the <a href="/about" style="text-decoration: underline; color: #0066cc;"><strong>about</strong></a> page or <a href="/contact" style="text-decoration: underline; color: #0066cc;"><strong>say hi!</strong></a></p>
+
+             
+
+
+                                
   socialIcons:
     - name: twitter
       url: "https://twitter.com/rishikeshshari"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+    - name: discord
+      url:  "https://discord.gg/pkC6pngR"
     - name: github
       url: "https://github.com/rishikeshsreehari"
+    - name: reddit
+      url: "https://www.reddit.com/user/rishikeshshari/"
+    - name: strava
+      url: "https://www.strava.com/athletes/67526871/"
+    - name: ycombinator
+      url: "https://news.ycombinator.com/user?id=rishikeshs"
+    - name: buymeacoffee
+      url: "https://tracking.rishikeshs.com/nl-intro-coffee?utm_source=rishikeshs.com"
+    - name: email
+      url: "mailto:hello@rishikeshs.com"
+    - name: paypal
+      url: "https://paypal.me/RishikeshSHari?country.x=IN&locale.x=en_GB?utm_source=rishikeshs.com"
+
 
   analytics:
     google:
-      SiteVerificationTag: "XYZabc"
+      #SiteVerificationTag: "XYZabc"
     bing:
-      SiteVerificationTag: "XYZabc"
+      #SiteVerificationTag: "XYZabc"
     yandex:
-      SiteVerificationTag: "XYZabc"
+      #SiteVerificationTag: "XYZabc"
 
   cover:
     hidden: true # hide everywhere but not in structured data
@@ -135,26 +153,31 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: Now
-      name: Now
-      url: /now/
+    - identifier: about
+      name: About
+      url: /about/
       weight: 10
-    - identifier: tags
+    - identifier: archive
       name: Archive
       url: /archives/
       weight: 20
-    - identifier: tagss
+    - identifier: contact
       name: Contact
       url: /contact/
       weight: 30
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 40
     - identifier: library
       name: Library
       url: /library/
+      weight: 40
+    - identifier: Now
+      name: Now
+      url: /now/
       weight: 50
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 60
+
 
 outputs:
   home:
