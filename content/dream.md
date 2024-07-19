@@ -18,7 +18,7 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 3. Run a full marathon (~42.2km)
 4. Learn to swim in open water and ocean.
 5. Become an [IronMan](https://en.wikipedia.org/wiki/Ironman_Triathlon)
-6. ~~Become a [Super Randonneur](https://www.audax.uk/awards-pages/international-super-randoneur/).~~ *Achieved on 03-10-2022. [Read about it](https://rishikeshs.com/super-randonneur/) here.*
+6. ~~Become a [Super Randonneur](https://www.audax.uk/awards-pages/international-super-randoneur/).~~ *Done on 03-10-2022. [Read about it](https://rishikeshs.com/super-randonneur/) here.*
 7. Climb a mountain with an elevation >6000m
 8. Complete Everest Base Camp (EBC) trek and Annapurna Circuit.
 9. Learn to snowboard.
@@ -78,8 +78,11 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 63. Walk the [Pampir Trail](https://www.pamirtrail.org/the-trail) once the mapping is complete.
 64. Do a tandem bikepacking tip with [Yeti](https://tibetanyeti.com)
 65. Start a [Little Free Library](https://littlefreelibrary.org/start/)
-
-
+66. Travel around the world for a year with a [World Ticket.](https://roundtheworld.staralliance.com/staralliance/en/round-the-world)
+67. Attend [Olympics], ideally to watch 100m event.
+68. Design a tattoo myself and get inked.
+69. Write, shoot, direct, edit and self-publish a short-film or a documentary.
+70. Contribute to [OpenStreetMaps](https://www.openstreetmap.org/)
 
 
 
