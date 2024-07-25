@@ -1,3 +1,10 @@
+- name: "Paatal Lok"
+  language: "Hindi"
+  rating: 3
+  date: "2024-07-25"
+  url: "/watch/paatal-lok"
+
+
 - name: "Maharaja"
   language: "Tamil"
   rating: 2
