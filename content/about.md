@@ -45,6 +45,6 @@ I think of this website itself as an artwork, something that evolves over time. 
 
 ### Some more info
 
-To know more about my life, visit my [timeline](/timeline). The [Lifestack](/lifestack) page lists the things I use, and the [now](/now) page shows what I'm currently up to. If you're curious, the [library](/library) has a list of books I've read recently, and the [watch](/watch) page lists movies and shows I've seen. This website is designed to be explored with no end goal in mind, featuring various interesting pages and easter eggs. [Useless Button](/button) is a good starting point, feel free to wander as you wish. 
+To know more about my life, visit my [timeline](/timeline). The [dream](/dream) has a list of stuff I want to do, the [Lifestack](/lifestack) page lists the things I use, and the [now](/now) page shows what I'm currently up to. If you're curious, the [library](/library) has a list of books I've read recently, and the [watch](/watch) page lists movies and shows I've seen. This website is designed to be explored with no end goal in mind, featuring various interesting pages and easter eggs. [Useless Button](/button) is a good starting point, feel free to wander as you wish. 
 
 I also host an [Ask-Me-Anything (AMA)](/ama) on this blog. If you enjoy the content, please sign my [guestbook](/guestbook).
