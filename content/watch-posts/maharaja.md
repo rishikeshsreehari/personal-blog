@@ -30,4 +30,4 @@ Felt like a cooked up script to reach the climax. There were no moments of visua
 
 
 *Watched on 07-07-2024 at VOX Cinemas, Deira City Center, Dubai.*  
-*Reviewed on: 08-07-2024*
+*Review on: 08-07-2024*

@@ -31,9 +31,8 @@ _I'm currently working from the[ Wo-rk by the Co-Spaces](https://maps.app.goo.gl
 
 ### What Am I Reading?
 
-- [The Wikipedia Revolution](https://geni.us/rsh-wiki-revolution) by Andrew Lih
-- [Authority](https://geni.us/rsh-authority) by Nathan Barry
-- [Million Dollar Weekend](https://geni.us/rsh-million-dollar) by Noah Kagan
+- [The Myth of Sisyphus](https://geni.us/rs-sisyphus) by Albert Camus
+- [Exercised](https://geni.us/rs-exercised) by Daniel Lieberman
 - [Cashvertising](https://geni.us/rsh-cashvertising) by Drew Eric Whitman
 
 *I read 3-4 books in parallel most of the time on [my e-book reader](https://geni.us/rsh-kindle-paperwhite).*
@@ -41,7 +40,7 @@ _I'm currently working from the[ Wo-rk by the Co-Spaces](https://maps.app.goo.gl
 ### What Am I Learning?
 - Learning more about Energy Systems and Modelling from the lectures of [Tom Brown](https://nworbmot.org/teaching.html)
 - Trying to learn more about stock markets on [Varsity](https://zerodha.com/varsity/) a great initiative by [Zerodha](https://zerodha.com/open-account?c=KSO559).
-- Trying to learn web development by following the curriculum at [The Odin Project](https://zerodha.com/open-account?c=KSO559)
+- Trying to learn Python by following the curriculum at [University of Helsinki](https://programming-23.mooc.fi/)
 
 
 

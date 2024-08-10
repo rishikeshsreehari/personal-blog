@@ -1,3 +1,33 @@
+
+
+- name: "Kaathal - The Core"
+  language: "Malayalam"
+  rating: 3
+  date: "2024-08-10"
+  url: "/watch/kaathal"
+
+
+
+
+
+- name: "Jan-e-Man"
+  language: "Malayalam"
+  rating: 4
+  date: "2024-08-08"
+  url: "/watch/janeman"
+
+
+
+
+
+- name: "House of the Dragon - S2"
+  language: "English"
+  rating: 4
+  date: "2024-08-04"
+  url: "/watch/house-of-dragon"
+
+
+
 - name: "Paatal Lok"
   language: "Hindi"
   rating: 3

@@ -1,8 +1,8 @@
 ---
-title: "Paatal Lok (2020) Movie Review"
+title: "Paatal Lok (2020) Series Review"
 #layout: "library"
 url: "/watch/paatal-lok"
-summary: A shot review of Maharaja (2024) Tamil movie with ratings and a quick take.
+summary: A shot review of Paatal Lok (2020) Series with ratings and a quick take.
 type: page
 disable_comments: true
 ShowReadingTime: false
@@ -28,4 +28,4 @@ Loved the performances of all the artists except Sanjeev Mehra's wife. The direc
 
 
 *Finished watching on 25-07-2024 on Amazon Prime*  
-*Reviewed written on: 25-07-2024*
+*Review written on: 25-07-2024*

@@ -1,14 +1,25 @@
 
+- book: "The Stranger"
+  rating: 4
+  date: 2024-08-09
+  url: https://geni.us/rs-strange-camus
+
+
+- book: "Authority"
+  rating: 3
+  date: 2024-08-02
+  url: https://geni.us/rsh-authority
+
+- book: "Million Dollar Weekend"
+  rating: 3
+  date: 2024-07-26
+  url: https://geni.us/rsh-million-dollar
+
 
 - book: "Crypto Confidential: Winning and Losing Millions in the New Frontier of Finance"
   rating: 4
   date: 2024-07-21
   url: https://geni.us/rsh-crypto-confid
-
-
-
-
-
 
 
 - book: Days at the Morisaki Bookshop
