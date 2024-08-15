@@ -58,10 +58,10 @@ def update_archive_content(content, date_str, archive_file_name):
     # Add archive notice
     archive_notice = f"This is an archive of the Now page on {date_str}\n\n"
 
-    # Remove the section ### Now in Numbers and {{< now_tiles >}}
-    if '### Now in Numbers' in body:
-        body = body.replace('### Now in Numbers\n', '')
-    body = body.replace('{{< now_tiles >}}', '')
+    # Remove lines containing shortcodes
+    body_lines = body.splitlines()
+    filtered_body_lines = [line for line in body_lines if '{{<' not in line and '{{%' not in line]
+    body = '\n'.join(filtered_body_lines)
 
     # Combine the updated front matter and body
     new_content = f"---\n{new_front_matter}\n---\n\n{archive_notice}{body}"
