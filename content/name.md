@@ -16,11 +16,11 @@ However, I have visited the place, stayed there for a few months, and made some 
 
 People often call me 'Rishi' ('Rish-eee'), a short version of my name, and I don't mind that. I feel like non-Indian speakers find my name challenging and 'Rishi' is often easier to pronounce. While I was working in hospitality in Edinburgh, my Russian supervisor used to call me 'Raashi'.
 
-This page serves as a place where I describe my name in different languages. While I was searching for my name in different languages, I found this page by [Thejesh GN](https://thejeshgn.com/about/my-name-in-different-languages/), who has also done the same. I've included most languages and used AI and Google Translate for translating my name. The verified column next to my name indicates whether the name has been verified by a native speaker. I've already verified the same for English, Malayalam, Hindi, and Tamil, the languages spoken by me and my wife. In case you find any mistakes in the translation, feel free to comment or contact me. If your language is not listed, I would like to add it, with a backlink to your blog. So feel free to reach out. I have also enabled comments on this page for feedback.M
+This page serves as a place where I describe my name in different languages. While I was searching for my name in different languages, I found this page by [Thejesh GN](https://thejeshgn.com/about/my-name-in-different-languages/), who has also done the same. I've included most languages and used AI and Google Translate for transliterating my name. The verified column next to my name indicates whether the name has been verified by a native speaker. I've already verified the same for English, Malayalam, Hindi, and Tamil, the languages spoken by me and my wife. In case you find any mistakes in the transliteration, feel free to comment or contact me. If your language is not listed, I would like to add it, with a backlink to your blog. So feel free to reach out. I have also enabled comments on this page for feedback.
+    
 
 
-
-| Language             | Translation   | Verified |
+| Language             | Name   | Verified |
 |----------------------|---------------|----------|
 | English              | Rishikesh     | ✅       |
 | Malayalam            | ഋഷികേശ്        | ✅       |
