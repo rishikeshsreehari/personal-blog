@@ -48,7 +48,7 @@ _I'm currently working from the[ Wo-rk by the Co-Spaces](https://maps.app.goo.gl
 
 ### My Workout Regime
 
-I'm currently focusing on transforming my body and bringing down my body fat to below 25%. I workout 6 days a week with 4 strength training sessions and cardio in the form of running, swimming, and cycling. For strength training, I currently follow the Trainer Winny's [beginner plan](hhttps://www.youtube.com/watch?v=U9ENCvFf9yQ) fousing on  4 days of fullbody workouts. Since it's summer here in the Middle East, I mostly run indoors on a treadmill. I do not have a bike to ride here in UAE, so all my rides are indoors to ensure that my muscle memory stays intact. I try to swim atleast once a week, trying to learn freestyle properly.
+I'm currently focusing on transforming my body and bringing down my body fat to below 25%. I workout 6 days a week with 4 strength training sessions and cardio in the form of running, swimming, and cycling. For strength training, I currently follow the Trainer Winny's [beginner plan](hhttps://www.youtube.com/watch?v=U9ENCvFf9yQ) fousing on  4 days of fullbody workouts. Since it's summer here in the Middle East, I mostly run indoors on a treadmill. I don't have a bike to ride here in the UAE, so I don't ride at all, except for some indoor rides at the gym. I try to swim atleast once a week, trying to learn freestyle properly.
 
 #### If you found my now page interesting, checkout ["Then"](/then), an archive of all my "Now" pages.
 
