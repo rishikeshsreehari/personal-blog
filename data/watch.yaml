@@ -1,5 +1,21 @@
 
 
+
+
+
+
+- name: "Neru"
+  language: "Malayalam"
+  rating: 2
+  date: "2024-03-14"
+  url: "https://letterboxd.com/film/neru/"
+
+
+
+
+
+
+
 - name: "Kaathal - The Core"
   language: "Malayalam"
   rating: 3
@@ -12,7 +28,7 @@
 
 - name: "Jan-e-Man"
   language: "Malayalam"
-  rating: 4
+  rating: 3
   date: "2024-08-08"
   url: "/watch/janeman"
 
@@ -55,7 +71,7 @@
 
 - name: "The Test"
   language: "English"
-  rating: 4
+  rating: 3
   date: "2024-06-20"
   url: "https://www.serializd.com/show/The-Test-95837"
 
@@ -181,7 +197,7 @@
 
 - name: "12th Fail"
   language: "Hindi"
-  rating: 4
+  rating: 3
   date: "2024-01-07"
   url: "https://letterboxd.com/film/12th-fail/"
 

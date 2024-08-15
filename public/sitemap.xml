@@ -152,7 +152,13 @@
   </url><url>
     <loc>http://localhost:1313/guestbook/</loc>
   </url><url>
+    <loc>http://localhost:1313/watch/house-of-dragon/</loc>
+  </url><url>
     <loc>http://localhost:1313/ideas/</loc>
+  </url><url>
+    <loc>http://localhost:1313/watch/janeman/</loc>
+  </url><url>
+    <loc>http://localhost:1313/watch/kaathal/</loc>
   </url><url>
     <loc>http://localhost:1313/library/</loc>
   </url><url>

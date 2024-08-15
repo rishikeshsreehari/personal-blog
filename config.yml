@@ -84,19 +84,26 @@ params:
         url: tags
 
   # home-info mode
+  
   homeInfoParams:
-    Title: "Hi I'm /rishikesh/ \U0001F4AD"
+    Title: |
+        <h1>Hi I'm /rishikesh/<sup class="superscript-emoji">💭</sup><span class="cursor"></span></h1>
+
+
+
     Content: |
 
-             <p style="margin-bottom: 1em;">This is my webspace. A niche-less blog where I gather and share my ideas and document my life. I consider this blog as an <a href="/website-art" style="text-decoration: underline;"><strong>evolving art project</strong></a> itself.</p>
+        <div class="home-page-content">
+            <p>This is my webspace. A niche-less blog where I gather and share my ideas and document my life. I consider this blog as an <a href="/website-art" style="text-decoration: underline;"><strong>evolving art project</strong></a> itself.</p>
 
-              <p style="margin-bottom: 1em;">I'm currently <a href="/hire-me/" style="text-decoration: underline;"><strong>unemployed</strong></a>, spending most of my time applying for jobs. In parallel, I'm trying to write better, learning to code, working on a few side projects, focusing on my fitness, and trying to be a better husband.</p>
+            <p>I'm currently <a href="/hire-me/" style="text-decoration: underline;"><strong>looking for opportunities</strong></a>, spending most of my time applying for jobs. In parallel, I'm trying to write better, learning to code, working on a few side projects, focusing on my fitness, and trying to be a better husband.</p>
 
-              <p style="margin-bottom: 1em;">I also write a <a href="https://rishikesh.susbtack.com/" style="text-decoration: underline;"><strong>newsletter</strong></a> read by approximately 3000+ people across 89 countries and 47 states in the US.</p>
+            <p>I also write a <a href="https://rishikesh.susbtack.com/" style="text-decoration: underline;"><strong>newsletter</strong></a> read by approximately 3000+ people across 89 countries and 47 states in the US.</p>
 
-              <p style="margin-bottom: 1em;">The <a href="/archive" style="text-decoration: underline;"><strong>archive</strong></a> holds all the articles I've written, with <a href="/man-from-the-future" style="text-decoration: underline;"><strong>Man from the Future</strong></a> being the most interesting and popular one so far. On this blog, I track the books <a href="/library" style="text-decoration: underline;"><strong>I read</strong></a>, things <a href="/watch" style="text-decoration: underline;"><strong>I watch</strong></a>, things <a href="/dream" style="text-decoration: underline;"><strong>I want to do</strong></a>, projects <a href="/projects" style="text-decoration: underline;"><strong>I'm working on</strong></a>, and the stuff that <a href="/lifestack" style="text-decoration: underline;"><strong>I use</strong></a>. I also run a <a href="/puzzle" style="text-decoration: underline;"><strong>puzzle</strong></a>, that I intend to run forever.</p>
+            <p>The <a href="/archive" style="text-decoration: underline;"><strong>archive</strong></a> holds all the articles I've written, with <a href="/man-from-the-future" style="text-decoration: underline;"><strong>Man from the Future</strong></a> being the most interesting and popular one so far. On this blog, I track the books <a href="/library" style="text-decoration: underline;"><strong>I read</strong></a>, things <a href="/watch" style="text-decoration: underline;"><strong>I watch</strong></a>, things <a href="/dream" style="text-decoration: underline;"><strong>I want to do</strong></a>, projects <a href="/projects" style="text-decoration: underline;"><strong>I'm working on</strong></a>, and the stuff that <a href="/lifestack" style="text-decoration: underline;"><strong>I use</strong></a>. I also run a <a href="/puzzle" style="text-decoration: underline;"><strong>puzzle</strong></a>, that I intend to run forever.</p>
 
-              <p style="margin-bottom: 1em;">To see what I'm currently up to, check out the <a href="/now" style="text-decoration: underline;"><strong>now</strong></a> page. For more about me, visit the <a href="/about" style="text-decoration: underline;"><strong>about</strong></a> page or <a href="/contact" style="text-decoration: underline;"><strong>say hi!</strong></a></p>
+            <p>To see what I'm currently up to, check out the <a href="/now" style="text-decoration: underline;"><strong>now</strong></a> page. For more about me, visit the <a href="/about" style="text-decoration: underline;"><strong>about</strong></a> page or <a href="/contact" style="text-decoration: underline;"><strong>say hi!</strong></a></p>
+        </div>
 
 
                                 
@@ -104,7 +111,7 @@ params:
     - name: twitter
       url: "https://twitter.com/rishikeshshari"
     - name: discord
-      url:  "https://discord.gg/pkC6pngR"
+      url:  "https://discord.com/channels/1263420611179315242/1263420611179315245"
     - name: github
       url: "https://github.com/rishikeshsreehari"
     - name: reddit

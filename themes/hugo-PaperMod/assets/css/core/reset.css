@@ -38,8 +38,7 @@ header,
 hgroup,
 main,
 nav,
-section,
-table {
+section {
     display: block;
 }
 
