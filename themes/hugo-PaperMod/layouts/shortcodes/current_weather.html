@@ -3,8 +3,8 @@
 <script>
   const temperatureEl = document.getElementById("temperature");
 
-  // Using safeJS to ensure the variables are handled correctly
-  const API_URL = `https://api.open-meteo.com/v1/forecast?latitude={{ .Site.Params.Latitude | safeJS }}&longitude={{ .Site.Params.Longitude | safeJS }}&current_weather=true`;
+  // Construct the API URL using string concatenation
+  const API_URL = "https://api.open-meteo.com/v1/forecast?latitude=" + {{ .Site.Params.Latitude | safeJS }} + "&longitude=" + {{ .Site.Params.Longitude | safeJS }} + "&current_weather=true";
 
   async function fetchCurrentWeather() {
     temperatureEl.textContent = 'Fetching...';
