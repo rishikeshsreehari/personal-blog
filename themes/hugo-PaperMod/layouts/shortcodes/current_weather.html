@@ -1,0 +1,25 @@
+<span id="temperature">Loading...</span>
+
+<script>
+  const temperatureEl = document.getElementById("temperature");
+  const API_URL = `https://api.open-meteo.com/v1/forecast?latitude={{ .Site.Params.Latitude }}&longitude={{ .Site.Params.Longitude }}&current_weather=true`;
+
+  async function fetchCurrentWeather() {
+    temperatureEl.textContent = 'Fetching...';
+    
+    try {
+      const response = await fetch(API_URL);
+      if (!response.ok) throw new Error('Network response was not ok');
+      
+      const { current_weather: { temperature: temperatureC } } = await response.json();
+      const temperatureF = (temperatureC * 9/5) + 32;
+      
+      temperatureEl.textContent = `${temperatureC}°C / ${temperatureF.toFixed(1)}°F`;
+    } catch (error) {
+      console.error("Error fetching current weather:", error);
+      temperatureEl.textContent = 'Failed to fetch temperature';
+    }
+  }
+
+  fetchCurrentWeather();
+</script>

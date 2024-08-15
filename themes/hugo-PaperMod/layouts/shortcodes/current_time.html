@@ -1,0 +1,22 @@
+<span id="current-time">Loading...</span>
+
+<script>
+  async function fetchCurrentTime() {
+    const timezone = "{{ .Site.Params.Timezone }}";
+    
+    try {
+      // Fetch current time based on the timezone from the config.yaml
+      const timeResponse = await fetch(`https://worldtimeapi.org/api/timezone/${timezone}`);
+      const timeData = await timeResponse.json();
+      const currentTime = new Date(timeData.datetime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+
+      // Update the HTML content
+      document.getElementById("current-time").textContent = currentTime;
+
+    } catch (error) {
+      console.error("Error fetching current time:", error);
+    }
+  }
+
+  fetchCurrentTime();
+</script>
