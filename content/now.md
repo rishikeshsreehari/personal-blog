@@ -21,7 +21,7 @@ And it feels like 🌡️ **{{< current_weather >}}** outside!
 - Working onsd some [side projects](/projects)!
 
 
-This is a test to see if now logic works!!!
+Well this script is a joke!
 
 ### Now in Numbers
 
