@@ -1,18 +1,12 @@
 ---
-title: "What I'm Doing Now"
-url: "/now"
-summary: single
-type: page
-disable_comments: true
-ShowReadingTime: false
-dataDir: "data"
+draft: true
 ---
 
 ##### Last updated on 15-08-2024
 
-I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/siblings.twitches.scan)**  
-The local time here is ⏰ **{{< current_time >}}**  
-And it feels like 🌡️ **{{< current_weather >}}** outside!
+I’m currently in 🌍 **[](https://what3words.com/siblings.twitches.scan)**  
+The local time here is ⏰ ****  
+And it feels like 🌡️ **** outside!
 
 ### What am I Working on?
 
@@ -25,7 +19,7 @@ _I'm currently working from the[ Wo-rk by the Co-Spaces](https://maps.app.goo.gl
 
 ### Now in Numbers
 
-{{< now_tiles >}}
+
 
 
 ### What Am I Reading?
@@ -51,7 +45,3 @@ I'm currently focusing on transforming my body and bringing down my body fat to 
 
 
 ###### This is a ["now page"](https://nownownow.com/) inspired by Derek Sivers, and you should make one too.
-
-
-
-

@@ -508,15 +508,6 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
     </item>
     
     <item>
-      <title>Thoughts on UAE</title>
-      <link>http://localhost:1313/travel/UAE/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/travel/UAE/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Unoffice Hours</title>
       <link>http://localhost:1313/unoffice-hours/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -558,6 +549,15 @@ Mark highlights and take notes while reading on my Kindle. Export highlights and
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/now-2024-06-09/</guid>
+      <description>single</description>
+    </item>
+    
+    <item>
+      <title>What I&#39;m Doing Now</title>
+      <link>http://localhost:1313/now-2024-08-16/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/now-2024-08-16/</guid>
       <description>single</description>
     </item>
     
