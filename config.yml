@@ -90,7 +90,7 @@ params:
   
   homeInfoParams:
     Title: |
-        <h1>Hi I'm /rishikesh/<sup class="superscript-emoji">💭</sup><span class="cursor"></span></h1>
+        <h1>Hi I'm /rishikesh/<span class="cursor"></span></h1>
 
 
 

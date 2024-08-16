@@ -20,6 +20,9 @@ And it feels like 🌡️ **{{< current_weather >}}** outside!
 - Trying to revive [10+1 Things](https://rishikesh.substack.com/) a newsletter I started few years back.
 - Working onsd some [side projects](/projects)!
 
+
+This is a test to see if now logic works!
+
 ### Now in Numbers
 
 {{< now_tiles >}}

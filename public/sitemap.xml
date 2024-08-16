@@ -190,10 +190,6 @@
   </url><url>
     <loc>http://localhost:1313/then/</loc>
   </url><url>
-    <loc>http://localhost:1313/travel/UAE/</loc>
-  </url><url>
-    <loc>http://localhost:1313/travel-posts/</loc>
-  </url><url>
     <loc>http://localhost:1313/unoffice-hours/</loc>
   </url><url>
     <loc>http://localhost:1313/button/</loc>
@@ -205,6 +201,8 @@
     <loc>http://localhost:1313/watchlist/</loc>
   </url><url>
     <loc>http://localhost:1313/now-2024-06-09/</loc>
+  </url><url>
+    <loc>http://localhost:1313/now-2024-08-16/</loc>
   </url><url>
     <loc>http://localhost:1313/now/</loc>
   </url>
