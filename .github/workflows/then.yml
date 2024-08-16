@@ -1,0 +1,28 @@
+name: Run archive_now.py on Push
+
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if it's not 'main'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'  # Specify your Python version
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # If your script requires dependencies, install them here
+        # pip install -r requirements.txt
+
+    - name: Run archive_now.py
+      run: python scripts/archive_now.py
