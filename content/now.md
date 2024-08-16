@@ -20,9 +20,6 @@ And it feels like 🌡️ **{{< current_weather >}}** outside!
 - Trying to revive [10+1 Things](https://rishikesh.substack.com/) a newsletter I started few years back.
 - Working onsd some [side projects](/projects)!
 
-_I'm currently working from the[ Wo-rk by the Co-Spaces](https://maps.app.goo.gl/3y33KMYfzBzqQvibA) in Burjuman, Dubai, UAE. Come say hi, if you are around!_
-
-
 ### Now in Numbers
 
 {{< now_tiles >}}
