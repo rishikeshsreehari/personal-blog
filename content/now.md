@@ -18,7 +18,7 @@ And it feels like 🌡️ **{{< current_weather >}}** outside!
 
 ### What am I Working on?
 
-- I'm currently unemployed, so mostly [looking for a job](/hire) most of the time. 
+- I'm currently umemployed, so mostly [looking for a job](/hire) most of the time. 
 - Trying to revive [10+1 Things](https://rishikesh.substack.com/) a newsletter I started few years back.
 - Working on some [side projects](/projects)!
 
@@ -28,7 +28,6 @@ _I'm currently working from the[ Wo-rk by the Co-Spaces](https://maps.app.goo.gl
 ### Now in Numbers
 
 {{< now_tiles >}}
-
 
 
 ### What Am I Reading?
@@ -42,7 +41,7 @@ _I'm currently working from the[ Wo-rk by the Co-Spaces](https://maps.app.goo.gl
 ### What Am I Learning?
 - Learning more about Energy Systems and Modelling from the lectures of [Tom Brown](https://nworbmot.org/teaching.html)
 - Trying to learn more about stock markets on [Varsity](https://zerodha.com/varsity/) a great initiative by [Zerodha](https://zerodha.com/open-account?c=KSO559).
-- Trying to learn Python by following the curriculum at [University of Helsinki](https://programming-23.mooc.fi/)
+- Trying to learn Python by following the curriculum at [University of Helsinki](https://programming-24.mooc.fi/)
 
 
 
