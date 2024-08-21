@@ -1,0 +1,105 @@
+<style>
+  .mosaic-container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columns for an 8x8 mosaic */
+    gap: 2px;
+    width: 100%;
+    max-width: 500px; /* Set a maximum width for larger screens */
+    margin: auto;
+  }
+
+  .mosaic-cell {
+    margin: 0;
+    padding-bottom: 100%;
+    background-color: transparent; /* Make the background transparent */
+    border: 1px solid white; /* Add a small white border */
+    cursor: pointer;
+  }
+
+  /* Make the mosaic smaller on smaller devices */
+  @media (max-width: 600px) {
+    .mosaic-container {
+      max-width: 300px; /* Scale down the mosaic to fit smaller screens */
+    }
+  }
+
+  @media (max-width: 400px) {
+    .mosaic-container {
+      max-width: 200px; /* Further scale down the mosaic on very small screens */
+    }
+  }
+
+  .mosaic-info {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+  }
+</style>
+
+<div class="mosaic-container">
+  {{ range seq 1 64 }} <!-- 8x8 mosaic -->
+  <div class="mosaic-cell" onclick="changeMosaicColor(this)"></div>
+  {{ end }}
+</div>
+
+<div class="mosaic-info">
+  <p id="mosaic-updated"></p>
+  <p id="mosaic-countries"></p>
+</div>
+
+<script>
+  async function changeMosaicColor(cell) {
+    const color = getRandomColor();
+    cell.style.backgroundColor = color;
+
+    // Prepare data to be sent to Cloudflare KV
+    const mosaicState = await fetchMosaicState();
+    const index = Array.prototype.indexOf.call(cell.parentNode.children, cell);
+    mosaicState.cells[index] = color;
+
+    // Send the updated state to Cloudflare KV
+    await fetch('https://mosaic-data.rishikeshsreehari.workers.dev/', {  // Updated with your Worker URL
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(mosaicState.cells)
+    });
+
+    // Update the UI with the new time and countries
+    updateMosaicInfo(mosaicState.updatedTime, mosaicState.countries);
+  }
+
+  async function fetchMosaicState() {
+    const response = await fetch('https://mosaic-data.rishikeshsreehari.workers.dev/');  // Updated with your Worker URL
+    if (response.status === 200) {
+      const mosaicState = await response.json();
+      console.log("Fetched mosaic state:", mosaicState);  // Log the fetched data
+      updateMosaicInfo(mosaicState.updatedTime, mosaicState.countries);
+      return mosaicState;
+    }
+    return { cells: Array(64).fill('transparent'), updatedTime: '', countries: [] }; // Default state for an 8x8 grid
+  }
+  
+  // Fetch and apply the saved mosaic state on page load
+  document.addEventListener('DOMContentLoaded', async () => {
+    const mosaicState = await fetchMosaicState();
+    document.querySelectorAll('.mosaic-cell').forEach((cell, index) => {
+      cell.style.backgroundColor = mosaicState.cells[index] || 'transparent';
+    });
+  });
+
+  function updateMosaicInfo(updatedTime, countries) {
+    const updatedText = `This mosaic was last updated on ${new Date(updatedTime).toLocaleString()}`;
+    const countriesText = `It has been updated by people from: ${countries.join(', ')}`;
+    document.getElementById('mosaic-updated').textContent = updatedText;
+    document.getElementById('mosaic-countries').textContent = countriesText;
+  }
+
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+</script>
