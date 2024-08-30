@@ -1,6 +1,11 @@
 
 
 
+- name: "Vaazhai"
+  language: "Tamil"
+  rating: 3 
+  date: "2024-08-25"
+  url: "/watch/vaazhai"
 
 
 
@@ -9,9 +14,6 @@
   rating: 2
   date: "2024-03-14"
   url: "https://letterboxd.com/film/neru/"
-
-
-
 
 
 
@@ -203,7 +205,7 @@
 
 - name: "House of Cards"
   language: "English"
-  rating: 5
+  rating: 4
   date: "2024-01-04"
   url: "https://www.serializd.com/show/House-of-Cards-1425"
 
