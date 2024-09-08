@@ -10,16 +10,16 @@
   
 
 
-- title: "Unirank.one"
-  description: "Top 300 University Rankings in the world all at one place."
-  image: "/images/projects/unirank.webp"
-  url: "https://exifviewer.pro"
-
-
 - title: "CalcBun"
   description: "Online calculators for all applications."
   image: "/images/projects/calcbun.webp"
   url: "https://calcbun.com"
+                                                          
+
+- title: "Unirank.one"
+  description: "Top 300 University Rankings in the world all at one place."
+  image: "/images/projects/unirank.webp"
+  url: "https://unirank.one"
 
 - title: "NPSNAV"
   description: "National Pension Scheme (NPS) Free API and fund tracker"
