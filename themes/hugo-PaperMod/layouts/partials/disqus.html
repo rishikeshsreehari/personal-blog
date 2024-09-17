@@ -9,7 +9,7 @@
   {{ with index $commentsData $url }} <!-- Retrieve comments for the current page -->
     {{ $comments := . | default (slice) }} <!-- Assign comments data for the current page to $comments variable, using a default empty slice if error occurs -->
     {{ if gt (len $comments) 0 }} <!-- Check if comments are not empty -->
-      {{ range (sort $comments "Date" "desc") }} <!-- Sort comments by date in descending order -->
+      {{ range $comments }} <!-- Iterate over the comments -->
         <div class="comment {{ if in .Comment "author-marker" }}highlight{{ end }}">
           <div class="avatar">
             <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}" alt="avatar">
@@ -31,7 +31,9 @@
 
 <br>
 
-<h5>Leave a comment below. All comments are moderated and will appear after approval. Your email, if provided, is optional and won't be shared or added to any mailing lists. It's solely for contacting you if your comment requires a personal response beyond a public reply. Comments are <!--<a href="https://rishikeshs.com/static-comments" style="text-decoration: underline;">static</a> -->static with no backlinks or notifications.
+
+
+<h5>Leave a comment using the form below. All comments are held for moderation and will only appear after they have been reviewed and approved. If you wish to stay in touch with me, feel free to fill in the email field or leave it blank. This is optional and solely for contact purposes; rest assured, your email address will not be published or shared with anyone. There are no reply notifications or editing of comments. These comments are <a href="https://rishikeshs.com/static-comments" style="text-decoration: underline;">static</a> and do not allow any backlinks.
 </h5>
 <br>
 
