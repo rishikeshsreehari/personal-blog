@@ -62,6 +62,6 @@ Coming back to the thought experiment, what all things can you build? Do you thi
 
 As I'm writing this, I've realized that much knowledge I possess like electromagnetism, string theory, aerodynamics, etc. is of no use until the civilization advances to a point. I had much fun writing this post and will update it as I get more ideas over time. Meanwhile, drop your comments on things that you feel you can achieve.
 
----
+{{< subscribe_block >}}
 
-*Enjoyed this article? If so, check out my [10+1 Things](https://rishikesh.substack.com/) Newsletter that I send out every Sunday. It contains 11 interesting Things I thought were worth sharing including books, articles, projects, and other things I'm curious about. [Click here](https://rishikeshs.com/newsletter/) if you would like to check out the previous issues and maybe subscribe!*
+
