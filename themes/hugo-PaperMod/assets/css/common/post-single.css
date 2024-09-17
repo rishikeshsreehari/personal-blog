@@ -8,10 +8,18 @@
     font-size: 40px;
 }
 
+
+/* Custom CSS */
 .post-description {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em; /* Adjust font size slightly larger */
+    font-weight: 400; /* Make the font lighter */
+    color: #666; /* Use a subtle grey color for a cleaner look */
+    line-height: 1.6; /* Add some breathing room between lines */
+    text-align: left; 
 }
+
 
 .post-meta,
 .breadcrumbs {

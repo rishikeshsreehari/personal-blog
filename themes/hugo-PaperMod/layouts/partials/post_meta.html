@@ -1,16 +1,12 @@
 {{- $scratch := newScratch }}
 
 
-
- 
-
 {{- if (.Param "ShowReadingTime") -}}
-{{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
+    {{- $readingTime := printf "⏱ %d min" .ReadingTime }} <!-- Add the reading book emoji 📖 -->
+    {{- $scratch.Add "meta" (slice (i18n "read_time" $readingTime | default $readingTime)) }}
 {{- end }}
 
 
-
-
 {{- with ($scratch.Get "meta") }}
-{{- delimit . "&nbsp;·&nbsp;" -}}
+    {{- delimit . "&nbsp;·&nbsp;" -}}
 {{- end -}}

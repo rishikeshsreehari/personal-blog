@@ -2,6 +2,7 @@
   description: "11 interesting things, curated by a human, every week."
   image: "/images/projects/nl_substack.webp"
   url: "https://rishikesh.substack.com"
+  revenue: "$350/month"
 
 - title: "Exifviewer.pro"
   description: "A privacy-friendly, browser-based EXIF viewer."
@@ -14,7 +15,7 @@
   description: "Online calculators for all applications."
   image: "/images/projects/calcbun.webp"
   url: "https://calcbun.com"
-                                                          
+
 
 - title: "Unirank.one"
   description: "Top 300 University Rankings in the world all at one place."
@@ -25,4 +26,5 @@
   description: "National Pension Scheme (NPS) Free API and fund tracker"
   image: "/images/projects/nps-nav.webp"
   url: "https://npsnav.in"
+
 
