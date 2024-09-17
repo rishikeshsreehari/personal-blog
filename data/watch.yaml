@@ -1,4 +1,19 @@
 
+- name: "IC 814: The Kandahar Hijack"
+  language: "Hindi"
+  rating: 3 
+  date: "2024-09-15"
+  url: "/watch/IC814"
+
+- name: "Adios Amigo"
+  language: "Malayalam"
+  rating: 0 
+  date: "2024-09-15"
+  url: "/watch/adios-amigo"
+
+
+
+
 
 
 - name: "Vaazhai"
@@ -115,7 +130,7 @@
 
 - name: "Madgaon Express"
   language: "Hindi"
-  rating: 1
+  rating: 0
   date: "2024-04-14"
   url: "https://letterboxd.com/film/madgaon-express/"
 
