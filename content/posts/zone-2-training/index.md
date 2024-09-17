@@ -7,7 +7,7 @@ description: Zone 2 Training is the art of slowing down. This article explores w
 url: /zone-2-training/
 cover:
   image: "zone-2-training.webp"
-  alt: "ovarian-lottery"
+  alt: "zone 2 training"
   caption: "Zone 2 Training is the art of slowing down. This article explores why and how zone 2 training can make you a better athlete."
   relative: true
 featured_image: zone-2-training.webp
@@ -37,6 +37,9 @@ As mentioned in my [2022 planning](https://rishikeshs.com/2022-planning/), one g
 In a nutshell, Zone 2 training involves training at a low-intensity level for a longer period of time. The goal of Zone 2 training is to sustain an intensity for longer periods such that your heart rate lies in the range of 60-70% of your maximum heart rate. Training at this intensity is incredibly easy, yet boring at the same time. When I started Zone 2 training, I was a bit skeptical as it seemed too easy; I always had the 'go hard or go home' attitude when it came to training. Over time, I learned to appreciate the art of slowing down and how it can contribute to my aerobic fitness. In fact, the majority of high-performance endurance athletes follow the Zone 2 training regime, and it has proven benefits according to many scientific studies. The concept can be quite tricky to grasp, as it's hard to comprehend how training slower can help us go faster. To understand it more, it is necessary to dive into some of the science behind zone training, which I’ve tried to summarize below.
 
 ## The Science of Zone 2 Training
+
+![Zone 2 Training](zone-2-training.webp)
+
 
 How an athlete performs depends upon their ability to convert chemical energy into mechanical energy. All cells in our body are fueled by something called Adenosine Triphosphate, or ATP. Mitochondria in our cells generate ATP mainly in two ways—through aerobic or anaerobic mechanisms. The aerobic mechanism involves the conversion of fat into ATP, while in the anaerobic mechanism, carbohydrates are used. Additionally, our muscles contain slow-twitch (Type 1) and fast-twitch (Type 2) fibers. Type 1 muscles have many mitochondria and prefer fat as fuel, whereas Type 2 fibers are glycolytic and prefer carbohydrates. Burning glucose or carbohydrates produces lactate and hydrogen ions, which result in muscle fatigue.
 
