@@ -51,9 +51,9 @@ params:
   tocopen: false
   BookShelfDisplayCount: 12
   UtmSource: rishikeshs.com
-  CurrentLocation: "Dubai, United Arab Emirates (UAE)"
-  Latitude: 25.276987
-  Longitude: 55.296249
+  CurrentLocation: "Abu Dhabi, United Arab Emirates (UAE)"
+  Latitude: 24.432905
+  Longitude: 54.438448
   Timezone: "Asia/Dubai"
 
 
