@@ -1,7 +1,7 @@
 ---
 title: "What I'm Doing Now"
 url: "/now"
-summary: single
+summary: A glimpse of what I'm upto inspired by the nownownow movement by Derek Sivers.
 type: page
 disable_comments: true
 ShowReadingTime: false
