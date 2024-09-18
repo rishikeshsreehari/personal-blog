@@ -53,6 +53,7 @@ As I mentioned earlier, Readwise is a part of my knowledge management workflow. 
 {{< photocaption src="readwise-daily-highlights.webp" alt="Daily highlights on Readwise" >}}Daily highlights on Readwise{{< /photocaption >}}
 
 
+
 Every day, Readwise sends an email with highlights from books, articles, or other sources of information I have synced. I have set this to arrive in my inbox daily at 9 AM. It helps me passively remember small snippets of information from my favorite books. For example, last week I recalled an idea from [James Clear](https://jamesclear.com/)’s book [Atomic Habits](https://geni.us/rishikesh-AtomicHabits), which I had totally forgotten. Ever since I started using Readwise in April, I’ve religiously read and reviewed all of Readwise’s daily highlights.
 
 ### Mastery
