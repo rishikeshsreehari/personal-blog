@@ -1,7 +1,7 @@
 ---
 title: "Changelog"
 url: "/log"
-summary: single
+summary: Changelog of this site.
 type: page
 disable_comments: true
 ShowReadingTime: false

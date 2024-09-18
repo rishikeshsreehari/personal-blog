@@ -2,7 +2,7 @@
 title: "Library"
 layout: "library"
 url: "/library/"
-summary: single
+summary: A list of books that I've read in the last couple of years.
 type: page
 disable_comments: true
 ShowReadingTime: false

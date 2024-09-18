@@ -2,7 +2,7 @@
 title: "Colophon"
 #layout: "library"
 url: "/colophon/"
-summary: single
+summary: An Overview of How This Blog is Built and Roadmap Ahead
 type: page
 disable_comments: true
 ShowReadingTime: false

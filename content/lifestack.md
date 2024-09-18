@@ -2,7 +2,7 @@
 title: "Life Stack"
 #layout: "library"
 url: "/lifestack/"
-summary: single
+summary: A documentation of the tools, apps, gadgets, gear, and other stuff I use regularly.
 type: page
 disable_comments: true
 ShowReadingTime: false

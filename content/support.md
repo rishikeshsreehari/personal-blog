@@ -1,9 +1,8 @@
-
 ---
 title: "Suport"
 #layout: ""
 url: "/support/"
-summary: single
+summary: A page to support my work.
 type: page
 disable_comments: true
 ShowReadingTime: false

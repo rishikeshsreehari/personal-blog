@@ -2,7 +2,7 @@
 title: "Pixel Mosaic"
 #layout: "library"
 url: "/mosaic/"
-summary: single
+summary: A simple public pixel art project that evolves over time.
 type: page
 disable_comments: true
 ShowReadingTime: false

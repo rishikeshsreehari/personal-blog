@@ -2,7 +2,7 @@
 title: "Future Stack"
 #layout: "library"
 url: "/futurestack/"
-summary: single
+summary: List of things I want to purchase sometime in the future.
 type: page
 disable_comments: true
 ShowReadingTime: false

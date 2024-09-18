@@ -1,7 +1,7 @@
 ---
 title: "Then"
 url: "/then"
-summary: single
+summary: An archive of all now pages on this site.
 type: page
 disable_comments: true
 ShowReadingTime: false

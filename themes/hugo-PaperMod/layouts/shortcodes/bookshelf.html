@@ -1,3 +1,26 @@
+<div class="bookshelf-info">
+  Currently, there are {{ len site.Data.books_unread }} books in my antilibrary.
+
+  {{ $books := len site.Data.books_unread }}
+  {{ $avgBooksPerYear := 17.0 }} <!-- Making this a float by adding .0 -->
+  {{ $bestBooksPerYear := 27.0 }} <!-- Making this a float by adding .0 -->
+  {{ $avgBookWeight := 0.5 }} <!-- 0.5 kg per book -->
+  {{ $booksPerShelf := 30.0 }} <!-- Making this a float by adding .0 -->
+  {{ $pagesPerTree := 8333 }} <!-- Estimate of how many pages can be made from one tree -->
+  {{ $avgPagesPerBook := 300 }} <!-- Average number of pages per book -->
+
+  <!-- Calculate years to finish at current and best rate -->
+  It will take me approximately {{ printf "%.1f" (div $books $avgBooksPerYear) }} years to finish all these books at my current reading pace. 
+  If I were to read at my best rate (27 books in 2021), it would take {{ printf "%.1f" (div $books $bestBooksPerYear) }} years.
+
+  <!-- Calculate number of bookshelves -->
+  I mainly read on my <a href="https://geni.us/rsh-kindle-paperwhite">e-book reader</a>, but if I owned all these books in physical form, it would require around {{ printf "%.1f" (div $books $booksPerShelf) }} bookshelves to store them and would weight approximately {{ printf "%.1f" (mul $books $avgBookWeight) }} kg in total.
+
+
+</div>
+
+
+
 <div class="bookshelf" id="bookshelf">
   {{ with sort (site.Data.books_unread) "priority" "desc" }}
     {{ range $index, $element := . }}

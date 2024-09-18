@@ -2,7 +2,7 @@
 title: "Unoffice Hours"
 #layout: "library"
 url: "/unoffice-hours/"
-summary: single
+summary: Unoffice hours are informal conversations without an agenda, topic, or preparation. My calendar is open.
 type: page
 disable_comments: true
 ShowReadingTime: false

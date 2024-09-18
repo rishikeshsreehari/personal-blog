@@ -2,7 +2,7 @@
 title: "Travel"
 url: "/travel/"
 summary: single
-type: page
+type: A documentation of all places I've traveled so far.
 disable_comments: true
 ShowReadingTime: false
 draft: true

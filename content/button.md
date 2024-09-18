@@ -2,7 +2,7 @@
 title: "Useless Button"
 #layout: "library"
 url: "/button/"
-summary: single
+summary: This is a useless button with no use. Do not click it!
 type: page
 disable_comments: true
 ShowReadingTime: false

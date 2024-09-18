@@ -2,7 +2,7 @@
 title: "Life in Weeks"
 layout: "timeline"
 url: "/timeline/"
-summary: single
+summary: A timeline of my life inspired by the 'Life in Weeks' by Tim Urban.
 type: page
 disable_comments: true
 ShowReadingTime: false

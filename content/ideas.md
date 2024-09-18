@@ -2,9 +2,9 @@
 title: "Ideas"
 #layout: "library"
 url: "/ideas/"
-summary: single
+summary: A repository of ideas I had over the years.
 type: page
-disable_comments: true
+disable_comments: false
 ShowReadingTime: false
 
 ---

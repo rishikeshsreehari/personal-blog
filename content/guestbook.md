@@ -2,7 +2,7 @@
 title: "Guestbook"
 #layout: "library"
 url: "/guestbook/"
-summary: single
+summary: A guestbook where visitors can sign and leave feedback.
 type: page
 disable_comments: true
 ShowReadingTime: false

@@ -2,7 +2,7 @@
 title: "Dream List"
 #layout: "library"
 url: "/dream/"
-summary: single
+summary: List of things I want to do in my life.
 type: page
 disable_comments: true
 ShowReadingTime: false
