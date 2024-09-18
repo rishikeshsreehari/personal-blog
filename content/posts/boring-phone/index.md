@@ -30,6 +30,8 @@ I must admit, I’m quite addicted to my smartphone. My average daily screen tim
 
 {{< /dropcap >}}
 
+![Boring Phone](boring-phone.webp)
+
 
 The idea was to ensure that I consumed as little information as possible via my smartphone and reduced as many triggers that forced me to pick up my phone. My primary means of information consumption was through my laptop, and I used my phone to consume content only while traveling or during unavoidable circumstances. Below are some steps and tips that I followed in the Boring Phone framework to reduce my smartphone addiction. I don’t claim that following these steps made me completely free from smartphone addiction, but they did have a significant impact on my life. Any suggestions mentioned in the comments that are relevant to this framework will be added to this article with credit.
 
