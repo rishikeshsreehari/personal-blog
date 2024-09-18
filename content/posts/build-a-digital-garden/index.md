@@ -8,7 +8,7 @@ url: /build-a-digital-garden/
 cover:
   image: "digital-garden.webp"
   alt: "digital garden"
-  caption: "Digital Garden is a collection of notes, resources, ideas, quotes or summaries shared in public. This article explains how I built a digital garden using Hugo.."
+  caption: "Digital Garden is a collection of notes, resources, ideas, quotes or summaries shared in public. This article explains how I built a digital garden using Hugo."
   relative: true
 featured_image: digital-garden.webp
 
