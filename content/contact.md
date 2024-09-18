@@ -2,7 +2,7 @@
 title: "Contact"
 #layout: "library"
 url: "/contact/"
-summary: single
+summary: Different ways to contact me personally.
 type: page
 disable_comments: true
 ShowReadingTime: false

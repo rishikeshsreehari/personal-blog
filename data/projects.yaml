@@ -2,8 +2,6 @@
   description: "11 interesting things, curated by a human, every week."
   image: "/images/projects/nl_substack.webp"
   url: "https://rishikesh.substack.com"
-  revenue: "$350/month"
-
 - title: "Exifviewer.pro"
   description: "A privacy-friendly, browser-based EXIF viewer."
   image: "/images/projects/exifviewer.webp"

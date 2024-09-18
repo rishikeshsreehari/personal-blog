@@ -1,12 +1,12 @@
 [
     {
         "Name": "Nevin Lopez",
-        "Date": "2024-06-28",
+        "Date": "2024-09-20",
         "Comment": "Why did you move your blog from Wordpress to Hugo?"
     },
     {
         "Name": "Rishikesh",
-        "Date": "2024-06-29",
+        "Date": "2024-09-20",
         "Comment": "<span class='author-marker'>I loved WordPress for it's convenience. But as I learned programming and started seeing other personal blogs, I wanted to add new features that were impossible with a WordPress website. Also, developing your website from scratch knowing all the components was fun. I'm not there yet fully as this website is built using Hugo framework, but in the future, I would move to a custom framework and own everything end-to-end. "
     }
 ]

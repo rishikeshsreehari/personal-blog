@@ -2,7 +2,7 @@
 title: "Ask Me Anything"
 #layout: "library"
 url: "/ama/"
-summary: single
+summary: Ask Me Anything(AMA) is a space to any questions you have about my blog, my projects, or anything else you're curious about.
 type: page
 disable_comments: true
 ShowReadingTime: false
