@@ -3,8 +3,13 @@ import json
 import subprocess
 
 def get_commit_hash():
+    # Check if the environment variable is set
+    commit_hash = os.getenv('GIT_COMMIT_HASH')
+    if commit_hash:
+        return commit_hash
+
+    # Fallback to git command if not running in CI
     try:
-        # Get the short hash of the current commit
         commit_hash = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD']).strip().decode('utf-8')
         return commit_hash
     except subprocess.CalledProcessError:

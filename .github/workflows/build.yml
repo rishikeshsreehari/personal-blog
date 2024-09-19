@@ -18,18 +18,28 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Get last human commit hash
+      id: get_commit
+      run: echo "::set-output name=commit_hash::$(git rev-parse HEAD)"
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run build.py
+    - name: Run build.py with last commit hash
       run: |
-        python scripts/build.py
+        export GIT_COMMIT_HASH=${{ steps.get_commit.outputs.commit_hash }}
+        python scripts/build.py  # Pass the commit hash to the script via environment variable
+      env:
+        GIT_COMMIT_HASH: ${{ steps.get_commit.outputs.commit_hash }}
+
+    - name: Commit and push changes
+      run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
         git add .
-        git commit -m "Update now page and archives" || echo "No changes to commit"
+        git commit -m "Autocommit by Github Actions" || echo "No changes to commit"
         git push origin main
 
     - name: Push to production branch
