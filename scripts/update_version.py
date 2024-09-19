@@ -1,6 +1,7 @@
 import yaml
 import json
 import subprocess
+import os
 
 def get_commit_hash():
     # Check if the environment variable is set
