@@ -99,7 +99,7 @@ params:
         <div class="home-page-content">
             <p>This is my webspace. A niche-less blog where I gather and share my ideas and document my life. I consider this blog as an <a href="/website-art" style="text-decoration: underline;"><strong>evolving art project</strong></a> itself.</p>
 
-            <p>I'm currently <a href="/hire-me/" style="text-decoration: underline;"><strong>looking for opportunities</strong></a>, spending most of my time applying for jobs. In parallel, I'm trying to write better, learning to code, working on a few side projects, focusing on my fitness, and trying to be a better husband.</p>
+            <p>I'm currently <a href="/hire/" style="text-decoration: underline;"><strong>looking for opportunities</strong></a> to work, spending most of my time applying for jobs. In parallel, I'm trying to write better, learning to code, working on a few side <a href="/projects/" style="text-decoration: underline;"><strong>projects</strong></a>, focusing on my fitness, and trying to be a better husband.</p>
 
             <p>I also write a <a href="https://rishikesh.susbtack.com/" style="text-decoration: underline;"><strong>newsletter</strong></a> read by approximately 3000+ people across 89 countries and 47 states in the US.</p>
 
@@ -167,7 +167,7 @@ menu:
       weight: 10
     - identifier: archive
       name: Archive
-      url: /archives/
+      url: /archive/
       weight: 20
     - identifier: contact
       name: Contact

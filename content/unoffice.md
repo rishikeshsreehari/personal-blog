@@ -13,7 +13,7 @@ Every Tuesday and Thursday, [09:00 PM GST (UTC+4)](https://shareti.me/2024-06-17
 Unoffice hours are informal conversations without an agenda, topic, or preparation. Some interesting topics we can discuss are:
 - An interesting movie you saw recently and why it's great.
 - A project you are working on and need some feedback.
-- If you wish to [hire me](/hireme) for some work or want to collaborate with me on a project.
+- If you wish to [hire me](/hire) for some work or want to collaborate with me on a project.
 - You were intrigued by some [ideas](/ideas) I listed and wanted to chat more.
 - Or anything you want to discuss.
 

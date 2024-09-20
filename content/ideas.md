@@ -46,7 +46,7 @@ A moderated platform where a dedicated page is present for popular topics, and p
 {{< /accordion >}}
 
 {{< accordion summary="Indian News Aggregator with relevance" openByDefault=false >}}
-India is struggling with misinformation and rigged news. The magnitude is quite high, considering the huge population, the demographics, and the rising internet penetration. A platform like [News Minimalist](https://newsminimalist) that removes clickbait titles and filters relevant news would be useful for India.
+India is struggling with misinformation and rigged news. The magnitude is quite high, considering the huge population, the demographics, and the rising internet penetration. A platform like [News Minimalist](https://www.newsminimalist.com/) that removes clickbait titles and filters relevant news would be useful for India.
 {{< /accordion >}}
 
 {{< accordion summary="Global Fish Database in different languages" openByDefault=false >}}

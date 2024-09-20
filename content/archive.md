@@ -1,6 +1,6 @@
 ---
 title: "Archive"
 layout: "archives"
-url: "/archives"
+url: "/archive"
 summary: "An archive of all my posts"
 ---
