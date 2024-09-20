@@ -97,6 +97,4 @@ The format is based on the Blog Versioning Manifesto, and this project adheres t
 
 [Unreleased]: https://github.com/yourblog/compare/v1.0.1...HEAD
 [1.0.1]: https://github.com/yourblog/releases/tag/v1.0.1
-[1.0.0]: https://github.com/yourblog/releases/tag/v1.0.0
-
-This is a test
+[1.0.0]: https://github.com/yourblog/releases/tag/v1.0.
