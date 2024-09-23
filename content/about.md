@@ -41,7 +41,7 @@ I slightly align with [longtermism](https://en.wikipedia.org/wiki/Longtermism) a
 
 This blog is nicheless and is my digital home where I share my thoughts and experiences. For a long time, I struggled to become a specialist. Be it career, life, or hobbies, I have always had multiple passions and interests that evolve over time. I've come to realize that being a generalist is not a bad thing, and this blog reflects that.
 
-I think of this website itself as an artwork, something that evolves over time. It's inspired by numerous blogs and sites out there in the wild west corner of the internet. Like any art piece, each inch of this website is crafted with clear vision, attention, and reason. You can read more about how this blog is built on the [colophon](/colophon) page or my blog post titled ["My blog is my greatest art"]().
+I think of this website itself as an artwork, something that evolves over time. It's inspired by numerous blogs and sites out there in the wild west corner of the internet. Like any art piece, each inch of this website is crafted with clear vision, attention, and reason. You can read more about how this blog is built on the [colophon](/colophon) page. <!-- or my blog post titled ["My blog is my greatest art"](). -->
 
 ### Some more info
 

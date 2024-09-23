@@ -9,6 +9,7 @@ keywords:
   - "30 day meditation challenge"
   - "meditation challenge"
 
+hiddenInHomeList: true
 ---
 
 
