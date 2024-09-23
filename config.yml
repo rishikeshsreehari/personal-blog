@@ -38,7 +38,7 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: false
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -66,7 +66,6 @@ params:
 
   label:
     text: "Rishikesh Sreehari"
-    icon: /apple-touch-icon.png
     iconHeight: 35
 
   # profile-mode
