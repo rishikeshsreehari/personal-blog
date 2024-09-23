@@ -1,7 +1,7 @@
 ---
 title: "Credits"
 #layout: "library"
-url: "/Credits/"
+url: "/credits/"
 summary: Credits for various individuals, projects or services that helped to build this site.
 type: page
 disable_comments: false

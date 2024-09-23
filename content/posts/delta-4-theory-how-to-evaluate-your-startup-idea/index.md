@@ -102,7 +102,7 @@ Delta-4 can also be achieved by piggybacking on another Delta-4 product. For exa
 
 Delta-4 Theory can be used by entrepreneurs to evaluate startup ideas or existing products. It serves as a framework to assess whether a product or solution is creating extraordinary value and has the potential to generate wealth in the future. Problems are a subset of inefficiencies. This theory can also be used to reverse-engineer existing inefficiencies to find problems—and therefore, potential products.
 
-If you're looking to evaluate an [idea](https://rishikeshs.com/idea-journal/) or your existing business, I believe this article will help in the process. Please [reach out to me][1] if you're trying to analyze your product or business using this theory. I'd love to feature you in a post!
+If you're looking to evaluate an [idea](https://rishikeshs.com/ideas) or your existing business, I believe this article will help in the process. Please [reach out to me][1] if you're trying to analyze your product or business using this theory. I'd love to feature you in a post!
 {{< subscribe_block >}}
 
 

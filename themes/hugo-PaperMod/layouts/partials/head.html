@@ -23,6 +23,8 @@
     {{- with site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
 <meta name="author" content="{{ (partial "author.html" . ) }}">
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
+
+<!--
 {{- if site.Params.analytics.google.SiteVerificationTag }}
 <meta name="google-site-verification" content="{{ site.Params.analytics.google.SiteVerificationTag }}">
 {{- end }}
@@ -35,6 +37,10 @@
 {{- if site.Params.analytics.naver.SiteVerificationTag }}
 <meta name="naver-site-verification" content="{{ site.Params.analytics.naver.SiteVerificationTag }}">
 {{- end }}
+
+-->
+
+
 <script data-goatcounter="https://rishikesh.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 
@@ -165,7 +171,7 @@
 
 {{- /* Misc */}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
-{{- template "_internal/google_analytics.html" . }}
+<!--{{- template "_internal/google_analytics.html" . }} removed as goatcounter is used    -->
 {{- template "partials/templates/opengraph.html" . }}
 {{- template "partials/templates/twitter_cards.html" . }}
 {{- template "partials/templates/schema_json.html" . }}

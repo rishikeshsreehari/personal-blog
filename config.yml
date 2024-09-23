@@ -128,7 +128,7 @@ params:
       url: "https://paypal.me/RishikeshSHari?country.x=IN&locale.x=en_GB?utm_source=rishikeshs.com"
 
 
-  analytics:
+  #analytics:
     #google:
       #SiteVerificationTag: "XYZabc"
     #bing:

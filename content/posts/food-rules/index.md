@@ -39,7 +39,7 @@ This book is a must-read if you are looking to get some insights on diet and lea
 ![Food Rules](food-rules.webp)
 
 
-As mentioned earlier, many [ideas](https://rishikeshs.com/idea-journal/) were already known to me. But the book brought more clarity to my stance against processed food. The French Paradox mentioned in the book was also thought-provoking. The practice of having a colorful diet backed up by the idea of phytochemicals was new to me. I have also decided to include fermented food at least in one meal per week after reading about its benefits.
+As mentioned earlier, many [ideas](https://rishikeshs.com/ideas) were already known to me. But the book brought more clarity to my stance against processed food. The French Paradox mentioned in the book was also thought-provoking. The practice of having a colorful diet backed up by the idea of phytochemicals was new to me. I have also decided to include fermented food at least in one meal per week after reading about its benefits.
 
 ## Key Notes
 
