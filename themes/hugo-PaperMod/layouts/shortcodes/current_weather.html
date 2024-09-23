@@ -1,27 +1,39 @@
 <span id="temperature">Loading...</span>
 
-<script>
-  const temperatureEl = document.getElementById("temperature");
+<script async>
+  const el = document.getElementById("temperature");
+  const loc = "{{ .Site.Params.CurrentLocation | urlize }}";
 
-  // Construct the API URL using string concatenation
-  const API_URL = "https://api.open-meteo.com/v1/forecast?latitude=" + {{ .Site.Params.Latitude | safeJS }} + "&longitude=" + {{ .Site.Params.Longitude | safeJS }} + "&current_weather=true";
+  const map = {
+    "🌑": "It's a new moon 🌑, so the sky will be dark tonight.",
+    "🌒": "At night, a sliver of the moon is visible 🌒.",
+    "🌓": "At night, half of the moon is visible 🌓.",
+    "🌔": "At night, the moon is almost full 🌔.",
+    "🌕": "It's a full moon 🌕, illuminating the night sky.",
+    "🌖": "The moon is starting to wane 🌖, but still mostly visible.",
+    "🌗": "At night, half of the moon is visible 🌗.",
+    "🌘": "A small crescent of the moon is visible tonight 🌘."
+  };
 
-  async function fetchCurrentWeather() {
-    temperatureEl.textContent = 'Fetching...';
-    
+  // Convert Celsius to Fahrenheit and km/h to mph
+  const toF = c => (c * 9/5 + 32).toFixed(1);
+  const toMph = k => (k * 0.621371).toFixed(1);
+
+  async function fetchWeather() {
     try {
-      const response = await fetch(API_URL);
-      if (!response.ok) throw new Error('Network response was not ok');
+      const res = await fetch(`https://wttr.in/${loc}?format=%C+%t+%h+%w+%m`);
+      const [cond, tempC, hum, wind, moon] = (await res.text()).split(" ");
       
-      const { current_weather: { temperature: temperatureC } } = await response.json();
-      const temperatureF = (temperatureC * 9/5) + 32;
+      const windSpeed = wind.replace(/[^\d.]/g, ''); // Extract only the numbers for wind
+      const tempF = toF(parseFloat(tempC.replace('°C', '')));
+      const windMph = toMph(parseFloat(windSpeed));
+      const moonDesc = map[moon] || `The moon phase tonight is ${moon}.`;
       
-      temperatureEl.textContent = `${temperatureC}°C / ${temperatureF.toFixed(1)}°F`;
-    } catch (error) {
-      console.error("Error fetching current weather:", error);
-      temperatureEl.textContent = 'Failed to fetch temperature';
+      el.innerHTML = `Here it's ${cond.toLowerCase()} with a temperature of <strong>${tempC}</strong> (<strong>${tempF}°F</strong>). The humidity is <strong>${hum}</strong>, and the wind is blowing at <strong>${wind}</strong> (<strong>${windMph} mph</strong>). ${moonDesc}`;
+    } catch (e) {
+      el.textContent = 'Failed to fetch temperature';
     }
   }
 
-  fetchCurrentWeather();
+  fetchWeather();
 </script>

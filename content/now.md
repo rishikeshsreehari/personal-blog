@@ -10,9 +10,9 @@ dataDir: "data"
 
 ##### Last updated on 15-08-2024
 
-I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**  
+I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**!  
 The local time here is ⏰ **{{< current_time >}}**  
-And it feels like 🌡️ **{{< current_weather >}}** outside!
+{{< current_weather >}}
 
 ### What am I Working on?
 
