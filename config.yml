@@ -21,7 +21,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Rishikesh Sreehari
   description: "This is my webspace. A niche-less blog where I gather and share my ideas and document my life. I consider this blog as an evolving art project itself."
-  version: "2.0.2"
+  version: "2.0.3"
   keywords: [Blog, Portfolio, PaperMod]
   #author: Me
   # author: ["Me", "You"] # multiple authors
@@ -121,7 +121,7 @@ params:
     - name: ycombinator
       url: "https://news.ycombinator.com/user?id=rishikeshs"
     - name: buymeacoffee
-      url: "https://tracking.rishikeshs.com/nl-intro-coffee?utm_source=rishikeshs.com"
+      url: "https://www.buymeacoffee.com/rishikeshs"
     - name: email
       url: "mailto:hello@rishikeshs.com"
     - name: paypal
