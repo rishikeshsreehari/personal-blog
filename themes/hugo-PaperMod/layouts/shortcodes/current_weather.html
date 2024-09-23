@@ -29,7 +29,7 @@
       const windMph = toMph(parseFloat(windSpeed));
       const moonDesc = map[moon] || `The moon phase tonight is ${moon}.`;
       
-      el.innerHTML = `Here it's ${cond.toLowerCase()} with a temperature of <strong>${tempC}</strong> (<strong>${tempF}°F</strong>). The humidity is <strong>${hum}</strong>, and the wind is blowing at <strong>${wind}</strong> (<strong>${windMph} mph</strong>). ${moonDesc}`;
+      el.innerHTML = `Here it's <strong>${cond.toLowerCase()}</strong> with a temperature of 🌡️<strong>${tempC}</strong> (<strong>${tempF}°F</strong>). The humidity is 🌫️<strong>${hum}</strong>, and the wind is blowing at 💨<strong>${wind}</strong> (<strong>${windMph} mph</strong>). ${moonDesc}`;
     } catch (e) {
       el.textContent = 'Failed to fetch temperature';
     }
