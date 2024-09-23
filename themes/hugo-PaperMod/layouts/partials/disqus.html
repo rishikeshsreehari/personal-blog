@@ -48,7 +48,7 @@
     <div class="form-row">
       <div class="column">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" required placeholder="Tibetan Yeti"/>
+        <input type="text" id="name" name="name" required placeholder="Tibetan Yeti" />
       </div>
       <div class="column">
         <label for="email">Email [optional]</label>
@@ -65,11 +65,51 @@
       <label for="message">Comment</label>
       <textarea id="message" name="message" required placeholder="Leave a message for the Yeti, they might be reading!"></textarea>
     </div>
-   
+
+    <!-- Math Problem -->
     <div class="form-row">
-      <button type="submit comment">Comment</button>
+      <label for="mathCheck">Solve the math problem to submit:</label>
+      <div id="math-svg" style="border: 1px solid white; padding: 1px; display: inline-block; user-select: none;">
+        <!-- SVG for "77 + 2" -->
+        <svg width="100" height="30" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="20" font-family="Arial" font-size="20" fill="white" style="transform: rotate(11deg); text-align: center;">77 + 2 =</text>
+        </svg>
+      </div>
+      <input type="number" id="mathAnswer" name="mathAnswer" required placeholder="Your answer" />
     </div>
+
+    <div class="form-row">
+      <button type="submit" id="submitBtn">Comment</button>
+    </div>
+
+    <!-- Error message container -->
+    <div id="error-message" style="color: white; margin-top: 10px;"></div>
   </div>
 </form>
+
+<script>
+  // Add simple front-end validation for the math problem
+  document.getElementById("commentForm").addEventListener("submit", function(event) {
+    var answer = document.getElementById("mathAnswer").value;
+    var errorMessage = document.getElementById("error-message");
+
+    // Clear previous error message
+    errorMessage.textContent = '';
+
+    // Check if the answer is correct
+    if (answer !== "79") {
+      errorMessage.textContent = "Incorrect answer. Please try again.";
+      event.preventDefault();  // Stop form submission
+    }
+  });
+
+  // Set timestamp when form loads
+  document.getElementById('timestamp').value = new Date().toISOString();
+</script>
+
+
+
+
+
 
 {{ end }}

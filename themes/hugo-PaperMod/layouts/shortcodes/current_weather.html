@@ -22,13 +22,23 @@
   async function fetchWeather() {
     try {
       const res = await fetch(`https://wttr.in/${loc}?format=%C+%t+%h+%w+%m`);
-      const [cond, tempC, hum, wind, moon] = (await res.text()).split(" ");
+      const data = await res.text();
       
+      // Split the response into an array
+      const [cond, tempC, hum, wind, moon] = data.split(" ");
+      
+      // Extract numeric part of temperature, ignoring the '+' symbol
+      const tempValue = tempC.replace('°C', '').replace('+', '');
+      const tempF = toF(parseFloat(tempValue));
+
+      // Extract numeric part of wind, ignoring direction symbols like '↘'
       const windSpeed = wind.replace(/[^\d.]/g, ''); // Extract only the numbers for wind
-      const tempF = toF(parseFloat(tempC.replace('°C', '')));
       const windMph = toMph(parseFloat(windSpeed));
+
+      // Get the description for the moon phase
       const moonDesc = map[moon] || `The moon phase tonight is ${moon}.`;
-      
+
+      // Display the weather data in the element
       el.innerHTML = `Here it's <strong>${cond.toLowerCase()}</strong> with a temperature of 🌡️<strong>${tempC}</strong> (<strong>${tempF}°F</strong>). The humidity is 🌫️<strong>${hum}</strong>, and the wind is blowing at 💨<strong>${wind}</strong> (<strong>${windMph} mph</strong>). ${moonDesc}`;
     } catch (e) {
       el.textContent = 'Failed to fetch temperature';
