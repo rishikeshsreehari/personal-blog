@@ -23,3 +23,7 @@ This is a useless button. It absolutely does nothing useful. Seriously, don’t 
 *already in hand*  
 *~[haiku](https://htmx.org/)*
 
+
+
+
+##### If you like this page, you might like [Pixel Mosaic](/mosaic/)

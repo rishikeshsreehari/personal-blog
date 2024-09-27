@@ -15,31 +15,25 @@
     "🌘": "A small crescent of the moon is visible tonight 🌘."
   };
 
-  // Convert Celsius to Fahrenheit and km/h to mph
-  const toF = c => (c * 9/5 + 32).toFixed(1);
-  const toMph = k => (k * 0.621371).toFixed(1);
-
   async function fetchWeather() {
     try {
-      const res = await fetch(`https://wttr.in/${loc}?format=%C+%t+%h+%w+%m`);
+      const res = await fetch(`https://wttr.in/${loc}?format=%C|%t|%h|%w|%m`);
       const data = await res.text();
-      
-      // Split the response into an array
-      const [cond, tempC, hum, wind, moon] = data.split(" ");
-      
-      // Extract numeric part of temperature, ignoring the '+' symbol
-      const tempValue = tempC.replace('°C', '').replace('+', '');
-      const tempF = toF(parseFloat(tempValue));
 
-      // Extract numeric part of wind, ignoring direction symbols like '↘'
-      const windSpeed = wind.replace(/[^\d.]/g, ''); // Extract only the numbers for wind
-      const windMph = toMph(parseFloat(windSpeed));
+      // Split the response into an array using "|" as a delimiter for better separation
+      const [cond, tempC, hum, wind, moon] = data.split("|");
+
+      // Extract numeric part of temperature, ignoring '+' symbol and Celsius unit
+      const tempValue = tempC.replace('°C', '').replace('+', '');
+
+      // Extract numeric part of wind, ignoring wind direction arrows like '↓'
+      const windSpeed = wind.replace(/[^\d.]/g, ''); // Keep only numbers for wind speed
 
       // Get the description for the moon phase
       const moonDesc = map[moon] || `The moon phase tonight is ${moon}.`;
 
       // Display the weather data in the element
-      el.innerHTML = `Here it's <strong>${cond.toLowerCase()}</strong> with a temperature of 🌡️<strong>${tempC}</strong> (<strong>${tempF}°F</strong>). The humidity is 🌫️<strong>${hum}</strong>, and the wind is blowing at 💨<strong>${wind}</strong> (<strong>${windMph} mph</strong>). ${moonDesc}`;
+      el.innerHTML = `Here it's <strong>${cond.toLowerCase()}</strong> with a temperature of 🌡️ <strong>${tempValue}°C</strong>. The humidity is 🌫️<strong>${hum}</strong>, and the wind is blowing at 💨<strong>${windSpeed} km/h</strong>. ${moonDesc}`;
     } catch (e) {
       el.textContent = 'Failed to fetch temperature';
     }
