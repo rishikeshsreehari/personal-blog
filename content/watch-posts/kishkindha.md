@@ -12,7 +12,7 @@ ShowReadingTime: false
 [**View on LetterBoxd**](https://letterboxd.com/film/kishkindha-kaandam/)  
 
 
-### Rating: ★ ★ ★ ☆ ☆ (2/5)
+### Rating: ★ ★ ★ ☆ ☆ (3/5)
 
 ★★★★☆ Direction  
 ★★☆☆☆ Script  

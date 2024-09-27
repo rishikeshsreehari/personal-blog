@@ -8,7 +8,7 @@ disable_comments: true
 ShowReadingTime: false
 ---
 
-**Director**: Naga
+**Director**: Naga  
 [**View on Serializd**](https://www.serializd.com/show/Thalaivettiyaan-Paalayam-271589)  
 
 
