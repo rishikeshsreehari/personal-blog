@@ -1,3 +1,24 @@
+- name: "Thalaivettiyaan Paalayam"
+  language: "Tamil"
+  rating: 4 
+  date: "2024-09-26"
+  url: "/watch/thalaivettiyaan-paalayam"
+
+
+- name: "Suzhal - The Vortex"
+  language: "Tamil"
+  rating: 3 
+  date: "2024-09-25"
+  url: "/watch/suzhal"
+
+
+- name: "Kishkindha Kaandam"
+  language: "Malayalam"
+  rating: 3 
+  date: "2024-09-20"
+  url: "/watch/kishkindha-kandam"
+
+
 
 - name: "IC 814: The Kandahar Hijack"
   language: "Hindi"

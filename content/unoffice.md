@@ -21,7 +21,7 @@ Unoffice hours are informal conversations without an agenda, topic, or preparati
 {{< button url="https://calendly.com/rishikeshshari/unoffice-hours" text="BOOK A CALL" align="left">}}
 
 
-If the above timeslots, do not work for you due to timezone differnces, [contact me](/contact) and we can work something out.
+If the above timeslots, do not work for you due to timezone differences, [contact me](/contact) and we can work something out.
 
 As an experiment, [Matt Webb](https://interconnected.org/home/2020/09/24/unoffice_hours) came up with the idea of [Unoffice hours](https://unofficehours.com/) in 2020 as a twist to office hours and opened up his calendar to discuss random things.
 
