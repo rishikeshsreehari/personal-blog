@@ -1,0 +1,6 @@
+[build]
+  publish = "public"
+  command = "hugo --verbose"
+
+[context.production.environment]
+  HUGO_VERSION = "0.125.7"  # Matching your local Hugo version
