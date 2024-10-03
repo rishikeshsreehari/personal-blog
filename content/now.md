@@ -8,7 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 15-08-2024
+##### Last updated on 03-10-2024
 
 I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**!  
 The local time here is ⏰ **{{< current_time >}}**  
@@ -18,11 +18,7 @@ The local time here is ⏰ **{{< current_time >}}**
 
 - I'm currently umemployed, so mostly [looking for a job](/hire) most of the time. 
 - Trying to revive [10+1 Things](https://rishikesh.substack.com/) a newsletter I started few years back.
-- Working onsd some [side projects](/projects)!
-
-
-Well looks like things are working!
-
+- Working on some [side projects](/projects)!
 
 ### Now in Numbers
 
@@ -33,7 +29,7 @@ Well looks like things are working!
 
 - [The Myth of Sisyphus](https://geni.us/rs-sisyphus) by Albert Camus
 - [Exercised](https://geni.us/rs-exercised) by Daniel Lieberman
-- [Cashvertising](https://geni.us/rsh-cashvertising) by Drew Eric Whitman
+- [Illusions: The Adventures of a Reluctant Messiah](https://geni.us/rs-illusions) by Richard Bach
 
 *I read 3-4 books in parallel most of the time on [my e-book reader](https://geni.us/rsh-kindle-paperwhite).*
 
@@ -46,7 +42,8 @@ Well looks like things are working!
 
 ### My Workout Regime
 
-I'm currently focusing on transforming my body and bringing down my body fat to below 25%. I workout 6 days a week with 4 strength training sessions and cardio in the form of running, swimming, and cycling. For strength training, I currently follow the Trainer Winny's [beginner plan](hhttps://www.youtube.com/watch?v=U9ENCvFf9yQ) fousing on  4 days of fullbody workouts. Since it's summer here in the Middle East, I mostly run indoors on a treadmill. I don't have a bike to ride here in the UAE, so I don't ride at all, except for some indoor rides at the gym. I try to swim atleast once a week, trying to learn freestyle and breaststroke properly.
+I'm currently focusing on transforming my body and bringing my body fat down to below 25%. That means a lot of protein and long walks to ensure that I'm in a calorie deficit while gaining muscle and losing fat. These days, I work out four days a week at the gym following Trainer Winny's [beginner plan](https://www.youtube.com/watch?v=U9ENCvFf9yQ). It's mainly a mix of compound exercises like bench press, overhead press, barbell row, squat, and deadlift. I'm nursing an ankle sprain, so squats and running are out of the equation, at least for a couple of weeks. Summer is officially over, and the weather is getting nicer day by day. I'm itching to run, but I guess I'll have to wait and focus on rehab.
+
 
 #### If you found my now page interesting, checkout ["Then"](/then), an archive of all my "Now" pages.
 
