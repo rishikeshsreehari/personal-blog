@@ -4,7 +4,7 @@ title: "Kishkindha Kandam(2024) Review"
 url: "/watch/kishkindha-kandam"
 summary: "A shot review of Kishkindha Kandam(2024)Malayalam Movie with ratings and a quick take."
 type: page
-disable_comments: true
+disable_comments: false
 ShowReadingTime: false
 ---
 
