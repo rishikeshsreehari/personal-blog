@@ -5,4 +5,3 @@ type: page
 layout: "journal"
 ---
 
-My dailyish journal where I scribble some random thoughts.
