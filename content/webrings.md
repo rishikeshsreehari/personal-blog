@@ -9,7 +9,8 @@ ShowReadingTime: false
 ---
 
 This blog is a part of various webrings on the web.   
-Some are lised below:
+Some are listed below:
 
 - [Unoffice Hours](https://unofficehours.com/)  
+- [The Darktheme Club](https://darktheme.club/)
 
