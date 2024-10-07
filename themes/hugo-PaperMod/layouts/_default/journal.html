@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <head>
+    <title>Journal</title>
+  </head>
+  <body>
+    <h1 class="journal-title">Journal</h1>
+    <ul class="journal-list">
+      {{ range .Pages.ByDate.Reverse }}
+        <li class="journal-entry">
+          <span class="journal-date">{{ .Date.Format "02 Jan 2006" }}</span>
+          <a href="{{ .Permalink }}" class="journal-link">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </body>
+{{ end }}

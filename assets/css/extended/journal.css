@@ -1,0 +1,46 @@
+/* Style for the main container */
+.journal-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem; /* Add space after the title */
+    color: inherit;
+    text-align: left;
+  }
+  
+  /* Style for the journal list */
+  .journal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Style for individual list items */
+  .journal-entry {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    line-height: 1.5; /* Adjust line height for better readability */
+  }
+  
+  /* Date style, monospace */
+  .journal-date {
+    font-family: 'Courier New', Courier, monospace;
+    margin-right: 1.5rem;
+    white-space: nowrap;
+    color: #555;
+  }
+  
+  /* Link styles */
+  .journal-link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: inherit;
+  }
+  
+  /* Hover effect on links */
+  .journal-link:hover {
+    text-decoration: underline;
+  }
+  
