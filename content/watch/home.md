@@ -24,8 +24,6 @@ ShowReadingTime: false
 **⚠️ SPOILERS AHEAD, CLICK TO REVEAL! ⚠️**
 
 
-Your review is well-written, but here are a few minor corrections for clarity and grammar:
-
 A feel-good movie with great performances, decent direction, and an average script. Indrans, as always, delivered a phenomenal performance along with Manju Pillai. I loved the overall art direction and the atmosphere of the home. While the script and story were not extraordinary, it is a wholesome movie that keeps you engaged throughout and, at times, makes you weep.
 
 Overall, a decent watch!
