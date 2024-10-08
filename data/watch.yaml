@@ -2,14 +2,14 @@
   language: "Malayalam"
   rating: 3
   date: "2024-09-28"
-  url: "home/"
+  url: "/watch/home/"
 
 
 - name: "Thalaivettiyaan Paalayam"
   language: "Tamil"
   rating: 4 
   date: "2024-09-26"
-  url: "thalaivettiyaan-paalayam/"
+  url: "/watch/thalaivettiyaan-paalayam/"
 
 
 - name: "Suzhal - The Vortex"

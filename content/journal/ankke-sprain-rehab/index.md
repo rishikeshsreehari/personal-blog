@@ -1,13 +1,13 @@
 ---
 title: "Ankle Sprain, Rehab and RICE"
 type: page
-date: 2024-10-02
-url: "/journal/daf"
+date: 2024-10-07
+url: "/journal/ankle-sprain/"
 type: page
 disable_comments: false
 ShowReadingTime: true
 ---
-**02-10-2024, Abu Dhabi(UAE)**
+**07-10-2024, Abu Dhabi(UAE)**
 
 I had my first physiotherapy session in my life. I wish I had taken care of my ankle more seriously. With winter around the corner, I now live in Abu Dhabi where winters are awesome. I can't wait to go out and run, cycle, or go for long walks. I hope my ankle heals fast. Although my plans of running a half marathon in November are almost shattered, I should at least be able to run short distances. 
 
