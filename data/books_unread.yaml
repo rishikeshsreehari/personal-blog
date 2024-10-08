@@ -1,13 +1,46 @@
 
+
+
+- name: "What Do You Care What Other People Think?"
+  link: "https://openlibrary.org/works/OL514628W/What_Do_You_Care_What_Other_People_Think"
+  cover: "https://covers.openlibrary.org/b/isbn/0393026590-M.jpg"
+  priority: 8
+
+
+
+
+
+- name: "What Do You Care What Other People Think?"
+  link: "https://openlibrary.org/works/OL514628W/What_Do_You_Care_What_Other_People_Think"
+  cover: "https://covers.openlibrary.org/b/isbn/0393026590-M.jpg"
+  priority: 8
+
+
+
+- name: "Infinite Jest"
+  link: "https://openlibrary.org/works/OL2943602W/Infinite_jest?edition=infinitejest00wall_532"
+  cover: "https://covers.openlibrary.org/b/isbn/0316066524-M.jpg"
+  priority: 5
+
+
+- name: "Atlas Shrugged"
+  link: "https://openlibrary.org/works/OL731735W/Atlas_Shrugged"
+  cover: "https://covers.openlibrary.org/b/isbn/0451191145-M.jpg"
+  priority: 7
+
+
+
+
+
 - name: "A Philosophy of Software Design"
   link: "https://geni.us/rsh-software-design"
   cover: "https://covers.openlibrary.org/b/isbn/1732102201-M.jpg"
-  priority: 10
+  priority: 7
 
 - name: "The Song of the Cell"
   link: "https://geni.us/rsh-song-cell"
   cover: "https://covers.openlibrary.org/b/isbn/1982117362-M.jpg"
-  priority: 10
+  priority: 7
 
 - name: "How to Know a Person"
   link: "https://geni.us/rsh-know-person"
