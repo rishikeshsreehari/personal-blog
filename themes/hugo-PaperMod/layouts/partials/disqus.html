@@ -1,15 +1,17 @@
 {{ if not .Params.disable_comments }}
 <h1>Comments</h1>
 
+<!-- Existing comment display code remains unchanged -->
+
 <div class="comments-section">
-  {{ $url := .Params.url }} <!-- Get the permalink (URL) of the current page -->
+  {{ $url := .Params.url }}
   {{ $url = trim $url "/" }} 
-  {{ $commentsPath := "data/comments.json" }} <!-- Set the path to the comments JSON file -->
-  {{ $commentsData := getJSON $commentsPath | default (dict) }} <!-- Load the comments data or set default empty dictionary if error occurs -->
-  {{ with index $commentsData $url }} <!-- Retrieve comments for the current page -->
-    {{ $comments := . | default (slice) }} <!-- Assign comments data for the current page to $comments variable, using a default empty slice if error occurs -->
-    {{ if gt (len $comments) 0 }} <!-- Check if comments are not empty -->
-      {{ range $comments }} <!-- Iterate over the comments -->
+  {{ $commentsPath := "data/comments.json" }}
+  {{ $commentsData := getJSON $commentsPath | default (dict) }}
+  {{ with index $commentsData $url }}
+    {{ $comments := . | default (slice) }}
+    {{ if gt (len $comments) 0 }}
+      {{ range $comments }}
         <div class="comment {{ if in .Comment "author-marker" }}highlight{{ end }}">
           <div class="avatar">
             <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}" alt="avatar">
@@ -31,8 +33,6 @@
 
 <br>
 
-
-
 <h5>Leave a comment below. All comments are moderated and will appear after approval. Your email, if provided, is optional and won't be shared or used to send any spam. If your comment requires a personal response beyond a public reply, I will reach out to you via email. Comments are static, with no notifications or backlinks.
 </h5>
 <br>
@@ -44,6 +44,7 @@
   <div class="comment-form">
     <input type="hidden" name="timestamp" id="timestamp" value="" />
     <input type="hidden" name="url" value="{{ .Params.url }}" />
+    <input type="hidden" name="cf-turnstile-response" id="cf-turnstile-response" />
 
     <div class="form-row">
       <div class="column">
@@ -66,17 +67,8 @@
       <textarea id="message" name="message" required placeholder="Leave a message for the Yeti, they might be reading!"></textarea>
     </div>
 
-    <!-- Math Problem -->
-    <div class="form-row">
-      <label for="mathCheck">Solve:</label>
-      <div id="math-svg" style="border: 1px solid #DADADB; padding: 1px; display: inline-block; margin-bottom: 1em; user-select: none;">
-        <!-- Centered SVG for "77 + 2" -->
-        <svg width="100" height="30" xmlns="http://www.w3.org/2000/svg">
-          <text x="50%" y="20" font-family="Arial" font-size="20" fill="#DADADB" style="transform: rotate(8deg);" text-anchor="middle">77 + 2 =</text>
-        </svg>
-      </div>
-      <input type="number" id="mathAnswer" name="mathAnswer" required placeholder="Your answer" />
-    </div>
+    <!-- Turnstile widget -->
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAAxKySDyC3zOb0zW" data-callback="onTurnstileCallback"></div>
 
     <div class="form-row">
       <button type="submit" id="submitBtn">Comment</button>
@@ -96,69 +88,64 @@
   </div>
 </form>
 
-<script>
-  document.getElementById("commentForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent the default form submission
+<!-- Include Turnstile script -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
-    var answer = document.getElementById("mathAnswer").value;
+<script>
+  // Callback function to receive Turnstile token
+  function onTurnstileCallback(token) {
+    document.getElementById('cf-turnstile-response').value = token;
+  }
+
+  document.getElementById("commentForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
     var messageContainer = document.getElementById("message-container");
     var loadingSpinner = document.getElementById("loading-spinner");
+    var turnstileInput = document.getElementById('cf-turnstile-response');
 
-    // Clear previous messages
     messageContainer.textContent = '';
 
-    // Check if the answer is correct
-    if (answer !== "79") {
-      messageContainer.textContent = "Incorrect math answer. Please try again.";
-      messageContainer.style.color = "red"; // Set the color to red for the error message
+    if (!turnstileInput || !turnstileInput.value) {
+      messageContainer.textContent = "Please complete the CAPTCHA challenge.";
+      messageContainer.style.color = "red";
       return;
     }
 
-    // Reset any previous submission errors before making the request
-    messageContainer.textContent = '';
-    messageContainer.style.color = ''; // Reset message color
-
-    // Show the spinner
     loadingSpinner.style.display = "block";
 
-    // Get form data
-    var formData = new FormData(document.getElementById("commentForm"));
+    var formData = new FormData(this);
 
-    // Send the form data via fetch (AJAX)
-    fetch(document.getElementById("commentForm").action, {
+    fetch(this.action, {
       method: 'POST',
       body: formData,
     })
     .then(response => {
-      // Hide the spinner
       loadingSpinner.style.display = "none";
-
-      // Check if the response is successful (status code 200-299)
       if (response.ok) {
         messageContainer.textContent = "Your comment has been successfully submitted. Once approved, it will appear here. Thanks!";
-        messageContainer.style.color = "green"; // Change color to green for success
+        messageContainer.style.color = "green";
+        this.reset();
+        
+        // Delay the Turnstile reset
+        setTimeout(() => {
+          turnstile.reset();
+        }, 5000); // 5 second delay
 
-        // Reset the form fields
-        document.getElementById("commentForm").reset();
+        // Optionally, scroll to the message
+        messageContainer.scrollIntoView({ behavior: 'smooth' });
       } else {
         throw new Error('Failed to submit');
       }
     })
     .catch(error => {
-      // Hide the spinner
       loadingSpinner.style.display = "none";
-
       messageContainer.textContent = "There was an error submitting your comment. Please try again.";
-      messageContainer.style.color = "red"; // Show error in red
+      messageContainer.style.color = "red";
     });
   });
 
   // Set timestamp when form loads
   document.getElementById('timestamp').value = new Date().toISOString();
 </script>
-
-
-
-
-
 {{ end }}
