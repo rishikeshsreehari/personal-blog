@@ -1,8 +1,6 @@
 {{ if not .Params.disable_comments }}
 <h1>Comments</h1>
 
-<!-- Existing comment display code remains unchanged -->
-
 <div class="comments-section">
   {{ $url := .Params.url }} <!-- Get the permalink (URL) of the current page -->
   {{ $url = trim $url "/" }} 
@@ -33,6 +31,8 @@
 
 <br>
 
+
+
 <h5>Leave a comment below. All comments are moderated and will appear after approval. Your email, if provided, is optional and won't be shared or used to send any spam. If your comment requires a personal response beyond a public reply, I will reach out to you via email. Comments are static, with no notifications or backlinks.
 </h5>
 <br>
@@ -44,8 +44,6 @@
   <div class="comment-form">
     <input type="hidden" name="timestamp" id="timestamp" value="" />
     <input type="hidden" name="url" value="{{ .Params.url }}" />
-    <!-- Hidden input for Turnstile token -->
-    <input type="hidden" name="cf-turnstile-response" id="cf-turnstile-response" />
 
     <div class="form-row">
       <div class="column">
@@ -68,8 +66,17 @@
       <textarea id="message" name="message" required placeholder="Leave a message for the Yeti, they might be reading!"></textarea>
     </div>
 
-    <!-- Turnstile widget with callback -->
-    <div class="cf-turnstile" data-sitekey="0x4AAAAAAAxKySDyC3zOb0zW" data-callback="onTurnstileCallback"></div>
+    <!-- Math Problem -->
+    <div class="form-row">
+      <label for="mathCheck">Solve:</label>
+      <div id="math-svg" style="border: 1px solid #DADADB; padding: 1px; display: inline-block; margin-bottom: 1em; user-select: none;">
+        <!-- Centered SVG for "77 + 2" -->
+        <svg width="100" height="30" xmlns="http://www.w3.org/2000/svg">
+          <text x="50%" y="20" font-family="Arial" font-size="20" fill="#DADADB" style="transform: rotate(8deg);" text-anchor="middle">77 + 2 =</text>
+        </svg>
+      </div>
+      <input type="number" id="mathAnswer" name="mathAnswer" required placeholder="Your answer" />
+    </div>
 
     <div class="form-row">
       <button type="submit" id="submitBtn">Comment</button>
@@ -89,15 +96,7 @@
   </div>
 </form>
 
-<!-- Include Turnstile script -->
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
 <script>
-  // Callback function to receive Turnstile token
-  function onTurnstileCallback(token) {
-    document.getElementById('cf-turnstile-response').value = token;
-  }
-
   document.getElementById("commentForm").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent the default form submission
 
@@ -115,13 +114,9 @@
       return;
     }
 
-    // Check if Turnstile token is present
-    var turnstileToken = document.getElementById('cf-turnstile-response').value;
-    if (!turnstileToken) {
-      messageContainer.textContent = "Please complete the CAPTCHA challenge.";
-      messageContainer.style.color = "red";
-      return;
-    }
+    // Reset any previous submission errors before making the request
+    messageContainer.textContent = '';
+    messageContainer.style.color = ''; // Reset message color
 
     // Show the spinner
     loadingSpinner.style.display = "block";
@@ -138,14 +133,13 @@
       // Hide the spinner
       loadingSpinner.style.display = "none";
 
+      // Check if the response is successful (status code 200-299)
       if (response.ok) {
         messageContainer.textContent = "Your comment has been successfully submitted. Once approved, it will appear here. Thanks!";
         messageContainer.style.color = "green"; // Change color to green for success
 
         // Reset the form fields
         document.getElementById("commentForm").reset();
-        // Reset the Turnstile widget
-        turnstile.reset();
       } else {
         throw new Error('Failed to submit');
       }
@@ -162,4 +156,9 @@
   // Set timestamp when form loads
   document.getElementById('timestamp').value = new Date().toISOString();
 </script>
+
+
+
+
+
 {{ end }}
