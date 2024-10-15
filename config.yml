@@ -114,6 +114,8 @@ params:
       url:  "https://discord.com/channels/1263420611179315242/1263420611179315245"
     - name: github
       url: "https://github.com/rishikeshsreehari"
+    - name: kofi
+      url: "https://ko-fi.com/rishikeshs"
     - name: reddit
       url: "https://www.reddit.com/user/rishikeshshari/"
     - name: strava

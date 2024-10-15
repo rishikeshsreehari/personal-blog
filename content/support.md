@@ -8,7 +8,7 @@ disable_comments: true
 ShowReadingTime: false
 ---
 
-If you have reached so far in my blog and you are reading this, first of all, I'm so grateful for that. If you feel that my work added some value to your life, you can support me by [buying me a coffee ($1 or ₹75)](https://tracking.rishikeshs.com/nl-intro-coffee) or sending a donation via [Paypal](https://paypal.me/RishikeshSHari?country.x=IN&locale.x=en_GB).
+If you have reached so far in my blog and you are reading this, first of all, I'm so grateful for that. If you feel that my work added some value to your life, you can support me by [buying me a coffee ($1 or ₹75)](https://ko-fi.com/rishikeshs) or sending a donation via [Paypal](https://paypal.me/RishikeshSHari?country.x=IN&locale.x=en_GB).
 
 I also accept cryptocurrency donations at the following addresses:
 
