@@ -11,11 +11,11 @@ ShowReadingTime: false
 ### 10+1 Things is a weekly newsletter where I share 11 interesting things that I encounter each week.
 
 
-I write a newsletter called ['10+1 Things'](https://rishikesh.substack.com) on Substack. I started it in 2021 as a way to share some interesting things I come across. The idea was to manually curate a set of 11 links and slowly create an audience. I never had much hope regarding it, but surprisingly it was well received and now it has around 3,000 subscribers across 89 countries and 47 states in the US. Normally, the structure of the newsletter is more like one link each on psychology/productivity, climate/sustainability, an interesting art project, a book I'm reading, an interesting video I watched, some interesting tools, a data visualization, and an originals section usually featuring an idea, a project, or something I'm exploring. You can subscribe to the newsletter by signing up on the form below. For shoutouts or sponsorships, head over to the [advertise section](#advertise).
-For the previous editions of the newsletter, check out the [archive](https://rishikesh.substack.com/archive)
+I write a newsletter called ['10+1 Things'](https://newsletter.rishikeshs.com) on Substack. I started it in 2021 as a way to share some interesting things I come across. The idea was to manually curate a set of 11 links and slowly create an audience. I never had much hope regarding it, but surprisingly it was well received and now it has around 3,000 subscribers across 89 countries and 47 states in the US. Normally, the structure of the newsletter is more like one link each on psychology/productivity, climate/sustainability, an interesting art project, a book I'm reading, an interesting video I watched, some interesting tools, a data visualization, and an originals section usually featuring an idea, a project, or something I'm exploring. You can subscribe to the newsletter by signing up on the form below. For shoutouts or sponsorships, head over to the [advertise section](#advertise).
+For the previous editions of the newsletter, check out the [archive](https://newsletter.rishikeshs.com/archive)
 
 
-{{< iframe src="https://rishikesh.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no" >}}
+{{< iframe src="https://newsletter.rishikeshs.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no" >}}
 
 
 ## Advertise on 10+1 Things {#advertise}

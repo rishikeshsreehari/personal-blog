@@ -46,13 +46,13 @@ events:
     text: "Decided to start this blog."
 
   - date: '2021-05-31'
-    text: "Started my newsletter called <u><a href='https://rishikesh.substack.com/' target='_blank'>10+1 Things</a></u>"
+    text: "Started my newsletter called <u><a href='https://newsletter.rishikeshs.com' target='_blank'>10+1 Things</a></u>"
 
   - date: '2021-08-01'
     text: "Joined back my previous organisation working on minigrids, but this time working fully from home!"
 
   - date: '2021-08-09'
-    text: "My <u><a href='https://rishikesh.substack.com/' target='_blank'>newsletter</a></u> hit 100 subscribers!"
+    text: "My <u><a href='https://newsletter.rishikeshs.com' target='_blank'>newsletter</a></u> hit 100 subscribers!"
 
   - date: '2021-09-02'
     text: "My grandmother passed away due to ALS. This was one such event which shook me and made me realize the finite nature of our lives."
@@ -77,7 +77,7 @@ events:
 
 
   - date: '2022-06-10'
-    text: "My <u><a href='https://rishikesh.substack.com/' target='_blank'>newsletter</a></u> hit 1000 subscribers!"
+    text: "My <u><a href='https://newsletter.rishikeshs.com' target='_blank'>newsletter</a></u> hit 1000 subscribers!"
 
   - date: '2022-09-20'
     text: "Got engaged!"
@@ -88,7 +88,7 @@ events:
 
 
   - date: '2022-10-05'
-    text: "My <u><a href='https://rishikesh.substack.com/' target='_blank'>newsletter</a></u> hit 2000 subscribers!"
+    text: "My <u><a href='https://newsletter.rishikeshs.com/' target='_blank'>newsletter</a></u> hit 2000 subscribers!"
 
   - date: '2022-10-08'
     text: "Moved to Delhi,India for a career switch to energy policy sector"

@@ -16,7 +16,7 @@ I also accept cryptocurrency donations at the following addresses:
 - **Ethereum (ETH):** `0x38f924efad4395708c113c43593de0d5fa1a1e6d`  
 - **Solana (SOL):** `7xxg9ah3kJ4sZ2RnYp3KMNuVmYKWKcryptKn5bQU2Uge`  
 
-If you can't support me monetarily, [join my newsletter](https://rishikesh.substack.com/) and that will mean a lot to me.
+If you can't support me monetarily, [join my newsletter](https://newsletter.rishikeshs.com/) and that will mean a lot to me.
 
 I also donate a portion of my earnings to the following charities, and you can support them directly as well:
 

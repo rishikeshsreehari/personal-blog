@@ -17,7 +17,7 @@ The local time here is ⏰ **{{< current_time >}}**
 ### What am I Working on?
 
 - I'm currently umemployed, so mostly [looking for a job](/hire) most of the time. 
-- Trying to revive [10+1 Things](https://rishikesh.substack.com/) a newsletter I started few years back.
+- Trying to revive [10+1 Things](https://newsletter.rishikeshs.com) a newsletter I started few years back.
 - Working on some [side projects](/projects)!
 
 ### Now in Numbers
