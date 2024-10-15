@@ -4,4 +4,3 @@ url: "/journal"
 type: page
 layout: "journal"
 ---
-

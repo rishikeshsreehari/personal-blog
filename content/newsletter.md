@@ -1,5 +1,5 @@
 ---
-title: "10+1 Things Newsletter by Rishikesh Sreehari"
+title: "10+1 Things"
 #layout: "library"
 url: "/newsletter"
 summary: 10+1 Things is a curated weekly newsletter by Rishikesh. Join and learn more.

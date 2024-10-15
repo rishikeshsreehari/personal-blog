@@ -44,3 +44,13 @@
     text-decoration: underline;
   }
   
+  /* Style for the journal intro paragraph */
+.journal-intro {
+  font-size: 1.2rem;
+  text-align: left; /* Center the intro text */
+  margin-bottom: 2rem; /* Add space below the intro */
+  color: #666; /* Subtle color for the intro text */
+  max-width: 750px; /* Keep it aligned with the journal list width */
+  margin: 0 auto; /* Center the intro paragraph within the container */
+  line-height: 1.6; /* Improve readability */
+}
