@@ -33,6 +33,11 @@ jobs:
       env:
         GIT_COMMIT_HASH: ${{ env.commit_hash }}
 
+    - name: Configure Git author
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+
     - name: Stage and commit changes before pulling
       run: |
         git add .
@@ -44,8 +49,6 @@ jobs:
 
     - name: Commit and push changes
       run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
         git add .
         git commit -m "Automatic build by Github Actions" || echo "No changes to commit"
         git push origin main
