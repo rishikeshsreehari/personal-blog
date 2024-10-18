@@ -34,6 +34,10 @@ jobs:
       env:
         GIT_COMMIT_HASH: ${{ steps.get_commit.outputs.commit_hash }}
 
+    - name: Pull latest changes before commit
+      run: |
+          git pull --rebase origin main
+
     - name: Commit and push changes
       run: |
         git config --global user.name "GitHub Actions"
