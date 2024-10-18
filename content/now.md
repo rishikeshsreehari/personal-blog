@@ -8,7 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 17-10-2024
+##### Last updated on 18-10-2024
 
 I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**!  
 The local time here is ⏰ **{{< current_time >}}**  
@@ -40,8 +40,9 @@ The local time here is ⏰ **{{< current_time >}}**
 
 
 ### 📺 What Am I Watching?
+- [Lost (2004)](https://www.serializd.com/show/Lost-4607) - Currently at S02E03 - I'm binge watching, it's affecting my sleep 😢
 - [Vikings (2013)](https://www.serializd.com/show/Lost-4607) - Currently at S06E07
-- [Lost (2004)](https://www.serializd.com/show/Lost-4607) - Currently at S01E19
+
 
 ### 🏋 My Workout Regime
 

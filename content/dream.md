@@ -83,6 +83,11 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 68. Design a tattoo myself and get inked.
 69. Write, shoot, direct, edit and self-publish a short-film or a documentary.
 70. Contribute to [OpenStreetMaps](https://www.openstreetmap.org/)
+71. Build my own comment system for the blog.
+72. Patent an idea.
+73. Build a search engine for personal blogs.
+74. Create a solar version of my blog.
+75. Run ["Tour De Stade"](https://en.wikipedia.org/wiki/Tour_de_stade) in a big enough stadium. 
 
 
 

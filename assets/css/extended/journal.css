@@ -54,3 +54,15 @@
   margin: 0 auto; /* Center the intro paragraph within the container */
   line-height: 1.6; /* Improve readability */
 }
+
+
+.journal-quote {
+  font-size: 0.9rem; /* Smaller font size */
+  font-style: italic;
+  color: #666;
+  margin: 10px auto; /* Adjust margins */
+  padding: 5px 10px; /* Adjust padding */
+  text-align: center;
+  line-height: 1.4; /* Tighter line spacing */
+  width: 70%; /* Reduce width so the text fits */
+}

@@ -1,0 +1,23 @@
+{{ define "main" }}
+ 
+  <body>
+    <h1 class="journal-title">Fitness Log</h1>
+    <p class="journal-intro">Daily logs of my diet, workouts, and anything fitness-related. On a journey to be healthier and reach under 25% body fat—probably the hardest thing I’ve ever done.</p>
+   
+    <br>
+    <ul class="journal-list">
+      {{ range .Pages.ByDate.Reverse }}
+        <li class="journal-entry">
+          <span class="journal-date">{{ .Date.Format "02 Jan 2006" }}</span>
+          <a href="{{ .Permalink }}" class="journal-link">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+    <br>
+    <blockquote class="journal-quote">
+      "A well built physique is a status symbol. It reflects you worked hard for it, no money can buy it. You cannot borrow it, you cannot inherit it, you cannot steal it. You cannot hold onto it without constant work. It shows discipline, it shows self respect, it shows patience, work ethic and passion. That is why I do what I do."
+      <br>
+      ~ Arnold Schwarzenegger
+    </blockquote>
+  </body>
+{{ end }}
