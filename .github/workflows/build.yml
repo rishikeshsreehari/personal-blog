@@ -45,8 +45,9 @@ jobs:
         git add .
         git commit -m "Automatic build by Github Actions" || echo "No changes to commit"
         git push origin main
-
+    
     - name: Push to production branch
       run: |
-        git checkout -b production
-        git push origin production --force
+          git checkout main
+          git checkout -B production
+          git push origin production --force
