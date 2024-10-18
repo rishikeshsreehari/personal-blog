@@ -406,11 +406,16 @@
             "Comment": "If you haven?t seen ?Silence of the Lambs?, add it to your list!"
         }
     ],
-    "almanack-of-naval-ravikant": [
+    "blog-art": [
         {
-            "Name": "Vivek",
-            "Date": "2024-09-27",
-            "Comment": "Thanks for writing the summary!"
+            "Name": "zak",
+            "Date": "2024-10-18",
+            "Comment": "Well put! You've captured the blog as a living, breathing art so nicely!"
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2024-10-19",
+            "Comment": "<span class='author-marker'></span>Thanks a lot Zak for the feedback! :)"
         }
     ]
 }
