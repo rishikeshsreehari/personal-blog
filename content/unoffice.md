@@ -20,6 +20,8 @@ Unoffice hours are informal conversations without an agenda, topic, or preparati
 
 {{< button url="https://calendly.com/rishikeshshari/unoffice-hours" text="BOOK A CALL" align="left">}}
 
+Some notes from past meetings can be read [here](/meet).
+
 
 If the above timeslots, do not work for you due to timezone differences, [contact me](/contact) and we can work something out.
 

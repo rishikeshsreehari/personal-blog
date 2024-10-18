@@ -8,7 +8,7 @@ disable_comments: true
 ShowReadingTime: false
 ---
 
-**Met online on 2024-10-01 at 21:00 GST**
+**Met online on 01-10-2024 at 21:00 GST**
 
 This was my first official [Unoffice Hours](/unoffice-hours/). I'm glad people take the time to navigate my blog and book slots! Irfan found out about me through a common blogging WhatsApp group and was nice enough to point out some errors on my site, which I later corrected.
 
