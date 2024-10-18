@@ -92,8 +92,9 @@ Came back and had dinner, but went a bit overboard with the rice:
 - Fibre: 41g
 - Carbs: 298g
 - Fats: 61g
-- Steps: 11801 steps
-- Calories Burnt: 590 Cal
+- Protein/BW Ratio: 1.41g/kg
+- Steps: 12796 steps
+- Calories Burnt: 648 Cal
 
 ```
 
