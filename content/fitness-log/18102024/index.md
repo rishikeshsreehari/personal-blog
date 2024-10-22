@@ -10,9 +10,9 @@ draft: false
 ---
 **18-10-2024, Abu Dhabi(UAE)**
 
-Slept just 5 hours yesterday and woke up early with a headache. Couldn't sleep more as I had an appointment for my 4th physiotherapy session for my [ankle sprain](journal/ankle-sprain/).
+Slept just 5 hours yesterday and woke up early with a headache. Couldn't sleep more as I had an appointment for my 4th physiotherapy session for my [ankle sprain](/journal/ankle-sprain/).
 
-Had just a green tea and went for the session. On my way back, I walked [barefoot](/journal/barefoot) in the nearby park and it felt amazing. On the bus, I randomly watched a short video and it triggered a huge craving for porotta for breakfast. Went to the nearby restaurant and had 2 porottas and a beef curry for breakfast. Porotta has loads of calories, so I regretted it immediately.
+Had just a green tea and went for the session. On my way back, I walked [barefoot](/journal/barefoot-walking/) in the nearby park and it felt amazing. On the bus, I randomly watched a short video and it triggered a huge craving for porotta for breakfast. Went to the nearby restaurant and had 2 porottas and a beef curry for breakfast. Porotta has loads of calories, so I regretted it immediately.
 
 Decided to skip lunch due to the carb-heavy breakfast. Had 2 cups of coffee and a banana as an evening snack. Was feeling a bit hungry, so I had my protein shake.
 
