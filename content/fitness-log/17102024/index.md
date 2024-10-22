@@ -66,7 +66,7 @@ Lunch was simple:
 - 150g of yogurt with 15g honey
 
 
-{{< photocaption src="lunch.jpg" alt="Lunch" >}}Lunch{{< /photocaption >}}
+{{< photocaption src="lunch.jpg" alt="Lunch" width="60%">}}Lunch{{< /photocaption >}}
 
 
 Had an apple as an evening snack. Wifey came with some Aloo Bhujia and Kinder Bueno. Couldn't resist the urge.

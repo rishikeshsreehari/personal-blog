@@ -24,7 +24,7 @@ Dinner was simple:
 - 150g of baked carrots with garlic
 - 1 orange
 
-{{< photocaption src="dinner.jpg" alt="Baked Chicken, Carrot and Garlic for Dinner" >}}Baked Chicken, Carrot and Garlic for Dinner{{< /photocaption >}}
+{{< photocaption src="dinner.jpg" alt="Baked Chicken, Carrot and Garlic for Dinner" width="60%" >}}Baked Chicken, Carrot and Garlic for Dinner{{< /photocaption >}}
 
 
 Post-dinner, I went for a [6km walk](https://www.strava.com/activities/12687441136).
