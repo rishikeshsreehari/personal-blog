@@ -8,7 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 18-10-2024
+##### Last updated on 23-10-2024
 
 I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**!  
 The local time here is ⏰ **{{< current_time >}}**  
@@ -19,7 +19,8 @@ The local time here is ⏰ **{{< current_time >}}**
 ### 🔨 What am I Working on?
 
 - I'm currently umemployed, so mostly [looking for a job](/hire) most of the time. 
-- Trying to revive [10+1 Things](https://newsletter.rishikeshs.com) a newsletter I started few years back.
+- Curating interesting stories at [10+1 Things](https://newsletter.rishikeshs.com/)!
+
 - Working on some [side projects](/projects)!
 
 ---
