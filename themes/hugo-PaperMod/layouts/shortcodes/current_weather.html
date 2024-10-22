@@ -35,7 +35,7 @@
       // Display the weather data in the element
       el.innerHTML = `Here it's <strong>${cond.toLowerCase()}</strong> with a temperature of 🌡️ <strong>${tempValue}°C</strong>. The humidity is 🌫️<strong>${hum}</strong>, and the wind is blowing at 💨<strong>${windSpeed} km/h</strong>. ${moonDesc}`;
     } catch (e) {
-      el.textContent = 'Failed to fetch temperature';
+      el.textContent = '';
     }
   }
 
