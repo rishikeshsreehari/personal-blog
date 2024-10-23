@@ -51,3 +51,6 @@ Following the trend on the internet, I published [27 lessons](/27-lessons/) last
 26. Living in a village for the last couple of years, I never cared about the Air Quality Index (AQI). When I moved to Delhi, I ignored the AQI warnings and continued roaming around outdoors. I ended up with a severe throat infection within a week and learned the lesson the hard way. Just because millions live in a city with hazardous air quality doesn’t mean that it is safe.
 27. It is okay to be lost even when you’re nearing your 30s. It takes time to have a sense of understanding of the world and your part to play in it.
 28. As you grow old, life becomes better.
+
+
+{{< subscribe_block >}}
