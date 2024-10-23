@@ -18,9 +18,8 @@ The local time here is ⏰ **{{< current_time >}}**
 
 ### 🔨 What am I Working on?
 
-- I'm currently umemployed, so mostly [looking for a job](/hire) most of the time. 
+- [Currently unemployed](/hire), so spending most of my time applying for jobs.
 - Curating interesting stories at [10+1 Things](https://newsletter.rishikeshs.com/)!
-
 - Working on some [side projects](/projects)!
 
 ---
@@ -42,9 +41,9 @@ The local time here is ⏰ **{{< current_time >}}**
 ---
 
 ### 📝 What Am I Learning?
-- Learning more about Energy Systems and Modelling from the lectures of [Tom Brown](https://nworbmot.org/teaching.html)
+- Learning more about Energy Systems and Modelling from the lectures of [Tom Brown](https://nworbmot.org/teaching.html).
 - Trying to learn more about stock markets on [Varsity](https://zerodha.com/varsity/) a great initiative by [Zerodha](https://zerodha.com/open-account?c=KSO559).
-- Trying to learn Python by following the curriculum at [University of Helsinki](https://programming-24.mooc.fi/)
+- Trying to learn Python by following the curriculum at [University of Helsinki](https://programming-24.mooc.fi/).
 
 ---
 
