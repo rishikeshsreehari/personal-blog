@@ -39,7 +39,8 @@ Decode the audio below to find the answer:
 
 Send your answers to puzzle[at]rishikeshs.com
 
-Total Submissions: 5
+Total Submissions: 7
+Clue requests: 2/10
 
 *Source: Self*
 
