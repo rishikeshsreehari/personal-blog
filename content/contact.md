@@ -22,12 +22,10 @@ If you loved my site, leave a message and sign my [guestbook](/guestbook)!
 
 Before you contact me, please ensure the following:
 
-- This is a {{< highlight_text >}}personal blog{{< /highlight_text >}}, and {{< highlight_text color="#ADD8E6" >}}I do not accept guest posts.{{< /highlight_text >}}
+- This is a {{< highlight_text >}}personal blog,{{< /highlight_text >}} and {{< highlight_text color="#ADD8E6" >}}I do not accept guest posts.{{< /highlight_text >}}
 - I usually respond within 24 hours, but sometimes, if I'm traveling or caught up with something, it may take longer.
 - When you fill out the form below, ensure that your message is clear and concise. Low-effort messages like "Hey dude, can you help me?" or "I want a blog like yours; how can I do that?" will be ignored.
 - Please be polite, and I promise I'll be polite with you as well.
-
-{{< highlight_text >}}This is highlighted text{{< /highlight_text >}}  
 
 
 
