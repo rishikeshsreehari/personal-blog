@@ -13,6 +13,10 @@
       {{ site.Title }}
     {{ else if eq .Section "blog" }}
       {{ .Title }}
+    {{ else if eq .Section "watch" }}
+      {{ .Title }}
+    {{ else if eq .Section "fitness-log" }}
+      {{ .Title }}
     {{ else }}
       {{ if .Title }}{{ .Title }} | {{ site.Title }}{{ end }}
     {{ end }}
