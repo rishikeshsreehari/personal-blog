@@ -1,3 +1,24 @@
+- name: "Meiyazhagan"
+  language: "Tamil"
+  rating: 3
+  date: "2024-10-28"
+  url: "/watch/meiyazhagan/"
+  gender: "male"
+  platform: "Netflix"
+  country: "India"
+  runtime: "178"
+  type: "movie"
+  reviewed_on: "28-10-2024"
+  budget: "$4,162,935"
+
+
+
+
+
+
+
+
+
 - name: "Ennalum Ente Aliya"
   language: "Malayalam"
   rating: 1
