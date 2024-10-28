@@ -88,3 +88,12 @@
   }
 
 
+.highlight-text {
+    background-color: var(--highlight-color, #ffd500); /* Default yellow color */
+    color: #000; /* Keeps text visible against the highlight */
+    padding: 0.1em 0.05em; /* Adjust padding to ensure highlight effect */
+    border-radius: 0.2em; /* Soft edges to mimic a highlighter stroke */
+    box-decoration-break: clone; /* Ensures background repeats per line */
+    display: inline;
+    line-height: 1.4; /* Adjusts line height to ensure clear highlight */
+}
