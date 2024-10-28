@@ -33,6 +33,12 @@ Coming to the performances, Karthi and Arvind Swamy killed it with their rapport
 A great one-time watch!
 
 
+
+#### Update 29-10-2024:
+I read on Reddit that almost 20 minutes were cut from the original theatrical release to address the movie's lagginess. I'm not sure why!
+
+
+
 *Watched on 27-10-2024 on Netfllix.*  
 *Review wrrited on: 28-10-2024*
 

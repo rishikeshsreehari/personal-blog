@@ -34,4 +34,4 @@ Thoughts? Comments are open for discussion.
 
 
 #### Update #1:
-Checkout [Digital Legacy Trust](https://legacytrust.nz/) by Derek Sivers which shares the same philosophy.s
+Checkout [Digital Legacy Trust](https://legacytrust.nz/) by Derek Sivers which shares the same philosophy.

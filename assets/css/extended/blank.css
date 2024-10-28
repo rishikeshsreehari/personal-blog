@@ -97,3 +97,21 @@
     display: inline;
     line-height: 1.4; /* Adjusts line height to ensure clear highlight */
 }
+
+.homepage-highlight {
+    background-color: var(--highlight-color, #ffd500); /* Default yellow if no color is set */
+    color: #000; /* Keeps text visible against the highlight */
+    padding: 0.05em 0.1em; /* Reduced top and bottom padding */
+    border-radius: 0.2em; /* Rounded edges */
+    box-decoration-break: clone; /* Ensures background repeats per line */
+    display: inline;
+    line-height: 1.4; /* Ensures text alignment within highlight */
+    cursor: pointer; /* Indicates clickable link */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.homepage-highlight:hover {
+    filter: brightness(85%); /* Darkens the color slightly */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+    transform: translateY(-2px); /* Moves the highlight up slightly */
+}
