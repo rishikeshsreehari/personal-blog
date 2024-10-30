@@ -79,7 +79,7 @@ Despite these limitations, the Lindy Effect can still offer practical insights f
 - **Learn foundational design principles** in art and architecture that emphasize proportion, balance, and symmetry, which continue to influence modern aesthetics.
 - **Cultivate a reading habit with a mix of history and philosophy**, such as _Meditations_ by Marcus Aurelius or _The Art of War_, to gain perspective from timeless thinkers.
 - **Practice a classic board game** like chess or Go to improve strategic thinking, as these games have challenged and entertained people for centuries.
-- **Adopt enduring technologies** like HTML and CSS for web development; they form the backbone of the internet and are unlikely to become obsolete.
+- **Adopt enduring technologies** like HTML and CSS for web development; they form the backbone of the internet and are unlikely to become obsolete. Read my thoughts on [evergreen blogs here](/journal/evergreen-blogs).
 - **Invest in quality items** like a durable pair of shoes or a classic watch that can last years, prioritizing long-term use over short-term trends.
 
 
