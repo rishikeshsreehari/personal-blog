@@ -9,7 +9,7 @@ ShowReadingTime: false
 ---
 
 
-##### Last updated on 13-07-2024
+##### Last updated on 31-10-2024
 
 This is a list of things I want to do in my life. Call it a to-do list, a bucket list, or whatever you like. I love the fact that this list grows day by day and, in a way, gives me a sense of direction and excitement for the future. While I know I may never achieve everything on this list in my lifetime, that's okay. The finite nature of life gives it purpose and makes me feel profoundly grateful for every experience and quest I pursue. This list includes physical goals, things I want to achieve, places I want to visit, things I want to learn, and more. For the dreams I have already achieved, I’ve crossed them out with the date when they were accomplished. My goal is to have atleast 100 dreams at a time, but it's not easy.
 
@@ -56,7 +56,7 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 41. Finish both [Paris-Brest-Paris](https://en.wikipedia.org/wiki/Paris%E2%80%93Brest%E2%80%93Paris) and [London-Edinburgh-London](https://en.wikipedia.org/wiki/London%E2%80%93Edinburgh%E2%80%93London) events.
 42. Hike the entire [Pacific Crest Trail](https://geni.us/rsh-wild-pct). Dreaming of it ever since I finished [Wild: From Lost to Found on the Pacific Crest Trail](https://geni.us/rsh-wild-pct) by Cheryl Strayed.
 43. Stay in Japan for a month.
-44. Start a silent cafe with bookshop.
+44. Start a silent cafe with a bookshop.
 45. Own a dog.
 46. Buy a huge piece of land in a remote area, try out permaculture, farmsteading, and try to live off-grid as much as possible.
 47. Start earning online, live as a digital nomad, and travel with [Yeti](https://tibetanyeti.com) in Southeast Asia.
@@ -88,6 +88,9 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 73. Build a search engine for personal blogs.
 74. Create a solar version of my blog.
 75. Run ["Tour De Stade"](https://en.wikipedia.org/wiki/Tour_de_stade) in a big enough stadium. 
+76. Crowdfund and Ship a product on Kickstarter!
+77. Launch a product on ProductHunt!
+78. Do 10 pullups in a row!
 
 
 

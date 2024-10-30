@@ -46,6 +46,12 @@ The Lindy Effect is simple: for non-perishable things, longevity is an indicator
 - **Life Expectancy Increases with Age**: At its core, the Lindy Effect proposes that the life expectancy of certain things is proportional to their current age. In simpler terms, if an idea, technology, or cultural artifact has existed for a certain amount of time, it’s likely to endure for an equivalent amount of time into the future. If a book has been read for 100 years, it’s likely to be read for another 100 years.
 
 - **Power Laws and Predictability**: Mathematically, the Lindy Effect is related to power laws, which govern phenomena where longevity increases exponentially rather than linearly. This means that certain things, like ancient texts or enduring tools, gain future life expectancy as they age. For example, the durability of democracy as a form of governance over millennia suggests that it may continue to be practiced far into the future, despite societal changes.
+
+>_If a book has been in print for forty years, I can expect it to be in print for another forty years. But, and that is the main difference, if it survives another decade, then it will be expected to be in print another fifty years. This, simply, as a rule, tells you why things that have been around for a long time are not “aging” like persons, but “aging” in reverse. Every year that passes without extinction doubles the additional life expectancy. This is an indicator of some robustness. The robustness of an item is proportional to its life!’
+- Nassim Taleb, the author of [Antifragile](https://geni.us/rs-antifragile).__
+
+
+
 ### Some Examples
 
 While the theory and statistical explanations of the Lindy Effect seem complex, we see its effects in things we interact with and encounter in everyday life. Some examples include:
