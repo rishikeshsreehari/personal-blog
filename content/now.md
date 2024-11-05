@@ -8,7 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 31-10-2024
+##### Last updated on 05-11-2024
 
 I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**!  
 The local time here is ⏰ **{{< current_time >}}**  
@@ -35,6 +35,7 @@ The local time here is ⏰ **{{< current_time >}}**
 - [Exercised](https://geni.us/rs-exercised) by Daniel Lieberman
 - [Illusions: The Adventures of a Reluctant Messiah](https://geni.us/rs-illusions) by Richard Bach
 - [City of Gold: Dubai and the Dream of Capitalism](https://geni.us/rs-city-of-gold) by Jim Krane
+- [The Paradox of Choice: Why More is Less](https://geni.us/rsh-paradox-choice) by Barry Schwartz
 
 *I read 3-4 books in parallel most of the time on [my e-book reader](https://geni.us/rsh-kindle-paperwhite).*
 
@@ -49,12 +50,13 @@ The local time here is ⏰ **{{< current_time >}}**
 
 
 ### 📺 What Am I Watching?
-- [Lost (2004)](https://www.serializd.com/show/Lost-4607) - Currently at S03E08 - I'm binge watching, it was a mistake to start this.
+- [Lost (2004)](https://www.serializd.com/show/Lost-4607) - Currently at S04E05 - I'm binge watching, it was a mistake to start this.
 ---
 
 ### 🏋 My Workout Regime
 
-I'm currently focusing on transforming my body and bringing my body fat down to below 25%. That means a lot of protein and long walks to ensure that I'm in a calorie deficit while gaining muscle and losing fat. These days, I work out four days a week at the gym following Trainer Winny's [beginner plan](https://www.youtube.com/watch?v=U9ENCvFf9yQ). It's mainly a mix of compound exercises like bench press, overhead press, barbell row, squat, and deadlift. I'm nursing an [ankle sprain](/journal/ankle-sprain/), so squats and running are out of the equation, at least for a couple of weeks. Summer is officially over, and the weather is getting nicer day by day. I'm itching to run, but I guess I'll have to wait and focus on rehab.
+I'm currently focusing on transforming my body and bringing my body fat down to below 25%. That means a lot of protein and long walks to ensure that I'm in a calorie deficit while gaining muscle and losing fat. These days, I work out four days a week at the gym following Trainer Winny's [beginner plan](https://www.youtube.com/watch?v=U9ENCvFf9yQ). It's mainly a mix of compound exercises like bench press, overhead press, barbell row, squat, and deadlift. [My ankle](/journal/ankle-sprain/) is feeling better, and the doctor has given the green light for short runs and squats with light weights. I still feel a bit uneasy with deep squats at the lower position. Need a bit more work on the stability part, 5 more rehab sessions to go. Can't wait to run freely!
+
 
 ##### For my latest fitness updates, read my [fitness log](/fitness-log). It's interesting, I promise.
 
