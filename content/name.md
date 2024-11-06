@@ -12,6 +12,9 @@ ShowReadingTime: false
 
 My name is Rishikesh. It is pronounced as 'Rish-ee-kaysh'. I'm not sure why my mother named me like that, and I think she also has no idea. It's not really a unique name if you're from India. In fact, there's a place in India called Rishikesh, lying on the foothills of the Himalayas, on the banks of the Ganges. The place is called the Yoga capital of the world and is often a destination for people seeking spirituality (The Beatles visited the place), but I do not have any interest or affiliation to either of those.
 
+{{< photocaption src="/images/rishikesh.webp" alt="rishikesh" width="60%">}}There is a railway station in my name! Source: [IndiaRailInfo](https://indiarailinfo.com/station/blog/1967/2741){{< /photocaption >}}
+
+
 However, I have visited the place, stayed there for a few months, and made some amazing friends during my backpacking trip in 2021. It was a good conversation starter while I was there. How often do we go to places that have the same name as us? I remember it being a cool thing when I used to check in to hostels as the people at the reception would ask again for my name or be surprised when they looked at my ID card. I have this fun memory of an evening on the famous Laxman Jhula Ghat in Rishikesh, where artists come and jam in the evening. When a girl asked for my name, she couldn't believe it, and I had to show her my ID card to make her believe.
 
 People often call me 'Rishi' ('Rish-eee'), a short version of my name, and I don't mind that. I feel like non-Indian speakers find my name challenging and 'Rishi' is often easier to pronounce. While I was working in hospitality in Edinburgh, my Russian supervisor used to call me 'Raashi'.

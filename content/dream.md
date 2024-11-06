@@ -93,6 +93,7 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 78. Do 10 pullups in a row!
 79. See my abs before I die!
 80. Create a personal coat of arms and add it to the footer. I need to study [heraldry](https://en.wikipedia.org/wiki/Heraldry) in detail for this!   
+81. Publish a Python Package.
 
 
 
