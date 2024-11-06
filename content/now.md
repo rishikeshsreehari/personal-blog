@@ -8,7 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 05-11-2024
+##### Last updated on 06-11-2024
 
 I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**!  
 The local time here is ⏰ **{{< current_time >}}**  
@@ -55,7 +55,13 @@ The local time here is ⏰ **{{< current_time >}}**
 
 ### 🏋 My Workout Regime
 
-I'm currently focusing on transforming my body and bringing my body fat down to below 25%. That means a lot of protein and long walks to ensure that I'm in a calorie deficit while gaining muscle and losing fat. These days, I work out four days a week at the gym following Trainer Winny's [beginner plan](https://www.youtube.com/watch?v=U9ENCvFf9yQ). It's mainly a mix of compound exercises like bench press, overhead press, barbell row, squat, and deadlift. [My ankle](/journal/ankle-sprain/) is feeling better, and the doctor has given the green light for short runs and squats with light weights. I still feel a bit uneasy with deep squats at the lower position. Need a bit more work on the stability part, 5 more rehab sessions to go. Can't wait to run freely!
+I'm currently focused on transforming my body and reducing my body fat to below 25%. This involves a lot of protein and long walks to ensure I'm in a calorie deficit while building muscle and losing fat.
+
+
+I'm doing strength training three times a week, following Greg Nuckols' beginner program on Boostcamp. On gym days, I aim to walk 5km, and on other days, I try to do light jogs. [My ankle](/journal/ankle-sprain/) is feeling better, and the doctor has given the green light for short runs and squats with light weights. I still feel a bit uneasy with deep squats at the lower position, so I need to work more on stability, with a few more rehab sessions to go. Can't wait to run freely!
+
+I'm now doing strength training 3x a week, following [Greg Nuckol's beginner program](https://www.boostcamp.app/coaches/greg-nuckols/greg-nuckols-beginner-program) on Boostcamp. On gym days, I try to walk 5km and on other days I try to do light jogs. [My ankle](/journal/ankle-sprain/) is feeling better, and the doctor has given the green light for short runs and squats with light weights. I still feel a bit uneasy with deep squats at the lower position. Need a bit more work on the stability part, few more rehab sessions to go. Can't wait to run freely!
+
 
 
 ##### For my latest fitness updates, read my [fitness log](/fitness-log). It's interesting, I promise.
@@ -67,7 +73,4 @@ I'm currently focusing on transforming my body and bringing my body fat down to 
 
 
 ###### This is a ["now page"](https://nownownow.com/) inspired by Derek Sivers, and you should make one too.
-
-
-
 
