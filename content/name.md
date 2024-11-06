@@ -4,9 +4,11 @@ title: "My Name"
 url: "/name/"
 summary: Story behing my name and its transliteration in different languages.
 type: page
-disable_comments: true
+disable_comments: false
 ShowReadingTime: false
 ---
+##### Last updated on 07-11-2024
+
 
 My name is Rishikesh. It is pronounced as 'Rish-ee-kaysh'. I'm not sure why my mother named me like that, and I think she also has no idea. It's not really a unique name if you're from India. In fact, there's a place in India called Rishikesh, lying on the foothills of the Himalayas, on the banks of the Ganges. The place is called the Yoga capital of the world and is often a destination for people seeking spirituality (The Beatles visited the place), but I do not have any interest or affiliation to either of those.
 
