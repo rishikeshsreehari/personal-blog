@@ -6,9 +6,9 @@
     
     try {
       // Fetch current time based on the timezone from the config.yaml
-      const timeResponse = await fetch(`https://worldtimeapi.org/api/timezone/${timezone}`);
+      const timeResponse = await fetch(`https://timeapi.io/api/Time/current/zone?timeZone=${timezone}`);
       const timeData = await timeResponse.json();
-      const currentTime = new Date(timeData.datetime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+      const currentTime = new Date(timeData.dateTime).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
       // Update the HTML content
       document.getElementById("current-time").textContent = currentTime;
