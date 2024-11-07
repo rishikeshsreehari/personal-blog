@@ -62,7 +62,7 @@ Strava is a great tool to track your activities. As a writer, such a tool would 
 I love reading the About Me sections of various personal blogs. A curated list of the best about pages would be cool.
 {{< /accordion >}}
 
-{{< accordion summary="~~Evergreen Hosting~~" openByDefault=true >}}
+{{< accordion summary="~~Evergreen Hosting~~" openByDefault=false >}}
 ~~People put a lot of effort into their blogs, and most often, after the person passes away, these blogs go obsolete. How about a service that you can pay for one-time or in installments, ensuring that your blog stays live forever?~~
 
 *Update: I wrote about in detail [here](/journal/evergreen-blogs). Also, checkout [Digital Legacy Trust](https://legacytrust.nz/) by Derek Sivers.*
