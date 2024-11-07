@@ -29,6 +29,7 @@ This page serves as a place where I describe my name in different languages. Whi
 | Malayalam            | ഋഷികേശ്        | ✅       |
 | Hindi                | ऋषिकेश         | ✅       |
 | Tamil                | ரிஷிகேஷ்       | ✅       |
+| Bulgarian            | Ришикеш        |  ✅  by Drago        |
 | Abkhazian            | Rishikesh     |          |
 | Achinese             | Rishikesh     |          |
 | Acoli                | Rishikesh     |          |
@@ -55,7 +56,6 @@ This page serves as a place where I describe my name in different languages. Whi
 | Bislama              | Rishikesh     |          |
 | Bosnian              | Rishikesh     |          |
 | Breton               | Rishikesh     |          |
-| Bulgarian            | Ришикеш        |          |
 | Burmese              | Rishikesh     |          |
 | Catalan              | Rishikesh     |          |
 | Cebuano              | Rishikesh     |          |
