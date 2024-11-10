@@ -403,7 +403,7 @@
         {
             "Name": "Jack s",
             "Date": "2024-07-08",
-            "Comment": "If you haven?t seen ?Silence of the Lambs?, add it to your list!"
+            "Comment": "If you haven?t seen, Silence of the Lambs, add it to your list!"
         }
     ],
     "blog-art": [
@@ -416,6 +416,28 @@
             "Name": "Rishikesh",
             "Date": "2024-10-19",
             "Comment": "<span class='author-marker'></span>Thanks a lot Zak for the feedback! :)"
+        }
+    ],
+    "name": [
+        {
+            "Name": "Drago",
+            "Date": "2024-11-07",
+            "Comment": "Bulgarian is ok"
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2024-11-07",
+            "Comment": "<span class='author-marker'></span> Thanks a lot Drago! I've marked it as verified!"
+        },
+        {
+            "Name": "Sasha",
+            "Date": "2024-11-07",
+            "Comment": "Serbian is confirmed"
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2024-11-07",
+            "Comment": "<span class='author-marker'></span> Thanks a lot Sasha! I've updated it!"
         }
     ]
 }
