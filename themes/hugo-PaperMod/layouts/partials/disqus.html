@@ -1,7 +1,6 @@
 {{ if not .Params.disable_comments }}
 <h1>Comments</h1>
 
-<!-- Existing comment display code remains unchanged -->
 
 <div class="comments-section">
   {{ $url := .Params.url }}
@@ -57,6 +56,12 @@
       </div>
     </div>
 
+    <!-- Anti-spam question -->
+    <div class="form-row">
+      <label for="antispam">Is fire hot or cold?(Anti-Spam!)</label>
+      <input type="text" id="antispam" name="antispam" required placeholder="Answer here" />
+    </div>
+
     <!-- Honeypot field -->
     <div style="display:none;">
       <label>If you're a human, leave this field blank!<input type="text" name="honeypot" /></label>
@@ -103,6 +108,14 @@
     var messageContainer = document.getElementById("message-container");
     var loadingSpinner = document.getElementById("loading-spinner");
     var turnstileInput = document.getElementById('cf-turnstile-response');
+    var antispamAnswer = document.getElementById("antispam").value.trim().toLowerCase();
+
+    // Validate the anti-spam question
+    if (antispamAnswer !== "hot") {
+      messageContainer.textContent = "Incorrect answer to the anti-spam question.";
+      messageContainer.style.color = "red";
+      return;
+    }
 
     messageContainer.textContent = '';
 
