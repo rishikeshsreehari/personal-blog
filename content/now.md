@@ -8,7 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 06-11-2024
+##### Last updated on 13-11-2024
 
 I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**!  
 The local time here is ⏰ **{{< current_time >}}**  
@@ -20,7 +20,7 @@ The local time here is ⏰ **{{< current_time >}}**
 
 - [Currently unemployed](/hire), so spending most of my time applying for jobs.
 - Curating interesting stories at [10+1 Things](https://newsletter.rishikeshs.com/)!
-- Working on some [side projects](/projects)!
+- Working on some [side projects](/projects) especially tweaking [npsnav.in](https://npsnav.in)
 
 ---
 
@@ -50,7 +50,7 @@ The local time here is ⏰ **{{< current_time >}}**
 
 
 ### 📺 What Am I Watching?
-- [Lost (2004)](https://www.serializd.com/show/Lost-4607) - Currently at S04E05 - I'm binge watching, it was a mistake to start this.
+- [Lost (2004)](https://www.serializd.com/show/Lost-4607) - Currently at S05E06 - I'm binge watching, and I want it to end!
 ---
 
 ### 🏋 My Workout Regime

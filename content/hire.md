@@ -7,6 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 ---
+##### Last updated on 14-10-2024
+
+
 
 Welcome to my hire page! Here’s where you can find out more about how I can contribute to your projects. Whether you're in academia, industry, or working on something entirely new, here’s how I can help:
 
@@ -16,7 +19,7 @@ I hold a Master’s Degree in Renewable Energy and Distributed Generation and ha
 
 Alongside system modeling, I’ve also worked in the mini-grid sector, managing smart metering systems and overseeing the remote monitoring of mini-grid sites. This experience has given me valuable insights into distributed energy systems and the intricacies of ensuring reliable, clean energy access.
 
-I’m currently available for remote positions or jobs in Dubai and open to relocating for opportunities in Europe or North America. I’m particularly interested in roles within academia or industry that involve energy system optimization, renewable energy integration, or climate-related research. I’m also open to pursuing a funded PhD or Research Assistant position in these areas.
+I’m currently available for remote positions or jobs in UAE and open to relocating for opportunities in Europe or North America. I’m particularly interested in roles within academia or industry that involve energy system optimization, renewable energy integration, or climate-related research. I’m also open to pursuing a funded PhD or Research Assistant position in these areas.
 
 If you’re looking for expertise in energy system modeling or renewable energy solutions, I’d love to collaborate.
 
