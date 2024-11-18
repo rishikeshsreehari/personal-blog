@@ -439,5 +439,32 @@
             "Date": "2024-11-07",
             "Comment": "<span class='author-marker'></span> Thanks a lot Sasha! I've updated it!"
         }
+    ],
+    "file-over-app": [
+        {
+            "Name": "Algo Rithm",
+            "Date": "2024-11-18",
+            "Comment": "So, is Agent Mortimer going to live?"
+        },
+        {
+            "Name": "NotABug",
+            "Date": "2024-11-18",
+            "Comment": "Other \"file over app\" are Logseq (https://logseq.com/) and Silverbullet (https://silverbullet.md/)"
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2024-11-18",
+            "Comment": "<span class='author-marker'></span>This looks wonderful, I shall update the list!"
+        },
+        {
+            "Name": "Derek Sivers",
+            "Date": "2024-11-18",
+            "Comment": "\"File over app\" is a brilliant simple way of explaining this.  Thank you for posting this!\r\n\r\nI'll be forwarding this to others (probably for years to come since I keep my bookmarks in a bookmarks.txt file, for easy reference even years later.)"
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2024-11-18",
+            "Comment": "<span class='author-marker'></span>Thanks a lot Derek! It's not my idea, I just scribbled some thoughts! I never thought of bookmarks.txt, great idea!"
+        }
     ]
 }
