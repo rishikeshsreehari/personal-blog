@@ -139,6 +139,7 @@ That said, some projects do rely on specific ecosystems. For example, my pension
 
 These are a few tools and projects that align with this philosophy. Here's a list of apps that I've found useful, and if you have suggestions, let me know so I can add them:
 
+
 - [Obsidian](https://fountain.io/) - A markdown-based personal knowledge management tool
 - [Paisa.fyi](https://paisa.fyi) - An open-source personal finance manager using double-entry accounting
 - [FlatHabits](https://flathabits.com/) - A habit tracker that uses org-text, a plain text format for data storage
@@ -146,10 +147,21 @@ These are a few tools and projects that align with this philosophy. Here's a lis
 - [Plain Org](https://plainorg.com/) - A to-do list app using org mode text
 - [Notable](https://notable.app/) - A note-taking app using markdown
 - [ToDo.txt ](http://todotxt.org/)- A command-line to-do list tool
+- [Bruno](https://www.usebruno.com/manifesto) that creates plain-text API files wih version control using Git. 
+- [SilverBullet](https://silverbullet.md/) an open-source PKM system with plain-text as back-end.
+- [Logseq](https://logseq.com/) an open-source knowledge based on markdown files.
+
 
 If you are working on a similar tool, happy to have a look and add them to the above list!
 
 In the end, 'File over App' isn't just a philosophy—it.s a guideline for making digital choices that prioritize the longevity of data. With each decision, I'm creating a lasting digital archive, one file at a time.
+
+#### Update #1 - 18-11-2024, 13:30 GST
+
+- _Somehow, this featured on the front page of Hacker News. 🎉_
+- _Thanks to [@reddalo](https://news.ycombinator.com/user?id=reddalo) for suggesting Bruno._
+- _Thanks to NotABug for recommending SilverBullet and Logseq._
+
 
 
 
