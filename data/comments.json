@@ -368,11 +368,6 @@
             "Name": "Rishikesh",
             "Date": "2024-09-16",
             "Comment": "<span class='author-marker'></span>Congrats on the SR achievement. How many BRMs have you completed in your overall career?"
-        },
-        {
-            "Name": "Lazrplw",
-            "Date": "2024-11-18",
-            "Comment": " \r\n<a href=http://asbl-numerica.be/blogs/1682/??????-???-?????????-??????-?-????????/>???????? ?????? ?? ?????????? ??????? ??????? ? ?????? ???????????</a>"
         }
     ],
     "2023-plan": [
@@ -475,6 +470,16 @@
             "Name": "Rishikesh",
             "Date": "2024-11-18",
             "Comment": "<span class='author-marker'></span>Thanks a lot Derek! It's not my idea, I just scribbled some thoughts! I never thought of bookmarks.txt, great idea!"
+        },
+        {
+            "Name": "jfd",
+            "Date": "2024-11-18",
+            "Comment": "Try httpyac over bruno"
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2024-11-18",
+            "Comment": "<span class='author-marker'></span> In what context? Bruno was mentioned because it stores API information in plain text format."
         }
     ]
 }
