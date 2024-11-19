@@ -480,6 +480,16 @@
             "Name": "Rishikesh",
             "Date": "2024-11-18",
             "Comment": "<span class='author-marker'></span> In what context? Bruno was mentioned because it stores API information in plain text format."
+        },
+        {
+            "Name": "Burno",
+            "Date": "2024-11-18",
+            "Comment": "Emacs with org mode"
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2024-11-19",
+            "Comment": "<span class='author-marker'></span>Great one! I've added it!"
         }
     ]
 }
