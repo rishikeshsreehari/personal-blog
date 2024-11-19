@@ -9,6 +9,9 @@ ShowReadingTime: false
 
 ---
 
+##### Last updated on 19-11-2024
+
+
 I love solving puzzles. In fact, one of my favorite bedtime routines is to solve [Wordle](https://www.nytimes.com/games/wordle/index.html) and [Connections](https://www.nytimes.com/games/connections) every day before I go to sleep. So, I had this idea the other day - why not run a puzzle that never ends? A perpetual puzzle that continues as long as I'm alive or able to update this website.
 
 **How it works:**
@@ -39,7 +42,7 @@ Decode the audio below to find the answer:
 
 Send your answers to puzzle[at]rishikeshs.com
 
-Total Submissions: 7
+Total Submissions: 8  
 Clue requests: 2/10
 
 *Source: Self*

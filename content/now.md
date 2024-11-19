@@ -8,7 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 13-11-2024
+##### Last updated on 19-11-2024
 
 I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**!  
 The local time here is ⏰ **{{< current_time >}}**  
@@ -24,11 +24,19 @@ The local time here is ⏰ **{{< current_time >}}**
 
 ---
 
+### ✈️ Going Home!
+
+I'll be in India from 23rd November to 16th December. My current plan is Mumbai → Nagpur → Chennai → Kochi. I'm excited to visit Mumbai to meet a friend after a long time, try some yummy street food, attend a friend's wedding in Nagpur, reconnect with family in Chennai, and spend time at home. We'll also take a short trip to my wife's ancestral house in Tanjavur! Super excited!
+
+If you're based in any of these cities, feel free to [reach out](/contact)!
+
 ### Now in Numbers
 
 {{< now_tiles >}}
 
 ---
+
+
 
 ### 📚 What Am I Reading?
 
@@ -50,7 +58,7 @@ The local time here is ⏰ **{{< current_time >}}**
 
 
 ### 📺 What Am I Watching?
-- [Lost (2004)](https://www.serializd.com/show/Lost-4607) - Currently at S05E06 - I'm binge watching, and I want it to end!
+- [Lost (2004)](https://www.serializd.com/show/Lost-4607) - Currently at S06E01 - I'm binge watching, and I want it to end!
 ---
 
 ### 🏋 My Workout Regime

@@ -150,11 +150,17 @@ These are a few tools and projects that align with this philosophy. Here's a lis
 - [Bruno](https://www.usebruno.com/manifesto) that creates plain-text API files wih version control using Git. 
 - [SilverBullet](https://silverbullet.md/) an open-source PKM system with plain-text as back-end.
 - [Logseq](https://logseq.com/) an open-source knowledge based on markdown files.
+- [Emacs with Org Mode](https://orgmode.org/) – A plain-text tool for managing notes, tasks, and projects, focused on flexibility and long-term accessibility.
 
 
 If you are working on a similar tool, happy to have a look and add them to the above list!
 
 In the end, 'File over App' isn't just a philosophy—it.s a guideline for making digital choices that prioritize the longevity of data. With each decision, I'm creating a lasting digital archive, one file at a time.
+
+---
+
+#### Update #2 - 19-11-2024, 19:03 GST
+- _Thanks to Burno for recommending Emacs with Org Mode_
 
 #### Update #1 - 18-11-2024, 13:30 GST
 
