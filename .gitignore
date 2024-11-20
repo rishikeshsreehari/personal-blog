@@ -1,2 +1,9 @@
+# Exclude public directory
 public
-/hook_debug.log
+
+# Exclude Hugo build lock file
+.hugo_build.lock
+
+# Exclude VS Code configuration folder
+.vscode/
+
