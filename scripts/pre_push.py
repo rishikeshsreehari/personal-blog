@@ -185,6 +185,9 @@ def pre_push():
                 sys.exit(1)
             commit_entries.append((hash, msg, commit_type))
 
+        # Get the previous commit hash before we make any changes
+        long_hash, short_hash = get_current_commit_hash()
+
         # Determine version type based on commit types
         version_type = "U"  # Default to Update
         if any(entry[2] == "X" for entry in commit_entries):
@@ -204,6 +207,8 @@ def pre_push():
         
         version_data["Version"] = version
         version_data["PushCount"] = new_push_count
+        version_data["LastCommitLong"] = long_hash
+        version_data["LastCommitShort"] = short_hash
 
         with open(VERSION_FILE, "w") as f:
             json.dump(version_data, f, indent=4)
@@ -218,7 +223,7 @@ def pre_push():
         # Pull latest changes first
         subprocess.run(["git", "pull", "--rebase"])
         
-        # Let the normal git push continue...
+        # Let the normal git push continue
         return 0
         
     except Exception as e:
@@ -226,7 +231,6 @@ def pre_push():
         sys.exit(1)
     finally:
         remove_lock()
-
 
 if __name__ == "__main__":
     pre_push()
