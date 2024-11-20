@@ -27,6 +27,10 @@ def get_commit_type(commit_message):
 
 def get_latest_commit_hash():
     """Get both full and short hash of the latest commit."""
+    # First stage all changes so we get the correct hash
+    subprocess.run(["git", "add", "."])
+    subprocess.run(["git", "commit", "--amend", "--no-edit"])
+    
     full_hash = subprocess.check_output(
         ["git", "rev-parse", "HEAD"], text=True
     ).strip()
@@ -99,13 +103,13 @@ def main():
     print(f"Automatically setting version type to {version_type}")
     print(f"Final version: {version}\n")
 
-    # Update version.json
+    # Update version.json with all information including the hash
     update_version_file(version, new_push_count)
     print(f"Updated version to {version} in {VERSION_FILE}")
 
-    # Stage and commit updated version.json
+    # Stage and commit all changes including version.json in a single commit
     subprocess.run(["git", "add", VERSION_FILE])
-    subprocess.run(["git", "commit", "-m", f"Update version to {version}"])
+    subprocess.run(["git", "commit", "--amend", "-m", f"Update version to {version}"])
 
 
 if __name__ == "__main__":
