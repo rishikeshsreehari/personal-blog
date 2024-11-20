@@ -1,5 +1,19 @@
+---
 
-### **v24.617.M.2111** (20
+title: "Changelog"
+#layout: "library"
+url: "/log/"
+summary: Changelog of rishikeshs.com adhering to the Personal Blog Versioning Manifesto
+disable_comments: true
+ShowReadingTime: false
+---
+This is a place where I track all changes to my log. I hope this time it works!!
+
+
+
+<!--LOG_PLACEHOLDER_START-->
+
+
 ### **v24.618.U.2111** (2024-11-21)
 
 #### **Updations**
@@ -10,7 +24,9 @@
 
 
 ---
-24-11-21)
+
+
+### **v24.617.M.2111** (2024-11-21)
 
 #### **Fixes**
 **Fixed an issue updatechangelog function in prepush**  
@@ -35,4 +51,21 @@
 
 
 ---
+
+
+
+
+
+<!--LOG_PLACEHOLDER_END-->
+
+
+
+
+
+
+
+
+
+
+
 
