@@ -215,14 +215,18 @@ def pre_push():
         subprocess.run(["git", "add", VERSION_FILE, LOG_FILE])
         subprocess.run(["git", "commit", "-m", f"Pre-push update: Bump version to {version} and update changelog"])
         
-        # Force-update the remote refs to include our new commit
-        subprocess.run(["git", "push", "--atomic"])
+        # Pull latest changes first
+        subprocess.run(["git", "pull", "--rebase"])
+        
+        # Let the normal git push continue
+        return 0
         
     except Exception as e:
         print(f"Error during pre-push: {e}")
         sys.exit(1)
     finally:
         remove_lock()
+
 
 if __name__ == "__main__":
     pre_push()
