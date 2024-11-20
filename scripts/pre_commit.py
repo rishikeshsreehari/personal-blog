@@ -13,6 +13,34 @@ VERSION_FILE = "data/version.json"
 def custom_input(prompt=""):
     """Read input robustly, handling non-interactive environments."""
     try:
+        # Try GUI first if in non-interactive environment
+        if not sys.stdin.isatty():
+            return get_commit_type_gui()
+            
+        # For interactive CLI
+        if platform.system() == "Windows":
+            print(prompt, end='', flush=True)
+            return input()
+        else:
+            return input(prompt)
+    except KeyboardInterrupt:
+        print("\nOperation cancelled by user")
+        sys.exit(1)
+    except Exception as e:
+        print(f"Unexpected error reading input: {e}")
+        return None
+
+def check_interactive():
+    """Check if the script is running in an interactive shell."""
+    # Don't exit for non-interactive environments, fall back to GUI
+    return True
+
+def is_cli():
+    """Determine whether to use CLI or GUI mode."""
+    # Use GUI if not in interactive terminal
+    return sys.stdin.isatty()
+    """Read input robustly, handling non-interactive environments."""
+    try:
         # For Windows Git hooks specifically
         if platform.system() == "Windows":
             # Create a temporary console window for input
