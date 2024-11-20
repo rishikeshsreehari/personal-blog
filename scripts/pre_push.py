@@ -109,7 +109,7 @@ def main():
     update_version_file(version, new_push_count)
     print(f"Updated version to {version} in {VERSION_FILE}")
 
-    # Stage version.json
+    # Stage version.json,
     subprocess.run(["git", "add", VERSION_FILE])
     # Commit version.json
     subprocess.run(["git", "commit", "-m", f"Update version to {version}"])
