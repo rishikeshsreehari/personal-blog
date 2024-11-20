@@ -4,6 +4,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+
+#This runs after pre-commit hook
+
 VERSION_FILE = "data/version.json"
 LOCK_FILE = ".git/post-commit.lock"
 
