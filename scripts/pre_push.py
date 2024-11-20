@@ -40,7 +40,6 @@ def read_version_file():
     with open(VERSION_FILE, "r") as f:
         return json.load(f)
 
-
 def get_commit_type_gui(commit_msg):
     """Show a GUI window to select commit type."""
     result = {"type": None}
@@ -96,17 +95,19 @@ def get_unpushed_commits():
             text=True
         ).strip()
         
+        # Exclude any pre-push update commits from the list
         commits = subprocess.check_output(
             ["git", "log", f"{remote_branch}..HEAD", "--pretty=format:%h|%s"],
             text=True
         ).strip().split('\n')
         
-        return [commit for commit in commits if commit]
+        # Filter out empty strings and pre-push update commits
+        return [commit for commit in commits if commit and not commit.split('|')[1].startswith("Pre-push update:")]
     except subprocess.CalledProcessError:
         return []
 
 def update_changelog(commit_entries):
-    """Update the changelog with new commits"""
+    """Update the changelog with new commits."""
     if not os.path.exists(LOG_FILE):
         with open(LOG_FILE, "w") as f:
             f.write("<!--LOG_PLACEHOLDER_START-->\n\n<!--LOG_PLACEHOLDER_END-->")
@@ -166,6 +167,15 @@ def pre_push():
             print("No unpushed commits found.")
             return
 
+        # Check if the last commit is already a version bump
+        last_commit_msg = subprocess.check_output(
+            ["git", "log", "-1", "--pretty=%B"],
+            text=True
+        ).strip()
+        
+        if last_commit_msg.startswith("Pre-push update:"):
+            return  # Skip if we've already processed this batch
+
         commit_entries = []
         for commit in commits:
             hash, msg = commit.split('|')
@@ -205,6 +215,12 @@ def pre_push():
         subprocess.run(["git", "add", VERSION_FILE, LOG_FILE])
         subprocess.run(["git", "commit", "-m", f"Pre-push update: Bump version to {version} and update changelog"])
         
+        # Force-update the remote refs to include our new commit
+        subprocess.run(["git", "push", "--atomic"])
+        
+    except Exception as e:
+        print(f"Error during pre-push: {e}")
+        sys.exit(1)
     finally:
         remove_lock()
 
