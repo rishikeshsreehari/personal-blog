@@ -21,7 +21,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Rishikesh Sreehari
   description: "This is my webspace. A niche-less blog where I gather and share my ideas and document my life. I consider this blog as an evolving art project itself."
-  version: "v24.54.P.1911"
+  version: "24.262.P.1911"
   keywords: [Blog, Portfolio, PaperMod]
   #author: Me
   # author: ["Me", "You"] # multiple authors
