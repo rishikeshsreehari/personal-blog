@@ -12,6 +12,21 @@ This blog adheres to the **Personal Blog Versioning Manifesto**. All changes and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.622.U.2111** (2024-11-21)
+
+#### **Updations**
+**Updated simplified workflow with production branch removed**  
+   - *Commit:* [`a4e5ecc`](https://github.com/rishikeshsreehari/personal-blog/commit/a4e5ecc)  
+   - *Files:*  
+     - [`.github/workflows/build.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/.github/workflows/build.yml)  
+
+**Removed update_version.py from build.py**  
+   - *Commit:* [`d56ef4d`](https://github.com/rishikeshsreehari/personal-blog/commit/d56ef4d)  
+   - *Files:*  
+     - [`scripts/build.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/build.py)  
+
+
+---
 ### **v24.621.M.2111** (2024-11-21)
 
 #### **Updations**
