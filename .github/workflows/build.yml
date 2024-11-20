@@ -18,20 +18,14 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Get last human commit short hash
-      id: get_commit
-      run: echo "commit_hash=$(git rev-parse --short HEAD)" >> $GITHUB_ENV
-
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run build.py with last commit hash
+    - name: Run build.py
       run: |
-        python scripts/build.py  # Assuming build.py reads from GIT_COMMIT_HASH env variable
-      env:
-        GIT_COMMIT_HASH: ${{ env.commit_hash }}
+        python scripts/build.py
 
     - name: Configure Git author
       run: |
@@ -52,9 +46,3 @@ jobs:
         git add .
         git commit -m "Automatic build by Github Actions" || echo "No changes to commit"
         git push origin main
-
-    - name: Push to production branch
-      run: |
-        git checkout main
-        git checkout -B production
-        git push origin production --force
