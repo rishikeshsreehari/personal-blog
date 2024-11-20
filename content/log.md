@@ -12,7 +12,31 @@ This blog adheres to the **Personal Blog Versioning Manifesto**. All changes and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.626.M.2111** (2024-11-21)
 
+#### **Fixes**
+
+1. **Fomratting issue in watch/kishkindha**  
+   - *Commit:* [`bbb631a`](https://github.com/rishikeshsreehari/personal-blog/commit/bbb631a)  
+   - *Files:*  
+     1. [`content/log.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/log.md)
+     2. [`content/watch/kishkindha.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/kishkindha.md)
+
+
+#### **Updations**
+
+1. **Updated changelog format in prepush.py**  
+   - *Commit:* [`4829739`](https://github.com/rishikeshsreehari/personal-blog/commit/4829739)  
+   - *Files:*  
+     1. [`scripts/pre_push.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/pre_push.py)
+
+2. **Updated log with latest format**  
+   - *Commit:* [`c35ccb2`](https://github.com/rishikeshsreehari/personal-blog/commit/c35ccb2)  
+   - *Files:*  
+     1. [`content/log.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/log.md)
+
+
+---
 ### **v24.625.M.2111** (2024-11-21)
 
 #### **Additions**
@@ -189,8 +213,7 @@ This blog adheres to the **Personal Blog Versioning Manifesto**. All changes and
    - *Commit:* [`7929af0`](https://github.com/rishikeshsreehari/personal-blog/commit/7929af0)  
    - *Files:*  
      1. [`content/log.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/log.md)  
-     2. [`scripts/pre_push.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/pre_push.py)  
-
+     2. [`scripts/pre_push.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/pre_push.py)
 <!--LOG_PLACEHOLDER_END-->
 
 
