@@ -1,11 +1,7 @@
 ===============
-Pre-push hook starting at Wed, Nov 20, 2024  5:31:51 PM
+Pre-push hook starting at Wed, Nov 20, 2024  5:35:14 PM
 Checking files:
 Version file exists: Yes
-Changelog exists: No
-
-Commits to be pushed:
-1307130 - Merge branch 'main' of https://github.com/rishikeshsreehari/personal-blog
-1ea496d - Testing pre-push agian
-Current push count: 
-Hook finished at Wed, Nov 20, 2024  5:31:51 PM
+Log file exists: Yes
+Skipping merge commit
+No commits to process after ignoring
