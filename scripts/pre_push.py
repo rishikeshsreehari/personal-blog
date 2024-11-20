@@ -13,6 +13,34 @@ VERSION_FILE = "data/version.json"
 LOG_FILE = "content/log.md"
 LOCK_FILE = ".git/pre-push.lock"
 
+def check_lock():
+    """Check if the lock file exists."""
+    return os.path.exists(LOCK_FILE)
+
+def create_lock():
+    """Create the lock file."""
+    Path(LOCK_FILE).touch()
+
+def remove_lock():
+    """Remove the lock file."""
+    if os.path.exists(LOCK_FILE):
+        os.remove(LOCK_FILE)
+
+def read_version_file():
+    """Read the version file and return its data."""
+    if not os.path.exists(VERSION_FILE):
+        data = {
+            "Version": "24.0.U.0000",
+            "PushCount": 0,
+            "LastCommitLong": "",
+            "LastCommitShort": ""
+        }
+        with open(VERSION_FILE, "w") as f:
+            json.dump(data, f, indent=4)
+    with open(VERSION_FILE, "r") as f:
+        return json.load(f)
+
+
 def get_commit_type_gui(commit_msg):
     """Show a GUI window to select commit type."""
     result = {"type": None}
