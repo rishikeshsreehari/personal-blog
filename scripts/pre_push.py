@@ -1,13 +1,18 @@
 import os
 import json
 import subprocess
+import sys
 
 # File paths
 PUSH_COUNT_FILE = "push.txt"
 VERSION_FILE = "data/version.json"
 
+def is_interactive():
+    """Check if the script is running in an interactive shell."""
+    return sys.stdin.isatty()
+
 def read_push_number():
-    # Read the current push number
+    """Read the current push number from the push count file."""
     if not os.path.exists(PUSH_COUNT_FILE):
         with open(PUSH_COUNT_FILE, "w") as f:
             f.write("0")
@@ -15,20 +20,23 @@ def read_push_number():
         return int(f.read().strip())
 
 def increment_push_number(current_push):
-    # Increment and save the push number
+    """Increment and save the push number."""
     new_push = current_push + 1
     with open(PUSH_COUNT_FILE, "w") as f:
         f.write(str(new_push))
     return new_push
 
 def get_git_commits():
-    # Get the list of commits to be pushed
+    """Retrieve the list of commits to be pushed."""
     commits = subprocess.check_output(["git", "log", "--oneline", "@{push}..HEAD"], text=True).strip()
     return commits.split("\n") if commits else []
 
 def get_commit_type(commit_message):
-    # Ask user for commit type
+    """Prompt for input or use default type when non-interactive."""
     print(f'> "{commit_message}"')
+    if not is_interactive():
+        print("Non-interactive mode detected. Defaulting to 'Update'.")
+        return "U"  # Default to Update
     print("Select type:")
     print("F) Fix\nN) New post\nU) Update\nX) Major change")
     choice = input("Your choice: ").upper()
@@ -38,7 +46,7 @@ def get_commit_type(commit_message):
     return choice
 
 def update_version_file(version):
-    # Update version file
+    """Update the version file with the new version number."""
     if not os.path.exists(VERSION_FILE):
         with open(VERSION_FILE, "w") as f:
             json.dump({"Version": version, "Commit": ""}, f, indent=4)
@@ -51,6 +59,7 @@ def update_version_file(version):
         json.dump(data, f, indent=4)
 
 def main():
+    """Main function to handle pre-push logic."""
     # Get all commits
     commits = get_git_commits()
     if not commits:
@@ -71,9 +80,9 @@ def main():
     # Generate the new version number
     current_push = read_push_number()
     push_number = increment_push_number(current_push)
-    version = f"24.{push_number}.{version_type}.{os.path.getmtime(VERSION_FILE):.0f}"[:10]
+    version = f"24.{push_number}.{version_type}.{os.path.basename(VERSION_FILE)[:4]}"
 
-    print(f"\nMultiple change types detected [{','.join(unique_types)}]" if version_type == "M" else "")
+    print(f"\n{'Multiple change types detected' if version_type == 'M' else ''}")
     print(f"Automatically setting version type to {version_type}")
     print(f"Final version: {version}\n")
 
