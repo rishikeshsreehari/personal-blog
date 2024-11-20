@@ -1,9 +1,7 @@
 import os
 import json
 import subprocess
-import sys
 
-# File path for version.json
 VERSION_FILE = "data/version.json"
 
 def get_git_commits():
@@ -12,7 +10,7 @@ def get_git_commits():
     return commits.split("\n") if commits else []
 
 def get_commit_type(commit_message):
-    """Prompt the user to categorize each commit."""
+    """Prompt for input to categorize each commit."""
     print(f'> "{commit_message}"')
     print("Select type:")
     print("F) Fix\nN) New post\nU) Update\nX) Major change")
@@ -73,9 +71,15 @@ def main():
     update_version_file(version, new_push_count)
     print(f"Updated version to {version} in {VERSION_FILE}")
 
+    # Temporarily disable the pre-push hook for version.json commit
+    os.environ["SKIP_PRE_PUSH"] = "1"
+
     # Stage and commit updated version.json
     subprocess.run(["git", "add", VERSION_FILE])
     subprocess.run(["git", "commit", "-m", f"Update version to {version}"])
+
+    # Remove the SKIP_PRE_PUSH variable to allow the next push to trigger the hook
+    del os.environ["SKIP_PRE_PUSH"]
 
     # Push changes
     subprocess.run(["git", "push", "origin", "main"])
