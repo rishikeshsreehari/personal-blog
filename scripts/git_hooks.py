@@ -141,7 +141,7 @@ def pre_commit():
         subprocess.run(["git", "commit", "-m", f"Bump version to {version}"])
     finally:
         remove_lock()
-        
+
 def post_commit():
     """Handle post-commit tasks."""
     if check_lock():
@@ -156,15 +156,6 @@ def post_commit():
             print("Could not retrieve current commit hash.")
             return
 
-        # Store current branch name
-        current_branch = subprocess.check_output(
-            ["git", "rev-parse", "--abbrev-ref", "HEAD"], 
-            text=True
-        ).strip()
-
-        # Create and checkout a temporary branch
-        subprocess.run(["git", "checkout", "-b", "temp-version-update"])
-
         # Update version.json with commit hash
         version_data = read_version_file()
         version_data["LastCommitLong"] = long_hash
@@ -173,13 +164,18 @@ def post_commit():
         with open(VERSION_FILE, "w") as f:
             json.dump(version_data, f, indent=4)
 
-        # Stage and commit updated version.json
-        subprocess.run(["git", "add", VERSION_FILE])
-        subprocess.run(["git", "commit", "--amend", "--no-edit"])
+        # Reset HEAD to previous commit
+        subprocess.run(["git", "reset", "--soft", "HEAD~1"])
         
-        # Switch back to original branch and delete temporary branch
-        subprocess.run(["git", "checkout", current_branch])
-        subprocess.run(["git", "branch", "-D", "temp-version-update"])
+        # Stage all changes including the updated version.json
+        subprocess.run(["git", "add", "-A"])
+        
+        # Recommit with the same message
+        last_commit_msg = subprocess.check_output(
+            ["git", "log", "-1", "--pretty=%B", long_hash],
+            text=True
+        ).strip()
+        subprocess.run(["git", "commit", "-m", last_commit_msg])
     finally:
         remove_lock()
 
