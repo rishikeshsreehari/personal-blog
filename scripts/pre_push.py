@@ -25,14 +25,23 @@ def get_commit_type(commit_message):
     return choice
 
 
-def get_latest_commit_hash():
-    """Get both full and short hash of the latest commit."""
+def get_commit_hash_after_stage():
+    """Get both full and short hash after staging changes."""
+    # Stage all changes first
+    subprocess.run(["git", "add", "."])
+    # Create a temporary commit to get the hash
+    subprocess.run(["git", "commit", "--no-verify", "-m", "Temporary commit for hash"])
+    
     full_hash = subprocess.check_output(
         ["git", "rev-parse", "HEAD"], text=True
     ).strip()
     short_hash = subprocess.check_output(
         ["git", "rev-parse", "--short", "HEAD"], text=True
     ).strip()
+    
+    # Reset the temporary commit but keep changes staged
+    subprocess.run(["git", "reset", "--soft", "HEAD^"])
+    
     return full_hash, short_hash
 
 
@@ -49,7 +58,9 @@ def read_version_file():
 
 def update_version_file(version, push_count):
     """Update the version and push count in the version file."""
-    full_hash, short_hash = get_latest_commit_hash()
+    # Stage current changes and get hash
+    full_hash, short_hash = get_commit_hash_after_stage()
+    
     data = {
         "Version": version,
         "PushCount": push_count,
@@ -103,9 +114,9 @@ def main():
     update_version_file(version, new_push_count)
     print(f"Updated version to {version} in {VERSION_FILE}")
 
-    # Stage and commit version.json in a new commit
-    subprocess.run(["git", "add", VERSION_FILE])
-    subprocess.run(["git", "commit", "-m", f"Update version to {version}"])
+    # Commit all changes in a single commit
+    subprocess.run(["git", "add", "."])
+    subprocess.run(["git", "commit", "--no-verify", "-m", f"Update version to {version}"])
 
 
 if __name__ == "__main__":
