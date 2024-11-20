@@ -5,87 +5,12 @@ import sys
 import platform
 import tkinter as tk
 from tkinter import ttk
-import ctypes
-import msvcrt
 
 VERSION_FILE = "data/version.json"
 
-def custom_input(prompt=""):
-    """Read input robustly, handling non-interactive environments."""
-    try:
-        # Try GUI first if in non-interactive environment
-        if not sys.stdin.isatty():
-            return get_commit_type_gui()
-            
-        # For interactive CLI
-        if platform.system() == "Windows":
-            print(prompt, end='', flush=True)
-            return input()
-        else:
-            return input(prompt)
-    except KeyboardInterrupt:
-        print("\nOperation cancelled by user")
-        sys.exit(1)
-    except Exception as e:
-        print(f"Unexpected error reading input: {e}")
-        return None
+## WOrks both in CLI and UI
 
-def check_interactive():
-    """Check if the script is running in an interactive shell."""
-    # Don't exit for non-interactive environments, fall back to GUI
-    return True
-
-def is_cli():
-    """Determine whether to use CLI or GUI mode."""
-    # Use GUI if not in interactive terminal
-    return sys.stdin.isatty()
-    """Read input robustly, handling non-interactive environments."""
-    try:
-        # For Windows Git hooks specifically
-        if platform.system() == "Windows":
-            # Create a temporary console window for input
-            kernel32 = ctypes.WinDLL('kernel32')
-            kernel32.AllocConsole()
-            
-            print(prompt, end='', flush=True)
-            
-            # Read input character by character
-            result = ""
-            while True:
-                if msvcrt.kbhit():
-                    char = msvcrt.getwch()
-                    if char == '\r':  # Enter key
-                        print()  # New line after input
-                        break
-                    if char == '\x03':  # Ctrl+C
-                        raise KeyboardInterrupt
-                    print(char, end='', flush=True)
-                    result += char
-            
-            # Free the console
-            kernel32.FreeConsole()
-            return result
-        else:
-            return input(prompt)
-    except KeyboardInterrupt:
-        print("\nOperation cancelled by user")
-        sys.exit(1)
-    except Exception as e:
-        print(f"Unexpected error reading input: {e}")
-        return None
-
-def check_interactive():
-    """Check if the script is running in an interactive shell."""
-    # Skip the check completely for Windows
-    if platform.system() == "Windows":
-        return True
-    return sys.stdin.isatty()
-
-def is_cli():
-    """Force CLI mode."""
-    return True
-
-def get_commit_type_gui():
+def get_commit_type():
     """Show a GUI window to select commit type."""
     result = {"type": None}
     
@@ -97,7 +22,7 @@ def get_commit_type_gui():
     root = tk.Tk()
     root.title("Select Commit Type")
     
-    # Center the window
+    # Center the window and bring to front
     window_width = 300
     window_height = 200
     screen_width = root.winfo_screenwidth()
@@ -106,10 +31,12 @@ def get_commit_type_gui():
     y = (screen_height - window_height) // 2
     root.geometry(f"{window_width}x{window_height}+{x}+{y}")
     
+    # Make window stay on top
+    root.attributes('-topmost', True)
+    
     label = ttk.Label(root, text="Select the type of commit:", padding=10)
     label.pack()
     
-    # Style for buttons
     style = ttk.Style()
     style.configure('Custom.TButton', padding=5)
     
@@ -131,33 +58,6 @@ def get_commit_type_gui():
     
     root.mainloop()
     return result["type"]
-
-def get_commit_type_cli():
-    """Get commit type via command line with robust input handling."""
-    max_attempts = 3
-    attempts = 0
-    
-    while attempts < max_attempts:
-        print("\nSelect commit type:")
-        print("F) Fix")
-        print("N) New post")
-        print("U) Update")
-        print("X) Major change")
-        
-        choice = custom_input("Your choice: ")
-        if choice is None:
-            return None
-            
-        choice = choice.strip().upper()
-        if choice in ["F", "N", "U", "X"]:
-            return choice
-            
-        attempts += 1
-        if attempts < max_attempts:
-            print(f"Invalid choice '{choice}', please select F, N, U, or X. ({max_attempts - attempts} attempts remaining)")
-        else:
-            print("Maximum attempts reached. Aborting commit.")
-            sys.exit(1)
 
 def get_staged_changes():
     """Get the staged changes message."""
@@ -197,13 +97,8 @@ def main():
         print("Skipping version update for version.json commit")
         exit(0)
 
-    # Determine whether to use CLI or GUI based on the environment
-    if is_cli():
-        print("Running in CLI mode.")
-        commit_type = get_commit_type_cli()
-    else:
-        print("Running in GUI mode.")
-        commit_type = get_commit_type_gui()
+    # Get commit type using GUI
+    commit_type = get_commit_type()
 
     if not commit_type:
         print("No commit type selected. Aborting commit.")
