@@ -46,17 +46,16 @@ def get_commit_type(commit_message):
     return choice
 
 def update_version_file(version):
-    """Update the version file with the new version number."""
+    """Update only the version field in the version file."""
     if not os.path.exists(VERSION_FILE):
         with open(VERSION_FILE, "w") as f:
-            json.dump({"Version": version, "Commit": ""}, f, indent=4)
-    with open(VERSION_FILE, "r") as f:
-        data = json.load(f)
-    current_commit = subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip()
-    data["Version"] = version
-    data["Commit"] = current_commit
-    with open(VERSION_FILE, "w") as f:
-        json.dump(data, f, indent=4)
+            json.dump({"Version": version}, f, indent=4)
+    else:
+        with open(VERSION_FILE, "r") as f:
+            data = json.load(f)
+        data["Version"] = version
+        with open(VERSION_FILE, "w") as f:
+            json.dump(data, f, indent=4)
 
 def main():
     """Main function to handle pre-push logic."""
@@ -80,7 +79,7 @@ def main():
     # Generate the new version number
     current_push = read_push_number()
     push_number = increment_push_number(current_push)
-    version = f"24.{push_number}.{version_type}.{os.path.basename(VERSION_FILE)[:4]}"
+    version = f"24.{push_number}.{version_type}.1911"
 
     print(f"\n{'Multiple change types detected' if version_type == 'M' else ''}")
     print(f"Automatically setting version type to {version_type}")
