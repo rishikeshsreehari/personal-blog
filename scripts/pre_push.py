@@ -218,7 +218,7 @@ def pre_push():
         # Pull latest changes first
         subprocess.run(["git", "pull", "--rebase"])
         
-        # Let the normal git push continue
+        # Let the normal git push continue...
         return 0
         
     except Exception as e:
