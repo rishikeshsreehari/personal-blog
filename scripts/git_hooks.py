@@ -25,19 +25,18 @@ def remove_lock():
     if os.path.exists(LOCK_FILE):
         os.remove(LOCK_FILE)
 
-def get_parent_commit_hash():
-    """Get the parent commit hash."""
+def get_current_commit_hash():
+    """Get the current commit hash."""
     try:
-        # Get the parent commit hash
+        # Get the current commit hash
         long_hash = subprocess.check_output(
-            ["git", "rev-parse", "HEAD^"], text=True
+            ["git", "rev-parse", "HEAD"], text=True
         ).strip()
         short_hash = subprocess.check_output(
-            ["git", "rev-parse", "--short", "HEAD^"], text=True
+            ["git", "rev-parse", "--short", "HEAD"], text=True
         ).strip()
         return long_hash, short_hash
     except subprocess.CalledProcessError:
-        # If this is the first commit, there is no parent
         return "", ""
 
 def read_version_file():
@@ -210,15 +209,15 @@ def post_commit():
     try:
         create_lock()
         
-        # Get the parent commit hash
-        long_hash, short_hash = get_parent_commit_hash()
+        # Get the current commit hash
+        long_hash, short_hash = get_current_commit_hash()
         
         if long_hash and short_hash:
             # Read current version file
             with open(VERSION_FILE, "r") as f:
                 data = json.load(f)
             
-            # Update with parent commit hash
+            # Update with current commit hash
             data["LastCommitLong"] = long_hash
             data["LastCommitShort"] = short_hash
             
@@ -230,11 +229,11 @@ def post_commit():
             subprocess.run(["git", "add", VERSION_FILE])
             subprocess.run(["git", "commit", "--amend", "--no-edit", "--no-verify"])
             
-            print(f"Updated with parent commit hash in {VERSION_FILE}")
-            print(f"Parent hash: {long_hash}")
+            print(f"Updated with current commit hash in {VERSION_FILE}")
+            print(f"Long hash: {long_hash}")
             print(f"Short hash: {short_hash}")
         else:
-            print("No parent commit found (might be first commit)")
+            print("Could not get current commit hash")
             
     except Exception as e:
         print(f"Error updating commit hashes: {e}")
