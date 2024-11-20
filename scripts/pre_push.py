@@ -89,12 +89,7 @@ def main():
     subprocess.run(["git", "add", VERSION_FILE])
     subprocess.run(["git", "commit", "-m", f"Update version to {version}"])
 
-    # Push changes and exit after success
-    result = subprocess.run(["git", "push", "origin", "main"])
-    if result.returncode == 0:
-        print(f"Push count incremented to {new_push_count} and changes pushed.")
-        return  # Exit to prevent re-triggering the hook
-
+    
 
 
 
