@@ -150,7 +150,7 @@ def post_commit():
     create_lock()
 
     try:
-        # Get the commit hash that was just created
+        # Get the commit hash that was just createdd
         long_hash, short_hash = get_current_commit_hash()
         if not long_hash or not short_hash:
             print("Could not retrieve current commit hash.")
