@@ -53,8 +53,15 @@ def read_version_file():
     with open(VERSION_FILE, "r") as f:
         return json.load(f)
 
+def get_staged_changes():
+    """Get the staged changes message."""
+    staged = subprocess.check_output(
+        ["git", "diff", "--cached", "--name-status"], text=True
+    ).strip()
+    return staged.split("\n") if staged else []
+
 def is_cli():
-    """Check if running in CLI mode"""
+    """Check if running in CLI mode."""
     return sys.stdin.isatty() and sys.stdout.isatty()
 
 def custom_input(prompt=""):
@@ -71,53 +78,6 @@ def custom_input(prompt=""):
     except Exception as e:
         print(f"Unexpected error reading input: {e}")
         return None
-
-def get_commit_type_gui():
-    """Show a GUI window to select commit type."""
-    result = {"type": None}
-    
-    def on_button_click(type_choice):
-        result["type"] = type_choice
-        root.quit()
-        root.destroy()
-    
-    root = tk.Tk()
-    root.title("Select Commit Type")
-    
-    window_width = 300
-    window_height = 200
-    screen_width = root.winfo_screenwidth()
-    screen_height = root.winfo_screenheight()
-    x = (screen_width - window_width) // 2
-    y = (screen_height - window_height) // 2
-    root.geometry(f"{window_width}x{window_height}+{x}+{y}")
-    
-    root.attributes('-topmost', True)
-    
-    label = ttk.Label(root, text="Select the type of commit:", padding=10)
-    label.pack()
-    
-    style = ttk.Style()
-    style.configure('Custom.TButton', padding=5)
-    
-    buttons = [
-        ("Fix", "F"),
-        ("New Post", "N"),
-        ("Update", "U"),
-        ("Major Change", "X")
-    ]
-    
-    for text, type_code in buttons:
-        btn = ttk.Button(
-            root, 
-            text=text,
-            style='Custom.TButton',
-            command=lambda t=type_code: on_button_click(t)
-        )
-        btn.pack(pady=5)
-    
-    root.mainloop()
-    return result["type"]
 
 def get_commit_type_cli():
     """Get commit type via command line with robust input handling."""
@@ -146,13 +106,6 @@ def get_commit_type_cli():
             print("Maximum attempts reached. Aborting commit.")
             sys.exit(1)
 
-def get_staged_changes():
-    """Get the staged changes message."""
-    staged = subprocess.check_output(
-        ["git", "diff", "--cached", "--name-status"], text=True
-    ).strip()
-    return staged.split("\n") if staged else []
-
 # Main Functions
 def pre_commit():
     """Handle pre-commit tasks."""
@@ -172,7 +125,7 @@ def pre_commit():
         print("Running in CLI mode.")
         commit_type = get_commit_type_cli()
     else:
-        commit_type = get_commit_type_gui()
+        commit_type = "U"  # Default type if not interactive (fallback)
 
     if not commit_type:
         print("No commit type selected. Aborting commit.")
@@ -186,38 +139,61 @@ def pre_commit():
     # Get current date in DDMM format
     current_date = datetime.now().strftime("%d%m")
 
-    # Generate version number
+    # Generate version number (without hash)
     version = f"24.{new_push_count}.{commit_type}.{current_date}"
 
-    # Get commit hash beforehand
-    long_hash, short_hash = get_current_commit_hash()
-    if not long_hash or not short_hash:
-        print("Could not retrieve current commit hash.")
-        exit(1)
+    print(f"Pre-commit: Setting version to {version}")
 
-    print(f"Setting version to: {version}")
-    print(f"Setting commit hashes: {long_hash} (long), {short_hash} (short)")
-
-    # Update version.json
+    # Update version.json with new version and placeholder for hash
     version_data["Version"] = version
     version_data["PushCount"] = new_push_count
-    version_data["LastCommitLong"] = long_hash
-    version_data["LastCommitShort"] = short_hash
+    version_data["LastCommitLong"] = "TBD"
+    version_data["LastCommitShort"] = "TBD"
 
     with open(VERSION_FILE, "w") as f:
         json.dump(version_data, f, indent=4)
-    print(f"Updated version to {version} in {VERSION_FILE}")
 
-    # Stage version.json
-    subprocess.run(["git", "add", VERSION_FILE])
+    # Stage all changes
+    subprocess.run(["git", "add", "-u"])
+
+    # Create a commit
+    subprocess.run(["git", "commit", "-m", f"Bump version to {version}"])
 
 
 def post_commit():
-    """Log post-commit actions (no changes to commit)."""
-    long_hash, short_hash = get_current_commit_hash()
-    print(f"Post-commit: Last commit hashes: {long_hash} (long), {short_hash} (short)")
+    """Handle post-commit tasks."""
+    if check_lock():
+        return
 
+    try:
+        create_lock()
 
+        # Get the current commit hash
+        long_hash, short_hash = get_current_commit_hash()
+        if not long_hash or not short_hash:
+            print("Could not retrieve current commit hash.")
+            return
+
+        # Read the version file
+        version_data = read_version_file()
+
+        # Update with the current commit hash
+        version_data["LastCommitLong"] = long_hash
+        version_data["LastCommitShort"] = short_hash
+
+        # Write the updated version file
+        with open(VERSION_FILE, "w") as f:
+            json.dump(version_data, f, indent=4)
+        print(f"Post-commit: Updated version.json with commit hash {short_hash}")
+
+        # Stage and amend the last commit
+        subprocess.run(["git", "add", VERSION_FILE])
+        subprocess.run(["git", "commit", "--amend", "--no-edit", "--no-verify"])
+
+    except Exception as e:
+        print(f"Error during post-commit: {e}")
+    finally:
+        remove_lock()
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "post-commit":
@@ -225,4 +201,5 @@ if __name__ == "__main__":
         post_commit()
         print("Post-commit hook completed")
     else:
+        print("Starting pre-commit hook...")
         pre_commit()
