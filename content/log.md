@@ -15,6 +15,11 @@ This is a place where I track all changes to my log. I hope this time it works!!
 ## 2024-11-20
 
 ### Fixes
+- Added version hash (6a877a4)
+- Added version hash (2ee4cd5)
+## 2024-11-20
+
+### Fixes
 - final test (e2d0b25)
 ## 2024-11-20
 
