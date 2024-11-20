@@ -36,6 +36,6 @@ At times, the movie felt like an amalgamation of 50 First Dates and Shutter Isla
 
 Overall, it’s a decent watch with solid performances and filmmaking, with no lag! Loved Vijaya Raghavan’s performance, especially. Asif really surprised me with his acting!
 
-*Watched on 20-09-2024 at VOX Cinemas, Abu Dhabi Mall*
+*Watched on 20-09-2024 at VOX Cinemas, Abu Dhabi Mall*  
 *Review written on: 27-09-2024*
 
