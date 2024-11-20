@@ -42,7 +42,6 @@ def update_version_file(version, push_count):
     with open(VERSION_FILE, "w") as f:
         json.dump(data, f, indent=4)
 
-
 def main():
     """Main function to handle pre-push tasks."""
     # Get commits to be pushed
@@ -95,6 +94,8 @@ def main():
     if result.returncode == 0:
         print(f"Push count incremented to {new_push_count} and changes pushed.")
         return  # Exit to prevent re-triggering the hook
+
+
 
 
 if __name__ == "__main__":
