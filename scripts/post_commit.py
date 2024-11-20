@@ -2,16 +2,26 @@ import os
 import json
 import subprocess
 import sys
-
-# Check for recursion
-if os.environ.get('POST_COMMIT_RUNNING') == '1':
-    print("Skipping recursive post-commit hook")
-    sys.exit(0)
-
-# Set flag to prevent recursion
-os.environ['POST_COMMIT_RUNNING'] = '1'
+from pathlib import Path
 
 VERSION_FILE = "data/version.json"
+LOCK_FILE = ".git/post-commit.lock"
+
+def check_lock():
+    """Check if lock exists and is still valid"""
+    if os.path.exists(LOCK_FILE):
+        print("Lock file exists, skipping post-commit hook")
+        return True
+    return False
+
+def create_lock():
+    """Create lock file"""
+    Path(LOCK_FILE).touch()
+
+def remove_lock():
+    """Remove lock file"""
+    if os.path.exists(LOCK_FILE):
+        os.remove(LOCK_FILE)
 
 def get_git_hashes():
     """Get the latest git commit hashes (long and short)."""
@@ -28,7 +38,12 @@ def get_git_hashes():
 
 def update_commit_hashes():
     """Update the commit hashes in version.json after commit."""
+    if check_lock():
+        return
+
     try:
+        create_lock()
+        
         with open(VERSION_FILE, "r") as f:
             data = json.load(f)
         
@@ -51,11 +66,10 @@ def update_commit_hashes():
             
     except Exception as e:
         print(f"Error updating commit hashes: {e}")
+    finally:
+        remove_lock()
 
 if __name__ == "__main__":
     print("Starting post-commit hook...")
     update_commit_hashes()
     print("Post-commit hook completed")
-
-# Clear the environment variable
-os.environ.pop('POST_COMMIT_RUNNING', None)
