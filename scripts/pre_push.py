@@ -120,10 +120,10 @@ def determine_version_type(commit_entries):
 def update_changelog(commit_entries, version):
     """Update the changelog with new commits."""
     if not os.path.exists(LOG_FILE):
-        with open(LOG_FILE, "w") as f:
+        with open(LOG_FILE, "w", encoding='utf-8') as f:
             f.write("<!--LOG_PLACEHOLDER_START-->\n\n<!--LOG_PLACEHOLDER_END-->")
     
-    with open(LOG_FILE, "r") as f:
+    with open(LOG_FILE, "r", encoding='utf-8') as f:
         content = f.read()
     
     start_marker = "<!--LOG_PLACEHOLDER_START-->"
@@ -134,12 +134,12 @@ def update_changelog(commit_entries, version):
     
     current_date = datetime.now().strftime("%Y-%m-%d")
     
-    # Group commits by type
+    # Group commits by type without emojis
     commits_by_type = {
-        "F": "🐛 Fixes",
-        "N": "✨ New Features",
-        "U": "🔧 Updates",
-        "X": "💥 Major Changes"
+        "F": "Fixes",
+        "N": "New Features",
+        "U": "Updates",
+        "X": "Major Changes"
     }
     
     type_entries = {t: [] for t in commits_by_type.keys()}
@@ -172,81 +172,10 @@ def update_changelog(commit_entries, version):
         content[end_idx:]
     )
     
-    with open(LOG_FILE, "w") as f:
+    with open(LOG_FILE, "w", encoding='utf-8') as f:
         f.write(new_content)
-
-
-    """Handle pre-push tasks."""
-    if check_lock():
-        return
-
-    create_lock()
-
-    try:
-        commits = get_unpushed_commits()
-        if not commits:
-            print("No unpushed commits found.")
-            return
-
-        # Check if the last commit is already a version bump
-        last_commit_msg = subprocess.check_output(
-            ["git", "log", "-1", "--pretty=%B"],
-            text=True
-        ).strip()
         
-        if last_commit_msg.startswith("Pre-push update:"):
-            return  # Skip if we've already processed this batch
-
-        commit_entries = []
-        for commit in commits:
-            hash, msg = commit.split('|')
-            commit_type = get_commit_type_gui(msg)
-            if not commit_type:
-                print(f"No type selected for commit {hash}. Aborting push.")
-                sys.exit(1)
-            commit_entries.append((hash, msg, commit_type))
-
-        # Get the previous commit hash before we make any changes
-        long_hash, short_hash = get_current_commit_hash()
-
-        # Determine version type using the new logic
-        version_type = determine_version_type(commit_entries)
-
-        # Update version
-        version_data = read_version_file()
-        current_push_count = version_data.get("PushCount", 0)
-        new_push_count = current_push_count + 1
-        current_date = datetime.now().strftime("%d%m")
         
-        version = f"24.{new_push_count}.{version_type}.{current_date}"
-        
-        version_data["Version"] = version
-        version_data["PushCount"] = new_push_count
-        version_data["LastCommitLong"] = long_hash
-        version_data["LastCommitShort"] = short_hash
-
-        with open(VERSION_FILE, "w") as f:
-            json.dump(version_data, f, indent=4)
-
-        # Update changelog
-        update_changelog(commit_entries)
-
-        # Stage and commit version and log updates
-        subprocess.run(["git", "add", VERSION_FILE, LOG_FILE])
-        subprocess.run(["git", "commit", "-m", f"Pre-push update: Bump version to {version} and update changelog"])
-        
-        # Pull latest changes first
-        subprocess.run(["git", "pull", "--rebase"])
-        
-        # Let the normal git push continue
-        return 0
-        
-    except Exception as e:
-        print(f"Error during pre-push: {e}")
-        sys.exit(1)
-    finally:
-        remove_lock()
-
 def get_unpushed_commits():
     """Get all commits that haven't been pushed yet with their changed files."""
     try:
