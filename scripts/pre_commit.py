@@ -8,10 +8,9 @@ from tkinter import ttk
 
 VERSION_FILE = "data/version.json"
 
-def is_vscode():
-    """Check if running from VS Code Git UI"""
-    # VS Code sets specific environment variables
-    return 'VSCODE_GIT_IPC_HANDLE' in os.environ
+def is_cli():
+    """Check if running in CLI mode"""
+    return sys.stdin.isatty() and sys.stdout.isatty()
 
 def custom_input(prompt=""):
     """Read input robustly, handling non-interactive environments."""
@@ -143,11 +142,11 @@ def main():
         exit(0)
 
     # Determine whether to use CLI or GUI based on the environment
-    if is_vscode():
-        commit_type = get_commit_type_gui()
-    else:
+    if is_cli():
         print("Running in CLI mode.")
         commit_type = get_commit_type_cli()
+    else:
+        commit_type = get_commit_type_gui()
 
     if not commit_type:
         print("No commit type selected. Aborting commit.")
@@ -158,12 +157,12 @@ def main():
     current_push_count = version_data.get("PushCount", 0)
     new_push_count = current_push_count + 1
 
-    # Generate version numberr
+    # Generate version number
     version = f"24.{new_push_count}.{commit_type}.1911"
 
     print(f"Setting version to: {version}")
 
-    # Update version.jsonnn
+    # Update version.json
     update_version_file(version, new_push_count)
     print(f"Updated version to {version} in {VERSION_FILE}")
 
