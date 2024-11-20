@@ -130,8 +130,8 @@ def update_version_file(version, push_count):
     data = {
         "Version": version,
         "PushCount": push_count,
-        "LastCommitLong": "",  # Will be updated in post-commit
-        "LastCommitShort": ""  # Will be updated in post-commit
+        "LastCommitLong": "",  # Clear the old hash
+        "LastCommitShort": ""  # Clear the old hash
     }
     with open(VERSION_FILE, "w") as f:
         json.dump(data, f, indent=4)
