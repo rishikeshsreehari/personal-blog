@@ -106,7 +106,7 @@ def get_unpushed_commits():
         return []
 
 def update_changelog(commit_entries):
-    """Update the changelog with new commits."""
+    """Update the changelog with new commits"""
     if not os.path.exists(LOG_FILE):
         with open(LOG_FILE, "w") as f:
             f.write("<!--LOG_PLACEHOLDER_START-->\n\n<!--LOG_PLACEHOLDER_END-->")
