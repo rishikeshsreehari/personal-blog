@@ -46,7 +46,7 @@ These changelogs are generated automatically using [`pre_push.py`](https://githu
    - *Files:*  
      1. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
 
-2. **Updated colophone**  
+2. **Updated colophon**  
    - *Commit:* [`fd28466`](https://github.com/rishikeshsreehari/personal-blog/commit/fd28466)  
    - *Files:*  
      1. [`content/colophon.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/colophon.md)
