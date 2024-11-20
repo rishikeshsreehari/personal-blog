@@ -158,12 +158,12 @@ def main():
     current_push_count = version_data.get("PushCount", 0)
     new_push_count = current_push_count + 1
 
-    # Generate version number
+    # Generate version numberr
     version = f"24.{new_push_count}.{commit_type}.1911"
 
     print(f"Setting version to: {version}")
 
-    # Update version.json
+    # Update version.jsonnn
     update_version_file(version, new_push_count)
     print(f"Updated version to {version} in {VERSION_FILE}")
 
