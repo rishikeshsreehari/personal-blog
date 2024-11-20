@@ -40,6 +40,8 @@ def read_version_file():
     with open(VERSION_FILE, "r") as f:
         return json.load(f)
     
+    
+#Test    
 def get_current_commit_hash():
     """Get the current commit hash."""
     try:
