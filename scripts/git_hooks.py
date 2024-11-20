@@ -174,7 +174,7 @@ def post_commit():
         with open(VERSION_FILE, "w") as f:
             json.dump(version_data, f, indent=4)
 
-        # Stage and commit just the version.json update
+        # Stage and commit just the version.json updateee
         subprocess.run(["git", "add", VERSION_FILE])
         subprocess.run(["git", "commit", "-m", "Update version.json with commit hash"])
     finally:
