@@ -7,7 +7,7 @@ disable_comments: true
 ShowReadingTime: false
 ---
 
-This is a place where I track all changes to my log!!
+This is a place where I track all changes to my log!!!
 
 <!--LOG_PLACEHOLDER_START-->
 
