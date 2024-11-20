@@ -8,8 +8,22 @@ from datetime import datetime
 from pathlib import Path
 
 VERSION_FILE = "data/version.json"
+LOCK_FILE = ".git/pre-commit.lock"
 
 # Utility Functions
+def check_lock():
+    """Check if the lock file exists."""
+    return os.path.exists(LOCK_FILE)
+
+def create_lock():
+    """Create the lock file."""
+    Path(LOCK_FILE).touch()
+
+def remove_lock():
+    """Remove the lock file."""
+    if os.path.exists(LOCK_FILE):
+        os.remove(LOCK_FILE)
+
 def get_current_commit_hash():
     """Get the current commit hash."""
     try:
@@ -84,48 +98,93 @@ def get_commit_type_gui():
     root.mainloop()
     return result["type"]
 
-# Main Function
+# Main Functions
 def pre_commit():
     """Handle pre-commit tasks."""
-    # Check for staged changes
-    staged_changes = subprocess.check_output(
-        ["git", "diff", "--cached", "--name-only"], text=True
-    ).strip().splitlines()
-    if not staged_changes:
-        print("No changes staged for commit.")
-        sys.exit(1)
+    if check_lock():
+        return
 
-    # Get commit type via GUI
-    commit_type = get_commit_type_gui()
-    if not commit_type:
-        print("No commit type selected. Aborting commit.")
-        sys.exit(1)
+    create_lock()
 
-    # Read and update version
-    version_data = read_version_file()
-    current_push_count = version_data.get("PushCount", 0)
-    new_push_count = current_push_count + 1
-    current_date = datetime.now().strftime("%d%m")
-    long_hash, short_hash = get_current_commit_hash()
+    try:
+        # Check for staged changes
+        staged_changes = subprocess.check_output(
+            ["git", "diff", "--cached", "--name-only"], text=True
+        ).strip().splitlines()
+        if not staged_changes:
+            print("No changes staged for commit.")
+            sys.exit(1)
 
-    # If no prior commit exists, use placeholders
-    if not long_hash:
-        long_hash = "INITIAL"
-        short_hash = "INITIAL"
+        # Get commit type via GUI
+        commit_type = get_commit_type_gui()
+        if not commit_type:
+            print("No commit type selected. Aborting commit.")
+            sys.exit(1)
 
-    version = f"24.{new_push_count}.{commit_type}.{current_date}"
+        # Read and update version
+        version_data = read_version_file()
+        current_push_count = version_data.get("PushCount", 0)
+        new_push_count = current_push_count + 1
+        current_date = datetime.now().strftime("%d%m")
+        version = f"24.{new_push_count}.{commit_type}.{current_date}"
 
-    version_data["Version"] = version
-    version_data["PushCount"] = new_push_count
-    version_data["LastCommitLong"] = long_hash
-    version_data["LastCommitShort"] = short_hash
+        version_data["Version"] = version
+        version_data["PushCount"] = new_push_count
+        version_data["LastCommitLong"] = "TBD"
+        version_data["LastCommitShort"] = "TBD"
 
-    with open(VERSION_FILE, "w") as f:
-        json.dump(version_data, f, indent=4)
+        with open(VERSION_FILE, "w") as f:
+            json.dump(version_data, f, indent=4)
 
-    # Stage changes and commit
-    subprocess.run(["git", "add", VERSION_FILE])
-    subprocess.run(["git", "commit", "--amend", "--no-edit", "--no-verify"])
+        # Stage changes and commit
+        subprocess.run(["git", "add", "-u"])
+        subprocess.run(["git", "commit", "-m", f"Bump version to {version}"])
+    finally:
+        remove_lock()
+        
+def post_commit():
+    """Handle post-commit tasks."""
+    if check_lock():
+        return
+
+    create_lock()
+
+    try:
+        # Get current commit hash
+        long_hash, short_hash = get_current_commit_hash()
+        if not long_hash or not short_hash:
+            print("Could not retrieve current commit hash.")
+            return
+
+        # Store current branch name
+        current_branch = subprocess.check_output(
+            ["git", "rev-parse", "--abbrev-ref", "HEAD"], 
+            text=True
+        ).strip()
+
+        # Create and checkout a temporary branch
+        subprocess.run(["git", "checkout", "-b", "temp-version-update"])
+
+        # Update version.json with commit hash
+        version_data = read_version_file()
+        version_data["LastCommitLong"] = long_hash
+        version_data["LastCommitShort"] = short_hash
+
+        with open(VERSION_FILE, "w") as f:
+            json.dump(version_data, f, indent=4)
+
+        # Stage and commit updated version.json
+        subprocess.run(["git", "add", VERSION_FILE])
+        subprocess.run(["git", "commit", "--amend", "--no-edit"])
+        
+        # Switch back to original branch and delete temporary branch
+        subprocess.run(["git", "checkout", current_branch])
+        subprocess.run(["git", "branch", "-D", "temp-version-update"])
+    finally:
+        remove_lock()
 
 if __name__ == "__main__":
-    pre_commit()
+    if len(sys.argv) > 1 and sys.argv[1] == "post-commit":
+        post_commit()
+    else:
+        pre_commit()
