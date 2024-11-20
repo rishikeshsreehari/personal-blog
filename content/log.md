@@ -12,6 +12,16 @@ This blog adheres to the **Personal Blog Versioning Manifesto**. All changes and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.624.U.2111** (2024-11-21)
+
+#### **Updations**
+**Updated hooks location**  
+   - *Commit:* [`89a9f22`](https://github.com/rishikeshsreehari/personal-blog/commit/89a9f22)  
+   - *Files:*  
+     - [`hooks/pre-push`](https://github.com/rishikeshsreehari/personal-blog/blob/main/hooks/pre-push)  
+
+
+---
 ### **v24.623.M.2111** (2024-11-21)
 
 #### **Fixes**
