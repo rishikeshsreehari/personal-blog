@@ -139,7 +139,6 @@ def pre_commit():
         # Stage version.json changes
         subprocess.run(["git", "add", VERSION_FILE])
         
-        # Original commit will proceed after this
     finally:
         remove_lock()
 
