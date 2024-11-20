@@ -16,7 +16,7 @@ This blog adheres to the **Personal Blog Versioning Manifesto**. All changes and
 
 #### **Fixes**
 
-1. **Fomratting issue in watch/kishkindha**  
+1. **Formatting issue in watch/kishkindha**  
    - *Commit:* [`bbb631a`](https://github.com/rishikeshsreehari/personal-blog/commit/bbb631a)  
    - *Files:*  
      1. [`content/log.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/log.md)
