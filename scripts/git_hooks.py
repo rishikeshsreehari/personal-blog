@@ -6,8 +6,53 @@ import platform
 import tkinter as tk
 from tkinter import ttk
 from datetime import datetime
+from pathlib import Path
 
 VERSION_FILE = "data/version.json"
+LOCK_FILE = ".git/post-commit.lock"
+
+# Utility Functions
+def check_lock():
+    if os.path.exists(LOCK_FILE):
+        print("Lock file exists, skipping post-commit hook")
+        return True
+    return False
+
+def create_lock():
+    Path(LOCK_FILE).touch()
+
+def remove_lock():
+    if os.path.exists(LOCK_FILE):
+        os.remove(LOCK_FILE)
+
+def get_parent_commit_hash():
+    """Get the parent commit hash."""
+    try:
+        # Get the parent commit hash
+        long_hash = subprocess.check_output(
+            ["git", "rev-parse", "HEAD^"], text=True
+        ).strip()
+        short_hash = subprocess.check_output(
+            ["git", "rev-parse", "--short", "HEAD^"], text=True
+        ).strip()
+        return long_hash, short_hash
+    except subprocess.CalledProcessError:
+        # If this is the first commit, there is no parent
+        return "", ""
+
+def read_version_file():
+    """Read the version file and return its data."""
+    if not os.path.exists(VERSION_FILE):
+        data = {
+            "Version": "24.0.U.0000",
+            "PushCount": 0,
+            "LastCommitLong": "",
+            "LastCommitShort": ""
+        }
+        with open(VERSION_FILE, "w") as f:
+            json.dump(data, f, indent=4)
+    with open(VERSION_FILE, "r") as f:
+        return json.load(f)
 
 def is_cli():
     """Check if running in CLI mode"""
@@ -40,7 +85,6 @@ def get_commit_type_gui():
     root = tk.Tk()
     root.title("Select Commit Type")
     
-    # Center the window and bring to front
     window_width = 300
     window_height = 200
     screen_width = root.winfo_screenwidth()
@@ -49,7 +93,6 @@ def get_commit_type_gui():
     y = (screen_height - window_height) // 2
     root.geometry(f"{window_width}x{window_height}+{x}+{y}")
     
-    # Make window stay on top
     root.attributes('-topmost', True)
     
     label = ttk.Label(root, text="Select the type of commit:", padding=10)
@@ -111,33 +154,9 @@ def get_staged_changes():
     ).strip()
     return staged.split("\n") if staged else []
 
-def read_version_file():
-    """Read the version file and return its data."""
-    if not os.path.exists(VERSION_FILE):
-        data = {
-            "Version": "24.0.U.0000",
-            "PushCount": 0,
-            "LastCommitLong": "",
-            "LastCommitShort": ""
-        }
-        with open(VERSION_FILE, "w") as f:
-            json.dump(data, f, indent=4)
-    with open(VERSION_FILE, "r") as f:
-        return json.load(f)
-
-def update_version_file(version, push_count):
-    """Update the version in the version file."""
-    data = {
-        "Version": version,
-        "PushCount": push_count,
-        "LastCommitLong": "",  # Clear the old hash
-        "LastCommitShort": ""  # Clear the old hash
-    }
-    with open(VERSION_FILE, "w") as f:
-        json.dump(data, f, indent=4)
-
-def main():
-    """Main function to handle pre-commit tasks."""
+# Main Functions
+def pre_commit():
+    """Handle pre-commit tasks."""
     # Check if there are staged changes
     staged_changes = get_staged_changes()
     if not staged_changes:
@@ -149,7 +168,7 @@ def main():
         print("Skipping version update for version.json commit")
         exit(0)
 
-    # Determine whether to use CLI or GUI based on the environment
+    # Get commit type
     if is_cli():
         print("Running in CLI mode.")
         commit_type = get_commit_type_cli()
@@ -174,11 +193,58 @@ def main():
     print(f"Setting version to: {version}")
 
     # Update version.json
-    update_version_file(version, new_push_count)
+    version_data["Version"] = version
+    version_data["PushCount"] = new_push_count
+    with open(VERSION_FILE, "w") as f:
+        json.dump(version_data, f, indent=4)
     print(f"Updated version to {version} in {VERSION_FILE}")
 
     # Stage version.json
     subprocess.run(["git", "add", VERSION_FILE])
 
+def post_commit():
+    """Handle post-commit tasks."""
+    if check_lock():
+        return
+
+    try:
+        create_lock()
+        
+        # Get the parent commit hash
+        long_hash, short_hash = get_parent_commit_hash()
+        
+        if long_hash and short_hash:
+            # Read current version file
+            with open(VERSION_FILE, "r") as f:
+                data = json.load(f)
+            
+            # Update with parent commit hash
+            data["LastCommitLong"] = long_hash
+            data["LastCommitShort"] = short_hash
+            
+            # Write updated version file
+            with open(VERSION_FILE, "w") as f:
+                json.dump(data, f, indent=4)
+            
+            # Final amend
+            subprocess.run(["git", "add", VERSION_FILE])
+            subprocess.run(["git", "commit", "--amend", "--no-edit", "--no-verify"])
+            
+            print(f"Updated with parent commit hash in {VERSION_FILE}")
+            print(f"Parent hash: {long_hash}")
+            print(f"Short hash: {short_hash}")
+        else:
+            print("No parent commit found (might be first commit)")
+            
+    except Exception as e:
+        print(f"Error updating commit hashes: {e}")
+    finally:
+        remove_lock()
+
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1 and sys.argv[1] == "post-commit":
+        print("Starting post-commit hook...")
+        post_commit()
+        print("Post-commit hook completed")
+    else:
+        pre_commit()
