@@ -150,7 +150,17 @@ def post_commit():
     create_lock()
 
     try:
-        # Get the commit hash that was just createdd
+        # Check if this is a version.json update commit
+        last_commit_msg = subprocess.check_output(
+            ["git", "log", "-1", "--pretty=%B"], 
+            text=True
+        ).strip()
+        
+        # Skip if this is already a version update commit
+        if "Update version.json with commit hash" in last_commit_msg:
+            return
+
+        # Get the commit hash that was just created
         long_hash, short_hash = get_current_commit_hash()
         if not long_hash or not short_hash:
             print("Could not retrieve current commit hash.")
@@ -169,7 +179,6 @@ def post_commit():
         subprocess.run(["git", "commit", "-m", "Update version.json with commit hash"])
     finally:
         remove_lock()
-
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "post-commit":
