@@ -1,10 +1,61 @@
 import os
 import json
 import subprocess
+import sys
+import platform
 import tkinter as tk
 from tkinter import ttk
+import ctypes
+import msvcrt
 
 VERSION_FILE = "data/version.json"
+
+def custom_input(prompt=""):
+    """Read input robustly, handling non-interactive environments."""
+    try:
+        # For Windows Git hooks specifically
+        if platform.system() == "Windows":
+            # Create a temporary console window for input
+            kernel32 = ctypes.WinDLL('kernel32')
+            kernel32.AllocConsole()
+            
+            print(prompt, end='', flush=True)
+            
+            # Read input character by character
+            result = ""
+            while True:
+                if msvcrt.kbhit():
+                    char = msvcrt.getwch()
+                    if char == '\r':  # Enter key
+                        print()  # New line after input
+                        break
+                    if char == '\x03':  # Ctrl+C
+                        raise KeyboardInterrupt
+                    print(char, end='', flush=True)
+                    result += char
+            
+            # Free the console
+            kernel32.FreeConsole()
+            return result
+        else:
+            return input(prompt)
+    except KeyboardInterrupt:
+        print("\nOperation cancelled by user")
+        sys.exit(1)
+    except Exception as e:
+        print(f"Unexpected error reading input: {e}")
+        return None
+
+def check_interactive():
+    """Check if the script is running in an interactive shell."""
+    # Skip the check completely for Windows
+    if platform.system() == "Windows":
+        return True
+    return sys.stdin.isatty()
+
+def is_cli():
+    """Force CLI mode."""
+    return True
 
 def get_commit_type_gui():
     """Show a GUI window to select commit type."""
@@ -54,14 +105,31 @@ def get_commit_type_gui():
     return result["type"]
 
 def get_commit_type_cli():
-    """Get commit type via command line."""
-    print("Select commit type:")
-    print("F) Fix\nN) New post\nU) Update\nX) Major change")
-    choice = input("Your choice: ").upper()
-    while choice not in ["F", "N", "U", "X"]:
-        print("Invalid choice, please select F, N, U, or X.")
-        choice = input("Your choice: ").upper()
-    return choice
+    """Get commit type via command line with robust input handling."""
+    max_attempts = 3
+    attempts = 0
+    
+    while attempts < max_attempts:
+        print("\nSelect commit type:")
+        print("F) Fix")
+        print("N) New post")
+        print("U) Update")
+        print("X) Major change")
+        
+        choice = custom_input("Your choice: ")
+        if choice is None:
+            return None
+            
+        choice = choice.strip().upper()
+        if choice in ["F", "N", "U", "X"]:
+            return choice
+            
+        attempts += 1
+        if attempts < max_attempts:
+            print(f"Invalid choice '{choice}', please select F, N, U, or X. ({max_attempts - attempts} attempts remaining)")
+        else:
+            print("Maximum attempts reached. Aborting commit.")
+            sys.exit(1)
 
 def get_staged_changes():
     """Get the staged changes message."""
@@ -101,15 +169,17 @@ def main():
         print("Skipping version update for version.json commit")
         exit(0)
 
-    try:
-        # Try CLI first
+    # Determine whether to use CLI or GUI based on the environment
+    if is_cli():
+        print("Running in CLI mode.")
         commit_type = get_commit_type_cli()
-    except:
-        # If CLI fails, use GUI
+    else:
+        print("Running in GUI mode.")
         commit_type = get_commit_type_gui()
-        if not commit_type:
-            print("No commit type selected")
-            exit(1)
+
+    if not commit_type:
+        print("No commit type selected. Aborting commit.")
+        exit(1)
 
     # Read current version and push count
     version_data = read_version_file()
@@ -130,6 +200,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
-    
-#Very interesting
