@@ -111,19 +111,6 @@ def get_staged_changes():
     ).strip()
     return staged.split("\n") if staged else []
 
-def get_git_hashes():
-    """Get the latest git commit hashes (long and short)."""
-    try:
-        long_hash = subprocess.check_output(
-            ["git", "rev-parse", "HEAD"], text=True
-        ).strip()
-        short_hash = subprocess.check_output(
-            ["git", "rev-parse", "--short", "HEAD"], text=True
-        ).strip()
-        return long_hash, short_hash
-    except subprocess.CalledProcessError:
-        return None, None
-
 def read_version_file():
     """Read the version file and return its data."""
     if not os.path.exists(VERSION_FILE):
@@ -140,12 +127,11 @@ def read_version_file():
 
 def update_version_file(version, push_count):
     """Update the version in the version file."""
-    long_hash, short_hash = get_git_hashes()
     data = {
         "Version": version,
         "PushCount": push_count,
-        "LastCommitLong": long_hash or "",
-        "LastCommitShort": short_hash or ""
+        "LastCommitLong": "",  # Will be updated in post-commit
+        "LastCommitShort": ""  # Will be updated in post-commit
     }
     with open(VERSION_FILE, "w") as f:
         json.dump(data, f, indent=4)
@@ -187,7 +173,7 @@ def main():
 
     print(f"Setting version to: {version}")
 
-    # Update version.jsonn
+    # Update version.json
     update_version_file(version, new_push_count)
     print(f"Updated version to {version} in {VERSION_FILE}")
 
