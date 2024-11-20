@@ -189,11 +189,21 @@ def pre_commit():
     # Generate version number
     version = f"24.{new_push_count}.{commit_type}.{current_date}"
 
+    # Get commit hash beforehand
+    long_hash, short_hash = get_current_commit_hash()
+    if not long_hash or not short_hash:
+        print("Could not retrieve current commit hash.")
+        exit(1)
+
     print(f"Setting version to: {version}")
+    print(f"Setting commit hashes: {long_hash} (long), {short_hash} (short)")
 
     # Update version.json
     version_data["Version"] = version
     version_data["PushCount"] = new_push_count
+    version_data["LastCommitLong"] = long_hash
+    version_data["LastCommitShort"] = short_hash
+
     with open(VERSION_FILE, "w") as f:
         json.dump(version_data, f, indent=4)
     print(f"Updated version to {version} in {VERSION_FILE}")
@@ -201,44 +211,13 @@ def pre_commit():
     # Stage version.json
     subprocess.run(["git", "add", VERSION_FILE])
 
-def post_commit():
-    """Handle post-commit tasks."""
-    if check_lock():
-        return
 
-    try:
-        create_lock()
-        
-        # Get the current commit hash
-        long_hash, short_hash = get_current_commit_hash()
-        
-        if long_hash and short_hash:
-            # Read current version file
-            with open(VERSION_FILE, "r") as f:
-                data = json.load(f)
-            
-            # Update with current commit hash
-            data["LastCommitLong"] = long_hash
-            data["LastCommitShort"] = short_hash
-            
-            # Write updated version file
-            with open(VERSION_FILE, "w") as f:
-                json.dump(data, f, indent=4)
-            
-            # Final amend
-            subprocess.run(["git", "add", VERSION_FILE])
-            subprocess.run(["git", "commit", "--amend", "--no-edit", "--no-verify"])
-            
-            print(f"Updated with current commit hash in {VERSION_FILE}")
-            print(f"Long hash: {long_hash}")
-            print(f"Short hash: {short_hash}")
-        else:
-            print("Could not get current commit hash")
-            
-    except Exception as e:
-        print(f"Error updating commit hashes: {e}")
-    finally:
-        remove_lock()
+def post_commit():
+    """Log post-commit actions (no changes to commit)."""
+    long_hash, short_hash = get_current_commit_hash()
+    print(f"Post-commit: Last commit hashes: {long_hash} (long), {short_hash} (short)")
+
+
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "post-commit":
