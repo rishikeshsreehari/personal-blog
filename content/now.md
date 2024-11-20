@@ -8,25 +8,31 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 19-11-2024
+##### Last updated on 21-11-2024
 
-I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**!  
+I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**!    
+
 The local time here is ⏰ **{{< current_time >}}**  
+
 {{< current_weather >}}
 
 ---
 
-### 🔨 What am I Working on?
+### 🔨 What am I Doing?
 
-- [Currently unemployed](/hire), so spending most of my time applying for jobs.
-- Curating interesting stories at [10+1 Things](https://newsletter.rishikeshs.com/)!
-- Working on some [side projects](/projects) especially tweaking [npsnav.in](https://npsnav.in)
+-  [Currently unemployed](/hire), I’m dedicating most of my time to job applications and exploring freelance opportunities.
+- In search of [1000 True Fans](https://kk.org/thetechnium/1000-true-fans/) by curating interesting stories at [10+1 Things](https://newsletter.rishikeshs.com/)!
+- Unnecessarily tweaking and over-engineering this blog! You can see the progress [here](/log).
 
 ---
 
 ### ✈️ Going Home!
 
-I'll be in India from 23rd November to 16th December. My current plan is Mumbai → Nagpur → Chennai → Kochi. I'm excited to visit Mumbai to meet a friend after a long time, try some yummy street food, attend a friend's wedding in Nagpur, reconnect with family in Chennai, and spend time at home. We'll also take a short trip to my wife's ancestral house in Tanjavur! Super excited!
+I'll be in India from 23rd November to 16th December.
+
+My current plan is Mumbai → Nagpur → Chennai → Kochi.   
+
+I'm excited to visit Mumbai to meet a friend after a long time, try some yummy street food, attend a friend's wedding in Nagpur, reconnect with family in Chennai, and spend time at home. We'll also take a short trip to my wife's ancestral house in Tanjavur! Super excited!
 
 If you're based in any of these cities, feel free to [reach out](/contact)!
 
@@ -58,14 +64,20 @@ If you're based in any of these cities, feel free to [reach out](/contact)!
 
 
 ### 📺 What Am I Watching?
-- [Lost (2004)](https://www.serializd.com/show/Lost-4607) - Currently at S06E01 - I'm binge watching, and I want it to end!
+- [Lost (2004)](https://www.serializd.com/show/Lost-4607) - Currently at S06E04 - I'm binge watching, and I want it to end!
 ---
 
 ### 🏋 My Workout Regime
 
+Currently in travel mode with very little activity. Lots of junk food, no time spent in the gym, with occasional runs. Can't wait to bring back my bike, start cycling, hit the gym regularly, and get in shape!
+
+<!--  
+
 I'm currently focused on transforming my body and reducing my body fat to below 25%. This involves a lot of protein and long walks to ensure I'm in a calorie deficit while building muscle and losing fat.
 
 I'm now doing strength training 3x a week, following [Greg Nuckol's beginner program](https://www.boostcamp.app/coaches/greg-nuckols/greg-nuckols-beginner-program) on Boostcamp. On gym days, I try to walk 5km and on other days I try to do light jogs. [My ankle](/journal/ankle-sprain/) is feeling better, and the doctor has given the green light for short runs and squats with light weights. I still feel a bit uneasy with deep squats at the lower position. Need a bit more work on the stability part, few more rehab sessions to go. Can't wait to run freely!
+
+-->
 
 
 
