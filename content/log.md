@@ -12,6 +12,23 @@ This blog adheres to the **Personal Blog Versioning Manifesto**. All changes and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.623.M.2111** (2024-11-21)
+
+#### **Fixes**
+**Fixed a CF link issue in footer**  
+   - *Commit:* [`4faabe3`](https://github.com/rishikeshsreehari/personal-blog/commit/4faabe3)  
+   - *Files:*  
+     - [`themes/hugo-PaperMod/layouts/partials/footer.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/footer.html)  
+
+
+#### **Updations**
+**Updated footer with log page hyperlinked**  
+   - *Commit:* [`0c70178`](https://github.com/rishikeshsreehari/personal-blog/commit/0c70178)  
+   - *Files:*  
+     - [`themes/hugo-PaperMod/layouts/partials/footer.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/footer.html)  
+
+
+---
 ### **v24.622.U.2111** (2024-11-21)
 
 #### **Updations**
