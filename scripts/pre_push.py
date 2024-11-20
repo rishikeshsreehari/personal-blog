@@ -101,23 +101,34 @@ def get_commit_type_gui(commit_msg):
     return result["type"]
 
 def get_unpushed_commits():
-    """Get all commits that haven't been pushed yet."""
+    """Get all commits that haven't been pushed yet with their changed files."""
     try:
         remote_branch = subprocess.check_output(
             ["git", "rev-parse", "--abbrev-ref", "@{u}"],
             text=True
         ).strip()
         
-        # Exclude any pre-push update commits from the list
+        # Get commits
         commits = subprocess.check_output(
             ["git", "log", f"{remote_branch}..HEAD", "--pretty=format:%h|%s"],
             text=True
         ).strip().split('\n')
         
-        # Filter out empty strings and pre-push update commits
-        return [commit for commit in commits if commit and not commit.split('|')[1].startswith("Pre-push update:")]
+        commit_data = []
+        for commit in commits:
+            if commit and not commit.split('|')[1].startswith("Pre-push update:"):
+                hash, msg = commit.split('|')
+                # Get files changed in this commit
+                files = subprocess.check_output(
+                    ["git", "show", "--name-only", "--format=", hash],
+                    text=True
+                ).strip().split('\n')
+                commit_data.append((hash, msg, files))
+                
+        return commit_data
     except subprocess.CalledProcessError:
         return []
+
 
 def determine_version_type(commit_entries):
     """Determine version type based on commit entries."""
@@ -134,7 +145,7 @@ def determine_version_type(commit_entries):
     # If all commits are of same type, return that type
     return types.pop()  # Get the single type
 
-def update_changelog(commit_entries):
+def update_changelog(commit_entries, version):
     """Update the changelog with new commits."""
     if not os.path.exists(LOG_FILE):
         with open(LOG_FILE, "w") as f:
@@ -153,24 +164,34 @@ def update_changelog(commit_entries):
     
     # Group commits by type
     commits_by_type = {
-        "F": "### Fixes",
-        "N": "### New Posts",
-        "U": "### Updates",
-        "X": "### Major Changes"
+        "F": "🐛 Fixes",
+        "N": "✨ New Features",
+        "U": "🔧 Updates",
+        "X": "💥 Major Changes"
     }
     
     type_entries = {t: [] for t in commits_by_type.keys()}
-    for hash, msg, type in commit_entries:
-        type_entries[type].append(f"- {msg} ({hash})")
+    for hash, msg, type, files in commit_entries:
+        entry = [
+            f"**{msg}**  ",
+            f"   - **Commit:** `{hash}`  ",
+            "   - **Files:**  "
+        ]
+        for file in files:
+            if file.strip():  # Skip empty lines
+                entry.append(f"     - `{file}`  ")
+        type_entries[type].append("\n".join(entry) + "\n")
     
     # Build changelog section
-    changelog_section = [f"\n## {current_date}"]
+    changelog_section = [f"### **v{version}** ({current_date})\n"]
+    
     for type, title in commits_by_type.items():
         if type_entries[type]:
-            changelog_section.append(f"\n{title}")
+            changelog_section.append(f"#### **{title}**")
             changelog_section.extend(type_entries[type])
+            changelog_section.append("")  # Add blank line between sections
     
-    changelog_entry = "\n".join(changelog_section) + "\n"
+    changelog_entry = "\n".join(changelog_section) + "\n---\n"
     
     new_content = (
         content[:start_idx] + 
@@ -181,6 +202,7 @@ def update_changelog(commit_entries):
     
     with open(LOG_FILE, "w") as f:
         f.write(new_content)
+
 
 def pre_push():
     """Handle pre-push tasks."""
