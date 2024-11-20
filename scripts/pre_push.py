@@ -119,6 +119,8 @@ def determine_version_type(commit_entries):
 
 def update_changelog(commit_entries, version):
     """Update the changelog with new commits."""
+    REPO_URL = "https://github.com/rishikeshsreehari/personal-blog/"
+    
     if not os.path.exists(LOG_FILE):
         with open(LOG_FILE, "w", encoding='utf-8') as f:
             f.write("<!--LOG_PLACEHOLDER_START-->\n\n<!--LOG_PLACEHOLDER_END-->")
@@ -134,24 +136,23 @@ def update_changelog(commit_entries, version):
     
     current_date = datetime.now().strftime("%Y-%m-%d")
     
-    # Group commits by type without emojis
     commits_by_type = {
         "F": "Fixes",
-        "N": "New Features",
-        "U": "Updates",
-        "X": "Major Changes"
+        "N": "Additions",
+        "U": "Updations",
+        "X": "New Features"
     }
     
     type_entries = {t: [] for t in commits_by_type.keys()}
     for hash, msg, type, files in commit_entries:
         entry = [
             f"**{msg}**  ",
-            f"   - **Commit:** `{hash}`  ",
-            "   - **Files:**  "
+            f"   - *Commit:* [`{hash}`]({REPO_URL}commit/{hash})  ",
+            "   - *Files:*  "
         ]
         for file in files:
             if file.strip():  # Skip empty lines
-                entry.append(f"     - `{file}`  ")
+                entry.append(f"     - [`{file}`]({REPO_URL}blob/main/{file})  ")
         type_entries[type].append("\n".join(entry) + "\n")
     
     # Build changelog section
@@ -173,8 +174,7 @@ def update_changelog(commit_entries, version):
     )
     
     with open(LOG_FILE, "w", encoding='utf-8') as f:
-        f.write(new_content)
-        
+        f.write(new_content)     
         
 def get_unpushed_commits():
     """Get all commits that haven't been pushed yet with their changed files."""
