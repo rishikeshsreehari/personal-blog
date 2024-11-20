@@ -166,7 +166,7 @@ def main():
     update_version_file(version, new_push_count)
     print(f"Updated version to {version} in {VERSION_FILE}")
 
-    # Stage version.json
+    # Stage version.jsonn
     subprocess.run(["git", "add", VERSION_FILE])
 
 if __name__ == "__main__":
