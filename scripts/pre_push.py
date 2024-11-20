@@ -39,6 +39,19 @@ def read_version_file():
             json.dump(data, f, indent=4)
     with open(VERSION_FILE, "r") as f:
         return json.load(f)
+    
+def get_current_commit_hash():
+    """Get the current commit hash."""
+    try:
+        long_hash = subprocess.check_output(
+            ["git", "rev-parse", "HEAD"], text=True
+        ).strip()
+        short_hash = subprocess.check_output(
+            ["git", "rev-parse", "--short", "HEAD"], text=True
+        ).strip()
+        return long_hash, short_hash
+    except subprocess.CalledProcessError:
+        return "", ""
 
 def get_commit_type_gui(commit_msg):
     """Show a GUI window to select commit type."""
