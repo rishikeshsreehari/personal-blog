@@ -10,4 +10,4 @@ Please note that this is a heavily customised version built specifically for my 
 
 All scripts needed to generate assets for this site is available inside the scripts folder.
 
-Live site is deployed from the production branch.
+
