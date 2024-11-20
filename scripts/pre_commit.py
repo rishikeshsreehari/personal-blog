@@ -187,7 +187,7 @@ def main():
 
     print(f"Setting version to: {version}")
 
-    # Update version.json
+    # Update version.jsonn
     update_version_file(version, new_push_count)
     print(f"Updated version to {version} in {VERSION_FILE}")
 
