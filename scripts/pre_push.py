@@ -74,7 +74,7 @@ def main():
     # Temporarily disable the pre-push hook for version.json commit
     os.environ["SKIP_PRE_PUSH"] = "1"
 
-    # Stage and commit updated version.json
+    # Stage and commit updated version.json  
     subprocess.run(["git", "add", VERSION_FILE])
     subprocess.run(["git", "commit", "-m", f"Update version to {version}"])
 
