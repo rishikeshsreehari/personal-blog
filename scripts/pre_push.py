@@ -40,8 +40,6 @@ def read_version_file():
     with open(VERSION_FILE, "r") as f:
         return json.load(f)
     
-    
-#Test    
 def get_current_commit_hash():
     """Get the current commit hash."""
     try:
@@ -120,6 +118,21 @@ def get_unpushed_commits():
         return [commit for commit in commits if commit and not commit.split('|')[1].startswith("Pre-push update:")]
     except subprocess.CalledProcessError:
         return []
+
+def determine_version_type(commit_entries):
+    """Determine version type based on commit entries."""
+    if not commit_entries:
+        return "U"  # Default
+        
+    # Get unique types from commits
+    types = set(entry[2] for entry in commit_entries)
+    
+    # If more than one type exists, return M
+    if len(types) > 1:
+        return "M"
+    
+    # If all commits are of same type, return that type
+    return types.pop()  # Get the single type
 
 def update_changelog(commit_entries):
     """Update the changelog with new commits."""
@@ -203,14 +216,8 @@ def pre_push():
         # Get the previous commit hash before we make any changes
         long_hash, short_hash = get_current_commit_hash()
 
-        # Determine version type based on commit types
-        version_type = "U"  # Default to Update
-        if any(entry[2] == "X" for entry in commit_entries):
-            version_type = "X"
-        elif any(entry[2] == "N" for entry in commit_entries):
-            version_type = "N"
-        elif any(entry[2] == "F" for entry in commit_entries):
-            version_type = "F"
+        # Determine version type using the new logic
+        version_type = determine_version_type(commit_entries)
 
         # Update version
         version_data = read_version_file()
