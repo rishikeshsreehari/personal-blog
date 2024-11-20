@@ -140,6 +140,7 @@ def update_changelog(commit_entries, version):
         "F": "Fixes",
         "N": "Additions",
         "U": "Updations",
+        "R": "Removal",
         "X": "New Features"
     }
     
