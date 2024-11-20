@@ -12,7 +12,6 @@ if __name__ == "__main__":
     scripts = [
         'scripts/count_books.py',
         'scripts/create_worldmap.py',
-        #'scripts/update_version.py', #Disabled to test
         'scripts/then.py'
     ]
     
