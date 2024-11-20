@@ -30,8 +30,8 @@ def get_first_commit_hash():
     commits = get_git_commits()
     if not commits:
         return None, None
-        
-    # Get the hash from the last commit in the list (which is actually the first commit chronologically)
+    
+    # Get the hash from the last commit in the list (first commit chronologically)
     first_commit_hash = commits[-1].split()[0]
     
     # Get full hash from short hash
@@ -109,9 +109,12 @@ def main():
     update_version_file(version, new_push_count)
     print(f"Updated version to {version} in {VERSION_FILE}")
 
-    # Stage and commit version.json in a simple commit
+    # Stage version.json
     subprocess.run(["git", "add", VERSION_FILE])
+    # Commit version.json
     subprocess.run(["git", "commit", "-m", f"Update version to {version}"])
+    # Push everything immediately
+    subprocess.run(["git", "push"])
 
 
 if __name__ == "__main__":
