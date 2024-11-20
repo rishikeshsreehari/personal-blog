@@ -147,22 +147,25 @@ def update_changelog(commit_entries, version):
     
     type_entries = {t: [] for t in commits_by_type.keys()}
     for hash, msg, type, files in commit_entries:
-        entry = [
-            f"**{msg}**  ",
-            f"   - *Commit:* [`{hash}`]({REPO_URL}commit/{hash})  ",
-            "   - *Files:*  "
+        file_entries = [
+            f"     {i + 1}. [`{file.strip()}`]({REPO_URL}blob/main/{file.strip()})"
+            for i, file in enumerate(files) if file.strip()
         ]
-        for file in files:
-            if file.strip():  # Skip empty lines
-                entry.append(f"     - [`{file}`]({REPO_URL}blob/main/{file})  ")
-        type_entries[type].append("\n".join(entry) + "\n")
+        file_section = "\n".join(file_entries)
+        entry = f"""\
+{len(type_entries[type]) + 1}. **{msg}**  
+   - *Commit:* [`{hash}`]({REPO_URL}commit/{hash})  
+   - *Files:*  
+{file_section}
+"""
+        type_entries[type].append(entry)
     
     # Build changelog section
     changelog_section = [f"### **v{version}** ({current_date})\n"]
     
     for type, title in commits_by_type.items():
         if type_entries[type]:
-            changelog_section.append(f"#### **{title}**")
+            changelog_section.append(f"#### **{title}**\n")
             changelog_section.extend(type_entries[type])
             changelog_section.append("")  # Add blank line between sections
     
@@ -176,8 +179,10 @@ def update_changelog(commit_entries, version):
     )
     
     with open(LOG_FILE, "w", encoding='utf-8') as f:
-        f.write(new_content)     
-        
+        f.write(new_content)
+
+
+
 def get_unpushed_commits():
     """Get all commits that haven't been pushed yet with their changed files."""
     try:
