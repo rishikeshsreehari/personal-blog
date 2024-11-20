@@ -66,7 +66,7 @@ def get_commit_type_gui(commit_msg):
     root.title("Select Commit Type")
 
     window_width = 400
-    window_height = 250
+    window_height = 400
     screen_width = root.winfo_screenwidth()
     screen_height = root.winfo_screenheight()
     x = (screen_width - window_width) // 2
@@ -85,7 +85,8 @@ def get_commit_type_gui(commit_msg):
         ("Fix", "F"),
         ("New Post", "N"),
         ("Update", "U"),
-        ("Major Change", "X")
+        ("Major Change", "X"),
+        ("Removed", "R")
     ]
 
     for text, type_code in buttons:
