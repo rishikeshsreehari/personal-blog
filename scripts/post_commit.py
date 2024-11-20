@@ -4,9 +4,6 @@ import subprocess
 import sys
 from pathlib import Path
 
-
-#This runs after pre-commit hook
-
 VERSION_FILE = "data/version.json"
 LOCK_FILE = ".git/post-commit.lock"
 
@@ -50,6 +47,11 @@ def update_commit_hashes():
         with open(VERSION_FILE, "r") as f:
             data = json.load(f)
         
+        # Stage and commit the updated version.json first
+        subprocess.run(["git", "add", VERSION_FILE])
+        subprocess.run(["git", "commit", "--amend", "--no-edit", "--no-verify"])
+        
+        # Now get the hashes AFTER the amend
         long_hash, short_hash = get_git_hashes()
         if long_hash and short_hash:
             data["LastCommitLong"] = long_hash
@@ -58,7 +60,7 @@ def update_commit_hashes():
             with open(VERSION_FILE, "w") as f:
                 json.dump(data, f, indent=4)
             
-            # Stage and commit the updated version.json
+            # Stage and commit again with the correct hashes
             subprocess.run(["git", "add", VERSION_FILE])
             subprocess.run(["git", "commit", "--amend", "--no-edit", "--no-verify"])
             print(f"Updated commit hashes in {VERSION_FILE}")
