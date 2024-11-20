@@ -25,6 +25,17 @@ def get_commit_type(commit_message):
     return choice
 
 
+def get_latest_commit_hash():
+    """Get both full and short hash of the latest commit."""
+    full_hash = subprocess.check_output(
+        ["git", "rev-parse", "HEAD"], text=True
+    ).strip()
+    short_hash = subprocess.check_output(
+        ["git", "rev-parse", "--short", "HEAD"], text=True
+    ).strip()
+    return full_hash, short_hash
+
+
 def read_version_file():
     """Read the version file and return its data."""
     if not os.path.exists(VERSION_FILE):
@@ -38,9 +49,16 @@ def read_version_file():
 
 def update_version_file(version, push_count):
     """Update the version and push count in the version file."""
-    data = {"Version": version, "PushCount": push_count}
+    full_hash, short_hash = get_latest_commit_hash()
+    data = {
+        "Version": version,
+        "PushCount": push_count,
+        "LastCommitHash": full_hash,
+        "ShortCommitHash": short_hash
+    }
     with open(VERSION_FILE, "w") as f:
         json.dump(data, f, indent=4)
+
 
 def main():
     """Main function to handle pre-push tasks."""
@@ -88,9 +106,6 @@ def main():
     # Stage and commit updated version.json
     subprocess.run(["git", "add", VERSION_FILE])
     subprocess.run(["git", "commit", "-m", f"Update version to {version}"])
-
-    
-
 
 
 if __name__ == "__main__":
