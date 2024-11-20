@@ -13,6 +13,8 @@ The idea of a then page was stolen from [Matthew Smith](https://matthewsmith.web
 This page is an archive of all my 'Now' page updates. I view it more as a journal, showing how my 'Now' page has evolved over time. Please note that dynamic content from the 'Now' page, such as the data on tiles, is not copied here in the archives.
 
 ### Archives
+[2024-11-20](/now-2024-11-20)
+
 [2024-11-19](/now-2024-11-19)
 
 [2024-11-14](/now-2024-11-14)
