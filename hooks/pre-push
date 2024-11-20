@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Ensure the script exits if any command fails
+set -e
+
+# Use the system's default Python
+PYTHON_CMD=$(which python || which python3)
+
+# Check if Python is available
+if [ -z "$PYTHON_CMD" ]; then
+    echo "Error: Python is not installed or not in PATH."
+    exit 1
+fi
+
+# Run the Python script
+"$PYTHON_CMD" scripts/pre_push.py
