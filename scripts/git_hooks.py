@@ -173,7 +173,7 @@ def post_commit():
         subprocess.run(["git", "add", VERSION_FILE])
         subprocess.run(["git", "commit", "--amend", "--no-edit", "--no-verify"])
     finally:
-        # Remove lock after execution
+        # Remove lock after executionn
         remove_lock()
 
 if __name__ == "__main__":
