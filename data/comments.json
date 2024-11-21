@@ -490,6 +490,26 @@
             "Name": "Rishikesh",
             "Date": "2024-11-19",
             "Comment": "<span class='author-marker'></span>Great one! I've added it!"
+        },
+        {
+            "Name": "Volky",
+            "Date": "2024-11-20",
+            "Comment": "Mochi for spaced repetition"
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2024-11-20",
+            "Comment": "<span class='author-marker'></span> How does Mochi fit into this? It supports markdown, but I believe the exports are still a mess and the flashcards can be only opened via Mochi. You haven't left your email, so I'm unable to contact you, but do correct me if I'm wrong!"
+        },
+        {
+            "Name": "Antoine Le Baux",
+            "Date": "2024-11-20",
+            "Comment": "I was sold on the file over app idea, but couldn't find one for photos, so with some friends we started our own app that uses image metadata to do this, in case you want to give it a look: https://onefolder.app"
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2024-11-20",
+            "Comment": "<span class='author-marker'></span> Great work! I've added it to the list!"
         }
     ],
     "ama": [
