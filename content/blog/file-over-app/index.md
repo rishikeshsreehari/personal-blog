@@ -151,6 +151,7 @@ These are a few tools and projects that align with this philosophy. Here's a lis
 - [SilverBullet](https://silverbullet.md/) an open-source PKM system with plain-text as back-end.
 - [Logseq](https://logseq.com/) an open-source knowledge based on markdown files.
 - [Emacs with Org Mode](https://orgmode.org/) – A plain-text tool for managing notes, tasks, and projects, focused on flexibility and long-term accessibility.
+- [OneFolder](https://onefolder.app/) - Open-source photo organizer storing tags, faces, and locations in metadata, ensuring no lock-in.
 
 
 If you are working on a similar tool, happy to have a look and add them to the above list!
@@ -158,6 +159,9 @@ If you are working on a similar tool, happy to have a look and add them to the a
 In the end, 'File over App' isn't just a philosophy—it.s a guideline for making digital choices that prioritize the longevity of data. With each decision, I'm creating a lasting digital archive, one file at a time.
 
 ---
+
+#### Update #3 - 21-11-2024, 12:45 GST
+- _Thanks to Antoine for recommending OneFolder and the great work behind!_
 
 #### Update #2 - 19-11-2024, 19:03 GST
 - _Thanks to Burno for recommending Emacs with Org Mode_
