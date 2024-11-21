@@ -7,7 +7,7 @@ summary: Changelog of rishikeshs.com adhering to the Personal Blog Versioning Ma
 disable_comments: true
 ShowReadingTime: false
 ---
-This blog adheres to the *Personal Blog Versioning Manifesto*. All changes and commits to this blog are versioned using a structured format and displayed in reverse chronological order.
+This blog adheres to the *Blog Versioning Manifesto*. All changes and commits to this blog are versioned using a structured format and displayed in reverse chronological order.
 
 ```
   Version Format: YY.Push.Type.DDMM
