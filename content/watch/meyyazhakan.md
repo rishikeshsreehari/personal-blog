@@ -9,6 +9,7 @@ ShowReadingTime: false
 ---
 
 **Director**: C. Prem Kumar  
+[![View on Letterboxd](/images/letterboxd.png)](https://letterboxd.com/film/meiyazhagan/)
 
 
 
