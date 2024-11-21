@@ -45,6 +45,6 @@ The following list lays out the plan I have for this blog in the long run:
 
 *In case you find any bugs that are not listed on [Github](https://github.com/rishikeshsreehari/personal-blog/issues/), [create an issue](https://github.com/rishikeshsreehari/personal-blog/issues/new) on Github or  please [contact](/contact) me.*
 
-A changelog of the website can be seen on the [log](/log) page.<!--  I've written about the rationale behind this blog's versioning [here](/blog-version-manifesto). -->
+A changelog of the website can be seen on the [log](/log) page.I've written about the rationale behind this blog's versioning [here](/blog-version).
 
 The hash at the footer of the website redirects to the GitHub commit page showing the details about the latest commit. I respect privacy of my readers and more can be read [here.](/privacy-policy)

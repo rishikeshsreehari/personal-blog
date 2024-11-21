@@ -7,26 +7,8 @@ summary: Changelog of rishikeshs.com adhering to the Personal Blog Versioning Ma
 disable_comments: true
 ShowReadingTime: false
 ---
-This blog adheres to the *Blog Versioning Manifesto*. All changes and commits to this blog are versioned using a structured format and displayed in reverse chronological order.
+All changes and commits to this blog are versioned using a structured format and displayed in reverse chronological order. These changelogs are generated automatically using [`pre_push.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/pre_push.py) triggered by a [pre-push](https://github.com/rishikeshsreehari/personal-blog/blob/main/hooks/pre-push) hook.
 
-```
-  Version Format: YY.Push.Type.DDMM
-
-  24.50.M.1904
-  │  │   │   └── Type: Nature of change (e.g., M - Multiple, U - Update, F - Fixes, etc.)
-  │  │   └────── Date: DDMM format (19th April in this example)
-  │  └────────── Push: Sequential counter (reset to 0 at the beginning of each year)
-  └─────────── Year: Current year (last two digits)
-
-```
-The Push counter is particularly useful for tracking the number of changes made in a given year, resetting to zero at the start of each year. This ensures a clear view of the blog’s yearly activity.
-
-For example:
-
-- v24.625.M.2111: The 625th change made in 2024, recorded on November 21st.
-- v24.626.M.2111: The 626th change made in 2024, logged later on the same day with mixed updates, including fixes, updates, and new features.
-
-These changelogs are generated automatically using [`pre_push.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/pre_push.py) triggered by a [pre-push](https://github.com/rishikeshsreehari/personal-blog/blob/main/hooks/pre-push) hook.
 
 <!--LOG_PLACEHOLDER_START-->
 ### **v24.628.M.2111** (2024-11-21)
