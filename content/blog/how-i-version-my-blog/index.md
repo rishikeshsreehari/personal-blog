@@ -90,8 +90,8 @@ After some brainstorming and experimenting, I developed a versioning system tail
   YY.Push.Type.DDMM
 
   24.50.M.1904
-  │  │   │   └── Type
-  │  │   └────── Date
+  │  │  │   └─── Date
+  │  │  └─────── Type
   │  └────────── Push
   └───────────── Year
 
