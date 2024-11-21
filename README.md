@@ -1,5 +1,5 @@
 
-# [Personal Blog Repository](https://github.com/rishikeshsreehari/personal-blog)
+# [Source Code of Rishikeshs.com](https://github.com/rishikeshsreehari/personal-blog)
 
 This repository contains the source code for my personal blog, built using the [Hugo](https://gohugo.io/) static site generator. The live site is available at [rishikeshs.com](https://rishikeshs.com/).
 
