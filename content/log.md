@@ -11,6 +11,41 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.629.M.2111** (2024-11-21)
+
+#### **Fixes**
+
+1. **Fixed letterboxd link issue**  
+   - *Commit:* [`20b297b`](https://github.com/rishikeshsreehari/personal-blog/commit/20b297b)  
+   - *Files:*  
+     1. [`content/watch/meyyazhakan.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/meyyazhakan.md)
+
+
+#### **Additions**
+
+1. **Added new blog post and updated links in log and colophon**  
+   - *Commit:* [`c8bf625`](https://github.com/rishikeshsreehari/personal-blog/commit/c8bf625)  
+   - *Files:*  
+     1. [`content/blog/how-i-version-my-blog/blog-version.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/how-i-version-my-blog/blog-version.webp)
+     2. [`content/blog/how-i-version-my-blog/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/how-i-version-my-blog/index.md)
+     3. [`content/colophon.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/colophon.md)
+     4. [`content/log.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/log.md)
+
+
+#### **Updations**
+
+1. **Small corretion in log page**  
+   - *Commit:* [`5c5e850`](https://github.com/rishikeshsreehari/personal-blog/commit/5c5e850)  
+   - *Files:*  
+     1. [`content/log.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/log.md)
+
+2. **Updated Readme title**  
+   - *Commit:* [`daddd8a`](https://github.com/rishikeshsreehari/personal-blog/commit/daddd8a)  
+   - *Files:*  
+     1. [`README.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/README.md)
+
+
+---
 ### **v24.628.M.2111** (2024-11-21)
 
 #### **Fixes**
