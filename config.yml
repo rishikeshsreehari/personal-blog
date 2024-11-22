@@ -101,8 +101,8 @@ params:
       url: "https://www.strava.com/athletes/67526871/"
     - name: ycombinator
       url: "https://news.ycombinator.com/user?id=rishikeshs"
-    - name: buymeacoffee
-      url: "https://www.buymeacoffee.com/rishikeshs"
+    #- name: buymeacoffee
+    #  url: "https://www.buymeacoffee.com/rishikeshs"
     - name: email
       url: "mailto:hello@rishikeshs.com"
     - name: paypal
