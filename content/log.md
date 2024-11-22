@@ -11,6 +11,40 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.630.M.2211** (2024-11-22)
+
+#### **Updations**
+
+1. **Merge branch 'main' of https://github.com/rishikeshsreehari/personal-blog**  
+   - *Commit:* [`71fc39a`](https://github.com/rishikeshsreehari/personal-blog/commit/71fc39a)  
+   - *Files:*  
+
+
+2. **Updated projects shortcode to handle cases with no image**  
+   - *Commit:* [`14ee40b`](https://github.com/rishikeshsreehari/personal-blog/commit/14ee40b)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/projects.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/projects.html)
+
+3. **Added WebPAll to projects**  
+   - *Commit:* [`37dfa91`](https://github.com/rishikeshsreehari/personal-blog/commit/37dfa91)  
+   - *Files:*  
+     1. [`data/projects.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/projects.yaml)
+
+4. **Added a link to blog versioning article to log**  
+   - *Commit:* [`b2ab448`](https://github.com/rishikeshsreehari/personal-blog/commit/b2ab448)  
+   - *Files:*  
+     1. [`content/log.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/log.md)
+
+
+#### **Removal**
+
+1. **Removed buymeacoffee link**  
+   - *Commit:* [`84beafd`](https://github.com/rishikeshsreehari/personal-blog/commit/84beafd)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+
+---
 ### **v24.629.M.2111** (2024-11-21)
 
 #### **Fixes**
