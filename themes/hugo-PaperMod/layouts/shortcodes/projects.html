@@ -8,9 +8,11 @@
       {{ $url = print $url (cond (in $url "?") "&" "?") "utm_source=" $utmSource }}
     {{ end }}
     <a href="{{ $url }}" class="project-card"{{ if $isExternal }} target="_blank" rel="noopener noreferrer"{{ end }} aria-label="Project {{ .title }}">
-      <div class="image-container">
-        <img src="{{ .image }}" alt="{{ .title }}" loading="lazy">
-      </div>
+      {{ if .image }}
+        <div class="image-container">
+          <img src="{{ .image }}" alt="{{ .title }}" loading="lazy">
+        </div>
+      {{ end }}
       <h3>{{ .title }}</h3>
       <p class="description">{{ .description }}</p>
       {{ if .revenue }}
