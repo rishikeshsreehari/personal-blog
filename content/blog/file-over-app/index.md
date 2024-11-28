@@ -47,8 +47,7 @@ Today, almost all of my notes are in Obsidian. I'm aware that Obsidian might not
 -- Derek Sivers
 
 
-In my setup, I sync everything to Google Drive (and iCloud) and back it up locally. My Obsidian vault contains everything from notes to interesting links I collect for my newsletter. I also keep a service log for my bike, recorded in Markdown:
-
+In my setup, I sync everything to Google Drive (and iCloud) and back it up locally. My Obsidian vault contains everything from notes to interesting links I collect for my newsletter. For example, I keep a service log for my bike, saved as a note on Obsdidian:
 
 
 ```
@@ -152,6 +151,7 @@ These are a few tools and projects that align with this philosophy. Here's a lis
 - [Logseq](https://logseq.com/) an open-source knowledge based on markdown files.
 - [Emacs with Org Mode](https://orgmode.org/) – A plain-text tool for managing notes, tasks, and projects, focused on flexibility and long-term accessibility.
 - [OneFolder](https://onefolder.app/) - Open-source photo organizer storing tags, faces, and locations in metadata, ensuring no lock-in.
+- [Lyrcs](https://lyrcs.app/) - A lyrics writing app that stores its content in plain text files. 
 
 
 If you are working on a similar tool, happy to have a look and add them to the above list!
@@ -159,6 +159,10 @@ If you are working on a similar tool, happy to have a look and add them to the a
 In the end, 'File over App' isn't just a philosophy—it.s a guideline for making digital choices that prioritize the longevity of data. With each decision, I'm creating a lasting digital archive, one file at a time.
 
 ---
+
+
+#### Update #4 - 28-11-2024, 10:50 IST
+- _Thanks to [WetSponge](https://www.indiehackers.com/WetSponge?id=cmT3EJOZ4GVctbHWtiZh6N8ZmYF2) for recommending Lyrcs.app!_
 
 #### Update #3 - 21-11-2024, 12:45 GST
 - _Thanks to Antoine for recommending OneFolder and the great work behind!_
