@@ -523,5 +523,24 @@
             "Date": "2024-09-20",
             "Comment": "<span class='author-marker'>I loved WordPress for it's convenience. But as I learned programming and started seeing other personal blogs, I wanted to add new features that were impossible with a WordPress website. Also, developing your website from scratch knowing all the components was fun. I'm not there yet fully as this website is built using Hugo framework, but in the future, I would move to a custom framework and own everything end-to-end. "
         }
+    ],
+    "blog-version": [
+        {
+            "Name": "Erik",
+            "Date": "2024-11-28",
+            "Comment": "I like your version system, but rather than YY.Push.Type.DDMM I'd prefer YY.Push.Type.MMDD, which would be closer to the familiar yyyy-mm-dd format"
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2024-11-28",
+            "Comment": "<span class='author-marker'></span>Thanks a lot for the feedback. Yes in that perspective, MMDD makes sense. But for me personally, DDMM clicks in my mind as a date. In India we use DDMMYY, probably because of that!"
+        }
+    ],
+    "": [
+        {
+            "Name": "",
+            "Date": "2024-11-28",
+            "Comment": ""
+        }
     ]
 }
