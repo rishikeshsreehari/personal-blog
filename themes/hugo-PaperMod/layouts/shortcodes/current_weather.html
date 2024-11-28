@@ -2,7 +2,14 @@
 
 <script async>
   const el = document.getElementById("temperature");
-  const loc = "{{ .Site.Params.CurrentLocation | urlize }}";
+
+  // Function to get location from shortcode call or default to Params
+  function getLocation() {
+    // Replace '{{ .Get "location" | default .Site.Params.CurrentLocation | urlize }}' dynamically using Hugo
+    return "{{ .Get "location" | default .Site.Params.CurrentLocation | urlize }}";
+  }
+
+  const loc = getLocation();
 
   const map = {
     "🌑": "It's a new moon 🌑, so the sky will be dark tonight.",

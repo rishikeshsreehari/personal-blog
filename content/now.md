@@ -8,13 +8,13 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 21-11-2024
+##### Last updated on 28-11-2024
 
-I’m currently in 🌍 **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**!    
+🌍 I’m based in **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)** but currently in Chennai, India for vacation!
 
-The local time here is ⏰ **{{< current_time >}}**  
+⏰ The local time here is **{{< current_time timezone="Asia/Kolkata" >}}**  
 
-{{< current_weather >}}
+{{< current_weather location="Chennai" >}}
 
 ---
 
@@ -30,7 +30,7 @@ The local time here is ⏰ **{{< current_time >}}**
 
 I'll be in India from 23rd November to 16th December.
 
-My current plan is Mumbai → Nagpur → Chennai → Kochi.   
+My current plan is ~~Mumbai~~ → ~~Nagpur~~ → Thanjavur → Chennai → Kochi.   
 
 I'm excited to visit Mumbai to meet a friend after a long time, try some yummy street food, attend a friend's wedding in Nagpur, reconnect with family in Chennai, and spend time at home. We'll also take a short trip to my wife's ancestral house in Tanjavur! Super excited!
 
