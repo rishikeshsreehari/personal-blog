@@ -115,3 +115,30 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
     transform: translateY(-2px); /* Moves the highlight up slightly */
 }
+
+
+.footer-easter {
+    display: inline-block;
+    animation: lifelike-bounce 5s infinite cubic-bezier(0.42, 0, 0.58, 1); /* Natural easing */
+}
+
+@keyframes lifelike-bounce {
+    0% {
+        transform: translateY(0); /* Start at center */
+    }
+    20% {
+        transform: translateY(-6px); /* Move up higher */
+    }
+    40% {
+        transform: translateY(-2px); /* Slight dip closer to center */
+    }
+    60% {
+        transform: translateY(6px); /* Move down */
+    }
+    80% {
+        transform: translateY(2px); /* Slight rise closer to center */
+    }
+    100% {
+        transform: translateY(0); /* Back to center */
+    }
+}
