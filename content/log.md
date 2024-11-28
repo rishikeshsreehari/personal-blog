@@ -11,6 +11,45 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.631.M.2811** (2024-11-28)
+
+#### **Fixes**
+
+1. **Fixed a broken link**  
+   - *Commit:* [`67c236f`](https://github.com/rishikeshsreehari/personal-blog/commit/67c236f)  
+   - *Files:*  
+     1. [`content/watch/kishkindha.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/kishkindha.md)
+
+
+#### **Updations**
+
+1. **Updated now page and shortcodes to handle custom cases**  
+   - *Commit:* [`9fb685c`](https://github.com/rishikeshsreehari/personal-blog/commit/9fb685c)  
+   - *Files:*  
+     1. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+     2. [`themes/hugo-PaperMod/layouts/shortcodes/current_time.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/current_time.html)
+     3. [`themes/hugo-PaperMod/layouts/shortcodes/current_weather.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/current_weather.html)
+
+2. **Updated article title**  
+   - *Commit:* [`5d30c60`](https://github.com/rishikeshsreehari/personal-blog/commit/5d30c60)  
+   - *Files:*  
+     1. [`content/blog/how-i-version-my-blog/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/how-i-version-my-blog/index.md)
+
+3. **Updated file over app list and small corrections for brevity**  
+   - *Commit:* [`01343c2`](https://github.com/rishikeshsreehari/personal-blog/commit/01343c2)  
+   - *Files:*  
+     1. [`content/blog/file-over-app/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/file-over-app/index.md)
+
+
+#### **Removal**
+
+1. **Removed timezone parameter from config.yml**  
+   - *Commit:* [`8fbc832`](https://github.com/rishikeshsreehari/personal-blog/commit/8fbc832)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+
+---
 ### **v24.630.M.2211** (2024-11-22)
 
 #### **Updations**
