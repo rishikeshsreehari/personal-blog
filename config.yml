@@ -51,7 +51,6 @@ params:
   BookShelfDisplayCount: 12
   UtmSource: rishikeshs.com
   CurrentLocation: "Abu Dhabi"
-  Timezone: "Asia/Dubai"
 
 
   assets:
