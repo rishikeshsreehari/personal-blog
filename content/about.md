@@ -10,8 +10,6 @@ ShowReadingTime: false
 ---
 ##### Last updated on 18-07-2024
 
-# About Me
-
 Hello! My name is [Rishikesh](/name) (pronounced as ri-shee-kay-sh).
 I currently live in {{< currentlocation >}} with my wife. 
 
