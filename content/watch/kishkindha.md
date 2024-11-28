@@ -23,7 +23,7 @@ ShowReadingTime: false
 
 **⚠️ SPOILERS AHEAD, CLICK TO REVEAL! ⚠️**  
 
-After last week's [disaster](/adios-amigo/), I was hesitant to invest time in watching another of Asif's movies. I didn’t watch the trailer, so there were zero expectations. It turned out to be a decent watch, with amazing performances, a superb background score, and great cinematography. The only letdown was the script at times. There were a few loopholes or things that didn’t make sense. But overall, it was a great concept and a different kind of thriller that you don’t often see in Malayalam cinema.
+After last week's [disaster](/watch/adios-amigo/), I was hesitant to invest time in watching another of Asif's movies. I didn’t watch the trailer, so there were zero expectations. It turned out to be a decent watch, with amazing performances, a superb background score, and great cinematography. The only letdown was the script at times. There were a few loopholes or things that didn’t make sense. But overall, it was a great concept and a different kind of thriller that you don’t often see in Malayalam cinema.
 
 Also, I have a couple of questions that baffle me:
 {{< spoiler >}}
