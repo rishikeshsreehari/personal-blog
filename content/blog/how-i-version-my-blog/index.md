@@ -119,12 +119,15 @@ For example the version number **v24.628.M.2111** tells me that:
 Despite my rudimentary coding skills and occasional ChatGPT hallucinations, I wrote a [small script](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/pre_push.py)
 (pre-push) that automatically updates the footer version number and generates a [changelog](/log) whenever I make changes to my blog. It does this:
 
-1. **Tracks Changes:** Categorizes commits based on tags
-2. **Updates the Footer:** Automatically updates version numbers
-3. **Generates Changelogs:** Creates detailed logs
+1. **Tracks Changes:** On push, it asks for category of each commit.
+2. **Updates the Footer:** Automatically updates version numbers by incrementing the push number, updates the respective push type and also the date.
+3. **Generates Changelogs:** Creates logs in a predefined format along with commit hash, files changed and commit message.
+
+{{< photocaption src="blog-commit-version.webp" alt="Script asking for the category of each commit" width="70%" >}}Script asking for the category of each commit{{< /photocaption >}}
 
 
-An example change log can be viewed below:
+
+An example of generated change log can be viewed below:
 
 ```
 ### **v24.628.M.2111** (2024-11-21)
