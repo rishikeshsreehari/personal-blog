@@ -7,7 +7,7 @@ summary: Changelog of rishikeshs.com adhering to the Personal Blog Versioning Ma
 disable_comments: true
 ShowReadingTime: false
 ---
-All changes and commits to this blog are versioned using a structured format and displayed in reverse chronological order. These changelogs are generated automatically using [`pre_push.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/pre_push.py) triggered by a [pre-push](https://github.com/rishikeshsreehari/personal-blog/blob/main/hooks/pre-push) hook. Learn more about the rational behind this formatting [here](/blog-version/).
+All changes and commits to this blog are versioned using a structured format and displayed in reverse chronological order. These changelogs are generated automatically using [`pre_push.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/pre_push.py) triggered by a [pre-push](https://github.com/rishikeshsreehari/personal-blog/blob/main/hooks/pre-push) hook. Learn more about the rationale behind this formatting [here](/blog-version/).
 
 
 <!--LOG_PLACEHOLDER_START-->
