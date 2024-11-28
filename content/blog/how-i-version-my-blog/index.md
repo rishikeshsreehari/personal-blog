@@ -1,5 +1,5 @@
 ---
-title: 'How I Version My Blog?'
+title: 'Why and How I Version My Blog?'
 date: 2024-11-21
 excerpt: The need for a versioning system in blogs and how I built a custom approach to track and log my blog's evolution.
 description: The need for a versioning system in blogs and how I built a custom approach to track and log my blog's evolution.
