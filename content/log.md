@@ -11,6 +11,17 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.633.U.2811** (2024-11-28)
+
+#### **Updations**
+
+1. **Added image for bl0g-version post**  
+   - *Commit:* [`1e4c0bb`](https://github.com/rishikeshsreehari/personal-blog/commit/1e4c0bb)  
+   - *Files:*  
+     1. [`content/blog/how-i-version-my-blog/blog-commit-version.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/how-i-version-my-blog/blog-commit-version.webp)
+
+
+---
 ### **v24.632.M.2811** (2024-11-28)
 
 #### **Fixes**
