@@ -1,3 +1,17 @@
+- name: "Lost"
+  language: "English"
+  rating: 5
+  date: "2024-12-01"
+  url: "/watch/lost/"
+  gender: "male"
+  platform: "Netflix"
+  country: "USA"
+  runtime: "5203"
+  type: "tv"
+  reviewed_on: "2024-12-03"
+  budget: "$500,162,935"
+
+
 - name: "Meiyazhagan"
   language: "Tamil"
   rating: 3
@@ -8,7 +22,7 @@
   country: "India"
   runtime: "178"
   type: "movie"
-  reviewed_on: "28-10-2024"
+  reviewed_on: "2024-10-28"
   budget: "$4,162,935"
 
 

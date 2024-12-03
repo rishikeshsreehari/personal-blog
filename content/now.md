@@ -8,7 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 28-11-2024
+##### Last updated on 03-12-2024
 
 🌍 I’m based in **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)** but currently in Chennai, India for vacation!
 
@@ -30,9 +30,9 @@ dataDir: "data"
 
 I'll be in India from 23rd November to 16th December.
 
-My current plan is ~~Mumbai~~ → ~~Nagpur~~ → Thanjavur → Chennai → Kochi.   
+The plan is ~~Mumbai~~ → ~~Nagpur~~ → ~~Thanjavur~~ → Chennai → Kochi.   
 
-I'm excited to visit Mumbai to meet a friend after a long time, try some yummy street food, attend a friend's wedding in Nagpur, reconnect with family in Chennai, and spend time at home. We'll also take a short trip to my wife's ancestral house in Tanjavur! Super excited!
+Done with Mumbai, Nagpur, Thanjavur and Chennai! Off to Kochi now.
 
 If you're based in any of these cities, feel free to [reach out](/contact)!
 
@@ -48,7 +48,6 @@ If you're based in any of these cities, feel free to [reach out](/contact)!
 
 - [Exercised](https://geni.us/rs-exercised) by Daniel Lieberman
 - [Illusions: The Adventures of a Reluctant Messiah](https://geni.us/rs-illusions) by Richard Bach
-- [City of Gold: Dubai and the Dream of Capitalism](https://geni.us/rs-city-of-gold) by Jim Krane
 - [The Paradox of Choice: Why More is Less](https://geni.us/rsh-paradox-choice) by Barry Schwartz
 
 *I read 3-4 books in parallel most of the time on [my e-book reader](https://geni.us/rsh-kindle-paperwhite).*
@@ -64,10 +63,10 @@ If you're based in any of these cities, feel free to [reach out](/contact)!
 
 
 ### 📺 What Am I Watching?
-- [Lost (2004)](https://www.serializd.com/show/Lost-4607) - Currently at S06E04 - I'm binge watching, and I want it to end!
+- Finished watching [Lost (2004)](/watch/lost). What a show! 
 ---
 
-### 🏋 My Workout Regime
+### 🏋 My Fitness
 
 Currently in travel mode with very little activity. Lots of junk food, no time spent in the gym, with occasional runs. Can't wait to bring back my bike, start cycling, hit the gym regularly, and get in shape!
 
@@ -77,11 +76,13 @@ I'm currently focused on transforming my body and reducing my body fat to below 
 
 I'm now doing strength training 3x a week, following [Greg Nuckol's beginner program](https://www.boostcamp.app/coaches/greg-nuckols/greg-nuckols-beginner-program) on Boostcamp. On gym days, I try to walk 5km and on other days I try to do light jogs. [My ankle](/journal/ankle-sprain/) is feeling better, and the doctor has given the green light for short runs and squats with light weights. I still feel a bit uneasy with deep squats at the lower position. Need a bit more work on the stability part, few more rehab sessions to go. Can't wait to run freely!
 
+##### For my latest fitness updates, read my [fitness log](/fitness-log). It's interesting, I promise.
+
+
 -->
 
 
 
-##### For my latest fitness updates, read my [fitness log](/fitness-log). It's interesting, I promise.
 
 ---
 
