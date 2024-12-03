@@ -8,7 +8,7 @@ disable_comments: true
 ShowReadingTime: false
 
 ---
-##### Last updated on 18-07-2024
+##### Last updated on 03-12-2024
 
 Hello! My name is [Rishikesh](/name) (pronounced as ri-shee-kay-sh).
 I currently live in {{< currentlocation >}} with my wife. 
@@ -37,12 +37,11 @@ I slightly align with [longtermism](https://en.wikipedia.org/wiki/Longtermism) a
 
 ### Why this blog?
 
-This blog is nicheless and is my digital home where I share my thoughts and experiences. For a long time, I struggled to become a specialist. Be it career, life, or hobbies, I have always had multiple passions and interests that evolve over time. I've come to realize that being a generalist is not a bad thing, and this blog reflects that.
+This blog is [nicheless](/nicheless) and is my digital home where I share my thoughts and experiences. For a long time, I struggled to become a specialist. Be it career, life, or hobbies, I have always had multiple passions and interests that evolve over time. I've come to realize that being a generalist is not a bad thing, and this blog reflects that.
 
-I think of this website itself as an artwork, something that evolves over time. It's inspired by numerous blogs and sites out there in the wild west corner of the internet. Like any art piece, each inch of this website is crafted with clear vision, attention, and reason. You can read more about how this blog is built on the [colophon](/colophon) page. <!-- or my blog post titled ["My blog is my greatest art"](). -->
-
+I think of this [blog itself as an art piece](/blog-art), something that evolves over time. It's inspired by numerous blogs and sites out there in the wild west corner of the internet. Like any art piece, each inch of this website is crafted with clear vision, attention, and reason. You can read more about how this blog is built on the [colophon](/colophon) page. 
 ### Some more info
 
-To know more about my life, visit my [timeline](/timeline). The [dream](/dream) has a list of stuff I want to do, the [Lifestack](/lifestack) page lists the things I use, and the [now](/now) page shows what I'm currently up to. If you're curious, the [library](/library) has a list of books I've read recently, and the [watch](/watch) page lists movies and shows I've seen. This website is designed to be explored with no end goal in mind, featuring various interesting pages and easter eggs. [Useless Button](/button) and [The Pixel Mosaic](/mosaic) are  good starting points, feel free to wander as you wish. 
+To know more about my life, visit my [timeline](/timeline). The [dream](/dream) has a list of stuff I want to do, the [Lifestack](/lifestack) page lists the things I use, and the [now](/now) page shows what I'm currently up to. If you're curious, the [library](/library) has a list of books I've read recently, and the [watch](/watch) page lists movies and shows I've seen. This website is designed to be explored with no end goal in mind, featuring various interesting pages and easter eggs(ping me, if you find any!). [Useless Button](/button) and [The Pixel Mosaic](/mosaic) are  good starting points, feel free to wander as you wish. 
 
 I also host an [Ask-Me-Anything (AMA)](/ama) on this blog. If you enjoy the content, please sign my [guestbook](/guestbook).
