@@ -11,6 +11,18 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.635.U.0512** (2024-12-05)
+
+#### **Updations**
+
+1. **Added lobste.rs icon and link to the blog**  
+   - *Commit:* [`9e97702`](https://github.com/rishikeshsreehari/personal-blog/commit/9e97702)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+     2. [`themes/hugo-PaperMod/layouts/partials/svg.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/svg.html)
+
+
+---
 ### **v24.634.M.0312** (2024-12-03)
 
 #### **Fixes**
