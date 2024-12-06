@@ -510,6 +510,16 @@
             "Name": "Rishikesh",
             "Date": "2024-11-20",
             "Comment": "<span class='author-marker'></span> Great work! I've added it to the list!"
+        },
+        {
+            "Name": "SSP",
+            "Date": "2024-12-04",
+            "Comment": "Markor for editing .md files on android phones is great. More so because of the templates that you can define and use to publish to Hugo."
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2024-12-06",
+            "Comment": "<span class='author-marker'></span>Thanks a lot for the suggestion. I've added it to the list!"
         }
     ],
     "ama": [
@@ -534,13 +544,6 @@
             "Name": "Rishikesh",
             "Date": "2024-11-28",
             "Comment": "<span class='author-marker'></span>Thanks a lot for the feedback. Yes in that perspective, MMDD makes sense. But for me personally, DDMM clicks in my mind as a date. In India we use DDMMYY, probably because of that!"
-        }
-    ],
-    "": [
-        {
-            "Name": "",
-            "Date": "2024-11-28",
-            "Comment": ""
         }
     ]
 }
