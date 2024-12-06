@@ -8,13 +8,13 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 03-12-2024
+##### Last updated on 06-12-2024
 
-🌍 I’m based in **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)** but currently in Chennai, India for vacation!
+🌍 I’m based in **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)** but currently in Kochi, India for vacation!
 
 ⏰ The local time here is **{{< current_time timezone="Asia/Kolkata" >}}**  
 
-{{< current_weather location="Chennai" >}}
+{{< current_weather location="Cherthala" >}}
 
 ---
 
@@ -30,11 +30,11 @@ dataDir: "data"
 
 I'll be in India from 23rd November to 16th December.
 
-The plan is ~~Mumbai~~ → ~~Nagpur~~ → ~~Thanjavur~~ → Chennai → Kochi.   
+The plan is ~~Mumbai~~ → ~~Nagpur~~ → ~~Thanjavur~~ → ~~Chennai~~ → Koci.   
 
-Done with Mumbai, Nagpur, Thanjavur and Chennai! Off to Kochi now.
+Done with Mumbai, Nagpur, Thanjavur and Chennai! Back home mostly chilling, finishing some pending work@
 
-If you're based in any of these cities, feel free to [reach out](/contact)!
+If you're around Kochi, feel free to [reach out](/contact)!
 
 ### Now in Numbers
 
@@ -62,9 +62,10 @@ If you're based in any of these cities, feel free to [reach out](/contact)!
 ---
 
 
+<!-- 
 ### 📺 What Am I Watching?
 - Finished watching [Lost (2004)](/watch/lost). What a show! 
----
+---  -->
 
 ### 🏋 My Fitness
 
