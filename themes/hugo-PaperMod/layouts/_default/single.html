@@ -35,9 +35,13 @@
   </div>
   {{- end }}
 
-  <div>
+  {{ partial "webmentions.html" . }}
+
+
+<div>
     {{ partial "disqus.html" . }}
 </div>
+
 
 {{ template "_internal/disqus.html" . }}
 

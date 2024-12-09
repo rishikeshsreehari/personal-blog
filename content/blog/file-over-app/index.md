@@ -19,6 +19,8 @@ keywords:
 weight: 1
 hiddenInHomeList: true
 draft: false
+enableWebmentions: false
+
 
 ---
 
