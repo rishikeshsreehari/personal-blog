@@ -11,6 +11,25 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.639.M.0912** (2024-12-09)
+
+#### **Fixes**
+
+1. **Fixed broken avatar link in head**  
+   - *Commit:* [`2210b47`](https://github.com/rishikeshsreehari/personal-blog/commit/2210b47)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/partials/head.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/head.html)
+
+
+#### **Updations**
+
+1. **Added microsub endpoint for aperture**  
+   - *Commit:* [`eb14697`](https://github.com/rishikeshsreehari/personal-blog/commit/eb14697)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/partials/head.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/head.html)
+
+
+---
 ### **v24.638.M.0912** (2024-12-09)
 
 #### **Updations**
