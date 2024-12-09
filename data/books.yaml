@@ -1,8 +1,38 @@
 
+
+
+
+
+- book: "City of Gold: Dubai and the Dream of Capitalism"
+  rating: 4
+  date: 2024-11-29
+  url: https://geni.us/rs-city-of-gold
+  author: "Jim Krane"
+  gender: "male"
+  year: 2010
+  pages: 384
+  type: nonfiction
+  language: english
+  ISBN: 9780312655433
+
+
+
+
+
+
 - book: "Useful Not True"
   rating: 4
-  date: 2024-08-25
+  date: 2024-08-24
   url: https://geni.us/rs-useful-not-true
+  author: "Derek Sivers"
+  gender: "male"
+  year: 2024
+  pages: 93
+  type: nonfiction
+  language: english
+  ISBN:
+  highlights: 49
+
 
 
 
