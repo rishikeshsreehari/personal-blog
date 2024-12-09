@@ -8,7 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 06-12-2024
+##### Last updated on 09-12-2024
 
 🌍 I’m based in **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)** but currently in Kochi, India for vacation!
 
@@ -18,6 +18,15 @@ dataDir: "data"
 
 ---
 
+### ✈️ Going Home!
+
+I'll be in India from 23rd November to 16th December.
+
+The plan is ~~Mumbai~~ → ~~Nagpur~~ → ~~Thanjavur~~ → ~~Chennai~~ → Kochi.   
+
+Done with Mumbai, Nagpur, Thanjavur and Chennai! Back home mostly chilling, finishing some pending work!
+If you're around Kochi, feel free to [reach out](/contact)!
+
 ### 🔨 What am I Doing?
 
 -  [Currently unemployed](/hire), I’m dedicating most of my time to job applications and exploring freelance opportunities.
@@ -26,15 +35,7 @@ dataDir: "data"
 
 ---
 
-### ✈️ Going Home!
 
-I'll be in India from 23rd November to 16th December.
-
-The plan is ~~Mumbai~~ → ~~Nagpur~~ → ~~Thanjavur~~ → ~~Chennai~~ → Koci.   
-
-Done with Mumbai, Nagpur, Thanjavur and Chennai! Back home mostly chilling, finishing some pending work@
-
-If you're around Kochi, feel free to [reach out](/contact)!
 
 ### Now in Numbers
 
@@ -46,6 +47,7 @@ If you're around Kochi, feel free to [reach out](/contact)!
 
 ### 📚 What Am I Reading?
 
+- [Japan Traverse Hike 2023](https://github.com/WebOrigami/japan-hike-ebook) by Jan Miksovsky
 - [Exercised](https://geni.us/rs-exercised) by Daniel Lieberman
 - [Illusions: The Adventures of a Reluctant Messiah](https://geni.us/rs-illusions) by Richard Bach
 - [The Paradox of Choice: Why More is Less](https://geni.us/rsh-paradox-choice) by Barry Schwartz
