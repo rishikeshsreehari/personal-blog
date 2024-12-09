@@ -11,6 +11,37 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.637.U.0912** (2024-12-09)
+
+#### **Updations**
+
+1. **Added rel=me links and indieauth in head partial**  
+   - *Commit:* [`72c17f8`](https://github.com/rishikeshsreehari/personal-blog/commit/72c17f8)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/partials/head.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/head.html)
+
+2. **Updated url twitter.com to x.com**  
+   - *Commit:* [`c613c46`](https://github.com/rishikeshsreehari/personal-blog/commit/c613c46)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+3. **Updated Now**  
+   - *Commit:* [`425b8cf`](https://github.com/rishikeshsreehari/personal-blog/commit/425b8cf)  
+   - *Files:*  
+     1. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+
+4. **Updated books.yaml with more metadata**  
+   - *Commit:* [`4488d2b`](https://github.com/rishikeshsreehari/personal-blog/commit/4488d2b)  
+   - *Files:*  
+     1. [`data/books.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/books.yaml)
+
+5. **Updated antilibrary**  
+   - *Commit:* [`2e3c780`](https://github.com/rishikeshsreehari/personal-blog/commit/2e3c780)  
+   - *Files:*  
+     1. [`data/books_unread.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/books_unread.yaml)
+
+
+---
 ### **v24.636.U.0612** (2024-12-06)
 
 #### **Updations**
