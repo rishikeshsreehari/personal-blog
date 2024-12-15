@@ -9,7 +9,7 @@ ShowReadingTime: false
 ---
 
 
-##### Last updated on 08-11-2024
+##### Last updated on 15-12-2024
 
 This is a list of things I want to do in my life. Call it a to-do list, a bucket list, or whatever you like. I love the fact that this list grows day by day and, in a way, gives me a sense of direction and excitement for the future. While I know I may never achieve everything on this list in my lifetime, that's okay. The finite nature of life gives it purpose and makes me feel profoundly grateful for every experience and quest I pursue. This list includes physical goals, things I want to achieve, places I want to visit, things I want to learn, and more. For the dreams I have already achieved, I’ve crossed them out with the date when they were accomplished. My goal is to have atleast 100 dreams at a time, but it's not easy.
 
@@ -94,6 +94,11 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 79. See my abs before I die!   
 80. ~~Publish a Python Package.~~  *Published on 08-11-2024: [WebPAll](https://pypi.org/project/webpall/)*
 81. Create a personal coat of arms and add it to the footer. I need to study [heraldry](https://en.wikipedia.org/wiki/Heraldry) in detail for this! 
+82. Learn to whistle.
+83. Walk the [Camino de Santiago.](https://en.wikipedia.org/wiki/Camino_de_Santiago)
+84. Learn to play [handpan](https://en.wikipedia.org/wiki/Handpan)
+85. 
+
 
 
 *Partially inspired by [Taylor](https://taylor.town/bucket-list),[Laura](https://lauravanderkam.com/2015/06/2015-list-100-dreams/) and more.*
