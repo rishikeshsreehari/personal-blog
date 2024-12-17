@@ -11,6 +11,42 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.642.U.1712** (2024-12-17)
+
+#### **Updations**
+
+1. **Added location in post meta and updated fitness logs & journals**  
+   - *Commit:* [`40d40b6`](https://github.com/rishikeshsreehari/personal-blog/commit/40d40b6)  
+   - *Files:*  
+     1. [`content/fitness-log/01112024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/01112024/index.md)
+     2. [`content/fitness-log/02112024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/02112024/index.md)
+     3. [`content/fitness-log/17102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/17102024/index.md)
+     4. [`content/fitness-log/18102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/18102024/index.md)
+     5. [`content/fitness-log/19102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/19102024/index.md)
+     6. [`content/fitness-log/20102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/20102024/index.md)
+     7. [`content/fitness-log/21102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/21102024/index.md)
+     8. [`content/fitness-log/22102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/22102024/index.md)
+     9. [`content/fitness-log/23102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/23102024/index.md)
+     10. [`content/fitness-log/24102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/24102024/index.md)
+     11. [`content/fitness-log/25102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/25102024/index.md)
+     12. [`content/fitness-log/26102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/26102024/index.md)
+     13. [`content/fitness-log/27102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/27102024/index.md)
+     14. [`content/fitness-log/28102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/28102024/index.md)
+     15. [`content/fitness-log/29102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/29102024/index.md)
+     16. [`content/fitness-log/30102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/30102024/index.md)
+     17. [`content/fitness-log/31102024/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/fitness-log/31102024/index.md)
+     18. [`content/journal/ankke-sprain-rehab/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/journal/ankke-sprain-rehab/index.md)
+     19. [`content/journal/barefoot/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/journal/barefoot/index.md)
+     20. [`content/journal/evergreen-blogs/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/journal/evergreen-blogs/index.md)
+     21. [`themes/hugo-PaperMod/layouts/partials/post_meta.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/post_meta.html)
+
+2. **Added date in posts to be displayed**  
+   - *Commit:* [`7594044`](https://github.com/rishikeshsreehari/personal-blog/commit/7594044)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/partials/post_meta.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/post_meta.html)
+
+
+---
 ### **v24.641.M.1712** (2024-12-17)
 
 #### **Fixes**
