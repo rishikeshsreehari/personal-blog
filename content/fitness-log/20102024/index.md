@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**20-10-2024, Abu Dhabi(UAE)**
 
 Woke up late, chilled around, and decided to skip breakfast again considering how carb-heavy yesterday's dinner was. Did some cleaning, got a head massage from my wife, and took a nice bath. Decided to order lunch and ended up ordering beef fry and something called 'Uruliyiloottu.' I've never had this dish in Kerala, but I think it's some sort of invention by the Kerala restaurants in the Middle East. It's basically rice mixed with spicy fish gravy, with some beef roast, chicken roast, and fish fry on the side. Since there was an offer, I ordered an extra beef fry as well. The portions were too big, so I ate some and kept the rest for later.
 

@@ -6,8 +6,9 @@ url: "/journal/evergreen-blogs/"
 type: page
 disable_comments: false
 ShowReadingTime: true
+location: Abu Dhabi, UAE
+
 ---
-**11-10-2024, Abu Dhabi(UAE)**
 
 I often think about the longevity of my blog and other blogs. There are endless blogs on the internet, where people write about random things and document tiny parts of their lives with no reason. While this may seem unimportant at present, for future generations, this can give a glimpse of how life was in the past. With history being rewritten for selfish gains, these kinds of blogs do need to be evergreen and survive over time. Talking about the technology of blogs these days that are JS-heavy and whether they survive the test of time would be a whole other discussion for another day. But I do believe blogs that primarily rely on HTML/CSS would endure and survive over the years.
 

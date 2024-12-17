@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**26-10-2024, Abu Dhabi(UAE)**
 
 With yesterday's carb- and fat-heavy dinner, I decided to skip breakfast and go to the gym on an empty stomach. Had a decent session, but the lack of food and energy was clearly visible in my sets, especially toward the end, as I couldn't push much in the core and bicep workouts.
 

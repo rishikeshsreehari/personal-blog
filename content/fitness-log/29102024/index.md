@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**29-10-2024, Abu Dhabi(UAE)**
 
 Had to wake up early because I had an appointment with the physio. Normal scenes there, and on the way back, decided to walk barefoot in the park. It was very ironic to see a palm tree in a green pasture!
 

@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**22-10-2024, Abu Dhabi(UAE)**
 
 
 Woke up feeling better than yesterday but had only 5.5 hours of sleep. Had to eventually wake up because I had an appointment with the physiotherapist for my [ankle sprain](/journal/ankle-sprain/). Quickly ate 2 egg whites and whole boiled eggs and went for the session. Returned, had a coffee for energy and also a banana before the gym session. Felt good after hitting the gym in a while.

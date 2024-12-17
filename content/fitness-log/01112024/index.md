@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**01-11-2024, Abu Dhabi(UAE)**
 
 Woke up and had breakfast since I had my last scheduled physiotherapy session and a consultation with the doctor. Had the usual egg breakfast (2 egg whites, 2 whole eggs, and mayo). Went to see the doctor, who did some assessments. My ankle is healing, and he suggested another round of physiotherapy sessions. He also gave the green light for light jogs and squatting, which made me very happy. Since I have overpronation, it’s another reason for ankle stability issues. He suggested using shoe inserts, but they’re quite expensive and usually not covered by insurance. Anyway, we decided to apply for insurance and see how it goes.
 

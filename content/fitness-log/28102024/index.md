@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**28-10-2024, Abu Dhabi(UAE)**
 
 Thanks to [yesterday's movie](/watch/meiyazhagan/), I woke up pretty late. Decided to skip breakfast and have a banana instead. Had some work to do, so went for a chicken shawarma downstairs. Apparently, they put only 90g of chicken in the shawarma. Too little, ain't it?
 

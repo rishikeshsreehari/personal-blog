@@ -9,6 +9,11 @@
     {{- $scratch.Add "meta" (slice (i18n "read_time" (dict "Count" $readingTime) | default (printf "⏱ %d min" $readingTime))) }}
 {{- end }}
 
+{{- if (.Param "location") -}}
+    {{- $location := .Param "location" }}
+    {{- $scratch.Add "meta" (slice (printf "📍 %s" $location)) }}
+{{- end }}
+
 {{- with ($scratch.Get "meta") }}
     {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
 {{- end }}

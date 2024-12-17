@@ -6,8 +6,9 @@ url: "/fitness-log/1/"
 type: page
 disable_comments: true
 ShowReadingTime: false
+location: Abu Dhabi, UAE
+
 ---
-**17-10-2024, Abu Dhabi(UAE)**
 
 
 Woke up bit wonky after a not-so good sleep. Had a carb heavy meal so decided to skip breakfast.

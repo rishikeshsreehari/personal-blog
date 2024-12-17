@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**18-10-2024, Abu Dhabi(UAE)**
 
 Slept just 5 hours yesterday and woke up early with a headache. Couldn't sleep more as I had an appointment for my 4th physiotherapy session for my [ankle sprain](/journal/ankle-sprain/).
 

@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**25-10-2024, Abu Dhabi(UAE)**
 
 Skipped breakfast and worked all morning. Decided to go straight for lunch with yesterday's beef, gobi manchurian, and cauliflower leftovers. Had that and worked for the rest of the evening.
 

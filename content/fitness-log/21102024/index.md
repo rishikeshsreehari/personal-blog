@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**21-10-2024, Abu Dhabi(UAE)**
 
 
 Woke up pretty hungover and had no energy to go to the gym or work. Regretted with every cell in my body why I took the initiative to drink on a Sunday night and start the week so low. Had some tea, then 2 egg whites and 2 whole eggs boiled with some mayonnaise for breakfast. Took a shower after ruminating on the couch for a while and felt better.

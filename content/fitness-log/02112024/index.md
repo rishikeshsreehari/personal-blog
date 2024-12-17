@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**02-11-2024, Abu Dhabi(UAE)**
 
 Had an early meeting, so I woke up early and had the usual breakfast of boiled eggs with mayo. Slept only for a few hours, so took an early morning nap. Wife made some [Puliyodharai](https://www.kannammacooks.com/puliyodharai-iyengar-puliyodharai-kovil-puliyodharai/) (South Indian style tamarind rice), some beef fry, potato, and yogurt.
 

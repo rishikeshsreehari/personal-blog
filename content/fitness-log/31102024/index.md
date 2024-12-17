@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**31-10-2024, Abu Dhabi(UAE)**
 
 Woke up and decided to skip breakfast and head to the gym. It was a bad decision as I felt quite tired, especially once I started the deadlift session. Lesson learned: unless I'm going to the gym before 11 AM, never skip breakfast. I decided to get a quick energy boost and grabbed an oat drink from the gym's shop. That turned out to be a mistake—I didn’t check the price and ended up paying 15 AED for a 250ml pack of oat shake. That's a lot for the UAE, considering a can of Coke is just 2.5 AED and a 30g protein drink is 7 AED. It’s even double the price of the same drink in the UK! Felt like I got scammed.
 

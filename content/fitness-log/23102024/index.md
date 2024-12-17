@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**23-10-2024, Abu Dhabi(UAE)**
 
 
 Woke up very late since I slept late at 3 AM. Decided again to skip breakfast and go directly for lunch. Gym session was not possible as expected due to the sore wrist. Made some ground beef with eggs, had it with chapatis along with yesterday's dal curry and cauliflower stir-fry. Ended up eating the whole ground beef, which was approximately 200g cooked!

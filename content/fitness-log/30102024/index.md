@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**30-10-2024, Abu Dhabi(UAE)**
 
 Woke up and had breakfast for the first time in a long time. The usual: 2 whole boiled eggs and 2 boiled egg whites with some garlic mayo for flavor. Had some pending work, so went straight into it. Got on a call with a friend and caught up on a lot of things, but it lasted long, and I had a very late lunch at 3:30 PM. Lunch was some chapathi, some dal curry, 100g of pan-seared chicken breast, and some yogurt.
 

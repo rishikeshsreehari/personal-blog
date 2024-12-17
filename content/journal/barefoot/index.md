@@ -7,9 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: true
 draft: false
----
-**18-10-2024, Abu Dhabi(UAE)**
+location: Abu Dhabi, UAE
 
+---
 On my way back from the physiotherapist, I decided to walk home through a nearby park. After living in a concrete jungle for almost a year, it felt amazing to see and walk through greenery. While it was risky, I decided to walk barefoot through the grass. I noticed a few people looking at me — I mean, it's not a common sight in a city like Abu Dhabi to see someone walking barefoot in a park, holding their slides in hand. But who cares, it felt amazing. The sprinklers were on, and the grass was wet in a few spots, which made it even better. It brought back memories from my childhood, where we used to play barefoot and walk on the grass without a care in the world.
 
 {{< photocaption src="barefoot.jpg" alt="barefoot" >}}The Feeling was Amazing{{< /photocaption >}}

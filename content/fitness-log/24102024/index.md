@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**24-10-2024, Abu Dhabi(UAE)**
 
 Woke up a bit early; my wrist was still a mess, so I decided to skip the gym. Had the usual breakfast: 2 whole eggs and 2 egg whites with some mayonnaise. Lunch was chapathi, pan-seared chicken breast, and gobi masala.
 

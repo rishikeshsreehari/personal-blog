@@ -7,8 +7,9 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false
+location: Abu Dhabi, UAE
+
 ---
-**19-10-2024, Abu Dhabi(UAE)**
 
 Had a decent night of sleep and relaxed all morning. Decided to skip breakfast and go directly for lunch. Wife made some noodles with scrambled eggs and then went for a nap.
 
