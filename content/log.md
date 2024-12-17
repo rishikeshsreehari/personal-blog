@@ -11,6 +11,35 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.641.M.1712** (2024-12-17)
+
+#### **Fixes**
+
+1. **Added encoding="utf-8" in pre_push.py to handle emojis**  
+   - *Commit:* [`de4929d`](https://github.com/rishikeshsreehari/personal-blog/commit/de4929d)  
+   - *Files:*  
+     1. [`scripts/pre_push.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/pre_push.py)
+
+2. **Fixed an issue with favicons**  
+   - *Commit:* [`8abc4ad`](https://github.com/rishikeshsreehari/personal-blog/commit/8abc4ad)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+
+#### **Updations**
+
+1. **Updated now**  
+   - *Commit:* [`b62b790`](https://github.com/rishikeshsreehari/personal-blog/commit/b62b790)  
+   - *Files:*  
+     1. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+
+2. **Udpated webrings with 🕸💍**  
+   - *Commit:* [`210fb36`](https://github.com/rishikeshsreehari/personal-blog/commit/210fb36)  
+   - *Files:*  
+     1. [`content/webrings.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/webrings.md)
+
+
+---
 ### **v24.640.U.1512** (2024-12-15)
 
 #### **Updations**
