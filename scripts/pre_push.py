@@ -35,19 +35,19 @@ def read_version_file():
             "LastCommitLong": "",
             "LastCommitShort": ""
         }
-        with open(VERSION_FILE, "w") as f:
+        with open(VERSION_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4)
-    with open(VERSION_FILE, "r") as f:
+    with open(VERSION_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
     
 def get_current_commit_hash():
     """Get the current commit hash."""
     try:
         long_hash = subprocess.check_output(
-            ["git", "rev-parse", "HEAD"], text=True
+            ["git", "rev-parse", "HEAD"], encoding="utf-8"
         ).strip()
         short_hash = subprocess.check_output(
-            ["git", "rev-parse", "--short", "HEAD"], text=True
+            ["git", "rev-parse", "--short", "HEAD"], encoding="utf-8"
         ).strip()
         return long_hash, short_hash
     except subprocess.CalledProcessError:
@@ -101,42 +101,33 @@ def get_commit_type_gui(commit_msg):
     root.mainloop()
     return result["type"]
 
-
-
 def determine_version_type(commit_entries):
     """Determine version type based on commit entries."""
     if not commit_entries:
         return "U"  # Default
         
-    # Get unique types from commits
     types = set(entry[2] for entry in commit_entries)
-    
-    # If more than one type exists, return M
     if len(types) > 1:
         return "M"
-    
-    # If all commits are of same type, return that type
-    return types.pop()  # Get the single type
+    return types.pop()
 
 def update_changelog(commit_entries, version):
     """Update the changelog with new commits."""
     REPO_URL = "https://github.com/rishikeshsreehari/personal-blog/"
     
     if not os.path.exists(LOG_FILE):
-        with open(LOG_FILE, "w", encoding='utf-8') as f:
+        with open(LOG_FILE, "w", encoding="utf-8") as f:
             f.write("<!--LOG_PLACEHOLDER_START-->\n\n<!--LOG_PLACEHOLDER_END-->")
     
-    with open(LOG_FILE, "r", encoding='utf-8') as f:
+    with open(LOG_FILE, "r", encoding="utf-8") as f:
         content = f.read()
     
     start_marker = "<!--LOG_PLACEHOLDER_START-->"
     end_marker = "<!--LOG_PLACEHOLDER_END-->"
-    
     start_idx = content.find(start_marker) + len(start_marker)
     end_idx = content.find(end_marker)
     
     current_date = datetime.now().strftime("%Y-%m-%d")
-    
     commits_by_type = {
         "F": "Fixes",
         "N": "Additions",
@@ -152,25 +143,21 @@ def update_changelog(commit_entries, version):
             for i, file in enumerate(files) if file.strip()
         ]
         file_section = "\n".join(file_entries)
-        entry = f"""\
-{len(type_entries[type]) + 1}. **{msg}**  
+        entry = f"""{len(type_entries[type]) + 1}. **{msg}**  
    - *Commit:* [`{hash}`]({REPO_URL}commit/{hash})  
    - *Files:*  
 {file_section}
 """
         type_entries[type].append(entry)
     
-    # Build changelog section
     changelog_section = [f"### **v{version}** ({current_date})\n"]
-    
     for type, title in commits_by_type.items():
         if type_entries[type]:
             changelog_section.append(f"#### **{title}**\n")
             changelog_section.extend(type_entries[type])
-            changelog_section.append("")  # Add blank line between sections
+            changelog_section.append("")  
     
     changelog_entry = "\n".join(changelog_section) + "\n---\n"
-    
     new_content = (
         content[:start_idx] + 
         "\n" + changelog_entry + 
@@ -178,36 +165,29 @@ def update_changelog(commit_entries, version):
         content[end_idx:]
     )
     
-    with open(LOG_FILE, "w", encoding='utf-8') as f:
+    with open(LOG_FILE, "w", encoding="utf-8") as f:
         f.write(new_content)
-
-
 
 def get_unpushed_commits():
     """Get all commits that haven't been pushed yet with their changed files."""
     try:
         remote_branch = subprocess.check_output(
             ["git", "rev-parse", "--abbrev-ref", "@{u}"],
-            text=True
+            encoding="utf-8"
         ).strip()
-        
-        # Get commits
         commits = subprocess.check_output(
             ["git", "log", f"{remote_branch}..HEAD", "--pretty=format:%h|%s"],
-            text=True
+            encoding="utf-8"
         ).strip().split('\n')
-        
         commit_data = []
         for commit in commits:
             if commit and not commit.split('|')[1].startswith("Pre-push update:"):
                 hash, msg = commit.split('|')
-                # Get files changed in this commit
                 files = subprocess.check_output(
                     ["git", "show", "--name-only", "--format=", hash],
-                    text=True
+                    encoding="utf-8"
                 ).strip().split('\n')
                 commit_data.append((hash, msg, files))
-                
         return commit_data
     except subprocess.CalledProcessError:
         return []
@@ -218,71 +198,47 @@ def pre_push():
         return
 
     create_lock()
-
     try:
         commits = get_unpushed_commits()
         if not commits:
             print("No unpushed commits found.")
             return
 
-        # Check if the last commit is already a version bump
         last_commit_msg = subprocess.check_output(
-            ["git", "log", "-1", "--pretty=%B"],
-            text=True
+            ["git", "log", "-1", "--pretty=%B"], encoding="utf-8"
         ).strip()
-        
         if last_commit_msg.startswith("Pre-push update:"):
-            return  # Skip if we've already processed this batch
+            return
 
         commit_entries = []
-        for hash, msg, files in commits:  # Modified this line to unpack three values
+        for hash, msg, files in commits:
             commit_type = get_commit_type_gui(msg)
             if not commit_type:
                 print(f"No type selected for commit {hash}. Aborting push.")
                 sys.exit(1)
-            commit_entries.append((hash, msg, commit_type, files))  # Added files to tuple
+            commit_entries.append((hash, msg, commit_type, files))
 
-        # Get the previous commit hash before we make any changes
         long_hash, short_hash = get_current_commit_hash()
-
-        # Determine version type using the new logic
         version_type = determine_version_type(commit_entries)
-
-        # Update version
         version_data = read_version_file()
-        current_push_count = version_data.get("PushCount", 0)
-        new_push_count = current_push_count + 1
+        new_push_count = version_data.get("PushCount", 0) + 1
         current_date = datetime.now().strftime("%d%m")
-        
         version = f"24.{new_push_count}.{version_type}.{current_date}"
         
-        version_data["Version"] = version
-        version_data["PushCount"] = new_push_count
-        version_data["LastCommitLong"] = long_hash
-        version_data["LastCommitShort"] = short_hash
+        version_data.update({
+            "Version": version, "PushCount": new_push_count,
+            "LastCommitLong": long_hash, "LastCommitShort": short_hash
+        })
 
-        with open(VERSION_FILE, "w") as f:
+        with open(VERSION_FILE, "w", encoding="utf-8") as f:
             json.dump(version_data, f, indent=4)
 
-        # Update changelog
         update_changelog(commit_entries, version)
-
-        # Stage and commit version and log updates
         subprocess.run(["git", "add", VERSION_FILE, LOG_FILE])
         subprocess.run(["git", "commit", "-m", f"Pre-push update: Bump version to {version} and update changelog"])
-        
-        # Pull latest changes first
         subprocess.run(["git", "pull", "--rebase"])
-        
-        # Let the normal git push continue
-        return 0
-        
-    except Exception as e:
-        print(f"Error during pre-push: {e}")
-        sys.exit(1)
     finally:
         remove_lock()
-
 
 if __name__ == "__main__":
     pre_push()
