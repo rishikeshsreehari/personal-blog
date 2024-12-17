@@ -10,22 +10,20 @@ dataDir: "data"
 
 ##### Last updated on 09-12-2024
 
-🌍 I’m based in **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)** but currently in Kochi, India for vacation!
+🌍 I’m currently in **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**   
+⏰ The local time here is **{{< current_time timezone="Asia/Dubai" >}}**  
 
-⏰ The local time here is **{{< current_time timezone="Asia/Kolkata" >}}**  
-
-{{< current_weather location="Cherthala" >}}
+{{< current_weather location="Abu Dhabi" >}}
 
 ---
 
-### ✈️ Going Home!
+### 💭 What’s on My Mind?
 
-I'll be in India from 23rd November to 16th December.
+The weather is very good here in Abu Dhabi now—it's the best time for some sightseeing. I'm excited about visiting a few art galleries and museums. One big goal I have now is to get my driving license here in Abu Dhabi. It's a challenge, but exciting times lie ahead!
 
-The plan is ~~Mumbai~~ → ~~Nagpur~~ → ~~Thanjavur~~ → ~~Chennai~~ → Kochi.   
+---
 
-Done with Mumbai, Nagpur, Thanjavur and Chennai! Back home mostly chilling, finishing some pending work!
-If you're around Kochi, feel free to [reach out](/contact)!
+
 
 ### 🔨 What am I Doing?
 
@@ -34,7 +32,6 @@ If you're around Kochi, feel free to [reach out](/contact)!
 - Unnecessarily tweaking and over-engineering this blog! You can see the progress [here](/log).
 
 ---
-
 
 
 ### Now in Numbers
@@ -71,7 +68,7 @@ If you're around Kochi, feel free to [reach out](/contact)!
 
 ### 🏋 My Fitness
 
-Currently in travel mode with very little activity. Lots of junk food, no time spent in the gym, with occasional runs. Can't wait to bring back my bike, start cycling, hit the gym regularly, and get in shape!
+Travel is finally over, winter is here, and my bike is with me. Excited to get back in shape!
 
 <!--  
 
