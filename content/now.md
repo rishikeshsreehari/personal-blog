@@ -8,7 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 ---
 
-##### Last updated on 09-12-2024
+##### Last updated on 20-12-2024
 
 🌍 I’m currently in **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**   
 ⏰ The local time here is **{{< current_time timezone="Asia/Dubai" >}}**  
@@ -20,6 +20,8 @@ dataDir: "data"
 ### 💭 What’s on My Mind?
 
 The weather is very good here in Abu Dhabi now—it's the best time for some sightseeing. I'm excited about visiting a few art galleries and museums. One big goal I have now is to get my driving license here in Abu Dhabi. It's a challenge, but exciting times lie ahead!
+
+Also working as a freelancer in UAE is bit tricky when it comes to finding information online. Figuring out the whole freelance license thing!
 
 ---
 
@@ -46,7 +48,6 @@ The weather is very good here in Abu Dhabi now—it's the best time for some sig
 
 - [Japan Traverse Hike 2023](https://github.com/WebOrigami/japan-hike-ebook) by Jan Miksovsky
 - [Exercised](https://geni.us/rs-exercised) by Daniel Lieberman
-- [Illusions: The Adventures of a Reluctant Messiah](https://geni.us/rs-illusions) by Richard Bach
 - [The Paradox of Choice: Why More is Less](https://geni.us/rsh-paradox-choice) by Barry Schwartz
 
 *I read 3-4 books in parallel most of the time on [my e-book reader](https://geni.us/rsh-kindle-paperwhite).*
