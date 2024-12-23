@@ -173,6 +173,7 @@ outputs:
     - JSON # is necessary
 
 
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
@@ -184,4 +185,8 @@ markup:
     # lineNos: true
     # style: monokai
 
+taxonomies:
+  tiltag: tiltags
 
+permalinks:
+  til: /til/:slug/

@@ -1,0 +1,71 @@
+{{ define "main" }}
+<div class="til-container">
+    <h1 class="til-title">Today I Learned</h1>
+    <p class="til-description">A collection of things I've learned, shared in reverse chronological order.</p>
+
+    <div class="til-filters">
+        {{ range $name, $taxonomy := .Site.Taxonomies.tiltags }}
+        <button class="til-filter-tag" data-topic="{{ $name }}">
+            {{ $name }} ({{ $taxonomy.Count }})
+        </button>
+        {{ end }}
+    </div>
+
+    {{ range .Pages.GroupByDate "2006" }}
+    <h2 class="til-year">{{ .Key }}</h2>
+    {{ range .Pages }}
+    <article class="til-entry-preview" data-topics="{{ delimit .Params.tiltags "," }}">
+        <h3>
+            <a href="{{ .RelPermalink }}" class="til-entry-link">{{ .Title }}</a>
+        </h3>
+        <div class="til-entry-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+            <span class="til-entry-tags">
+                {{ range .Params.tiltags }}
+                <span class="til-entry-tag">{{ . }}</span>
+                {{ end }}
+            </span>
+        </div>
+        {{ with .Params.summary }}
+        <p class="til-summary">{{ . }}</p>
+        {{ end }}
+    </article>
+    {{ end }}
+    {{ end }}
+
+    <hr>
+
+    <h5>Inspired by <a href="https://til.simonwillison.net/" style="text-decoration: underline;">Simon Willson</a>, <a href="https://mharty3.github.io/til/" style="text-decoration: underline;">Michael Harty</a>, <a href="https://github.com/jbranchaud/til" style="text-decoration: underline;">Josh Branchaud</a>, and many more.</h5>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tagButtons = document.querySelectorAll('.til-filter-tag');
+    const entries = document.querySelectorAll('.til-entry-preview');
+    let activeTopics = new Set();
+
+    tagButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const topic = this.dataset.topic;
+            if (activeTopics.has(topic)) {
+                activeTopics.delete(topic);
+                this.classList.remove('active');
+            } else {
+                activeTopics.add(topic);
+                this.classList.add('active');
+            }
+
+            entries.forEach(entry => {
+                const entryTopics = entry.dataset.topics.split(',');
+                if (activeTopics.size === 0 || entryTopics.some(t => activeTopics.has(t))) {
+                    entry.style.display = '';
+                } else {
+                    entry.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
+{{ end }}
