@@ -1,3 +1,21 @@
+- name: "Viduthalai: Part I"
+  language: "Tamil"
+  rating: 3
+  date: "2024-12-22"
+  url: "/watch/viduthalai-1/"
+  gender: "male"
+  platform: "ZEE5"
+  country: "India"
+  runtime: "150"
+  type: "movie"
+  reviewed_on: "2024-12-22"
+  budget: "$4,712,000"
+  director: "Vetrimaaran"
+
+
+
+
+
 - name: "Lost"
   language: "English"
   rating: 5
@@ -10,6 +28,7 @@
   type: "tv"
   reviewed_on: "2024-12-03"
   budget: "$500,162,935"
+  notes: "Running time is assumed since there are a lot of episodes. Same goes for the budget"
 
 
 - name: "Meiyazhagan"
