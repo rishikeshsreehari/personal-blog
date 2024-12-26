@@ -155,6 +155,7 @@ These are a few tools and projects that align with this philosophy. Here's a lis
 - [OneFolder](https://onefolder.app/) - Open-source photo organizer storing tags, faces, and locations in metadata, ensuring no lock-in.
 - [Lyrcs](https://lyrcs.app/) - A lyrics writing app that stores its content in plain text files. 
 - [Markor](https://github.com/gsantner/markor) - A text editor for notes and to-do app for Android using simple markup formats. 
+- [Ledger](https://ledger-cli.org/) and [hledger](https://hledger.org/) for plain-text accounting!
 
 
 If you are working on a similar tool, happy to have a look and add them to the above list!
@@ -162,6 +163,11 @@ If you are working on a similar tool, happy to have a look and add them to the a
 In the end, 'File over App' isn't just a philosophy—it.s a guideline for making digital choices that prioritize the longevity of data. With each decision, I'm creating a lasting digital archive, one file at a time.
 
 ---
+
+#### Update #5 - 26-12-2024, 12:16 GST
+- _Thanks to Miika for suggesting Ledger and hledger!_
+
+
 
 #### Update #5 - 06-12-2024, 17:50 IST
 - _Thanks to [Srikanth](https://srikanthperinkulam.com/) for suggesting Marko!_
