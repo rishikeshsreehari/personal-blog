@@ -1,7 +1,25 @@
-{{- $.Scratch.Add "index" slice -}}
-{{- range site.RegularPages -}}
-    {{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) }}
-    {{- $.Scratch.Add "index" (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary) -}}
-    {{- end }}
-{{- end -}}
-{{- $.Scratch.Get "index" | jsonify -}}
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": {{ .Site.Title | jsonify }},
+    "home_page_url": {{ .Site.BaseURL | jsonify }},
+    "feed_url": {{ (printf "%s/index.json" .Site.BaseURL) | jsonify }},
+    "items": [
+        {{- $.Scratch.Add "index" slice -}}
+        {{- range site.RegularPages -}}
+            {{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) }}
+                {{- $.Scratch.Add "index" (dict 
+                    "id" .Permalink 
+                    "url" .Permalink 
+                    "title" .Title 
+                    "content_html" .Plain 
+                    "summary" .Summary
+                    "date_published" (.Date.Format "2006-01-02T15:04:05-07:00")
+                ) -}}
+            {{- end }}
+        {{- end -}}
+        {{- range $index, $entry := $.Scratch.Get "index" -}}
+            {{- if $index }},{{ end }}
+            {{- $entry | jsonify -}}
+        {{- end -}}
+    ]
+}
