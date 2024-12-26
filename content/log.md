@@ -11,6 +11,61 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.645.M.2612** (2024-12-26)
+
+#### **Updations**
+
+1. **Updated JSON Feed to 1.1 spec**  
+   - *Commit:* [`2cece78`](https://github.com/rishikeshsreehari/personal-blog/commit/2cece78)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/_default/index.json`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/_default/index.json)
+
+2. **Added a front matter condition to hide in RSS for now pages**  
+   - *Commit:* [`51ff22c`](https://github.com/rishikeshsreehari/personal-blog/commit/51ff22c)  
+   - *Files:*  
+     1. [`content/now-archive/now-2024-06-09.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-06-09.md)
+     2. [`content/now-archive/now-2024-08-16-1.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-08-16-1.md)
+     3. [`content/now-archive/now-2024-08-16-2.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-08-16-2.md)
+     4. [`content/now-archive/now-2024-08-16-3.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-08-16-3.md)
+     5. [`content/now-archive/now-2024-08-16.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-08-16.md)
+     6. [`content/now-archive/now-2024-09-17.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-09-17.md)
+     7. [`content/now-archive/now-2024-09-23.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-09-23.md)
+     8. [`content/now-archive/now-2024-10-03.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-10-03.md)
+     9. [`content/now-archive/now-2024-10-15.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-10-15.md)
+     10. [`content/now-archive/now-2024-10-16.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-10-16.md)
+     11. [`content/now-archive/now-2024-10-18.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-10-18.md)
+     12. [`content/now-archive/now-2024-10-22.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-10-22.md)
+     13. [`content/now-archive/now-2024-10-23.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-10-23.md)
+     14. [`content/now-archive/now-2024-10-28.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-10-28.md)
+     15. [`content/now-archive/now-2024-10-30.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-10-30.md)
+     16. [`content/now-archive/now-2024-11-05.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-11-05.md)
+     17. [`content/now-archive/now-2024-11-06-1.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-11-06-1.md)
+     18. [`content/now-archive/now-2024-11-06.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-11-06.md)
+     19. [`content/now-archive/now-2024-11-14.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-11-14.md)
+     20. [`content/now-archive/now-2024-11-19.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-11-19.md)
+     21. [`content/now-archive/now-2024-11-20.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-11-20.md)
+     22. [`content/now-archive/now-2024-11-28.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-11-28.md)
+     23. [`content/now-archive/now-2024-12-03.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-12-03.md)
+     24. [`content/now-archive/now-2024-12-06.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-12-06.md)
+     25. [`content/now-archive/now-2024-12-09.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-12-09.md)
+     26. [`content/now-archive/now-2024-12-17.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-12-17.md)
+     27. [`content/now-archive/now-2024-12-20.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/now-2024-12-20.md)
+     28. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+     29. [`content/then.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/then.md)
+     30. [`scripts/then.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/then.py)
+     31. [`themes/hugo-PaperMod/layouts/_default/rss.xml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/_default/rss.xml)
+
+
+#### **New Features**
+
+1. **Added atom feed**  
+   - *Commit:* [`4e4d6b4`](https://github.com/rishikeshsreehari/personal-blog/commit/4e4d6b4)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+     2. [`themes/hugo-PaperMod/layouts/_default/index.atom.xml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/_default/index.atom.xml)
+
+
+---
 ### **v24.644.N.2312** (2024-12-23)
 
 #### **Additions**
