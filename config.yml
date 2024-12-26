@@ -109,7 +109,7 @@ params:
     - name: email
       url: "mailto:hello@rishikeshs.com"
     - name: paypal
-      url: "https://paypal.me/RishikeshSHari?country.x=IN&locale.x=en_GB?utm_source=rishikeshs.com"
+      url: "https://www.paypal.com/paypalme/rishikeshsreehari"
 
 
   #analytics:
