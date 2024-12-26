@@ -1,0 +1,16 @@
+{{ `<?xml version="1.0" encoding="utf-8"?>` | safeHTML }}
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ .Site.Title }}</title>
+  <link href="{{ .Site.BaseURL }}"/>
+  <updated>{{ now.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
+  <id>{{ .Site.BaseURL }}</id>
+  {{ range first .Site.Params.atomFeedLimit (where site.RegularPages "Section" "in" (slice "blog" "til" "watch" "fitness-log")).ByDate.Reverse }}
+  <entry>
+    <title>{{ .Title }}</title>
+    <link href="{{ .Permalink }}"/>
+    <updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
+    <id>{{ .Permalink }}</id>
+    <content type="html">{{ .Summary | html }}</content>
+  </entry>
+  {{ end }}
+</feed>

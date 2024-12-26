@@ -51,6 +51,8 @@ params:
   BookShelfDisplayCount: 12
   UtmSource: rishikeshs.com
   CurrentLocation: "Abu Dhabi"
+  atomFeedLimit: 50
+
 
 
   assets:
@@ -170,7 +172,17 @@ outputs:
   home:
     - HTML
     - RSS
-    - JSON # is necessary
+    - JSON 
+    - ATOM
+
+outputFormats:
+  ATOM:
+    mediaType: "application/atom+xml"
+    baseName: "atom"
+
+mediaTypes:
+  application/atom+xml:
+    suffixes: ["xml"]
 
 
 
