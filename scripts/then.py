@@ -41,6 +41,7 @@ disable_comments: true
 ShowReadingTime: false
 dataDir: "data"
 index: false
+hideFromRSS: true
 ---
 
 This is an archive of the Now page on {date_str}

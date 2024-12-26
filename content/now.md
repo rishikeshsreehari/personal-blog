@@ -6,6 +6,8 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 dataDir: "data"
+hideFromRSS: true
+
 ---
 
 ##### Last updated on 20-12-2024
