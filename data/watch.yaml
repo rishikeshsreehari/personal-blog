@@ -1,3 +1,24 @@
+- name: "Nunakkuzhi"
+  language: "Malayalam"
+  rating: 2
+  date: "2024-12-25"
+  url: "/watch/nunakkuzhi/"
+  gender: "male"
+  platform: "ZEE5"
+  country: "India"
+  runtime: "128"
+  type: "movie"
+  reviewed_on: "2024-12-29"
+  budget: "$1,170,000"
+  collection: "$2,690,000"
+  director: "Jeethu Joseph"
+  notes: "Budget assumed as 10cr from unofficial sources."
+
+
+
+
+
+
 - name: "Viduthalai: Part I"
   language: "Tamil"
   rating: 3
