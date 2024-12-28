@@ -11,6 +11,40 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.647.M.2912** (2024-12-29)
+
+#### **Fixes**
+
+1. **Corrected double-ledger to double-entry**  
+   - *Commit:* [`e76f16a`](https://github.com/rishikeshsreehari/personal-blog/commit/e76f16a)  
+   - *Files:*  
+     1. [`content/blog/file-over-app/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/file-over-app/index.md)
+
+
+#### **Additions**
+
+1. **Added nunakkuzhi to watch**  
+   - *Commit:* [`27d9b7a`](https://github.com/rishikeshsreehari/personal-blog/commit/27d9b7a)  
+   - *Files:*  
+     1. [`content/watch/nunakkuzhi.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/nunakkuzhi.md)
+     2. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+
+
+#### **Updations**
+
+1. **Added more data to watch for recent movies.**  
+   - *Commit:* [`88e1518`](https://github.com/rishikeshsreehari/personal-blog/commit/88e1518)  
+   - *Files:*  
+     1. [`content/watch/viduthalai-1.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/viduthalai-1.md)
+     2. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+
+2. **Updated Paypal link to UAE**  
+   - *Commit:* [`d07c91f`](https://github.com/rishikeshsreehari/personal-blog/commit/d07c91f)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+
+---
 ### **v24.646.M.2612** (2024-12-26)
 
 #### **Fixes**
