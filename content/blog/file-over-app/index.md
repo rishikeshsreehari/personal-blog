@@ -80,7 +80,7 @@ In my setup, I sync everything to Google Drive (and iCloud) and back it up local
 {{< photocaption>}}A simple service log of my bike!{{< /photocaption >}}
 
 
-If Obsidian shuts down, it won't affect my ability to access these files. My directory structure remains intact, readable by any plain text editor. I take this philosophy into other projects as well. For instance, I haven’t found a calorie tracker that allows easy export and syncing, so I'm building my own system using a double-ledger format for calories.
+If Obsidian shuts down, it won't affect my ability to access these files. My directory structure remains intact, readable by any plain text editor. I take this philosophy into other projects as well. For instance, I haven’t found a calorie tracker that allows easy export and syncing, so I'm building my own system using a double-entry accounting format for calories.
 
 
 
