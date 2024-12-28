@@ -530,6 +530,16 @@
             "Name": "Rishikesh",
             "Date": "2024-12-26",
             "Comment": "<span class='author-marker'></span> You are correct! I should have mentioned them at the top. I've added them to the list. Thanks for the suggestion!"
+        },
+        {
+            "Name": "Cam Pak",
+            "Date": "2024-12-28",
+            "Comment": "Hey, how can someone do File Over App philosophy when working on websites and web apps? I guess I just need a little more examples or pointers, because I love this philosophy"
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2024-12-29",
+            "Comment": "<span class='author-marker'></span> I don't think I can comment on web apps, but when it comes to websites, the key thing is to rely on plain HTML, CSS and JS over complex frameworks, if your complexity allows it."
         }
     ],
     "ama": [
