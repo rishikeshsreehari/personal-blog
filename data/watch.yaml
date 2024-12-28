@@ -1,5 +1,6 @@
 - name: "Nunakkuzhi"
   language: "Malayalam"
+  year: "2024"
   rating: 2
   date: "2024-12-25"
   url: "/watch/nunakkuzhi/"
@@ -22,6 +23,7 @@
 - name: "Viduthalai: Part I"
   language: "Tamil"
   rating: 3
+  year: "2023"
   date: "2024-12-22"
   url: "/watch/viduthalai-1/"
   gender: "male"
@@ -54,6 +56,7 @@
 
 - name: "Meiyazhagan"
   language: "Tamil"
+  year: "2024"
   rating: 3
   date: "2024-10-28"
   url: "/watch/meiyazhagan/"
@@ -77,6 +80,7 @@
   language: "Malayalam"
   rating: 1
   date: "2024-10-04"
+  year: "2024"
   url: "/watch/aliya/"
 
 

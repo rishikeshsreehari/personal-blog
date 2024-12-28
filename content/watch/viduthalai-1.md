@@ -1,7 +1,7 @@
 ---
 title: "Viduthalai: Part I - Tamil Movie Review"
 url: "/watch/viduthalai-1"
-summary: "A shot review of Viduthalai: Part I - Tamil Movie Tamil Movie with ratings and a quick take."
+summary: "A shot review of Viduthalai: Part I -Tamil Movie with ratings and a quick take."
 type: page
 disable_comments: true
 ShowReadingTime: false
