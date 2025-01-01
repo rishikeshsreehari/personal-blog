@@ -64,6 +64,15 @@ _Action Steps:_
 
 ---
 
+>Do you like my blog?   
+Do you have an idea for creating a unique personal blog in 2025?   
+I’m truly passionate about personal blogs, and as a freelance dev, I’m taking on 2 clients this quarter.   
+[Let’s chat](/contact/)—discovery calls are free!
+
+
+
+---
+
 #### **Newsletter: Turning Readers Into Subscribers**
 
 My newsletter, _[10+1 Things](https://newsletter.rishikeshs.com/)_, is my main distribution channel. In fact, most of my freelance projects in the last couple of months were through readers of my newsletter. My goal is to grow my free subscriber base by **1,000 new subscribers** and gain **100 paying subscribers**, reaching $1,000 MRR.
