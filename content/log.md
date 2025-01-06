@@ -11,6 +11,27 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.650.M.0601** (2025-01-06)
+
+#### **Fixes**
+
+1. **Fixed an issue with favicon not displaying**  
+   - *Commit:* [`11db8b1`](https://github.com/rishikeshsreehari/personal-blog/commit/11db8b1)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+     2. [`static/favicon.ico`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/favicon.ico)
+     3. [`themes/hugo-PaperMod/layouts/partials/head.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/head.html)
+
+
+#### **Updations**
+
+1. **Updated webrings with meta webring**  
+   - *Commit:* [`ec76d97`](https://github.com/rishikeshsreehari/personal-blog/commit/ec76d97)  
+   - *Files:*  
+     1. [`content/webrings.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/webrings.md)
+
+
+---
 ### **v24.649.U.0201** (2025-01-02)
 
 #### **Updations**
