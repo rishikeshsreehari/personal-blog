@@ -11,6 +11,18 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.651.U.0601** (2025-01-06)
+
+#### **Updations**
+
+1. **Added webring to footer**  
+   - *Commit:* [`326bc6c`](https://github.com/rishikeshsreehari/personal-blog/commit/326bc6c)  
+   - *Files:*  
+     1. [`assets/css/extended/blank.css`](https://github.com/rishikeshsreehari/personal-blog/blob/main/assets/css/extended/blank.css)
+     2. [`themes/hugo-PaperMod/layouts/partials/footer.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/footer.html)
+
+
+---
 ### **v24.650.M.0601** (2025-01-06)
 
 #### **Fixes**
