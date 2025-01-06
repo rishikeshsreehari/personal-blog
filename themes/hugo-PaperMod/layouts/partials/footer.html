@@ -8,11 +8,7 @@
     <span>
         | Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> & <a href="https://pages.cloudflare.com/" target="_blank">CloudFlare</a>
-       
-        
     </span>
-
-    
 
     <br>
    
@@ -21,22 +17,17 @@
     <br>
     <span>
         <a href="/colophon/">Colophon</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/log">v{{site.Data.version.Version}}</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://github.com/rishikeshsreehari/personal-blog/commit/{{site.Data.version.LastCommitShort}}" rel="noopener noreferrer" target="_blank">{{site.Data.version.LastCommitShort}}</a>
-    
-
     </span>
+
+    <br>
+    <span class="webring-wrapper">
+        <span class="webring-link"> <a href="/webrings"> 🔄 webrings</a></span>
+    </span>
+
+    
 
 </footer>
 {{- end }}
-
-{{- if (not site.Params.disableScrollToTop) }}
-<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
-        <path d="M12 6H0l6-6z" />
-    </svg>
-</a>
-{{- end }}
-
-{{- partial "extend_footer.html" . }}
 
 <script>
     let menu = document.getElementById('menu')
