@@ -1,0 +1,24 @@
+<div class="gallery">
+    {{ $images := split .Inner "\n" }}
+    <div class="gallery-grid">
+        {{ range $images }}
+            {{ $item := findRE `"([^"]*)"` . }}
+            {{ if ge (len $item) 2 }}
+                <figure class="gallery-item">
+                    <a href="{{ trim (index $item 0) `"` }}" class="lightbox">
+                        <img 
+                            src="{{ trim (index $item 0) `"` }}" 
+                            alt="{{ trim (index $item 1) `"` }}"
+                            loading="lazy"
+                        >
+                    </a>
+                </figure>
+            {{ end }}
+        {{ end }}
+    </div>
+    {{ if .Get "caption" }}
+        <figure style="text-align: center; margin: 20px 0;">
+            <figcaption style="font-size: 14px; color: #666; font-style: italic; margin-top: 8px;">{{ .Get "caption" | markdownify }}</figcaption>
+        </figure>
+    {{ end }}
+</div>
