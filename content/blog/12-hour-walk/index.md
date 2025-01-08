@@ -163,7 +163,7 @@ Item                      Cost (AED)
 Rani Drink                     1.50
 Bourbon biscuit                2.50
 Peanuts                        1.00
-Thalassery Chicken Biryani    15.00
+Thalassery Chicken Biriyani    15.00
 Cold Americano                17.00
 Lacnor fruit cocktail          2.50
 Salted Peanuts                 2.50
