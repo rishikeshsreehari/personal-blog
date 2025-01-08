@@ -174,7 +174,7 @@ Total                     AED 58.50
                           USD 11.84
 
 ```
-Glad that I took a water bottle, lots of points for refilling water.
+*Glad that I took a water bottle, lots of points for refilling water. Saved lots of water and avoided so much plastic. Also, it's weird to see that an americano costs more than a biriyani! Brand value I guess!*
 
 ### What I Would Do Different
 
