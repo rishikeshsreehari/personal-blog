@@ -11,6 +11,18 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.9.F.0901** (2025-01-09)
+
+#### **Fixes**
+
+1. **Fixed rotation issue with images**  
+   - *Commit:* [`3df438d`](https://github.com/rishikeshsreehari/personal-blog/commit/3df438d)  
+   - *Files:*  
+     1. [`content/blog/12-hour-walk/3.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/12-hour-walk/3.webp)
+     2. [`content/blog/12-hour-walk/9.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/12-hour-walk/9.webp)
+
+
+---
 ### **v24.8.M.0901** (2025-01-09)
 
 #### **Fixes**
