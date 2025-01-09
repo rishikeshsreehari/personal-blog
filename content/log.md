@@ -11,6 +11,25 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.10.M.0901** (2025-01-09)
+
+#### **Fixes**
+
+1. **Fixed an issue with embed link**  
+   - *Commit:* [`3c722f2`](https://github.com/rishikeshsreehari/personal-blog/commit/3c722f2)  
+   - *Files:*  
+     1. [`content/blog/12-hour-walk/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/12-hour-walk/index.md)
+
+
+#### **Updations**
+
+1. **Updated caption**  
+   - *Commit:* [`d8dd058`](https://github.com/rishikeshsreehari/personal-blog/commit/d8dd058)  
+   - *Files:*  
+     1. [`content/blog/12-hour-walk/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/12-hour-walk/index.md)
+
+
+---
 ### **v24.9.F.0901** (2025-01-09)
 
 #### **Fixes**
