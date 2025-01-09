@@ -134,12 +134,16 @@ By 9PM, 12 hours in, I finished the challenge having walked around 40.07 kms, 54
 
 {{< rawhtml >}}
 <div style="text-align: center;">
-  <iframe src="https://gpx.studio/embed?options=%7B%22token%22%3A%22pk.eyJ1IjoicmlzaGlrZXNocyIsImEiOiJjbTVvMTl1bnowZnRpMmtzNjB4dTQ5dmszIn0.1ohtpQh3dQN_f_vO_TAS2A%22%2C%22files%22%3A%5B%22https%3A%2F%2Fraw.githubusercontent.com%2Frishikeshsreehari%2Fpersonal-blog%2Frefs%2Fheads%2Fmain%2Fcontent%2Fblog%2F12-hour-walk%2F12_Hour_Abu_Dhabi.gpx%22%5D%2C%22directionMarkers%22%3Atrue%2C%22theme%22%3A%22dark%22%7D" width="80%" height="500px" frameborder="0" style="outline: none;"/>
+  <iframe src="https://gpx.studio/embed?options=%7B%22token%22%3A%22pk.eyJ1IjoicmlzaGlrZXNocyIsImEiOiJjbTVvMTl1bnowZnRpMmtzNjB4dTQ5dmszIn0.1ohtpQh3dQN_f_vO_TAS2A%22%2C%22files%22%3A%5B%22https%3A%2F%2Fraw.githubusercontent.com%2Frishikeshsreehari%2Fpersonal-blog%2Frefs%2Fheads%2Fmain%2Fcontent%2Fblog%2F12-hour-walk%2F12_Hour_Abu_Dhabi.gpx%22%5D%2C%22directionMarkers%22%3Atrue%2C%22theme%22%3A%22dark%22%7D"
+   width="80%" 
+    height="600px" 
+    frameborder="0" 
+    style="outline: none;">
+  </iframe>
 </div>
-
-
-
 {{< /rawhtml >}}
+
+
 
 The activity can be viewed on Strava [here](https://www.strava.com/activities/13291619036) and you can {{< download file="12_Hour_Abu_Dhabi.gpx" text="download the GPX file" >}}.
 
