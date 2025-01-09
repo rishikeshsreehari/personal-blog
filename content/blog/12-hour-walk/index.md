@@ -64,7 +64,7 @@ I had no goals for hitting any distance. I decided to go along with the flow wit
 
 I ended up waking up late, but decided to go anyway. Packed all my stuff, had a protein shake and started by 9AM sharp. Within half an hour it started to feel weird. I mean I've gone to multi-day hikes and treks in the wild, but walking without listening to music or not having internet in an urban jungle felt weird. Within 30 minutes, I reached the mangrove trail or the walk that runs parallel to the mangrove forests. The weather was good and the views were serene. It was mostly empty with occasional cyclists passing by.
 
-{{< gallery caption="(Left to right) I think I have Pareidolia; Cat and the hooman; Pretending to relax; Close to the City" >}}
+{{< gallery caption="(Left to right) I think I have Pareidolia; Cat, hooman & a broken iPhone; Pretending to relax; Close to the City" >}}
 "1.webp","A view of mangroves with a binocular on a ramp"
 "2.webp","A cat and a human"
 "3.webp","A max trying to relax"
