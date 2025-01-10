@@ -10,7 +10,7 @@ hideFromRSS: true
 
 ---
 
-##### Last updated on 20-12-2024
+##### Last updated on 10-01-2024
 
 🌍 I’m currently in **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**   
 ⏰ The local time here is **{{< current_time timezone="Asia/Dubai" >}}**  
@@ -49,7 +49,7 @@ Also working as a freelancer in UAE is bit tricky when it comes to finding infor
 ### 📚 What Am I Reading?
 
 - [Japan Traverse Hike 2023](https://github.com/WebOrigami/japan-hike-ebook) by Jan Miksovsky
-- [Exercised](https://geni.us/rs-exercised) by Daniel Lieberman
+- [The Pleasure of Finding Things Out](https://geni.us/rs-pleasure-of-finding) by Feynmans
 - [The Paradox of Choice: Why More is Less](https://geni.us/rsh-paradox-choice) by Barry Schwartz
 
 *I read 3-4 books in parallel most of the time on [my e-book reader](https://geni.us/rsh-kindle-paperwhite).*
@@ -71,18 +71,15 @@ Also working as a freelancer in UAE is bit tricky when it comes to finding infor
 
 ### 🏋 My Fitness
 
-Travel is finally over, winter is here, and my bike is with me. Excited to get back in shape!
-
-<!--  
 
 I'm currently focused on transforming my body and reducing my body fat to below 25%. This involves a lot of protein and long walks to ensure I'm in a calorie deficit while building muscle and losing fat.
 
-I'm now doing strength training 3x a week, following [Greg Nuckol's beginner program](https://www.boostcamp.app/coaches/greg-nuckols/greg-nuckols-beginner-program) on Boostcamp. On gym days, I try to walk 5km and on other days I try to do light jogs. [My ankle](/journal/ankle-sprain/) is feeling better, and the doctor has given the green light for short runs and squats with light weights. I still feel a bit uneasy with deep squats at the lower position. Need a bit more work on the stability part, few more rehab sessions to go. Can't wait to run freely!
+I'm now doing strength training 3x a week, following [Greg Nuckol's beginner program](https://www.boostcamp.app/coaches/greg-nuckols/greg-nuckols-beginner-program) on Boostcamp. On gym days I try to go for a walk in the evenings. Other days, I try to alternate between cycling and light jogging.
 
-##### For my latest fitness updates, read my [fitness log](/fitness-log). It's interesting, I promise.
+<!-- ##### For my latest fitness updates, read my [fitness log](/fitness-log). It's interesting, I promise. -->
 
 
--->
+
 
 
 

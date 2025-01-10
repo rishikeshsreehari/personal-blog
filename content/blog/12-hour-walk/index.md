@@ -43,7 +43,7 @@ The 12 hour walk was conceptualized by [Colin O'Brady](https://www.colinobrady.c
 
 Since Abu Dhabi is a relatively new planned city and safe, I had no issues with getting lost. As a backup, I had downloaded an offline version of the city on Google Maps. My plan was to start from home, walk north and reach the mangrove walks, then walk the trail, head west to reach the corniche area of the city, roam around, watch few public art pieces along the way, walk around the area and return home. This was my gear/packing list for the walk:
 
-* U[niqlo Jogger Pants](https://www.uniqlo.com/in/en/products/E461440-000?colorCode=COL01&sizeCode=SMA007) since it's so comfy
+* [Uniqlo Jogger Pants](https://www.uniqlo.com/in/en/products/E461440-000?colorCode=COL01&sizeCode=SMA007) since it's so comfy
 * [Decathlon Loose Fitness T-Shirt](https://www.decathlon.in/p/8842284/gym-wear-for-men/men-s-loose-fit-fitness-t-shirt-520-ink-blue?id=8842284&type=p) since it's slightly thick in case it gets chilly.
 * [Vans Old Skool](https://geni.us/rs-vans-oldskool) since my running shoes are worn down and this felt comfy as well
 * A cap
@@ -164,7 +164,7 @@ Item                      Cost (AED)
 Rani Drink                     1.50
 Bourbon biscuit                2.50
 Peanuts                        1.00
-Thalassery Chicken Biriyani    15.00
+Thalassery Chicken Biriyani   15.00
 Cold Americano                17.00
 Lacnor fruit cocktail          2.50
 Salted Peanuts                 2.50
