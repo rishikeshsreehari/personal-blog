@@ -11,6 +11,28 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.11.U.1001** (2025-01-10)
+
+#### **Updations**
+
+1. **Updated subscribers blurb**  
+   - *Commit:* [`5ddf374`](https://github.com/rishikeshsreehari/personal-blog/commit/5ddf374)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/subscribe_block.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/subscribe_block.html)
+
+2. **Updated now**  
+   - *Commit:* [`a080c2d`](https://github.com/rishikeshsreehari/personal-blog/commit/a080c2d)  
+   - *Files:*  
+     1. [`content/blog/12-hour-walk/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/12-hour-walk/index.md)
+     2. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+
+3. **Update home info with latest stats on subscribers**  
+   - *Commit:* [`fed0c23`](https://github.com/rishikeshsreehari/personal-blog/commit/fed0c23)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/partials/home_info.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/home_info.html)
+
+
+---
 ### **v24.10.M.0901** (2025-01-09)
 
 #### **Fixes**
