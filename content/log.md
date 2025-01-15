@@ -11,6 +11,25 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.12.M.1601** (2025-01-16)
+
+#### **Additions**
+
+1. **Added blogging with friction post**  
+   - *Commit:* [`d739ba6`](https://github.com/rishikeshsreehari/personal-blog/commit/d739ba6)  
+   - *Files:*  
+     1. [`content/blog/blogging-with-friction/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/blogging-with-friction/index.md)
+
+
+#### **Updations**
+
+1. **Updated dream**  
+   - *Commit:* [`56cd713`](https://github.com/rishikeshsreehari/personal-blog/commit/56cd713)  
+   - *Files:*  
+     1. [`content/dream.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/dream.md)
+
+
+---
 ### **v24.11.U.1001** (2025-01-10)
 
 #### **Updations**
