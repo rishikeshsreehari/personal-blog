@@ -2,8 +2,7 @@
 title: Blogging with Friction
 date: 2025-01-15
 excerpt: "A reflection on my journey from WordPress to Hugo, embracing the challenges, creativity, and joy of blogging with friction—written as my entry for January's IndieWeb Carnival."
-description: "
-A reflection on my journey from WordPress to Hugo, embracing the challenges, creativity, and joy of blogging with friction—written as my entry for January's IndieWeb Carnival."
+description: "A reflection on my journey from WordPress to Hugo, embracing the challenges, creativity, and joy of blogging with friction—written as my entry for January's IndieWeb Carnival."
 url: /blogging-friction/
 keywords:
   - "blogging with friction"
@@ -11,6 +10,16 @@ keywords:
   - "small web"
 weight: 1
 hiddenInHomeList: true
+
+cover:
+  image: "6.webp"
+  alt: "12 hour walk"
+  caption: "A documentation of my 12 hour walk in Abu Dhabi with some reflections and experiences."
+  relative: true
+
+
+
+
 ---
 
 *This is my entry on the topic ["Importance of Friction"](https://vhbelvadi.com/indieweb-carnival-friction) for January's [IndieWeb Carnival](https://vhbelvadi.com/indieweb-carnival-friction) hosted by [V.H. Belvadi](https://vhbelvadi.com/). If you have written something similar for this month's IndieWeb Carnival, please send it to me as well.*
@@ -24,6 +33,9 @@ Before I moved to a Hugo blog, I had a WordPress blog. To be honest, it was supe
 
 
 Last year, when I decided to move to a blog powered by Hugo, everything changed. It wasn't the familiar login-edit-publish workflow anymore. It wasn't as simple as logging in, editing in a rich text browser, and clicking publish, but that was the beauty of it. The challenges, the constraints, and yes, the friction, became part of the joy. I started with a theme and had to tweak it to make the blog like how I wanted. I tweaked a lot. I spent almost half a year tweaking unnecessarily, caught in the endless loop of tweaking. I was slowly embracing the new friction while loving the endless possibilities ahead.
+
+{{< photocaption src="blogging.webp" alt="Flammarion engraving" width="80%" >}}[Beyond Comfort](https://en.wikipedia.org/wiki/Flammarion_engraving){{< /photocaption >}}
+
 
 Ever since, I've enjoyed and loved the process of shaping this blog into something that is uniquely mine. While I used probably the [most popular Hugo theme](https://github.com/adityatelange/hugo-PaperMod) of all time, it still felt different. Through minor tweaks here and there, most of them that would never be discovered by anyone, the blog was slowly becoming a living, [nicheless](/nicheless) art piece—and probably [the greatest art I will ever produce](/blog-art).
 
