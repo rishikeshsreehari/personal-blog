@@ -11,6 +11,34 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.13.U.1601** (2025-01-16)
+
+#### **Updations**
+
+1. **renmaed blank.css to misc.css**  
+   - *Commit:* [`b362f75`](https://github.com/rishikeshsreehari/personal-blog/commit/b362f75)  
+   - *Files:*  
+     1. [`assets/css/extended/misc.css`](https://github.com/rishikeshsreehari/personal-blog/blob/main/assets/css/extended/misc.css)
+
+2. **Updated the footer easter with breathing effect**  
+   - *Commit:* [`56a05f4`](https://github.com/rishikeshsreehari/personal-blog/commit/56a05f4)  
+   - *Files:*  
+     1. [`assets/css/extended/blank.css`](https://github.com/rishikeshsreehari/personal-blog/blob/main/assets/css/extended/blank.css)
+
+3. **Updated footer easter**  
+   - *Commit:* [`6498712`](https://github.com/rishikeshsreehari/personal-blog/commit/6498712)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+     2. [`themes/hugo-PaperMod/layouts/partials/footer.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/footer.html)
+
+4. **Added image to the post**  
+   - *Commit:* [`b466e7f`](https://github.com/rishikeshsreehari/personal-blog/commit/b466e7f)  
+   - *Files:*  
+     1. [`content/blog/blogging-with-friction/blogging.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/blogging-with-friction/blogging.webp)
+     2. [`content/blog/blogging-with-friction/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/blogging-with-friction/index.md)
+
+
+---
 ### **v24.12.M.1601** (2025-01-16)
 
 #### **Additions**
