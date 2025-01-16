@@ -12,9 +12,9 @@ weight: 1
 hiddenInHomeList: true
 
 cover:
-  image: "6.webp"
-  alt: "12 hour walk"
-  caption: "A documentation of my 12 hour walk in Abu Dhabi with some reflections and experiences."
+  image: "blogging.webp"
+  alt: "indie web carnival: blogging with friction"
+  caption: "A reflection on my journey from WordPress to Hugo, embracing the challenges, creativity, and joy of blogging with friction—written as my entry for January's IndieWeb Carnival."
   relative: true
 
 
