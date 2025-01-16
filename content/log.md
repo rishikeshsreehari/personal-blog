@@ -11,6 +11,17 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.14.F.1601** (2025-01-16)
+
+#### **Fixes**
+
+1. **Fixed the cover front matter in latest post**  
+   - *Commit:* [`69b4948`](https://github.com/rishikeshsreehari/personal-blog/commit/69b4948)  
+   - *Files:*  
+     1. [`content/blog/blogging-with-friction/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/blogging-with-friction/index.md)
+
+
+---
 ### **v24.13.U.1601** (2025-01-16)
 
 #### **Updations**
