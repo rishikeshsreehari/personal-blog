@@ -119,30 +119,31 @@
 
 .footer-easter {
     display: inline-block;
-    animation: lifelike-bounce 5s infinite cubic-bezier(0.42, 0, 0.58, 1); /* Natural easing */
+    animation: emotional-flow 6s infinite ease-in-out;
 }
 
-@keyframes lifelike-bounce {
+@keyframes emotional-flow {
     0% {
-        transform: translateY(0); /* Start at center */
+        transform: scale(1) translateY(0);
+        opacity: 1;
     }
-    20% {
-        transform: translateY(-6px); /* Move up higher */
+    25% {
+        transform: scale(0.98) translateY(2px);
+        opacity: 0.9;
     }
-    40% {
-        transform: translateY(-2px); /* Slight dip closer to center */
+    50% {
+        transform: scale(1.02) translateY(-2px);
+        opacity: 1;
     }
-    60% {
-        transform: translateY(6px); /* Move down */
-    }
-    80% {
-        transform: translateY(2px); /* Slight rise closer to center */
+    75% {
+        transform: scale(0.98) translateY(2px);
+        opacity: 0.9;
     }
     100% {
-        transform: translateY(0); /* Back to center */
+        transform: scale(1) translateY(0);
+        opacity: 1;
     }
 }
-
 
 .webring-wrapper {
     display: block;
