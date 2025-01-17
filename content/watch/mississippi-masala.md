@@ -13,7 +13,6 @@ ShowReadingTime: false
 **⚠️ SPOILERS AHEAD, CLICK TO REVEAL! ⚠️**
 
 
-Here’s the corrected version of your text with improved grammar, spelling, and clarity:
 
 The film was screened at the Cinema House in the Manarat Al Saadiyat art gallery in Abu Dhabi as part of a new film restoration project. I loved the movie. It’s beautifully captured, with wonderful acting, direction, and cinematography. I really felt like I was transported to the Indian motel in Mississippi, and the scenes set in Uganda were quite emotional.
 
