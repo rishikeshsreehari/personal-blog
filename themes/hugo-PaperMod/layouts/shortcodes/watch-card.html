@@ -181,25 +181,29 @@
 
         <div class="watch-card__footer">
           <div class="watch-info">
-            <div class="info-item">
-              <span class="info-label">Watched</span>
-              <span class="info-text">
-                {{ with $watch.platform }}
+            <div class="watch-details">
+              <div class="watch-detail-item">
+                <span class="info-label">Watched on:</span>
+                <div class="info-value">
                   {{ if $watch.platform_url }}
-                    <a href="{{ $watch.platform_url }}" class="platform-link" target="_blank">{{ . }}</a>
+                    <a href="{{ $watch.platform_url }}" class="platform-link" target="_blank">{{ $watch.platform }}</a>
                   {{ else }}
-                    {{ . }}
+                    {{ $watch.platform }}
                   {{ end }}
+                </div>
+                {{ with $watch.date }}
+                  <div class="info-value date">{{ dateFormat "Jan 2, 2006" . }}</div>
                 {{ end }}
-                {{ with $watch.date }}• {{ dateFormat "Jan 2, 2006" . }}{{ end }}
-              </span>
-            </div>
-            {{ with $watch.reviewed_on }}
-              <div class="info-item">
-                <span class="info-label">Reviewed</span>
-                <span class="info-text">{{ dateFormat "Jan 2, 2006" . }}</span>
               </div>
-            {{ end }}
+              {{ with $watch.reviewed_on }}
+                <div class="watch-detail-item">
+                  <span class="info-label">Reviewed:</span>
+                  <div class="info-value">
+                    <span class="date">{{ dateFormat "Jan 2, 2006" . }}</span>
+                  </div>
+                </div>
+              {{ end }}
+            </div>
           </div>
           {{ with $watch.url }}
             <a href="{{ . }}" class="letterboxd-link" target="_blank">
