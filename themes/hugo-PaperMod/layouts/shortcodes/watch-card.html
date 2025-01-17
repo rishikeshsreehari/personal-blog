@@ -21,9 +21,11 @@
       {{ end }}
 
       <div class="watch-card__meta">
+        {{ with $watch.type }}<span class="tag">{{ . }}</span>{{ end }}
         {{ with $watch.year }}<span class="tag">{{ . }}</span>{{ end }}
         {{ with $watch.language }}<span class="tag">{{ . }}</span>{{ end }}
         {{ with $watch.runtime }}<span class="tag">{{ . }} min</span>{{ end }}
+
       </div>
     </div>
 
@@ -205,7 +207,7 @@
               {{ end }}
             </div>
           </div>
-          {{ with $watch.url }}
+          {{ with $watch.letterboxd_url}}
             <a href="{{ . }}" class="letterboxd-link" target="_blank">
               <img src="/images/letterboxd.png" alt="Letterboxd">
             </a>
