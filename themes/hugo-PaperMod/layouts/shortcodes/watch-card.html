@@ -207,11 +207,16 @@
               {{ end }}
             </div>
           </div>
-          {{ with $watch.letterboxd_url}}
-            <a href="{{ . }}" class="letterboxd-link" target="_blank">
-              <img src="/images/letterboxd.png" alt="Letterboxd">
-            </a>
-          {{ end }}
+          {{ if $watch.letterboxd_url }}
+          <a href="{{ $watch.letterboxd_url }}" class="letterboxd-link" target="_blank">
+            <img src="/images/letterboxd.png" alt="Letterboxd">
+          </a>
+        {{ else if $watch.serializd_url }}
+          <a href="{{ $watch.serializd_url }}" class="serializd-link" target="_blank">
+            <img src="/images/serializd.png" alt="Serializd">
+          </a>
+        {{ end }}
+        
         </div>
       </div>
     </div>
