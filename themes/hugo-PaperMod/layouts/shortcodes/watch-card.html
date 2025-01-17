@@ -1,0 +1,213 @@
+{{/* layouts/shortcodes/watch-card.html */}}
+{{ $name := .Get "name" }}
+{{ $watch := (index (where site.Data.watch "name" $name) 0) }}
+
+<article class="watch-card">
+  <div class="watch-card__container">
+    <div class="watch-card__title-section">
+        <h1 class="watch-card__title">
+            {{ $watch.name }}{{ with $watch.original_name }}<span class="original-title">'{{ . }}'</span>{{ end }}
+          </h1>
+      
+      {{ with $watch.director }}
+        <div class="watch-card__director">
+            Directed by 
+            {{ if $watch.director_url }}
+            <a href="{{ $watch.director_url }}" class="director-link" target="_blank">{{ . }}</a>
+            {{ else }}
+            <span>{{ . }}</span>
+            {{ end }}
+        </div>
+      {{ end }}
+
+      <div class="watch-card__meta">
+        {{ with $watch.year }}<span class="tag">{{ . }}</span>{{ end }}
+        {{ with $watch.language }}<span class="tag">{{ . }}</span>{{ end }}
+        {{ with $watch.runtime }}<span class="tag">{{ . }} min</span>{{ end }}
+      </div>
+    </div>
+
+    <div class="watch-card__content">
+        <div class="watch-card__poster-section">
+            {{ if $watch.poster }}
+              <img class="watch-card__poster" src="{{ $watch.poster }}" alt="{{ $watch.name }} poster">
+            {{ else }}
+              <div class="watch-card__poster-placeholder">
+                <span>{{ $watch.name }}</span>
+              </div>
+            {{ end }}
+          </div>
+      
+      <div class="watch-card__details">
+        <div class="watch-card__rating-section">
+          <div class="rating-header">
+            <span class="rating-label">Overall Rating</span>
+            <div class="overall-rating">
+              {{ if $watch.rating }}
+                {{ $rating := int $watch.rating }}
+                {{ range $i := (seq 5) }}
+                  <span class="star {{ if le $i $rating }}filled{{ end }}">
+                    {{if le $i $rating }}★{{ else }}☆{{ end }}
+                  </span>
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
+
+          <div class="detailed-ratings">
+            <div class="rating-subheader">
+              <span class="rating-label">Detailed Ratings</span>
+            </div>
+            <div class="rating-row">
+              <span>Direction</span>
+              <div class="stars">
+                {{ if $watch.direction_rating }}
+                  {{ $rating := int $watch.direction_rating }}
+                  {{ range $i := (seq 5) }}
+                    <span class="star {{ if le $i $rating }}filled{{ end }}">
+                      {{if le $i $rating }}★{{ else }}☆{{ end }}
+                    </span>
+                  {{ end }}
+                {{ else }}
+                  {{ range $i := (seq 5) }}
+                    <span class="star">☆</span>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+
+            <div class="rating-row">
+              <span>Script</span>
+              <div class="stars">
+                {{ if $watch.script_rating }}
+                  {{ $rating := int $watch.script_rating }}
+                  {{ range $i := (seq 5) }}
+                    <span class="star {{ if le $i $rating }}filled{{ end }}">
+                      {{if le $i $rating }}★{{ else }}☆{{ end }}
+                    </span>
+                  {{ end }}
+                {{ else }}
+                  {{ range $i := (seq 5) }}
+                    <span class="star">☆</span>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+
+            <div class="rating-row">
+              <span>Performances</span>
+              <div class="stars">
+                {{ if $watch.performance_rating }}
+                  {{ $rating := int $watch.performance_rating }}
+                  {{ range $i := (seq 5) }}
+                    <span class="star {{ if le $i $rating }}filled{{ end }}">
+                      {{if le $i $rating }}★{{ else }}☆{{ end }}
+                    </span>
+                  {{ end }}
+                {{ else }}
+                  {{ range $i := (seq 5) }}
+                    <span class="star">☆</span>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+
+            <div class="rating-row">
+              <span>Cinematography</span>
+              <div class="stars">
+                {{ if $watch.cinematography_rating }}
+                  {{ $rating := int $watch.cinematography_rating }}
+                  {{ range $i := (seq 5) }}
+                    <span class="star {{ if le $i $rating }}filled{{ end }}">
+                      {{if le $i $rating }}★{{ else }}☆{{ end }}
+                    </span>
+                  {{ end }}
+                {{ else }}
+                  {{ range $i := (seq 5) }}
+                    <span class="star">☆</span>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+
+            <div class="rating-row">
+              <span>Impact</span>
+              <div class="stars">
+                {{ if $watch.impact_rating }}
+                  {{ $rating := int $watch.impact_rating }}
+                  {{ range $i := (seq 5) }}
+                    <span class="star {{ if le $i $rating }}filled{{ end }}">
+                      {{if le $i $rating }}★{{ else }}☆{{ end }}
+                    </span>
+                  {{ end }}
+                {{ else }}
+                  {{ range $i := (seq 5) }}
+                    <span class="star">☆</span>
+                  {{ end }}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {{ if and $watch.budget $watch.collection }}
+          {{ $budget := strings.TrimPrefix "$" $watch.budget }}
+          {{ $budget := strings.Replace $budget "," "" -1 }}
+          {{ $budget := strings.TrimSuffix ",000" $budget }}
+          {{ $budget := float $budget }}
+          
+          {{ $collection := strings.TrimPrefix "$" $watch.collection }}
+          {{ $collection := strings.Replace $collection "," "" -1 }}
+          {{ $collection := strings.TrimSuffix ",000" $collection }}
+          {{ $collection := float $collection }}
+          
+          {{ $percentage := div (sub $collection $budget) $budget }}
+          {{ $percentage := mul $percentage 100 }}
+          
+          <div class="financials">
+            <div class="financial-item">
+              <span class="label">Budget:</span>
+              <span class="value">{{ $watch.budget }}</span>
+            </div>
+            <div class="financial-item">
+              <span class="label">Collection:</span>
+              <span class="value">{{ $watch.collection }}</span>
+              <span class="percentage {{ if gt $percentage 0.0 }}positive{{ else }}negative{{ end }}">
+                ({{ if gt $percentage 0.0 }}+{{ end }}{{ printf "%.1f" $percentage }}%)
+              </span>
+            </div>
+          </div>
+        {{ end }}
+
+        <div class="watch-card__footer">
+          <div class="watch-info">
+            <div class="info-item">
+              <span class="info-label">Watched</span>
+              <span class="info-text">
+                {{ with $watch.platform }}
+                  {{ if $watch.platform_url }}
+                    <a href="{{ $watch.platform_url }}" class="platform-link" target="_blank">{{ . }}</a>
+                  {{ else }}
+                    {{ . }}
+                  {{ end }}
+                {{ end }}
+                {{ with $watch.date }}• {{ dateFormat "Jan 2, 2006" . }}{{ end }}
+              </span>
+            </div>
+            {{ with $watch.reviewed_on }}
+              <div class="info-item">
+                <span class="info-label">Reviewed</span>
+                <span class="info-text">{{ dateFormat "Jan 2, 2006" . }}</span>
+              </div>
+            {{ end }}
+          </div>
+          {{ with $watch.url }}
+            <a href="{{ . }}" class="letterboxd-link" target="_blank">
+              <img src="/images/letterboxd.png" alt="Letterboxd">
+            </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
