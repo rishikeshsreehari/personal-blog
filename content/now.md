@@ -10,7 +10,7 @@ hideFromRSS: true
 
 ---
 
-##### Last updated on 10-01-2024
+##### Last updated on 18-01-2024
 
 🌍 I’m currently in **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**   
 ⏰ The local time here is **{{< current_time timezone="Asia/Dubai" >}}**  
@@ -21,9 +21,11 @@ hideFromRSS: true
 
 ### 💭 What’s on My Mind?
 
-The weather is very good here in Abu Dhabi now—it's the best time for some sightseeing. I'm excited about visiting a few art galleries and museums. One big goal I have now is to get my driving license here in Abu Dhabi. It's a challenge, but exciting times lie ahead!
+Having lots of fun biking around the city! I'm so grateful for this nice weather and this great city!
 
-Also working as a freelancer in UAE is bit tricky when it comes to finding information online. Figuring out the whole freelance license thing!
+In terms of a life update, I’ve finally decided to get a driving license here. The feeling is a bit scary since the failure rates in the UAE are very high. I’m going for the Golden Chance opportunity, where I directly take a road test—but I only get one 'Golden' chance!
+
+I’m also trying to learn Arabic! I shall write about my plan soon!
 
 ---
 
@@ -31,7 +33,7 @@ Also working as a freelancer in UAE is bit tricky when it comes to finding infor
 
 ### 🔨 What am I Doing?
 
--  [Currently unemployed](/hire), I’m dedicating most of my time to job applications and exploring freelance opportunities.
+-  [Currently looking for opportunities](/hire), I’m dedicating most of my time to job applications and exploring freelance opportunities.
 - In search of [1000 True Fans](https://kk.org/thetechnium/1000-true-fans/) by curating interesting stories at [10+1 Things](https://newsletter.rishikeshs.com/)!
 - Unnecessarily tweaking and over-engineering this blog! You can see the progress [here](/log).
 
@@ -64,10 +66,13 @@ Also working as a freelancer in UAE is bit tricky when it comes to finding infor
 ---
 
 
-<!-- 
+
 ### 📺 What Am I Watching?
-- Finished watching [Lost (2004)](/watch/lost). What a show! 
----  -->
+
+- [Shark Tank India Season 4](https://www.serializd.com/show/Shark-Tank-India-153870/season/435209/4) - I don't like the editing or the judges. Just watching to see what Indian businesses are up to!
+- [Beast Games](https://www.serializd.com/show/Beast-Games-249522) - I'm not really impressed, considering all the hype!
+
+---  
 
 ### 🏋 My Fitness
 
