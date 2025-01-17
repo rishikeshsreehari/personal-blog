@@ -152,25 +152,28 @@
           </div>
         </div>
 
-        {{ if and $watch.budget $watch.collection }}
-          {{ $budget := strings.TrimPrefix "$" $watch.budget }}
-          {{ $budget := strings.Replace $budget "," "" -1 }}
-          {{ $budget := strings.TrimSuffix ",000" $budget }}
-          {{ $budget := float $budget }}
-          
-          {{ $collection := strings.TrimPrefix "$" $watch.collection }}
-          {{ $collection := strings.Replace $collection "," "" -1 }}
-          {{ $collection := strings.TrimSuffix ",000" $collection }}
-          {{ $collection := float $collection }}
-          
-          {{ $percentage := div (sub $collection $budget) $budget }}
-          {{ $percentage := mul $percentage 100 }}
-          
-          <div class="financials">
+        {{ if or $watch.budget $watch.collection }}
+        <div class="financials">
+          {{ if $watch.budget }}
             <div class="financial-item">
               <span class="label">Budget:</span>
               <span class="value">{{ $watch.budget }}</span>
             </div>
+          {{ end }}
+          {{ if $watch.collection }}
+            {{ $budget := strings.TrimPrefix "$" $watch.budget }}
+            {{ $budget := strings.Replace $budget "," "" -1 }}
+            {{ $budget := strings.TrimSuffix ",000" $budget }}
+            {{ $budget := float $budget }}
+            
+            {{ $collection := strings.TrimPrefix "$" $watch.collection }}
+            {{ $collection := strings.Replace $collection "," "" -1 }}
+            {{ $collection := strings.TrimSuffix ",000" $collection }}
+            {{ $collection := float $collection }}
+            
+            {{ $percentage := div (sub $collection $budget) $budget }}
+            {{ $percentage := mul $percentage 100 }}
+            
             <div class="financial-item">
               <span class="label">Collection:</span>
               <span class="value">{{ $watch.collection }}</span>
@@ -178,8 +181,10 @@
                 ({{ if gt $percentage 0.0 }}+{{ end }}{{ printf "%.1f" $percentage }}%)
               </span>
             </div>
-          </div>
-        {{ end }}
+          {{ end }}
+        </div>
+      {{ end }}
+      
 
         <div class="watch-card__footer">
           <div class="watch-info">
