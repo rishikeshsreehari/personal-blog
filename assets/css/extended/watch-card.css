@@ -239,6 +239,7 @@
     color: #fff;
     text-decoration: none;
     transition: opacity 0.2s;
+    margin-left: 5px;
 }
 
 .platform-link:hover {
