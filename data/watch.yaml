@@ -1,3 +1,32 @@
+
+- name: "Mississippi Masala"
+  language: "English, Swahili"
+  year: "1991"
+  rating: 3
+  direction_rating: 4
+  script_rating: 3
+  performance_rating: 3
+  cinematography_rating: 4
+  impact_rating: 2  
+  date: "2025-01-16"
+  reviewed_on: "2025-01-17"
+  url: "/watch/mississippi-masala"
+  gender: "female"
+  country: "🇺🇸 USA"
+  runtime: "118"
+  type: "Movie"
+  budget: "$5,000,000"
+  collection: "$7,332,515"
+  director: "Mira Nair"
+  director_url: "https://en.wikipedia.org/wiki/Mira_Nair"
+  platform: "Cinema Space, Abu Dhabi"
+  platform_url: "https://cinemaspace-abudhabi.splashthat.com/"
+  letterboxd_url: "https://letterboxd.com/film/mississippi-masala/"
+  poster: "/images/watch/mississippi-masala.jpg"
+  notes: "Budget from wiki; Poster from letterboxd"
+
+
+
 - name: "Nunakkuzhi"
   original_name: "നുണക്കുഴി"
   language: "Malayalam"
