@@ -24,14 +24,14 @@
   </div>
 
   <div class="stats-tile">
-    <h2>🏊 Swimming</h2>
-    <p>{{ $swim := index .Site.Data.my_data 0 "Swim" }}{{ $swim }} km</p>
+    <h2>🚴 Cycling</h2>
+    <p>{{ $ride := index .Site.Data.my_data 0 "Ride" }}{{ $ride }} km</p>
     <div class="progress">
-      <div class="progress-bar" style="width: {{ math.Floor (div (mul $swim 100) $goals.swim) }}%;">
-        <span class="progress-text">{{ math.Floor (div (mul $swim 100) $goals.swim) }}%</span>
+      <div class="progress-bar" style="width: {{ math.Floor (div (mul $ride 100) $goals.ride) }}%;">
+        <span class="progress-text">{{ math.Floor (div (mul $ride 100) $goals.ride) }}%</span>
       </div>
     </div>
-    <p style="font-size: 12px; text-align: right;">Goal: {{ $goals.swim }} km</p>
+    <p style="font-size: 12px; text-align: right;">Goal: {{ $goals.ride }} km</p>
   </div>
 
   <div class="stats-tile">
