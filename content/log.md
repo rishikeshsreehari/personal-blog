@@ -11,6 +11,91 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.15.M.1801** (2025-01-18)
+
+#### **Fixes**
+
+1. **Small CSS change to fix alignment**  
+   - *Commit:* [`6ac3c52`](https://github.com/rishikeshsreehari/personal-blog/commit/6ac3c52)  
+   - *Files:*  
+     1. [`assets/css/extended/watch-card.css`](https://github.com/rishikeshsreehari/personal-blog/blob/main/assets/css/extended/watch-card.css)
+
+2. **Corrections in review text**  
+   - *Commit:* [`c31f843`](https://github.com/rishikeshsreehari/personal-blog/commit/c31f843)  
+   - *Files:*  
+     1. [`content/watch/mississippi-masala.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/mississippi-masala.md)
+
+3. **fixed an issue with letterboxd link**  
+   - *Commit:* [`2b184bf`](https://github.com/rishikeshsreehari/personal-blog/commit/2b184bf)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/watch-card.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/watch-card.html)
+
+
+#### **Additions**
+
+1. **Added Squid Game post in watch**  
+   - *Commit:* [`e53e33d`](https://github.com/rishikeshsreehari/personal-blog/commit/e53e33d)  
+   - *Files:*  
+     1. [`content/watch/squid-games-2.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/squid-games-2.md)
+     2. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+     3. [`static/images/watch/mississippi-masala.jpg`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/mississippi-masala.jpg)
+     4. [`static/images/watch/mississippi-masala.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/mississippi-masala.webp)
+     5. [`static/images/watch/nunakkuzhi.jpg`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/nunakkuzhi.jpg)
+     6. [`static/images/watch/nunakkuzhi.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/nunakkuzhi.webp)
+     7. [`static/images/watch/squid-games-2.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/squid-games-2.webp)
+
+2. **Added missisppi masala movie review**  
+   - *Commit:* [`ff5193e`](https://github.com/rishikeshsreehari/personal-blog/commit/ff5193e)  
+   - *Files:*  
+     1. [`content/watch/mississippi-masala.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/mississippi-masala.md)
+     2. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+     3. [`static/images/watch/mississippi-masala.jpg`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/mississippi-masala.jpg)
+
+
+#### **Updations**
+
+1. **updated now**  
+   - *Commit:* [`d281876`](https://github.com/rishikeshsreehari/personal-blog/commit/d281876)  
+   - *Files:*  
+     1. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+
+2. **Updated now tiles**  
+   - *Commit:* [`7ba1b1d`](https://github.com/rishikeshsreehari/personal-blog/commit/7ba1b1d)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/now_tiles.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/now_tiles.html)
+
+3. **Updated the logic to show budget even if there is no collection**  
+   - *Commit:* [`9282160`](https://github.com/rishikeshsreehari/personal-blog/commit/9282160)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/watch-card.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/watch-card.html)
+
+4. **Added a logic for serializd links for series**  
+   - *Commit:* [`6a6667b`](https://github.com/rishikeshsreehari/personal-blog/commit/6a6667b)  
+   - *Files:*  
+     1. [`assets/css/extended/watch-card.css`](https://github.com/rishikeshsreehari/personal-blog/blob/main/assets/css/extended/watch-card.css)
+     2. [`themes/hugo-PaperMod/layouts/shortcodes/watch-card.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/watch-card.html)
+
+5. **Design update for watch card footer**  
+   - *Commit:* [`3c55ac2`](https://github.com/rishikeshsreehari/personal-blog/commit/3c55ac2)  
+   - *Files:*  
+     1. [`assets/css/extended/watch-card.css`](https://github.com/rishikeshsreehari/personal-blog/blob/main/assets/css/extended/watch-card.css)
+     2. [`themes/hugo-PaperMod/layouts/shortcodes/watch-card.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/watch-card.html)
+
+6. **Updated nunakkuzhi for the latest design**  
+   - *Commit:* [`3c0cc21`](https://github.com/rishikeshsreehari/personal-blog/commit/3c0cc21)  
+   - *Files:*  
+     1. [`content/watch/nunakkuzhi.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/nunakkuzhi.md)
+     2. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+     3. [`static/images/watch/nunakkuzhi.jpg`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/nunakkuzhi.jpg)
+
+7. **Updated watch card design**  
+   - *Commit:* [`fa9f755`](https://github.com/rishikeshsreehari/personal-blog/commit/fa9f755)  
+   - *Files:*  
+     1. [`assets/css/extended/watch-card.css`](https://github.com/rishikeshsreehari/personal-blog/blob/main/assets/css/extended/watch-card.css)
+     2. [`themes/hugo-PaperMod/layouts/shortcodes/watch-card.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/watch-card.html)
+
+
+---
 ### **v24.14.F.1601** (2025-01-16)
 
 #### **Fixes**
