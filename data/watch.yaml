@@ -1,19 +1,30 @@
 - name: "Nunakkuzhi"
+  original_name: "നുണക്കുഴി"
   language: "Malayalam"
   year: "2024"
   rating: 2
+  direction_rating: 1
+  script_rating: 1
+  performance_rating: 3
+  cinematography_rating: 2
+  impact_rating: 1
   date: "2024-12-25"
   url: "/watch/nunakkuzhi/"
   gender: "male"
   platform: "ZEE5"
-  country: "India"
+  country: "🇮🇳"
   runtime: "128"
   type: "movie"
   reviewed_on: "2024-12-29"
   budget: "$1,170,000"
   collection: "$2,690,000"
   director: "Jeethu Joseph"
-  notes: "Budget assumed as 10cr from unofficial sources."
+  letterboxd: "https://letterboxd.com/film/nunakkuzhi"
+  poster: "/images/watch/nunakkuzhi.jpg"
+  director_url: "https://en.wikipedia.org/wiki/Jeethu_Joseph"
+  platform_url: "https://www.zee5.com/global/movies/details/nunakkuzhi/0-0-1z5619087"
+  notes: "Budget assumed as 10cr from unofficial sources. Poster taken from leterboxd"
+
 
 
 
