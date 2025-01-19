@@ -1,3 +1,31 @@
+- name: "Paatal Lok Season 2"
+  original_name: "पाताल लोक"
+  language: "Hindi"
+  year: "2025"
+  rating: 4
+  direction_rating: 5
+  script_rating: 4
+  performance_rating: 5
+  cinematography_rating: 4
+  impact_rating: 3  
+  date: "2025-01-20"
+  reviewed_on: "2025-01-20"
+  url: "/watch/paatal-lok-2"
+  gender: "male"
+  country: "🇮🇳 India"
+  runtime: "118"
+  type: "TV Show"
+  director: "Sudip Sharma"
+  director_url: "https://en.wikipedia.org/wiki/Sudip_Sharma"
+  platform: "Prime Video"
+  platform_url: "https://www.primevideo.com/detail/Paatal-Lok/0TJUQYHPIQC5R8KOUZ5P1C3F22"
+  serializd_url: "https://www.serializd.com/show/Paatal-Lok-103051"
+  poster: "/images/watch/paatal-lok-2.webp"
+  notes: "There are multiple directors, but the show is created by Sudip Sharma thus his name is referenced.Poster from IMDB"
+
+
+
+
 
 - name: "Rifle Club"
   language: "Malayalam"
@@ -9,8 +37,8 @@
   performance_rating: 4
   cinematography_rating: 4
   impact_rating: 2  
-  date: "2025-01-19"
-  reviewed_on: "2025-01-19"
+  date: "2025-01-20"
+  reviewed_on: "2025-01-20"
   url: "/watch/rifle-club"
   gender: "mixed"
   country: "🇮🇳 India"
