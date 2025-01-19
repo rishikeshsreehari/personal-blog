@@ -1,4 +1,36 @@
 
+- name: "Rifle Club"
+  language: "Malayalam"
+  original_name: "റൈഫിൾ ക്ലബ്ബ്"
+  year: "2024"
+  rating: 2
+  direction_rating: 3
+  script_rating: 1
+  performance_rating: 4
+  cinematography_rating: 4
+  impact_rating: 2  
+  date: "2025-01-19"
+  reviewed_on: "2025-01-19"
+  url: "/watch/rifle-club"
+  gender: "mixed"
+  country: "🇮🇳 India"
+  runtime: "120"
+  type: "Movie"
+  budget: "$1,155,000"
+  collection: "$3,465,000"
+  director: "Aashiq Abu"
+  director_url: "https://en.wikipedia.org/wiki/Aashiq_Abu"
+  platform: "Netflix"
+  platform_url: "https://www.netflix.com/title/81752390"
+  letterboxd_url: "https://letterboxd.com/film/rifle-club/"
+  poster: "/images/watch/rifle-club.webp"
+  notes: "Budget/collection from wiki, Poster from letterboxd"
+
+
+
+
+
+
 - name: "Mississippi Masala"
   language: "English, Swahili"
   year: "1991"
