@@ -15,7 +15,7 @@ ShowReadingTime: false
 **⚠️ SPOILERS AHEAD, CLICK TO REVEAL! ⚠️**
 
 
-I watched Paatal Lok a few months back and loved it. My wife suggested we watch the latest season, and we ended up binge-watching it in one go! I loved this season even more than the first, for which I had written a small review.
+I watched Paatal Lok [a few months back](/watch/paatal-lok) and loved it. My wife suggested we watch the latest season, and we ended up binge-watching it in one go! I loved this season even more than the first!
 
 What can I say? Jaideep Ahlawat's performance is on another level! Having lived in Delhi for some time, I can’t think of anyone who could portray this character better than him. The chemistry between Ansari and the other characters was spot on. The shots in Nagaland and the actors who portrayed Naga characters were amazing. I read comments from various Naga people about how well the local language and culture were handled, which makes it even more impressive.
 
