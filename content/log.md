@@ -11,6 +11,63 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.16.M.2001** (2025-01-20)
+
+#### **Fixes**
+
+1. **Corrected IC814 rating**  
+   - *Commit:* [`c8e2707`](https://github.com/rishikeshsreehari/personal-blog/commit/c8e2707)  
+   - *Files:*  
+     1. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+
+
+#### **Additions**
+
+1. **Added paatal lok 2 review**  
+   - *Commit:* [`d21c67c`](https://github.com/rishikeshsreehari/personal-blog/commit/d21c67c)  
+   - *Files:*  
+     1. [`content/watch/paatal-lok-2.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/paatal-lok-2.md)
+     2. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+     3. [`static/images/watch/paatal-lok-2.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/paatal-lok-2.webp)
+
+2. **Added rifle club review**  
+   - *Commit:* [`f8bb2e0`](https://github.com/rishikeshsreehari/personal-blog/commit/f8bb2e0)  
+   - *Files:*  
+     1. [`content/watch/rifle-club.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/rifle-club.md)
+     2. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+     3. [`static/images/watch/rifle-club.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/rifle-club.webp)
+
+3. **Added platform logos and moved existing to /platforms**  
+   - *Commit:* [`5c4b70b`](https://github.com/rishikeshsreehari/personal-blog/commit/5c4b70b)  
+   - *Files:*  
+     1. [`static/images/platforms/Zee5.svg`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/platforms/Zee5.svg)
+     2. [`static/images/platforms/letterboxd.png`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/platforms/letterboxd.png)
+     3. [`static/images/platforms/netflix.png`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/platforms/netflix.png)
+     4. [`static/images/platforms/primevideo.png`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/platforms/primevideo.png)
+     5. [`static/images/platforms/serializd.png`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/platforms/serializd.png)
+     6. [`static/images/platforms/zee5.png`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/platforms/zee5.png)
+
+
+#### **Updations**
+
+1. **Added link to previous post**  
+   - *Commit:* [`e1f4560`](https://github.com/rishikeshsreehari/personal-blog/commit/e1f4560)  
+   - *Files:*  
+     1. [`content/watch/paatal-lok-2.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/paatal-lok-2.md)
+
+2. **Design changes to accomodate platform logos in watch card**  
+   - *Commit:* [`932c7df`](https://github.com/rishikeshsreehari/personal-blog/commit/932c7df)  
+   - *Files:*  
+     1. [`assets/css/extended/watch-card.css`](https://github.com/rishikeshsreehari/personal-blog/blob/main/assets/css/extended/watch-card.css)
+     2. [`themes/hugo-PaperMod/layouts/shortcodes/watch-card.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/watch-card.html)
+
+3. **logic modication to include country also in watch card meta**  
+   - *Commit:* [`d814f98`](https://github.com/rishikeshsreehari/personal-blog/commit/d814f98)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/watch-card.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/watch-card.html)
+
+
+---
 ### **v24.15.M.1801** (2025-01-18)
 
 #### **Fixes**
