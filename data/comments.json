@@ -404,6 +404,16 @@
             "Name": "Jack s",
             "Date": "2024-07-08",
             "Comment": "If you haven?t seen, Silence of the Lambs, add it to your list!"
+        },
+        {
+            "Name": "Sameer",
+            "Date": "2025-01-21",
+            "Comment": "If you haven't watched Shawshank redemption do check it out and here's are my favs:-All quite on western Front, zindagi na milegi dobara, whiplash, salaar, kgf 1&2..."
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2025-01-21",
+            "Comment": "<span class='author-marker'></span>Yes I have watched that! I see so may whiplash movies, which one do you recommend?"
         }
     ],
     "blog-art": [
@@ -576,6 +586,30 @@
             "Name": "Rishikesh",
             "Date": "2024-12-26",
             "Comment": "<span class='author-marker'></span> That's a good one! I've added it to the post!"
+        }
+    ],
+    "blogging-friction": [
+        {
+            "Name": "SSP",
+            "Date": "2025-01-21",
+            "Comment": "On a similar vein, I'm thoroughly enjoying my site's migration to Hugo. While on WordPress, I think I did tinker a bit with the site but Hugo definitely has introduced a lot more flexibility and with that friction! I'm yet to figure out a seamless posting on-the-go solution. That's not quite the priority though."
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2025-01-21",
+            "Comment": "<span class='author-marker'></span> Team Hugo!  Decap CMS is a great option to edit posts on the go!"
+        }
+    ],
+    "12-hour-walk": [
+        {
+            "Name": "Pritesh",
+            "Date": "2025-01-21",
+            "Comment": "Brilliant post! Kudos to you for challenging yourself like this and enjoying it. "
+        },
+        {
+            "Name": "Rishikesh",
+            "Date": "2025-01-21",
+            "Comment": "<span class='author-marker'></span>Thanks a lot Pritesh! You should try it sometime! I challenged few of my friends and they also enjoyed it!"
         }
     ]
 }
