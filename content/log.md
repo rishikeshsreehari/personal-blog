@@ -11,6 +11,22 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.17.U.2201** (2025-01-22)
+
+#### **Updations**
+
+1. **Updated subscriber count after culling**  
+   - *Commit:* [`55dee5c`](https://github.com/rishikeshsreehari/personal-blog/commit/55dee5c)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/subscribe_block.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/subscribe_block.html)
+
+2. **Updated image caption with more context**  
+   - *Commit:* [`3c8a1da`](https://github.com/rishikeshsreehari/personal-blog/commit/3c8a1da)  
+   - *Files:*  
+     1. [`content/blog/blogging-with-friction/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/blogging-with-friction/index.md)
+
+
+---
 ### **v24.16.M.2001** (2025-01-20)
 
 #### **Fixes**
