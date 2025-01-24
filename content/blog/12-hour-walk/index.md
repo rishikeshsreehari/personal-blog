@@ -19,7 +19,6 @@ cover:
   relative: true
 
 
-
 ---
 
 {{< dropcap >}}
