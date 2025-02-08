@@ -1,3 +1,36 @@
+
+
+
+- name: "The Mehta Boys"
+  language: "Hindi"
+  original_name: "द मेहता बॉयज"
+  year: "2024"
+  rating: 3
+  direction_rating: 4
+  script_rating: 2
+  performance_rating: 4
+  cinematography_rating: 3
+  impact_rating: 2  
+  date: "2025-02-07"
+  reviewed_on: "2025-02-08"
+  url: "/watch/mehta-boys"
+  gender: "male"
+  country: "🇮🇳 India"
+  runtime: "118"
+  type: "Movie"
+  director: "Boman Irani"
+  director_url: "https://en.wikipedia.org/wiki/Boman_Irani"
+  platform: "Prime Video"
+  platform_url: "https://www.amazon.com/gp/video/detail/0RBEI5519KDCZ4VI9QLR6LS9AJ"
+  letterboxd_url: "https://letterboxd.com/film/the-mehta-boys/"
+  poster: "/images/watch/mehta-boys.webp"
+  notes: "Poster from letterboxd"
+
+
+
+
+
+
 - name: "Paatal Lok Season 2"
   original_name: "पाताल लोक"
   language: "Hindi"
