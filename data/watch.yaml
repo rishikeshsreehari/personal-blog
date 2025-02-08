@@ -1,6 +1,36 @@
 
 
 
+- name: "Mandela"
+  language: "Tamil"
+  original_name: "மண்டேலா"
+  year: "2021"
+  rating: 3
+  direction_rating: 4
+  script_rating: 3
+  performance_rating: 4
+  cinematography_rating: 3
+  impact_rating: 3  
+  date: "2025-01-12"
+  reviewed_on: "2025-02-08"
+  url: "/watch/mandela"
+  gender: "male"
+  country: "🇮🇳 India"
+  runtime: "140"
+  type: "Movie"
+  director: "Madonne Ashwin"
+  director_url: "https://en.wikipedia.org/wiki/Madonne_Ashwin"
+  platform: "Netflix"
+  platform_url: "https://www.netflix.com/ae-en/title/81272107"
+  letterboxd_url: "https://letterboxd.com/film/mandela-2021/"
+  poster: "/images/watch/mandela.webp"
+  notes: "Poster from letterboxd"
+
+
+
+
+
+
 - name: "The Mehta Boys"
   language: "Hindi"
   original_name: "द मेहता बॉयज"
