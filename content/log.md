@@ -11,6 +11,66 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.20.M.0802** (2025-02-08)
+
+#### **Fixes**
+
+1. **Fix for broken images**  
+   - *Commit:* [`8d68bfa`](https://github.com/rishikeshsreehari/personal-blog/commit/8d68bfa)  
+   - *Files:*  
+     1. [`static/images/letterboxd.png`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/letterboxd.png)
+     2. [`static/images/serializd.png`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/serializd.png)
+
+2. **added condition to prevent create of now-archive list page**  
+   - *Commit:* [`07bf3cf`](https://github.com/rishikeshsreehari/personal-blog/commit/07bf3cf)  
+   - *Files:*  
+     1. [`content/now-archive/_index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now-archive/_index.md)
+
+3. **fix broken link**  
+   - *Commit:* [`12c7e7b`](https://github.com/rishikeshsreehari/personal-blog/commit/12c7e7b)  
+   - *Files:*  
+     1. [`content/blog/blogging-with-friction/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/blogging-with-friction/index.md)
+
+4. **fix link**  
+   - *Commit:* [`98fbc81`](https://github.com/rishikeshsreehari/personal-blog/commit/98fbc81)  
+   - *Files:*  
+     1. [`content/til/cycle-reverse-thread/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/til/cycle-reverse-thread/index.md)
+
+
+#### **Additions**
+
+1. **Added south asian scripts til**  
+   - *Commit:* [`c5345eb`](https://github.com/rishikeshsreehari/personal-blog/commit/c5345eb)  
+   - *Files:*  
+     1. [`content/til/palm-leaf-writing/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/til/palm-leaf-writing/index.md)
+     2. [`content/til/palm-leaf-writing/palm-leaf-manuscript.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/til/palm-leaf-writing/palm-leaf-manuscript.webp)
+
+2. **Added mandela review**  
+   - *Commit:* [`e2fe34e`](https://github.com/rishikeshsreehari/personal-blog/commit/e2fe34e)  
+   - *Files:*  
+     1. [`content/watch/mandela.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/mandela.md)
+     2. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+     3. [`static/images/watch/mandela.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/mandela.webp)
+
+3. **Added mehta boys review**  
+   - *Commit:* [`4d35f1a`](https://github.com/rishikeshsreehari/personal-blog/commit/4d35f1a)  
+   - *Files:*  
+     1. [`content/watch/mehta-boys.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/mehta-boys.md)
+     2. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+     3. [`static/images/watch/mehta-boys.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/mehta-boys.webp)
+
+
+#### **Updations**
+
+1. **converted barefoot image to webp**  
+   - *Commit:* [`64fa82a`](https://github.com/rishikeshsreehari/personal-blog/commit/64fa82a)  
+   - *Files:*  
+     1. [`content/journal/barefoot/barefoot.jpg`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/journal/barefoot/barefoot.jpg)
+     2. [`content/journal/barefoot/barefoot.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/journal/barefoot/barefoot.webp)
+     3. [`content/journal/barefoot/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/journal/barefoot/index.md)
+
+
+---
 ### **v24.19.M.3001** (2025-01-30)
 
 #### **Updations**
