@@ -35,7 +35,7 @@ Before I moved to a Hugo blog, I had a WordPress blog. To be honest, it was supe
 Last year, when I decided to move to a blog powered by Hugo, everything changed. It wasn't the familiar login-edit-publish workflow anymore. It wasn't as simple as logging in, editing in a rich text browser, and clicking publish, but that was the beauty of it. The challenges, the constraints, and yes, the friction, became part of the joy. I started with a theme and had to tweak it to make the blog like how I wanted. I tweaked a lot. I spent almost half a year tweaking unnecessarily, caught in the endless loop of tweaking. I was slowly embracing the new friction while loving the endless possibilities ahead.
 
 
-{{< photocaption src="blogging.webp" alt="Flammarion engraving" width="80%" >}}Beyond the veil – [The Flammarion engraving]((https://en.wikipedia.org/wiki/Flammarion_engraving)) (19th century, wood engraving; later hand-colored){{< /photocaption >}}
+{{< photocaption src="blogging.webp" alt="Flammarion engraving" width="80%" >}}Beyond the veil – [The Flammarion engraving](https://en.wikipedia.org/wiki/Flammarion_engraving) (19th century, wood engraving; later hand-colored){{< /photocaption >}}
 
 
 
