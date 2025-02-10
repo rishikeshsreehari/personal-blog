@@ -162,6 +162,8 @@ If you are working on a similar tool, happy to have a look and add them to the a
 
 In the end, 'File over App' isn't just a philosophy—it.s a guideline for making digital choices that prioritize the longevity of data. With each decision, I'm creating a lasting digital archive, one file at a time.
 
+{{< hn-discussion id="42136054" >}}
+
 ---
 
 #### Update #5 - 26-12-2024, 12:16 GST
