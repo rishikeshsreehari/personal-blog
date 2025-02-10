@@ -11,6 +11,36 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.22.M.1002** (2025-02-10)
+
+#### **Additions**
+
+1. **Added HN discussion shortcode**  
+   - *Commit:* [`c4f21e7`](https://github.com/rishikeshsreehari/personal-blog/commit/c4f21e7)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+     2. [`themes/hugo-PaperMod/layouts/shortcodes/hn-discussion.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/hn-discussion.html)
+
+
+#### **Updations**
+
+1. **Updated title of mehta boys post**  
+   - *Commit:* [`7636369`](https://github.com/rishikeshsreehari/personal-blog/commit/7636369)  
+   - *Files:*  
+     1. [`content/watch/mehta-boys.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/mehta-boys.md)
+
+2. **added HN discussion to super randonneur blog post**  
+   - *Commit:* [`82e93d4`](https://github.com/rishikeshsreehari/personal-blog/commit/82e93d4)  
+   - *Files:*  
+     1. [`content/blog/super-randonneur/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/super-randonneur/index.md)
+
+3. **Added HN discussion to file=over-app blogpost**  
+   - *Commit:* [`1dca48a`](https://github.com/rishikeshsreehari/personal-blog/commit/1dca48a)  
+   - *Files:*  
+     1. [`content/blog/file-over-app/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/file-over-app/index.md)
+
+
+---
 ### **v24.21.M.1002** (2025-02-10)
 
 #### **Fixes**
