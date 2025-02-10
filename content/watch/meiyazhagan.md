@@ -6,6 +6,7 @@ summary: A shot review of Meiyazhagan(2024) Tamil Movie with ratings and a quick
 type: page
 disable_comments: true
 ShowReadingTime: false
+date: 2024-10-28
 ---
 
 **Director**: C. Prem Kumar  
