@@ -1,7 +1,7 @@
 ---
-title: "The Mehta Boys(2024) - Movie Review"
+title: "The Mehta Boys(2024) Hindi Movie Review - ★ ★ ★ ☆ ☆"
 url: "/watch/mehta-boys"
-summary: "A shot review of The Mehta Boys(2024) Movie with ratings and a quick take."
+summary: "A shot review of The Mehta Boys(2024) Hindi Movie with ratings and a quick take"
 type: page
 disable_comments: true
 ShowReadingTime: false
