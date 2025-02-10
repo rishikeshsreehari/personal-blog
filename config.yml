@@ -201,3 +201,11 @@ taxonomies:
 
 permalinks:
   til: /til/:slug/
+
+
+security:
+  http:
+    methods:
+      - GET
+    urls:
+      - https://hacker-news.firebaseio.com/*
