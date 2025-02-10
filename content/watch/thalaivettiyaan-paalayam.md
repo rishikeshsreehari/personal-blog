@@ -6,6 +6,8 @@ summary: "A shot review of Thalaivettiyaan Paalayam(2024) with ratings and a qui
 type: page
 disable_comments: true
 ShowReadingTime: false
+date: 2024-09-26
+
 ---
 
 **Director**: Naga  

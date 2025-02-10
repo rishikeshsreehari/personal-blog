@@ -6,6 +6,8 @@ summary: A shot review of Paatal Lok Season 2(2025) Series with ratings and a qu
 type: page
 disable_comments: false
 ShowReadingTime: false
+date: 2025-01-20
+
 ---
 
 {{< watch-card name="Paatal Lok Season 2" >}}

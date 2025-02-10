@@ -5,6 +5,8 @@ summary: "A shot review of Mandela(2021) Tamil Movie with ratings and a quick ta
 type: page
 disable_comments: true
 ShowReadingTime: false
+date: 2025-02-08
+
 ---
 
 {{< watch-card name="Mandela" >}}

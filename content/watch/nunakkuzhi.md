@@ -5,6 +5,7 @@ summary: "A shot review of Nunakkuzhi(2024) - Malayalam Movie with ratings and a
 type: page
 disable_comments: true
 ShowReadingTime: false
+date: 2024-12-29
 ---
 
 {{< watch-card name="Nunakkuzhi" >}}

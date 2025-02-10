@@ -5,6 +5,8 @@ summary: "A shot review of Rifle Club(2024) Movie with ratings and a quick take.
 type: page
 disable_comments: true
 ShowReadingTime: false
+date: 2025-01-20
+
 ---
 
 {{< watch-card name="Rifle Club" >}}

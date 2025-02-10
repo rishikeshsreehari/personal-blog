@@ -6,6 +6,8 @@ summary: "A shot review of Kishkindha Kandam(2024)Malayalam Movie with ratings a
 type: page
 disable_comments: false
 ShowReadingTime: false
+date: 2024-09-20
+
 ---
 
 **Director**: Dinjith Ayyathan  

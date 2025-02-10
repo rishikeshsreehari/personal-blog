@@ -5,6 +5,8 @@ summary: "A shot review of Squid Game Season 2(2024) TV Series with ratings and 
 type: page
 disable_comments: true
 ShowReadingTime: false
+date: 2025-01-17
+
 ---
 
 {{< watch-card name="Squid Game Season 2" >}}

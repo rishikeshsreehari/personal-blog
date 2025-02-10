@@ -5,6 +5,7 @@ summary: "A shot review of The Mehta Boys(2024) Movie with ratings and a quick t
 type: page
 disable_comments: true
 ShowReadingTime: false
+date: 2025-02-08
 ---
 
 {{< watch-card name="The Mehta Boys" >}}
