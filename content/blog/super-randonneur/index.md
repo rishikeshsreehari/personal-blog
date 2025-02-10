@@ -93,6 +93,9 @@ It's been 3 months since I became a 'Super Randonneur'. I do not ride much these
 
 These are distant goals but require dedication and practice. If everything goes well in terms of health and finances, I look forward to completing these in the coming years. Even if I don't, this is something I look forward to and keeps me motivated.
 
+{{< hn-discussion id="34390105" >}}
+
+
 {{< subscribe_block >}}
 
 
