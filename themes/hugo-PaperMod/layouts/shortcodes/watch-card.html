@@ -20,11 +20,24 @@
        </div>
      {{ end }}
 
+     {{ with $watch.creator }}
+       <div class="watch-card__director">
+           Created by 
+           {{ if $watch.creator_url }}
+           <a href="{{ $watch.creator_url }}" class="director-link" target="_blank">{{ . }}</a>
+           {{ else }}
+           <span>{{ . }}</span>
+           {{ end }}
+       </div>
+     {{ end }}
+
      <div class="watch-card__meta">
        {{ with $watch.type }}<span class="tag">{{ . }}</span>{{ end }}
        {{ with $watch.year }}<span class="tag">{{ . }}</span>{{ end }}
        {{ with $watch.language }}<span class="tag">{{ . }}</span>{{ end }}
        {{ with $watch.runtime }}<span class="tag">{{ . }} min</span>{{ end }}
+       {{ with $watch.seasons }}<span class="tag">{{ . }} seasons</span>{{ end }}
+       {{ with $watch.episodes }}<span class="tag">{{ . }} episodes</span>{{ end }}
        {{ with $watch.country }}<span class="tag">{{ . }}</span>{{ end }}
      </div>
    </div>
