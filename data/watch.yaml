@@ -1,5 +1,32 @@
 
 
+- name: "Beast Games"
+  language: "English"
+  year: "2024"
+  rating: 2
+  direction_rating: 2
+  script_rating: 2
+  performance_rating: 1
+  cinematography_rating: 4
+  impact_rating: 1
+  date: "2025-02-14"
+  reviewed_on: "2025-02-16"
+  url: "/watch/beast-games"
+  gender: "mixed"
+  country: "🇺🇸 USA"
+  episodes: "10"
+  type: "TV Show"
+  director: "Tyler Conklin, Kate Douglas-Walker"
+  platform: "Prime Video"
+  budget: "$100,000,000"
+  platform_url: "https://www.primevideo.com/detail/Beast-Games/0TC47K49HUJK01R9FA42BAO22A"
+  serializd_url: "https://www.serializd.com/show/Beast-Games-249522"
+  poster: "/images/watch/beast-games.webp"
+  notes: "budget and poster from Wiki. Budget estimated to be upwards of 100 million!"
+
+
+
+
 
 - name: "Mandela"
   language: "Tamil"
@@ -78,8 +105,8 @@
   country: "🇮🇳 India"
   runtime: "118"
   type: "TV Show"
-  director: "Sudip Sharma"
-  director_url: "https://en.wikipedia.org/wiki/Sudip_Sharma"
+  creator: "Sudip Sharma"
+  creator_url: "https://en.wikipedia.org/wiki/Sudip_Sharma"
   platform: "Prime Video"
   platform_url: "https://www.primevideo.com/detail/Paatal-Lok/0TJUQYHPIQC5R8KOUZ5P1C3F22"
   serializd_url: "https://www.serializd.com/show/Paatal-Lok-103051"
