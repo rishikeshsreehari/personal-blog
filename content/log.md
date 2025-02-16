@@ -11,6 +11,33 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.24.U.1602** (2025-02-16)
+
+#### **Updations**
+
+1. **Merge branch 'main' of https://github.com/rishikeshsreehari/personal-blog**  
+   - *Commit:* [`c34ad07`](https://github.com/rishikeshsreehari/personal-blog/commit/c34ad07)  
+   - *Files:*  
+
+
+2. **Added rss and substack links**  
+   - *Commit:* [`d2d8836`](https://github.com/rishikeshsreehari/personal-blog/commit/d2d8836)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+3. **Added substack and bluesky icons**  
+   - *Commit:* [`70303e3`](https://github.com/rishikeshsreehari/personal-blog/commit/70303e3)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/partials/svg.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/svg.html)
+
+4. **Updated tags**  
+   - *Commit:* [`fd3b13a`](https://github.com/rishikeshsreehari/personal-blog/commit/fd3b13a)  
+   - *Files:*  
+     1. [`content/til/hugo-remote-data/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/til/hugo-remote-data/index.md)
+     2. [`content/watch/beast-games.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/beast-games.md)
+
+
+---
 ### **v24.23.M.1602** (2025-02-16)
 
 #### **Additions**
