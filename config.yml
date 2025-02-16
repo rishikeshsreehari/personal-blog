@@ -105,13 +105,14 @@ params:
       url: "https://newsletter.rishikeshs.com/"
     - name: discord
       url:  "https://discord.com/channels/1263420611179315242/1263420611179315245"
+    - name: bluesky
+      url:  "https://bsky.app/profile/rishikeshs.bsky.social"
     - name: email
       url: "mailto:hello@rishikeshs.com"
     - name: paypal
       url: "https://www.paypal.com/paypalme/rishikeshsreehari"
     - name: rss
       url: "https://www.rishikeshs.com/index.xml"
- 
 
   
 
