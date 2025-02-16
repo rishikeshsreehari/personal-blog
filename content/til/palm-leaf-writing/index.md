@@ -6,7 +6,9 @@ summary: "Many South Asian scripts, like Malayalam, Tamil, Kannada, and Burmese,
 url: "/til/palm-leaf-writing"
 ---
 
-Today I learned that many South and Southeast Asian scripts, like Malayalam, Tamil, Kannada, Telugu, Odia, Burmese, Khmer, Javanese, and Balinese, have rounded letterforms because they were traditionally written on palm leaves.  
+Today I learned that many South and Southeast Asian scripts, like Malayalam, Tamil, Kannada, Telugu, Odia, Burmese, Khmer, Javanese, and Balinese, have rounded letterforms because they were traditionally written on palm leaves. 
+
+{{< photocaption src="palm-leaf-manuscript.webp" alt="Bhagavad Gita written on a palm leaf in malayalam script" width="80%" >}}Bhagavad Gita written on a palm leaf in malayalam script{{< /photocaption >}}
 
 I first heard about this on a podcast, where they explained that when writing on palm leaves, straight vertical and horizontal strokes could tear the surface. To prevent this, scribes developed curved characters, which influenced the way these scripts look today.  
 
