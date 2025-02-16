@@ -89,8 +89,6 @@ params:
   socialIcons:
     - name: twitter
       url: "https://x.com/rishikeshshari"
-    - name: discord
-      url:  "https://discord.com/channels/1263420611179315242/1263420611179315245"
     - name: github
       url: "https://github.com/rishikeshsreehari"
     - name: kofi
@@ -103,13 +101,19 @@ params:
       url: "https://news.ycombinator.com/user?id=rishikeshs"
     - name: lobsters
       url: "https://lobste.rs/~rishikesh"
-    #- name: buymeacoffee
-    #  url: "https://www.buymeacoffee.com/rishikeshs"
+    - name: substack
+      url: "https://newsletter.rishikeshs.com/"
+    - name: discord
+      url:  "https://discord.com/channels/1263420611179315242/1263420611179315245"
     - name: email
       url: "mailto:hello@rishikeshs.com"
     - name: paypal
       url: "https://www.paypal.com/paypalme/rishikeshsreehari"
+    - name: rss
+      url: "https://www.rishikeshs.com/index.xml"
+ 
 
+  
 
   #analytics:
     #google:
