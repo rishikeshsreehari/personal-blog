@@ -10,7 +10,7 @@ hideFromRSS: true
 
 ---
 
-##### Last updated on 18-01-2024
+##### Last updated on 16-02-2024
 
 🌍 I’m currently in **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**   
 ⏰ The local time here is **{{< current_time timezone="Asia/Dubai" >}}**  
@@ -21,11 +21,7 @@ hideFromRSS: true
 
 ### 💭 What’s on My Mind?
 
-Having lots of fun biking around the city! I'm so grateful for this nice weather and this great city!
-
-In terms of a life update, I’ve finally decided to get a driving license here. The feeling is a bit scary since the failure rates in the UAE are very high. I’m going for the Golden Chance opportunity, where I directly take a road test—but I only get one 'Golden' chance!
-
-I’m also trying to learn Arabic! I shall write about my plan soon!
+Winter is almost over and I can feel it. I can see Vimto bottles popping up in stores, with Ramadan around the corner. Grateful for the winter, but yet again not prepared mentally to face the summer heat! I want to cycle as much as I can before summer hits hard!
 
 ---
 
@@ -50,18 +46,15 @@ I’m also trying to learn Arabic! I shall write about my plan soon!
 
 ### 📚 What Am I Reading?
 
-- [Japan Traverse Hike 2023](https://github.com/WebOrigami/japan-hike-ebook) by Jan Miksovsky
-- [The Pleasure of Finding Things Out](https://geni.us/rs-pleasure-of-finding) by Feynmans
-- [The Paradox of Choice: Why More is Less](https://geni.us/rsh-paradox-choice) by Barry Schwartz
+- [The Art Thief](https://geni.us/rs-art-thief) by Michael Finkel
+- [The Courage to Be Disliked](https://geni.us/rs-courage-disliked) by Ichiro Kishimi and Fumitake Koga
 
 *I read 3-4 books in parallel most of the time on [my e-book reader](https://geni.us/rsh-kindle-paperwhite).*
 
 ---
 
 ### 📝 What Am I Learning?
-- Learning more about Energy Systems and Modelling from the lectures of [Tom Brown](https://nworbmot.org/teaching.html).
-- Trying to learn more about stock markets on [Varsity](https://zerodha.com/varsity/) a great initiative by [Zerodha](https://zerodha.com/open-account?c=KSO559).
-- Trying to learn Python by following the curriculum at [University of Helsinki](https://programming-24.mooc.fi/).
+- Spending most of the time following the curriculum at [100xDevs](https://100xdevs.com/)
 
 ---
 
@@ -70,22 +63,17 @@ I’m also trying to learn Arabic! I shall write about my plan soon!
 ### 📺 What Am I Watching?
 
 - [Shark Tank India Season 4](https://www.serializd.com/show/Shark-Tank-India-153870/season/435209/4) - I don't like the editing or the judges. Just watching to see what Indian businesses are up to!
-- [Beast Games](https://www.serializd.com/show/Beast-Games-249522) - I'm not really impressed, considering all the hype!
+
 
 ---  
 
 ### 🏋 My Fitness
 
-
 I'm currently focused on transforming my body and reducing my body fat to below 25%. This involves a lot of protein and long walks to ensure I'm in a calorie deficit while building muscle and losing fat.
 
-I'm now doing strength training 3x a week, following [Greg Nuckol's beginner program](https://www.boostcamp.app/coaches/greg-nuckols/greg-nuckols-beginner-program) on Boostcamp. On gym days I try to go for a walk in the evenings. Other days, I try to alternate between cycling and light jogging.
+I've gone with a personal trainer since I felt that I'm not pushing myself enough! I go to the gym four days a week. I try to walk 5 km on gym days and bike a bit on Wednesdays and weekends! I'm following a sort of Push-Pull-Legs split since that is what my trainer is confident with. So it's Push on Monday, Pull on Tuesday, and Legs on Thursday. On Fridays, I focus on core and some weak muscles like arms and shoulders!
 
 <!-- ##### For my latest fitness updates, read my [fitness log](/fitness-log). It's interesting, I promise. -->
-
-
-
-
 
 
 
