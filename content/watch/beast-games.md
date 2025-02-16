@@ -20,6 +20,8 @@ But I must say, I’m disappointed! This just felt like yet another MrBeast vide
 
 There is no shortage of reality shows, so what was the point of this if the only unique proposition was the prize money and the budget? This might be too harsh to say, but at times, the editing made it feel like I was watching some Survivor reality show or some MTV garbage!
 
+Also the unnecessary emotional scenes felt uite fake and didn't fit into place at all. Also, I noticed this. Some contestants who were portrayed as poor
+
 Dear MrBeast, I expected a lot from you, and you failed. Please deliver something unique and creative next time!
 
 Overall, I wouldn’t recommend watching this. I watched it just to see what the hype was all about. At no point was I excited or on the edge of my seat, unlike with some of MrBeast’s past videos. This should have been a YouTube series instead of premiering on Amazon Prime!

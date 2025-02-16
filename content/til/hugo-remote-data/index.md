@@ -1,7 +1,7 @@
 ---
 title: "Hugo can fetch live data during build using resources.GetRemote"
 publishdate: 2025-02-16
-tiltags: ["hugo", "web", "development", "staticsite"]
+tiltags: ["hugo", "web", "development", "SSG"]
 summary: "Hugo's resources.GetRemote lets you fetch external data during site build"
 url: "/til/hugo-remote-data"
 ---
