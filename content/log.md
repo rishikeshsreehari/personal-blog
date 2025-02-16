@@ -11,6 +11,42 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.23.M.1602** (2025-02-16)
+
+#### **Additions**
+
+1. **Added beast games post**  
+   - *Commit:* [`905a9b3`](https://github.com/rishikeshsreehari/personal-blog/commit/905a9b3)  
+   - *Files:*  
+     1. [`content/watch/beast-games.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/beast-games.md)
+     2. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+     3. [`static/images/watch/beast-games.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/beast-games.webp)
+
+2. **Added TIL for Hugo Get.Remote**  
+   - *Commit:* [`5caed4b`](https://github.com/rishikeshsreehari/personal-blog/commit/5caed4b)  
+   - *Files:*  
+     1. [`content/til/hugo-remote-data/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/til/hugo-remote-data/index.md)
+
+
+#### **Updations**
+
+1. **Updated episodes and creators of tv shows**  
+   - *Commit:* [`2d102b0`](https://github.com/rishikeshsreehari/personal-blog/commit/2d102b0)  
+   - *Files:*  
+     1. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+
+2. **Added condition for created by and epsiodes and season**  
+   - *Commit:* [`dc1c8d7`](https://github.com/rishikeshsreehari/personal-blog/commit/dc1c8d7)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/watch-card.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/watch-card.html)
+
+3. **Updated now page**  
+   - *Commit:* [`d251d34`](https://github.com/rishikeshsreehari/personal-blog/commit/d251d34)  
+   - *Files:*  
+     1. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+
+
+---
 ### **v24.22.M.1002** (2025-02-10)
 
 #### **Additions**
