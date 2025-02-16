@@ -11,6 +11,31 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.25.M.1602** (2025-02-16)
+
+#### **Fixes**
+
+1. **Fixed missing image in TIL**  
+   - *Commit:* [`acc3e11`](https://github.com/rishikeshsreehari/personal-blog/commit/acc3e11)  
+   - *Files:*  
+     1. [`content/til/palm-leaf-writing/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/til/palm-leaf-writing/index.md)
+
+
+#### **Updations**
+
+1. **Added image to TIL post**  
+   - *Commit:* [`4d62d66`](https://github.com/rishikeshsreehari/personal-blog/commit/4d62d66)  
+   - *Files:*  
+     1. [`content/til/hugo-remote-data/hn-stats-on-hugo.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/til/hugo-remote-data/hn-stats-on-hugo.webp)
+     2. [`content/til/hugo-remote-data/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/til/hugo-remote-data/index.md)
+
+2. **Added bluesky link**  
+   - *Commit:* [`229470e`](https://github.com/rishikeshsreehari/personal-blog/commit/229470e)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+
+---
 ### **v24.24.U.1602** (2025-02-16)
 
 #### **Updations**
