@@ -8,6 +8,9 @@ url: "/til/hugo-remote-data"
 
 Today I learned about Hugo's `resources.GetRemote` function while trying to add Hacker News discussion stats to [one of my blog posts](/file-over-app/). I wanted to display the upvotes and comments count from HN in a nice badge, and discovered that Hugo can fetch this data during build time.
 
+{{< photocaption src="hn-stats-on-hugo.webp" alt="Hackernews discussion stats on Hugo Post" width="40%" >}}An example of Hackernews discussion stats on Hugo Post{{< /photocaption >}}
+
+
 Here's an example of how I used it to fetch Hacker News discussion stats:
 
 ```
