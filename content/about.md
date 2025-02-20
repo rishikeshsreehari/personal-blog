@@ -8,10 +8,10 @@ disable_comments: true
 ShowReadingTime: false
 
 ---
-##### Last updated on 03-12-2024
+##### Last updated on 21-02-2024
 
 Hello! My name is [Rishikesh](/name) (pronounced as ri-shee-kay-sh).
-I currently live in {{< currentlocation >}} with my wife. 
+I currently live in {{< currentlocation >}} with [my wife](https://tibetanyeti.com/). 
 
 My journey began in a small village in Southern India, precisely at `9.754` latitude and `76.363` longitude, on a national strike day, when the atmosphere held [358 ppm](https://www.co2levels.org) of carbon. Most of my childhood was spent in Kerala, India, where I was born. To know more about my life as a whole, [timeline](/timeline) is a great place.
 
@@ -19,9 +19,9 @@ My journey began in a small village in Southern India, precisely at `9.754` lati
 
 I hold a bachelor's degree in Mechanical Engineering and a postgraduate degree in Renewable Energy. Most of my previous experiences have been in the field of renewable energy specifically on energy policy, energy system modelling and mini-grids. My interests are ever-evolving, but my passion lies in addressing the greatest threat humanity faces: climate change. I am deeply committed to solving this issue and believe it is imperative for our future. I discovered the joy and the fascinating world of coding late in my life. So I'm currently on a quest to figure out a way to combine programming and my expertise in energy to become a specialist and contribute my part in energy transition of the world and eventually climate change. I'm actively looking for opportunities in energy system modelling (which I have some experience) or computational social science. 
 
-While I am currently unemployed, I am actively working on side projects to learn how to write, code, build, and ship things while growing my audience on my [newsletter](/newsletter). Apart from these I mainly love to run, cycle, swim, lift, travel, [read](/library), [watch](/watch) and spend time with my wife. I have this sense of curiosity about this world and that drives me everyday. I'm so grateful to be alive this point of history where everyone with a access to internet and a computer, can literally learn anything in this world. I'm so excited about the sheer amount of things that are out there to discover and learn, and excited about the fact that it is an infinite game. I find the most joy when I discover something, learn more about it and figure out how it works. 
+While I am currently looking for new opportunities, I am actively working on side projects to learn how to write, code, build, and ship things while growing my audience on my [newsletter](/newsletter). Apart from these I mainly love to run, cycle, swim, lift, travel, [read](/library), [watch](/watch) and spend time with my wife. I have this sense of curiosity about this world and that drives me everyday. I'm so grateful to be alive this point of history where everyone with a access to internet and a computer, can literally learn anything in this world. I'm so excited about the sheer amount of things that are out there to discover and learn, and excited about the fact that it is an infinite game. I find the most joy when I discover something, learn more about it and figure out how it works. 
 
->I thrive at those 'ahaa' moments where I understand how things work.
+>_I thrive at those 'ahaa' moments where I understand how things work._
 
 ### How I see the world
 
@@ -31,9 +31,9 @@ While I acknowledge that scientific understanding changes over time, I see this 
 
 I slightly align with [longtermism](https://en.wikipedia.org/wiki/Longtermism) and care about the future of humanity, including the possibility of becoming a space-faring, interplanetary species. I deeply value relationships and friendships; the probability of forming these connections in such a vast, absurd universe makes them extraordinarily special, highlighting the beauty that can emerge from randomness. While we perceive direction and time in the universe, I believe these are human constructs – the universe simply exists as a series of random events, without inherent beginning or end. While my philosophies are evolving and overlap with each other, they resonate more with something like "Skeptical Scientific Absurdism".
 
-> "I don't think I'll ever see Carl again. But I saw him. We saw each other. We found each other in the cosmos, and that was wonderful."
+> _"I don't think I'll ever see Carl again. But I saw him. We saw each other. We found each other in the cosmos, and that was wonderful."_
 >
-> ― [Ann Druyan](https://en.wikipedia.org/wiki/Ann_Druyan)
+> _― [Ann Druyan](https://en.wikipedia.org/wiki/Ann_Druyan)_
 
 ### Why this blog?
 
