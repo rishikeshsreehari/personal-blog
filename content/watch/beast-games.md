@@ -1,5 +1,5 @@
 ---
-title: "Beast Games(2024) Series Review"
+title: "Beast Games(2024) Series Review - ★ ★ ☆ ☆ ☆"
 #layout: "library"
 url: "/watch/beast-games"
 summary: A shot review of Beast Games(2024) TV Show with ratings and a quick take.
