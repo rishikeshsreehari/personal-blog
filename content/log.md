@@ -11,6 +11,26 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.26.M.2102** (2025-02-21)
+
+#### **Additions**
+
+1. **Added be curious post!**  
+   - *Commit:* [`96583a8`](https://github.com/rishikeshsreehari/personal-blog/commit/96583a8)  
+   - *Files:*  
+     1. [`content/blog/be-curious-always/be-curious.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/be-curious-always/be-curious.webp)
+     2. [`content/blog/be-curious-always/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/be-curious-always/index.md)
+
+
+#### **Updations**
+
+1. **Added rating to beast games title**  
+   - *Commit:* [`06c39a9`](https://github.com/rishikeshsreehari/personal-blog/commit/06c39a9)  
+   - *Files:*  
+     1. [`content/watch/beast-games.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/beast-games.md)
+
+
+---
 ### **v24.25.M.1602** (2025-02-16)
 
 #### **Fixes**
