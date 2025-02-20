@@ -11,6 +11,22 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.27.U.2102** (2025-02-21)
+
+#### **Updations**
+
+1. **Updated content on home**  
+   - *Commit:* [`843f91d`](https://github.com/rishikeshsreehari/personal-blog/commit/843f91d)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/partials/home_info.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/home_info.html)
+
+2. **Added yeti link**  
+   - *Commit:* [`09552dc`](https://github.com/rishikeshsreehari/personal-blog/commit/09552dc)  
+   - *Files:*  
+     1. [`content/about.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/about.md)
+
+
+---
 ### **v24.26.M.2102** (2025-02-21)
 
 #### **Additions**
