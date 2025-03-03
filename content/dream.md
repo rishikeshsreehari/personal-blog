@@ -6,10 +6,11 @@ summary: List of things I want to do in my life.
 type: page
 disable_comments: true
 ShowReadingTime: false
+updated_on: 2025-03-03
 ---
 
 
-##### Last updated on 15-01-2025
+#####  {{< updated_on >}}
 
 This is a list of things I want to do in my life. Call it a to-do list, a bucket list, or whatever you like. I love the fact that this list grows day by day and, in a way, gives me a sense of direction and excitement for the future. While I know I may never achieve everything on this list in my lifetime, that's okay. The finite nature of life gives it purpose and makes me feel profoundly grateful for every experience and quest I pursue. This list includes physical goals, things I want to achieve, places I want to visit, things I want to learn, and more. For the dreams I have already achieved, I’ve crossed them out with the date when they were accomplished. My goal is to have atleast 100 dreams at a time, but it's not easy.
 
@@ -99,6 +100,7 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 84. Learn to play [handpan](https://en.wikipedia.org/wiki/Handpan)
 85. ~~Complete[ 12 hour walk](https://12hourwalk.com/) challenge.~~ *Done on 07-01-2025. Read more about it [here](/12-hour-walk/).*
 86. Learn to play [Renju](https://www.renju.net/rules/)
+87. Complete 100k steps a day challenge.
 
 
 
