@@ -1,0 +1,10 @@
+{{ with .Page.Params.updated_on }}
+<div class="updated-on">
+    <p>Last updated on {{ . | time.Format "January 2, 2006" }}</p>
+</div>
+<style>
+.updated-on {
+    color: #555;
+}
+</style>
+{{ end }}
