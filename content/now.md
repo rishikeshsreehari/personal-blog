@@ -42,6 +42,8 @@ The month of Ramadan has begun, and the weather is getting warmer. I wanted to s
 
 ---
 
+
+
 ### 📚 What Am I Reading?
 
 - [The Art Thief](https://geni.us/rs-art-thief) by Michael Finkel
@@ -67,7 +69,9 @@ The month of Ramadan has begun, and the weather is getting warmer. I wanted to s
 
 ### 🏋 My Fitness
 
-I've gone with a personal trainer since I felt that I'm not pushing myself enough! I go to the gym four days a week. I try to walk 5 km on gym days and bike a bit on Wednesdays and weekends! I'm following a sort of Push-Pull-Legs split since that is what my trainer is confident with. So it's chest & triceps on monday, back & biceps on tuesday, legs on thursday and finsihging week with some weak muscles shoulders, chest, biceps & core on Fridya. Feeling stronger, but not much fat loss has happened to be honest!
+I'm currently focused on transforming my body and reducing my body fat to below 25%. This involves a lot of protein and long walks to ensure I'm in a calorie deficit while building muscle and losing fat.
+
+I've gone with a personal trainer since I felt that I'm not pushing myself enough! I go to the gym four days a week. I try to walk 5 km on gym days and bike a bit on Wednesdays and weekends! I'm following a sort of Push-Pull-Legs split since that is what my trainer is confident with. So it's chest and triceps on Monday, back and biceps on Tuesday, legs on Thursday, and finishing the week with shoulders and weakmuscles --  chest, biceps, and core on Friday. Feeling stronger, but not much fat loss has happened, to be honest!
 
 
 <!-- ##### For my latest fitness updates, read my [fitness log](/fitness-log). It's interesting, I promise. -->
