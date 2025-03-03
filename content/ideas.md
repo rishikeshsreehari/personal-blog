@@ -6,20 +6,23 @@ summary: A repository of ideas I had over the years.
 type: page
 disable_comments: false
 ShowReadingTime: false
-
+updated_on: 2025-03-03
 ---
 
-##### Last updated on 28-10-2024
+#####  {{< updated_on >}}
+
 
 
 This is a public list of ideas that I would like to work on someday. This is a copy of the ideas note I have in my Obsidian vault, where I jot down interesting projects, concepts, and thoughts that I find intriguing and might want to explore in the future. Since it is not practically possible for anyone to work on every idea they have, I thought it would be better to make this note public so that someone else might build it someday.
 
 Ideas that I'm currently working on are crossed out and have been moved to my [projects](/projects) page. Against each idea, I've added a short description to provide more context. If you are interested in any of the ideas mentioned below and want to work on them or collaborate with me, feel free to [contact](/contact) me. In case any of the ideas already exist, please let me know, and I will cross them out with a backlink to the project.
 
+{{< accordion summary="Vape with a Puff Limiter" openByDefault=true >}}
+A vape that lets you set the maximum number of puffs you can have in a day via an app or something! Looks like another person has [thought about the same](https://www.reddit.com/r/Vaping/comments/pivkwy/vape_that_automatically_limits_puffs/).
+{{< /accordion >}}
 
 
-
-{{< accordion summary="A Search Engine for Personal Blogs" openByDefault=true >}}
+{{< accordion summary="A Search Engine for Personal Blogs" openByDefault=false >}}
 I'm unable to search for content in personal blogs on google or any other search engine. Kagi small web is there, but it's not personal blog specific.
 {{< /accordion >}}
 
@@ -61,6 +64,8 @@ Strava is a great tool to track your activities. As a writer, such a tool would 
 {{< accordion summary="About Me Collection" openByDefault=false >}}
 I love reading the About Me sections of various personal blogs. A curated list of the best about pages would be cool.
 {{< /accordion >}}
+
+
 
 {{< accordion summary="~~Evergreen Hosting~~" openByDefault=false >}}
 ~~People put a lot of effort into their blogs, and most often, after the person passes away, these blogs go obsolete. How about a service that you can pay for one-time or in installments, ensuring that your blog stays live forever?~~
