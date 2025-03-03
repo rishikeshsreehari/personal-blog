@@ -1,5 +1,60 @@
 
 
+
+- name: "CBI 5: The Brain"
+  language: "Malayalam"
+  year: "2022"
+  rating: 0
+  direction_rating: 0
+  script_rating: 0
+  performance_rating: 0
+  cinematography_rating: 0
+  impact_rating: 0
+  date: "2025-03-02"
+  reviewed_on: "2025-03-03"
+  url: "/watch/cbi5"
+  gender: "male"
+  country: "🇮🇳 India"
+  runtime: "164"
+  type: "Movie"
+  director: "K Madhu"
+  director_url: "https://en.wikipedia.org/wiki/K._Madhu"
+  platform: "Netflix"
+  platform_url: "https://www.netflix.com/title/81597698"
+  letterboxd_url: "https://letterboxd.com/film/cbi-5-the-brain/"
+  poster: "/images/watch/cbi5.webp"
+  budget: "$1,713,947"
+  collection: "$4,226,420"
+  notes: "Poster from imdb.Budget/collection from wiki converted on 03-03-2025"
+
+
+
+- name: "The Greatest Rivalry: India vs Pakistan"
+  language: "English"
+  year: "2025"
+  rating: 1
+  direction_rating: 1
+  script_rating: 1
+  performance_rating: 2
+  cinematography_rating: 2
+  impact_rating: 1
+  date: "2025-02-28"
+  reviewed_on: "2025-03-03"
+  url: "/watch/greatest-rivalry"
+  gender: "male"
+  episodes: "3"
+  type: "Documentary"
+  director: "Stewart Sugg"
+  director_url: "https://www.imdb.com/name/nm0837458/"
+  platform: "Netflix"
+  platform_url: "https://www.netflix.com/title/81500800"
+  serializd_url: "https://www.serializd.com/show/The-Greatest-Rivalry%3A-India-vs-Pakistan-247833"
+  poster: "/images/watch/greatest-rivalry.webp"
+  notes: "Poster from imdb, but not much information about it online"
+
+
+
+
 - name: "Beast Games"
   language: "English"
   year: "2024"
