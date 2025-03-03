@@ -7,10 +7,10 @@ disable_comments: true
 ShowReadingTime: false
 dataDir: "data"
 hideFromRSS: true
-
+updated_on: 2025-03-03
 ---
 
-##### Last updated on 16-02-2024
+#####  {{< updated_on >}}
 
 🌍 I’m currently in **[{{< currentlocation >}}](https://what3words.com/inferior.reserved.drives)**   
 ⏰ The local time here is **{{< current_time timezone="Asia/Dubai" >}}**  
@@ -21,7 +21,7 @@ hideFromRSS: true
 
 ### 💭 What’s on My Mind?
 
-Winter is almost over and I can feel it. I can see Vimto bottles popping up in stores, with Ramadan around the corner. Grateful for the winter, but yet again not prepared mentally to face the summer heat! I want to cycle as much as I can before summer hits hard!
+The month of Ramadan has begun, and the weather is getting warmer. I wanted to squeeze in some cycling and running as much as possible before summer hits hard. A bit of traveling is coming up next month. First, Sri Lanka in the first week of April, followed by a month in India, and then Armenia in the second week of May. A bit of planning to do, but excited!
 
 ---
 
@@ -41,8 +41,6 @@ Winter is almost over and I can feel it. I can see Vimto bottles popping up in s
 {{< now_tiles >}}
 
 ---
-
-
 
 ### 📚 What Am I Reading?
 
@@ -69,9 +67,8 @@ Winter is almost over and I can feel it. I can see Vimto bottles popping up in s
 
 ### 🏋 My Fitness
 
-I'm currently focused on transforming my body and reducing my body fat to below 25%. This involves a lot of protein and long walks to ensure I'm in a calorie deficit while building muscle and losing fat.
+I've gone with a personal trainer since I felt that I'm not pushing myself enough! I go to the gym four days a week. I try to walk 5 km on gym days and bike a bit on Wednesdays and weekends! I'm following a sort of Push-Pull-Legs split since that is what my trainer is confident with. So it's chest & triceps on monday, back & biceps on tuesday, legs on thursday and finsihging week with some weak muscles shoulders, chest, biceps & core on Fridya. Feeling stronger, but not much fat loss has happened to be honest!
 
-I've gone with a personal trainer since I felt that I'm not pushing myself enough! I go to the gym four days a week. I try to walk 5 km on gym days and bike a bit on Wednesdays and weekends! I'm following a sort of Push-Pull-Legs split since that is what my trainer is confident with. So it's Push on Monday, Pull on Tuesday, and Legs on Thursday. On Fridays, I focus on core and some weak muscles like arms and shoulders!
 
 <!-- ##### For my latest fitness updates, read my [fitness log](/fitness-log). It's interesting, I promise. -->
 
