@@ -11,6 +11,62 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.28.M.0303** (2025-03-03)
+
+#### **Additions**
+
+1. **Added greatest rivalry review**  
+   - *Commit:* [`eddb9d3`](https://github.com/rishikeshsreehari/personal-blog/commit/eddb9d3)  
+   - *Files:*  
+     1. [`content/watch/greatest-rivalry.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/greatest-rivalry.md)
+     2. [`static/images/watch/greatest-rivalry.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/greatest-rivalry.webp)
+
+2. **Added cbi5 watch review**  
+   - *Commit:* [`4144440`](https://github.com/rishikeshsreehari/personal-blog/commit/4144440)  
+   - *Files:*  
+     1. [`content/watch/cbi5.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/cbi5.md)
+     2. [`static/images/watch/cbi5.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/cbi5.webp)
+
+3. **Added updated on shortcode**  
+   - *Commit:* [`6e6e3a3`](https://github.com/rishikeshsreehari/personal-blog/commit/6e6e3a3)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/updated_on.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/updated_on.html)
+
+
+#### **Updations**
+
+1. **updated watch.yaml with latest movies**  
+   - *Commit:* [`e87af01`](https://github.com/rishikeshsreehari/personal-blog/commit/e87af01)  
+   - *Files:*  
+     1. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+
+2. **Updated watch card to handle zero rating edge case**  
+   - *Commit:* [`e47b1dc`](https://github.com/rishikeshsreehari/personal-blog/commit/e47b1dc)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/watch-card.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/watch-card.html)
+
+3. **Updated now**  
+   - *Commit:* [`db556eb`](https://github.com/rishikeshsreehari/personal-blog/commit/db556eb)  
+   - *Files:*  
+     1. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+
+4. **Updated footer easter**  
+   - *Commit:* [`a68b81e`](https://github.com/rishikeshsreehari/personal-blog/commit/a68b81e)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+5. **Updated now**  
+   - *Commit:* [`a276592`](https://github.com/rishikeshsreehari/personal-blog/commit/a276592)  
+   - *Files:*  
+     1. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+
+6. **Updated ideas page with vape idea**  
+   - *Commit:* [`98ce6e0`](https://github.com/rishikeshsreehari/personal-blog/commit/98ce6e0)  
+   - *Files:*  
+     1. [`content/ideas.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/ideas.md)
+
+
+---
 ### **v24.27.U.2102** (2025-02-21)
 
 #### **Updations**
