@@ -11,6 +11,30 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.31.M.0503** (2025-03-05)
+
+#### **Fixes**
+
+1. **Fixed avatar linnk**  
+   - *Commit:* [`2b2fd4f`](https://github.com/rishikeshsreehari/personal-blog/commit/2b2fd4f)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+2. **Fixed hotlink avatar link**  
+   - *Commit:* [`ef45ff0`](https://github.com/rishikeshsreehari/personal-blog/commit/ef45ff0)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/partials/head.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/head.html)
+
+
+#### **Updations**
+
+1. **Updated pre-push button name**  
+   - *Commit:* [`df4e09f`](https://github.com/rishikeshsreehari/personal-blog/commit/df4e09f)  
+   - *Files:*  
+     1. [`scripts/pre_push.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/pre_push.py)
+
+
+---
 ### **v24.30.M.0503** (2025-03-05)
 
 #### **Additions**
