@@ -83,7 +83,7 @@ def get_commit_type_gui(commit_msg):
 
     buttons = [
         ("Fix", "F"),
-        ("New Post", "N"),
+        ("New", "N"),
         ("Update", "U"),
         ("Major Change", "X"),
         ("Removed", "R")
