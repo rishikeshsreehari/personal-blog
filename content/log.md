@@ -11,6 +11,26 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.30.M.0503** (2025-03-05)
+
+#### **Additions**
+
+1. **Added hotlink image for cloudflare**  
+   - *Commit:* [`6af3c1c`](https://github.com/rishikeshsreehari/personal-blog/commit/6af3c1c)  
+   - *Files:*  
+     1. [`static/hotlink-ok/avatar.png`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/hotlink-ok/avatar.png)
+
+
+#### **Updations**
+
+1. **Udpated hotlink links for avatar**  
+   - *Commit:* [`bd4862f`](https://github.com/rishikeshsreehari/personal-blog/commit/bd4862f)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+     2. [`themes/hugo-PaperMod/layouts/partials/head.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/head.html)
+
+
+---
 ### **v24.29.M.0303** (2025-03-03)
 
 #### **Additions**
