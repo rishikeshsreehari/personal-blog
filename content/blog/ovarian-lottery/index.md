@@ -1,6 +1,6 @@
 ---
 title: 'The Ovarian Lottery: A Thought Experiment' 
-date: 2021-10-02T
+date: 2021-10-02
 excerpt: Ovarian Lottery is a thought experiment popularized by Warren Buffet. It stresses the importance of luck and the influence of when/where we are born in this world on our life outcomes.
 description: Ovarian Lottery is a thought experiment popularized by Warren Buffet. It stresses the importance of luck and the influence of when/where we are born in this world on our life outcomes.
 url: /ovarian-lottery/
