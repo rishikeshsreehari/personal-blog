@@ -11,6 +11,52 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.32.M.1403** (2025-03-14)
+
+#### **Fixes**
+
+1. **Fix: Config.yml for depreciated configurations**  
+   - *Commit:* [`6014421`](https://github.com/rishikeshsreehari/personal-blog/commit/6014421)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+2. **Date format fix**  
+   - *Commit:* [`83455ca`](https://github.com/rishikeshsreehari/personal-blog/commit/83455ca)  
+   - *Files:*  
+     1. [`content/blog/ovarian-lottery/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/ovarian-lottery/index.md)
+
+
+#### **Updations**
+
+1. **Updated dream.md**  
+   - *Commit:* [`645567a`](https://github.com/rishikeshsreehari/personal-blog/commit/645567a)  
+   - *Files:*  
+     1. [`content/dream.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/dream.md)
+
+2. **Added hugo-version file for CF**  
+   - *Commit:* [`7ed539f`](https://github.com/rishikeshsreehari/personal-blog/commit/7ed539f)  
+   - *Files:*  
+     1. [`.hugo-version`](https://github.com/rishikeshsreehari/personal-blog/blob/main/.hugo-version)
+
+3. **fix: update deprecated Hugo functions and config options to v0.145.0**  
+   - *Commit:* [`4d07dc3`](https://github.com/rishikeshsreehari/personal-blog/commit/4d07dc3)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/partials/disqus.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/disqus.html)
+     2. [`themes/hugo-PaperMod/layouts/partials/templates/opengraph.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/templates/opengraph.html)
+     3. [`themes/hugo-PaperMod/layouts/partials/templates/twitter_cards.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/templates/twitter_cards.html)
+     4. [`themes/hugo-PaperMod/layouts/shortcodes/ama.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/ama.html)
+     5. [`themes/hugo-PaperMod/layouts/shortcodes/guestbook.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/guestbook.html)
+
+
+#### **Removal**
+
+1. **Removed google analytics tag**  
+   - *Commit:* [`55703e5`](https://github.com/rishikeshsreehari/personal-blog/commit/55703e5)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+
+---
 ### **v24.31.M.0503** (2025-03-05)
 
 #### **Fixes**
