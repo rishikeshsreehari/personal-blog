@@ -1,12 +1,11 @@
-{{ if not .Params.disable_comments }}
-<h1>Comments</h1>
-
-
+{{- /* Comments area start */ -}}
+{{- /* to add comments read => https://gohugo.io/content-management/comments/ */ -}}
+{{- if not .Params.disable_comments }}
 <div class="comments-section">
-  {{ $url := .Params.url }}
+  {{ $url := .Params.url | default .RelPermalink }}
   {{ $url = trim $url "/" }} 
-  {{ $commentsPath := "data/comments.json" }}
-  {{ $commentsData := getJSON $commentsPath | default (dict) }}
+  {{ $commentsData := .Site.Data.comments | default dict }}
+  
   {{ with index $commentsData $url }}
     {{ $comments := . | default (slice) }}
     {{ if gt (len $comments) 0 }}
@@ -30,8 +29,6 @@
   {{ end }}
 </div>
 
-<br>
-
 <h5>Leave a comment below. All comments are moderated and will appear after approval. Your email, if provided, is optional and won't be shared or used to send any spam. If your comment requires a personal response beyond a public reply, I will reach out to you via email. Comments are static, with no notifications or backlinks.
 </h5>
 <br>
@@ -42,7 +39,7 @@
   action="https://script.google.com/macros/s/AKfycbybzIVhZ6DyJQD8nl0suisVDVly07c87524X84iORIBdkekzQ68ugrCG8TrTB5HnJdtuQ/exec">
   <div class="comment-form">
     <input type="hidden" name="timestamp" id="timestamp" value="" />
-    <input type="hidden" name="url" value="{{ .Params.url }}" />
+    <input type="hidden" name="url" value="{{ $url }}" />
     <input type="hidden" name="cf-turnstile-response" id="cf-turnstile-response" />
 
     <div class="form-row">
@@ -161,4 +158,5 @@
   // Set timestamp when form loads
   document.getElementById('timestamp').value = new Date().toISOString();
 </script>
-{{ end }}
+{{- end }}
+{{- /* Comments area end */ -}}

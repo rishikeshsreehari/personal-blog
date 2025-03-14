@@ -1,4 +1,3 @@
-
 <form 
   id="commentForm" 
   method="POST" 
@@ -35,10 +34,9 @@
 
 
 <div class="comments-section">
-  {{ $commentsPath := "data/ama.json" }} <!-- Set the path to the AMA JSON file -->
-  {{ $commentsData := getJSON $commentsPath | default (slice) }} <!-- Load the AMA data or set default empty slice if error occurs -->
-  {{ if gt (len $commentsData) 0 }} <!-- Check if comments are not empty -->
-    {{ range $commentsData }} <!-- Iterate over the comments -->
+  {{ $commentsData := .Site.Data.ama | default slice }}
+  {{ if gt (len $commentsData) 0 }}
+    {{ range $commentsData }}
     <div class="comment {{ if in .Comment "author-marker" }}highlight-ama{{ end }}">
       <div class="avatar-ama">
           <img src="https://api.dicebear.com/9.x/personas/svg?seed={{ .Name }}" alt="avatar">
