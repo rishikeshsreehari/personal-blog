@@ -7,7 +7,7 @@ disable_comments: true
 ShowReadingTime: false
 dataDir: "data"
 hideFromRSS: true
-updated_on: 2025-03-03
+updated_on: 2025-03-27
 ---
 
 #####  {{< updated_on >}}
@@ -21,7 +21,7 @@ updated_on: 2025-03-03
 
 ### 💭 What’s on My Mind?
 
-The month of Ramadan has begun, and the weather is getting warmer. I wanted to squeeze in some cycling and running as much as possible before summer hits hard. A bit of traveling is coming up next month. First, Sri Lanka in the first week of April, followed by a month in India, and then Armenia in the second week of May. A bit of planning to do, but excited!
+Summer is here and I'm sad! But excited about going to India in the next couple of weeks. Before that I'm heading to Sri Lanka on 4th! :)
 
 ---
 
@@ -62,8 +62,7 @@ The month of Ramadan has begun, and the weather is getting warmer. I wanted to s
 
 ### 📺 What Am I Watching?
 
-- [Shark Tank India Season 4](https://www.serializd.com/show/Shark-Tank-India-153870/season/435209/4) - I don't like the editing or the judges. Just watching to see what Indian businesses are up to!
-
+- [What We Do in the Shadows](https://www.serializd.com/show/What-We-Do-in-the-Shadows-83631) - Loving it! Currently at S1E06
 
 ---  
 
