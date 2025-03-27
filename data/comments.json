@@ -414,6 +414,11 @@
             "Name": "Rishikesh",
             "Date": "2025-01-21",
             "Comment": "<span class='author-marker'></span>Yes I have watched that! I see so may whiplash movies, which one do you recommend?"
+        },
+        {
+            "Name": "Sameer",
+            "Date": "2025-03-19",
+            "Comment": "what about lighthouse(2019),the grand budapest hotel or the whale(2022),soul(pixar one) and Fantastic mr fox??"
         }
     ],
     "blog-art": [
@@ -622,6 +627,13 @@
             "Name": "Rishikesh",
             "Date": "2025-02-09",
             "Comment": "<span class='author-marker'></span>Haha that's true! This is a great angle to look at things!"
+        }
+    ],
+    "ideas": [
+        {
+            "Name": "Kh?rt Williams",
+            "Date": "2025-03-19",
+            "Comment": "Modern search engines prioritise high-traffic, commercial, and algorithmically optimised content, making it difficult to discover independent blogs. Personal blogs are often buried under corporate sites, large media outlets, and social platforms. To create a search engine specifically for discovering personal blogs the challenge lies in defining what qualifies as a blog and developing a system that indexes, ranks, and surfaces these sites in a meaningful way.\n\nGood luck!"
         }
     ]
 }
