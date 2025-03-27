@@ -11,6 +11,36 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.34.M.2703** (2025-03-27)
+
+#### **Fixes**
+
+1. **Fix llms.txt issues**  
+   - *Commit:* [`c8a20e2`](https://github.com/rishikeshsreehari/personal-blog/commit/c8a20e2)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+     2. [`themes/hugo-PaperMod/layouts/_default/index.markdown.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/_default/index.markdown.md)
+     3. [`themes/hugo-PaperMod/layouts/_default/index.txt`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/_default/index.txt)
+     4. [`themes/hugo-PaperMod/layouts/_default/list.markdown.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/_default/list.markdown.md)
+     5. [`themes/hugo-PaperMod/layouts/_default/single.markdown.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/_default/single.markdown.md)
+     6. [`themes/hugo-PaperMod/layouts/partials/head.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/head.html)
+
+
+#### **Updations**
+
+1. **Added criclite to projects**  
+   - *Commit:* [`900d030`](https://github.com/rishikeshsreehari/personal-blog/commit/900d030)  
+   - *Files:*  
+     1. [`data/projects.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/projects.yaml)
+     2. [`static/images/projects/criclite.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/projects/criclite.webp)
+
+2. **Updated now**  
+   - *Commit:* [`c2be2bf`](https://github.com/rishikeshsreehari/personal-blog/commit/c2be2bf)  
+   - *Files:*  
+     1. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+
+
+---
 ### **v24.33.U.1403** (2025-03-14)
 
 #### **Updations**
