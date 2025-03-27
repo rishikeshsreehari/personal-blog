@@ -178,11 +178,17 @@ outputs:
     - RSS
     - JSON 
     - ATOM
+    - TXT
+  page:  
+    - HTML
+    - MARKDOWN
+  section:  
+    - HTML
+    - MARKDOWN
+  term: 
+    - HTML
+    - MARKDOWN
 
-outputFormats:
-  ATOM:
-    mediaType: "application/atom+xml"
-    baseName: "atom"
 
 mediaTypes:
   application/atom+xml:
@@ -392,22 +398,27 @@ menu:
       weight: 60
 
 
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON 
-    - ATOM
 
 outputFormats:
   ATOM:
     mediaType: "application/atom+xml"
     baseName: "atom"
+  TXT:
+    mediaType: "text/plain"
+    baseName: "llms"
+    isPlainText: true
+    notAlternatePlainText: true
+  MARKDOWN: 
+    mediaType: "text/markdown"
+    baseName: "index"
+    isPlainText: true
+    suffix: "md" 
 
 mediaTypes:
   application/atom+xml:
     suffixes: ["xml"]
-
+  text/markdown: 
+    suffixes: ["md"]
 
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
