@@ -7,3 +7,5 @@ public
 # Exclude VS Code configuration folder
 .vscode/
 
+
+env.sh
