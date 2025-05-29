@@ -11,6 +11,48 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.36.M.3005** (2025-05-30)
+
+#### **Additions**
+
+1. **Added regulator blog post**  
+   - *Commit:* [`a64c99a`](https://github.com/rishikeshsreehari/personal-blog/commit/a64c99a)  
+   - *Files:*  
+     1. [`content/blog/i-miss-my-fan-regulator/fan.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/i-miss-my-fan-regulator/fan.webp)
+     2. [`content/blog/i-miss-my-fan-regulator/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/i-miss-my-fan-regulator/index.md)
+     3. [`content/blog/i-miss-my-fan-regulator/regulator.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/i-miss-my-fan-regulator/regulator.webp)
+     4. [`content/blog/i-miss-my-fan-regulator/remote.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/i-miss-my-fan-regulator/remote.webp)
+
+
+#### **Updations**
+
+1. **Updated now**  
+   - *Commit:* [`ae4e3d8`](https://github.com/rishikeshsreehari/personal-blog/commit/ae4e3d8)  
+   - *Files:*  
+     1. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+
+2. **Updated dream**  
+   - *Commit:* [`78b1079`](https://github.com/rishikeshsreehari/personal-blog/commit/78b1079)  
+   - *Files:*  
+     1. [`content/dream.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/dream.md)
+
+3. **Updated dream**  
+   - *Commit:* [`e73fc96`](https://github.com/rishikeshsreehari/personal-blog/commit/e73fc96)  
+   - *Files:*  
+     1. [`content/dream.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/dream.md)
+
+4. **Merge branch 'main' of https://github.com/rishikeshsreehari/personal-blog**  
+   - *Commit:* [`44f069d`](https://github.com/rishikeshsreehari/personal-blog/commit/44f069d)  
+   - *Files:*  
+
+
+5. **Added env.sh to gitignore**  
+   - *Commit:* [`383baf8`](https://github.com/rishikeshsreehari/personal-blog/commit/383baf8)  
+   - *Files:*  
+     1. [`.gitignore`](https://github.com/rishikeshsreehari/personal-blog/blob/main/.gitignore)
+
+
+---
 ### **v24.35.U.2803** (2025-03-28)
 
 #### **Updations**
