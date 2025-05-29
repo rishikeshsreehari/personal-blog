@@ -11,6 +11,23 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.37.U.3005** (2025-05-30)
+
+#### **Updations**
+
+1. **Merge branch 'main' of https://github.com/rishikeshsreehari/personal-blog**  
+   - *Commit:* [`032bff8`](https://github.com/rishikeshsreehari/personal-blog/commit/032bff8)  
+   - *Files:*  
+
+
+2. **Trying out Georgia font**  
+   - *Commit:* [`e808094`](https://github.com/rishikeshsreehari/personal-blog/commit/e808094)  
+   - *Files:*  
+     1. [`assets/css/extended/misc.css`](https://github.com/rishikeshsreehari/personal-blog/blob/main/assets/css/extended/misc.css)
+     2. [`themes/hugo-PaperMod/layouts/partials/extend_head.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/extend_head.html)
+
+
+---
 ### **v24.36.M.3005** (2025-05-30)
 
 #### **Additions**
