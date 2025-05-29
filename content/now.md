@@ -7,7 +7,7 @@ disable_comments: true
 ShowReadingTime: false
 dataDir: "data"
 hideFromRSS: true
-updated_on: 2025-03-27
+updated_on: 2025-05-30
 ---
 
 #####  {{< updated_on >}}
@@ -21,10 +21,9 @@ updated_on: 2025-03-27
 
 ### 💭 What’s on My Mind?
 
-Summer is here and I'm sad! But excited about going to India in the next couple of weeks. Before that I'm heading to Sri Lanka on 4th! :)
+No more travel at least for next few months. All I want to do is have a routine, gain some momentum and just focus on things I want to do. For now it's about health, learning and job hunt. Nothing else.
 
 ---
-
 
 
 ### 🔨 What am I Doing?
@@ -46,8 +45,8 @@ Summer is here and I'm sad! But excited about going to India in the next couple 
 
 ### 📚 What Am I Reading?
 
-- [The Art Thief](https://geni.us/rs-art-thief) by Michael Finkel
-- [The Courage to Be Disliked](https://geni.us/rs-courage-disliked) by Ichiro Kishimi and Fumitake Koga
+-[Tiny Experiments: How to Live Freely in a Goal-Obsessed World](https://geni.us/rs-tiny-experiments) by Anne-Laure Le Cunff
+
 
 *I read 3-4 books in parallel most of the time on [my e-book reader](https://geni.us/rsh-kindle-paperwhite).*
 
@@ -62,15 +61,13 @@ Summer is here and I'm sad! But excited about going to India in the next couple 
 
 ### 📺 What Am I Watching?
 
-- [What We Do in the Shadows](https://www.serializd.com/show/What-We-Do-in-the-Shadows-83631) - Loving it! Currently at S1E06
+- [What We Do in the Shadows](https://www.serializd.com/show/What-We-Do-in-the-Shadows-83631) - Loving it! Currently at S1E09
 
 ---  
 
 ### 🏋 My Fitness
 
-I'm currently focused on transforming my body and reducing my body fat to below 25%. This involves a lot of protein and long walks to ensure I'm in a calorie deficit while building muscle and losing fat.
-
-I've gone with a personal trainer since I felt that I'm not pushing myself enough! I go to the gym four days a week. I try to walk 5 km on gym days and bike a bit on Wednesdays and weekends! I'm following a sort of Push-Pull-Legs split since that is what my trainer is confident with. So it's chest and triceps on Monday, back and biceps on Tuesday, legs on Thursday, and finishing the week with shoulders and weakmuscles --  chest, biceps, and core on Friday. Feeling stronger, but not much fat loss has happened, to be honest!
+Gained a bit of fat after the India trip. So mostly it's 4 x strength training trying to hit 10,000 steps a day. Trying to run twice a week with a bike ride on weekends. But summer is here and its hot!
 
 
 <!-- ##### For my latest fitness updates, read my [fitness log](/fitness-log). It's interesting, I promise. -->
