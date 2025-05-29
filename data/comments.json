@@ -555,6 +555,11 @@
             "Name": "Rishikesh",
             "Date": "2024-12-29",
             "Comment": "<span class='author-marker'></span> I don't think I can comment on web apps, but when it comes to websites, the key thing is to rely on plain HTML, CSS and JS over complex frameworks, if your complexity allows it."
+        },
+        {
+            "Name": "Mika",
+            "Date": "2025-04-11",
+            "Comment": "Another one, that I forgot to mention: presentations done in Markdown. Notable examples are Marp (https://marp.app) and Ia Presenter (Commercial - ia.net/presenter). Complete list is compiled here: https://gist.github.com/johnloy/27dd124ad40e210e91c70dd1c24ac8c8"
         }
     ],
     "ama": [
