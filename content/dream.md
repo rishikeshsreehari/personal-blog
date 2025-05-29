@@ -6,7 +6,7 @@ summary: List of things I want to do in my life.
 type: page
 disable_comments: true
 ShowReadingTime: false
-updated_on: 2025-05-25
+updated_on: 2025-05-27
 ---
 
 
@@ -109,5 +109,6 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 93. 500-m row in 90s.
 94. Visit New 7 Wonders of the World - Great Wall of China, Petra, ~~Colosseum~~, Chichén Itzá, Machu Picchu, ~~Taj Mahal~~ and Christ the Redeemer. (2/7)
 95. Try to visit every country in the world. (11/195)
-96. Walk the [Three Capes Track](https://www.threecapestrack.com.au/)
+96. Walk the 300km [Pekoe Trail](https://thepekoetrail.org/) in Sri Lanka.
+97. Cycle the entire coastline of Sri Lanka
 
