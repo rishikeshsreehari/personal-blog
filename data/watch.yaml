@@ -1,6 +1,158 @@
 
 
 
+
+
+- name: "Superboys of Malegaon"
+  language: "Hindi"
+  year: "2024"
+  rating: 4
+  direction_rating: 4
+  script_rating: 4
+  performance_rating: 5
+  cinematography_rating: 4
+  impact_rating: 3
+  date: "2025-05-24"
+  reviewed_on: ""
+  url: ""
+  gender: "male"
+  country: "🇮🇳 India"
+  runtime: "131"
+  type: "Movie"
+  director: ""
+  director_url: ""
+  platform: "Netflix"
+  platform_url: ""
+  letterboxd_url: ""
+  poster: ""
+  budget: ""
+  collection: ""
+  notes: ""
+
+
+
+- name: "Officer on Duty"
+  language: "Malayalam"
+  year: "2025"
+  rating: 1
+  direction_rating: 1
+  script_rating: 0
+  performance_rating: 1
+  cinematography_rating: 1
+  impact_rating: 0
+  date: "2025-05-16"
+  reviewed_on: "2025-06-02"
+  url: ""
+  gender: "male"
+  country: "🇮🇳 India"
+  runtime: "137"
+  type: "Movie"
+  director: "Jithu Ashraf"
+  director_url: ""
+  platform: "Netflix"
+  platform_url: ""
+  letterboxd_url: ""
+  poster: ""
+  budget: ""
+  collection: ""
+  notes: ""
+
+
+
+
+
+
+- name: "A Real Pain"
+  language: "English"
+  year: "2024"
+  rating: 4
+  direction_rating: 5
+  script_rating: 4
+  performance_rating: 5
+  cinematography_rating: 4
+  impact_rating: 4
+  date: "2025-05-16"
+  reviewed_on: "2025-06-02"
+  url: "/watch/real-pain"
+  gender: "male"
+  country: "🇺🇸 USA"
+  runtime: "90"
+  type: "Movie"
+  director: "Jesse Eisenberg"
+  director_url: "https://en.wikipedia.org/wiki/Jesse_Eisenberg"
+  platform: "Disney+"
+  platform_url: "https://www.apps.disneyplus.com/ae/movies/a-real-pain/1271381734"
+  letterboxd_url: "https://letterboxd.com/film/a-real-pain/"
+  poster: "/images/watch/real-pain.webp"
+  budget: "$3,000,000"
+  collection: "$24,900,000"
+  notes: "Poster from letterboxd.Budget/collection from wiki converted on 02-06-2025"
+
+
+
+
+
+
+
+- name: "Swades"
+  language: "Hindi"
+  year: "2004"
+  rating: 4
+  direction_rating: 4
+  script_rating: 4
+  performance_rating: 3
+  cinematography_rating: 3
+  impact_rating: 4
+  date: "2025-03-31"
+  reviewed_on: ""
+  url: ""
+  gender: "male"
+  country: "🇮🇳 India"
+  runtime: "195"
+  type: "Movie"
+  director: ""
+  director_url: ""
+  platform: "Netflix"
+  platform_url: ""
+  letterboxd_url: ""
+  poster: ""
+  budget: ""
+  collection: ""
+  notes: ""
+
+
+
+
+- name: "Adolescence"
+  language: "English"
+  year: "2025"
+  rating: 5
+  direction_rating: 5
+  script_rating: 5
+  performance_rating: 5
+  cinematography_rating: 5
+  impact_rating: 5
+  date: "2025-03-30"
+  reviewed_on: ""
+  url: ""
+  gender: "male"
+  country: "🇬🇧 United Kingdom"
+  runtime: "137"
+  type: "TV Show"
+  director: ""
+  director_url: ""
+  platform: "Netflix"
+  platform_url: ""
+  letterboxd_url: ""
+  poster: ""
+  budget: ""
+  collection: ""
+  notes: ""
+
+
+
+
+
 - name: "CBI 5: The Brain"
   language: "Malayalam"
   year: "2022"
