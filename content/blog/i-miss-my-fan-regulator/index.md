@@ -75,5 +75,8 @@ I don't want my fan to be smart.
 Just bring back the regulator!  
 (ಠ益ಠ)(¬_¬)
 
+{{< hn-discussion id="44155227" >}}
+
+
 
 {{< subscribe_block >}}
