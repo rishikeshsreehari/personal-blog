@@ -11,6 +11,17 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.39.U.0206** (2025-06-02)
+
+#### **Updations**
+
+1. **Added pronouncs to about**  
+   - *Commit:* [`d935e3de`](https://github.com/rishikeshsreehari/personal-blog/commit/d935e3de)  
+   - *Files:*  
+     1. [`content/about.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/about.md)
+
+
+---
 ### **v24.38.M.0206** (2025-06-02)
 
 #### **Additions**
