@@ -222,7 +222,14 @@
                      <img src='/images/platforms/primevideo.png' alt='Prime Video' class='platform-logo'>
                    {{ end }}
                    
-                
+                {{ else if eq $platform "disney+" }}
+                   {{ if $watch.platform_url }}
+                     <a href="{{ $watch.platform_url }}" class="platform-link" target="_blank">
+                       <img src='/images/platforms/disney-plus.webp' alt='Disney Plus' class='platform-logo'>
+                     </a>
+                   {{ else }}
+                     <img src='/images/platforms/disney-plus.webp' alt='Disney Plus' class='platform-logo'>
+                   {{ end }}
                    
                  {{ else if eq $platform "hotstar" }}
                    {{ if $watch.platform_url }}
