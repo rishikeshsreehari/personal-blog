@@ -11,6 +11,47 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.38.M.0206** (2025-06-02)
+
+#### **Additions**
+
+1. **Added real pain review**  
+   - *Commit:* [`4f6fcc9d`](https://github.com/rishikeshsreehari/personal-blog/commit/4f6fcc9d)  
+   - *Files:*  
+     1. [`content/watch/real-pain.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/watch/real-pain.md)
+     2. [`static/images/watch/real-pain.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/watch/real-pain.webp)
+
+
+#### **Updations**
+
+1. **Merge branch 'main' of https://github.com/rishikeshsreehari/personal-blog**  
+   - *Commit:* [`ec06e416`](https://github.com/rishikeshsreehari/personal-blog/commit/ec06e416)  
+   - *Files:*  
+
+
+2. **Updated watch list with movies pending**  
+   - *Commit:* [`901fd4df`](https://github.com/rishikeshsreehari/personal-blog/commit/901fd4df)  
+   - *Files:*  
+     1. [`data/watch.yaml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/watch.yaml)
+
+3. **Updated watchcard logic to accomodate disney+**  
+   - *Commit:* [`b90c6df2`](https://github.com/rishikeshsreehari/personal-blog/commit/b90c6df2)  
+   - *Files:*  
+     1. [`static/images/platforms/disney-plus.webp`](https://github.com/rishikeshsreehari/personal-blog/blob/main/static/images/platforms/disney-plus.webp)
+     2. [`themes/hugo-PaperMod/layouts/shortcodes/watch-card.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/watch-card.html)
+
+4. **Updated file over app with markdown presentations**  
+   - *Commit:* [`8f7847ac`](https://github.com/rishikeshsreehari/personal-blog/commit/8f7847ac)  
+   - *Files:*  
+     1. [`content/blog/file-over-app/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/file-over-app/index.md)
+
+5. **Added HN discussion link**  
+   - *Commit:* [`b27a7452`](https://github.com/rishikeshsreehari/personal-blog/commit/b27a7452)  
+   - *Files:*  
+     1. [`content/blog/i-miss-my-fan-regulator/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/i-miss-my-fan-regulator/index.md)
+
+
+---
 ### **v24.37.U.3005** (2025-05-30)
 
 #### **Updations**
