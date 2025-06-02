@@ -6,13 +6,17 @@ summary: About Rishikesh Sreehari - What I do, How I see the world and why I wri
 type: page
 disable_comments: true
 ShowReadingTime: false
-updated_on: 2025-03-28
+updated_on: 2025-06-02
 
 ---
 #####  {{< updated_on >}}
 
-Hello! My name is [Rishikesh](/name) (pronounced as ri-shee-kay-sh).
-I currently live in {{< currentlocation >}} with [my wife](https://tibetanyeti.com/). 
+Hello! My name is [Rishikesh](/name).  
+My pronouns are [he/him/his](https://pronouns.within.lgbt/he/him/his/his/himself) and you can call me either Rishi (*ree-shee*) or Rishikesh (*ri-shee-kay-sh*).  
+  
+I currently live in {{< currentlocation >}} with [my wife.](https://tibetanyeti.com/)
+
+
 
 My journey began in a small village in Southern India, precisely at `9.754` latitude and `76.363` longitude, on a national strike day, when the atmosphere held [358 ppm](https://www.co2levels.org) of carbon. Most of my childhood was spent in Kerala, India, where I was born. To know more about my life as a whole, [timeline](/timeline) is a great place.
 
