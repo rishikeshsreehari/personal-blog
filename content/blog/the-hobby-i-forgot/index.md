@@ -12,18 +12,18 @@ weight: 1
 hiddenInHomeList: true
 
 cover:
-  image: "be-curious.webp"
-  alt: "indie web carnival: affirmations"
-  caption: "A reflection on my lost hobby of collecting sand samples and how a writing prompt about 'take twos' unexpectedly brought back memories of something I'd completely forgotten. Written as my entry for June's IndieWeb Carnival."
+  image: "sand-collection.webp"
+  alt: "sand collection"
+  caption: "a collection of various sands."
   relative: true
 ---
 
-*This is my entry on the topic ["Take Two "](https://www.nicksimson.com/posts/2025-indieweb-carnival-take-two.html) for June's [IndieWeb Carnival](https://indieweb.org/IndieWeb_Carnival) hosted by [Nick Simson](https://www.nicksimson.com/about/).*
+*This is my entry on the topic ['Take Two'](https://www.nicksimson.com/posts/2025-indieweb-carnival-take-two.html)  for June's [IndieWeb Carnival](https://indieweb.org/IndieWeb_Carnival) hosted by [Nick Simson](https://www.nicksimson.com/about/).*
 
 
 {{< dropcap >}}
 
-My mind was blank and I had no ideas when I sat down to write on the topic "Take Two" for this month's IndieWeb Carnival.
+My mind was blank and I had no ideas when I sat down to write on the topic ["Take Two"](https://www.nicksimson.com/posts/2025-indieweb-carnival-take-two.html?utm_source=rishikeshs.com) for this month's IndieWeb Carnival.
 
 
 {{< /dropcap >}}
@@ -39,7 +39,12 @@ And then, out of nowhere, a memory struck me. A hobby I had once loved and compl
 
 Let me explain.
 
+{{< photocaption src="sand-collection.webp" alt="sand collection" width="80%" >}}[Source
+](https://en.wikipedia.org/wiki/Arenophile); I don't have a photo of my collection{{< /photocaption >}}
+
 During my second year of undergrad, I had this odd little habit: collecting sand samples from every new place I visited. Sounds weird? My friends thought so too.
+
+{{< photocaption src="glass-bottles.webp" alt="glass bottles" width="80%" >}}The bottles looked like this!{{< /photocaption >}}
 
 I’d carry small glass bottles with cork stoppers (ordered from AliExpress in China) and collect soil or sand from the spot. I’d add a little slip of paper with GPS coordinates inside the bottle. I even built a small wooden tray with my limited woodworking skills to organize and display them. I kept an index of all the bottles with coordinates and place names. I did this for a year or two. Back then, I hadn’t traveled much outside my home state, but I had collected 30 to 40 unique samples, each from a place with different terrain and memories.
 
