@@ -8,3 +8,5 @@ numpy
 kaleido
 elementpath
 pygal_maps_world
+requests
+python-frontmatter

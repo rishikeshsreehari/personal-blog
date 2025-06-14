@@ -1,0 +1,748 @@
+{
+  "12-hour-walk": {
+    "successful": [
+      "https://bike.abudhabi/en/media/news/abu-dhabi-first-city-in-asia-to-be-awarded-uci-bike-city-label-by-cycling-s-global-governing-body-union-cycliste-internationale-uci/?utm_source=rishikeshs.com",
+      "https://www.colinobrady.com/?utm_source=rishikeshs.com",
+      "https://www.womenfootballclub.com/?utm_source=rishikeshs.com",
+      "https://raniworld.com/ae/rani-juices/rani-float/orange/?utm_source=rishikeshs.com",
+      "https://12hourwalk.com/?utm_source=rishikeshs.com",
+      "https://paad.ae/?utm_source=rishikeshs.com"
+    ],
+    "failed": [
+      {
+        "url": "https://g.co/kgs/BP2nRm1?utm_source=rishikeshs.com",
+        "status": "not_supported",
+        "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
+        "last_attempt": "2025-06-14T13:55:55.111456Z"
+      },
+      {
+        "url": "https://www.decathlon.in/p/8842284/gym-wear-for-men/men-s-loose-fit-fitness-t-shirt-520-ink-blue?id=8842284&type=p&utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:26:54.294647Z"
+      },
+      {
+        "url": "https://www.uniqlo.com/in/en/products/E461440-000?colorCode=COL01&sizeCode=SMA007&utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:26:55.678391Z"
+      }
+    ]
+  },
+  "2022-planning": {
+    "successful": [
+      "https://wakingup.com/?utm_source=rishikeshs.com",
+      "https://rishikesh.substack.com/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "2025": {
+    "successful": [
+      "https://www.theodinproject.com/paths/full-stack-javascript?utm_source=rishikeshs.com",
+      "https://nworbmot.org/courses/esm-2020/?utm_source=rishikeshs.com",
+      "https://newsletter.rishikeshs.com/?utm_source=rishikeshs.com",
+      "https://projecteuler.net/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "30-lessons": {
+    "successful": [],
+    "failed": [
+      {
+        "url": "https://www.invisalign.in/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:05.577623Z"
+      },
+      {
+        "url": "https://thefitness.wiki/routines/r-fitness-basic-beginner-routine/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:06.882324Z"
+      },
+      {
+        "url": "https://sive.rs/expire?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:08.182237Z"
+      }
+    ]
+  },
+  "5-reasons-why-i-decided-to-start-a-blog": {
+    "successful": [
+      "https://rishikesh.substack.com/?utm_source=rishikeshs.com",
+      "https://aliabdaal.com/?utm_source=rishikeshs.com",
+      "https://blog.hubspot.com/marketing/history-of-blogging?utm_source=rishikeshs.com",
+      "https://www.bbc.com/news/world-asia-india-56771766?utm_source=rishikeshs.com",
+      "https://austinkleon.com/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "almanack-of-naval-ravikant": {
+    "successful": [
+      "https://nav.al/?utm_source=rishikeshs.com",
+      "https://www.ejorgenson.com/?utm_source=rishikeshs.com",
+      "https://www.navalmanack.com/?utm_source=rishikeshs.com",
+      "https://theangelphilosopher.com/?utm_source=rishikeshs.com",
+      "https://www.navalmanack.com/blog-posts/how-this-book-came-together-entirely-on-twitter?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "attention-diet": {
+    "successful": [
+      "https://markmanson.net/attention-diet?utm_source=rishikeshs.com",
+      "https://rishikesh.substack.com/archive/?utm_source=rishikeshs.com",
+      "https://www.sciencetimes.com/articles/24909/20200225/why-you-should-start-attention-diet-to-improve-your-mental-health.htm?utm_source=rishikeshs.com",
+      "https://rishikesh.substack.com/about?utm_source=rishikeshs.com",
+      "https://rishikesh.substack.com/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "be-curious-always": {
+    "successful": [],
+    "failed": [
+      {
+        "url": "https://kidztribe.com/products/plastic-mechanix-cars-1?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:09.525142Z"
+      },
+      {
+        "url": "https://indieweb.org/IndieWeb_Carnival?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:10.793558Z"
+      },
+      {
+        "url": "https://newsletter.rishikeshs.com?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:12.114260Z"
+      },
+      {
+        "url": "https://artlung.com/affirmations-ic/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:13.470038Z"
+      }
+    ]
+  },
+  "blogging-with-friction": {
+    "successful": [],
+    "failed": [
+      {
+        "url": "https://vhbelvadi.com/indieweb-carnival-friction?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:14.814589Z"
+      },
+      {
+        "url": "https://vhbelvadi.com/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:16.068121Z"
+      },
+      {
+        "url": "https://pypi.org/project/webpall/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:17.366826Z"
+      },
+      {
+        "url": "https://indieweb.org/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:18.730038Z"
+      }
+    ]
+  },
+  "brilliance-bias": {
+    "successful": [
+      "https://science.sciencemag.org/content/355/6323/389.full?utm_source=rishikeshs.com",
+      "https://psycnet.apa.org/record/2018-62311-015?utm_source=rishikeshs.com",
+      "https://sketchplanations.com/brilliance-bias?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "build-a-digital-garden": {
+    "successful": [
+      "https://nesslabs.com/digital-garden-set-up#:~:text=A%20digital%20garden%20is%20an,to%20be%20cultivated%20in%20public.?utm_source=rishikeshs.com",
+      "https://www.markdownguide.org/getting-started/#:~:text=What%20is%20Markdown%3F,than%20using%20a%20WYSIWYG%20editor.?utm_source=rishikeshs.com",
+      "https://janraasch.github.io/hugo-bearblog/?utm_source=rishikeshs.com",
+      "https://themes.gohugo.io/?utm_source=rishikeshs.com",
+      "https://filezilla-project.org/?utm_source=rishikeshs.com",
+      "https://pages.github.com/?utm_source=rishikeshs.com",
+      "https://maggieappleton.com/garden-history?utm_source=rishikeshs.com",
+      "https://notes.rishikeshs.com/?utm_source=rishikeshs.com",
+      "https://notes.rishikeshs.com?utm_source=rishikeshs.com",
+      "https://atom.io/?utm_source=rishikeshs.com",
+      "https://riptutorial.com/cmd/example/8646/navigating-in-cmd4?utm_source=rishikeshs.com"
+    ],
+    "failed": [
+      {
+        "url": "https://www.netlify.com/?utm_source=rishikeshs.com",
+        "status": "not_supported",
+        "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
+        "last_attempt": "2025-06-14T13:57:02.253147Z"
+      },
+      {
+        "url": "https://drive.google.com/file/d/1_qsSy7T72CAv_S20mlCMmyPiVoJbCLH9/view?usp=sharing&utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:26:57.048986Z"
+      }
+    ]
+  },
+  "curator-economy": {
+    "successful": [
+      "https://qz.com/1178125/youtubes-recommendations-drive-70-of-what-we-watch/?utm_source=rishikeshs.com",
+      "https://beyond.so/blog/welcome-to-the-curator-economy?utm_source=rishikeshs.com",
+      "https://peer.social/technology/how-human-curation-is-making-its-way-in-the-world-of-artificial-intelligence/?utm_source=rishikeshs.com",
+      "https://www.cbinsights.com/research/report/what-is-the-creator-economy/?utm_source=rishikeshs.com",
+      "https://www.amazon.science/the-history-of-amazons-recommendation-algorithm?utm_source=rishikeshs.com",
+      "https://rishikesh.substack.com?utm_source=rishikeshs.com",
+      "https://every.to/?utm_source=rishikeshs.com",
+      "http://beyond.so?utm_source=rishikeshs.com",
+      "https://glasp.co/?utm_source=rishikeshs.com",
+      "https://techjury.net/blog/how-much-data-is-created-every-day/?utm_source=rishikeshs.com",
+      "https://notes.rishikeshs.com/curator-economy-why-curation-is-the-future-of-content/?utm_source=rishikeshs.com",
+      "http://flowstate.fm/?utm_source=rishikeshs.com",
+      "http://nowiknow.com/?utm_source=rishikeshs.com",
+      "https://rishikesh.substack.com/about?utm_source=rishikeshs.com",
+      "https://www.readthegeneralist.com/?utm_source=rishikeshs.com",
+      "https://thebrowser.com/?utm_source=rishikeshs.com"
+    ],
+    "failed": [
+      {
+        "url": "https://medium.com/@kazuki_sf_/the-rise-of-the-curator-economy-5a40ebfe14d?utm_source=rishikeshs.com",
+        "status": "not_supported",
+        "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
+        "last_attempt": "2025-06-14T13:57:20.691821Z"
+      },
+      {
+        "url": "https://www.fastcompany.com/1749899/curation-economy-and-three-cs-information-commerce?utm_source=rishikeshs.com",
+        "status": "not_supported",
+        "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
+        "last_attempt": "2025-06-14T13:57:29.953746Z"
+      }
+    ]
+  },
+  "delta-4-theory-how-to-evaluate-your-startup-idea": {
+    "successful": [
+      "https://www.irctc.co.in/nget/?utm_source=rishikeshs.com",
+      "https://app.cred.club/spQx/49ddd404?utm_source=rishikeshs.com",
+      "https://blog.ipleaders.in/snapdeals-acquisition-of-freecharge/?utm_source=rishikeshs.com",
+      "https://www.business-standard.com/article/companies/fairness-cream-firms-get-innovative-with-marketing-use-synonyms-for-fair-120090201458_1.html?utm_source=rishikeshs.com",
+      "https://www.rebuildyourvision.com/blog/lasik-eye-surgery/is-lasiks-popularity-finally-fading/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "file-over-app": {
+    "successful": [
+      "https://logseq.com/?utm_source=rishikeshs.com",
+      "https://notable.app/?utm_source=rishikeshs.com",
+      "http://todotxt.org/?utm_source=rishikeshs.com",
+      "https://ledger-cli.org/?utm_source=rishikeshs.com",
+      "https://onefolder.app/?utm_source=rishikeshs.com",
+      "https://stephango.com/file-over-app?utm_source=rishikeshs.com",
+      "https://paisa.fyi?utm_source=rishikeshs.com",
+      "https://fountain.io/?utm_source=rishikeshs.com",
+      "https://srikanthperinkulam.com/?utm_source=rishikeshs.com",
+      "https://hledger.org/?utm_source=rishikeshs.com",
+      "https://orgmode.org/?utm_source=rishikeshs.com",
+      "https://marp.app/?utm_source=rishikeshs.com",
+      "https://lyrcs.app/?utm_source=rishikeshs.com",
+      "https://npsnav.in?utm_source=rishikeshs.com",
+      "https://plaintext.bearblog.dev/a-plain-defense-for-plain-text/?utm_source=rishikeshs.com",
+      "https://gist.github.com/johnloy/27dd124ad40e210e91c70dd1c24ac8c8?utm_source=rishikeshs.com",
+      "https://flathabits.com/?utm_source=rishikeshs.com",
+      "https://plainorg.com/?utm_source=rishikeshs.com",
+      "https://silverbullet.md/?utm_source=rishikeshs.com",
+      "https://www.usebruno.com/manifesto?utm_source=rishikeshs.com",
+      "https://sive.rs/plaintext?utm_source=rishikeshs.com"
+    ],
+    "failed": [
+      {
+        "url": "https://www.indiehackers.com/WetSponge?id=cmT3EJOZ4GVctbHWtiZh6N8ZmYF2&utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:26:58.403741Z"
+      }
+    ]
+  },
+  "first-100-email-subscribers": {
+    "successful": [
+      "https://rishikesh.substack.com/archive?utm_source=rishikeshs.com",
+      "https://sive.rs/obvious?utm_source=rishikeshs.com",
+      "https://on.substack.com/p/office-hours-10?utm_source=rishikeshs.com",
+      "https://rishikesh.substack.com/about?utm_source=rishikeshs.com",
+      "https://rishikesh.substack.com/?utm_source=rishikeshs.com"
+    ],
+    "failed": [
+      {
+        "url": "https://www.verywellmind.com/imposter-syndrome-and-social-anxiety-disorder-4156469#:~:text=Impostor%20syndrome%20(IS?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:26:59.776481Z"
+      }
+    ]
+  },
+  "food-rules": {
+    "successful": [
+      "https://michaelpollan.com/?utm_source=rishikeshs.com",
+      "https://sive.rs/2do?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "how-i-curate-my-newsletter": {
+    "successful": [
+      "https://designlobster.substack.com/?utm_source=rishikeshs.com",
+      "https://fs.blog/newsletter/?utm_source=rishikeshs.com",
+      "https://unchartedterritories.tomaspueyo.com/?utm_source=rishikeshs.com",
+      "https://readwise.io/rishikesh/?utm_source=rishikeshs.com",
+      "https://hemingwayapp.com/?utm_source=rishikeshs.com",
+      "https://app.grammarly.com/?utm_source=rishikeshs.com",
+      "https://perell.com/newsletter/?utm_source=rishikeshs.com",
+      "https://www.wordtune.com/?utm_source=rishikeshs.com",
+      "https://rishikesh.substack.com/?utm_source=rishikeshs.com"
+    ],
+    "failed": [
+      {
+        "url": "https://www.getrevue.co/profile/Recomendo/?utm_source=rishikeshs.com",
+        "status": "not_supported",
+        "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
+        "last_attempt": "2025-06-14T13:58:32.979750Z"
+      },
+      {
+        "url": "https://www.getrevue.co/profile/Recomendo/issues/20-useful-frameworks-job-advice-cooking-meditation-1231157?utm_source=rishikeshs.com",
+        "status": "not_supported",
+        "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
+        "last_attempt": "2025-06-14T13:58:44.683748Z"
+      },
+      {
+        "url": "https://thesample.ai/?ref=things&utm_source=rishikeshs.com",
+        "status": "timeout",
+        "error": "Request timed out",
+        "last_attempt": "2025-06-14T14:27:20.804598Z"
+      },
+      {
+        "url": "https://aliabdaal.com/newsletter/?utm=rishikeshs.com&utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:27:22.134389Z"
+      },
+      {
+        "url": "https://refind.com/?utm_source=newsletter&utm_medium=barter&utm_campaign=2Jnc0y65_WDobSxlPnSu9w&utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:27:23.442444Z"
+      }
+    ]
+  },
+  "how-i-version-my-blog": {
+    "successful": [],
+    "failed": [
+      {
+        "url": "https://www.nps.gov/articles/independence-declarationdraft.htm?utm_source=rishikeshs.com",
+        "status": "not_supported",
+        "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
+        "last_attempt": "2025-06-14T13:58:49.766231Z"
+      },
+      {
+        "url": "https://annualbeta.com/blog/a-changelog-for-my-blog-posts/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:27.985236Z"
+      },
+      {
+        "url": "https://www.tempertemper.net/blog/version-control-for-articles-and-blog-posts?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:29.259891Z"
+      },
+      {
+        "url": "https://ericmjl.github.io/blog/2015/4/3/semantic-versioning-for-papers-a-manifesto/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:30.602742Z"
+      },
+      {
+        "url": "https://evantravers.com/articles/2019/11/08/using-git-to-generate-a-changelog-for-your-blog/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:31.874027Z"
+      },
+      {
+        "url": "https://cogs-well-inc.helpscoutdocs.com/article/230-what-is-a-recipe-version?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:33.196565Z"
+      },
+      {
+        "url": "https://fastercapital.com/keyword/sequential-versioning.html?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:34.441865Z"
+      },
+      {
+        "url": "https://timothymiller.dev/posts/2020/adding-a-changelog-to-my-11ty-blog/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:35.778718Z"
+      },
+      {
+        "url": "https://marcel.is/post-changelog/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:37.098129Z"
+      },
+      {
+        "url": "https://miniscruff.github.io/hashver/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:38.404533Z"
+      },
+      {
+        "url": "https://calver.org/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:39.739489Z"
+      },
+      {
+        "url": "https://willdarwin.com/writing/vcs?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:41.107889Z"
+      },
+      {
+        "url": "https://semver.org/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:42.432530Z"
+      }
+    ]
+  },
+  "ikea-effect": {
+    "successful": [
+      "https://www.hbs.edu/ris/Publication%20Files/11-091.pdf?utm_source=rishikeshs.com",
+      "https://sketchplanations.com/the-ikea-effect?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "lessons-30-day-meditation-challenge": {
+    "successful": [
+      "https://www.calm.com/?utm_source=rishikeshs.com",
+      "https://www.headspace.com/?utm_source=rishikeshs.com",
+      "https://dictionary.cambridge.org/dictionary/english/woo-woo?utm_source=rishikeshs.com",
+      "https://news.harvard.edu/gazette/story/2018/04/harvard-researchers-study-how-mindfulness-may-change-the-brain-in-depressed-patients/?utm_source=rishikeshs.com",
+      "https://samharris.org/?utm_source=rishikeshs.com",
+      "https://wakingup.com/?utm_source=rishikeshs.com",
+      "https://danlawton.substack.com/p/when-buddhism-goes-bad?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "lindy-effect": {
+    "successful": [
+      "https://optimsight.com/blog/lindy-effect-a-simple-heuristic-to-predict-lifespan/?utm_source=rishikeshs.com",
+      "https://arxiv.org/pdf/2308.09045?utm_source=rishikeshs.com",
+      "https://gwern.net/doc/statistics/probability/1964-goldman.pdf?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "man-from-the-future": {
+    "successful": [
+      "https://fs.blog/first-principles/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "my-blog-is-my-greatest-art": {
+    "successful": [],
+    "failed": [
+      {
+        "url": "https://adactio.com/articles/10887?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:43.753725Z"
+      },
+      {
+        "url": "https://eieio.games/nonsense/game-14-one-million-checkboxes/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:45.098605Z"
+      },
+      {
+        "url": "https://winnielim.org/notes/i-love-my-website-too/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:46.374689Z"
+      },
+      {
+        "url": "https://jamesg.blog/2021/11/16/i-love-my-website/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:47.662501Z"
+      },
+      {
+        "url": "https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:48.937161Z"
+      },
+      {
+        "url": "https://guzey.com/personal/why-have-a-blog/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:50.317576Z"
+      }
+    ]
+  },
+  "nicheless": {
+    "successful": [
+      "https://taylor.town/?utm_source=rishikeshs.com",
+      "https://timdenning.substack.com/p/if-you-want-to-be-a-millionaire-you?utm_source=rishikeshs.com",
+      "https://short.sweet.pub/why-i-decided-to-experiment-with-being-nicheless-4e50a32d5c5d?utm_source=rishikeshs.com",
+      "https://100r.co/site/home.html?utm_source=rishikeshs.com",
+      "https://kk.org/thetechnium/1000-true-fans/?utm_source=rishikeshs.com",
+      "https://mattkhead.com/2023/12/10/this-new-niche-perspective-got-me-excited/?utm_source=rishikeshs.com",
+      "https://pieter.com/?utm_source=rishikeshs.com"
+    ],
+    "failed": [
+      {
+        "url": "https://medium.com/inside-blogging/blog-niche-unnecessary-8cd2008bd35d?utm_source=rishikeshs.com",
+        "status": "not_supported",
+        "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
+        "last_attempt": "2025-06-14T13:59:28.745240Z"
+      }
+    ]
+  },
+  "random-universe": {
+    "successful": [
+      "https://www.pacificneuroscienceinstitute.org/blog/brain-tumor/young-father-discovers-cancer-after-a-random-accident/?utm_source=rishikeshs.com",
+      "https://www.edge.org/response-detail/10178?utm_source=rishikeshs.com",
+      "https://blog.cloudflare.com/lavarand-in-production-the-nitty-gritty-technical-details/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "readwise-review": {
+    "successful": [
+      "https://readwise.io/rishikesh/?utm_source=rishikeshs.com",
+      "https://www.instapaper.com/?utm_source=rishikeshs.com",
+      "https://jamesclear.com/?utm_source=rishikeshs.com",
+      "https://aliabdaal.com/read-more-effectively/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "resonance-journal": {
+    "successful": [
+      "https://www.ideo.com/?utm_source=rishikeshs.com",
+      "https://acumenacademy.org/?utm_source=rishikeshs.com",
+      "https://space10.com/?utm_source=rishikeshs.com",
+      "https://aliabdaal.com/using-notion-as-a-resonance-calendar/?utm_source=rishikeshs.com"
+    ],
+    "failed": [
+      {
+        "url": "https://dent-radar-d40.notion.site/2615af7fb932434c9085b4c666781d20?v=089ad185b9354ae49ab8b26ef844a214&utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:27:24.839390Z"
+      },
+      {
+        "url": "https://www.interaction-design.org/invite?r=rishikesh-2&utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:27:26.231818Z"
+      }
+    ]
+  },
+  "show-your-work-by-austin-kleon-book-summary-notes": {
+    "successful": [
+      "https://rishikesh.substack.com?utm_source=rishikeshs.com",
+      "https://austinkleon.com/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "single-purpose-devices": {
+    "successful": [
+      "https://getfreewrite.com/?utm_source=rishikeshs.com"
+    ],
+    "failed": [
+      {
+        "url": "https://www.kickstarter.com/projects/thelightphone/the-light-phone?utm_source=rishikeshs.com",
+        "status": "not_supported",
+        "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
+        "last_attempt": "2025-06-14T14:00:00.135614Z"
+      }
+    ]
+  },
+  "stress-journal": {
+    "successful": [
+      "https://mintexports.com/blogs/blog/handbags2?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "the-hobby-i-forgot": {
+    "successful": [
+      "https://indieweb.org/IndieWeb_Carnival?utm_source=rishikeshs.com",
+      "https://www.nicksimson.com/posts/2025-indieweb-carnival-take-two.html?utm_source=rishikeshs.com",
+      "https://www.nicksimson.com/about/?utm_source=rishikeshs.com"
+    ],
+    "failed": [
+      {
+        "url": "https://www.nicksimson.com/posts/2025-indieweb-carnival-take-two.html?utm_source=rishikeshs.com&utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:21:12.100820Z"
+      }
+    ]
+  },
+  "zone-2-training": {
+    "successful": [
+      "https://www.artofmanliness.com/health-fitness/fitness/zone-2-training/?utm_source=rishikeshs.com",
+      "https://www.howardluksmd.com/zone-2-hr-training-live-longer-less-injury/?utm_source=rishikeshs.com",
+      "https://philmaffetone.com/180-formula/?utm_source=rishikeshs.com",
+      "https://www.trainingpeaks.com/blog/zone-2-training-for-endurance-athletes/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "barefoot": {
+    "successful": [],
+    "failed": [
+      {
+        "url": "https://time.com/6284245/walking-barefoot-health-risks/?utm_source=rishikeshs.com",
+        "status": "not_supported",
+        "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
+        "last_attempt": "2025-06-14T14:00:15.167839Z"
+      }
+    ]
+  },
+  "evergreen-blogs": {
+    "successful": [],
+    "failed": [
+      {
+        "url": "https://legacytrust.nz/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:55.801500Z"
+      }
+    ]
+  },
+  "1-irfan-unoffice": {
+    "successful": [],
+    "failed": [
+      {
+        "url": "https://Irfumafazath.net?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:57.142876Z"
+      },
+      {
+        "url": "https://irfumafazath.substack.com?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:58.582475Z"
+      }
+    ]
+  },
+  "palm-leaf-writing": {
+    "successful": [],
+    "failed": [
+      {
+        "url": "https://inkymemo.com/the-leaf-that-shaped-asian-writing-forever/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-06-14T14:13:59.952510Z"
+      }
+    ]
+  },
+  "30": {
+    "successful": [
+      "https://www.invisalign.in/?utm_source=rishikeshs.com",
+      "https://sive.rs/expire?utm_source=rishikeshs.com",
+      "https://thefitness.wiki/routines/r-fitness-basic-beginner-routine/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "be-curious": {
+    "successful": [
+      "https://newsletter.rishikeshs.com?utm_source=rishikeshs.com",
+      "https://artlung.com/affirmations-ic/?utm_source=rishikeshs.com",
+      "https://indieweb.org/IndieWeb_Carnival?utm_source=rishikeshs.com",
+      "https://kidztribe.com/products/plastic-mechanix-cars-1?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "blogging-friction": {
+    "successful": [
+      "https://vhbelvadi.com/indieweb-carnival-friction?utm_source=rishikeshs.com",
+      "https://indieweb.org/?utm_source=rishikeshs.com",
+      "https://vhbelvadi.com/?utm_source=rishikeshs.com",
+      "https://pypi.org/project/webpall/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "blog-version": {
+    "successful": [
+      "https://miniscruff.github.io/hashver/?utm_source=rishikeshs.com",
+      "https://calver.org/?utm_source=rishikeshs.com",
+      "https://marcel.is/post-changelog/?utm_source=rishikeshs.com",
+      "https://timothymiller.dev/posts/2020/adding-a-changelog-to-my-11ty-blog/?utm_source=rishikeshs.com",
+      "https://ericmjl.github.io/blog/2015/4/3/semantic-versioning-for-papers-a-manifesto/?utm_source=rishikeshs.com",
+      "https://fastercapital.com/keyword/sequential-versioning.html?utm_source=rishikeshs.com",
+      "https://semver.org/?utm_source=rishikeshs.com",
+      "https://cogs-well-inc.helpscoutdocs.com/article/230-what-is-a-recipe-version?utm_source=rishikeshs.com",
+      "https://evantravers.com/articles/2019/11/08/using-git-to-generate-a-changelog-for-your-blog/?utm_source=rishikeshs.com",
+      "https://annualbeta.com/blog/a-changelog-for-my-blog-posts/?utm_source=rishikeshs.com",
+      "https://www.tempertemper.net/blog/version-control-for-articles-and-blog-posts?utm_source=rishikeshs.com",
+      "https://willdarwin.com/writing/vcs?utm_source=rishikeshs.com"
+    ],
+    "failed": [
+      {
+        "url": "https://www.nps.gov/articles/independence-declarationdraft.htm?utm_source=rishikeshs.com",
+        "status": "not_supported",
+        "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
+        "last_attempt": "2025-06-14T14:18:21.167352Z"
+      }
+    ]
+  },
+  "blog-art": {
+    "successful": [
+      "https://adactio.com/articles/10887?utm_source=rishikeshs.com",
+      "https://winnielim.org/notes/i-love-my-website-too/?utm_source=rishikeshs.com",
+      "https://guzey.com/personal/why-have-a-blog/?utm_source=rishikeshs.com",
+      "https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/?utm_source=rishikeshs.com",
+      "https://eieio.games/nonsense/game-14-one-million-checkboxes/?utm_source=rishikeshs.com",
+      "https://jamesg.blog/2021/11/16/i-love-my-website/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "journal-barefoot-walking": {
+    "successful": [],
+    "failed": [
+      {
+        "url": "https://time.com/6284245/walking-barefoot-health-risks/?utm_source=rishikeshs.com",
+        "status": "not_supported",
+        "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
+        "last_attempt": "2025-06-14T14:18:42.666089Z"
+      }
+    ]
+  },
+  "journal-evergreen-blogs": {
+    "successful": [
+      "https://legacytrust.nz/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "meet-1": {
+    "successful": [
+      "https://Irfumafazath.net?utm_source=rishikeshs.com",
+      "https://irfumafazath.substack.com?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  },
+  "til-palm-leaf-writing": {
+    "successful": [
+      "https://inkymemo.com/the-leaf-that-shaped-asian-writing-forever/?utm_source=rishikeshs.com"
+    ],
+    "failed": []
+  }
+}
