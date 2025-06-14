@@ -1,6 +1,10 @@
 {{ if or (strings.HasPrefix .Destination "http://") (strings.HasPrefix .Destination "https://") }}
   {{ if not (strings.Contains .Destination "utm_source=rishikeshs.com") }}
-    <a href="{{ .Destination | safeURL }}?utm_source=rishikeshs.com"{{ with .Title }} title="{{ . }}"{{ end }} target="_blank">{{ .Text | safeHTML }}</a>
+    {{ $separator := "?" }}
+    {{ if strings.Contains .Destination "?" }}
+      {{ $separator = "&" }}
+    {{ end }}
+    <a href="{{ .Destination | safeURL }}{{ $separator }}utm_source=rishikeshs.com"{{ with .Title }} title="{{ . }}"{{ end }} target="_blank">{{ .Text | safeHTML }}</a>
   {{ else }}
     <a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }} target="_blank">{{ .Text | safeHTML }}</a>
   {{ end }}
