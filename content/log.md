@@ -11,6 +11,51 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.42.M.1406** (2025-06-14)
+
+#### **Fixes**
+
+1. **Fix external link render issue.**  
+   - *Commit:* [`50ad1164`](https://github.com/rishikeshsreehari/personal-blog/commit/50ad1164)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/_default/_markup/render-link.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/_default/_markup/render-link.html)
+
+2. **Fix: UTM source removal**  
+   - *Commit:* [`d0ca4ccb`](https://github.com/rishikeshsreehari/personal-blog/commit/d0ca4ccb)  
+   - *Files:*  
+     1. [`content/blog/the-hobby-i-forgot/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/the-hobby-i-forgot/index.md)
+
+
+#### **Additions**
+
+1. **Added webmentions tracking**  
+   - *Commit:* [`e6f5e940`](https://github.com/rishikeshsreehari/personal-blog/commit/e6f5e940)  
+   - *Files:*  
+     1. [`data/webmentions.json`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/webmentions.json)
+     2. [`scripts/fetch_webmentions.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/fetch_webmentions.py)
+
+
+#### **Updations**
+
+1. **Added environmen variable for build.py**  
+   - *Commit:* [`2f624855`](https://github.com/rishikeshsreehari/personal-blog/commit/2f624855)  
+   - *Files:*  
+     1. [`.github/workflows/build.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/.github/workflows/build.yml)
+
+2. **Added script for sending webmentions**  
+   - *Commit:* [`0c72c573`](https://github.com/rishikeshsreehari/personal-blog/commit/0c72c573)  
+   - *Files:*  
+     1. [`data/sent-webmentions.json`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/sent-webmentions.json)
+     2. [`requirements.txt`](https://github.com/rishikeshsreehari/personal-blog/blob/main/requirements.txt)
+     3. [`scripts/send_webmentions.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/send_webmentions.py)
+
+3. **updated build script for webmentions**  
+   - *Commit:* [`9eeae4f5`](https://github.com/rishikeshsreehari/personal-blog/commit/9eeae4f5)  
+   - *Files:*  
+     1. [`scripts/build.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/build.py)
+
+
+---
 ### **v24.41.U.0906** (2025-06-09)
 
 #### **Updations**
