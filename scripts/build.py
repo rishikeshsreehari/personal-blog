@@ -12,7 +12,9 @@ if __name__ == "__main__":
     scripts = [
         'scripts/count_books.py',
         'scripts/create_worldmap.py',
-        'scripts/then.py'
+        'scripts/then.py',
+        'scripts/fetch_webmentions.py',
+        'scripts/send_webmentions.py'
     ]
     
     for script in scripts:
