@@ -6,7 +6,9 @@
       "https://www.womenfootballclub.com/?utm_source=rishikeshs.com",
       "https://raniworld.com/ae/rani-juices/rani-float/orange/?utm_source=rishikeshs.com",
       "https://12hourwalk.com/?utm_source=rishikeshs.com",
-      "https://paad.ae/?utm_source=rishikeshs.com"
+      "https://paad.ae/?utm_source=rishikeshs.com",
+      "https://www.decathlon.in/p/8842284/gym-wear-for-men/men-s-loose-fit-fitness-t-shirt-520-ink-blue?id=8842284&type=p&utm_source=rishikeshs.com",
+      "https://www.uniqlo.com/in/en/products/E461440-000?colorCode=COL01&sizeCode=SMA007&utm_source=rishikeshs.com"
     ],
     "failed": [
       {
@@ -14,18 +16,6 @@
         "status": "not_supported",
         "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
         "last_attempt": "2025-06-14T13:55:55.111456Z"
-      },
-      {
-        "url": "https://www.uniqlo.com/in/en/products/E461440-000?colorCode=COL01&sizeCode=SMA007&utm_source=rishikeshs.com",
-        "status": "no_link_found",
-        "error": "The source document does not have a link to the target URL or domain",
-        "last_attempt": "2025-06-14T14:39:38.395446Z"
-      },
-      {
-        "url": "https://www.decathlon.in/p/8842284/gym-wear-for-men/men-s-loose-fit-fitness-t-shirt-520-ink-blue?id=8842284&type=p&utm_source=rishikeshs.com",
-        "status": "no_link_found",
-        "error": "The source document does not have a link to the target URL or domain",
-        "last_attempt": "2025-06-14T14:39:38.896307Z"
       }
     ]
   },
@@ -176,7 +166,8 @@
       "https://notes.rishikeshs.com/?utm_source=rishikeshs.com",
       "https://notes.rishikeshs.com?utm_source=rishikeshs.com",
       "https://atom.io/?utm_source=rishikeshs.com",
-      "https://riptutorial.com/cmd/example/8646/navigating-in-cmd4?utm_source=rishikeshs.com"
+      "https://riptutorial.com/cmd/example/8646/navigating-in-cmd4?utm_source=rishikeshs.com",
+      "https://drive.google.com/file/d/1_qsSy7T72CAv_S20mlCMmyPiVoJbCLH9/view?usp=sharing&utm_source=rishikeshs.com"
     ],
     "failed": [
       {
@@ -184,12 +175,6 @@
         "status": "not_supported",
         "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
         "last_attempt": "2025-06-14T13:57:02.253147Z"
-      },
-      {
-        "url": "https://drive.google.com/file/d/1_qsSy7T72CAv_S20mlCMmyPiVoJbCLH9/view?usp=sharing&utm_source=rishikeshs.com",
-        "status": "no_link_found",
-        "error": "The source document does not have a link to the target URL or domain",
-        "last_attempt": "2025-06-14T14:39:37.188739Z"
       }
     ]
   },
@@ -259,16 +244,10 @@
       "https://plainorg.com/?utm_source=rishikeshs.com",
       "https://silverbullet.md/?utm_source=rishikeshs.com",
       "https://www.usebruno.com/manifesto?utm_source=rishikeshs.com",
-      "https://sive.rs/plaintext?utm_source=rishikeshs.com"
+      "https://sive.rs/plaintext?utm_source=rishikeshs.com",
+      "https://www.indiehackers.com/WetSponge?id=cmT3EJOZ4GVctbHWtiZh6N8ZmYF2&utm_source=rishikeshs.com"
     ],
-    "failed": [
-      {
-        "url": "https://www.indiehackers.com/WetSponge?id=cmT3EJOZ4GVctbHWtiZh6N8ZmYF2&utm_source=rishikeshs.com",
-        "status": "no_link_found",
-        "error": "The source document does not have a link to the target URL or domain",
-        "last_attempt": "2025-06-14T14:39:35.970301Z"
-      }
-    ]
+    "failed": []
   },
   "first-100-email-subscribers": {
     "successful": [
@@ -283,7 +262,7 @@
         "url": "https://www.verywellmind.com/imposter-syndrome-and-social-anxiety-disorder-4156469#:~:text=Impostor%20syndrome%20(IS?utm_source=rishikeshs.com",
         "status": "no_link_found",
         "error": "The source document does not have a link to the target URL or domain",
-        "last_attempt": "2025-06-14T14:39:35.434115Z"
+        "last_attempt": "2025-06-14T14:42:21.936252Z"
       }
     ]
   },
@@ -304,7 +283,9 @@
       "https://app.grammarly.com/?utm_source=rishikeshs.com",
       "https://perell.com/newsletter/?utm_source=rishikeshs.com",
       "https://www.wordtune.com/?utm_source=rishikeshs.com",
-      "https://rishikesh.substack.com/?utm_source=rishikeshs.com"
+      "https://rishikesh.substack.com/?utm_source=rishikeshs.com",
+      "https://aliabdaal.com/newsletter/?utm=rishikeshs.com&utm_source=rishikeshs.com",
+      "https://refind.com/?utm_source=newsletter&utm_medium=barter&utm_campaign=2Jnc0y65_WDobSxlPnSu9w&utm_source=rishikeshs.com"
     ],
     "failed": [
       {
@@ -324,18 +305,6 @@
         "status": "timeout",
         "error": "Request timed out",
         "last_attempt": "2025-06-14T14:27:20.804598Z"
-      },
-      {
-        "url": "https://aliabdaal.com/newsletter/?utm=rishikeshs.com&utm_source=rishikeshs.com",
-        "status": "no_link_found",
-        "error": "The source document does not have a link to the target URL or domain",
-        "last_attempt": "2025-06-14T14:39:36.371561Z"
-      },
-      {
-        "url": "https://refind.com/?utm_source=newsletter&utm_medium=barter&utm_campaign=2Jnc0y65_WDobSxlPnSu9w&utm_source=rishikeshs.com",
-        "status": "no_link_found",
-        "error": "The source document does not have a link to the target URL or domain",
-        "last_attempt": "2025-06-14T14:39:36.804143Z"
       }
     ]
   },
@@ -537,22 +506,11 @@
       "https://www.ideo.com/?utm_source=rishikeshs.com",
       "https://acumenacademy.org/?utm_source=rishikeshs.com",
       "https://space10.com/?utm_source=rishikeshs.com",
-      "https://aliabdaal.com/using-notion-as-a-resonance-calendar/?utm_source=rishikeshs.com"
+      "https://aliabdaal.com/using-notion-as-a-resonance-calendar/?utm_source=rishikeshs.com",
+      "https://www.interaction-design.org/invite?r=rishikesh-2&utm_source=rishikeshs.com",
+      "https://dent-radar-d40.notion.site/2615af7fb932434c9085b4c666781d20?v=089ad185b9354ae49ab8b26ef844a214&utm_source=rishikeshs.com"
     ],
-    "failed": [
-      {
-        "url": "https://www.interaction-design.org/invite?r=rishikesh-2&utm_source=rishikeshs.com",
-        "status": "no_link_found",
-        "error": "The source document does not have a link to the target URL or domain",
-        "last_attempt": "2025-06-14T14:39:37.592237Z"
-      },
-      {
-        "url": "https://dent-radar-d40.notion.site/2615af7fb932434c9085b4c666781d20?v=089ad185b9354ae49ab8b26ef844a214&utm_source=rishikeshs.com",
-        "status": "no_link_found",
-        "error": "The source document does not have a link to the target URL or domain",
-        "last_attempt": "2025-06-14T14:39:38.018461Z"
-      }
-    ]
+    "failed": []
   },
   "show-your-work-by-austin-kleon-book-summary-notes": {
     "successful": [
