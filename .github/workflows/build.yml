@@ -24,6 +24,8 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run build.py
+      env:
+        TELEGRAPH_TOKEN: ${{ secrets.TELEGRAPH_TOKEN }}
       run: |
         python scripts/build.py
 
