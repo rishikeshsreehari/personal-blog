@@ -23,7 +23,7 @@ cover:
 
 {{< dropcap >}}
 
-My mind was blank and I had no ideas when I sat down to write on the topic ["Take Two"](https://www.nicksimson.com/posts/2025-indieweb-carnival-take-two.html?utm_source=rishikeshs.com) for this month's IndieWeb Carnival.
+My mind was blank and I had no ideas when I sat down to write on the topic ["Take Two"](https://www.nicksimson.com/posts/2025-indieweb-carnival-take-two.html) for this month's IndieWeb Carnival.
 
 
 {{< /dropcap >}}
