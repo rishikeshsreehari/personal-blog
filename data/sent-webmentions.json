@@ -7,8 +7,8 @@
       "https://raniworld.com/ae/rani-juices/rani-float/orange/?utm_source=rishikeshs.com",
       "https://12hourwalk.com/?utm_source=rishikeshs.com",
       "https://paad.ae/?utm_source=rishikeshs.com",
-      "https://www.uniqlo.com/in/en/products/E461440-000?colorCode=COL01&sizeCode=SMA007&utm_source=rishikeshs.com",
-      "https://www.decathlon.in/p/8842284/gym-wear-for-men/men-s-loose-fit-fitness-t-shirt-520-ink-blue?id=8842284&type=p&utm_source=rishikeshs.com"
+      "https://www.decathlon.in/p/8842284/gym-wear-for-men/men-s-loose-fit-fitness-t-shirt-520-ink-blue?id=8842284&type=p&utm_source=rishikeshs.com",
+      "https://www.uniqlo.com/in/en/products/E461440-000?colorCode=COL01&sizeCode=SMA007&utm_source=rishikeshs.com"
     ],
     "failed": [
       {
@@ -262,7 +262,7 @@
         "url": "https://www.verywellmind.com/imposter-syndrome-and-social-anxiety-disorder-4156469#:~:text=Impostor%20syndrome%20(IS?utm_source=rishikeshs.com",
         "status": "no_link_found",
         "error": "The source document does not have a link to the target URL or domain",
-        "last_attempt": "2025-06-15T19:07:49.054141Z"
+        "last_attempt": "2025-06-14T14:42:21.936252Z"
       }
     ]
   },
@@ -284,9 +284,8 @@
       "https://perell.com/newsletter/?utm_source=rishikeshs.com",
       "https://www.wordtune.com/?utm_source=rishikeshs.com",
       "https://rishikesh.substack.com/?utm_source=rishikeshs.com",
-      "https://refind.com/?utm_source=newsletter&utm_medium=barter&utm_campaign=2Jnc0y65_WDobSxlPnSu9w&utm_source=rishikeshs.com",
       "https://aliabdaal.com/newsletter/?utm=rishikeshs.com&utm_source=rishikeshs.com",
-      "https://thesample.ai/?ref=things&utm_source=rishikeshs.com"
+      "https://refind.com/?utm_source=newsletter&utm_medium=barter&utm_campaign=2Jnc0y65_WDobSxlPnSu9w&utm_source=rishikeshs.com"
     ],
     "failed": [
       {
@@ -300,6 +299,12 @@
         "status": "not_supported",
         "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
         "last_attempt": "2025-06-14T13:58:44.683748Z"
+      },
+      {
+        "url": "https://thesample.ai/?ref=things&utm_source=rishikeshs.com",
+        "status": "timeout",
+        "error": "Request timed out",
+        "last_attempt": "2025-06-14T14:27:20.804598Z"
       }
     ]
   },
@@ -502,8 +507,8 @@
       "https://acumenacademy.org/?utm_source=rishikeshs.com",
       "https://space10.com/?utm_source=rishikeshs.com",
       "https://aliabdaal.com/using-notion-as-a-resonance-calendar/?utm_source=rishikeshs.com",
-      "https://dent-radar-d40.notion.site/2615af7fb932434c9085b4c666781d20?v=089ad185b9354ae49ab8b26ef844a214&utm_source=rishikeshs.com",
-      "https://www.interaction-design.org/invite?r=rishikesh-2&utm_source=rishikeshs.com"
+      "https://www.interaction-design.org/invite?r=rishikesh-2&utm_source=rishikeshs.com",
+      "https://dent-radar-d40.notion.site/2615af7fb932434c9085b4c666781d20?v=089ad185b9354ae49ab8b26ef844a214&utm_source=rishikeshs.com"
     ],
     "failed": []
   },
