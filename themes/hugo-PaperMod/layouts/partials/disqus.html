@@ -9,6 +9,8 @@
   {{ with index $commentsData $url }}
     {{ $comments := . | default (slice) }}
     {{ if gt (len $comments) 0 }}
+      <h3>Comments ({{ len $comments }})</h3>
+      <br>
       {{ range $comments }}
         <div class="comment {{ if in .Comment "author-marker" }}highlight{{ end }}">
           <div class="avatar">
