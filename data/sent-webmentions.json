@@ -262,7 +262,7 @@
         "url": "https://www.verywellmind.com/imposter-syndrome-and-social-anxiety-disorder-4156469#:~:text=Impostor%20syndrome%20(IS?utm_source=rishikeshs.com",
         "status": "no_link_found",
         "error": "The source document does not have a link to the target URL or domain",
-        "last_attempt": "2025-06-14T19:07:46.046470Z"
+        "last_attempt": "2025-06-15T19:07:49.054141Z"
       }
     ]
   },
@@ -285,7 +285,8 @@
       "https://www.wordtune.com/?utm_source=rishikeshs.com",
       "https://rishikesh.substack.com/?utm_source=rishikeshs.com",
       "https://refind.com/?utm_source=newsletter&utm_medium=barter&utm_campaign=2Jnc0y65_WDobSxlPnSu9w&utm_source=rishikeshs.com",
-      "https://aliabdaal.com/newsletter/?utm=rishikeshs.com&utm_source=rishikeshs.com"
+      "https://aliabdaal.com/newsletter/?utm=rishikeshs.com&utm_source=rishikeshs.com",
+      "https://thesample.ai/?ref=things&utm_source=rishikeshs.com"
     ],
     "failed": [
       {
@@ -299,12 +300,6 @@
         "status": "not_supported",
         "error": "The target domain is known to not accept webmentions. If you believe this is in error, please file an issue at https://github.com/aaronpk/Telegraph/issues",
         "last_attempt": "2025-06-14T13:58:44.683748Z"
-      },
-      {
-        "url": "https://thesample.ai/?ref=things&utm_source=rishikeshs.com",
-        "status": "timeout",
-        "error": "Request timed out",
-        "last_attempt": "2025-06-14T14:27:20.804598Z"
       }
     ]
   },
