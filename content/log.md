@@ -6,6 +6,7 @@ url: "/log/"
 summary: Changelog of rishikeshs.com adhering to the Personal Blog Versioning Manifesto
 disable_comments: true
 ShowReadingTime: false
+shorturl: "log"
 ---
 All changes and commits to this blog are versioned using a structured format and displayed in reverse chronological order. These changelogs are generated automatically using [`pre_push.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/pre_push.py) triggered by a [pre-push](https://github.com/rishikeshsreehari/personal-blog/blob/main/hooks/pre-push) hook. Learn more about the rationale behind this formatting [here](/blog-version/).
 
