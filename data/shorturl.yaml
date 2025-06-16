@@ -654,8 +654,8 @@
   title: Watch
   content_type: page
 - content_url: /webrings/
-  short_url: /55c7fc
-  custom: false
+  short_url: /webr
+  custom: true
   title: Webrings
   content_type: page
 - content_url: /til/
