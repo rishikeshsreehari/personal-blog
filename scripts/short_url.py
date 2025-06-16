@@ -3,15 +3,41 @@ import yaml
 import hashlib
 import glob
 import frontmatter
+import requests
+import base64
 from pathlib import Path
 
-def generate_short_code(url, length=6):
+# =============================================================================
+# CONFIGURATION - Edit these variables as needed
+# =============================================================================
+
+# Local paths
+CONTENT_DIR = "content"
+DATA_FILE = "data/shorturl.yaml"
+HUGO_CONFIG_FILE = "config.yml"
+
+# GitHub repository settings
+GITHUB_REPO_OWNER = "rishikeshsreehari"
+GITHUB_REPO_NAME = "tiny-redirects"
+GITHUB_FILE_PATH = "redirects/blog-redirects.yaml"
+
+# Default canonical URL (fallback if not found in Hugo config)
+DEFAULT_CANONICAL_URL = "https://rishikeshs.com"
+
+# Short URL generation settings
+SHORT_CODE_LENGTH = 6
+
+# =============================================================================
+# FUNCTIONS
+# =============================================================================
+
+def generate_short_code(url, length=SHORT_CODE_LENGTH):
     """Generate consistent short code from URL hash"""
     hash_obj = hashlib.md5(url.encode())
     hash_hex = hash_obj.hexdigest()
     return hash_hex[:length]
 
-def get_hugo_content(content_dir="content"):
+def get_hugo_content(content_dir=CONTENT_DIR):
     """Extract ALL content and their short URLs from Hugo content directory"""
     content_items = []
     
@@ -103,7 +129,6 @@ def generate_hugo_url(relative_path, metadata):
    path_without_ext = relative_path.with_suffix('')
    return f"/{path_without_ext}/"
 
-
 def get_content_type(relative_path):
     """Determine content type from file path"""
     parts = relative_path.parts
@@ -113,7 +138,7 @@ def get_content_type(relative_path):
     
     return parts[0]  # posts, blog, docs, etc.
 
-def load_existing_shorturls(data_file="data/shorturl.yaml"):
+def load_existing_shorturls(data_file=DATA_FILE):
     """Load existing short URLs"""
     if not os.path.exists(data_file):
         print("No existing shorturl.yaml found, creating new one")
@@ -131,7 +156,7 @@ def load_existing_shorturls(data_file="data/shorturl.yaml"):
         print(f"Error loading existing shorturl.yaml: {e}")
         return {}
 
-def update_shorturls(content_dir="content", data_file="data/shorturl.yaml"):
+def update_shorturls(content_dir=CONTENT_DIR, data_file=DATA_FILE):
     """Main function to update short URLs with conflict detection"""
     
     content_items = get_hugo_content(content_dir)
@@ -177,7 +202,6 @@ def update_shorturls(content_dir="content", data_file="data/shorturl.yaml"):
         
         print(f"\n🛑 Build stopped. Please resolve conflicts before continuing.")
         
-        # Return False to indicate failure - don't continue processing
         return False
     
     # Second pass: check for conflicts with existing auto-generated URLs
@@ -312,9 +336,139 @@ def update_shorturls(content_dir="content", data_file="data/shorturl.yaml"):
         return True
     else:
         print("ℹ️  No changes needed for short URLs")
-        return True  # Changed from None to True for consistency
+        return True
 
-def print_summary(data_file="data/shorturl.yaml"):
+def read_canonical_url_from_config():
+    """Read canonical URL from Hugo config file"""
+    try:
+        if os.path.exists(HUGO_CONFIG_FILE):
+            with open(HUGO_CONFIG_FILE, 'r') as f:
+                config = yaml.safe_load(f)
+            return config.get('params', {}).get('canonicalURL', DEFAULT_CANONICAL_URL)
+        else:
+            print(f"⚠️  No {HUGO_CONFIG_FILE} found, using default canonical URL")
+            return DEFAULT_CANONICAL_URL
+    except Exception as e:
+        print(f"⚠️  Error reading config file: {e}, using default canonical URL")
+        return DEFAULT_CANONICAL_URL
+
+def create_redirects_content(data_file=DATA_FILE, canonical_url=DEFAULT_CANONICAL_URL):
+    """Create redirects YAML content from shorturl data"""
+    
+    if not os.path.exists(data_file):
+        print(f"No {data_file} found to export")
+        return None
+    
+    try:
+        with open(data_file, 'r') as f:
+            shorturls = yaml.safe_load(f) or []
+        
+        # Convert to redirects format
+        redirects = []
+        for item in shorturls:
+            short_url = item['short_url']  # Already has leading /
+            # Construct target URL using canonical URL + content URL
+            target_url = canonical_url.rstrip('/') + item['content_url']
+            
+            redirects.append({
+                'short_url': short_url,
+                'target_url': target_url,
+                'status_code': 301
+            })
+        
+        # Convert to YAML string
+        redirects_yaml = yaml.dump(redirects, default_flow_style=False, sort_keys=False)
+        print(f"✅ Generated redirects content with {len(redirects)} entries")
+        return redirects_yaml
+        
+    except Exception as e:
+        print(f"❌ Error creating redirects content: {e}")
+        return None
+
+def push_to_github_repo(redirects_content):
+    """Push redirects content directly to GitHub using the API"""
+    
+    # Get GitHub token from environment
+    github_token = os.getenv('TINY_REDIRECTS_TOKEN')
+    
+    if not github_token:
+        print("❌ TINY_REDIRECTS_TOKEN environment variable is required")
+        print("   Get a token from https://github.com/settings/tokens")
+        print("   Then run: export TINY_REDIRECTS_TOKEN='your_token_here'")
+        return False
+    
+    if not redirects_content:
+        print("❌ No redirects content to push")
+        return False
+    
+    try:
+        # GitHub API URL
+        api_url = f"https://api.github.com/repos/{GITHUB_REPO_OWNER}/{GITHUB_REPO_NAME}/contents/{GITHUB_FILE_PATH}"
+        
+        # Headers
+        headers = {
+            'Authorization': f'token {github_token}',
+            'Accept': 'application/vnd.github.v3+json',
+            'Content-Type': 'application/json'
+        }
+        
+        # First, try to get the existing file to get its SHA
+        print(f"🔍 Checking if {GITHUB_FILE_PATH} exists in {GITHUB_REPO_OWNER}/{GITHUB_REPO_NAME}")
+        get_response = requests.get(api_url, headers=headers)
+        
+        # Prepare the content (base64 encoded)
+        content_encoded = base64.b64encode(redirects_content.encode()).decode()
+        
+        # Count redirects for commit message
+        redirects = yaml.safe_load(redirects_content) or []
+        commit_message = f"Update blog redirects - {len(redirects)} entries"
+        
+        if get_response.status_code == 200:
+            # File exists, we need the SHA for updating
+            existing_file = get_response.json()
+            sha = existing_file['sha']
+            
+            # Check if content is the same
+            if existing_file['content'].replace('\n', '') == content_encoded:
+                print("ℹ️  No changes needed - file content is identical")
+                return True
+            
+            data = {
+                'message': commit_message,
+                'content': content_encoded,
+                'sha': sha
+            }
+            print(f"📝 Updating existing file...")
+            
+        elif get_response.status_code == 404:
+            # File doesn't exist, create new
+            data = {
+                'message': commit_message,
+                'content': content_encoded
+            }
+            print(f"📝 Creating new file...")
+            
+        else:
+            print(f"❌ Error checking file: {get_response.status_code} - {get_response.text}")
+            return False
+        
+        # Make the request to create/update the file
+        response = requests.put(api_url, headers=headers, json=data)
+        
+        if response.status_code in [200, 201]:
+            print(f"✅ Successfully pushed {GITHUB_FILE_PATH} to {GITHUB_REPO_OWNER}/{GITHUB_REPO_NAME}")
+            print(f"📊 {len(redirects)} redirects updated")
+            return True
+        else:
+            print(f"❌ Failed to push to GitHub: {response.status_code}")
+            print(f"   Response: {response.text}")
+            return False
+            
+    except Exception as e:
+        print(f"❌ Error pushing to GitHub: {e}")
+        return False
+
+def print_summary(data_file=DATA_FILE):
     """Print a summary of current short URLs"""
     if not os.path.exists(data_file):
         print("No shorturl.yaml file found")
@@ -360,28 +514,41 @@ def print_summary(data_file="data/shorturl.yaml"):
             custom_flag = " (custom)" if item.get('custom', False) else ""
             print(f"    {item['short_url']} -> {item['content_url']}{custom_flag}")
 
+# =============================================================================
+# MAIN EXECUTION
+# =============================================================================
+
 if __name__ == "__main__":
-    # You can customize these paths
-    CONTENT_DIR = "content"
-    DATA_FILE = "data/shorturl.yaml"
-    
     print("🔗 Generating short URLs for ALL Hugo content...")
     
     try:
-        result = update_shorturls(CONTENT_DIR, DATA_FILE)
+        result = update_shorturls()
         
         if result is False:
-            # Conflicts detected - don't show summary
             print(f"\n❌ Short URL generation failed due to conflicts.")
-            print(f"📋 Current data preserved at {DATA_FILE}")
             exit(1)
         elif result is True:
-            # Success (either changes made or no changes needed)
-            print_summary(DATA_FILE)
+            print_summary()
             print(f"\n✅ shorturl.yaml processing completed at {DATA_FILE}")
-        else:
-            # This shouldn't happen now
-            print(f"⚠️ Unexpected result: {result}")
+            
+            # Create redirects content and push to GitHub
+            print(f"\n🔄 Creating redirects content...")
+            
+            # Read canonical URL from Hugo config
+            canonical_url = read_canonical_url_from_config()
+            print(f"📍 Using canonical URL: {canonical_url}")
+            
+            redirects_content = create_redirects_content(canonical_url=canonical_url)
+            
+            if redirects_content:
+                # Push directly to GitHub using API
+                print(f"\n📤 Pushing to GitHub repository...")
+                push_success = push_to_github_repo(redirects_content)
+                
+                if not push_success:
+                    print(f"⚠️  Failed to push to GitHub, but shorturl.yaml is updated locally")
+            else:
+                print(f"❌ Failed to create redirects content")
             
     except Exception as e:
         print(f"❌ Error: {e}")

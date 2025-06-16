@@ -14,8 +14,8 @@
   title: '2023: A Year of Execution'
   content_type: blog
 - content_url: /2025/
-  short_url: /39af41
-  custom: false
+  short_url: /2025
+  custom: true
   title: '2025: One Year, Three Goals'
   content_type: blog
 - content_url: /27-lessons/
@@ -499,8 +499,8 @@
   title: Now Archive
   content_type: now-archive
 - content_url: /about/
-  short_url: /f34bb6
-  custom: false
+  short_url: /a
+  custom: true
   title: About
   content_type: page
 - content_url: /advertise/
@@ -539,8 +539,8 @@
   title: Colophon
   content_type: page
 - content_url: /contact/
-  short_url: /26a93b
-  custom: false
+  short_url: /c
+  custom: true
   title: Contact
   content_type: page
 - content_url: /credits/
@@ -564,8 +564,8 @@
   title: Guestbook
   content_type: page
 - content_url: /hire/
-  short_url: /548060
-  custom: false
+  short_url: /hire
+  custom: true
   title: Hire Me
   content_type: page
 - content_url: /ideas/
@@ -574,8 +574,8 @@
   title: Ideas
   content_type: page
 - content_url: /library/
-  short_url: /2cd7f9
-  custom: false
+  short_url: /read
+  custom: true
   title: Library
   content_type: page
 - content_url: /lifestack/
@@ -629,8 +629,8 @@
   title: Search
   content_type: page
 - content_url: /support/
-  short_url: /05f935
-  custom: false
+  short_url: /s
+  custom: true
   title: Suport
   content_type: page
 - content_url: /then/
@@ -649,8 +649,8 @@
   title: Unoffice Hours
   content_type: page
 - content_url: /watch/
-  short_url: /3148d6
-  custom: false
+  short_url: /watch
+  custom: true
   title: Watch
   content_type: page
 - content_url: /webrings/
