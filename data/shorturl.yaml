@@ -584,8 +584,8 @@
   title: Life Stack
   content_type: page
 - content_url: /log/
-  short_url: /d4007a
-  custom: false
+  short_url: /log
+  custom: true
   title: Changelog
   content_type: page
 - content_url: /mosaic/
