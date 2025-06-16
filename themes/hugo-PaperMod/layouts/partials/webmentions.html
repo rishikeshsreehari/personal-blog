@@ -1,32 +1,87 @@
-<section class="webmentions">
-    {{- if or .Params.enableWebmentions site.Params.enableWebmentions }}
-      <h2>Webmentions</h2>
-      <ul id="webmentions-list"></ul>
-      <script>
-        async function fetchWebmentions() {
-            const response = await fetch('https://webmention.io/api/mentions.json?domain=rishikeshs.com&token=Avvm8D7g2oQiIyTuhULo_g');
-            const data = await response.json();
-            const list = document.getElementById('webmentions-list');
+{{ $webmentions := site.Data.webmentions }}
+{{ $currentPath := .RelPermalink }}
+
+{{ if $webmentions.children }}
+  {{ $pageWebmentions := slice }}
   
-            if (data.links.length > 0) {
-                data.links.forEach(link => {
-                    const listItem = document.createElement('li');
-                    listItem.innerHTML = `
-                        <a href="${link.source}" target="_blank">
-                            <strong>${link.author.name || link.source}</strong>: ${link.content.text || link.source}
-                        </a>
-                    `;
-                    list.appendChild(listItem);
-                });
-            } else {
-                list.innerHTML = '<li>No webmentions yet. Be the first to mention this post!</li>';
-            }
-        }
+  {{ range $webmentions.children }}
+    {{ $target := index . "wm-target" }}
+    {{ $parsedURL := urls.Parse $target }}
+    {{ $targetPath := $parsedURL.Path }}
+    
+    {{ if eq $targetPath $currentPath }}
+      {{ $pageWebmentions = $pageWebmentions | append . }}
+    {{ end }}
+  {{ end }}
   
-        fetchWebmentions();
-      </script>
-    {{- else }}
-      <!-- Webmentions are disabled for this post -->
-    {{- end }}
-  </section>
-  
+  {{ if $pageWebmentions }}
+    <section class="webmentions-section">
+      <h3>Mentions around the web</h3>
+      
+      {{/* Separate likes/reposts from mentions */}}
+      {{ $likes := where $pageWebmentions "wm-property" "like-of" }}
+      {{ $reposts := where $pageWebmentions "wm-property" "repost-of" }}
+      {{ $bookmarks := where $pageWebmentions "wm-property" "bookmark-of" }}
+      {{ $likeReposts := union (union $likes $reposts) $bookmarks }}
+      {{ $mentions := where $pageWebmentions "wm-property" "mention-of" }}
+      
+      {{/* Show likes/reposts avatars */}}
+      {{ if $likeReposts }}
+        <div class="webmention-likes">
+          <span class="likes-label">Liked by:</span>
+          {{ range first 10 $likeReposts }}
+            <a href="{{ .url }}" class="like-avatar" title="{{ .author.name | default "Anonymous" }}">
+              {{ if .author.photo }}
+                <img src="{{ .author.photo }}" alt="{{ .author.name }}">
+              {{ else }}
+                {{ $seed := .url | sha256 | truncate 8 "" }}
+                <img src="https://api.dicebear.com/9.x/shapes/svg?seed={{ $seed }}" alt="Anonymous">
+              {{ end }}
+            </a>
+          {{ end }}
+          {{ if gt (len $likeReposts) 10 }}
+            <span class="more-likes">and {{ sub (len $likeReposts) 10 }} others</span>
+          {{ end }}
+        </div>
+      {{ end }}
+      
+      {{/* Show mentions */}}
+      {{ if $mentions }}
+        <div class="webmention-list">
+          {{ range $mentions }}
+            <div class="webmention-item">
+              <span class="webmention-avatar">
+                {{ if .author.photo }}
+                  <img src="{{ .author.photo }}" alt="{{ .author.name }}">
+                {{ else }}
+                  {{ $seed := .url | sha256 | truncate 8 "" }}
+                  <img src="https://api.dicebear.com/9.x/shapes/svg?seed={{ $seed }}" alt="Anonymous">
+                {{ end }}
+              </span>
+              
+              <span class="webmention-content">
+                <a href="{{ .url }}" class="webmention-link">
+                  {{ if .name }}
+                    {{ .name | truncate 60 }}
+                  {{ else }}
+                    {{ .author.name | default "Anonymous" }}
+                  {{ end }}
+                </a>
+                <span class="webmention-meta">
+                  by {{ .author.name | default "Anonymous" }}
+                  {{ if .published }}
+                    • {{ dateFormat "Jan 2, 2006" .published }}
+                  {{ end }}
+                </span>
+              </span>
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+      
+      <p class="webmentions-info">
+        <a href="https://indieweb.org/Webmention" target="_blank">Learn about webmentions →</a>
+      </p>
+    </section>
+  {{ end }}
+{{ end }}

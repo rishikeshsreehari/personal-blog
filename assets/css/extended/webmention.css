@@ -1,0 +1,108 @@
+.webmentions-section {
+  margin-top: 30px;
+}
+
+.webmentions-section h3 {
+  margin: 0 0 15px 0;
+}
+
+/* Likes Section */
+.webmention-likes {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 0.5px ridge #717171;
+  border-radius: 5px;
+}
+
+.likes-label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.like-avatar {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.like-avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #717171;
+}
+
+.like-avatar:hover img {
+  border-color: #005d52;
+}
+
+.more-likes {
+  font-size: 0.85em;
+  color: #555;
+  font-style: italic;
+}
+
+/* Mentions List */
+.webmention-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.webmention-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  border: 0.5px ridge #717171;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.webmention-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.webmention-content {
+  flex-grow: 1;
+}
+
+.webmention-link {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.webmention-link:hover {
+  color: #005d52;
+}
+
+.webmention-meta {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.webmentions-info {
+  font-size: 0.8em;
+  color: #555;
+  margin: 15px 0 0 0;
+  text-align: center;
+}
+
+.webmentions-info a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.webmentions-info a:hover {
+  color: #005d52;
+}
