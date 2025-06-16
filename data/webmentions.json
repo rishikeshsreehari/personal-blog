@@ -10,6 +10,49 @@
         "photo": "",
         "url": ""
       },
+      "url": "https://linksfor.dev/2024/10/16/",
+      "published": null,
+      "wm-received": "2025-06-16T11:03:57Z",
+      "wm-id": 1918931,
+      "wm-source": "https://linksfor.dev/2024/10/16/",
+      "wm-target": "https://rishikeshs.com/blog-art/",
+      "wm-protocol": "webmention",
+      "mention-of": "https://rishikeshs.com/blog-art/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "TheStartupChime",
+        "photo": "https://avatars.webmention.io/styles.redditmedia.com/cf1a7dfdf8633bbdce76d3ddd13759005afa930578bdd70ed3a4890e7294ed1e.png",
+        "url": "https://reddit.com/user/TheStartupChime/"
+      },
+      "url": "https://reddit.com/r/hypeurls/comments/1iv4jrb/be_curious_always/",
+      "published": "2025-02-21T23:07:24+00:00",
+      "wm-received": "2025-06-16T10:38:04Z",
+      "wm-id": 1918928,
+      "wm-source": "https://brid.gy/post/reddit/rishikeshshari/1iv4jrb",
+      "wm-target": "https://rishikeshs.com/be-curious/",
+      "wm-protocol": "webmention",
+      "name": "Be Curious, Always",
+      "content": {
+        "html": "Bookmark: <a class=\"u-bookmark-of\" href=\"https://rishikeshs.com/be-curious/\">rishikeshs.com/be-curious</a>\n<a class=\"u-mention\" href=\"https://rishikeshs.com/be-curious/\"></a>",
+        "text": "Bookmark: rishikeshs.com/be-curious"
+      },
+      "bookmark-of": "https://rishikeshs.com/be-curious/",
+      "wm-property": "bookmark-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
       "url": "https://krmh.codeberg.page/posts/hello-world/",
       "published": null,
       "wm-received": "2025-04-21T08:35:34Z",
@@ -178,9 +221,9 @@
       "type": "entry",
       "author": {
         "type": "card",
-        "name": "joe jenett",
-        "photo": "https://avatars.webmention.io/secure.gravatar.com/be3469587ad065ec1ec48004220592a16ea2a86cfc5b7deeaa680ca2895847ab.png",
-        "url": "https://iwebthings.joejenett.com/"
+        "name": "",
+        "photo": "",
+        "url": ""
       },
       "url": "https://iwebthings.joejenett.com/let-em-rip-11-18-24/",
       "published": null,
@@ -189,7 +232,6 @@
       "wm-source": "https://iwebthings.joejenett.com/let-em-rip-11-18-24/",
       "wm-target": "https://rishikeshs.com/file-over-app/",
       "wm-protocol": "webmention",
-      "name": "let \u2019em rip 11-18-24",
       "content": {
         "html": "<ul><li><a title=\"superfile | terminal-based file manager\" href=\"https://superfile.netlify.app/\">superfile | terminal-based file manager</a> (<a href=\"https://github.com/yorukot/superfile\">github</a>) <a title=\"source\" href=\"https://pinboard.in/u:mikael\">????</a><blockquote><p>...a very fancy and modern terminal file manager that can complete the file operations you need!</p></blockquote></li>\n\t<li><a title=\"Best Free Fonts\" href=\"https://bestfreefonts.com/\">Best Free Fonts</a> <a title=\"source\" href=\"https://pinboard.in/u:fileformat\">????</a><blockquote><p>...a curated selection of 191 free fonts. Including serif, sans serif, script and monospace.</p></blockquote></li>\n\t<li><a title=\"File Over App: A Philosophy for Digital Longevity | Rishikesh Sreehari\" href=\"https://rishikeshs.com/file-over-app/\">File Over App: A Philosophy for Digital Longevity</a> <a title=\"source\" href=\"https://pinboard.in/u:bekishore\">????</a><blockquote><p>My take on the 'file over app' philosophy and why it\u2019s essential for keeping my data resilient and built to last.</p></blockquote></li>\n\t<li><a title=\"Quicklink | instant next-page navigations\" href=\"https://getquick.link/\">Quicklink</a> <a title=\"source\" href=\"https://pinboard.in/u:jshwlkr\">????</a><blockquote><p>Faster subsequent page-loads by prefetching in-viewport links during idle time.</p></blockquote></li>\n\t<li><a title=\"Numble\" href=\"https://numble.game/\">Numble</a> <a title=\"source\" href=\"https://pinboard.in/u:tdjones\">????</a><blockquote><p>The goal is to use the available numbers and mathematical operations to get as close to the target number as possible.</p></blockquote></li>\n</ul><p><a href=\"https://brid.gy/publish/mastodon\"></a></p>",
         "text": "superfile | terminal-based file manager (github) ????...a very fancy and modern terminal file manager that can complete the file operations you need!\n\tBest Free Fonts ????...a curated selection of 191 free fonts. Including serif, sans serif, script and monospace.\n\tFile Over App: A Philosophy for Digital Longevity ????My take on the 'file over app' philosophy and why it\u2019s essential for keeping my data resilient and built to last.\n\tQuicklink ????Faster subsequent page-loads by prefetching in-viewport links during idle time.\n\tNumble ????The goal is to use the available numbers and mathematical operations to get as close to the target number as possible."
