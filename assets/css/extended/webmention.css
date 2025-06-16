@@ -106,3 +106,86 @@
 .webmentions-info a:hover {
   color: #005d52;
 }
+
+.webmention-form-section {
+  margin-top: 30px;
+}
+
+.webmention-form-section h3 {
+  margin: 0 0 15px 0;
+}
+
+.webmention-form {
+  padding: 10px;
+  border: 0.5px ridge #717171;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.webmention-form input[type="url"] {
+  width: 100%;
+  padding: 8px;
+  border: 0.5px ridge #717171;
+  border-radius: 3px;
+  font-size: 0.9em;
+  box-sizing: border-box;
+}
+
+.webmention-form input[type="url"]:focus {
+  outline: none;
+  border-color: #005d52;
+}
+
+.webmention-submit {
+  background-color: #005d52;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.webmention-submit:hover {
+  background-color: #004a42;
+}
+
+.webmention-help {
+  margin-top: 10px;
+}
+
+.webmention-help summary {
+  cursor: pointer;
+  color: #555;
+  font-size: 0.85em;
+}
+
+.webmention-help summary:hover {
+  color: #005d52;
+}
+
+.webmention-instructions {
+  margin-top: 8px;
+  padding: 8px;
+  border: 0.5px ridge #717171;
+  border-radius: 5px;
+  font-size: 0.85em;
+}
+
+.webmention-instructions code {
+  background-color: #848484;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  border: 0.5px solid #717171;
+}

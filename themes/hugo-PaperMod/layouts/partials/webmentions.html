@@ -14,6 +14,28 @@
     {{ end }}
   {{ end }}
   
+  {{/* Add the webmention form section at the top */}}
+  <section class="webmention-form-section">
+  <h3>Send a Webmention</h3>
+  <p>This site supports <a href="https://indieweb.org/Webmention" target="_blank">Webmentions</a>. If you have written something on your site that has linked to this page, you can submit your URL here to notify me.</p>
+  
+  <form action="https://webmention.io/rishikeshs.com/webmention" method="post" class="webmention-form">
+    <input type="hidden" name="target" value="https://rishikeshs.com{{ .RelPermalink }}">
+    <div class="form-group">
+      <label for="webmention-source">URL of your response:</label>
+      <input type="url" name="source" id="webmention-source" placeholder="https://yoursite.com/your-response" required>
+    </div>
+    <button type="submit" class="webmention-submit">Send Webmention</button>
+  </form>
+  
+  <details class="webmention-help">
+    <summary>How does this work?</summary>
+    <div class="webmention-instructions">
+      <p>Just paste the URL of your post that links to this page and click submit. Your mention will appear below once processed.</p>
+    </div>
+  </details>
+</section>
+  
   {{ if $pageWebmentions }}
     <section class="webmentions-section">
       <h3>Mentions around the web</h3>
