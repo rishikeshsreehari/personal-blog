@@ -10,6 +10,8 @@ keywords:
   - "life review"
 weight: 1
 hiddenInHomeList: true
+shorturl: 2025
+
 
 ---
 

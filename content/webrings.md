@@ -6,6 +6,7 @@ summary: A dedicated page to list of which all webrings this site is a part of.
 type: page
 disable_comments: true
 ShowReadingTime: false
+shorturl: webr
 ---
 
 ##### Last updated on 06-01-2024

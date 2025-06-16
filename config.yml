@@ -20,9 +20,10 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   canonicalURL: "https://rishikeshs.com"
+  shorturl: "https://r1l.in"
   title: Rishikesh Sreehari
   description: "This is my webspace. A niche-less blog where I gather and share my ideas and document my life. I consider this blog as an evolving art project itself."
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Blog, Portfolio, Indieweb]
   #author: Me
   # author: ["Me", "You"] # multiple authors
   images: ["/hotlink-ok/avatar.png"]
@@ -51,6 +52,7 @@ params:
   showtoc: false
   tocopen: false
   BookShelfDisplayCount: 12
+  enable_shortlinks: true
   UtmSource: rishikeshs.com
   CurrentLocation: "Abu Dhabi"
   atomFeedLimit: 50

@@ -6,6 +6,7 @@ summary: Different ways to contact me personally.
 type: page
 disable_comments: true
 ShowReadingTime: false
+shorturl: c
 ---
 
 The best and quickest way to connect with me is by filling out the form below. I usually reply within 3-4 days unless I'm traveling or out of network. I’m passively active on some social networks, and you can reach out to me by following the icons below. To support my work, visit the [support](/support) page.

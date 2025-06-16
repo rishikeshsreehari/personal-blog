@@ -7,6 +7,7 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 updated_on: 2025-06-02
+shorturl: a
 
 ---
 #####  {{< updated_on >}}

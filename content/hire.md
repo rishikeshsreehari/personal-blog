@@ -6,6 +6,7 @@ summary: About Rishikesh Sreehari - What I do, How I see the world and why I wri
 type: page
 disable_comments: true
 ShowReadingTime: false
+shorturl: hire
 ---
 ##### Last updated on 14-10-2024
 

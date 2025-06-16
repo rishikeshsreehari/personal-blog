@@ -26,6 +26,7 @@ jobs:
     - name: Run build.py
       env:
         TELEGRAPH_TOKEN: ${{ secrets.TELEGRAPH_TOKEN }}
+        TINY_REDIRECTS_TOKEN: ${{ secrets.TINY_REDIRECTS_TOKEN }}
       run: |
         python scripts/build.py
 
