@@ -2,108 +2,79 @@
 {{ $currentPath := .RelPermalink }}
 
 {{ if $webmentions.children }}
-  {{ $pageWebmentions := slice }}
-  
-  {{ range $webmentions.children }}
-    {{ $target := index . "wm-target" }}
-    {{ $parsedURL := urls.Parse $target }}
-    {{ $targetPath := $parsedURL.Path }}
-    
-    {{ if eq $targetPath $currentPath }}
-      {{ $pageWebmentions = $pageWebmentions | append . }}
-    {{ end }}
-  {{ end }}
-  
-  {{/* Add the webmention form section at the top */}}
-  <section class="webmention-form-section">
-  <h3>Send a Webmention</h3>
-  <p>This site supports <a href="https://indieweb.org/Webmention" target="_blank">Webmentions</a>. If you have written something on your site that has linked to this page, you can submit your URL here to notify me.</p>
-  
-  <form action="https://webmention.io/rishikeshs.com/webmention" method="post" class="webmention-form">
-    <input type="hidden" name="target" value="https://rishikeshs.com{{ .RelPermalink }}">
-    <div class="form-group">
-      <label for="webmention-source">URL of your response:</label>
-      <input type="url" name="source" id="webmention-source" placeholder="https://yoursite.com/your-response" required>
-    </div>
-    <button type="submit" class="webmention-submit">Send Webmention</button>
-  </form>
-  
-  <details class="webmention-help">
-    <summary>How does this work?</summary>
-    <div class="webmention-instructions">
-      <p>Just paste the URL of your post that links to this page and click submit. Your mention will appear below once processed.</p>
-    </div>
-  </details>
+ {{ $pageWebmentions := slice }}
+ 
+ {{ range $webmentions.children }}
+   {{ $target := index . "wm-target" }}
+   {{ $parsedURL := urls.Parse $target }}
+   {{ $targetPath := $parsedURL.Path }}
+   
+   {{ if eq $targetPath $currentPath }}
+     {{ $pageWebmentions = $pageWebmentions | append . }}
+   {{ end }}
+ {{ end }}
+ 
+ {{/* Add the webmention form section at the top */}}
+ <section class="webmention-form-section">
+ <h3>Send a Webmention</h3>
+ <p>This site supports <a href="https://indieweb.org/Webmention" target="_blank" style="text-decoration: underline;">Webmentions</a>. If you have written something on your site that has linked to this page, you can submit your URL here to notify me.</p>
+ <br>
+ 
+ <form action="https://webmention.io/rishikeshs.com/webmention" method="post" class="webmention-form">
+   <input type="hidden" name="target" value="https://rishikeshs.com{{ .RelPermalink }}">
+   <div class="form-group">
+     <label for="webmention-source">URL of your response:</label>
+     <input type="url" name="source" id="webmention-source" placeholder="https://yoursite.com/url" required>
+   </div>
+   <button type="submit" class="webmention-submit">Send Webmention</button>
+ </form>
+ 
+ <details class="webmention-help">
+   <summary>How does this work?</summary>
+   <div class="webmention-instructions">
+ <p>Just paste the URL of your post that links to this page and click submit. Your mention will appear below once processed. Please note that for this to work, you need to have webmentions enabled on your site. If your site doesn't support webmentions, you can still let me know about your post by <a href="/contact/" style="text-decoration: underline;">contacting me</a>.</p>
+</div>
+ </details>
 </section>
-  
-  {{ if $pageWebmentions }}
-    <section class="webmentions-section">
-      <h3>Mentions around the web</h3>
-      
-      {{/* Separate likes/reposts from mentions */}}
-      {{ $likes := where $pageWebmentions "wm-property" "like-of" }}
-      {{ $reposts := where $pageWebmentions "wm-property" "repost-of" }}
-      {{ $bookmarks := where $pageWebmentions "wm-property" "bookmark-of" }}
-      {{ $likeReposts := union (union $likes $reposts) $bookmarks }}
-      {{ $mentions := where $pageWebmentions "wm-property" "mention-of" }}
-      
-      {{/* Show likes/reposts avatars */}}
-      {{ if $likeReposts }}
-        <div class="webmention-likes">
-          <span class="likes-label">Liked by:</span>
-          {{ range first 10 $likeReposts }}
-            <a href="{{ .url }}" class="like-avatar" title="{{ .author.name | default "Anonymous" }}">
-              {{ if .author.photo }}
-                <img src="{{ .author.photo }}" alt="{{ .author.name }}">
-              {{ else }}
-                {{ $seed := .url | sha256 | truncate 8 "" }}
-                <img src="https://api.dicebear.com/9.x/shapes/svg?seed={{ $seed }}" alt="Anonymous">
-              {{ end }}
-            </a>
-          {{ end }}
-          {{ if gt (len $likeReposts) 10 }}
-            <span class="more-likes">and {{ sub (len $likeReposts) 10 }} others</span>
-          {{ end }}
-        </div>
-      {{ end }}
-      
-      {{/* Show mentions */}}
-      {{ if $mentions }}
-        <div class="webmention-list">
-          {{ range $mentions }}
-            <div class="webmention-item">
-              <span class="webmention-avatar">
-                {{ if .author.photo }}
-                  <img src="{{ .author.photo }}" alt="{{ .author.name }}">
-                {{ else }}
-                  {{ $seed := .url | sha256 | truncate 8 "" }}
-                  <img src="https://api.dicebear.com/9.x/shapes/svg?seed={{ $seed }}" alt="Anonymous">
-                {{ end }}
-              </span>
-              
-              <span class="webmention-content">
-                <a href="{{ .url }}" class="webmention-link">
-                  {{ if .name }}
-                    {{ .name | truncate 60 }}
-                  {{ else }}
-                    {{ .author.name | default "Anonymous" }}
-                  {{ end }}
-                </a>
-                <span class="webmention-meta">
-                  by {{ .author.name | default "Anonymous" }}
-                  {{ if .published }}
-                    • {{ dateFormat "Jan 2, 2006" .published }}
-                  {{ end }}
-                </span>
-              </span>
-            </div>
-          {{ end }}
-        </div>
-      {{ end }}
-      
-      <p class="webmentions-info">
-        <a href="https://indieweb.org/Webmention" target="_blank">Learn about webmentions →</a>
-      </p>
-    </section>
-  {{ end }}
+ 
+ {{ if $pageWebmentions }}
+   <section class="webmentions-section">
+     <h3>Mentions around the web</h3>
+     
+     <div class="webmention-list">
+       {{ range $pageWebmentions }}
+         <div class="webmention-item">
+           <span class="webmention-avatar">
+             {{ if .author.photo }}
+               <img src="{{ .author.photo }}" alt="{{ .author.name }}">
+             {{ else }}
+               {{ $seed := .url | sha256 | truncate 8 "" }}
+               <img src="https://api.dicebear.com/9.x/shapes/svg?seed={{ $seed }}" alt="Anonymous">
+             {{ end }}
+           </span>
+           
+           <span class="webmention-content">
+             <a href="{{ .url }}" class="webmention-link">
+               {{ if .name }}
+                 {{ .name | truncate 60 }}
+               {{ else }}
+                 {{ .author.name | default "Anonymous" }}
+               {{ end }}
+             </a>
+             <span class="webmention-meta">
+               by {{ .author.name | default "Anonymous" }}
+               {{ if .published }}
+                 • {{ dateFormat "Jan 2, 2006" .published }}
+               {{ end }}
+             </span>
+           </span>
+         </div>
+       {{ end }}
+     </div>
+     
+     <p class="webmentions-info">
+       <a href="https://indieweb.org/Webmention" target="_blank">Learn about webmentions →</a>
+     </p>
+   </section>
+ {{ end }}
 {{ end }}
