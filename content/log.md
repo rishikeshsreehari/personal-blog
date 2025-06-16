@@ -11,6 +11,65 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.45.M.1606** (2025-06-16)
+
+#### **Fixes**
+
+1. **Fix: Show all types of webmentions**  
+   - *Commit:* [`c8f28fa7`](https://github.com/rishikeshsreehari/personal-blog/commit/c8f28fa7)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/partials/webmentions.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/webmentions.html)
+
+2. **Fix: Make webmention elements visually hidden**  
+   - *Commit:* [`36d46feb`](https://github.com/rishikeshsreehari/personal-blog/commit/36d46feb)  
+   - *Files:*  
+     1. [`assets/css/extended/misc.css`](https://github.com/rishikeshsreehari/personal-blog/blob/main/assets/css/extended/misc.css)
+     2. [`themes/hugo-PaperMod/layouts/_default/single.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/_default/single.html)
+
+3. **Fix config duplication issue**  
+   - *Commit:* [`d9f1a0be`](https://github.com/rishikeshsreehari/personal-blog/commit/d9f1a0be)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+
+#### **Additions**
+
+1. **Added webmentions to posts, closes: Add webmentions #53**  
+   - *Commit:* [`dc0dc631`](https://github.com/rishikeshsreehari/personal-blog/commit/dc0dc631)  
+   - *Files:*  
+     1. [`assets/css/extended/webmention.css`](https://github.com/rishikeshsreehari/personal-blog/blob/main/assets/css/extended/webmention.css)
+     2. [`themes/hugo-PaperMod/layouts/partials/webmentions.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/webmentions.html)
+
+2. **Added canoncial to params**  
+   - *Commit:* [`b56fea8e`](https://github.com/rishikeshsreehari/personal-blog/commit/b56fea8e)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+
+#### **Updations**
+
+1. **Updated webmentions data**  
+   - *Commit:* [`7a6a05b3`](https://github.com/rishikeshsreehari/personal-blog/commit/7a6a05b3)  
+   - *Files:*  
+     1. [`data/webmentions.json`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/webmentions.json)
+
+2. **Updated webmentions**  
+   - *Commit:* [`221d6e57`](https://github.com/rishikeshsreehari/personal-blog/commit/221d6e57)  
+   - *Files:*  
+     1. [`data/webmentions.json`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/webmentions.json)
+
+3. **Added more params for webmentions**  
+   - *Commit:* [`e6ebd13e`](https://github.com/rishikeshsreehari/personal-blog/commit/e6ebd13e)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/_default/single.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/_default/single.html)
+
+4. **Update paypal link**  
+   - *Commit:* [`12ad3192`](https://github.com/rishikeshsreehari/personal-blog/commit/12ad3192)  
+   - *Files:*  
+     1. [`content/support.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/support.md)
+
+
+---
 ### **v24.44.M.1606** (2025-06-16)
 
 #### **Fixes**
