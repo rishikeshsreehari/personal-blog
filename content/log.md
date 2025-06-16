@@ -11,6 +11,17 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.47.U.1606** (2025-06-16)
+
+#### **Updations**
+
+1. **Added micropub/microsub links**  
+   - *Commit:* [`e3a5dbcb`](https://github.com/rishikeshsreehari/personal-blog/commit/e3a5dbcb)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/partials/head.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/head.html)
+
+
+---
 ### **v24.46.M.1606** (2025-06-16)
 
 #### **Fixes**
