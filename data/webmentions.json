@@ -10,6 +10,109 @@
         "photo": "",
         "url": ""
       },
+      "url": "https://tildes.net/~tech/1kb6/why_and_how_i_version_my_blog",
+      "published": null,
+      "wm-received": "2025-06-16T11:37:49Z",
+      "wm-id": 1918939,
+      "wm-source": "https://tildes.net/~tech/1kb6/why_and_how_i_version_my_blog",
+      "wm-target": "https://rishikeshs.com/blog-version/",
+      "wm-protocol": "webmention",
+      "mention-of": "https://rishikeshs.com/blog-version/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://jacky.seezone.net/2024/11/22/29325/",
+      "published": null,
+      "wm-received": "2025-06-16T11:36:17Z",
+      "wm-id": 1918938,
+      "wm-source": "https://jacky.seezone.net/2024/11/22/29325/",
+      "wm-target": "https://rishikeshs.com/file-over-app/",
+      "wm-protocol": "webmention",
+      "syndication": [
+        "https://mastodon.hk/@jackysee/113526359675685933"
+      ],
+      "bookmark-of": "https://rishikeshs.com/file-over-app/",
+      "wm-property": "bookmark-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://jacky.seezone.net/2024/11/22/29325/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "surprisetalk",
+        "photo": "",
+        "url": "https://news.ycombinator.com/user?id=surprisetalk"
+      },
+      "url": "https://news.ycombinator.com/item?id=42136054",
+      "published": "2024-11-14T13:41:18+00:00",
+      "wm-received": "2025-06-16T11:28:14Z",
+      "wm-id": 1918937,
+      "wm-source": "https://news.ycombinator.com/item?id=42136054",
+      "wm-target": "https://rishikeshs.com/file-over-app/",
+      "wm-protocol": "webmention",
+      "name": "File over App: A Philosophy for Digital Longevity",
+      "bookmark-of": "https://rishikeshs.com/file-over-app/",
+      "wm-property": "bookmark-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "surprisetalk",
+        "photo": "",
+        "url": "https://news.ycombinator.com/user?id=surprisetalk"
+      },
+      "url": "https://news.ycombinator.com/item?id=44155227",
+      "published": "2025-06-02T01:51:28+00:00",
+      "wm-received": "2025-06-16T11:27:45Z",
+      "wm-id": 1918936,
+      "wm-source": "https://news.ycombinator.com/item?id=44155227",
+      "wm-target": "https://rishikeshs.com/fan-regulator/",
+      "wm-protocol": "webmention",
+      "name": "I Miss My Fan Regulator",
+      "bookmark-of": "https://rishikeshs.com/fan-regulator/",
+      "wm-property": "bookmark-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "rishikesh",
+        "photo": "",
+        "url": "https://lobste.rs/~rishikesh"
+      },
+      "url": "https://lobste.rs/s/swtkwg/why_how_i_version_my_blog",
+      "published": null,
+      "wm-received": "2025-06-16T11:26:51Z",
+      "wm-id": 1918935,
+      "wm-source": "https://lobste.rs/s/swtkwg/why_how_i_version_my_blog",
+      "wm-target": "https://rishikeshs.com/blog-version/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://rishikeshs.com/blog-version/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
       "url": "https://linksfor.dev/2024/10/16/",
       "published": null,
       "wm-received": "2025-06-16T11:03:57Z",
