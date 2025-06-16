@@ -14,14 +14,16 @@
   {{- $scratch.Add "meta" (slice (printf "📍 %s" $location)) }}
 {{- end }}
 
+{{- if site.Params.enable_shortlinks }}
 {{- $currentURL := .RelPermalink }}
 {{- $baseShortURL := site.Params.shorturl | default "https://rishikeshs.com" }}
 {{- range site.Data.shorturl }}
  {{- if eq .content_url $currentURL }}
    {{- $shortURL := printf "%s%s" $baseShortURL .short_url }}
    {{- $displayURL := .short_url | strings.TrimPrefix "/" }}
-   {{- $scratch.Add "meta" (slice (printf "<a href='%s' class='short-url-link' onclick='navigator.clipboard.writeText(\"%s\");this.textContent=\"✓ copied\";setTimeout(()=>this.textContent=\"🔗 r1l.in/%s\",2000);return false;' title='Copy short URL (or click to visit)'>🔗r1l.in/%s</a>" $shortURL $shortURL $displayURL $displayURL)) }}
+   {{- $scratch.Add "meta" (slice (printf "<a href='%s' class='short-url-link' onclick='navigator.clipboard.writeText(\"%s\");this.textContent=\"✓ copied\";setTimeout(()=>this.textContent=\"🔗r1l.in/%s\",2000);return false;' title='Copy short URL (or click to visit)'>🔗r1l.in/%s</a>" $shortURL $shortURL $displayURL $displayURL)) }}
  {{- end }}
+{{- end }}
 {{- end }}
 
 {{- with ($scratch.Get "meta") }}
