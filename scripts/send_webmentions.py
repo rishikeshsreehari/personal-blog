@@ -62,7 +62,8 @@ PERMANENT_FAILURE_STATUSES = {
     'invalid_target',
     'forbidden',
     'http_404',
-    'http_410' # Gone
+    'http_410',
+    'no_link_found'# Does not recheck cases where link was not found at source
 }
 
 def load_sent_webmentions():
