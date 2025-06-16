@@ -157,11 +157,10 @@ These are a few tools and projects that align with this philosophy. Here's a lis
 - [Markor](https://github.com/gsantner/markor) - A text editor for notes and to-do app for Android using simple markup formats. 
 - [Ledger](https://ledger-cli.org/) and [hledger](https://hledger.org/) for plain-text accounting!
 - [Maro](https://marp.app/) - Presentations using markdown. A full list of apps/services that allow creating slide decks can be viewed [here](https://gist.github.com/johnloy/27dd124ad40e210e91c70dd1c24ac8c8).
-- 
 
 If you are working on a similar tool, happy to have a look and add them to the above list!
 
-In the end, 'File over App' isn't just a philosophy—it.s a guideline for making digital choices that prioritize the longevity of data. With each decision, I'm creating a lasting digital archive, one file at a time.
+In the end, 'File over App' isn't just a philosophy - it's a guideline for making digital choices that prioritize the longevity of data. With each decision, I'm creating a lasting digital archive, one file at a time.
 
 {{< hn-discussion id="42136054" >}}
 
