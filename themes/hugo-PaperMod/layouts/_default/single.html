@@ -71,6 +71,21 @@
     {{- if (and site.Params.ShowShareButtons (ne .Params.disableShare true)) }}
     {{- partial "share_icons.html" . -}}
     {{- end }}
+
+    <!-- Shortlink at bottom right -->
+    {{- if site.Params.shorturl }}
+    {{- $currentURL := .RelPermalink }}
+    {{- $baseShortURL := site.Params.shorturl }}
+    {{- range site.Data.shorturl }}
+      {{- if eq .content_url $currentURL }}
+        {{- $shortURL := printf "%s%s" $baseShortURL .short_url }}
+        {{- $displayURL := .short_url | strings.TrimPrefix "/" }}
+        <div class="shortlink-footer">
+          <a href="{{ $shortURL }}" class="short-url-link" onclick="navigator.clipboard.writeText('{{ $shortURL }}');this.textContent='✓ copied';setTimeout(()=>this.textContent='🔗r1l.in/{{ $displayURL }}',2000);return false;" title="Copy short URL (or click to visit)">🔗r1l.in/{{ $displayURL }}</a>
+        </div>
+      {{- end }}
+    {{- end }}
+    {{- end }}
   </footer>
 
   {{- if (.Param "comments") }}

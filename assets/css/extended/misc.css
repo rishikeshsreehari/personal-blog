@@ -266,12 +266,33 @@ figure.gallery-caption figcaption {
   position: relative;
 }
 .short-url-link:hover {
-  color: 
-#0066cc;
+ color: #eceff1;
 }
 .short-url-link:hover::after {
   content: " (click to copy)";
   font-size: 0.7em;
   color: #999;
   font-family: sans-serif;
+  text-decoration: underline;
+
+}
+
+.shortlink-footer {
+  text-align: right;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.shortlink-footer .short-url-link {
+  color: #666;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.shortlink-footer .short-url-link:hover {
+  color: #eceff1;
+  text-decoration: underline;
+
 }
