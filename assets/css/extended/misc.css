@@ -256,3 +256,22 @@ figure.gallery-caption figcaption {
   clip-path: inset(100%);
   white-space: nowrap;
 }
+
+
+.short-url-link {
+  color: #666;
+  text-decoration: none;
+  font-family: monospace;
+  cursor: pointer;
+  position: relative;
+}
+.short-url-link:hover {
+  color: 
+#0066cc;
+}
+.short-url-link:hover::after {
+  content: " (click to copy)";
+  font-size: 0.7em;
+  color: #999;
+  font-family: sans-serif;
+}
