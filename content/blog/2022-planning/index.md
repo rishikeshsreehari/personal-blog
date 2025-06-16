@@ -10,6 +10,7 @@ keywords:
   - "life review"
 weight: 1
 hiddenInHomeList: true
+shorturl: 2022
 ---
 {{< dropcap >}} 2021 was a crazy year by all means. Learning from past mistakes, I decided to create a proper plan for 2022, something I’ve never done in the [27 years of my life](https://rishikeshs.com/27-lessons/). Even though I love working on different goals or projects at the same time, this can often be hectic and quite inefficient. The idea here is to create a plan for 2022 so that I have a clear vision of the things I’m pursuing. I do not plan to take up anything extra other than what I’ve mentioned in this plan. This planning will also act as a skeleton for the long-form article I’m working on, revolving around the concept of ‘How to Live’. The overall vision for 2022 is to achieve the goals defined based on the three focus points I have for the year: Health, Career, and Wealth.{{< /dropcap >}}
 
