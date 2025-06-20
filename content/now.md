@@ -8,6 +8,7 @@ ShowReadingTime: false
 dataDir: "data"
 hideFromRSS: true
 updated_on: 2025-05-30
+shorturl: "now"
 ---
 
 #####  {{< updated_on >}}
