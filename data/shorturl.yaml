@@ -509,8 +509,8 @@
   title: Advertise
   content_type: page
 - content_url: /ama/
-  short_url: /678bb1
-  custom: false
+  short_url: /ama
+  custom: true
   title: Ask Me Anything
   content_type: page
 - content_url: /anti-library/
@@ -529,8 +529,8 @@
   title: Book Notes
   content_type: page
 - content_url: /button/
-  short_url: /1cf385
-  custom: false
+  short_url: /button
+  custom: true
   title: Useless Button
   content_type: page
 - content_url: /colophon/
@@ -604,8 +604,8 @@
   title: 10+1 Things
   content_type: page
 - content_url: /now/
-  short_url: /8894c1
-  custom: false
+  short_url: /now
+  custom: true
   title: What I'm Doing Now
   content_type: page
 - content_url: /privacy-policy/
@@ -644,8 +644,8 @@
   title: Life in Weeks
   content_type: page
 - content_url: /unoffice-hours/
-  short_url: /405cc6
-  custom: false
+  short_url: /unoffice
+  custom: true
   title: Unoffice Hours
   content_type: page
 - content_url: /watch/
