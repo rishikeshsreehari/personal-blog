@@ -6,6 +6,7 @@ summary: Unoffice hours are informal conversations without an agenda, topic, or 
 type: page
 disable_comments: true
 ShowReadingTime: false
+shorturl: "unoffice"
 ---
 
 Every Tuesday and Thursday, [09:00 PM GST (UTC+4)](https://everytimezone.com/?t=674ba700,f3c), my calendar is open for 45 minutes for an open discussion.
