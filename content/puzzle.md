@@ -42,7 +42,7 @@ I left a trail for the curious.
 Just follow the shortcut to ‘find’ it.
 Sometimes, the shortest path leads straight to the truth.
 
-P.S: I like my links short. 🔍
+P.S: I hate long URLs.
 
 ```
 
