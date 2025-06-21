@@ -619,8 +619,8 @@
   title: Projects
   content_type: page
 - content_url: /puzzle/
-  short_url: /59e32f
-  custom: false
+  short_url: /puzzle
+  custom: true
   title: Perpetual Puzzle
   content_type: page
 - content_url: /search/
