@@ -10,6 +10,28 @@
         "photo": "",
         "url": ""
       },
+      "url": "https://lwgrs.bearblog.dev/re-friction-with-calorie-tracking/",
+      "published": null,
+      "wm-received": "2025-06-27T08:39:41Z",
+      "wm-id": 1920952,
+      "wm-source": "https://lwgrs.bearblog.dev/re-friction-with-calorie-tracking/",
+      "wm-target": "https://rishikeshs.com/about/",
+      "wm-protocol": "webmention",
+      "mention-of": "https://rishikeshs.com/about/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://lwgrs.bearblog.dev/re-friction-with-calorie-tracking/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
       "url": "https://tildes.net/~tech/1kb6/why_and_how_i_version_my_blog",
       "published": null,
       "wm-received": "2025-06-16T11:37:49Z",
