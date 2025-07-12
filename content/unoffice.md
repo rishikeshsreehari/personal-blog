@@ -9,7 +9,7 @@ ShowReadingTime: false
 shorturl: "unoffice"
 ---
 
-Every Tuesday and Thursday, [09:00 PM GST (UTC+4)](https://everytimezone.com/?t=674ba700,f3c), my calendar is open for 45 minutes for an open discussion.
+Every Tuesday and Wednesday, [09:00 PM GST (UTC+4)](https://everytimezone.com/?t=674ba700,f3c), my calendar is open for 45 minutes for an open discussion.
 
 Unoffice hours are informal conversations without an agenda, topic, or preparation. Some interesting topics we can discuss are:
 - An interesting movie you saw recently and why it's great.
