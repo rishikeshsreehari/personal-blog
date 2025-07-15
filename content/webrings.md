@@ -9,7 +9,7 @@ ShowReadingTime: false
 shorturl: webr
 ---
 
-##### Last updated on 06-01-2024
+##### Last updated on 15-07-2025
 
 This blog is part of various webrings on the web. This is a dedicated page that lists the different webrings this blog belongs to. Occasionally, when I have a creative block or am in search of new ideas, these webrings serve as a source of inspiration.
 
@@ -66,4 +66,17 @@ This blog is part of various webrings on the web. This is a dedicated page that 
     [<a href="https://meta-ring.hedy.dev/next">Next →</a>]
   </p>
 </div>
+
+<hr style="margin: 0.5rem 0;">
+
+<div style="text-align: center; margin: 0.5rem 0;">
+  <div id="miscri2">
+    <a href='https://miscri.netlify.app/webring?action=prev'> ← </a>
+    <a href='https://miscri.netlify.app/webring?action=home'>~misc-ring~</a>
+    <a href='https://miscri.netlify.app/webring?action=rand'> ?</a>
+    <a href='https://miscri.netlify.app/webring?action=next'> → </a>
+  </div>
+</div>
+
+  
 {{< /rawhtml >}}
