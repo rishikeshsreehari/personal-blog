@@ -178,8 +178,6 @@ menu:
       url: /projects/
       weight: 60
 
-
-
 outputFormats:
   ATOM:
     mediaType: "application/atom+xml"
@@ -229,3 +227,21 @@ security:
       - GET
     urls:
       - https://hacker-news.firebaseio.com/*
+
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON 
+    - ATOM
+    - TXT
+  page:  
+    - HTML
+    - MARKDOWN
+  section:  
+    - HTML
+    - MARKDOWN
+  term: 
+    - HTML
+    - MARKDOWN
