@@ -673,6 +673,11 @@
   custom: false
   title: The left pedal spindle on a bike is reverse threaded
   content_type: til
+- content_url: /til/google-drive-wsl/
+  short_url: /1af438
+  custom: false
+  title: How to Access Google Drive in WSL2
+  content_type: til
 - content_url: /til/hugo-remote-data/
   short_url: /136be9
   custom: false
