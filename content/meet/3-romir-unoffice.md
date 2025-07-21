@@ -1,6 +1,5 @@
 ---
 title: "#3 Romir - Unoffice Hours"
-#layout: "library"
 url: "/meet/3/"
 summary: Devops, Product & AI
 type: page
