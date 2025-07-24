@@ -22,10 +22,8 @@ shorturl: "now"
 
 ### 💭 What’s on My Mind?
 
-No more travel at least for next few months. All I want to do is have a routine, gain some momentum and just focus on things I want to do. For now it's about health, learning and job hunt. Nothing else.
-
+Most of my time now is spent working on [TrackMonk](https://trackmonk.app). If you're someone who is interested or has tried calorie tracking I would love to speak to you. So kindly reach out!
 ---
-
 
 ### 🔨 What am I Doing?
 
