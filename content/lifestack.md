@@ -6,11 +6,11 @@ summary: A documentation of the tools, apps, gadgets, gear, and other stuff I us
 type: page
 disable_comments: true
 ShowReadingTime: false
-
+updated_on: 2025-07-25
 ---
 
 
-##### Last Updated on 17-10-2024
+#####  {{< updated_on >}}
 
 This page is an attempt to document the tools, apps, gadgets, gear, and other stuff I use regularly. This is quite an extensive list, and I've tried my best to categorize them to the best of my abilities. Everything listed on this page is what I use. The things I no longer use are moved to the Graveyard section at the bottom with justification. Some of the links below contain affiliate tags that allow me to earn some income if you make purchases using the links. It does not cost you anything extra and supports my work. If you have any better suggestions for the items listed below, please let me know.
 
@@ -20,13 +20,14 @@ A list of things that I plan to buy in the future can be found on the ['Future S
 <div id="top"></div>
 
 
-- [📟 Gadgets](#gadgets)
-- [🏋 Fitness](#fitness)
-- [⚰️ Graveyard](#Graveyard)
+- [📟Gadgets](#gadgets)
+- [🏋Fitness](#fitness)
+- [⚰️Graveyard](#️graveyard)
+        - [Inspired by Lillian's, Dave Redfern's, Aaron Parecki's and many other interesting humans.](#inspired-by-lillians-dave-redferns-aaron-pareckis-and-many-other-interesting-humans)
 
 ## 📟Gadgets
 
-**💻 Computer**: I use an 6-year old [Asus Zenbook UX310UQ](https://www.asus.com/in/commercial-laptops/asus-zenbook-ux310uq) as my personal computer. It is quite old, but hasn't lagged much. I might upgrade to a Macbook sometime in next 2 years. I do not use any external mouse or other accessories with my laptop.
+**💻 Computer**: I recently upgraded to a [MacBook Pro M4 Pro](https://www.apple.com/ae/shop/buy-mac/macbook-pro/14-inch-m4) with 24GB RAM and 512GB storage, and I've loved it so far. It's a significant upgrade from my previous 8-year-old [Asus Zenbook UX310UQ](https://www.asus.com/bt/laptops/for-home/zenbook/asus-zenbook-ux310uq/). I use a [Logitech MX Master 3S](https://geni.us/rs-mx-3s) as my mouse. Claude Sonnet is my preferred AI model and I prefer chatting with it directly over using AI assistants like Cursor. For development, I use [iTerm2](https://iterm2.com) as my terminal and VS Code as my IDE.
 
 **📱 Smartphone**:My 5.4 inch [iPhone 13 Mini](https://geni.us/rsh-13-mini) is the greatest phone I've ever owned. It's small, light, compact, yet powerful. It's such a shame that Apple and other manufactures have stopped making compact phones. It has served me great and I wish it lasted forever. Since the battery on this phone is not that great, I also use an [Ambrane 20,000mAh powerbank](https://geni.us/rsh-ambrane-20000) along with it.
 
