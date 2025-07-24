@@ -498,6 +498,11 @@
   custom: false
   title: What I'm Doing Now
   content_type: now-archive
+- content_url: /now-2025-07-24/
+  short_url: /0ffc96
+  custom: false
+  title: What I'm Doing Now
+  content_type: now-archive
 - content_url: /now-archive/
   short_url: /6d6b07
   custom: false
