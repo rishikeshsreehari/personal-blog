@@ -20,9 +20,11 @@ shorturl: "now"
 
 ---
 
-### 💭 What’s on My Mind?
+### 💭 What’s on My Mind?  
+
 
 Most of my time now is spent working on [TrackMonk](https://trackmonk.app). If you're someone who is interested or has tried calorie tracking I would love to speak to you. So kindly reach out!
+
 ---
 
 ### 🔨 What am I Doing?
