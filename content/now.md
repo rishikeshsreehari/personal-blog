@@ -7,7 +7,7 @@ disable_comments: true
 ShowReadingTime: false
 dataDir: "data"
 hideFromRSS: true
-updated_on: 2025-05-30
+updated_on: 2025-07-25
 shorturl: "now"
 ---
 
@@ -29,7 +29,8 @@ No more travel at least for next few months. All I want to do is have a routine,
 
 ### 🔨 What am I Doing?
 
--  [Currently looking for opportunities](/hire), I’m dedicating most of my time to job applications and exploring freelance opportunities.
+- Building [TrackMonk](https://trackmonk.app) 
+- [Currently looking for opportunities](/hire), I’m dedicating most of my time to job applications and exploring freelance opportunities.
 - In search of [1000 True Fans](https://kk.org/thetechnium/1000-true-fans/) by curating interesting stories at [10+1 Things](https://newsletter.rishikeshs.com/)!
 - Unnecessarily tweaking and over-engineering this blog! You can see the progress [here](/log).
 
