@@ -173,6 +173,11 @@
   custom: false
   title: Resonance Journal as a Tool for Self-Discovery
   content_type: blog
+- content_url: /robot-vacuums/
+  short_url: /3f2f03
+  custom: false
+  title: Notes on Robot Vacuums
+  content_type: blog
 - content_url: /show-your-work-by-austin-kleon-book-summary-notes/
   short_url: /9ea219
   custom: false
@@ -697,6 +702,11 @@
   short_url: /136be9
   custom: false
   title: Hugo can fetch live data during build using resources.GetRemote
+  content_type: til
+- content_url: /til/hugo-syntax-highlighting/
+  short_url: /5b11ec
+  custom: false
+  title: Configuring Hugo Syntax Highlighting with Language Hints
   content_type: til
 - content_url: /til/palm-leaf-writing/
   short_url: /b59ca1
