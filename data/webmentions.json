@@ -6,6 +6,26 @@
       "type": "entry",
       "author": {
         "type": "card",
+        "name": "rishikeshs",
+        "photo": "",
+        "url": "https://news.ycombinator.com/user?id=rishikeshs"
+      },
+      "url": "https://news.ycombinator.com/item?id=44712236",
+      "published": "2025-07-28T16:11:08+00:00",
+      "wm-received": "2025-07-28T16:28:36Z",
+      "wm-id": 1926861,
+      "wm-source": "https://news.ycombinator.com/item?id=44712236",
+      "wm-target": "https://rishikeshs.com/robot-vacuums/",
+      "wm-protocol": "webmention",
+      "name": "Notes on Robot Vacuums",
+      "bookmark-of": "https://rishikeshs.com/robot-vacuums/",
+      "wm-property": "bookmark-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
         "name": "",
         "photo": "",
         "url": ""
