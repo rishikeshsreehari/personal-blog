@@ -9,3 +9,5 @@ public
 
 env.sh
 .DS_Store
+
+resources/
