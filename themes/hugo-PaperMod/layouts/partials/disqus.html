@@ -3,41 +3,42 @@
 {{- if not .Params.disable_comments }}
 <div class="comments-section">
   {{ $url := .Params.url | default .RelPermalink }}
-  {{ $url = trim $url "/" }} 
+  {{ $url = trim $url "/" }}
   {{ $commentsData := .Site.Data.comments | default dict }}
-  
+
   {{ with index $commentsData $url }}
-    {{ $comments := . | default (slice) }}
-    {{ if gt (len $comments) 0 }}
-      <h3>Comments ({{ len $comments }})</h3>
-      <br>
-      {{ range $comments }}
-        <div class="comment {{ if in .Comment "author-marker" }}highlight{{ end }}">
-          <div class="avatar">
-            <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}" alt="avatar">
-          </div>
-          <div class="comment-details">
-            <strong class="comment-author-name">{{ .Name }}</strong><span class="date">on {{ .Date }}</span>
-            {{ if in .Comment "author-marker" }}<span class="author-reply-label">Author Reply</span>{{ end }}
-            <p>{{ .Comment | safeHTML }}</p>
-          </div>
-        </div>
-      {{ end }}
-    {{ else }}
-      <p>No comments yet.</p>
-    {{ end }}
+  {{ $comments := . | default (slice) }}
+  {{ if gt (len $comments) 0 }}
+  <h3>Comments ({{ len $comments }})</h3>
+  <br>
+  {{ range $comments }}
+  {{ $isAuthorReply := in .Comment "author-marker" }}
+  <div class="comment{{ if $isAuthorReply }} author-reply{{ end }}">
+    <div class="avatar">
+      <img src="https://api.dicebear.com/7.x/identicon/svg?seed={{ .Name }}" alt="avatar">
+    </div>
+    <div class="comment-details">
+      <strong class="comment-author-name">{{ .Name }}</strong><span class="date">on {{ .Date }}</span>
+      {{ if $isAuthorReply }}<span class="author-reply-label">Author Reply</span>{{ end }}
+      <p>{{ .Comment | safeHTML }}</p>
+    </div>
+  </div>
+  {{ end }}
   {{ else }}
-    <p>No comments yet.</p>
+  <p>No comments yet.</p>
+  {{ end }}
+  {{ else }}
+  <p>No comments yet.</p>
   {{ end }}
 </div>
 
-<h5>Leave a comment below. All comments are moderated and will appear after approval. Your email, if provided, is optional and won't be shared or used to send any spam. If your comment requires a personal response beyond a public reply, I will reach out to you via email. Comments are static, with no notifications or backlinks.
+<h5>Leave a comment below. All comments are moderated and will appear after approval. Your email, if provided, is
+  optional and won't be shared or used to send any spam. If your comment requires a personal response beyond a public
+  reply, I will reach out to you via email. Comments are static, with no notifications or backlinks.
 </h5>
 <br>
 
-<form 
-  id="commentForm" 
-  method="POST" 
+<form id="commentForm" method="POST"
   action="https://script.google.com/macros/s/AKfycbybzIVhZ6DyJQD8nl0suisVDVly07c87524X84iORIBdkekzQ68ugrCG8TrTB5HnJdtuQ/exec">
   <div class="comment-form">
     <input type="hidden" name="timestamp" id="timestamp" value="" />
@@ -68,7 +69,8 @@
 
     <div class="form-row">
       <label for="message">Comment</label>
-      <textarea id="message" name="message" required placeholder="Leave a message for the Yeti, they might be reading!"></textarea>
+      <textarea id="message" name="message" required
+        placeholder="Leave a message for the Yeti, they might be reading!"></textarea>
     </div>
 
     <!-- Turnstile widget -->
@@ -80,9 +82,12 @@
 
     <!-- Spinner -->
     <div id="loading-spinner" style="display: none; text-align: center; margin-top: 10px;">
-      <svg xmlns="http://www.w3.org/2000/svg" style="margin: auto; background: none; display: block;" width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
-        <circle cx="50" cy="50" r="35" stroke-width="8" stroke="#fff" stroke-dasharray="54.97787143782138 54.97787143782138" fill="none" stroke-linecap="round">
-          <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
+      <svg xmlns="http://www.w3.org/2000/svg" style="margin: auto; background: none; display: block;" width="50px"
+        height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+        <circle cx="50" cy="50" r="35" stroke-width="8" stroke="#fff"
+          stroke-dasharray="54.97787143782138 54.97787143782138" fill="none" stroke-linecap="round">
+          <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s"
+            values="0 50 50;360 50 50" keyTimes="0;1"></animateTransform>
         </circle>
       </svg>
     </div>
@@ -101,7 +106,7 @@
     document.getElementById('cf-turnstile-response').value = token;
   }
 
-  document.getElementById("commentForm").addEventListener("submit", function(event) {
+  document.getElementById("commentForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
     var messageContainer = document.getElementById("message-container");
@@ -132,29 +137,29 @@
       method: 'POST',
       body: formData,
     })
-    .then(response => {
-      loadingSpinner.style.display = "none";
-      if (response.ok) {
-        messageContainer.textContent = "Your comment has been successfully submitted. Once approved, it will appear here. Thanks!";
-        messageContainer.style.color = "green";
-        this.reset();
-        
-        // Delay the Turnstile reset
-        setTimeout(() => {
-          turnstile.reset();
-        }, 5000); // 5 second delay
+      .then(response => {
+        loadingSpinner.style.display = "none";
+        if (response.ok) {
+          messageContainer.textContent = "Your comment has been successfully submitted. Once approved, it will appear here. Thanks!";
+          messageContainer.style.color = "green";
+          this.reset();
 
-        // Optionally, scroll to the message
-        messageContainer.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        throw new Error('Failed to submit');
-      }
-    })
-    .catch(error => {
-      loadingSpinner.style.display = "none";
-      messageContainer.textContent = "There was an error submitting your comment. Please try again.";
-      messageContainer.style.color = "red";
-    });
+          // Delay the Turnstile reset
+          setTimeout(() => {
+            turnstile.reset();
+          }, 5000); // 5 second delay
+
+          // Optionally, scroll to the message
+          messageContainer.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          throw new Error('Failed to submit');
+        }
+      })
+      .catch(error => {
+        loadingSpinner.style.display = "none";
+        messageContainer.textContent = "There was an error submitting your comment. Please try again.";
+        messageContainer.style.color = "red";
+      });
   });
 
   // Set timestamp when form loads

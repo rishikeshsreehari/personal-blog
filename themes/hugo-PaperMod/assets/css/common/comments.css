@@ -6,12 +6,15 @@
 
 .comment {
   display: flex;
-  align-items: flex-start; /* Aligns items to the top of the container */
+  align-items: flex-start;
+  /* Aligns items to the top of the container */
   border: 0.5px ridge #717171;
   padding: 10px;
   margin-bottom: 15px;
-  border-radius: 5px; /* Ensure consistent border radius */
-  font-size: 0.9em; /* Slightly smaller font size */
+  border-radius: 5px;
+  /* Ensure consistent border radius */
+  font-size: 0.9em;
+  /* Slightly smaller font size */
 }
 
 .comment p {
@@ -25,29 +28,39 @@
 .avatar {
   background-color: #ccc;
   color: #fff;
-  width: 50px; /* Fixed width */
-  height: 50px; /* Fixed height */
+  width: 50px;
+  /* Fixed width */
+  height: 50px;
+  /* Fixed height */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   margin-right: 10px;
-  flex-shrink: 0; /* Prevents shrinking */
-  flex-grow: 0; /* Prevents growing */
-  flex-basis: 50px; /* Fixed base size */
+  flex-shrink: 0;
+  /* Prevents shrinking */
+  flex-grow: 0;
+  /* Prevents growing */
+  flex-basis: 50px;
+  /* Fixed base size */
   position: relative;
-  overflow: visible; /* Allow overflow */
+  overflow: visible;
+  /* Allow overflow */
 }
 
 .avatar img {
-  width: 60px; /* Larger than the container */
-  height: 60px; /* Larger than the container */
-  object-fit: cover; /* Ensure the image covers the avatar without distortion */
+  width: 60px;
+  /* Larger than the container */
+  height: 60px;
+  /* Larger than the container */
+  object-fit: cover;
+  /* Ensure the image covers the avatar without distortion */
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the image */
+  transform: translate(-50%, -50%);
+  /* Center the image */
 }
 
 .comment-details {
@@ -56,15 +69,19 @@
 }
 
 .date {
-  font-size: 0.8em; /* Smaller font size for the date */
+  font-size: 0.8em;
+  /* Smaller font size for the date */
   color: #555;
-  margin-left: 5px; /* Add some space between name and date */
+  margin-left: 5px;
+  /* Add some space between name and date */
 }
 
-.highlight {
-  border-left: 5px solid #005d52; /* Reply comment border */
+.comment.author-reply {
+  margin-left: 60px;
+  border-left: 5px solid #005d52;
   padding-left: 15px;
-  margin-left: 50px; /* Indent to indicate a reply */
+  background-color: rgba(0, 93, 82, 0.05);
+  /* Very subtle background tint */
 }
 
 .author-reply-label {
@@ -74,6 +91,11 @@
   padding: 2px 5px;
   border-radius: 3px;
   margin-left: 10px;
+}
+
+/* Hide the author-marker span since it's just for detection */
+.author-marker {
+  display: none;
 }
 
 /* CSS for comment form */
@@ -100,18 +122,22 @@
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #717171;
-  font-size: 0.9em; /* Match input font size to comment font size */
+  font-size: 0.9em;
+  /* Match input font size to comment font size */
   color: whitesmoke;
 }
 
 .column {
-  width: calc(50% - 1%); /* Set the width to  50%, accounting for a 1% gap on each side */
+  width: calc(50% - 1%);
+  /* Set the width to  50%, accounting for a 1% gap on each side */
   float: left;
-  margin-right: 2%; /* Add margin to create the gap */
+  margin-right: 2%;
+  /* Add margin to create the gap */
 }
 
 .column:last-child {
-  margin-right: 0; /* Remove margin on the last column */
+  margin-right: 0;
+  /* Remove margin on the last column */
 }
 
 .comment-form button {
@@ -120,7 +146,8 @@
   padding: 10px 20px;
   border: none;
   cursor: pointer;
-  font-size: 0.9em; /* Match button font size to comment font size */
+  font-size: 0.9em;
+  /* Match button font size to comment font size */
 }
 
 .comment-form button:hover {
