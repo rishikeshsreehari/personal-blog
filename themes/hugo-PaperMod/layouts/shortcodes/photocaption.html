@@ -1,4 +1,22 @@
 <figure style="text-align: center; margin: 20px 0;">
-    <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="width: {{ .Get "width" | default "80%" }}; height: auto; display: block; margin: 0 auto;" />
-    <figcaption style="font-size: 14px; color: #666; font-style: italic; margin-top: 8px;">{{ .Inner | markdownify }}</figcaption>
+{{ $src := .Get "src" }}
+{{ $convertToWebp := .Get "webp" }}
+{{ if and $convertToWebp (eq $convertToWebp "true") (.Page.Resources.Get $src) }}
+  {{ $image := .Page.Resources.Get $src }}
+  {{ $size := .Get "size" | default "800x" }}
+  {{ $quality := .Get "quality" | default "75" }}
+  {{ $processed := $image.Resize (printf "%s webp q%s" $size $quality) }}
+  <img loading="lazy" src="{{ $processed.RelPermalink }}"
+       alt="{{ .Get "alt" }}"
+       {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+       {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+       style="height: auto; display: block; margin: 0 auto;" />
+{{ else }}
+  <img loading="lazy" src="{{ $src }}"
+       alt="{{ .Get "alt" }}"
+       {{- with .Get "width" }} width="{{ . }}"{{ end -}}
+       {{- with .Get "height" }} height="{{ . }}"{{ end -}}
+       style="height: auto; display: block; margin: 0 auto;" />
+{{ end }}
+<figcaption style="font-size: 14px; color: #666; font-style: italic; margin-top: 8px;">{{ .Inner | markdownify }}</figcaption>
 </figure>
