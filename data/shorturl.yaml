@@ -174,8 +174,8 @@
   title: Resonance Journal as a Tool for Self-Discovery
   content_type: blog
 - content_url: /robot-vacuums/
-  short_url: /3f2f03
-  custom: false
+  short_url: /robovac
+  custom: true
   title: Notes on Robot Vacuums
   content_type: blog
 - content_url: /show-your-work-by-austin-kleon-book-summary-notes/

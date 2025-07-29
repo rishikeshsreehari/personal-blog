@@ -740,6 +740,24 @@
         "status": "no_link_found",
         "error": "The source document does not have a link to the target URL or domain",
         "last_attempt": "2025-07-28T15:24:29.407614Z"
+      },
+      {
+        "url": "https://maticrobots.com/blog/why-matic-is-the-most-private-and-secure-robot-vacuum?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-07-29T11:12:08.380190Z"
+      },
+      {
+        "url": "https://vacuumwars.com/are-robot-vacuums-spying-on-you/?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-07-29T11:12:08.787835Z"
+      },
+      {
+        "url": "https://valetudo.cloud?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2025-07-29T11:12:09.176778Z"
       }
     ]
   }
