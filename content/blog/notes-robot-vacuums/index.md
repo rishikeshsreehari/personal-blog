@@ -19,6 +19,8 @@ cover:
   alt: "xiaomi x20 pro robtot vacuum"
   caption: "Xiaomi X20 Robot Vacuum"
   relative: true
+shorturl: robovac
+
 ---
 
 
@@ -38,7 +40,7 @@ When I started searching for robot vacuums, I was overwhelmed by the plethora of
 
 ### The Major Players
 
-The main brands I encountered were iRobot (Roomba), Eufy (by Anker), Ecovacs, Xiaomi, Dreame, and Narwal. Roomba popularized the robot vacuum concept, while Xiaomi outsources manufacturing to Dreame after giving them their requirements. Xiaomi owns a stake in Dreame and was their angel investor, but Dreame is not a subsidiary.   
+The main brands I encountered were iRobot (Roomba), Eufy (by Anker), Ecovacs, Xiaomi, Dreame, and Narwal. Roomba popularized the robot vacuum concept, while Xiaomi outsources manufacturing to other companies. Xiaomi owns a stake in Dreame and Roborock as well.
 
 
 ### Suction Power Marketing
@@ -87,6 +89,16 @@ While buying, please consider the recurring costs as well. The mop pads, dust ba
 
 Before you press order, have a look at the dock size, its power requirements, and placement as well. Those fancy all-in-one stations can be massive and require 4-5 feet of clearance in front, consuming significant floor space in small apartments. Some very latest models even have an option to have a water inlet and outlet similar to a washing machine if you don't like manual emptying of water.
 
+
+### Privacy
+
+If privacy is a concern for you, then you are in a tough spot. With multiple sensors that map your house and cameras, there are some real concerns about privacy. I'm not an expert in this, but [this post](https://vacuumwars.com/are-robot-vacuums-spying-on-you/) by Vacuum Wars share some interesting insights. When I was shopping, I was also looking for something open-source and reliable, but couldn't find anything that fit my requirements. Mine does not have a camera so I'm a bit relieved, but I don't have pets or require complex image processing, so I'm not compromising on anything. But here are some interesting ones I saw:
+
+- [Valetudo](https://valetudo.cloud) is a cloud replacement for vacuum robots enabling local-only operation. It supports some popular models, but require you to hack into the model and root the device. It seems like the most legitimate and promising option so far.
+- [Bumper](https://github.com/bmartin5692/bumper) is a standalone and self-hosted implementation of the central server used by Ecovacs vacuum robots. It allows you to have full control of your Ecovacs robots, without the robots or app talking to the Ecovacs servers and transmitting data outside of your home.
+- [Awesome Vacuum](https://github.com/awesome-vacuum/awesome-vacuum) is a curated list of free and open source software and hardware to build and control a robot vacuum. It was updated 4 years back, but the list seems interesting.
+- [Matic](https://maticrobots.com/blog/why-matic-is-the-most-private-and-secure-robot-vacuum) claims as the most private and secure robot vacuum with its in-device processing. It is not open-source so I'm a bit skeptical.
+  
 ---
 
 
@@ -105,6 +117,13 @@ At the time of writing, it's been a day, so far things have been good. Too early
 **Special thanks to** [u/FarConcern2308](https://www.reddit.com/user/FarConcern2308/) for the  suggestions and being incredibly helpful in picking the right vacuum on [r/RobotVacuums!](https://www.reddit.com/r/RobotVacuums/)
 
 *This is a living document based on my research experience. Feel free to share corrections or updates in the comments\!*
+
+
+#### Update #1 - 29-07-2025, 15:00 GST
+
+- _Thanks to [u/FarConcern2308](https://www.reddit.com/user/FarConcern2308/) for corrections in stakes of Xiaomi in Roborock and Dreame_
+- _Added a section for privacy_
+
 
 
 {{< subscribe_block >}}
