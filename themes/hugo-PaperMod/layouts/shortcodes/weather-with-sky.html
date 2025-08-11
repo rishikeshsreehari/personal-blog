@@ -1,14 +1,3 @@
-<!--
-Sky gradient visualization adapted from the Horizon project
-Original work by Daniel Lazaro (https://dlazaro.ca)
-Source: https://github.com/dnlzro/horizon
-
-Weather data provided by wttr.in
-Source: https://github.com/chubin/wttr.in
-
-Calculates solar elevation and renders corresponding sky colors
-as they would appear at the current time and location.
--->
 
 <div class="weather-sky-section">
   <div><span id="temperature">Loading...</span></div>
@@ -16,189 +5,298 @@ as they would appear at the current time and location.
   <div id="sky-bar" class="sky-accent-bar">
     <button id="copy-gradient" class="copy-btn" title="Copy gradient CSS">📋</button>
   </div>
-  <p id="sky-note" class="sky-note">Theoretically, the sky outside my window should look like this with the sun at -- above the horizon</p>
+  
+  <p id="sky-note" class="sky-note" style="display: none;"></p>
 </div>
 
 <style>
-.weather-sky-section {
-  margin: 1.5rem 0;
-}
-
-.sky-accent-bar {
-  height: 40px;
-  width: 100%;
-  border-radius: 6px;
-  margin: 1rem 0 0.5rem 0;
-  transition: background 2s ease-in-out;
-  background: #ccc;
-  position: relative;
-}
-
-.copy-btn {
-  position: absolute;
-  right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.9);
-  border: none;
-  border-radius: 3px;
-  padding: 2px 4px;
-  font-size: 10px;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.sky-accent-bar:hover .copy-btn {
-  opacity: 1;
-}
-
-.copy-btn:hover {
-  background: rgba(255, 255, 255, 1);
-  transform: translateY(-50%) scale(1.1);
-}
-
-.copy-btn:active {
-  transform: translateY(-50%) scale(0.95);
-}
-
-.sky-note {
-  font-size: 0.75rem;
-  color: #888;
-  margin: 0.5rem 0 0 0;
-  text-align: center;
-  font-style: italic;
-}
-
-.copy-feedback {
-  position: absolute;
-  right: 8px;
-  top: -25px;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 2px 6px;
-  border-radius: 3px;
-  font-size: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.copy-feedback.show {
-  opacity: 1;
-}
+/* This CSS provides the initial state before the script runs */
+.weather-sky-section { margin: 1.5rem 0; }
+.sky-accent-bar { height: 40px; width: 100%; border-radius: 6px; margin: 1rem 0 0.5rem 0; transition: background 2s ease-in-out; background: #ccc; position: relative; }
+.copy-btn { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: rgba(255, 255, 255, 0.9); border: none; border-radius: 3px; padding: 2px 4px; font-size: 10px; cursor: pointer; opacity: 0; transition: opacity 0.2s ease; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
+.sky-accent-bar:hover .copy-btn { opacity: 1; }
+.copy-btn:hover { background: rgba(255, 255, 255, 1); transform: translateY(-50%) scale(1.1); }
+.copy-btn:active { transform: translateY(-50%) scale(0.95); }
+.sky-note { font-size: 0.75rem; color: #888; margin: 0.5rem 0 0 0; text-align: center; font-style: italic; }
+.copy-feedback { position: absolute; right: 8px; top: -25px; background: rgba(0, 0, 0, 0.8); color: white; padding: 2px 6px; border-radius: 3px; font-size: 10px; opacity: 0; transition: opacity 0.3s ease; pointer-events: none; }
+.copy-feedback.show { opacity: 1; }
 </style>
 
 <script async>
-const el = document.getElementById("temperature");
-const skyBar = document.getElementById("sky-bar");
-const skyNote = document.getElementById("sky-note");
-const copyBtn = document.getElementById("copy-gradient");
-
-let currentGradient = '';
-
-function getLocation() {
-  return "{{ .Get "location" | default .Site.Params.CurrentLocation | urlize }}";
-}
-const loc = getLocation();
-
-const lat = {{ .Get "lat" }};
-const lng = {{ .Get "lng" }};
-
-const map = {
-  "🌑": "It's a new moon 🌑, so the sky will be dark tonight.",
-  "🌒": "At night, a sliver of the moon is visible 🌒.",
-  "🌓": "At night, half of the moon is visible 🌓.",
-  "🌔": "At night, the moon is almost full 🌔.",
-  "🌕": "It's a full moon 🌕, illuminating the night sky.",
-  "🌖": "The moon is starting to wane 🌖, but still mostly visible.",
-  "🌗": "At night, half of the moon is visible 🌗.",
-  "🌘": "A small crescent of the moon is visible tonight 🌘."
-};
-
-function calculateSolarElevation() {
-  const now = new Date();
-  const dayOfYear = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
-  const hour = now.getHours() + now.getMinutes() / 60;
-  const declination = 23.45 * Math.sin((360 * (284 + dayOfYear) / 365) * Math.PI / 180);
-  const hourAngle = 15 * (hour - 12);
+(function() {
+  // --- Element References & Hugo Params ---
+  const weatherEl = document.getElementById("temperature");
+  const skyBar = document.getElementById("sky-bar");
+  const skyNote = document.getElementById("sky-note");
+  const copyBtn = document.getElementById("copy-gradient");
+  const lat = {{ .Get "lat" }};
+  const location = "{{ .Get "location" | default .Site.Params.CurrentLocation | urlize }}";
   
-  return Math.asin(
-    Math.sin(declination * Math.PI / 180) * Math.sin(lat * Math.PI / 180) +
-    Math.cos(declination * Math.PI / 180) * Math.cos(lat * Math.PI / 180) * Math.cos(hourAngle * Math.PI / 180)
-  );
-}
+  // --- Caching Configuration ---
+  const CACHE_KEY = `weather_cache_${location}`;
+  const CACHE_DURATION_MINUTES = 15;
+  let currentGradient = '';
 
-function updateSkyBar() {
-  if (!skyBar) return;
-  
-  const elevation = calculateSolarElevation();
-  const sunAngle = elevation * 180 / Math.PI;
-  
-  let colors;
-  if (sunAngle > 15) {
-    colors = ['#78A8D8', '#A8C8E8', '#D8E8F8'];
-  } else if (sunAngle > -6) {
-    colors = ['#FF8C42', '#FFB347', '#FFA07A'];
-  } else {
-    colors = ['#2C3E50', '#34495E', '#5D6D7E'];
+  // --- Moon Phase Descriptions ---
+  const moonMap = { "🌑": "It's a new moon 🌑...", "🌒": "A sliver of the moon is visible 🌒.", "🌓": "Half of the moon is visible 🌓.", "🌔": "The moon is almost full 🌔.", "🌕": "It's a full moon 🌕.", "🌖": "The moon is waning 🌖.", "🌗": "Half of the moon is visible 🌗.", "🌘": "A crescent of the moon is visible 🌘." };
+
+  // ===================================================================
+  // ==  PHYSICALLY-BASED ATMOSPHERE RENDERING LOGIC (Plain JS Port)  ==
+  // ===================================================================
+
+  // --- Math/Vector Utility Functions ---
+  const PI = Math.PI;
+  const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
+  const dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2];
+  const len = (v) => Math.sqrt(dot(v, v));
+  const norm = (v) => { const l = len(v); return l > 0 ? [v[0]/l, v[1]/l, v[2]/l] : [0,0,0]; };
+  const add = (a, b) => [a[0] + b[0], a[1] + b[1], a[2] + b[2]];
+  const scale = (v, s) => [v[0] * s, v[1] * s, v[2] * s];
+  const exp = (v) => [Math.exp(v[0]), Math.exp(v[1]), Math.exp(v[2])];
+
+  // --- Physical Constants & Model Parameters ---
+  const RAYLEIGH_SCATTER = [5.802e-6, 13.558e-6, 33.1e-6];
+  const MIE_SCATTER = 3.996e-6;
+  const MIE_ABSORB = 4.44e-6;
+  const OZONE_ABSORB = [0.65e-6, 1.881e-6, 0.085e-6];
+  const RAYLEIGH_SCALE_HEIGHT = 8e3;
+  const MIE_SCALE_HEIGHT = 1.2e3;
+  const GROUND_RADIUS = 6_360e3;
+  const TOP_RADIUS = 6_460e3;
+  const SUN_INTENSITY = 1.0;
+  const SAMPLES = 32;
+  const FOV_DEG = 75;
+  const EXPOSURE = 25.0;
+  const GAMMA = 2.2;
+  const SUNSET_BIAS_STRENGTH = 0.1;
+
+  // --- Core Rendering Functions ---
+  function aces(color) {
+    return color.map((c) => {
+      const n = c * (2.51 * c + 0.03);
+      const d = c * (2.43 * c + 0.59) + 0.14;
+      return Math.max(0, Math.min(1, n / d));
+    });
+  }
+
+  function applySunsetBias([r, g, b]) {
+    const lum = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    const w = 1.0 / (1.0 + 2.0 * lum);
+    const k = SUNSET_BIAS_STRENGTH;
+    const rb = 1.0 + 0.5 * k * w, gb = 1.0 - 0.5 * k * w, bb = 1.0 + 1.0 * k * w;
+    return [Math.max(0, r * rb), Math.max(0, g * gb), Math.max(0, b * bb)];
+  }
+
+  function rayleighPhase(angle) {
+    return (3 * (1 + Math.cos(angle) ** 2)) / (16 * PI);
+  }
+
+  function miePhase(angle) {
+    const g = 0.8;
+    const scale = 3 / (8 * PI);
+    const num = (1 - g ** 2) * (1 + Math.cos(angle) ** 2);
+    const denom = (2 + g ** 2) * (1 + g ** 2 - 2 * g * Math.cos(angle)) ** (3 / 2);
+    return (scale * num) / denom;
+  }
+
+  function intersectSphere(p, d, r) {
+    const m = p;
+    const b = dot(m, d);
+    const c = dot(m, m) - r ** 2;
+    const discr = b ** 2 - c;
+    if (discr < 0) return null;
+    const t = -b - Math.sqrt(discr);
+    return t < 0 ? -b + Math.sqrt(discr) : t;
   }
   
-  currentGradient = `linear-gradient(to right, ${colors[0]}, ${colors[1]}, ${colors[2]})`;
-  skyBar.style.background = currentGradient;
-  
-  // Update the text with actual sun angle
-  const angleText = sunAngle > 0 ? `${sunAngle.toFixed(1)}°` : `${Math.abs(sunAngle).toFixed(1)}° below`;
-  skyNote.textContent = `Theoretically, the sky outside my window should look like this with the sun at ${angleText} the horizon`;
-}
+  function computeTransmittance(height, angle) {
+    const rayOrigin = [0, GROUND_RADIUS + height, 0];
+    const rayDirection = [Math.sin(angle), Math.cos(angle), 0];
+    const distance = intersectSphere(rayOrigin, rayDirection, TOP_RADIUS);
+    if (!distance) return [1, 1, 1];
 
-// Copy functionality
-copyBtn.addEventListener('click', async (e) => {
-  e.stopPropagation();
-  
-  try {
-    await navigator.clipboard.writeText(`background: ${currentGradient};`);
+    const segmentLength = distance / SAMPLES;
+    let t = 0.5 * segmentLength;
+    let odRayleigh = 0, odMie = 0, odOzone = 0;
+
+    for (let i = 0; i < SAMPLES; i++) {
+      const pos = add(rayOrigin, scale(rayDirection, t));
+      const h = len(pos) - GROUND_RADIUS;
+      odRayleigh += Math.exp(-h / RAYLEIGH_SCALE_HEIGHT) * segmentLength;
+      odMie += Math.exp(-h / MIE_SCALE_HEIGHT) * segmentLength;
+      odOzone += (1.0 - Math.min(Math.abs(h - 25e3) / 15e3, 1.0)) * segmentLength;
+      t += segmentLength;
+    }
     
-    // Show feedback
-    const feedback = document.createElement('div');
-    feedback.className = 'copy-feedback';
-    feedback.textContent = 'Copied!';
-    skyBar.appendChild(feedback);
-    
-    setTimeout(() => feedback.classList.add('show'), 10);
-    setTimeout(() => {
-      feedback.classList.remove('show');
-      setTimeout(() => skyBar.removeChild(feedback), 300);
-    }, 1500);
-    
-  } catch (err) {
-    console.error('Failed to copy:', err);
+    const tauR = scale(RAYLEIGH_SCATTER, odRayleigh);
+    const tauM = scale([MIE_ABSORB, MIE_ABSORB, MIE_ABSORB], odMie);
+    const tauO = scale(OZONE_ABSORB, odOzone);
+
+    return exp(scale(add(add(tauR, tauM), tauO), -1));
   }
-});
 
-async function fetchWeather() {
-  if (!el) return;
-  
-  try {
-    const res = await fetch(`https://wttr.in/${loc}?format=%C|%t|%h|%w|%m`);
-    const data = await res.text();
+  function renderPhysicalSkyGradient(altitude) {
+    const cameraPosition = [0, GROUND_RADIUS, 0];
+    const sunDirection = norm([Math.cos(altitude), Math.sin(altitude), 0]);
+    const focalZ = 1.0 / Math.tan((FOV_DEG * 0.5 * PI) / 180.0);
+    const stops = [];
+
+    for (let i = 0; i < SAMPLES; i++) {
+      const s = i / (SAMPLES - 1);
+      const viewDirection = norm([0, s, focalZ]);
+      let inscattered = [0, 0, 0];
+      const tExitTop = intersectSphere(cameraPosition, viewDirection, TOP_RADIUS);
+
+      if (tExitTop !== null && tExitTop > 0) {
+        const segmentLength = tExitTop / SAMPLES;
+        let tRay = segmentLength * 0.5;
+        for (let j = 0; j < SAMPLES; j++) {
+            const samplePos = add(cameraPosition, scale(viewDirection, tRay));
+            const sampleHeight = len(samplePos) - GROUND_RADIUS;
+            const upUnit = norm(samplePos);
+            const sunAngle = Math.acos(clamp(dot(upUnit, sunDirection), -1, 1));
+            const transmittanceLight = computeTransmittance(sampleHeight, sunAngle);
+            const viewAngle = Math.acos(clamp(dot(upUnit, viewDirection), -1, 1));
+            const transmittanceView = computeTransmittance(sampleHeight, viewAngle);
+            const opticalDensityRay = Math.exp(-sampleHeight / RAYLEIGH_SCALE_HEIGHT);
+            const opticalDensityMie = Math.exp(-sampleHeight / MIE_SCALE_HEIGHT);
+            const sunViewAngle = Math.acos(clamp(dot(sunDirection, viewDirection), -1, 1));
+            const phaseR = rayleighPhase(sunViewAngle);
+            const phaseM = miePhase(sunViewAngle);
+            const scatteredRgb = [0,0,0];
+            for (let k = 0; k < 3; k++) {
+              const rayleighTerm = RAYLEIGH_SCATTER[k] * opticalDensityRay * phaseR;
+              const mieTerm = MIE_SCATTER * opticalDensityMie * phaseM;
+              scatteredRgb[k] = transmittanceLight[k] * (rayleighTerm + mieTerm);
+              inscattered[k] += transmittanceView[k] * scatteredRgb[k] * segmentLength;
+            }
+            tRay += segmentLength;
+        }
+        inscattered = scale(inscattered, SUN_INTENSITY);
+      }
+      
+      let color = scale(inscattered, EXPOSURE);
+      color = applySunsetBias(color);
+      color = aces(color);
+      color = color.map(c => Math.pow(c, 1.0 / GAMMA));
+      const rgb = color.map(c => Math.round(clamp(c, 0, 1) * 255));
+      stops.push({ percent: (1 - s) * 100, rgb: rgb });
+    }
+
+    stops.sort((a, b) => a.percent - b.percent);
+    const colorStops = stops.map(({ percent, rgb }) => `rgb(${rgb[0]},${rgb[1]},${rgb[2]}) ${Math.round(percent*100)/100}%`).join(", ");
+    return `linear-gradient(to bottom, ${colorStops})`;
+  }
+
+  // ===================================================================
+  // ==  UI & DATA HANDLING LOGIC                                     ==
+  // ===================================================================
+
+  /**
+   * Calculates the sun's elevation based on time and location.
+   */
+  function calculateSolarElevation() {
+    const now = new Date();
+    const dayOfYear = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
+    const hour = now.getHours() + now.getMinutes() / 60;
+    const declination = 23.45 * Math.sin((360 * (284 + dayOfYear) / 365) * Math.PI / 180);
+    const hourAngle = 15 * (hour - 12);
+    const latRad = lat * Math.PI / 180;
+    const declinationRad = declination * Math.PI / 180;
+    const hourAngleRad = hourAngle * Math.PI / 180;
+    return Math.asin(Math.sin(latRad) * Math.sin(declinationRad) + Math.cos(latRad) * Math.cos(declinationRad) * Math.cos(hourAngleRad));
+  }
+
+  /**
+   * Calls the renderer and updates the DOM.
+   */
+  function updateSkyBar() {
+    const elevation = calculateSolarElevation(); // in radians
+    const sunAngle = elevation * 180 / Math.PI; // in degrees for text display
+    
+    currentGradient = renderPhysicalSkyGradient(elevation);
+    skyBar.style.background = currentGradient;
+
+    const angleText = sunAngle >= 0 ? `${sunAngle.toFixed(1)}°` : `${Math.abs(sunAngle).toFixed(1)}° below`;
+    skyNote.textContent = `Theoretically, the sky should look like this with the sun at ${angleText} the horizon.`;
+    skyBar.style.display = 'block';
+    skyNote.style.display = 'block';
+  }
+
+  /**
+   * Updates the weather text in the DOM.
+   */
+  function updateWeatherUI(data) {
     const [cond, tempC, hum, wind, moon] = data.split("|");
-    const tempValue = tempC.replace('°C', '').replace('+', '');
+    const tempValue = tempC.replace(/[^\d-]/g, '');
     const windSpeed = wind.replace(/[^\d.]/g, '');
-    const moonDesc = map[moon] || `The moon phase tonight is ${moon}.`;
-    
-    el.innerHTML = `Here it's <strong>${cond.toLowerCase()}</strong> with a temperature of 🌡️ <strong>${tempValue}°C</strong>. The humidity is 🌫️<strong>${hum}</strong>, and the wind is blowing at 💨<strong>${windSpeed} km/h</strong>. ${moonDesc}`;
-    
-    updateSkyBar();
-  } catch (e) {
-    el.textContent = 'Weather data unavailable';
+    const moonDesc = moonMap[moon] || `The moon phase tonight is ${moon}.`;
+    weatherEl.innerHTML = `Here it's <strong>${cond.toLowerCase()}</strong> with a temperature of 🌡️ <strong>${tempValue}°C</strong>. The humidity is 🌫️<strong>${hum}</strong>, and the wind is blowing at 💨<strong>${windSpeed} km/h</strong>. ${moonDesc}`;
   }
-}
 
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', fetchWeather);
-} else {
-  fetchWeather();
-}
+  /**
+   * Fetches weather data, using a cache to improve performance.
+   */
+  async function fetchWeather() {
+    try {
+      const cachedItem = localStorage.getItem(CACHE_KEY);
+      if (cachedItem) {
+        const { data, timestamp } = JSON.parse(cachedItem);
+        if ((new Date() - new Date(timestamp)) < CACHE_DURATION_MINUTES * 60 * 1000) {
+          updateWeatherUI(data);
+          return;
+        }
+      }
+    } catch (e) { console.warn("Could not read weather cache.", e); }
+    
+    weatherEl.innerHTML = '<i>Fetching latest weather...</i>';
+    try {
+      const res = await fetch(`https://wttr.in/${location}?format=%C|%t|%h|%w|%m`);
+      if (!res.ok) throw new Error(`Fetch failed with status ${res.status}`);
+      const data = await res.text();
+      updateWeatherUI(data);
+      localStorage.setItem(CACHE_KEY, JSON.stringify({ data: data, timestamp: new Date().toISOString() }));
+    } catch (e) {
+      console.error("Weather fetch failed:", e);
+      weatherEl.textContent = 'Weather data unavailable.';
+    }
+  }
+  
+  /**
+   * Handles the "copy to clipboard" functionality.
+   */
+  copyBtn.addEventListener('click', async (e) => {
+    e.stopPropagation();
+    try {
+      await navigator.clipboard.writeText(`background: ${currentGradient};`);
+      const feedback = document.createElement('div');
+      feedback.className = 'copy-feedback';
+      feedback.textContent = 'Copied!';
+      skyBar.appendChild(feedback);
+      setTimeout(() => feedback.classList.add('show'), 10);
+      setTimeout(() => {
+        feedback.classList.remove('show');
+        setTimeout(() => skyBar.removeChild(feedback), 300);
+      }, 1500);
+    } catch (err) { console.error('Failed to copy:', err); }
+  });
+
+  /**
+   * Main function to orchestrate the updates.
+   */
+  function run() {
+    if (!weatherEl) return;
+    // 1. Update the sky bar immediately. This is the new intensive part.
+    updateSkyBar();
+    // 2. Fetch the weather data (uses cache).
+    fetchWeather();
+  }
+
+  // --- Start Execution ---
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run);
+  } else {
+    run();
+  }
+})();
 </script>
