@@ -1,0 +1,192 @@
+<div class="weather-sky-section">
+  <div><span id="temperature">Loading...</span></div>
+  
+  <div id="sky-bar" class="sky-accent-bar">
+    <button id="copy-gradient" class="copy-btn" title="Copy gradient CSS">📋</button>
+  </div>
+  <p id="sky-note" class="sky-note">Theoretically, the sky outside my window should look like this with the sun at -- above the horizon</p>
+</div>
+
+<style>
+.weather-sky-section {
+  margin: 1.5rem 0;
+}
+
+.sky-accent-bar {
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  margin: 1rem 0 0.5rem 0;
+  transition: background 2s ease-in-out;
+  background: #ccc;
+  position: relative;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-size: 10px;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.sky-accent-bar:hover .copy-btn {
+  opacity: 1;
+}
+
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.copy-btn:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.sky-note {
+  font-size: 0.75rem;
+  color: #888;
+  margin: 0.5rem 0 0 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.copy-feedback {
+  position: absolute;
+  right: 8px;
+  top: -25px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.copy-feedback.show {
+  opacity: 1;
+}
+</style>
+
+<script async>
+const el = document.getElementById("temperature");
+const skyBar = document.getElementById("sky-bar");
+const skyNote = document.getElementById("sky-note");
+const copyBtn = document.getElementById("copy-gradient");
+
+let currentGradient = '';
+
+function getLocation() {
+  return "{{ .Get "location" | default .Site.Params.CurrentLocation | urlize }}";
+}
+const loc = getLocation();
+
+const lat = {{ .Get "lat" }};
+const lng = {{ .Get "lng" }};
+
+const map = {
+  "🌑": "It's a new moon 🌑, so the sky will be dark tonight.",
+  "🌒": "At night, a sliver of the moon is visible 🌒.",
+  "🌓": "At night, half of the moon is visible 🌓.",
+  "🌔": "At night, the moon is almost full 🌔.",
+  "🌕": "It's a full moon 🌕, illuminating the night sky.",
+  "🌖": "The moon is starting to wane 🌖, but still mostly visible.",
+  "🌗": "At night, half of the moon is visible 🌗.",
+  "🌘": "A small crescent of the moon is visible tonight 🌘."
+};
+
+function calculateSolarElevation() {
+  const now = new Date();
+  const dayOfYear = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
+  const hour = now.getHours() + now.getMinutes() / 60;
+  const declination = 23.45 * Math.sin((360 * (284 + dayOfYear) / 365) * Math.PI / 180);
+  const hourAngle = 15 * (hour - 12);
+  
+  return Math.asin(
+    Math.sin(declination * Math.PI / 180) * Math.sin(lat * Math.PI / 180) +
+    Math.cos(declination * Math.PI / 180) * Math.cos(lat * Math.PI / 180) * Math.cos(hourAngle * Math.PI / 180)
+  );
+}
+
+function updateSkyBar() {
+  if (!skyBar) return;
+  
+  const elevation = calculateSolarElevation();
+  const sunAngle = elevation * 180 / Math.PI;
+  
+  let colors;
+  if (sunAngle > 15) {
+    colors = ['#78A8D8', '#A8C8E8', '#D8E8F8'];
+  } else if (sunAngle > -6) {
+    colors = ['#FF8C42', '#FFB347', '#FFA07A'];
+  } else {
+    colors = ['#2C3E50', '#34495E', '#5D6D7E'];
+  }
+  
+  currentGradient = `linear-gradient(to right, ${colors[0]}, ${colors[1]}, ${colors[2]})`;
+  skyBar.style.background = currentGradient;
+  
+  // Update the text with actual sun angle
+  const angleText = sunAngle > 0 ? `${sunAngle.toFixed(1)}°` : `${Math.abs(sunAngle).toFixed(1)}° below`;
+  skyNote.textContent = `Theoretically, the sky outside my window should look like this with the sun at ${angleText} the horizon`;
+}
+
+// Copy functionality
+copyBtn.addEventListener('click', async (e) => {
+  e.stopPropagation();
+  
+  try {
+    await navigator.clipboard.writeText(`background: ${currentGradient};`);
+    
+    // Show feedback
+    const feedback = document.createElement('div');
+    feedback.className = 'copy-feedback';
+    feedback.textContent = 'Copied!';
+    skyBar.appendChild(feedback);
+    
+    setTimeout(() => feedback.classList.add('show'), 10);
+    setTimeout(() => {
+      feedback.classList.remove('show');
+      setTimeout(() => skyBar.removeChild(feedback), 300);
+    }, 1500);
+    
+  } catch (err) {
+    console.error('Failed to copy:', err);
+  }
+});
+
+async function fetchWeather() {
+  if (!el) return;
+  
+  try {
+    const res = await fetch(`https://wttr.in/${loc}?format=%C|%t|%h|%w|%m`);
+    const data = await res.text();
+    const [cond, tempC, hum, wind, moon] = data.split("|");
+    const tempValue = tempC.replace('°C', '').replace('+', '');
+    const windSpeed = wind.replace(/[^\d.]/g, '');
+    const moonDesc = map[moon] || `The moon phase tonight is ${moon}.`;
+    
+    el.innerHTML = `Here it's <strong>${cond.toLowerCase()}</strong> with a temperature of 🌡️ <strong>${tempValue}°C</strong>. The humidity is 🌫️<strong>${hum}</strong>, and the wind is blowing at 💨<strong>${windSpeed} km/h</strong>. ${moonDesc}`;
+    
+    updateSkyBar();
+  } catch (e) {
+    el.textContent = 'Weather data unavailable';
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', fetchWeather);
+} else {
+  fetchWeather();
+}
+</script>
