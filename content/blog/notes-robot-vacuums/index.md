@@ -113,6 +113,8 @@ Another thought process I had was that since Dreame L10 models have the cleaning
 
 At the time of writing, it's been a day, so far things have been good. Too early for a review, but I shall post one soon and link it here\!
 
+(｡◕‿◕｡) [°-°] ヽ(°〇°)ﾉ
+
 ---
 **Special thanks to** [u/FarConcern2308](https://www.reddit.com/user/FarConcern2308/) for the  suggestions and being incredibly helpful in picking the right vacuum on [r/RobotVacuums!](https://www.reddit.com/r/RobotVacuums/)
 
