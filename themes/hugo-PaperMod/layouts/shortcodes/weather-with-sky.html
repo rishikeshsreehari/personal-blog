@@ -217,8 +217,10 @@
     currentGradient = renderPhysicalSkyGradient(elevation);
     skyBar.style.background = currentGradient;
 
-    const angleText = sunAngle >= 0 ? `${sunAngle.toFixed(1)}°` : `${Math.abs(sunAngle).toFixed(1)}° below`;
-    skyNote.textContent = `Theoretically, the sky should look like this with the sun at ${angleText} the horizon.`;
+    const angleText = sunAngle >= 0 
+  ? `${sunAngle.toFixed(1)}° above` 
+  : `${Math.abs(sunAngle).toFixed(1)}° below`;
+    skyNote.textContent = `The sky outside my window should theoretically look like this, with the sun ${angleText} the horizon.`;
     skyBar.style.display = 'block';
     skyNote.style.display = 'block';
   }
