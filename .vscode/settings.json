@@ -1,7 +1,7 @@
 {
-  "javascript.validate.enable": false,
-  "typescript.validate.enable": false,
   "files.associations": {
-    "*.html": "hugo"
-  }
+    "layouts/**/*.html": "html"
+  },
+  "javascript.validate.enable": false,
+  "typescript.validate.enable": false
 }
