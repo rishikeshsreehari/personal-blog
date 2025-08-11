@@ -12,6 +12,67 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.59.M.1108** (2025-08-11)
+
+#### **Additions**
+
+1. **added vscode settings**  
+   - *Commit:* [`6d3335ec`](https://github.com/rishikeshsreehari/personal-blog/commit/6d3335ec)  
+   - *Files:*  
+     1. [`.vscode/settings.json`](https://github.com/rishikeshsreehari/personal-blog/blob/main/.vscode/settings.json)
+
+2. **Added vscode settings to repo**  
+   - *Commit:* [`26f1f6f7`](https://github.com/rishikeshsreehari/personal-blog/commit/26f1f6f7)  
+   - *Files:*  
+     1. [`.gitignore`](https://github.com/rishikeshsreehari/personal-blog/blob/main/.gitignore)
+     2. [`.vscode/settings.json`](https://github.com/rishikeshsreehari/personal-blog/blob/main/.vscode/settings.json)
+
+
+#### **Updations**
+
+1. **Added emoticon to robovacc post**  
+   - *Commit:* [`165c50f4`](https://github.com/rishikeshsreehari/personal-blog/commit/165c50f4)  
+   - *Files:*  
+     1. [`content/blog/notes-robot-vacuums/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/notes-robot-vacuums/index.md)
+
+2. **Udpated easter emojis**  
+   - *Commit:* [`0a1369f2`](https://github.com/rishikeshsreehari/personal-blog/commit/0a1369f2)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+
+3. **updated now**  
+   - *Commit:* [`03dc8460`](https://github.com/rishikeshsreehari/personal-blog/commit/03dc8460)  
+   - *Files:*  
+     1. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+
+4. **Update gradient text**  
+   - *Commit:* [`c11e8296`](https://github.com/rishikeshsreehari/personal-blog/commit/c11e8296)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/weather-with-sky.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/weather-with-sky.html)
+
+5. **Added caching for weather and sky gradient**  
+   - *Commit:* [`a4af93bf`](https://github.com/rishikeshsreehari/personal-blog/commit/a4af93bf)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/weather-with-sky.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/weather-with-sky.html)
+
+6. **Rename shortcode**  
+   - *Commit:* [`094bca7f`](https://github.com/rishikeshsreehari/personal-blog/commit/094bca7f)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/current_weather.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/current_weather.html)
+
+7. **Added credits**  
+   - *Commit:* [`cff4a647`](https://github.com/rishikeshsreehari/personal-blog/commit/cff4a647)  
+   - *Files:*  
+     1. [`content/credits.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/credits.md)
+     2. [`themes/hugo-PaperMod/layouts/shortcodes/weather-with-sky.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/weather-with-sky.html)
+
+8. **Updated weather shortcode with gradient**  
+   - *Commit:* [`ed694da4`](https://github.com/rishikeshsreehari/personal-blog/commit/ed694da4)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/weather-with-sky.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/weather-with-sky.html)
+
+
+---
 ### **v24.58.U.2907** (2025-07-29)
 
 #### **Updations**
