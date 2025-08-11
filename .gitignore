@@ -4,8 +4,7 @@ public
 # Exclude Hugo build lock file
 .hugo_build.lock
 
-# Exclude VS Code configuration folder
-.vscode/
+
 
 env.sh
 .DS_Store
