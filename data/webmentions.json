@@ -10,6 +10,28 @@
         "photo": "",
         "url": ""
       },
+      "url": "https://thoughts.alessandrofv.com/p/3-file-over-app-the-philisophical",
+      "published": null,
+      "wm-received": "2025-08-12T11:19:41Z",
+      "wm-id": 1930657,
+      "wm-source": "https://thoughts.alessandrofv.com/p/3-file-over-app-the-philisophical",
+      "wm-target": "https://rishikeshs.com/file-over-app/",
+      "wm-protocol": "webmention",
+      "mention-of": "https://rishikeshs.com/file-over-app/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://thoughts.alessandrofv.com/p/3-file-over-app-the-philisophical"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
       "url": "https://portersmg.com/how-higher-order-thinking-future-proofs-business-leadership/",
       "published": null,
       "wm-received": "2025-08-04T13:02:27Z",
