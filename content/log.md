@@ -12,6 +12,35 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.60.M.1608** (2025-08-16)
+
+#### **Fixes**
+
+1. **Fix: Url encoding issue for Abu Dhabi**  
+   - *Commit:* [`11a87d55`](https://github.com/rishikeshsreehari/personal-blog/commit/11a87d55)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/weather-with-sky.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/weather-with-sky.html)
+
+2. **Fix: Scroll to top error fix**  
+   - *Commit:* [`3c85e555`](https://github.com/rishikeshsreehari/personal-blog/commit/3c85e555)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/partials/footer.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/footer.html)
+
+
+#### **Additions**
+
+1. **Add: Draft blog post**  
+   - *Commit:* [`5a303970`](https://github.com/rishikeshsreehari/personal-blog/commit/5a303970)  
+   - *Files:*  
+     1. [`content/blog/now-sky-gradient/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/now-sky-gradient/index.md)
+
+2. **Added eslint settings**  
+   - *Commit:* [`5f664196`](https://github.com/rishikeshsreehari/personal-blog/commit/5f664196)  
+   - *Files:*  
+     1. [`.vscode/settings.json`](https://github.com/rishikeshsreehari/personal-blog/blob/main/.vscode/settings.json)
+
+
+---
 ### **v24.59.M.1108** (2025-08-11)
 
 #### **Additions**
