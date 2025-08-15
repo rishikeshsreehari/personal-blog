@@ -60,8 +60,9 @@
 
 {{- if (not site.Params.disableScrollToTop) }}
 <script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
+var mybutton = document.getElementById("top-link");
+window.onscroll = function () {
+    if (mybutton) {  // Check if the element exists
         if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
             mybutton.style.visibility = "visible";
             mybutton.style.opacity = "1";
@@ -69,8 +70,8 @@
             mybutton.style.visibility = "hidden";
             mybutton.style.opacity = "0";
         }
-    };
-
+    }
+};
 </script>
 {{- end }}
 
