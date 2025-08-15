@@ -1,7 +1,6 @@
 {
-  "files.associations": {
-    "layouts/**/*.html": "html"
-  },
+  "eslint.enable": false,
   "javascript.validate.enable": false,
-  "typescript.validate.enable": false
+  "html.validate.scripts": false,
+  "html.suggest.html5": true
 }
