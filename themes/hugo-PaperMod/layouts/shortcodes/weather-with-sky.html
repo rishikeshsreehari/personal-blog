@@ -1,4 +1,3 @@
-
 <div class="weather-sky-section">
   <div><span id="temperature">Loading...</span></div>
   
@@ -30,8 +29,13 @@
   const skyNote = document.getElementById("sky-note");
   const copyBtn = document.getElementById("copy-gradient");
   const lat = {{ .Get "lat" }};
-  const location = "{{ .Get "location" | default .Site.Params.CurrentLocation | urlize }}";
-  
+  const locationRaw = "{{ .Get "location" }}";
+  const locationDefault = "{{ .Site.Params.CurrentLocation }}";
+  const location = (locationRaw || locationDefault || "Abu Dhabi").replace(/ /g, '+');
+  console.log('locationRaw:', locationRaw);
+  console.log('locationDefault:', locationDefault); 
+  console.log('final location:', location);
+
   // --- Caching Configuration ---
   const CACHE_KEY = `weather_cache_${location}`;
   const CACHE_DURATION_MINUTES = 15;
@@ -245,6 +249,7 @@
       if (cachedItem) {
         const { data, timestamp } = JSON.parse(cachedItem);
         if ((new Date() - new Date(timestamp)) < CACHE_DURATION_MINUTES * 60 * 1000) {
+          console.log('Using cached weather data:', data);
           updateWeatherUI(data);
           return;
         }
@@ -253,9 +258,11 @@
     
     weatherEl.innerHTML = '<i>Fetching latest weather...</i>';
     try {
+      console.log('Fetching from URL:', `https://wttr.in/${location}?format=%C|%t|%h|%w|%m`);
       const res = await fetch(`https://wttr.in/${location}?format=%C|%t|%h|%w|%m`);
       if (!res.ok) throw new Error(`Fetch failed with status ${res.status}`);
       const data = await res.text();
+      console.log('Weather data received:', data);
       updateWeatherUI(data);
       localStorage.setItem(CACHE_KEY, JSON.stringify({ data: data, timestamp: new Date().toISOString() }));
     } catch (e) {
