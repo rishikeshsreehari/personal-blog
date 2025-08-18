@@ -6,14 +6,14 @@ summary: single
 type: I run a perpetual puzzle on my blog. Solve it, get featured, chat with me. New puzzles when solved.
 disable_comments: true
 ShowReadingTime: false
-updated_on: 2025-06-21
+updated_on: 2025-08-18
 shorturl: puzzle
 ---
 
 #####  {{< updated_on >}}
 
 
-I love solving puzzles. In fact, one of my favorite bedtime routines is to solve [Wordle](https://www.nytimes.com/games/wordle/index.html) and [Connections](https://www.nytimes.com/games/connections) every day before I go to sleep. So, I had this idea the other day - why not run a puzzle that never ends? A perpetual puzzle that continues as long as I'm alive or able to update this website.
+I love solving puzzles. In fact, one of my favorite bedtime routines is to solve [Wordle](https://www.nytimes.com/games/wordle/index.html) and [Connections](https://www.nytimes.com/games/connections) every day before I go to sleep. So, I had this idea the other day - why not run a puzzle that never ends? A perpetual puzzle that continues as long as I'm alive or able to update this website. With the rise of AI, creating challenging puzzles has become harder, as AI can often solve them in seconds. I have used AI to help craft the poems and clues, but the core ideas are entirely original. The real fun comes from solving them without AI, so I trust you’ll enjoy the challenge on your own.
 
 **How it works:**
 - Only one puzzle is active at a time - it stays open until solved.  
@@ -28,9 +28,49 @@ I love solving puzzles. In fact, one of my favorite bedtime routines is to solve
 No specific rules, just figure out the word/thing/place/item. If 5 or more people request a clue for the current puzzle, I’ll provide one.
 
 
-*Note: Puzzles marked "Source: Self" are original. "Source: External" puzzles will have attribution once solved.*
+*Note: Puzzles marked "Source: Self" are original. "Source: External" puzzles will have attribution once solved.* 
 
 ---
+
+
+### Puzzle #3 - The Hidden City
+
+```
+In a hexagonal hall of lore,
+Where endless pages hide in store,
+A single word is yours to find,
+For patient minds and those inclined.
+
+The hall you seek bears my own name,
+Within its walls begins the game.
+
+Recall a friend whose memory stays,
+
+The Wall you seek comes from the month,
+Add its digits — you’ll see at once.
+
+Count the letters in the name,
+That number marks the shelf’s true claim.
+
+From a date of sorrow, mark the day,
+It guides the Volume you must survey.
+
+To reach the page where gibberish lies,
+The largest die will show the way,
+Square its count, then turn your eyes,
+See the hidden words emerge from the text.
+
+Among the letters, you shall see
+A city rise in quiet decree.
+From words of greatest strength and size,
+Its hidden glory waits your eyes.
+
+```
+Total Submissions: 0.   
+Clue requests: 0/5
+
+*Source: Self*
+
 
 
 ### Puzzle #2
@@ -46,10 +86,16 @@ P.S: I hate long URLs.
 
 ```
 
-Send your answers to puzzle[at]rishikeshs.com
+Solved by:
+- [Joshua Seigler](https://joshua.seigler.net/) on 22-06-2025.
+- Icarus on 05-08-2025
+- [Jeremy Rader](https://www.jeremyrader.com/) on 15-08-2025.
 
-Total Submissions: 0  
-Clue requests: 0/5
+Answer: {{< spoiler >}} The answer is 'Salvator Mundi'. The way to find the puzzle is to go to this page: r1l.in/find . The page shows a riddle that signals the user to check the source code, which gives a phrase that needs to be deciphered using a Caesar Cipher shifted by 7, depicting the 7 hills of Rome. {{< /spoiler >}}
+
+
+Total Submissions: 12  
+Clue requests: 1/5
 
 *Source: Self*
 
