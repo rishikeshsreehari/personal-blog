@@ -6,13 +6,13 @@ summary: About Rishikesh Sreehari - What I do, How I see the world and why I wri
 type: page
 disable_comments: true
 ShowReadingTime: false
-updated_on: 2025-06-02
+updated_on: 2025-09-01
 shorturl: a
 
 ---
 #####  {{< updated_on >}}
 
-Hello! My name is [Rishikesh](/name).  
+My name is [Rishikesh](/name) (ഋഷികേശ്/ऋषिकेश).   
 My pronouns are [he/him/his](https://pronouns.within.lgbt/he/him/his/his/himself) and you can call me either Rishi (*ree-shee*) or Rishikesh (*ri-shee-kay-sh*).  
   
 I currently live in {{< currentlocation >}} with [my wife.](https://tibetanyeti.com/)
