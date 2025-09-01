@@ -10,3 +10,5 @@ env.sh
 .DS_Store
 
 resources/
+
+venv
