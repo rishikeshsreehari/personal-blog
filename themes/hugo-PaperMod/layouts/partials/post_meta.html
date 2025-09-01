@@ -1,31 +1,33 @@
 {{- $scratch := newScratch }}
-
 {{- if not .Date.IsZero -}}
-{{- $scratch.Add "meta" (slice (printf "<span title='%s'>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
+{{- $dateStr := .Date.Format "2006-01-02" }}
+{{- $malDates := site.Data.malayalam_calendar }}
+{{- $malDate := index $malDates $dateStr }}
+{{- if $malDate }}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s' class='date-container'><svg class='calendar-icon' viewBox='0 0 20 20' fill='currentColor'><path fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd'/></svg><time datetime='%s'>%s</time> <span class='bracket'>(</span><div class='info-tooltip'><span class='malayalam'>%s</span><div class='tooltip-text'>Date in the Malayalam calendar. <a href='https://en.wikipedia.org/wiki/Malayalam_calendar' target='_blank' rel='noopener'>Learn more</a></div></div><span class='bracket'>)</span></span>" (.Date) (.Date.Format "2006-01-02") (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)) $malDate)) }}
+{{- else }}
+{{- $scratch.Add "meta" (slice (printf "<span title='%s'><svg class='calendar-icon' viewBox='0 0 20 20' fill='currentColor'><path fill-rule='evenodd' d='M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z' clip-rule='evenodd'/></svg>%s</span>" (.Date) (.Date | time.Format (default "January 2, 2006" site.Params.DateFormat)))) }}
 {{- end }}
-
+{{- end }}
 {{- if (.Param "ShowReadingTime") -}}
-  {{- $readingTime := .ReadingTime }}
-  {{- $scratch.Add "meta" (slice (i18n "read_time" (dict "Count" $readingTime) | default (printf "⏱ %d min" $readingTime))) }}
+ {{- $readingTime := .ReadingTime }}
+ {{- $scratch.Add "meta" (slice (i18n "read_time" (dict "Count" $readingTime) | default (printf "<svg class='clock-icon' viewBox='0 0 20 20' fill='currentColor'><path fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.414-1.414L11 9.586V6z' clip-rule='evenodd'/></svg>%d min" $readingTime))) }}
 {{- end }}
-
 {{- if (.Param "location") -}}
-  {{- $location := .Param "location" }}
-  {{- $scratch.Add "meta" (slice (printf "📍 %s" $location)) }}
+ {{- $location := .Param "location" }}
+ {{- $scratch.Add "meta" (slice (printf "📍 %s" $location)) }}
 {{- end }}
-
 {{- if site.Params.enable_shortlinks }}
 {{- $currentURL := .RelPermalink }}
 {{- $baseShortURL := site.Params.shorturl | default "https://rishikeshs.com" }}
 {{- range site.Data.shorturl }}
  {{- if eq .content_url $currentURL }}
-   {{- $shortURL := printf "%s%s" $baseShortURL .short_url }}
-   {{- $displayURL := .short_url | strings.TrimPrefix "/" }}
-   {{- $scratch.Add "meta" (slice (printf "<a href='%s' class='short-url-link' onclick='navigator.clipboard.writeText(\"%s\");this.textContent=\"✓ copied\";setTimeout(()=>this.textContent=\"🔗r1l.in/%s\",2000);return false;' title='Copy short URL (or click to visit)'>🔗r1l.in/%s</a>" $shortURL $shortURL $displayURL $displayURL)) }}
+ {{- $shortURL := printf "%s%s" $baseShortURL .short_url }}
+ {{- $displayURL := .short_url | strings.TrimPrefix "/" }}
+ {{- $scratch.Add "meta" (slice (printf "<a href='%s' class='short-url-link' onclick='navigator.clipboard.writeText(\"%s\");this.textContent=\"✓ copied\";setTimeout(()=>this.textContent=\"🔗r1l.in/%s\",2000);return false;' title='Copy short URL (or click to visit)'>🔗r1l.in/%s</a>" $shortURL $shortURL $displayURL $displayURL)) }}
  {{- end }}
 {{- end }}
 {{- end }}
-
 {{- with ($scratch.Get "meta") }}
-  {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+ {{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
 {{- end }}
