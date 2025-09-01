@@ -1,10 +1,97 @@
 {{ with .Page.Params.updated_on }}
-<div class="updated-on">
-    <p>Last updated on {{ . | time.Format "January 2, 2006" }}</p>
+{{ $dateStr := . | time.Format "2006-01-02" }}
+{{ $malDates := site.Data.malayalam_calendar }}
+{{ $malDate := index $malDates $dateStr }}
+<div class="updated-on-container">
+<span>Updated on</span>
+<time datetime="{{ . | time.Format "2006-01-02" }}">
+ {{ . | time.Format "Jan 2, 2006" }}
+</time>
+ {{ with $malDate }}
+<span class="separator">•</span>
+<div class="info-tooltip">
+<span class="malayalam">{{ . }}</span>
+<div class="tooltip-text">
+ Date in the Malayalam calendar.
+<a href="https://en.wikipedia.org/wiki/Malayalam_calendar" target="_blank" rel="noopener">Learn more</a>
 </div>
+</div>
+ {{ end }}
+</div>
+{{ end }}
 <style>
-.updated-on {
-    color: #555;
+.updated-on-container {
+display: flex;
+align-items: center;
+gap: 0.5rem;
+margin: 2rem 0 1rem;
+font-size: 0.875rem;
+color: #718096;
+}
+
+.updated-on-container time,
+.info-tooltip .malayalam {
+color: #4a5568;
+}
+
+.updated-on-container .separator {
+color: #cbd5e0;
+}
+
+.info-tooltip {
+position: relative;
+display: inline-block;
+}
+
+.info-tooltip .malayalam {
+cursor: help;
+border-bottom: 1px dotted #e2e8f0;
+padding-bottom: 1px;
+}
+
+.info-tooltip .tooltip-text {
+visibility: hidden;
+opacity: 0;
+width: 220px;
+background-color: #2d3748;
+color: #fff;
+text-align: left;
+border-radius: 6px;
+padding: 12px;
+position: absolute;
+z-index: 999;
+bottom: 130%;
+left: 50%;
+transform: translateX(-50%);
+transition: opacity 0.2s ease;
+font-size: 0.8rem;
+line-height: 1.4;
+box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.info-tooltip .tooltip-text::after {
+content: "";
+position: absolute;
+top: 100%;
+left: 50%;
+margin-left: -5px;
+border-width: 5px;
+border-style: solid;
+border-color: #2d3748 transparent transparent transparent;
+}
+
+.info-tooltip:hover .tooltip-text,
+.info-tooltip .tooltip-text:hover {
+visibility: visible;
+opacity: 1;
+}
+
+.info-tooltip .tooltip-text a {
+color: #90cdf4;
+text-decoration: none;
+}
+
+.info-tooltip .tooltip-text a:hover {
+text-decoration: underline;
 }
 </style>
-{{ end }}
