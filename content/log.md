@@ -12,6 +12,58 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.63.M.2710** (2025-10-27)
+
+#### **Additions**
+
+1. **Added new blog post as draft**  
+   - *Commit:* [`2ea4165f`](https://github.com/rishikeshsreehari/personal-blog/commit/2ea4165f)  
+   - *Files:*  
+     1. [`content/blog/a-piece-of-home/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/a-piece-of-home/index.md)
+     2. [`content/now.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/now.md)
+
+
+#### **Updations**
+
+1. **Udpated name with hindi and malayalam**  
+   - *Commit:* [`b0e49579`](https://github.com/rishikeshsreehari/personal-blog/commit/b0e49579)  
+   - *Files:*  
+     1. [`content/about.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/about.md)
+
+2. **Added malayalam date to post meta**  
+   - *Commit:* [`96270626`](https://github.com/rishikeshsreehari/personal-blog/commit/96270626)  
+   - *Files:*  
+     1. [`assets/css/extended/misc.css`](https://github.com/rishikeshsreehari/personal-blog/blob/main/assets/css/extended/misc.css)
+     2. [`themes/hugo-PaperMod/layouts/partials/post_meta.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/partials/post_meta.html)
+
+3. **Generated malayalam calendar from 2019 to 2026**  
+   - *Commit:* [`d801ba64`](https://github.com/rishikeshsreehari/personal-blog/commit/d801ba64)  
+   - *Files:*  
+     1. [`data/malayalam_calendar.json`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/malayalam_calendar.json)
+     2. [`scripts/generate_malayalam_calendar.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/generate_malayalam_calendar.py)
+
+4. **Added malayalam date to calendar**  
+   - *Commit:* [`485a726d`](https://github.com/rishikeshsreehari/personal-blog/commit/485a726d)  
+   - *Files:*  
+     1. [`themes/hugo-PaperMod/layouts/shortcodes/updated_on.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/updated_on.html)
+
+5. **Generated malayalam calendar mapping**  
+   - *Commit:* [`afe38767`](https://github.com/rishikeshsreehari/personal-blog/commit/afe38767)  
+   - *Files:*  
+     1. [`data/malayalam_calendar.json`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/malayalam_calendar.json)
+
+6. **Added script for generating malayalam calendar**  
+   - *Commit:* [`0e2bb888`](https://github.com/rishikeshsreehari/personal-blog/commit/0e2bb888)  
+   - *Files:*  
+     1. [`scripts/generate_malayalam_calendar.py`](https://github.com/rishikeshsreehari/personal-blog/blob/main/scripts/generate_malayalam_calendar.py)
+
+7. **added venv to gitignore**  
+   - *Commit:* [`a603e3c1`](https://github.com/rishikeshsreehari/personal-blog/commit/a603e3c1)  
+   - *Files:*  
+     1. [`.gitignore`](https://github.com/rishikeshsreehari/personal-blog/blob/main/.gitignore)
+
+
+---
 ### **v24.62.U.2608** (2025-08-26)
 
 #### **Updations**
