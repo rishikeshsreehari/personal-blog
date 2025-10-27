@@ -6,6 +6,28 @@
       "type": "entry",
       "author": {
         "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://nas.jeffmackinnon.com/wsl-and-g-drive.html",
+      "published": null,
+      "wm-received": "2025-10-27T13:56:08Z",
+      "wm-id": 1950208,
+      "wm-source": "https://nas.jeffmackinnon.com/wsl-and-g-drive.html",
+      "wm-target": "https://rishikeshs.com/til/google-drive-wsl/",
+      "wm-protocol": "webmention",
+      "mention-of": "https://rishikeshs.com/til/google-drive-wsl/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://nas.jeffmackinnon.com/wsl-and-g-drive.html"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
         "name": "Chi Se\u00f1ires",
         "photo": "https://avatars.webmention.io/chisenires.design/14edf3ad10985f1b35903c5bc7f8bec40fa5628f0e61aa1a4cebffb3abc1e2dd.jpg",
         "url": "https://chisenires.design"
