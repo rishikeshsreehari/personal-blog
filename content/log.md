@@ -12,6 +12,24 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.64.U.2910** (2025-10-29)
+
+#### **Updations**
+
+1. **Added draft posts**  
+   - *Commit:* [`f2273b36`](https://github.com/rishikeshsreehari/personal-blog/commit/f2273b36)  
+   - *Files:*  
+     1. [`content/blog/jordan-2025/Petra_Hike.gpx`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/jordan-2025/Petra_Hike.gpx)
+     2. [`content/blog/jordan-2025/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/jordan-2025/index.md)
+     3. [`content/blog/jordan-notes/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/jordan-notes/index.md)
+
+2. **Update goal**  
+   - *Commit:* [`e4d9b2eb`](https://github.com/rishikeshsreehari/personal-blog/commit/e4d9b2eb)  
+   - *Files:*  
+     1. [`data/goals.json`](https://github.com/rishikeshsreehari/personal-blog/blob/main/data/goals.json)
+
+
+---
 ### **v24.63.M.2710** (2025-10-27)
 
 #### **Additions**
