@@ -31,18 +31,35 @@ While I didn't know much about Jordan apart from Petra and Dead Sea, reading som
 
 We started from Abu Dhabi towards Amman on an Air Arabia flight. Nothing special, but weird part was even water was not free on flight. I'm not sure if it's a universal thing, but at least in India, they provide water in cups for free. We landed to slightly warm weather in Amman (better than Abu Dhabi's scorching summer!).
 
-There was a small section for people with Jordan Pass and they issued a visa on arrival. We proceeded to immigration. Immigration was smooth but the lady at the counter was skeptical probably due to the fact that I look quite different from my passport. She contacted her supervisor and I showed him my other IDs and all good to go.
-
+There was a small section for people with [Jordan Pass](https://jordanpass.jo) and they issued a visa on arrival. We proceeded to immigration. Immigration was smooth but the lady at the counter was skeptical probably due to the fact that I look quite different from my passport. She contacted her supervisor and I showed him my other IDs and all good to go.
 
 We saw currency exchanges at the airport, but found that the exchange rate was worse than what we got in Abu Dhabi at Lulu exchange. I wanted to take a local SIM and took Umniah SIM card. Not sure if it's the best based on reviews, but throughout my trip I never faced any issues. It cost me 10 JOD for 35 GB of data for 10 days along with 100 minutes of local call and 20 minutes international.
 
+{{< gallery caption="(Left to right) [1] Airbnb; [2] View from rooftop" >}}
+"1.webp","Airbnb"
+"2.webp","View from rooftop"
+{{< /gallery >}}
+
 Off towards exit and we checked the rates towards our Airbnb and found that the airport taxi was 5 JOD cheaper than what was showing on Careem/Uber. Taxi ride was smooth except the fact that the guy wanted us to hire him for the next couple of days to show around, usual tourist BS. Prices were ridiculous and we prefer to use public transport as much as possible.
-The Airbnb was super good, on top floor in a residential area, sadly there were no lifts. But the host had mentioned this before confirming. Went down to get some stuff like drinking water, snacks and some eggs for breakfast for the next couple of days. Communication was an issue with the shopkeeper, but sign language works. Also local shops take only cash.
+[The Airbnb](https://www.airbnb.ae/rooms/881586416282737133) was super good, on top floor in a residential area, sadly there were no lifts. But the host had mentioned this before confirming. Went down to get some stuff like drinking water, snacks and some eggs for breakfast for the next couple of days. Communication was an issue with the shopkeeper, but sign language works. Also local shops take only cash.
 
+Freshened up and went to the city for a [food tour](https://www.guruwalk.com/walks/39621-taste-amman-savor-food-tour) I had booked earlier. The guy had confirmed our availability and sent the starting location earlier. We reached 10 minutes late thanks to heavy traffic in downtown Amman at 7pm but the Careem ride was smooth.
 
-Freshened up and went to the city for a food tour I had booked earlier. The guy had confirmed our availability and sent the starting location earlier. We reached 10 minutes late thanks to heavy traffic in downtown Amman at 7pm but the Careem ride was smooth.
+{{< gallery caption="(Left to right) [1] Local Market; [2] People throwing teabags to roof for luck; [3]Vegetable market; [4] Spices shop; [5] Fermented dried yogurt called Jameed; [6] Molassess syrup; [7] Local tea; [8] Local textile shop; [9] Kunafah at Habibah; [10] Street art, [11] Ossamah's maqluba" >}}
+"3.webp","Local Market"
+"4.webp","People throwing teabags to roof for luck"
+"5.webp","Vegetable market"
+"6.webp","Spices shop"
+"7.webp","Fermented dried yogurt called Jameed"
+"8.webp","Molassess syrup"
+"9.webp","Local tea"
+"10.webp","Local textile shop"
+"11.webp","Kunafah at Habibah"
+"12.webp","Street art"
+"13.webp","Ossamah's maqluba"
+{{< /gallery >}}
 
-Ossamah took us around the city showing various spots, through small streets, souqs (markets), suggested great restaurants for falafel, makluba, mansaf and kunafah. I think Amman is known as city of steps, so if you are traveling, be ready to climb up and down a lot of steps. The trip ended in Rainbow Street, we grabbed some Petra beers and off to the guide's house for a nice dinner. The food was so yummy. We walked back to Rainbow Street, grabbed some more beer and went back to our Airbnb.
+[Ossamah](https://www.guruwalk.com/gurus/as2hk6ub1v8j6dn328al/Users/rishikesh/Downloads/Picflow) took us around the city showing various spots, through small streets, souqs (markets), suggested great restaurants for falafel, makluba, mansaf and kunafah. I think Amman is known as city of steps, so if you are traveling, be ready to climb up and down a lot of steps. The trip ended in Rainbow Street, we grabbed some Petra beers and off to the guide's house for a nice dinner. The food was so yummy. We walked back to Rainbow Street, grabbed some more beer and went back to our Airbnb.
 
 ## Day 2 - Amman City
 
@@ -97,7 +114,7 @@ Slowly walked back, a lady had pinky promised me to visit her stall on the way b
 
 {{< rawhtml >}}
 <div style="text-align: center;">
-  <iframe src="https://gpx.studio/embed?options=%7B%22token%22%3A%22pk.eyJ1IjoicmlzaGlrZXNocyIsImEiOiJjbTVvMTl1bnowZnRpMmtzNjB4dTQ5dmszIn0.1ohtpQh3dQN_f_vO_TAS2A%22%2C%22files%22%3A%5B%22https%3A%2F%2Fraw.githubusercontent.com%2Frishikeshsreehari%2Fpersonal-blog%2Frefs%2Fheads%2Fmain%2Fcontent%2Fblog%2Fjordan-2025%2FPetra_Hike.gpx%22%5D%2C%22elevation%22%3A%7B%22temp%22%3Atrue%7D%2C%22directionMarkers%22%3Atrue%2C%22theme%22%3A%22dark%22%7D"
+  <iframe src="https://gpx.studio/embed?options=%7B%22token%22%3A%22pk.eyJ1IjoicmlzaGlrZXNocyIsImEiOiJjbTVvMTl1bnowZnRpMmtzNjB4dTQ5dmszIn0.1ohtpQh3dQN_f_vO_TAS2A%22%2C%22files%22%3A%5B%22https%3A%2F%2Fraw.githubusercontent.com%2Frishikeshsreehari%2Fpersonal-blog%2F8a56310309159a76356e67c9d5d57608797fc4cc%2Fcontent%2Fblog%2Fjordan-2025%2FPetra_Hike.gpx%22%5D%7D#13.13/30.3273/35.4467/0.0/0"
    width="80%" 
     height="600px" 
     frameborder="0" 

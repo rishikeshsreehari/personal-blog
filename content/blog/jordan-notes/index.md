@@ -34,11 +34,11 @@ shorturl: jorn
 - food grows in jordan valley
 - good anchor point for price comparison is price of dead sea mud mask, which is 1 JOD
 - For dead sea, no need to book expensive hotels, buy day pass and visit
-- Bank of jordan has no fees
+- Jordan Kuwait Bank has no fees
 - Careem works better in Amman
 - City felt safe and comparatively clean
 - We didn;t see much indian expats, but some philipino people in workforce especially in hospitality
 - Personally feel like Amman can become a great digital nomad capital
 - Alcohol is very good
 - Petra is quite expensive and food is just average
-- 
+- People throwing teabags to roof for luck
