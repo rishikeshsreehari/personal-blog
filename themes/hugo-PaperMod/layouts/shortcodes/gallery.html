@@ -1,11 +1,14 @@
 <div class="gallery">
     {{ $images := split .Inner "\n" }}
     <div class="gallery-grid">
+        {{ $index := 0 }}
         {{ range $images }}
             {{ $item := findRE `"([^"]*)"` . }}
             {{ if ge (len $item) 2 }}
+                {{ $index = add $index 1 }}
                 <figure class="gallery-item">
                     <a href="{{ trim (index $item 0) `"` }}" class="lightbox">
+                        <span class="gallery-number">{{ $index }}</span>
                         <img 
                             src="{{ trim (index $item 0) `"` }}" 
                             alt="{{ trim (index $item 1) `"` }}"
