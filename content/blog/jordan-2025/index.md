@@ -63,6 +63,9 @@ Freshened up and went to the city for a [food tour](https://www.guruwalk.com/wal
 
 ## Day 2 - Amman City
 
+
+
+
 SStarted the day a bit late, had a couple of eggs and left the Airbnb by 12PM. Decided to visit the Amman Citadel early even though it is recommended to visit during sunset. Couple of guides approached us at the entrance, but decided against it. Entry was free since we had Jordan Pass. It was pretty hot, but manageable. Walked around the citadel, visited the museum and it was fun. It's sort of ruins but still you can imagine. Wanted to see the Hercules hand, but couldn't find it at first but eventually found it. Truly gives you a perspective of how big those statues were.
 
 The power of 4 boiled eggs was slightly diminishing and I was super hungry. Decided to go to Al-Quds which Ossamah had recommended. Decided to walk towards the restaurant since it was closer. On the way stumbled upon an art gallery by an artist called Mohammed Turky. Grabbed a small pastel art piece from him for 35 JOD for our home in Abu Dhabi. He packed it nicely and his studio was quite nice.
@@ -112,16 +115,7 @@ We both had a great night's sleep and woke up fresh. We had sort of a breakfast/
 
 Slowly walked back, a lady had pinky promised me to visit her stall on the way back. Visited her small shop, she offered tea and we sat down for a while. We were not interested in buying anything and we tipped her for the tea. Followed the trail back and rested for a bit at one of the restaurants while having coffee. For some reason we decided to take the High Place of Sacrifice trail from the backside (Qasr Al Bint). We didn't know this at that time but most people take this trail from the Treasury and walk down on the way we hiked up. Trail was not too tricky but a bit of a long walk up but beautiful sceneries throughout. There were very few shops and we were the only ones hiking up from this side. Reached the High Place of Sacrifice, the view was great, but yeah the place of sacrifice was a let down. But the monoliths were spectacular. Spent some time there, were offered some fossils, rocks and some coins by vendors. All except the rocks are fake. Walked down, reached the theatre area and met an Indian couple we had met earlier. Decided to walk with them to visit some more tombs, the church and some other places. Was pretty much tired by this point, having walked close to 18kms. Decided to take the shuttle to visitor centre and it's a 15 min walk from where we were. Got into the shuttle and they make a pitstop at a so-called heritage village filled with souvenir shops run by locals. 15 mins of waiting and we were back at the visitor centre.
 
-{{< rawhtml >}}
-<div style="text-align: center;">
-  <iframe src="https://gpx.studio/embed?options=%7B%22token%22%3A%22pk.eyJ1IjoicmlzaGlrZXNocyIsImEiOiJjbTVvMTl1bnowZnRpMmtzNjB4dTQ5dmszIn0.1ohtpQh3dQN_f_vO_TAS2A%22%2C%22files%22%3A%5B%22https%3A%2F%2Fraw.githubusercontent.com%2Frishikeshsreehari%2Fpersonal-blog%2F8a56310309159a76356e67c9d5d57608797fc4cc%2Fcontent%2Fblog%2Fjordan-2025%2FPetra_Hike.gpx%22%5D%7D#13.13/30.3273/35.4467/0.0/0"
-   width="80%" 
-    height="600px" 
-    frameborder="0" 
-    style="outline: none;">
-  </iframe>
-</div>
-{{< /rawhtml >}}
+{{< gpx-map file="Petra_Hike.gpx" height="600px" >}}
 
 
 
