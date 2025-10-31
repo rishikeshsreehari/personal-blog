@@ -193,6 +193,8 @@ mediaTypes:
     suffixes: ["xml"]
   text/markdown:
     suffixes: ["md"]
+  application/gpx+xml:
+    suffixes: ["gpx"]
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
@@ -209,6 +211,14 @@ markup:
   goldmark:
     renderer:
       unsafe: true # Added to allow raw HTML
+    parser:
+      attribute:
+        block: true
+
+cascade:
+  build:
+    list: always
+    publishResources: true
 
 taxonomies:
   tiltag: tiltags
