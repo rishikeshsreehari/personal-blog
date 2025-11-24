@@ -6,6 +6,30 @@
       "type": "entry",
       "author": {
         "type": "card",
+        "name": "martin_m_n_novy",
+        "photo": "https://avatars.webmention.io/styles.redditmedia.com/f2bf94406b5d666c2c972f18a25ff5cc0a11834903cf45d131b9bd0ee2694a80.jpg",
+        "url": "https://reddit.com/user/martin_m_n_novy/"
+      },
+      "url": "https://reddit.com/r/survival_of_our_info/comments/1p4wt4u/evergreen_blogs_rishikesh_sreehari/",
+      "published": "2025-11-23T20:18:56+00:00",
+      "wm-received": "2025-11-24T11:15:13Z",
+      "wm-id": 1955158,
+      "wm-source": "https://brid.gy/post/reddit/rishikeshshari/1p4wt4u",
+      "wm-target": "https://rishikeshs.com/journal/evergreen-blogs/",
+      "wm-protocol": "webmention",
+      "name": "Evergreen blogs | Rishikesh Sreehari",
+      "content": {
+        "html": "Bookmark: <a title=\"rishikeshs.com/journal/evergreen-blogs\" class=\"u-bookmark-of\" href=\"https://rishikeshs.com/journal/evergreen-blogs/\">rishikeshs.com/journal/evergr...</a>\n<a class=\"u-mention\" href=\"https://rishikeshs.com/journal/evergreen-blogs/\"></a>",
+        "text": "Bookmark: rishikeshs.com/journal/evergr..."
+      },
+      "bookmark-of": "https://rishikeshs.com/journal/evergreen-blogs/",
+      "wm-property": "bookmark-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
         "name": "",
         "photo": "",
         "url": ""
