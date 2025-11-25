@@ -12,6 +12,23 @@ All changes and commits to this blog are versioned using a structured format and
 
 
 <!--LOG_PLACEHOLDER_START-->
+### **v24.66.U.2511** (2025-11-25)
+
+#### **Updations**
+
+1. **Added gpx map to content**  
+   - *Commit:* [`f87d0d14`](https://github.com/rishikeshsreehari/personal-blog/commit/f87d0d14)  
+   - *Files:*  
+     1. [`content/blog/jordan-2025/index.md`](https://github.com/rishikeshsreehari/personal-blog/blob/main/content/blog/jordan-2025/index.md)
+
+2. **Added new gpx map component**  
+   - *Commit:* [`ed4a2937`](https://github.com/rishikeshsreehari/personal-blog/commit/ed4a2937)  
+   - *Files:*  
+     1. [`config.yml`](https://github.com/rishikeshsreehari/personal-blog/blob/main/config.yml)
+     2. [`themes/hugo-PaperMod/layouts/shortcodes/gpx-map.html`](https://github.com/rishikeshsreehari/personal-blog/blob/main/themes/hugo-PaperMod/layouts/shortcodes/gpx-map.html)
+
+
+---
 ### **v24.65.U.3110** (2025-10-31)
 
 #### **Updations**
