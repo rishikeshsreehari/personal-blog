@@ -6,6 +6,25 @@
       "type": "entry",
       "author": {
         "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://linksfor.dev/2025/05/30/",
+      "published": null,
+      "wm-received": "2025-12-10T14:52:37Z",
+      "wm-id": 1958798,
+      "wm-source": "https://linksfor.dev/2025/05/30/",
+      "wm-target": "https://rishikeshs.com/fan-regulator/",
+      "wm-protocol": "webmention",
+      "mention-of": "https://rishikeshs.com/fan-regulator/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
         "name": "martin_m_n_novy",
         "photo": "https://avatars.webmention.io/styles.redditmedia.com/f2bf94406b5d666c2c972f18a25ff5cc0a11834903cf45d131b9bd0ee2694a80.jpg",
         "url": "https://reddit.com/user/martin_m_n_novy/"
