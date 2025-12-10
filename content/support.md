@@ -14,9 +14,9 @@ If you have reached so far in my blog and you are reading this, first of all, I'
 
 I also accept cryptocurrency donations at the following addresses:
 
-- **Bitcoin (BTC):** `14SXDGhFWiHToVSpxYuLVW5tSnESiqFjd2`  
-- **Ethereum (ETH):** `0x38f924efad4395708c113c43593de0d5fa1a1e6d`  
-- **Solana (SOL):** `7xxg9ah3kJ4sZ2RnYp3KMNuVmYKWKcryptKn5bQU2Uge`  
+- **Bitcoin (BTC):** `bc1qfqz8h4ehmlnyk0xknkwal7wtp77l83nknmjwjk`  
+- **Ethereum (ETH):** `0x072492A59799e3CA3ed14236d6AB46d47422176c`  
+- **Solana (SOL):** `BbL1Gw622fDSiBRRRtb3SeSPX5TAPskBE6Ny1f5NDyGQ`  
 
 If you can't support me monetarily, [join my newsletter](https://newsletter.rishikeshs.com/) and that will mean a lot to me.
 
