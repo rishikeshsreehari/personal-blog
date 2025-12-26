@@ -10,6 +10,25 @@
         "photo": "",
         "url": ""
       },
+      "url": "https://sizeof.cat/ca/page/16/",
+      "published": null,
+      "wm-received": "2025-12-26T07:39:10Z",
+      "wm-id": 1962121,
+      "wm-source": "https://sizeof.cat/ca/page/16/",
+      "wm-target": "https://rishikeshs.com/man-from-the-future/",
+      "wm-protocol": "webmention",
+      "mention-of": "https://rishikeshs.com/man-from-the-future/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
       "url": "https://linksfor.dev/2025/05/30/",
       "published": null,
       "wm-received": "2025-12-10T14:52:37Z",
