@@ -17,6 +17,7 @@ I also accept cryptocurrency donations at the following addresses:
 - **Bitcoin (BTC):** `bc1qfqz8h4ehmlnyk0xknkwal7wtp77l83nknmjwjk`  
 - **Ethereum (ETH):** `0x072492A59799e3CA3ed14236d6AB46d47422176c`  
 - **Solana (SOL):** `BbL1Gw622fDSiBRRRtb3SeSPX5TAPskBE6Ny1f5NDyGQ`  
+- **Monero (XMR):** `xmr.rishikeshs.com`[^xmr]
 
 If you can't support me monetarily, [join my newsletter](https://newsletter.rishikeshs.com/) and that will mean a lot to me.
 
@@ -27,3 +28,7 @@ I also donate a portion of my earnings to the following charities, and you can s
 - [Internet Archive](https://archive.org/donate)
 - [Anna's Archive](https://annas-archive.gs/donate)
 - [MESH India](https://meshindia.org)
+
+
+[^xmr]: OpenAlias is a human-readable Monero address. You can paste it into a Monero wallet (instead of a long address), and the wallet will resolve and display the actual address before you confirm the transaction.
+
