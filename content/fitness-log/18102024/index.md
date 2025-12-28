@@ -3,7 +3,6 @@ title: "The Porotta Regret"
 type: page
 date: 2024-10-18
 url: "/fitness-log/2/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

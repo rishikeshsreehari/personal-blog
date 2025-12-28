@@ -11,16 +11,13 @@ cover:
   caption: "A look at the method of managing and evaluating your calendar based on your energy levels."
   relative: true
 featured_image: energy-calendar.webp
-
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "energy calendar"
   - "sahil bloom energy calendar"
   - "manage time"
   - "calendar productivity"
-weight: 1
-hiddenInHomeList: true
+
 ---
 {{< dropcap >}}
   I prefer to have a schedule of things in my calendar so that I have an idea of what to focus on during a particular day. During weekends, I try to plan my upcoming week in advance using Google Calendar. I’ve tried multiple calendar apps in the past, but have reverted back to Google Calendar because it is simple, free, and syncs flawlessly across all my devices. I was looking for a way to track how I feel during the day and came across this method of color-coding calendar events by Sahil Bloom. He recently named it the ['Energy Calendar'](https://twitter.com/SahilBloom/status/1542867629047746561), a method where you color-code a particular event in your calendar based on how you feel. By looking at the color patterns in your calendar, you can get a holistic view of your day and prioritize tasks that are less daunting.

@@ -15,7 +15,6 @@ keywords:
   - "randonneuring"
   - "cycling"
   - "brevets"
-weight: 1
 hiddenInHomeList: true
 ---
 {{< dropcap >}}

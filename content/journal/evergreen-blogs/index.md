@@ -3,7 +3,6 @@ title: "Evergreen blogs"
 type: page
 date: 2024-10-11
 url: "/journal/evergreen-blogs/"
-type: page
 disable_comments: false
 ShowReadingTime: true
 location: Abu Dhabi, UAE

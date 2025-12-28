@@ -3,7 +3,6 @@ title: "I'm Running Again"
 type: page
 date: 2024-11-01
 url: "/fitness-log/16/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

@@ -11,14 +11,11 @@ cover:
   caption: "This article looks at the concept of curator economy, why it is important and its present state in the age of information overload."
   relative: true
 featured_image: curate-economy.webp
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "curator economy"
   - "content curators"
   - "information overload"
-weight: 1
-hiddenInHomeList: true
 
 ---
 

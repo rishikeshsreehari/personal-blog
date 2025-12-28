@@ -15,7 +15,6 @@ keywords:
   - "theory"
   - "framework"
   - "idea"
-weight: 1
 hiddenInHomeList: true
 draft: false
 

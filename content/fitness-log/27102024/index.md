@@ -3,7 +3,6 @@ title: "Rib-Eye, Rest, and Regret"
 type: page
 date: 2024-10-27
 url: "/fitness-log/11/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

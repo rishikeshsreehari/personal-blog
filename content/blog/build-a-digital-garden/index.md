@@ -12,15 +12,12 @@ cover:
   relative: true
 featured_image: digital-garden.webp
 
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "digital garden"
   - "hugo digital garden"
   - "hugo blog"
   - "build digital garden"
-weight: 1
-hiddenInHomeList: true
 
 ---
 

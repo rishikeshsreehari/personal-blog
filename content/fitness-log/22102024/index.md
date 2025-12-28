@@ -3,7 +3,6 @@ title: "Bench Press, Wrist Mess, and Protein Excess"
 type: page
 date: 2024-10-22
 url: "/fitness-log/6/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

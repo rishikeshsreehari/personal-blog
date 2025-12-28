@@ -13,7 +13,6 @@ keywords:
  - "wttr.in"
  - "weather visualization"
  - "atmospheric scattering"
-weight: 1
 hiddenInHomeList: false
 cover:
   image: "sky-gradient-demo.webp"

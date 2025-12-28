@@ -3,7 +3,6 @@ title: "Nothing happened today"
 type: page
 date: 2024-10-28
 url: "/fitness-log/12/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

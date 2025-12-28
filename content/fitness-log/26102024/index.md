@@ -3,7 +3,6 @@ title: "The Protein Revenge"
 type: page
 date: 2024-10-26
 url: "/fitness-log/10/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

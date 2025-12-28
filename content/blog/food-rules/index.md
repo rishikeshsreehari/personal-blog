@@ -12,15 +12,12 @@ cover:
   relative: true
 featured_image: food-rules.webp
 
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "food rules book"
   - "michael pollan book"
   - "food rules book highlights"
   - "food rules book review"
-weight: 1
-hiddenInHomeList: true
 ---
 {{< dropcap >}}
 [Food Rules: An Eater’s Manual](https://geni.us/rsh-food-rules) is a tiny book by [Michael Pollan](https://michaelpollan.com/). I came to know about the book from [Derek Siver’s website](https://sive.rs/2do) and thought of reading this. The book distills Pollan’s wisdom of food and diet into 64 simple rules for eating healthily and happily. The book is small and I finished it in less than an hour. Many ideas discussed in the book might already be known to you. The basic idea of the book is “eat what your grandmother or your ancestors would recognize as food.” The book is divided into three parts: What should I eat?, What kind of food should I eat?, and How should I eat? Pollan does not discourage us from eating something unhealthy once in a while but suggests avoiding processed food as much as possible. The whole book can be distilled into seven words:

@@ -3,7 +3,6 @@ title: "The Hangover Story"
 type: page
 date: 2024-10-21
 url: "/fitness-log/5/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

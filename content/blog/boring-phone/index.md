@@ -12,15 +12,12 @@ cover:
   relative: true
 featured_image: boring-phone.webp
 
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "boring phone"
   - "smartphone addiction"
   - "social media addiction"
   - "social media detox"
-weight: 1
-hiddenInHomeList: true
 
 ---
 {{< dropcap >}}

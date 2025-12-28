@@ -15,7 +15,6 @@ keywords:
   - "thought experiment"
   - "philosophy"
   - "future technology"
-weight: 1
 hiddenInHomeList: true
 
 

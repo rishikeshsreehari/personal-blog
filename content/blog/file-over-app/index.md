@@ -16,7 +16,6 @@ keywords:
   - "file over app"
   - "plain text files"
   - "digital longevity"
-weight: 1
 hiddenInHomeList: true
 draft: false
 enableWebmentions: false

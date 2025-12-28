@@ -8,7 +8,6 @@ url: /2023-plan/
 keywords:
   - "2023 plan"
   - "life review"
-weight: 1
 hiddenInHomeList: true
 shorturl: 2023
 

@@ -3,7 +3,6 @@ title: "Beef Feast & Zero Movement"
 type: page
 date: 2024-10-23
 url: "/fitness-log/7/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

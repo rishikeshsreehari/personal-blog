@@ -17,7 +17,6 @@ keywords:
   - "blog changelog"
   - "version control for blog"
   - "changelog for blogs"
-weight: 1
 hiddenInHomeList: true
 draft: false
 

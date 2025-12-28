@@ -9,7 +9,6 @@ keywords:
   - "12 hour walk"
   - "life lessons"
 
-weight: 1
 hiddenInHomeList: true
 
 cover:

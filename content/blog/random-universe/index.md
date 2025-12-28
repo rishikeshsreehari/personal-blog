@@ -8,7 +8,6 @@ keywords:
   - "random universe"
   - "chaos"
   - "black swan"
-weight: 1
 hiddenInHomeList: true
 
 cover:

@@ -3,7 +3,6 @@ title: "Gym Rip-Off, Biryani Bust & Manchurian Fail"
 type: page
 date: 2024-10-31
 url: "/fitness-log/15/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

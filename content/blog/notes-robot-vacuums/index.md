@@ -11,7 +11,6 @@ keywords:
   - "xiaomi"
   - "dreame"
   - "buying guide"
-weight: 1
 hiddenInHomeList: true
 
 cover:

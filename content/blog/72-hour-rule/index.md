@@ -13,15 +13,12 @@ cover:
   relative: true
 featured_image: 72-hour-rule.webp
 
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "72 hour rule"
   - "productivity"
   - "impulse buying"
 
-weight: 1
-hiddenInHomeList: true
 
 ---
 {{< dropcap >}}

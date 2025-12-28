@@ -15,7 +15,6 @@ keywords:
   - "small web"
   - "blog art"
   - "personal website"
-weight: 1
 hiddenInHomeList: true
 draft: false
 

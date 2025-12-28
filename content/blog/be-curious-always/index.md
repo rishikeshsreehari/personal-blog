@@ -8,7 +8,6 @@ keywords:
   - "curiosity"
   - "indieweb carnival"
   - "small web"
-weight: 1
 hiddenInHomeList: true
 
 cover:

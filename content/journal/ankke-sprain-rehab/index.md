@@ -3,7 +3,6 @@ title: "Ankle Sprain, Rehab and RICE"
 type: page
 date: 2024-10-07
 url: "/journal/ankle-sprain/"
-type: page
 disable_comments: false
 ShowReadingTime: true
 location: Abu Dhabi, UAE

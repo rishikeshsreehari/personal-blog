@@ -3,7 +3,6 @@ title: "Wrist Woes and King Fish"
 type: page
 date: 2024-10-29
 url: "/fitness-log/13/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

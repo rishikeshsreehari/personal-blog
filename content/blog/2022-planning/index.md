@@ -8,7 +8,6 @@ url: /2022-planning/
 keywords:
   - "2022 plan"
   - "life review"
-weight: 1
 hiddenInHomeList: true
 shorturl: 2022
 ---

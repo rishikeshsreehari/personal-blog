@@ -14,15 +14,12 @@ cover:
 featured_image: ovarian-lottery.webp
 
 
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "ovarian lottery"
   - "thought experiment"
   - "learning"
   - "Warren Buffet"
-weight: 1
-hiddenInHomeList: true
 ---
 
 {{< dropcap >}}

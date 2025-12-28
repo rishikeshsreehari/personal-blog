@@ -3,7 +3,6 @@ title: "Protein Overload & Musical Feast"
 type: page
 date: 2024-11-02
 url: "/fitness-log/17/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

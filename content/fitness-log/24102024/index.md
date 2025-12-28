@@ -3,7 +3,6 @@ title: "Gobi Manchurian went wrong"
 type: page
 date: 2024-10-24
 url: "/fitness-log/8/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

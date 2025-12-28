@@ -12,15 +12,12 @@ cover:
   relative: true
 featured_image: ikea-effect.webp
 
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "ikea effect"
   - "bias"
   - "ikea psychology"
 
-weight: 1
-hiddenInHomeList: true
 
 ---
 {{< dropcap >}}

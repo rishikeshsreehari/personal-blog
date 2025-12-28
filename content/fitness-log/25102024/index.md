@@ -3,7 +3,6 @@ title: "The Carb(&Fat) Overload"
 type: page
 date: 2024-10-25
 url: "/fitness-log/9/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

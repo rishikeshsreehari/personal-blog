@@ -3,7 +3,6 @@ title: "Chicken, Chaat and Beach"
 type: page
 date: 2024-10-19
 url: "/fitness-log/3/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

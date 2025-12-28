@@ -11,15 +11,12 @@ cover:
   relative: true
 featured_image: readwise-review.webp
 
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "readwise review"
   - "readwise"
   - "remember what you read"
   - "book highlights"
-weight: 1
-hiddenInHomeList: true
 
 
 ---

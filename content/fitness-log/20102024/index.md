@@ -3,7 +3,6 @@ title: "Happy Hour and lots of Beer"
 type: page
 date: 2024-10-20
 url: "/fitness-log/4/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

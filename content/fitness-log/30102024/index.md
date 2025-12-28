@@ -3,7 +3,6 @@ title: "Newsletter Hustle and Chicken Dinner"
 type: page
 date: 2024-10-30
 url: "/fitness-log/14/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 draft: false

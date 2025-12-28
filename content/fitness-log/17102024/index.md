@@ -3,7 +3,6 @@ title: "I walked a lot, then ate a lot of Rice"
 type: page
 date: 2024-10-17
 url: "/fitness-log/1/"
-type: page
 disable_comments: true
 ShowReadingTime: false
 location: Abu Dhabi, UAE

@@ -12,15 +12,12 @@ cover:
 
   relative: true
 featured_image: delta-4-theory.webp
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "delta 4 theory"
   - "Kunal Shah"
   - "Evalate Startup Idea"
   - "Validate startup idea"
-weight: 1
-hiddenInHomeList: true
 ---
 {{< dropcap >}}
 

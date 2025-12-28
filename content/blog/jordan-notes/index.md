@@ -6,7 +6,6 @@ description: ""
 url: /jordan-notes/
 keywords:
 draft: true
-weight: 1
 hiddenInHomeList: true
 
 cover:

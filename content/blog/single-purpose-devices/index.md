@@ -12,15 +12,12 @@ cover:
   relative: true
 featured_image: single-purpose-devices.webp
 
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "productivity"
   - "phone addiction"
   - "single purpose devices"
 
-weight: 1
-hiddenInHomeList: true
 ---
 
 {{< dropcap >}}

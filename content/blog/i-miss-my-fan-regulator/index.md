@@ -8,7 +8,6 @@ keywords:
   - "fan regulator"
   - "bldc regulator"
   - "old tech"
-weight: 1
 hiddenInHomeList: true
 
 cover:

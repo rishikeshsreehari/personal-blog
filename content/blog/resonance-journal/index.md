@@ -12,7 +12,6 @@ cover:
   relative: true
 featured_image: resonance-journal.webp
 
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "resonance journal"
@@ -20,8 +19,6 @@ keywords:
   - "ali abdaal"
   - "ali abdaal journal"
   - "journaling"
-weight: 1
-hiddenInHomeList: true
 
 ---
 

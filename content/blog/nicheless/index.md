@@ -16,7 +16,6 @@ keywords:
   - "blog art"
   - "personal website"
   - "nichelss"
-weight: 1
 hiddenInHomeList: true
 draft: false
 

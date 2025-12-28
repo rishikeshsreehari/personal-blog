@@ -8,7 +8,6 @@ url: /2025/
 keywords:
   - "2025 plan"
   - "life review"
-weight: 1
 hiddenInHomeList: true
 shorturl: 2025
 

@@ -8,7 +8,6 @@ keywords:
   - "hobby"
   - "indieweb carnival"
   - "small web"
-weight: 1
 hiddenInHomeList: true
 
 cover:

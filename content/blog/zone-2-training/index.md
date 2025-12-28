@@ -12,7 +12,6 @@ cover:
   relative: true
 featured_image: zone-2-training.webp
 
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "zone 2 training"
@@ -20,8 +19,6 @@ keywords:
   - "zone 2"
   - "heart rate based training"
   - "endurance"
-weight: 1
-hiddenInHomeList: true
 
 ---
 

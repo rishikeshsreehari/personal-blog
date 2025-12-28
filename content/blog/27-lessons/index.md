@@ -10,7 +10,6 @@ keywords:
   - "life lessons"
   - "birthday lessons"
 
-weight: 1
 hiddenInHomeList: true
 
 ---

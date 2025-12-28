@@ -11,14 +11,11 @@ cover:
   caption: "Behind the scenes of how I curate my newsletter. A look into the systems and processes behind publishing a weekly newsletter."
   relative: true
 featured_image: curate-newsletter.webp
-weight: 6
 hiddenInHomeList: true
 keywords:
   - "curate newsletter"
   - "newsletter curation"
   - "writing a newsletter"
-weight: 1
-hiddenInHomeList: true
 
 ---
 
