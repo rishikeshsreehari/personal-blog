@@ -133,11 +133,6 @@
   custom: false
   title: 'The IKEA Effect: Why DIY Products make us happier'
   content_type: blog
-- content_url: /jordan-2025/
-  short_url: /jor25
-  custom: true
-  title: 'Trip Report: Jordan, September 2025'
-  content_type: blog
 - content_url: /lessons-30-day-meditation-challenge/
   short_url: /071035
   custom: false
@@ -667,6 +662,11 @@
   short_url: /s
   custom: true
   title: Suport
+  content_type: page
+- content_url: /test-embeds/
+  short_url: /fc15b6
+  custom: false
+  title: iframe Embed Test
   content_type: page
 - content_url: /then/
   short_url: /f21e57
