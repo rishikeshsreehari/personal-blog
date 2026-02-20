@@ -30,7 +30,4 @@ Before you contact me, please ensure the following:
 
 
 
-
-
-
 {{< contactform >}}
