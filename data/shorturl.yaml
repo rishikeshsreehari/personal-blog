@@ -523,6 +523,11 @@
   custom: false
   title: What I'm Doing Now
   content_type: now-archive
+- content_url: /now-2026-03-18/
+  short_url: /b8640f
+  custom: false
+  title: What I'm Doing Now
+  content_type: now-archive
 - content_url: /now-archive/
   short_url: /6d6b07
   custom: false
