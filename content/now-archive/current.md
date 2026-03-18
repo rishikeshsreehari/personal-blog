@@ -10,28 +10,21 @@ draft: true
 
 
 
-
-
 ---
 
 ### 💭 What’s on My Mind?  
 
+My life, like many others in the Gulf, has a different rhythm now. Emergency alerts have become a part of life and they don’t startle me anymore. Amidst all this, the city is still standing, the sun is still rising and life as usual finds a way to carry on.
 
-Most of my time now is spent working on [TrackMonk](https://trackmonk.app). If you're someone who is interested or has tried calorie tracking I would love to speak to you. So kindly reach out!
-
-Also, my latest obsession is Pakistani food, obsessed with the Payas and the oily food. Not the best for weight loss, but so yumm!
-
-It's peak summer, and cannot wait for Winter! Started my driving lessons and hopefully if everything goes well, I'll have better mobility this winter!
-
-
+I'm devoting most of my time working on small projects on the internet, trying to make some money!
 
 ---
 
 ### 🔨 What am I Doing?
 
-- Building [TrackMonk](https://trackmonk.app) !
+- Building [StackStats](https://stackstats.app), [TrackMonk](https://trackmonk.app) and [FormBeep](https://formbeep.com) !
 - [Currently looking for opportunities](/hire), I’m dedicating most of my time to job applications and exploring freelance opportunities.
-- In search of [1000 True Fans](https://kk.org/thetechnium/1000-true-fans/) by curating interesting stories at [10+1 Things](https://newsletter.rishikeshs.com/)!
+
 - Unnecessarily tweaking and over-engineering this blog! You can see the progress [here](/log).
 
 ---
@@ -45,8 +38,7 @@ It's peak summer, and cannot wait for Winter! Started my driving lessons and hop
 
 ### 📚 What Am I Reading?
 
--	[How to Do Nothing: Resisting the Attention Economy](https://geni.us/rs-how-nothing) by Jenny Odell
-
+-	[Obviously Awesome](https://geni.us/rs-obvioulsy) by April Dunford
 
 *I read 3-4 books in parallel most of the time on [my e-book reader](https://geni.us/rsh-kindle-paperwhite).*
 
@@ -58,14 +50,13 @@ It's peak summer, and cannot wait for Winter! Started my driving lessons and hop
 
 ### 📺 What Am I Watching?
 
-- [What We Do in the Shadows](https://www.serializd.com/show/What-We-Do-in-the-Shadows-83631) - Loving it! Currently at S1E09
--  Rewatching entire Harry Potter film series, currently at [Harry Potter and the Half-Blood Prince](https://en.wikipedia.org/wiki/Harry_Potter_and_the_Half-Blood_Prince_(film))
+- [Akkarakazchakal](https://www.youtube.com/watch?v=C3zJFqhbP_Y&list=PLyr-328vWiQ3hZK1q-Hq0P5_XWnocDCoy) - OG sitcom in Malayalm from 2008. Loving it, currently at E32!
 
 ---  
 
 ### 🏋 My Fitness
 
-It's peak summer, so walks have reduced. My weekly workout looks like Push, Pull, Legs & Upper + Core followed by 30-min incline treadmill walk on gym days. I try to cycle 2x a week, but can't wait for winter.
+Following a 3 day full-body split with 3x runs a week. Can't bike until the war situation is sorted!
 
 <!-- ##### For my latest fitness updates, read my [fitness log](/fitness-log). It's interesting, I promise. -->
 

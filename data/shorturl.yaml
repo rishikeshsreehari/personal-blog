@@ -644,8 +644,8 @@
   title: Privacy Policy
   content_type: page
 - content_url: /projects/
-  short_url: /9e9d2d
-  custom: false
+  short_url: /projects
+  custom: true
   title: Projects
   content_type: page
 - content_url: /puzzle/
@@ -662,11 +662,6 @@
   short_url: /s
   custom: true
   title: Suport
-  content_type: page
-- content_url: /test-embeds/
-  short_url: /fc15b6
-  custom: false
-  title: iframe Embed Test
   content_type: page
 - content_url: /then/
   short_url: /f21e57
