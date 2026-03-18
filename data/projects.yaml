@@ -1,10 +1,29 @@
+- title: "StackStats"
+  description: "Advanced Analytics for Substack Writers"
+  image: "/images/projects/stackstats.webp"
+  url: "https://stackstats.app"
+
+
+
+
+- title: "TrackMonk"
+  description: "Track health like texting a friend!"
+  image: "/images/projects/trackmonk.webp"
+  url: "https://trackmonk.app"
+
+
+
+- title: "FormBeep"
+  description: "Get Instant Notifications for Form Submissions on Your Phone!"
+  image: "/images/projects/formbeep.webp"
+  url: "https://formbeep.com"
+
+
+
 - title: "Criclite"
   description: "Live Cricket Scores and Analysis in Plain Text!"
   image: "/images/projects/criclite.webp"
   url: "https://criclite.com"
-
-
-
 
 
 - title: "10+1 Things"
