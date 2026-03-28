@@ -1,0 +1,60 @@
+{{- define "main" }}
+
+{{- if not .IsHome | and .Title }}
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- with .Description }}
+  <p class="page-description">{{ . | markdownify }}</p>
+  {{- end }}
+</header>
+{{- end }}
+
+{{- if .Content }}
+<div class="post-content">
+  {{- .Content }}
+</div>
+{{- end }}
+
+{{- $pages := union .RegularPages .Sections }}
+{{- if .IsHome }}
+  {{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+  {{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
+{{- end }}
+
+{{- $paginator := .Paginate $pages }}
+
+{{- if $paginator.Pages }}
+<ul class="post-list">
+  {{- range $paginator.Pages }}
+  <li class="post-item">
+    <div class="post-item-header">
+      <span class="post-item-title">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </span>
+      {{- if not .Date.IsZero }}
+      <time class="post-item-date" datetime="{{ .Date.Format "2006-01-02" }}">
+        {{ .Date.Format "Jan 2006" }}
+      </time>
+      {{- end }}
+    </div>
+    {{- if and (not (.Param "hideSummary")) .Summary }}
+    <p class="post-item-summary">{{ .Summary | plainify | htmlUnescape | truncate 160 "…" }}</p>
+    {{- end }}
+  </li>
+  {{- end }}
+</ul>
+{{- end }}
+
+{{- if gt $paginator.TotalPages 1 }}
+<nav class="pagination" aria-label="Pagination">
+  {{- if $paginator.HasPrev }}
+  <a href="{{ $paginator.Prev.URL | relURL }}">← Newer</a>
+  {{- end }}
+  <span>{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
+  {{- if $paginator.HasNext }}
+  <a href="{{ $paginator.Next.URL | relURL }}">Older →</a>
+  {{- end }}
+</nav>
+{{- end }}
+
+{{- end }}

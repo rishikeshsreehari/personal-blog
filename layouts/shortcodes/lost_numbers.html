@@ -1,0 +1,34 @@
+<div class="blinking-numbers">
+    <span id="number-display">4</span>
+  </div>
+  <script>
+    const lostNumbers = [4, 8, 15, 16, 23, 42];
+    let currentIndex = 0;
+    const numberDisplay = document.getElementById('number-display');
+  
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % lostNumbers.length;
+      numberDisplay.textContent = lostNumbers[currentIndex];
+    }, 1000); // Change every 1 second
+  </script>
+  <style>
+    .blinking-numbers {
+      font-family: Arial, sans-serif;
+      font-size: 2rem;
+      text-align: center;
+      color: white;
+      padding: 10px;
+      margin: 20px auto;
+    }
+  
+    #number-display {
+      animation: blink 1s steps(2, start) infinite;
+    }
+  
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+  </style>
+  

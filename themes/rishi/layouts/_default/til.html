@@ -1,0 +1,51 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>Today I Learned</h1>
+  <p class="page-description">A collection of things I've learned, shared in reverse chronological order.</p>
+</header>
+
+<div class="til-filters">
+  {{- range $name, $taxonomy := .Site.Taxonomies.tiltags }}
+  <button class="til-filter-tag" data-topic="{{ $name }}">{{ $name }} <span class="til-tag-count">{{ $taxonomy.Count }}</span></button>
+  {{- end }}
+</div>
+
+{{- range .Pages.GroupByDate "2006" }}
+<h2 class="archive-year-header">{{ .Key }}</h2>
+{{- range .Pages }}
+<article class="til-entry" data-topics="{{ delimit .Params.tiltags "," }}">
+  <div class="til-entry-header">
+    <a href="{{ .RelPermalink }}" class="til-entry-title">{{ .Title }}</a>
+    <time class="post-item-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+  </div>
+  {{- if .Params.tiltags }}
+  <div class="til-entry-tags">
+    {{- range .Params.tiltags }}<span class="til-tag">{{ . }}</span>{{ end }}
+  </div>
+  {{- end }}
+  {{- with .Params.summary }}<p class="til-summary">{{ . }}</p>{{ end }}
+</article>
+{{- end }}
+{{- end }}
+
+<script>
+  (function() {
+    var buttons = document.querySelectorAll('.til-filter-tag');
+    var entries = document.querySelectorAll('.til-entry');
+    var active = new Set();
+    buttons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var topic = this.dataset.topic;
+        if (active.has(topic)) { active.delete(topic); this.classList.remove('active'); }
+        else { active.add(topic); this.classList.add('active'); }
+        entries.forEach(function(e) {
+          var topics = e.dataset.topics.split(',');
+          e.style.display = (active.size === 0 || topics.some(function(t) { return active.has(t); })) ? '' : 'none';
+        });
+      });
+    });
+  })();
+</script>
+
+{{- end }}

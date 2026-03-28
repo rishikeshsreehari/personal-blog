@@ -1,0 +1,10 @@
+<div class="watch-list">
+  {{- range site.Data.watchlist }}
+  <div class="watch-item">
+    <div class="watch-item__name">
+      <a href="{{ .link }}">{{ .title }}</a>
+    </div>
+    <span class="watch-item__secondary">{{ .year }} · {{ .language }}</span>
+  </div>
+  {{- end }}
+</div>

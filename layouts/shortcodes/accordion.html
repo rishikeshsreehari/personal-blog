@@ -1,0 +1,4 @@
+<details {{ if (eq (.Get "openByDefault") true) }} open {{ end }} style="margin-bottom: 1em;">
+  <summary><strong>{{ .Get "summary" | markdownify }}</strong></summary>
+  {{ .Inner | markdownify }}
+</details>

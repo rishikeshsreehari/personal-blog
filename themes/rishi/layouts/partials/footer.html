@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="container">
+    <span>© {{ now.Year }} {{ site.Title }}</span>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="/colophon/">Colophon</a>
+      <a href="/privacy-policy/">Privacy</a>
+      <a href="/atom.xml" rel="alternate" type="application/atom+xml">Feed</a>
+      {{- if site.Params.footer_easter }}
+      <span title="{{ site.Params.footer_easter }}">&#x2665;</span>
+      {{- end }}
+    </nav>
+  </div>
+</footer>
