@@ -1,7 +1,7 @@
 baseURL: https://rishikeshs.com/
 languageCode: en-us
 title: Rishikesh Sreehari
-theme: "hugo-PaperMod"
+theme: "rishi"
 pagination:
   pagerSize: 10 # use the same value you had for paginate
 
@@ -15,6 +15,7 @@ minify:
   minifyOutput: true
 
 params:
+  mainSections: ["blog"]
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   canonicalURL: "https://rishikeshs.com"
   shorturl: "https://r1l.in"

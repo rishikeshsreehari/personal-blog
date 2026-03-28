@@ -1,0 +1,94 @@
+<div class="comments-section">
+
+  {{ $commentsData := .Site.Data.guestbook | default slice }}
+  {{ if gt (len $commentsData) 0 }}
+  {{ $numComments := len $commentsData }}
+  <h3 class="comments-heading">{{ $numComments }} entr{{ if gt $numComments 1 }}ies{{ else }}y{{ end }}</h3>
+  <div class="comments-list">
+    {{ range $commentsData | collections.Reverse }}
+    <div class="comment">
+      <div class="comment-avatar">
+        <img src="https://api.dicebear.com/9.x/lorelei-neutral/svg?seed={{ .Name | urlize }}&backgroundColor=f0f0f0&size=40" alt="{{ .Name }}" width="40" height="40" loading="lazy">
+      </div>
+      <div class="comment-body">
+        <div class="comment-header">
+          <div class="comment-byline">
+            <strong class="comment-name">{{ .Name }}</strong>
+          </div>
+          <time class="comment-date">{{ .Date }}</time>
+        </div>
+        <div class="comment-text">{{ .Comment | safeHTML }}</div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+  {{ else }}
+  <p class="comments-empty">No entries yet. Sign the guestbook!</p>
+  {{ end }}
+
+  <div class="comment-form-wrap">
+    <h3 class="comments-heading">Sign the guestbook</h3>
+    <p class="comment-form-note">Leave a note — say hi, share a thought, or just let me know you were here. Your email is optional and won't be shared.</p>
+
+    <form id="commentForm" class="comment-form" method="POST"
+      action="https://script.google.com/macros/s/AKfycbxRnpRKhwn5z53IYDN1ptNVd5veYstwlUlj93KMTkirjayYxHLZZ6Dm1IeYDIkoXUPBlw/exec">
+      <input type="hidden" name="timestamp" id="timestamp" value="" />
+
+      <div class="form-row form-row--split">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Tibetan Yeti" />
+        </div>
+        <div class="form-field">
+          <label for="email">Email <span class="optional">(optional)</span></label>
+          <input type="email" id="email" name="email" placeholder="tibetanyeti@example.com" />
+        </div>
+      </div>
+
+      <div style="display:none;">
+        <input type="text" name="honeypot" />
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required rows="4" placeholder="Leave a note…"></textarea>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <button type="submit" id="submitBtn" class="comment-submit">Sign</button>
+      </div>
+
+      <div id="comment-status" class="comment-status" aria-live="polite"></div>
+    </form>
+  </div>
+
+</div>
+
+<script>
+  document.getElementById('timestamp').value = new Date().toISOString();
+  document.getElementById('commentForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var status = document.getElementById('comment-status');
+    var btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = 'Submitting…';
+    fetch(this.action, { method: 'POST', body: new FormData(this) })
+      .then(function(r) {
+        btn.disabled = false;
+        btn.textContent = 'Sign';
+        if (r.ok) {
+          status.textContent = 'Entry submitted! It will appear here once approved.';
+          status.className = 'comment-status comment-status--success';
+          document.getElementById('commentForm').reset();
+        } else { throw new Error(); }
+      })
+      .catch(function() {
+        btn.disabled = false;
+        btn.textContent = 'Sign';
+        status.textContent = 'Something went wrong. Please try again.';
+        status.className = 'comment-status comment-status--error';
+      });
+  });
+</script>

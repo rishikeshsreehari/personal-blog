@@ -1,0 +1,4 @@
+<a href="{{ .Get "file" }}" target="_blank" download class="file-download">
+    <span class="download-icon">↓</span>
+    {{ .Get "text" }}{{ if not (.Get "text") }}Download {{ path.Base .Get "file" }}{{ end }}
+</a>

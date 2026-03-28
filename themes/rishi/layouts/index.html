@@ -1,0 +1,44 @@
+{{- define "main" }}
+
+{{- /* Bio / intro section */}}
+<section class="home-intro">
+  <h1 class="home-greeting">Hi, I'm <span class="home-name">/rishikesh/<span class="cursor" aria-hidden="true">█</span></span></h1>
+  <div class="home-bio">
+    <p>This is my webspace. A <a href="/nicheless/">niche-less</a> blog where I gather and share my ideas and document my life. I consider this blog as an evolving <a href="/blog-art">art project</a> itself.</p>
+    <p>I'm currently <a href="/hire/">looking for exciting opportunities</a> to work, spending most of my time applying for jobs. In parallel, I'm trying to write better, learning to code, working on a few side <a href="/projects/">projects</a>, focusing on my fitness, and trying to be a better husband.</p>
+    <p>I also write a <a href="https://newsletter.rishikeshs.com">newsletter</a> read by around 3000 people across 93 countries and 48 US states.</p>
+    <p>The <a href="/archive">archive</a> holds all the articles I've written, with <a href="/man-from-the-future">Man from the Future</a> being the most interesting and popular one so far. On this blog, I <a href="/journal">journal</a> random things, track the books <a href="/library">I read</a>, movies &amp; shows <a href="/watch">I watch</a>, a dream list of things <a href="/dream">I want to do</a>, the things that <a href="/lifestack">I use</a>, and a collection of <a href="/ideas">ideas</a>.</p>
+    <p>I also host a <a href="/puzzle">puzzle</a>, that I intend to run forever.</p>
+    <p>To see what I'm currently up to, check out the <a href="/now">now</a> page. For more about me, visit the <a href="/about">about</a> page or <a href="/contact">say hi!</a></p>
+  </div>
+
+  {{- if site.Params.socialIcons }}
+  <div class="home-social">
+    {{ partial "social_icons.html" site.Params.socialIcons }}
+  </div>
+  {{- end }}
+</section>
+
+{{- /* Recent posts — only non-hidden */}}
+{{- $pages := where site.RegularPages "Type" "in" (slice "blog") }}
+{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
+{{- if $pages }}
+<section class="home-recent">
+  <h2 class="home-section-title">Recent Writing</h2>
+  <ul class="post-list">
+    {{- range first 5 $pages }}
+    <li class="post-item">
+      <div class="post-item-header">
+        <span class="post-item-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
+        {{- if not .Date.IsZero }}
+        <time class="post-item-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+        {{- end }}
+      </div>
+    </li>
+    {{- end }}
+  </ul>
+  <p class="home-archive-link"><a href="/archive/">All posts →</a></p>
+</section>
+{{- end }}
+
+{{- end }}

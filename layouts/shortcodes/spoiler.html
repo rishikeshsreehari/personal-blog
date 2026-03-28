@@ -1,0 +1,17 @@
+<style>
+    .spoiler-box {
+        cursor: pointer;
+        color: transparent;
+        background-color: transparent;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+        transition: color 0.3s, text-shadow 0.3s;
+        display: inline;
+        white-space: pre-wrap; /* Ensures spaces and line breaks are preserved */
+        word-wrap: break-word; /* Ensures long words or lines break appropriately */
+    }
+    .spoiler-box.revealed {
+        color: inherit;
+        text-shadow: none;
+    }
+</style>
+<span class="spoiler-box" onclick="this.classList.add('revealed')"> &nbsp;{{ .Inner | html }}</span>

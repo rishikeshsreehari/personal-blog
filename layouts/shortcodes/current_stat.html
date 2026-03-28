@@ -1,0 +1,6 @@
+{{ $stat := .Get 0 }}
+{{ if eq $stat "Updated" }}
+  {{ index .Site.Data.my_data 2 $stat }}
+{{ else }}
+  {{ index .Site.Data.my_data 0 $stat }}
+{{ end }}

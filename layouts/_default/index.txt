@@ -1,0 +1,17 @@
+# {{ .Site.Title }}
+> {{ .Site.Params.description }}
+
+## Recent Posts
+{{ range first 30 (where .Site.RegularPages "Section" "blog") }}* [{{ .Title }}]({{ .Permalink }}index.md): Published {{ .Date.Format "2006-01-02" }}
+{{ end }}
+
+{{ $sections := slice "blog" "til" "watch" }}
+{{ range $sections }}
+## Posts in {{ title . }} section
+{{ range where $.Site.RegularPages "Section" . }}* [{{ .Title }}]({{ .Permalink }}index.md): Published {{ .Date.Format "2006-01-02" }}
+{{ end }}
+{{ end }}
+
+## Pages
+{{ range where .Site.RegularPages "Section" "" }}* [{{ .Title }}]({{ .Permalink }}index.md){{ if not .Date.IsZero }}: Published {{ .Date.Format "2006-01-02" }}{{ end }}
+{{ end }}

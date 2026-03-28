@@ -1,0 +1,48 @@
+{{- if .IsPage }}
+{{- $webmentions := site.Data.webmentions }}
+{{- $currentPath := .RelPermalink }}
+{{- $pageWebmentions := slice }}
+
+{{- if $webmentions.children }}
+  {{- range $webmentions.children }}
+    {{- $parsedURL := urls.Parse (index . "wm-target") }}
+    {{- if eq $parsedURL.Path $currentPath }}
+      {{- $pageWebmentions = $pageWebmentions | append . }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+<section class="webmentions-section">
+
+  {{- if $pageWebmentions }}
+  <h3 class="webmentions-heading">Webmentions <span class="webmentions-count">{{ len $pageWebmentions }}</span></h3>
+  <ul class="webmentions-list">
+    {{- range $pageWebmentions }}
+    {{- $date := .published | default (index . "wm-received") }}
+    {{- $host := (urls.Parse .url).Host }}
+    {{- $prop := index . "wm-property" }}
+    {{- $label := "mentioned" }}
+    {{- if eq $prop "bookmark-of" }}{{- $label = "bookmarked" }}{{- end }}
+    {{- if eq $prop "in-reply-to" }}{{- $label = "replied" }}{{- end }}
+    {{- if eq $prop "like-of" }}{{- $label = "liked" }}{{- end }}
+    {{- if eq $prop "repost-of" }}{{- $label = "reposted" }}{{- end }}
+    <li>
+      <a href="{{ .url }}" target="_blank" rel="noopener">{{ $host }}</a>
+      <span class="wm-sep">·</span><span>{{ $label }}</span>
+      {{- with $date }}<span class="wm-sep">·</span><time>{{ dateFormat "Jan 2006" . }}</time>{{- end }}
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
+
+  <div class="webmention-send">
+    <p class="webmention-send-label">Have you written a response to this post? Send a <a href="https://indieweb.org/Webmention">webmention</a>:</p>
+    <form action="https://webmention.io/rishikeshs.com/webmention" method="post" class="webmention-send-form">
+      <input type="hidden" name="target" value="{{ .Permalink }}">
+      <input type="url" name="source" placeholder="https://yoursite.com/your-post" required>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+</section>
+{{- end }}

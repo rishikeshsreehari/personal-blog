@@ -1,0 +1,39 @@
+{{- $url := "" -}}
+{{- $title := "PolyCam 3D viewer" -}}
+{{- $height := "600px" -}}
+
+{{- if .IsNamedParams -}}
+  {{- $url = .Get "url" -}}
+  {{- $title = .Get "title" | default "PolyCam 3D viewer" -}}
+  {{- $height = .Get "height" | default "600px" -}}
+{{- else -}}
+  {{- $url = .Get 0 -}}
+  {{- if .Get 1 -}}
+    {{- $height = .Get 1 -}}
+  {{- end -}}
+{{- end -}}
+
+<div class="polycam-embed">
+  <iframe 
+    src="{{ $url }}" 
+    frameborder="0" 
+    allow="xr-spatial-tracking; gyroscope; accelerometer" 
+    allowfullscreen 
+    style="width: 100%; height: {{ $height }}; border: none; border-radius: 4px;"
+    title="{{ $title }}"
+    loading="lazy">
+  </iframe>
+</div>
+
+<style>
+  .polycam-embed {
+    margin: 2rem 0;
+    max-width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .polycam-embed iframe {
+      height: 400px;
+    }
+  }
+</style>

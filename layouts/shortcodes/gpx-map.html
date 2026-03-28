@@ -1,0 +1,157 @@
+{{ $file := .Get "file" }}
+{{ $height := .Get "height" | default "500px" }}
+{{ $mapStyle := .Get "style" | default "outdoors" }}
+{{ $routeColor := .Get "color" | default "#ff0000" }}
+{{ $gpxResource := .Page.Resources.GetMatch $file }}
+
+{{ if $gpxResource }}
+<div class="gpx-container">
+    <div id="map-{{ anchorize $file }}" style="height: {{ $height }}; width: 100%;"></div>
+    <div id="stats-{{ anchorize $file }}" class="gpx-stats"></div>
+    <a href="{{ $gpxResource.RelPermalink }}" download class="gpx-download-link">Download GPX</a>
+</div>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/gpx.min.js"></script>
+
+<style>
+.gpx-container {
+    margin: 2rem 0;
+    border: 1px solid #333;
+}
+#map-{{ anchorize $file }} {
+    background: #1a1a1a;
+}
+.gpx-stats {
+    display: flex;
+    gap: 0;
+    background: #000;
+    border-top: 1px solid #333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.gpx-stat {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    border-right: 1px solid #333;
+}
+.gpx-stat:last-child {
+    border-right: none;
+}
+.gpx-stat-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    font-variant-numeric: tabular-nums;
+}
+.gpx-stat-label {
+    color: #999;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 0.25rem;
+}
+.gpx-download-link {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border-top: 1px solid #333;
+    font-size: 0.85rem;
+    transition: background 0.2s;
+}
+.gpx-download-link:hover {
+    background: #1a1a1a;
+}
+@media (max-width: 768px) {
+    .gpx-stats {
+        flex-direction: column;
+    }
+    .gpx-stat {
+        border-right: none;
+        border-bottom: 1px solid #333;
+    }
+    .gpx-stat:last-child {
+        border-bottom: none;
+    }
+}
+</style>
+
+<script>
+(function() {
+    var mapId = 'map-{{ anchorize $file }}';
+    var statsId = 'stats-{{ anchorize $file }}';
+    var mapStyle = '{{ $mapStyle }}';
+    var routeColor = '{{ $routeColor }}';
+    
+    var map = L.map(mapId);
+    
+    // Map style selection
+    var tileConfig = {
+        'outdoors': {
+            url: 'https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png',
+            attribution: '© Stadia Maps, © OpenMapTiles, © OpenStreetMap contributors',
+            maxZoom: 20
+        },
+        'osm': {
+            url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            attribution: '© OpenStreetMap contributors',
+            maxZoom: 19
+        },
+        'topo': {
+            url: 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+            attribution: '© OpenStreetMap contributors, SRTM | © OpenTopoMap',
+            maxZoom: 17
+        },
+        'satellite': {
+            url: 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+            attribution: '© Esri',
+            maxZoom: 19
+        },
+        'terrain': {
+            url: 'https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}{r}.png',
+            attribution: '© Stamen Design, © OpenStreetMap contributors',
+            maxZoom: 18
+        }
+    };
+    
+    var config = tileConfig[mapStyle] || tileConfig['outdoors'];
+    
+    L.tileLayer(config.url, {
+        attribution: config.attribution,
+        maxZoom: config.maxZoom
+    }).addTo(map);
+    
+    new L.GPX('{{ $gpxResource.RelPermalink }}', {
+        async: true,
+        marker_options: {
+            startIconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-icon-start.png',
+            endIconUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-icon-end.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.7.0/pin-shadow.png'
+        },
+        polyline_options: {
+            color: routeColor,
+            opacity: 0.8,
+            weight: 4
+        }
+    }).on('loaded', function(e) {
+        map.fitBounds(e.target.getBounds(), {
+            padding: [50, 50]
+        });
+        
+        var gpx = e.target;
+        var distance = (gpx.get_distance() / 1000).toFixed(1);
+        var elevGain = Math.round(gpx.get_elevation_gain());
+        var elevLoss = Math.round(gpx.get_elevation_loss());
+        
+        document.getElementById(statsId).innerHTML = 
+            '<div class="gpx-stat"><div class="gpx-stat-value">' + distance + ' km</div><div class="gpx-stat-label">Distance</div></div>' +
+            '<div class="gpx-stat"><div class="gpx-stat-value">↑ ' + elevGain + ' m</div><div class="gpx-stat-label">Elevation Gain</div></div>' +
+            '<div class="gpx-stat"><div class="gpx-stat-value">↓ ' + elevLoss + ' m</div><div class="gpx-stat-label">Elevation Loss</div></div>';
+    }).addTo(map);
+})();
+</script>
+{{ end }}

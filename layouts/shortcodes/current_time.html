@@ -1,0 +1,26 @@
+<span id="current-time-{{ .Ordinal }}">Loading...</span>
+<script>
+  (function() {
+    const timezone = "{{ .Get "timezone" | default "UTC" }}";
+    const elementId = "current-time-{{ .Ordinal }}";
+    
+    function updateTime() {
+      const timeElement = document.getElementById(elementId);
+      const options = { 
+        hour: '2-digit', 
+        minute: '2-digit',
+        timeZone: timezone
+      };
+      
+      try {
+        timeElement.textContent = new Date().toLocaleString('en-US', options);
+      } catch (error) {
+        console.error("Error displaying time:", error);
+        timeElement.textContent = "Invalid timezone";
+      }
+    }
+    
+    updateTime();
+    setInterval(updateTime, 60000);
+  })();
+</script>

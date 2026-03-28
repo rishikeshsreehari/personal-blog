@@ -1,0 +1,42 @@
+{{- $date := .Date.Format "January 2, 2006" -}}
+{{- $dateKey := .Date.Format "2006-01-02" -}}
+{{- $readingTime := .ReadingTime -}}
+{{- $malDate := index site.Data.malayalam_calendar $dateKey -}}
+{{- $shortURL := "" -}}
+{{- $shortDisplay := "" -}}
+{{- if site.Params.shorturl -}}
+  {{- $currentURL := .RelPermalink -}}
+  {{- range site.Data.shorturl -}}
+    {{- if eq .content_url $currentURL -}}
+      {{- $shortURL = printf "%s%s" site.Params.shorturl .short_url -}}
+      {{- $shortDisplay = .short_url | strings.TrimPrefix "/" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $hasDateOrTime := or (not .Date.IsZero) (and (.Param "ShowReadingTime") (gt $readingTime 0)) -}}
+{{- $hasMeta := or $hasDateOrTime $shortURL -}}
+{{- if $hasMeta }}
+<div class="post-meta">
+  {{- if $hasDateOrTime }}
+  <div class="post-meta-row">
+    {{- $hasContent := false -}}
+    {{- if not .Date.IsZero }}
+    <time datetime="{{ $dateKey }}">{{ $date }}</time>
+    {{- if $malDate }}<span class="sep">·</span><span class="mal-date" title="Date in the Malayalam calendar">{{ $malDate }}</span>{{- end }}
+    {{- $hasContent = true -}}
+    {{- end }}
+    {{- if and (.Param "ShowReadingTime") (gt $readingTime 0) }}
+    {{- if $hasContent }}<span class="sep">·</span>{{ end }}
+    <span>{{ $readingTime }} min read</span>
+    {{- end }}
+  </div>
+  {{- end }}
+  {{- if $shortURL }}
+  <div class="post-meta-shorturl">
+    <a href="{{ $shortURL }}" class="meta-shortlink" title="Short link — click to copy"
+       onclick="navigator.clipboard.writeText('{{ $shortURL }}');this.textContent='✓ copied';setTimeout(()=>this.textContent='r1l.in/{{ $shortDisplay }}',2000);return false;">r1l.in/{{ $shortDisplay }}</a>
+  </div>
+  {{- end }}
+</div>
+{{- end }}
