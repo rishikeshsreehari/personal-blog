@@ -6,7 +6,7 @@ summary: List of things I want to do in my life.
 type: page
 disable_comments: true
 ShowReadingTime: false
-updated_on: 2025-11-03
+updated_on: 2026-04-07
 ---
 
 
@@ -112,4 +112,5 @@ This is a list of things I want to do in my life. Call it a to-do list, a bucket
 96. Walk the 300km [Pekoe Trail](https://thepekoetrail.org/) in Sri Lanka.
 97. Cycle the entire coastline of Sri Lanka
 98. Attend [Electromagnetic Field](https://www.emfcamp.org) camp.
+99. Hike all [Seven Hills in Edinburgh](https://www.seven-hills.org.uk/course0
 
