@@ -1,13 +1,28 @@
 <footer class="site-footer">
-  <div class="container">
-    <span>© {{ now.Year }} {{ site.Title }}</span>
-    <nav class="footer-links" aria-label="Footer navigation">
+  <div class="footer-content">
+    {{/* Your buddy companion */}}
+    {{ partial "buddy.html" . }}
+
+    <nav class="footer-nav">
+      <a href="/webrings/">Webrings</a>
+      <span class="footer-sep">·</span>
       <a href="/colophon/">Colophon</a>
-      <a href="/privacy-policy/">Privacy</a>
-      <a href="/atom.xml" rel="alternate" type="application/atom+xml">Feed</a>
-      {{- if site.Params.footer_easter }}
-      <span title="{{ site.Params.footer_easter }}">&#x2665;</span>
+      {{- if site.Data.version }}
+      <span class="footer-sep">·</span>
+      <a href="/log/">v{{ site.Data.version.Version }}</a>
+      <span class="footer-sep">·</span>
+      <a href="https://github.com/rishikeshsreehari/personal-blog/commit/{{ site.Data.version.LastCommitShort }}" rel="noopener noreferrer" target="_blank">{{ site.Data.version.LastCommitShort }}</a>
+      <span class="footer-sep">·</span>
       {{- end }}
+      <a href="/privacy-policy/">Privacy</a>
+      <span class="footer-sep">·</span>
+      <a href="/atom.xml" rel="alternate" type="application/atom+xml">Feed</a>
     </nav>
+
+    <div class="footer-copyright">
+      <span>© {{ now.Year }} {{ site.Title }}</span>
+      <span class="footer-sep">·</span>
+      <span>Powered by <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &amp; <a href="https://pages.cloudflare.com/" rel="noopener noreferrer" target="_blank">CloudFlare</a></span>
+    </div>
   </div>
 </footer>
