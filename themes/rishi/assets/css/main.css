@@ -344,36 +344,103 @@ pre code {
 
 .site-footer {
   border-top: 1px solid var(--border);
-  padding: var(--space-8) 0;
+  padding: var(--space-12) 0 var(--space-8);
   font-family: var(--font-ui);
   font-size: var(--text-sm);
   color: var(--text-muted);
+  margin-top: var(--space-16);
 }
 
-.site-footer .container {
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.footer-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--space-4);
+  gap: var(--space-2);
   flex-wrap: wrap;
+  justify-content: center;
+  font-size: var(--text-xs);
+  width: 100%;
 }
 
-.footer-links {
+.footer-nav a,
+.footer-nav span {
+  white-space: nowrap;
+}
+
+.footer-copyright {
   display: flex;
-  gap: var(--space-4);
+  align-items: center;
+  gap: var(--space-2);
   flex-wrap: wrap;
+  justify-content: center;
+  font-size: var(--text-xs);
 }
 
-.footer-links a {
+.footer-sep {
+  color: var(--text-faint);
+  user-select: none;
+}
+
+.footer-nav a,
+.footer-copyright a {
   color: var(--text-muted);
   text-decoration: none;
-  font-size: var(--text-sm);
   transition: color var(--transition);
 }
 
-.footer-links a:hover {
+.footer-nav a:hover,
+.footer-copyright a:hover {
   color: var(--text);
-  text-decoration: none;
+}
+
+/* ── Buddy ──────────────────────────────────── */
+
+.buddy-sprite {
+  font-family: monospace;
+  font-size: 0.75rem;
+  line-height: 1.05;
+  white-space: pre;
+  color: var(--text);
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0 auto var(--space-4);
+  display: block;
+  text-align: center;
+}
+
+/* Ghost state opacity only (animation done via JS frames) */
+.buddy-sprite[data-state="ghost"] {
+  opacity: 0.5;
+}
+
+/* Resting state */
+.buddy-sprite[data-state="resting"] {
+  opacity: 0.8;
+}
+
+/* Hover interaction */
+.buddy-sprite:hover {
+  animation: buddy-bounce 0.6s ease;
+  cursor: pointer;
+}
+
+@keyframes buddy-bounce {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-8px); }
+  50% { transform: translateY(-4px); }
+  75% { transform: translateY(-2px); }
 }
 
 /* ── Post single ─────────────────────────────── */
@@ -1247,10 +1314,14 @@ pre code {
     text-align: left;
   }
 
-  .site-footer .container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--space-3);
+  .footer-nav,
+  .footer-copyright {
+    font-size: 0.6875rem;
+  }
+
+  .buddy-sprite {
+    font-size: 0.75rem;
+    line-height: 1;
   }
 
   .post-item-header {

@@ -62,7 +62,8 @@ Hugo-based personal blog at rishikeshs.com. Migrated from PaperMod to a custom t
 ### Theme partials (`themes/rishi/layouts/partials/`)
 - `head.html` — meta, Google Fonts, canonical, OG tags; inline JS prevents FOUC for theme toggle
 - `header.html` — site title, nav, theme toggle (sun/moon SVG), hamburger for mobile; JS uses event listeners (not inline onclick) due to Hugo minifier
-- `footer.html` — hardcoded `/atom.xml` (not `absURL`) to avoid localhost URL issues
+- `footer.html` — three-layer layout: buddy at top, single-line nav (webrings/colophon/version/privacy/feed), copyright at bottom; hardcoded `/atom.xml` (not `absURL`) to avoid localhost URL issues
+- `buddy.html` — ASCII art companion cat; frame-based animation reacting to Abu Dhabi weather via wttr.in API; calculates state from blog activity (see Buddy System section below)
 - `post-meta.html` — shows date · Malayalam calendar date · reading time, then short URL on next line; uses `$hasContent` flag to avoid orphaned `·` separators
 - `comments.html` — custom comment system (see Comments section below)
 - `social_icons.html` — NOT in theme; kept at root `layouts/partials/` for shortcode use only
@@ -156,6 +157,143 @@ Hugo-based personal blog at rishikeshs.com. Migrated from PaperMod to a custom t
 - Class `.data-table` for library/watchlist tables
 - Class `.data-sort-select` for sort dropdowns
 - Star ratings use unicode `★` / `☆` characters
+
+### Buddy System (Footer Companion)
+- Located at `themes/rishi/layouts/partials/buddy.html`
+- ASCII art companion cat that lives in the footer (inspired by Claude Code's /buddy feature)
+- **Build-time stats**: Hugo calculates state from blog posts and activity
+- **Runtime weather**: JavaScript fetches Abu Dhabi weather from `wttr.in` API (3-second timeout, 30-minute localStorage cache)
+- **Frame-based animation**: Cycles through 2-3 ASCII art frames per weather state (not CSS animations)
+- **Pure ASCII**: No emoji, just text art in monospace font
+- **Theme-aware**: Uses `color: var(--text)` to match light/dark mode automatically
+
+#### Activity States (calculated at build time):
+- `active`: Posted within 30 days (default cat sprite)
+- `resting`: 30-365 days since last post (80% opacity)
+- `ghost`: 365+ days since last post (50% opacity, wandering spirit form with halo)
+
+#### Weather Effects (runtime, frame-animated):
+Each weather condition has multiple frames that cycle at different speeds:
+
+- **Base/Clear**: Cat with tail swish (2000ms between frames)
+  ```
+  Frame 1: Normal cat
+  Frame 2: Tail tilde moves right
+  Frame 3: Ears change (/\-/\)
+  ```
+
+- **Night** (hour < 6 or > 19): Stars and dots above (2500ms)
+  ```
+  Stars twinkle in different positions
+  ```
+
+- **Sunny/Hot** (clear + temp > 38°C): Sun rays above, heat-exhausted eyes (2500ms)
+  ```
+  Frame 1: Full sun rays
+  Frame 2: Sun rays alternate
+  ```
+
+- **Rain**: Rain drops falling, closed eyes (1500ms - fast)
+  ```
+  Rain drops shift positions
+  ```
+
+- **Cloudy**: Cloud formation above (2200ms)
+  ```
+  Cloud shape shifts slightly
+  ```
+
+- **Windy**: Motion lines (~~~), swaying (1200ms - fastest)
+  ```
+  Wind lines and cat position shift
+  ```
+
+- **Dust/Sand**: Dust particles (. : .), closed eyes (1800ms)
+  ```
+  Dust particles move around
+  ```
+
+- **Ghost**: Wandering spirit with halo and tilde (2000ms)
+  ```
+  Ghost floats with shifting tilde position
+  ```
+
+#### Animation Implementation:
+- **Frame cycling via JavaScript**: `setInterval` updates sprite content by cycling through frame arrays
+- **No CSS keyframe animations**: Removed to prevent conflicts with frame-based animation
+- **Hover interaction**: CSS `buddy-bounce` animation on hover (0.6s)
+- **State opacity**: CSS sets opacity based on `data-state` attribute (ghost: 0.5, resting: 0.8, active: 1.0)
+
+#### Weather API Integration:
+- **API**: `https://wttr.in/Abu%20Dhabi?format=j1` (same as /now page weather shortcode)
+- **Timeout**: 3 seconds (AbortController)
+- **Cache**: 30 minutes in localStorage (`buddy_weather_cache`)
+- **Fallback**: If timeout or error, keeps default sprite (no error shown to user)
+- **Console logging**: Logs weather data for debugging
+- **Works for all states**: Ghost state now also reacts to weather (previously it didn't)
+
+#### Footer Layout:
+```
+   /\_/\          ← Buddy at top
+  ( ·   ·)
+  (  ω  )
+  (")_(")
+
+Webrings · Colophon · v24.70.M.2912 · 49266c87 · Privacy · Feed  ← Single line nav
+
+© 2026 Rishikesh Sreehari · Powered by Hugo & CloudFlare         ← Copyright at bottom
+```
+
+- All navigation links in one `.footer-nav` line
+- Buddy positioned at top of footer with `margin: 0 auto var(--space-4)`
+- Copyright at bottom in `.footer-copyright`
+- Mobile responsive: smaller font size (0.6875rem) and sprite (0.75rem → 0.65rem)
+
+#### Technical Details:
+- **Sprite data structure**: Each weather state is an array of frame strings
+- **Frame index**: Cycles through `currentFrames` array with modulo operator
+- **Animation speed**: Variable `animationSpeed` (ms) changes per weather state
+- **Inline script**: Runs immediately on page load (no DOMContentLoaded needed for footer)
+- **No external dependencies**: Pure vanilla JavaScript, no libraries
+- **Build-time separation**: Hugo template calculates state, JavaScript only handles weather + animation
+- **CSS**: Minimal styling (transparent background, no border, centered, monospace font)
+
+#### Sprite Format:
+Each sprite is a multi-line string with exact spacing:
+```javascript
+`   /\\_/\\      ← Line 1 (ears)
+  ( ·   ·)    ← Line 2 (eyes)
+  (  ω  )     ← Line 3 (nose/mouth)
+  (")_(")     ← Line 4 (paws)`
+```
+
+Line height: 1.05, font size: 0.75rem (desktop), 0.65rem (mobile <640px)
+
+#### Files Modified:
+- `themes/rishi/layouts/partials/buddy.html` — main buddy partial (Hugo template + inline JS)
+- `themes/rishi/layouts/partials/footer.html` — restructured three-layer layout with buddy at top
+- `themes/rishi/assets/css/main.css` — buddy sprite styles + footer layout + mobile responsive
+- `config.yml` — removed old `footer_easter` and `footer_pet` params (no longer used)
+
+#### Important Notes:
+- **Do NOT use CSS keyframe animations** on `.buddy-sprite` — conflicts with frame-based animation
+- **Frame animation uses `setTimeout`** in a loop, not `setInterval` (allows variable speed per state)
+- **Weather determines `currentFrames` array**, then animation loop cycles through it
+- **Ghost state is NOT excluded** from weather effects (changed from initial implementation)
+- **Escape backslashes** in JavaScript template literals: `\\_` becomes `\_` in rendered sprite
+- **Pre tag inherits styles** — must explicitly set `background: transparent` and `border: none` to avoid theme conflicts
+- **Console logging** is intentional for debugging weather fetch — shows condition/temp/hour in browser console
+- **Hugo template uses `{{- -}}` delimiters** to prevent extra whitespace in rendered HTML
+- **Mobile breakpoint**: 640px (not 768px) to match rest of theme
+- **Footer uses `var(--space-*)` variables** from theme — don't hardcode pixel values
+
+#### Future Evolution Ideas (Not Implemented):
+- Multiple species based on dominant blog stat (CURIOSITY→cat, CONSISTENCY→turtle, DEPTH→owl, etc.)
+- Leveling system with visual upgrades (hats, accessories) at milestones
+- "Reunion" animation when posting after long absence
+- Rare variants (shiny, seasonal mutations)
+- Thought bubbles with contextual messages
+- External event reactions (international news, analytics spikes)
 
 ---
 
