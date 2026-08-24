@@ -577,6 +577,16 @@
             "Name": "Rishikesh",
             "Date": "2024-09-20",
             "Comment": "<span class='author-marker'>I loved WordPress for it's convenience. But as I learned programming and started seeing other personal blogs, I wanted to add new features that were impossible with a WordPress website. Also, developing your website from scratch knowing all the components was fun. I'm not there yet fully as this website is built using Hugo framework, but in the future, I would move to a custom framework and own everything end-to-end. "
+        },
+        {
+            "Name": "SK",
+            "Date": "2026-07-10",
+            "Comment": "Hey Rishi ! I am your newsletter reader around COVID era.....\n\nHow are you ? After all these years writing newsletters for your readers, how this process changed you and which domain it has made an impact significantly  ? Can you explain your process of finding these interesting things from web ? "
+        },
+        {
+            "Name": "SK",
+            "Date": "2026-08-10",
+            "Comment": "<span class='author-marker'></span> Hi SK! Wow you are one of the OG readers. The newsletter sort of keeps me accountable, forces me to explore new things and I would say it is a mini way of expressing myself. I started freelancing sometime back and got some clients from the newsletter as well. Also it is great to have some sort of an online persona so that you are not some unknown person! I mostly subscribe to a lot of sources via RSS."
         }
     ],
     "blog-version": [
@@ -673,13 +683,6 @@
             "Name": "Sameer",
             "Date": "2025-08-03",
             "Comment": "See, I love it how you understand meditation in challenge formed and I also tried meditation as my month challenge where I blog and write the daily update on performance in deeper insights and now I completed the challenge  but the real question arise what next after meditation and making a part of life what should I explore next in this field, if you had any answer, please guide me"
-        }
-    ],
-    "72-hour-rule": [
-        {
-            "Name": "Saveplus",
-            "Date": "2025-09-10",
-            "Comment": "A simple yet powerful strategy for mindful spending! The 72-hour rule is a brilliant way to curb impulses and make intentional purchases."
         }
     ]
 }
