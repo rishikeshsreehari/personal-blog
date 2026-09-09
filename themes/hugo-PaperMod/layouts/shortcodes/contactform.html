@@ -18,13 +18,15 @@
       </div>
 
       <div class="form-row">
-        <label for="attachment">Upload an image:</label>
+        <label for="attachment">Upload files:</label>
         <input
           type="file"
           id="attachment"
           name="attachment"
-          accept="image/jpeg,image/png"
+          multiple
+          accept="image/*,video/mp4,application/pdf,.doc,.docx"
         >
+        <small id="file-status">Images, MP4 videos, PDFs, and documents. You can select multiple files.</small>
       </div>
 
       <button type="submit">Submit</button>
@@ -32,28 +34,46 @@
     </form>
   </div>
 
-
   <script
-    src="https://api.formbeep.com/v1/s/formbeep.js?v=attachment-fix-4"
+    src="https://api.formbeep.com/v1/s/formbeep.js?v=attachment-session-1"
     data-api-key="fbp_FYjXSbBks7ar1FFd6fqHLSGIlh0n">
   </script>
-
 
   <script>
     const form = document.getElementById('form');
     const result = document.getElementById('result');
+    const attachment = document.getElementById('attachment');
+    const fileStatus = document.getElementById('file-status');
+
+    attachment.addEventListener('change', function () {
+      const files = Array.from(attachment.files);
+
+      if (!files.length) {
+        fileStatus.textContent = 'Images, MP4 videos, PDFs, and documents. You can select multiple files.';
+        return;
+      }
+
+      const totalSize = files.reduce((sum, file) => sum + file.size, 0);
+      fileStatus.textContent =
+        `${files.length} file${files.length === 1 ? '' : 's'} selected — ` +
+        `${(totalSize / 1024 / 1024).toFixed(1)} MB total`;
+    });
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
       const formData = new FormData(form);
+
+      // Web3Forms Free does not support attachments.
+      // FormBeep has already uploaded its temporary private copy in the background.
       formData.delete('attachment');
-      result.innerHTML = 'Please wait...';
+
+      result.textContent = 'Please wait...';
 
       fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
-          'Accept': 'application/json'
+          Accept: 'application/json'
         },
         body: formData
       })
@@ -61,16 +81,17 @@
           const data = await response.json();
 
           if (response.ok) {
-            result.innerHTML = 'Your message has been sent. Thanks!';
+            result.textContent = 'Your message has been sent. Thanks!';
           } else {
-            result.innerHTML = data.message;
+            result.textContent = data.message || 'Something went wrong.';
           }
         })
         .catch(() => {
-          result.innerHTML = 'Something went wrong. Please try again.';
+          result.textContent = 'Something went wrong. Please try again.';
         })
         .then(() => {
           form.reset();
+          fileStatus.textContent = 'Images, MP4 videos, PDFs, and documents. You can select multiple files.';
         });
     });
   </script>
