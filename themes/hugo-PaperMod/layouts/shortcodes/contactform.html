@@ -45,6 +45,7 @@
       e.preventDefault();
 
       const formData = new FormData(form);
+      formData.delete('attachment');
       result.innerHTML = 'Please wait...';
 
       fetch('https://api.web3forms.com/submit', {
