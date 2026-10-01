@@ -1,0 +1,12 @@
+name = "Rishi"
+license = "MIT"
+licenselink = "https://github.com/rishikeshsreehari/hugo-rishi-theme/blob/main/LICENSE"
+description = "A minimal, typography-first Hugo theme with monochrome design and dark/light mode."
+homepage = "https://rishikeshs.com"
+tags = ["minimal", "blog", "serif", "monochrome", "dark-mode"]
+features = ["blog", "dark-mode", "responsive"]
+min_version = "0.120.0"
+
+[author]
+  name = "Rishikesh Sreehari"
+  homepage = "https://rishikeshs.com"

@@ -1,0 +1,17 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>Journal</h1>
+  <p class="page-description">These are random thoughts, rough and unpolished. They don't quite fit as a blog post, but I felt like publishing them anyway.</p>
+</header>
+
+<ul class="dated-list">
+  {{- range .Pages.ByDate.Reverse }}
+  <li class="dated-list-item">
+    <time class="dated-list-date">{{ .Date.Format "02 Jan 2006" }}</time>
+    <a href="{{ .RelPermalink }}" class="dated-list-link">{{ .Title }}</a>
+  </li>
+  {{- end }}
+</ul>
+
+{{- end }}

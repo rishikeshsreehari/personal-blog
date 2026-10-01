@@ -1,0 +1,71 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+</header>
+
+{{- $sections := slice "blog" "til" "watch" "journal" "fitness-log" }}
+{{- $typeNames := dict "blog" "Blog" "til" "TIL" "watch" "Watch" "journal" "Journal" "fitness-log" "Fitness" }}
+{{- $pages := where site.RegularPages "Section" "in" $sections }}
+
+<div class="archive-filters">
+  <button class="archive-filter-btn active" data-section="all">All <span class="archive-filter-count">{{ len $pages }}</span></button>
+  {{- range $sections }}
+  {{- $sectionPages := where $pages "Section" . }}
+  {{- if gt (len $sectionPages) 0 }}
+  {{- $typeName := index $typeNames . | default . }}
+  <button class="archive-filter-btn" data-section="{{ . }}">{{ $typeName }} <span class="archive-filter-count">{{ len $sectionPages }}</span></button>
+  {{- end }}
+  {{- end }}
+</div>
+
+{{- range $pages.GroupByPublishDate "2006" }}
+{{- if ne .Key "0001" }}
+<div class="archive-year" data-year="{{ .Key }}">
+  <h2 class="archive-year-header">{{ .Key }} <sup class="archive-count">{{ len .Pages }}</sup></h2>
+  <ul class="archive-posts">
+    {{- range .Pages }}
+    {{- if eq .Kind "page" }}
+    {{- $typeName := index $typeNames .Section | default .Section }}
+    <li class="archive-entry" data-section="{{ .Section }}">
+      <span class="archive-entry-date">{{ .Date.Format "Jan 2" }}</span>
+      <a href="{{ .RelPermalink }}" class="archive-entry-title">{{ .Title | markdownify }}</a>
+      <a href="/{{ .Section }}/" class="archive-entry-type">{{ $typeName }}</a>
+    </li>
+    {{- end }}
+    {{- end }}
+  </ul>
+</div>
+{{- end }}
+{{- end }}
+
+<script>
+(function() {
+  var buttons = document.querySelectorAll('.archive-filter-btn');
+  var entries = document.querySelectorAll('.archive-entry');
+  var yearBlocks = document.querySelectorAll('.archive-year');
+  var active = 'all';
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      active = this.dataset.section;
+      buttons.forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+
+      entries.forEach(function(e) {
+        e.style.display = (active === 'all' || e.dataset.section === active) ? '' : 'none';
+      });
+
+      yearBlocks.forEach(function(block) {
+        var visible = block.querySelectorAll('.archive-entry:not([style*="none"])');
+        var hasVisible = Array.from(visible).some(function(e) {
+          return e.style.display !== 'none';
+        });
+        block.style.display = (active === 'all' || hasVisible) ? '' : 'none';
+      });
+    });
+  });
+})();
+</script>
+
+{{- end }}

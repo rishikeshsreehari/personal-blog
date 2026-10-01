@@ -1,0 +1,132 @@
+{{- if not .Params.disable_comments }}
+{{- $url := .Params.url | default .RelPermalink }}
+{{- $url = trim $url "/" }}
+{{- $commentsData := site.Data.comments | default dict }}
+
+<section class="comments-section">
+
+  {{- with index $commentsData $url }}
+  {{- $comments := . | default slice }}
+  {{- if gt (len $comments) 0 }}
+  <h3 class="comments-heading">{{ len $comments }} comment{{ if gt (len $comments) 1 }}s{{ end }}</h3>
+  <div class="comments-list">
+    {{- range $comments }}
+    {{- $isAuthor := in .Comment "author-marker" }}
+    <div class="comment{{ if $isAuthor }} comment--author{{ end }}">
+      <div class="comment-avatar">
+        <img src="https://api.dicebear.com/9.x/lorelei-neutral/svg?seed={{ .Name | urlize }}&backgroundColor=f0f0f0&size=40" alt="{{ .Name }}" width="40" height="40" loading="lazy">
+      </div>
+      <div class="comment-body">
+        <div class="comment-header">
+          <div class="comment-byline">
+            <strong class="comment-name">{{ .Name }}</strong>
+            {{- if $isAuthor }}<span class="comment-author-badge">Author</span>{{ end }}
+          </div>
+          <time class="comment-date">{{ .Date }}</time>
+        </div>
+        <div class="comment-text">{{ .Comment | safeHTML }}</div>
+      </div>
+    </div>
+    {{- end }}
+  </div>
+  {{- else }}
+  <p class="comments-empty">No comments yet. Be the first!</p>
+  {{- end }}
+  {{- else }}
+  <p class="comments-empty">No comments yet. Be the first!</p>
+  {{- end }}
+
+  <div class="comment-form-wrap">
+    <h3 class="comments-heading">Leave a comment</h3>
+    <p class="comment-form-note">All comments are moderated and appear after approval. Your email is optional and won't be shared. If your comment needs a personal reply, I'll reach out by email.</p>
+
+    <form id="commentForm" class="comment-form" method="POST"
+      action="https://script.google.com/macros/s/AKfycbybzIVhZ6DyJQD8nl0suisVDVly07c87524X84iORIBdkekzQ68ugrCG8TrTB5HnJdtuQ/exec">
+      <input type="hidden" name="timestamp" id="timestamp" value="" />
+      <input type="hidden" name="url" value="{{ $url }}" />
+      <input type="hidden" name="cf-turnstile-response" id="cf-turnstile-response" />
+
+      <div class="form-row form-row--split">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Tibetan Yeti" />
+        </div>
+        <div class="form-field">
+          <label for="email">Email <span class="optional">(optional)</span></label>
+          <input type="email" id="email" name="email" placeholder="tibetanyeti@example.com" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="antispam">Is fire hot or cold? <span class="optional">(anti-spam)</span></label>
+          <input type="text" id="antispam" name="antispam" required placeholder="Answer here" />
+        </div>
+      </div>
+
+      <div style="display:none;">
+        <input type="text" name="honeypot" />
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="message">Comment</label>
+          <textarea id="message" name="message" required rows="5" placeholder="Leave a message…"></textarea>
+        </div>
+      </div>
+
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAAxKySDyC3zOb0zW" data-callback="onTurnstileCallback"></div>
+
+      <div class="form-row">
+        <button type="submit" id="submitBtn" class="comment-submit">Submit</button>
+      </div>
+
+      <div id="comment-status" class="comment-status" aria-live="polite"></div>
+    </form>
+  </div>
+
+</section>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script>
+  function onTurnstileCallback(token) {
+    document.getElementById('cf-turnstile-response').value = token;
+  }
+  document.getElementById('timestamp').value = new Date().toISOString();
+  document.getElementById('commentForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var status = document.getElementById('comment-status');
+    var antispam = document.getElementById('antispam').value.trim().toLowerCase();
+    var turnstile = document.getElementById('cf-turnstile-response').value;
+    if (antispam !== 'hot') {
+      status.textContent = 'Incorrect answer to the anti-spam question.';
+      status.className = 'comment-status comment-status--error';
+      return;
+    }
+    if (!turnstile) {
+      status.textContent = 'Please complete the CAPTCHA challenge.';
+      status.className = 'comment-status comment-status--error';
+      return;
+    }
+    var btn = document.getElementById('submitBtn');
+    btn.disabled = true;
+    btn.textContent = 'Submitting…';
+    fetch(this.action, { method: 'POST', body: new FormData(this) })
+      .then(function(r) {
+        btn.disabled = false;
+        btn.textContent = 'Submit';
+        if (r.ok) {
+          status.textContent = 'Comment submitted! Once approved it will appear here.';
+          status.className = 'comment-status comment-status--success';
+          document.getElementById('commentForm').reset();
+        } else { throw new Error(); }
+      })
+      .catch(function() {
+        btn.disabled = false;
+        btn.textContent = 'Submit';
+        status.textContent = 'Something went wrong. Please try again.';
+        status.className = 'comment-status comment-status--error';
+      });
+  });
+</script>
+{{- end }}

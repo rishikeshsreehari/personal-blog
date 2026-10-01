@@ -1,0 +1,6 @@
+{{- /* Markdown link render hook: external links open in a new tab. */ -}}
+{{- if or (strings.HasPrefix .Destination "http://") (strings.HasPrefix .Destination "https://") -}}
+  <a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }} target="_blank" rel="noopener noreferrer">{{ .Text | safeHTML }}</a>
+{{- else -}}
+  <a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- end -}}

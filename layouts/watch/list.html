@@ -1,0 +1,72 @@
+{{- define "main" }}
+
+<article class="h-entry">
+  <header class="post-header">
+    <h1 class="post-title p-name">{{ .Title }}</h1>
+    {{- with .Description }}
+    <div class="post-description p-summary">{{ . }}</div>
+    {{- end }}
+    {{- if not (.Param "hideMeta") }}
+    {{- partial "post-meta.html" . }}
+    {{- end }}
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content e-content">
+    {{- .Content }}
+  </div>
+  {{- end }}
+
+  <div class="data-table-controls">
+    <select id="watch-sort" class="data-sort-select">
+      <option value="date-desc">Newest → Oldest</option>
+      <option value="rating-desc">Best → Worst</option>
+    </select>
+  </div>
+
+  <div class="watch-list" id="watch-list">
+    {{- range site.Data.watch }}
+    <div class="watch-item" data-rating="{{ .rating }}" data-date="{{ .date }}">
+      <span class="watch-item__rating">
+        {{- if eq .rating 0 }}☆☆☆☆☆
+        {{- else if eq .rating 1 }}★☆☆☆☆
+        {{- else if eq .rating 2 }}★★☆☆☆
+        {{- else if eq .rating 3 }}★★★☆☆
+        {{- else if eq .rating 4 }}★★★★☆
+        {{- else if eq .rating 5 }}★★★★★
+        {{- end }}
+      </span>
+      <div class="watch-item__name">
+        {{- if .url }}<a href="{{ .url }}">{{ .name }}</a>
+        {{- else }}<span>{{ .name }}</span>{{ end }}
+        {{- with .original_name }}<span class="watch-item__sub">{{ . }}</span>{{ end }}
+      </div>
+      <span class="watch-item__secondary">{{ .language }}{{- with .type }} · {{ . }}{{- end }}</span>
+      <time class="watch-item__date">{{ dateFormat "Jan 2006" (.date | string) }}</time>
+    </div>
+    {{- end }}
+  </div>
+
+  <script>
+    (function() {
+      var select = document.getElementById('watch-sort');
+      function sort() {
+        var val = select.value;
+        var list = document.getElementById('watch-list');
+        var items = Array.from(list.querySelectorAll('.watch-item'));
+        items.sort(function(a, b) {
+          if (val === 'rating-desc') {
+            return parseFloat(b.dataset.rating) - parseFloat(a.dataset.rating);
+          }
+          return new Date(b.dataset.date) - new Date(a.dataset.date);
+        });
+        items.forEach(function(i) { list.appendChild(i); });
+      }
+      select.addEventListener('change', sort);
+      sort();
+    })();
+  </script>
+
+</article>
+
+{{- end }}

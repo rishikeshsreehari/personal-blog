@@ -1,0 +1,25 @@
+{{ $name := .Get "name" }}
+{{ $w := (index (where site.Data.watch "name" $name) 0) }}
+
+<div class="watch-card">
+  <div class="watch-card__meta">
+    {{ $r := int (default 0 $w.rating) }}
+    <span class="wc-stars">{{ range $i := (seq 5) }}{{ if le $i $r }}★{{ else }}☆{{ end }}{{ end }}</span>
+    <span class="wc-dot">·</span>
+    {{- with $w.type }}<span>{{ . }}</span><span class="wc-dot">·</span>{{ end }}
+    {{- with $w.year }}<span>{{ . }}</span><span class="wc-dot">·</span>{{ end }}
+    {{- with $w.language }}<span>{{ . }}</span>{{ end }}
+    {{- with $w.runtime }}<span class="wc-dot">·</span><span>{{ . }} min</span>{{ end }}
+  </div>
+  {{- if $w.director }}
+  <div class="watch-card__crew">Directed by
+    {{- if $w.director_url }} <a href="{{ $w.director_url }}" target="_blank" rel="noopener">{{ $w.director }}</a>
+    {{- else }} {{ $w.director }}{{ end }}
+  </div>
+  {{- else if $w.creator }}
+  <div class="watch-card__crew">Created by
+    {{- if $w.creator_url }} <a href="{{ $w.creator_url }}" target="_blank" rel="noopener">{{ $w.creator }}</a>
+    {{- else }} {{ $w.creator }}{{ end }}
+  </div>
+  {{- end }}
+</div>

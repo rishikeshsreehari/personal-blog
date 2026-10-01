@@ -1,0 +1,73 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
+<meta name="robots" content="index, follow">
+{{- else }}
+<meta name="robots" content="noindex, nofollow">
+{{- end }}
+
+<title>
+  {{- if .IsHome -}}
+    {{ site.Title }}
+  {{- else if .Title -}}
+    {{ .Title }} | {{ site.Title }}
+  {{- end -}}
+</title>
+
+<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection }}{{ .Summary | default (printf "%s — %s" .Title site.Title) }}{{- else }}{{ site.Params.description }}{{- end }}{{- end }}">
+<meta name="author" content="Rishikesh Sreehari">
+
+{{- if .IsHome }}
+{{ with site.Params.keywords }}<meta name="keywords" content="{{ range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">{{ end }}
+{{- else }}
+<meta name="keywords" content="{{ if .Params.keywords }}{{ range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}{{ else }}{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}{{ end }}">
+{{- end }}
+
+<link rel="canonical" href="{{ if .Params.canonicalURL }}{{ trim .Params.canonicalURL " " }}{{ else }}{{ .Permalink }}{{ end }}">
+
+{{- with .OutputFormats.Get "MARKDOWN" }}
+<link href="{{ .Permalink }}" rel="alternate" type="text/markdown" title="{{ $.Title }}" />
+{{- end }}
+{{- with .OutputFormats.Get "RSS" }}
+<link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
+{{- end }}
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ site.Params.description }}{{ end }}">
+{{- with site.Params.images }}<meta property="og:image" content="{{ index . 0 | absURL }}">{{ end }}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{ site.Params.social.twitter }}">
+
+<!-- Favicons -->
+{{- with site.Params.assets }}
+<link rel="icon" href="{{ .favicon | default "/favicon.ico" }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ .favicon16x16 | default "/favicon-16x16.png" }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ .favicon32x32 | default "/favicon-32x32.png" }}">
+<link rel="apple-touch-icon" href="{{ .apple_touch_icon | default "/apple-touch-icon.png" }}">
+{{- end }}
+
+<!-- rel=me for IndieAuth -->
+<link rel="me" href="https://x.com/rishikeshshari" />
+<link rel="me" href="https://github.com/rishikeshsreehari" />
+
+<!-- Webmentions -->
+<link rel="webmention" href="https://webmention.io/rishikeshs.com/webmention">
+<link rel="pingback" href="https://webmention.io/rishikeshs.com/xmlrpc">
+
+<!-- Dark/light mode: set before paint to avoid flash -->
+<script>
+  (function() {
+    var saved = localStorage.getItem('rishi-theme');
+    var preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', saved || preferred);
+  })();
+</script>
+
+<!-- Stylesheet -->
+{{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
