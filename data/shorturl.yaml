@@ -203,6 +203,11 @@
   custom: false
   title: The Hobby I Forgot I Had
   content_type: blog
+- content_url: /verbose/
+  short_url: /70d305
+  custom: false
+  title: Everything is --verbose now
+  content_type: blog
 - content_url: /zone-2-training/
   short_url: /9e52b5
   custom: false
@@ -683,11 +688,6 @@
   custom: true
   title: Unoffice Hours
   content_type: page
-- content_url: /watch/
-  short_url: /watch
-  custom: true
-  title: Watch
-  content_type: page
 - content_url: /webrings/
   short_url: /webr
   custom: true
@@ -733,6 +733,11 @@
   custom: false
   title: Cycle pumps with reversible heads work for Schrader and Presta valves
   content_type: til
+- content_url: /watch/
+  short_url: /watch
+  custom: true
+  title: Watch
+  content_type: watch
 - content_url: /watch/IC814/
   short_url: /cf34c6
   custom: false
