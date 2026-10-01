@@ -1,7 +1,8 @@
 <footer class="site-footer">
   <div class="footer-content">
-    {{/* Your buddy companion */}}
-    {{ partial "buddy.html" . }}
+    {{- with site.Params.footer_mood }}
+    <div class="footer-mood">{{ . }}</div>
+    {{- end }}
 
     <nav class="footer-nav">
       <a href="/webrings/">Webrings</a>

@@ -232,10 +232,28 @@
   /**
    * Updates the weather text in the DOM.
    */
+  function isValidWeatherData(data) {
+    // wttr.in intermittently returns an HTML error / rate-limit page instead
+    // of the "%C|%t|%h|%w|%m" string. Injecting that HTML would pull wttr's
+    // own <link>/<style> into the page and break theming. Accept only the
+    // expected shape: 5 pipe-separated fields and no markup.
+    if (typeof data !== 'string') return false;
+    if (data.indexOf('<') !== -1) return false;
+    return data.split("|").length === 5;
+  }
+
   function updateWeatherUI(data) {
+    if (!isValidWeatherData(data)) {
+      weatherEl.textContent = 'Weather data unavailable right now.';
+      return;
+    }
     const [cond, tempC, hum, wind, moon] = data.split("|");
-    const tempValue = tempC.replace(/[^\d-]/g, '');
-    const windSpeed = wind.replace(/[^\d.]/g, '');
+    // wttr values carry direction arrows / signs / units — pull the first
+    // numeric token only, so e.g. "↗18 km/h" → "18" (never "1847").
+    const tempMatch = tempC.match(/-?\d+(?:\.\d+)?/);
+    const windMatch = wind.match(/\d+(?:\.\d+)?/);
+    const tempValue = tempMatch ? tempMatch[0] : tempC.trim();
+    const windSpeed = windMatch ? windMatch[0] : wind.trim();
     const moonDesc = moonMap[moon] || `The moon phase tonight is ${moon}.`;
     weatherEl.innerHTML = `Here it's <strong>${cond.toLowerCase()}</strong> with a temperature of 🌡️ <strong>${tempValue}°C</strong>. The humidity is 🌫️<strong>${hum}</strong>, and the wind is blowing at 💨<strong>${windSpeed} km/h</strong>. ${moonDesc}`;
   }
@@ -244,29 +262,40 @@
    * Fetches weather data, using a cache to improve performance.
    */
   async function fetchWeather() {
+    // Hold onto the last known-good value so a transient wttr.in failure
+    // (it rate-limits by IP and is often flaky) doesn't blank the weather.
+    let lastGood = null;
     try {
       const cachedItem = localStorage.getItem(CACHE_KEY);
       if (cachedItem) {
         const { data, timestamp } = JSON.parse(cachedItem);
-        if ((new Date() - new Date(timestamp)) < CACHE_DURATION_MINUTES * 60 * 1000) {
-          console.log('Using cached weather data:', data);
-          updateWeatherUI(data);
-          return;
+        if (isValidWeatherData(data)) {
+          lastGood = data;
+          const fresh = (new Date() - new Date(timestamp)) < CACHE_DURATION_MINUTES * 60 * 1000;
+          if (fresh) {
+            console.log('Using cached weather data:', data);
+            updateWeatherUI(data);
+            return;
+          }
         }
       }
     } catch (e) { console.warn("Could not read weather cache.", e); }
-    
+
     weatherEl.innerHTML = '<i>Fetching latest weather...</i>';
     try {
       console.log('Fetching from URL:', `https://wttr.in/${location}?format=%C|%t|%h|%w|%m`);
       const res = await fetch(`https://wttr.in/${location}?format=%C|%t|%h|%w|%m`);
       if (!res.ok) throw new Error(`Fetch failed with status ${res.status}`);
-      const data = await res.text();
+      const data = (await res.text()).trim();
       console.log('Weather data received:', data);
+      if (!isValidWeatherData(data)) throw new Error('Unexpected weather response (not the expected format)');
       updateWeatherUI(data);
+      // Only cache well-formed data so a bad response can't stick around.
       localStorage.setItem(CACHE_KEY, JSON.stringify({ data: data, timestamp: new Date().toISOString() }));
     } catch (e) {
       console.error("Weather fetch failed:", e);
+      // Fall back to the last good value before giving up entirely.
+      if (lastGood) { updateWeatherUI(lastGood); return; }
       weatherEl.textContent = 'Weather data unavailable.';
     }
   }
