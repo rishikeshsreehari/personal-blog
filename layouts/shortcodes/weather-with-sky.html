@@ -232,30 +232,48 @@
   /**
    * Updates the weather text in the DOM.
    */
+  // Map wttr.in's moon_phase text (from the j1 JSON) to an emoji so the
+  // existing moonMap descriptions still apply.
+  const moonPhaseEmoji = {
+    "New Moon": "🌑", "Waxing Crescent": "🌒", "First Quarter": "🌓",
+    "Waxing Gibbous": "🌔", "Full Moon": "🌕", "Waning Gibbous": "🌖",
+    "Last Quarter": "🌗", "Third Quarter": "🌗", "Waning Crescent": "🌘"
+  };
+
+  // Parse wttr.in's j1 JSON into the fields we display, or null if it isn't
+  // the expected shape. NOTE: we must use the JSON endpoint — wttr.in serves
+  // its HTML page (ignoring ?format=%C|...) to browser User-Agents, which a
+  // fetch() can't override, so the one-line format only works from curl.
+  function parseWeather(text) {
+    let j;
+    try { j = JSON.parse(text); } catch (e) { return null; }
+    const cur = j && j.current_condition && j.current_condition[0];
+    if (!cur) return null;
+    const astro = j.weather && j.weather[0] && j.weather[0].astronomy && j.weather[0].astronomy[0];
+    const desc = cur.weatherDesc && cur.weatherDesc[0] && cur.weatherDesc[0].value;
+    return {
+      cond: (desc || "").trim(),
+      temp: cur.temp_C,
+      hum: cur.humidity,
+      wind: cur.windspeedKmph,
+      moon: astro ? (moonPhaseEmoji[astro.moon_phase] || "") : ""
+    };
+  }
+
   function isValidWeatherData(data) {
-    // wttr.in intermittently returns an HTML error / rate-limit page instead
-    // of the "%C|%t|%h|%w|%m" string. Injecting that HTML would pull wttr's
-    // own <link>/<style> into the page and break theming. Accept only the
-    // expected shape: 5 pipe-separated fields and no markup.
-    if (typeof data !== 'string') return false;
-    if (data.indexOf('<') !== -1) return false;
-    return data.split("|").length === 5;
+    return parseWeather(data) !== null;
   }
 
   function updateWeatherUI(data) {
-    if (!isValidWeatherData(data)) {
+    const w = parseWeather(data);
+    if (!w) {
       weatherEl.textContent = 'Weather data unavailable right now.';
       return;
     }
-    const [cond, tempC, hum, wind, moon] = data.split("|");
-    // wttr values carry direction arrows / signs / units — pull the first
-    // numeric token only, so e.g. "↗18 km/h" → "18" (never "1847").
-    const tempMatch = tempC.match(/-?\d+(?:\.\d+)?/);
-    const windMatch = wind.match(/\d+(?:\.\d+)?/);
-    const tempValue = tempMatch ? tempMatch[0] : tempC.trim();
-    const windSpeed = windMatch ? windMatch[0] : wind.trim();
-    const moonDesc = moonMap[moon] || `The moon phase tonight is ${moon}.`;
-    weatherEl.innerHTML = `Here it's <strong>${cond.toLowerCase()}</strong> with a temperature of 🌡️ <strong>${tempValue}°C</strong>. The humidity is 🌫️<strong>${hum}</strong>, and the wind is blowing at 💨<strong>${windSpeed} km/h</strong>. ${moonDesc}`;
+    const moonDesc = w.moon
+      ? (moonMap[w.moon] || `The moon phase tonight is ${w.moon}.`)
+      : '';
+    weatherEl.innerHTML = `Here it's <strong>${w.cond.toLowerCase()}</strong> with a temperature of 🌡️ <strong>${w.temp}°C</strong>. The humidity is 🌫️<strong>${w.hum}%</strong>, and the wind is blowing at 💨<strong>${w.wind} km/h</strong>. ${moonDesc}`;
   }
 
   /**
@@ -283,8 +301,8 @@
 
     weatherEl.innerHTML = '<i>Fetching latest weather...</i>';
     try {
-      console.log('Fetching from URL:', `https://wttr.in/${location}?format=%C|%t|%h|%w|%m`);
-      const res = await fetch(`https://wttr.in/${location}?format=%C|%t|%h|%w|%m`);
+      console.log('Fetching from URL:', `https://wttr.in/${location}?format=j1`);
+      const res = await fetch(`https://wttr.in/${location}?format=j1`);
       if (!res.ok) throw new Error(`Fetch failed with status ${res.status}`);
       const data = (await res.text()).trim();
       console.log('Weather data received:', data);
