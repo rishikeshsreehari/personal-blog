@@ -533,6 +533,11 @@
   custom: false
   title: What I'm Doing Now
   content_type: now-archive
+- content_url: /now-2026-10-02/
+  short_url: /39e853
+  custom: false
+  title: What I'm Doing Now
+  content_type: now-archive
 - content_url: /now-archive/
   short_url: /6d6b07
   custom: false
@@ -698,10 +703,25 @@
   custom: false
   title: Today I Learned
   content_type: til
+- content_url: /til/azure-captcha-pihole/
+  short_url: /779501
+  custom: false
+  title: Azure Signup 404 Error Due to Pi-hole
+  content_type: til
 - content_url: /til/bike-pedal-reverse/
   short_url: /157e8c
   custom: false
   title: The left pedal spindle on a bike is reverse threaded
+  content_type: til
+- content_url: /til/biryani-not-biriyani/
+  short_url: /86820a
+  custom: false
+  title: It's Biryani, Not Biriyani
+  content_type: til
+- content_url: /til/chiller-free-uae/
+  short_url: /169a84
+  custom: false
+  title: What Chiller Free Means in UAE
   content_type: til
 - content_url: /til/dead-key-fob-start/
   short_url: /376544
@@ -733,6 +753,16 @@
   custom: false
   title: Configuring Hugo Syntax Highlighting with Language Hints
   content_type: til
+- content_url: /til/mac-screenshot-save-location/
+  short_url: /7d4c3a
+  custom: false
+  title: Changing the Screenshot Save Location on Mac
+  content_type: til
+- content_url: /til/mac-screenshot-to-clipboard/
+  short_url: /794e07
+  custom: false
+  title: Copy a Screenshot Directly to Clipboard on Mac
+  content_type: til
 - content_url: /til/palm-leaf-writing/
   short_url: /b59ca1
   custom: false
@@ -743,10 +773,20 @@
   custom: false
   title: How to Get an RSS Feed for Any Subreddit
   content_type: til
+- content_url: /til/restful-api-no-verbs/
+  short_url: /ef6c58
+  custom: false
+  title: RESTful API Endpoints Should Not Have Verbs
+  content_type: til
 - content_url: /til/reversible-pump-head/
   short_url: /9c0a0b
   custom: false
   title: Cycle pumps with reversible heads work for Schrader and Presta valves
+  content_type: til
+- content_url: /til/vscode-default-settings-read-only/
+  short_url: /706946
+  custom: false
+  title: VS Code Default Settings Are Read-Only
   content_type: til
 - content_url: /watch/
   short_url: /watch
