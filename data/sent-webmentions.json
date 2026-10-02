@@ -771,5 +771,16 @@
         "last_attempt": "2026-10-01T23:32:31.162281Z"
       }
     ]
+  },
+  "til-esp32-in-out-solder-bridge": {
+    "successful": [],
+    "failed": [
+      {
+        "url": "https://l.rishikeshs.com/esp32board?utm_source=rishikeshs.com",
+        "status": "no_link_found",
+        "error": "The source document does not have a link to the target URL or domain",
+        "last_attempt": "2026-10-02T00:08:42.670544Z"
+      }
+    ]
   }
 }

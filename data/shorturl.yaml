@@ -703,6 +703,21 @@
   custom: false
   title: The left pedal spindle on a bike is reverse threaded
   content_type: til
+- content_url: /til/dead-key-fob-start/
+  short_url: /376544
+  custom: false
+  title: Starting a Car With a Dead Key Fob
+  content_type: til
+- content_url: /til/esp32-in-out-solder-bridge/
+  short_url: /3aaef8
+  custom: false
+  title: ESP32 IN/OUT Solder Bridge for 5V
+  content_type: til
+- content_url: /til/fossils-not-bones/
+  short_url: /cdeb95
+  custom: false
+  title: Fossils Are Not Bones
+  content_type: til
 - content_url: /til/google-drive-wsl/
   short_url: /1af438
   custom: false
