@@ -11,4 +11,79 @@
 <div class="post-content">{{ .Content }}</div>
 {{- end }}
 
+{{- $timelineData := index .Site.Data "timeline" }}
+{{- $totalYears := index $timelineData "totalYears" }}
+{{- $LifeSpan := index $timelineData "GlobalLifeSpan" }}
+{{- $boxesPerRow := 26 }}
+{{- with index $timelineData "dateOfBirth" }}
+{{- $dob := (time .) }}
+{{- $unixDob := $dob.Unix }}
+{{- $unixToday := now.Unix }}
+{{- $weeksLived := div (sub $unixToday $unixDob) 604800 | int }}
+{{- $totalWeeks := mul $LifeSpan 52.1755 }}
+{{- $percentage := div (mul $weeksLived 100) $totalWeeks | int }}
+{{- $eventData := index $timelineData "events" }}
+{{- $totalRows := mul $totalYears 2 }}
+
+<div class="timeline-wrap">
+
+  <div class="timeline-progress">
+    <div class="timeline-progress-bar">
+      <div class="timeline-progress-fill" style="width: {{ $percentage }}%;"></div>
+    </div>
+    <div class="timeline-progress-meta">
+      <span><strong>{{ $percentage }}%</strong> of life lived</span>
+      <span>Global life expectancy: {{ $LifeSpan }} yrs</span>
+    </div>
+  </div>
+
+  <ul class="timeline-legend">
+    <li><span class="week-box week-box-lived"></span> Lived</li>
+    <li><span class="week-box"></span> To live</li>
+    <li><span class="week-box week-box-event"></span> Milestone <span class="timeline-legend-hint">(hover / long-press)</span></li>
+  </ul>
+
+  <div class="timeline-container">
+    <div class="timeline">
+      {{- range $rowIndex := seq 1 $totalRows }}
+      <div class="row">
+        {{- if eq $rowIndex 1 }}
+        <div class="year-label">Age&nbsp;&#9660;</div>
+        {{- else if mod $rowIndex 10 | eq 0 }}
+        <div class="year-label">{{ div $rowIndex 2 }}</div>
+        {{- else }}
+        <div class="year-label year-label-odd"></div>
+        {{- end }}
+        {{- range seq 1 $boxesPerRow }}
+        {{- $boxIndex := add (mul $boxesPerRow (sub $rowIndex 1)) . }}
+        {{- $isWeekLived := le $boxIndex $weeksLived }}
+        {{- $eventFound := false }}
+        {{- $currentEvent := dict "text" "" }}
+        {{- range $event := $eventData }}
+        {{- $eventWeeks := add (div (sub (time $event.date).Unix $unixDob) 604800 | int) 1 }}
+        {{- if eq $boxIndex $eventWeeks }}
+        {{- $eventFound = true }}
+        {{- $currentEvent = $event }}
+        {{- end }}
+        {{- end }}
+        <div class="week-box{{ if $isWeekLived }} week-box-lived{{ end }}{{ if $eventFound }} week-box-event{{ end }}"{{ if $eventFound }} tabindex="0"{{ end }}>
+          {{- if $eventFound }}
+          <span class="week-tooltip">{{ $currentEvent.text | safeHTML }}</span>
+          {{- end }}
+        </div>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+  </div>
+
+  <p class="timeline-credit">Inspired by
+    <a href="https://waitbutwhy.com/2014/05/life-weeks.html" target="_blank" rel="noopener noreferrer">Tim Urban</a>,
+    <a href="https://www.bryanbraun.com/your-life/weeks.html" target="_blank" rel="noopener noreferrer">Bryan Braun</a>,
+    <a href="https://lifecal.me/" target="_blank" rel="noopener noreferrer">Life Calendar</a>,
+    <a href="https://busterbenson.com/life-in-weeks" target="_blank" rel="noopener noreferrer">Buster Benson</a>, and many more.</p>
+
+</div>
+{{- end }}
+
 {{- end }}
