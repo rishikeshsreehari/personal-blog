@@ -67,7 +67,7 @@ Its hidden glory waits your eyes.
 
 ```
 Total Submissions: 0.   
-Clue requests: 0/5
+Clue requests: 3/5
 
 *Source: Self*
 
