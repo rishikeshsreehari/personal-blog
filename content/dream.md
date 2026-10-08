@@ -7,7 +7,7 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 shorturl: "dream"
-updated_on: 2026-04-07
+updated_on: 2026-10-09
 ---
 
 
@@ -133,3 +133,9 @@ If you have a similar list, I would love to read it, so [send them](/contact) to
 103. Cycle or Walk from Abu Dhabi to Dubai or vice-versa
 104. Walk 100k steps in one day.
 105. Deadlift 100kg someday!
+106. Read a QR code with eyes! Inspired from [Code](https://l.rishikeshs.com/code-book) by Charles Petzold and [Abhinav's bucket list](https://abhinavsarkar.net/notes/2026-impossible-bucket-list/).
+
+
+### similar
+
+- Abhinav Sarkar's [Bucket List](https://abhinavsarkar.net/notes/2026-impossible-bucket-list/)
