@@ -20,6 +20,10 @@ params:
   canonicalURL: "https://rishikeshs.com"
   shorturl: "https://r1l.in"
   footer_mood: "(•_•) → (ง'̀-'́)ง → \\(^▽^)/"
+  footer_mosaic:
+    enabled: true
+    url: "/mosaic/"
+    endpoint: "https://mosaic-data.rishikeshsreehari.workers.dev/"
   title: Rishikesh Sreehari
   description: "This is my webspace. A niche-less blog where I gather and share my ideas and document my life. I consider this blog as an evolving art project itself."
   keywords: [Blog, Portfolio, Indieweb]

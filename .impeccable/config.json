@@ -1,0 +1,29 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "themes/rishi/assets/css/main.css"
+        ],
+        "createdAt": "2026-10-08T20:38:25.455Z",
+        "reason": "Agent: the flagged border is a conventional semantic blockquote rule, not a card accent"
+      },
+      {
+        "rule": "overused-font",
+        "value": "geist mono",
+        "createdAt": "2026-10-08T20:38:25.516Z",
+        "reason": "User confirmed: AGENTS.md explicitly specifies Geist Mono for code typography"
+      },
+      {
+        "rule": "bounce-easing",
+        "value": "buddy-bounce",
+        "createdAt": "2026-10-08T20:38:25.575Z",
+        "reason": "User confirmed: AGENTS.md documents the buddy hover bounce as an intentional interaction"
+      }
+    ]
+  }
+}

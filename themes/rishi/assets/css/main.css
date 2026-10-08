@@ -369,6 +369,31 @@ pre code {
   padding: 0 var(--space-4);
 }
 
+.footer-mosaic {
+  display: block;
+  padding: var(--space-1);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg);
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.footer-mosaic:hover {
+  border-color: var(--text-muted);
+  transform: translateY(-2px);
+}
+
+.footer-mosaic:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 3px;
+}
+
+.footer-mosaic-image {
+  display: block;
+  width: 78px;
+  height: 78px;
+}
+
 .footer-nav {
   display: flex;
   align-items: center;

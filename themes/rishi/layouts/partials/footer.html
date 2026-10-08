@@ -1,5 +1,51 @@
 <footer class="site-footer">
   <div class="footer-content">
+    {{- with site.Params.footer_mosaic }}
+    {{- if .enabled }}
+    <a class="footer-mosaic" href="{{ .url | relURL }}" aria-label="Visit the Pixel Mosaic" title="Visit the Pixel Mosaic">
+      <canvas class="footer-mosaic-image" id="footer-mosaic-image" width="78" height="78" role="img" aria-label="A preview of the current Pixel Mosaic"></canvas>
+    </a>
+    <script>
+      (() => {
+        const canvas = document.getElementById('footer-mosaic-image');
+        if (!canvas) return;
+
+        const context = canvas.getContext('2d');
+        const endpoint = {{ .endpoint | jsonify | safeJS }};
+        const cellSize = 8;
+        const gap = 2;
+        const emptyColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-alt').trim();
+
+        function drawMosaic(cells) {
+          context.clearRect(0, 0, canvas.width, canvas.height);
+          cells.forEach((color, index) => {
+            const isColor = typeof color === 'string' && CSS.supports('color', color) && color !== 'transparent';
+            context.fillStyle = isColor ? color : emptyColor;
+            context.fillRect(
+              (index % 8) * (cellSize + gap),
+              Math.floor(index / 8) * (cellSize + gap),
+              cellSize,
+              cellSize
+            );
+          });
+        }
+
+        drawMosaic(Array(64).fill('transparent'));
+
+        fetch(endpoint)
+          .then((response) => response.ok ? response.json() : Promise.reject())
+          .then((state) => {
+            if (state.cells && typeof state.cells === 'object') {
+              const cells = Array.from({ length: 64 }, (_, index) => state.cells[index] || 'transparent');
+              drawMosaic(cells);
+            }
+          })
+          .catch(() => {});
+      })();
+    </script>
+    {{- end }}
+    {{- end }}
+
     {{- with site.Params.footer_mood }}
     <div class="footer-mood">{{ . }}</div>
     {{- end }}

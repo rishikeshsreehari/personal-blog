@@ -7,6 +7,8 @@ type: page
 disable_comments: false
 ShowReadingTime: false
 updated_on: 2025-03-03
+shorturl: ideas
+
 ---
 
 #####  {{< updated_on >}}
