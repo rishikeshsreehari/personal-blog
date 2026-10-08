@@ -56,18 +56,18 @@ From a date of sorrow, mark the day,
 It guides the Volume you must survey.
 
 To reach the page where gibberish lies,
-The largest die will show the way,
-Square its count, then turn your eyes,
-See the hidden words emerge from the text.
+A six-sided die will be your guide.
+Square its highest roll, then turn your eyes,
+And let the English words arise.
 
-Among the letters, you shall see
-A city rise in quiet decree.
-From words of greatest strength and size,
-Its hidden glory waits your eyes.
+Among those words, you hold the key:
+The longest ones are yours to see.
+Within their ranks, a city lies,
+Its name shall be your final prize.
 
 ```
-Total Submissions: 0.   
-Clue requests: 3/5
+Total Submissions: 2.   
+Clue requests: 0/5
 
 *Source: Self*
 
