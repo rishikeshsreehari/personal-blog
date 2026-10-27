@@ -10,11 +10,8 @@ draft: true
 
 
 
----
 
-### 💭 What’s on My Mind?  
 
-Just thinking a lot, about AI, how ecnomics will pay out and on the meaning of life.
 
 ---
 
@@ -26,12 +23,13 @@ Just thinking a lot, about AI, how ecnomics will pay out and on the meaning of l
 
 ---
 
-
+<!--
 ### Now in Numbers
 
 
 
 ---
+-->
 
 ### 📚 What Am I Reading?
 

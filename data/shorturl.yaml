@@ -343,6 +343,11 @@
   custom: false
   title: '#3 Romir - Unoffice Hours'
   content_type: meet
+- content_url: /micro/
+  short_url: /7fd17f
+  custom: false
+  title: Micro
+  content_type: micro
 - content_url: /now-2024-06-09/
   short_url: /cbd877
   custom: false
@@ -703,6 +708,11 @@
   custom: true
   title: Webrings
   content_type: page
+- content_url: /stories/
+  short_url: /e47598
+  custom: false
+  title: Stories
+  content_type: stories
 - content_url: /til/
   short_url: /3fc688
   custom: false
