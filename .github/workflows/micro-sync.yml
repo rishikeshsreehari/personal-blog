@@ -24,7 +24,9 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          # Pinned: 3.14 has no coincurve (pynostr dep) wheel, forcing a source
+          # build that breaks on cffi 2.x. 3.12 has wheels for everything.
+          python-version: '3.12'
 
       - name: Install sync dependencies
         run: |
