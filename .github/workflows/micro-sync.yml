@@ -65,6 +65,12 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add -A
-          git commit -m "micro-sync: intake + syndication" || echo "nothing to commit"
-          git pull --rebase origin main || true
-          git push origin main
+          git commit -m "micro-sync: intake + syndication" || { echo "nothing to commit"; exit 0; }
+          # Retry rebase+push to survive a race with manual pushes / concurrent runs.
+          for i in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; sleep $((RANDOM % 4 + 2)); continue; }
+            if git push origin main; then echo "pushed on attempt $i"; exit 0; fi
+            echo "push attempt $i rejected, retrying…"; sleep $((RANDOM % 4 + 2))
+          done
+          echo "::error::push failed after 5 attempts"; exit 1
