@@ -1,0 +1,6 @@
+{{- $stories := where site.RegularPages "Type" "in" (slice "stories") }}
+{{- with $stories }}
+<hr>
+<h3>📸 Stories</h3>
+{{- partial "stories-tray.html" (dict "count" 4) -}}
+{{- end -}}

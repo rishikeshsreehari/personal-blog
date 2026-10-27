@@ -1,0 +1,68 @@
+name: Micro sync & syndicate
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # every 15 min (public repo = free unlimited minutes)
+  workflow_dispatch:
+
+concurrency:
+  group: micro-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout blog
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install sync dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/sync_requirements.txt
+
+      - name: Intake from inbox (personal-feed)
+        env:
+          INBOX_REPO: rishikeshsreehari/personal-feed
+          INBOX_PAT: ${{ secrets.INBOX_PAT }}
+        run: python scripts/micro_intake.py
+
+      - name: Syndicate live notes
+        env:
+          SITE_BASE: https://rishikeshs.com
+          BLUESKY_HANDLE: ${{ secrets.BLUESKY_HANDLE }}
+          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          MASTODON_INSTANCE: ${{ secrets.MASTODON_INSTANCE }}
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+          NOSTR_NSEC: ${{ secrets.NOSTR_NSEC }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+          SUBSTACK_SID: ${{ secrets.SUBSTACK_SID }}
+          SUBSTACK_LLI: ${{ secrets.SUBSTACK_LLI }}
+          SUBSTACK_CSRF: ${{ secrets.SUBSTACK_CSRF }}
+          SUBSTACK_HANDLE: ${{ vars.SUBSTACK_HANDLE }}
+          X_ENABLED: ${{ vars.X_ENABLED }}
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_SECRET: ${{ secrets.X_ACCESS_SECRET }}
+        run: python scripts/syndicate.py
+
+      - name: Commit & push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "micro-sync: intake + syndication" || echo "nothing to commit"
+          git pull --rebase origin main || true
+          git push origin main

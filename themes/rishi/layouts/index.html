@@ -19,14 +19,13 @@
   {{- end }}
 </section>
 
-{{- /* Recent posts — only non-hidden */}}
+{{- /* Recent writing — 2 most recent published posts */}}
 {{- $pages := where site.RegularPages "Type" "in" (slice "blog") }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
 {{- if $pages }}
 <section class="home-recent">
   <h2 class="home-section-title">Recent Writing</h2>
   <ul class="post-list">
-    {{- range first 5 $pages }}
+    {{- range first 2 $pages }}
     <li class="post-item">
       <div class="post-item-header">
         <span class="post-item-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></span>
@@ -38,6 +37,39 @@
     {{- end }}
   </ul>
   <p class="home-archive-link"><a href="/archive/">All posts →</a></p>
+</section>
+{{- end }}
+
+{{- /* Micros — compact, secondary section */}}
+{{- $micro := where site.RegularPages "Type" "in" (slice "micro") }}
+{{- if $micro }}
+<section class="home-micro">
+  <h2 class="home-section-title">Micros</h2>
+  <ul class="home-micro-list">
+    {{- range first 3 $micro }}
+    <li class="home-micro-item">
+      <a href="{{ .RelPermalink }}">
+        <time class="home-micro-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time>
+        <span class="home-micro-text">{{ .Plain | htmlUnescape | truncate 90 "…" }}</span>
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+  <p class="home-archive-link"><a href="/micro/">Micro Blog →</a></p>
+</section>
+{{- end }}
+
+{{- /* Stories — Instagram-style circles */}}
+{{- $stories := where site.RegularPages "Type" "in" (slice "stories") }}
+{{- $stories = sort $stories "Date" "desc" }}
+{{- if $stories }}
+<section class="home-stories">
+  <h2 class="home-section-title">Stories</h2>
+  {{ partial "stories-tray.html" (dict "count" 4) }}
+  <p class="home-archive-link home-stories-links">
+    <a href="/stories/">Stories →</a>
+    <a class="openstories-link" href="https://openstories.fyi" rel="noopener" title="This stories feed follows the OpenStories format">OpenStories</a>
+  </p>
 </section>
 {{- end }}
 

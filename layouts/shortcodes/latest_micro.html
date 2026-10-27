@@ -1,0 +1,27 @@
+{{- $micro := where site.RegularPages "Type" "in" (slice "micro") }}
+{{- with (first 1 $micro) }}
+{{- range . }}
+{{- $p := . }}
+<hr>
+<h3>🗒️ Latest from Micro</h3>
+<div class="micro-list micro-list-now">
+  <article class="micro-item">
+    {{- with .Content }}<div class="micro-body">{{ . }}</div>{{ end }}
+    {{- $images := .Resources.ByType "image" }}
+    {{- with $images }}
+    {{- $img := index . 0 }}
+    {{- $display := $img.Resize "600x webp q78" }}
+    <a class="micro-image" href="{{ $p.RelPermalink }}">
+      <img loading="lazy" src="{{ $display.RelPermalink }}" alt="{{ $p.Title }}" width="{{ $display.Width }}" height="{{ $display.Height }}">
+    </a>
+    {{- end }}
+    <div class="micro-meta">
+      <a class="micro-permalink" href="{{ .RelPermalink }}">
+        <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "Jan 2, 2006 · 15:04" }}</time>
+      </a>
+      <a class="micro-permalink" href="/micro/">more →</a>
+    </div>
+  </article>
+</div>
+{{- end }}
+{{- end }}

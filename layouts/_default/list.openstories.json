@@ -1,0 +1,32 @@
+{{- /* OpenStories feed — JSON Feed 1.1 + _open_stories extension (https://openstories.fyi) */ -}}
+{{- $stories := where site.RegularPages "Type" "in" (slice "stories") -}}
+{{- $stories = sort $stories "Date" "desc" -}}
+{{- $items := slice -}}
+{{- range $p := $stories -}}
+  {{- $images := $p.Resources.ByType "image" -}}
+  {{- with $images -}}
+    {{- $img := index . 0 -}}
+    {{- $full := $img.Resize "1080x webp q85" -}}
+    {{- $alt := $p.Params.caption | default $p.Title | default "Story" -}}
+    {{- $os := dict "url" $full.Permalink "mime_type" "image/webp" "alt" $alt -}}
+    {{- with $p.Params.caption }}{{ $os = merge $os (dict "caption" .) }}{{ end -}}
+    {{- $item := dict
+        "id" $p.Permalink
+        "url" $p.Permalink
+        "content_text" ($p.Params.caption | default $p.Title | default "")
+        "date_published" ($p.Date.Format "2006-01-02T15:04:05Z07:00")
+        "authors" (slice (dict "name" site.Title "url" site.BaseURL))
+        "_open_stories" $os
+    -}}
+    {{- $items = $items | append $item -}}
+  {{- end -}}
+{{- end -}}
+{{- $feed := dict
+    "version" "https://jsonfeed.org/version/1.1"
+    "title" (printf "Stories — %s" site.Title)
+    "home_page_url" (absURL "stories/")
+    "feed_url" (absURL "stories/feed.json")
+    "_open_stories" (dict "version" "0.0.9")
+    "items" $items
+-}}
+{{- $feed | jsonify (dict "indent" "  ") -}}

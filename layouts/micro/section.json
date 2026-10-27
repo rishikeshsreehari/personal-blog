@@ -1,0 +1,32 @@
+{
+    "version": "https://jsonfeed.org/version/1.1",
+    "title": {{ printf "%s · Micro" .Site.Title | jsonify }},
+    "home_page_url": {{ .Permalink | jsonify }},
+    "feed_url": {{ (printf "%smicro/index.json" .Site.BaseURL) | jsonify }},
+    "items": [
+        {{- $.Scratch.Add "mindex" slice -}}
+        {{- range .Pages.ByDate.Reverse -}}
+            {{- $item := dict
+                "id" .Permalink
+                "url" .Permalink
+                "title" .Title
+                "content_html" .Content
+                "content_text" (.Plain | strings.TrimSpace)
+                "date_published" (.Date.Format "2006-01-02T15:04:05-07:00")
+                "_path" .File.Path
+                "link" (.Params.link | default "")
+                "syndicate_to" (.Params.syndicate_to | default slice)
+            -}}
+            {{- $images := .Resources.ByType "image" -}}
+            {{- with $images -}}
+                {{- $img := index . 0 -}}
+                {{- $item = merge $item (dict "image" $img.Permalink) -}}
+            {{- end -}}
+            {{- $.Scratch.Add "mindex" $item -}}
+        {{- end -}}
+        {{- range $index, $entry := $.Scratch.Get "mindex" -}}
+            {{- if $index }},{{ end }}
+            {{- $entry | jsonify -}}
+        {{- end -}}
+    ]
+}

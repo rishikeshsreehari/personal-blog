@@ -6,7 +6,7 @@
     "items": [
         {{- $.Scratch.Add "index" slice -}}
         {{- range site.RegularPages -}}
-            {{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) }}
+            {{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) (ne .Section `micro`) (ne .Section `stories`) }}
                 {{- $.Scratch.Add "index" (dict 
                     "id" .Permalink 
                     "url" .Permalink 

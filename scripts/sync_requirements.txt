@@ -1,0 +1,6 @@
+python-frontmatter
+requests
+atproto
+Mastodon.py
+pynostr
+tweepy

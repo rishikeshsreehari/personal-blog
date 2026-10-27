@@ -1,0 +1,29 @@
+{{- define "main" }}
+
+<article class="h-entry story-single">
+  {{- $images := .Resources.ByType "image" }}
+  {{- with $images }}
+  {{- $img := index . 0 }}
+  {{- $display := $img.Resize "1400x webp q85" }}
+  <figure class="story-single-figure">
+    <img src="{{ $display.RelPermalink }}" alt="{{ $.Params.caption | default $.Title }}" width="{{ $display.Width }}" height="{{ $display.Height }}">
+  </figure>
+  {{- end }}
+
+  {{- with .Params.caption }}
+  <div class="story-single-caption e-content">{{ . | markdownify }}</div>
+  {{- end }}
+  {{- with .Content }}
+  <div class="story-single-caption e-content">{{ . }}</div>
+  {{- end }}
+
+  <div class="micro-meta">
+    <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+    {{- with .Params.link }}
+    <a class="story-single-link" href="{{ . }}" rel="noopener" target="_blank">Open link →</a>
+    {{- end }}
+  </div>
+
+  <p class="micro-backlink"><a href="{{ "/stories/" | relLangURL }}">← all stories</a></p>
+</article>
+{{- end }}

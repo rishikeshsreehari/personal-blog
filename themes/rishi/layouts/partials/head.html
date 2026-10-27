@@ -33,6 +33,9 @@
 {{- with .OutputFormats.Get "RSS" }}
 <link rel="alternate" type="application/rss+xml" href="{{ .Permalink }}" title="{{ $.Site.Title }}">
 {{- end }}
+{{- with .OutputFormats.Get "OPENSTORIES" }}
+<link rel="alternate" type="application/feed+json" href="{{ .Permalink }}" title="{{ $.Title }} — OpenStories">
+{{- end }}
 
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">

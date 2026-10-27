@@ -18,12 +18,9 @@ shorturl: "now"
 
 {{< weather-with-sky location="Abu Dhabi" lat="24.433069" lng="54.43741" >}}
 
+{{< latest_micro >}}
 
----
-
-### 💭 What’s on My Mind?  
-
-Just thinking a lot, about AI, how ecnomics will pay out and on the meaning of life.
+{{< stories_tray >}}
 
 ---
 
@@ -35,12 +32,13 @@ Just thinking a lot, about AI, how ecnomics will pay out and on the meaning of l
 
 ---
 
-
+<!--
 ### Now in Numbers
 
 {{< now_tiles >}}
 
 ---
+-->
 
 ### 📚 What Am I Reading?
 

@@ -7,12 +7,13 @@ type: page
 disable_comments: true
 ShowReadingTime: false
 shorturl: "refer"
-updated_on: 2026-10-09
+updated_on: 2026-10-27
 
 ---
 
 
 #####  {{< updated_on >}}
+
 
 I use a bunch of services that offer referral or rewards programs. If you sign up through any of these links, you usually get a bonus and I sometimes do too. Everything is in alphabetical order.
 
@@ -41,6 +42,19 @@ I've used Airalo in Indonesia and Jordan, as a backup when I land to access inte
 
 Airalo  Referral Code:  `RISHIK0863`
 
+---
+
+### Airbnb Host Referral
+
+This referral is for people who are planning to start hosting on Airbnb! You can create a listing for your home, experience, or service using my link.
+
+**What you get:** I'm not sure. (I get AED 92–845 for eligible UAE homes, AED 184 for experiences, or AED 367–1,469 for services once you complete a qualifying first booking!)
+
+Airbnb Referral: [Link](https://www.airbnb.ae/rp/rishikeshs63?s=67&unique_share_id=c2e8518c-50fd-4a1b-8a06-f2aaf399b89b)
+
+---
+
+
 
 ### Brain.fm - 30 Days FREE
 
@@ -50,6 +64,15 @@ A music app with different modes for focusing, relaxing, or sleeping. I have not
 
 [Brain.fm Referral](https://www.brain.fm/refer?extended_promo=30&utm_source=referafriend)
 
+---
+
+### Claude Cowork  - 1 Week FREE!
+
+Claude Cowork helps you work on files and tasks on your computer. The guest pass also includes Claude in Excel, PowerPoint, Chrome, and Claude Code. I have 2 passes left if you want to try it out.
+
+**What you get:** 1 week free (I get $10 in usage credits if you subscribe!)
+
+[Claude Referral](https://claude.ai/referral/bQCR7Dl5Cw?s=cowork&v=apps)
 
 
 ---

@@ -1,0 +1,66 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- with .Params.summary }}<p class="page-description">{{ . }}</p>{{ end }}
+  <p class="micro-feed-links">
+    <a href="{{ "/micro/index.xml" | relLangURL }}">RSS</a> ·
+    <a href="{{ "/micro/index.json" | relLangURL }}">JSON</a>
+  </p>
+</header>
+
+{{- $paginator := .Paginate .Pages.ByDate.Reverse }}
+<div class="micro-list micro-feed">
+  {{- range $paginator.Pages }}
+  {{- $p := . }}
+  <article class="micro-item h-entry">
+    <a class="micro-time micro-permalink u-url" href="{{ .RelPermalink }}">
+      <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}" title="{{ .Date.Format "January 2, 2006 · 15:04" }}">
+        <span class="micro-time-hm">{{ .Date.Format "15:04" }}</span>
+        <span class="micro-time-date">{{ .Date.Format "Jan 2" }}</span>
+      </time>
+    </a>
+
+    <div class="micro-content">
+      {{- with .Content }}
+      <div class="micro-body e-content">{{ . }}</div>
+      {{- end }}
+
+      {{- with .Params.link }}
+      <p class="micro-link"><a href="{{ . }}" rel="noopener" class="u-bookmark-of">↗ {{ . | replaceRE `^https?://(www\.)?` "" | replaceRE `/$` "" }}</a></p>
+      {{- end }}
+
+      {{- $images := .Resources.ByType "image" }}
+      {{- with $images }}
+      {{- $img := index . 0 }}
+      {{- $display := $img.Resize "900x webp q80" }}
+      <a class="micro-image" href="{{ $p.RelPermalink }}">
+        <img loading="lazy" src="{{ $display.RelPermalink }}" alt="{{ $p.Title }}" width="{{ $display.Width }}" height="{{ $display.Height }}">
+      </a>
+      {{- end }}
+
+      {{- with .Params.syndication }}
+      <span class="micro-syndication">
+        {{- range . }}
+        <a href="{{ .url }}" rel="syndication" class="u-syndication" aria-label="On {{ .platform }}" title="On {{ .platform }}">{{ partial "svg.html" (dict "name" .platform) }}</a>
+        {{- end }}
+      </span>
+      {{- end }}
+    </div>
+  </article>
+  {{- end }}
+</div>
+
+{{- if gt $paginator.TotalPages 1 }}
+<nav class="pagination" aria-label="Pagination">
+  {{- if $paginator.HasPrev }}
+  <a href="{{ $paginator.Prev.URL | relURL }}">← Newer</a>
+  {{- end }}
+  <span>{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
+  {{- if $paginator.HasNext }}
+  <a href="{{ $paginator.Next.URL | relURL }}">Older →</a>
+  {{- end }}
+</nav>
+{{- end }}
+
+{{- end }}

@@ -1,0 +1,11 @@
+{{- /* Relative time label. Context: a time value (e.g. .Date). Outputs "3h ago", "2d ago", "1w ago". */ -}}
+{{- $age := now.Sub . -}}
+{{- $mins := $age.Minutes -}}
+{{- $hrs := $age.Hours -}}
+{{- if lt $hrs 0.0 -}}just now
+{{- else if lt $mins 1.0 -}}just now
+{{- else if lt $mins 60.0 -}}{{ printf "%dm ago" (int $mins) }}
+{{- else if lt $hrs 24.0 -}}{{ printf "%dh ago" (int $hrs) }}
+{{- else if lt $hrs 168.0 -}}{{ printf "%dd ago" (int (div $hrs 24.0)) }}
+{{- else -}}{{ printf "%dw ago" (int (div $hrs 168.0)) }}
+{{- end -}}

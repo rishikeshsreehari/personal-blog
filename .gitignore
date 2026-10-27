@@ -12,3 +12,7 @@ env.sh
 resources/
 
 venv
+
+# Python
+__pycache__/
+*.pyc

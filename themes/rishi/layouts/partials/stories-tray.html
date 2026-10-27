@@ -1,0 +1,37 @@
+{{- /* Compact stories tray (home + /now). Params: count (default 4). Shows a
+       "nothing in 24h" placeholder when none of the shown stories are fresh. */ -}}
+{{- $count := .count | default 4 }}
+{{- $stories := where site.RegularPages "Type" "in" (slice "stories") }}
+{{- $stories = sort $stories "Date" "desc" }}
+{{- $recent := first $count $stories }}
+{{- if $recent }}
+{{- $hasFresh := false }}
+{{- range $recent }}
+  {{- $h := (now.Sub .Date).Hours }}
+  {{- if and (ge $h 0.0) (lt $h 24.0) }}{{ $hasFresh = true }}{{ end }}
+{{- end }}
+<div class="stories-tray stories-tray-home">
+  {{- if not $hasFresh }}
+  <figure class="story-bubble">
+    <span class="story-card story-card-empty" aria-hidden="true"></span>
+    <figcaption class="story-label">nothing in 24h</figcaption>
+  </figure>
+  {{- end }}
+  {{- range $recent }}
+  {{- $p := . }}
+  {{- $images := .Resources.ByType "image" }}
+  {{- with $images }}
+  {{- $thumb := (index . 0).Fill "200x200 webp q80" }}
+  {{- $alt := $p.Params.caption | default $p.Title | default ($p.Date.Format "Jan 2, 2006") }}
+  {{- $h := (now.Sub $p.Date).Hours }}
+  {{- $fresh := and (ge $h 0.0) (lt $h 24.0) }}
+  <figure class="story-bubble">
+    <a class="story-card{{ if $fresh }} is-fresh{{ end }}" href="{{ "/stories/" | relLangURL }}#{{ $p.File.ContentBaseName }}" aria-label="{{ $alt }}">
+      <img loading="lazy" src="{{ $thumb.RelPermalink }}" alt="{{ $alt }}" width="200" height="200">
+    </a>
+    <figcaption class="story-label{{ if $fresh }} is-fresh{{ end }}">{{ partial "time-ago.html" $p.Date }}</figcaption>
+  </figure>
+  {{- end }}
+  {{- end }}
+</div>
+{{- end }}

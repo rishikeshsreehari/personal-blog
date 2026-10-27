@@ -1,0 +1,190 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{- with .Params.summary }}<p class="page-description">{{ . }}</p>{{ end }}
+  <p class="micro-feed-links">
+    <a href="{{ "/stories/feed.json" | relLangURL }}">OpenStories feed</a> ·
+    <a href="https://openstories.fyi" rel="noopener">what's this?</a>
+  </p>
+</header>
+
+{{- $paginator := .Paginate .Pages.ByDate.Reverse 18 }}
+<div class="stories-tray" id="stories-grid">
+  {{- range $i, $p := $paginator.Pages }}
+  {{- $images := $p.Resources.ByType "image" }}
+  {{- with $images }}
+  {{- $img := index . 0 }}
+  {{- $thumb := $img.Fill "300x300 webp q80" }}
+  {{- $full := $img.Resize "1400x webp q85" }}
+  {{- $cap := $p.Params.caption | default $p.Title }}
+  {{- $age := now.Sub $p.Date }}
+  {{- $fresh := and (ge $age.Hours 0.0) (lt $age.Hours 24.0) }}
+  <figure class="story-bubble">
+    <button class="story-card{{ if $fresh }} is-fresh{{ end }}" type="button"
+            data-index="{{ $i }}"
+            data-slug="{{ $p.File.ContentBaseName }}"
+            data-full="{{ $full.RelPermalink }}"
+            data-caption="{{ $cap }}"
+            data-date="{{ $p.Date.Format "Jan 2, 2006" }}"
+            data-ago="{{ partial "time-ago.html" $p.Date }}"
+            data-permalink="{{ $p.RelPermalink }}"
+            {{- with $p.Params.link }} data-link="{{ . }}"{{ end }}>
+      <img loading="lazy" src="{{ $thumb.RelPermalink }}" alt="{{ $cap }}" width="300" height="300">
+    </button>
+    <figcaption class="story-label{{ if $fresh }} is-fresh{{ end }}">{{ partial "time-ago.html" $p.Date }}</figcaption>
+  </figure>
+  {{- end }}
+  {{- end }}
+</div>
+
+{{- if gt $paginator.TotalPages 1 }}
+<nav class="pagination" aria-label="Pagination">
+  {{- if $paginator.HasPrev }}
+  <a href="{{ $paginator.Prev.URL | relURL }}">← Newer</a>
+  {{- end }}
+  <span>{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
+  {{- if $paginator.HasNext }}
+  <a href="{{ $paginator.Next.URL | relURL }}">Older →</a>
+  {{- end }}
+</nav>
+{{- end }}
+
+<div class="story-viewer" id="story-viewer" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Story viewer">
+  <div class="story-stage" id="sv-stage">
+    <div class="story-progress" id="sv-progress"></div>
+    <div class="story-topbar">
+      <span class="story-top-meta" id="sv-top"></span>
+      <button class="story-close" id="sv-close" type="button" aria-label="Close">&times;</button>
+    </div>
+    <img class="story-stage-img" id="sv-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+    <div class="story-caption-wrap">
+      <span class="story-caption" id="sv-caption"></span>
+      <a class="story-caption-link" id="sv-link" href="#" rel="noopener" target="_blank" hidden>Open link →</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var grid = document.getElementById('stories-grid');
+    if (!grid) return;
+    var cards = Array.prototype.slice.call(grid.querySelectorAll('.story-card:not(.story-card-empty)'));
+    if (!cards.length) return;
+    var viewer = document.getElementById('story-viewer');
+    var stage = document.getElementById('sv-stage');
+    var imgEl = document.getElementById('sv-img');
+    var capEl = document.getElementById('sv-caption');
+    var topEl = document.getElementById('sv-top');
+    var linkEl = document.getElementById('sv-link');
+    var progEl = document.getElementById('sv-progress');
+    var DURATION = 5000;
+    var current = 0, timer = null, fills = [], segs = [];
+
+    function buildProgress() {
+      progEl.innerHTML = '';
+      fills = []; segs = [];
+      cards.forEach(function () {
+        var s = document.createElement('div'); s.className = 'story-progress-seg';
+        var f = document.createElement('div'); f.className = 'story-progress-fill';
+        s.appendChild(f); progEl.appendChild(s);
+        segs.push(s); fills.push(f);
+      });
+    }
+    function clearTimer() { if (timer) { clearTimeout(timer); timer = null; } }
+    function setStatic(i) {
+      fills.forEach(function (f, idx) {
+        f.style.transition = 'none';
+        f.style.width = idx < i ? '100%' : '0%';
+      });
+    }
+    function startFill(ms) {
+      var f = fills[current]; if (!f) return;
+      var from = ms < DURATION ? parseFloat(getComputedStyle(f).width) : 0;
+      if (ms >= DURATION) { f.style.transition = 'none'; f.style.width = '0%'; void f.offsetWidth; }
+      f.style.transition = 'width ' + ms + 'ms linear';
+      f.style.width = '100%';
+      clearTimer();
+      timer = setTimeout(next, ms);
+    }
+    function render(i) {
+      current = i;
+      var c = cards[i]; if (!c) return;
+      imgEl.src = c.getAttribute('data-full');
+      imgEl.alt = c.getAttribute('data-caption') || '';
+      capEl.textContent = c.getAttribute('data-caption') || '';
+      topEl.textContent = c.getAttribute('data-ago') || c.getAttribute('data-date') || '';
+      var link = c.getAttribute('data-link');
+      if (link) { linkEl.href = link; linkEl.hidden = false; } else { linkEl.hidden = true; }
+      setStatic(i);
+      startFill(DURATION);
+    }
+    function open(i) {
+      buildProgress();
+      render(i);
+      viewer.classList.add('is-open');
+      viewer.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      clearTimer();
+      viewer.classList.remove('is-open');
+      viewer.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    function next() { if (current < cards.length - 1) render(current + 1); else close(); }
+    function prev() { if (current > 0) render(current - 1); else render(0); }
+
+    function pause() {
+      clearTimer();
+      var f = fills[current];
+      if (f) { var w = getComputedStyle(f).width; f.style.transition = 'none'; f.style.width = w; }
+    }
+    function resume() {
+      var f = fills[current], s = segs[current];
+      if (!f || !s) return;
+      var frac = s.clientWidth ? parseFloat(getComputedStyle(f).width) / s.clientWidth : 0;
+      startFill(Math.max(300, DURATION * (1 - frac)));
+    }
+
+    cards.forEach(function (c, i) {
+      c.addEventListener('click', function (e) { e.preventDefault(); open(i); });
+    });
+    document.getElementById('sv-close').addEventListener('click', function (e) { e.stopPropagation(); close(); });
+    viewer.addEventListener('click', function (e) { if (e.target === viewer) close(); });
+
+    var downT = 0, downX = 0, held = false;
+    stage.addEventListener('pointerdown', function (e) {
+      if (e.target.closest('.story-close, .story-caption-link')) return;
+      downT = Date.now(); downX = e.clientX; held = true; pause();
+    });
+    stage.addEventListener('pointerup', function (e) {
+      if (!held) return; held = false;
+      if (Date.now() - downT < 220) {
+        var r = stage.getBoundingClientRect();
+        if (e.clientX - r.left < r.width * 0.33) prev(); else next();
+      } else { resume(); }
+    });
+    stage.addEventListener('pointercancel', function () { if (held) { held = false; resume(); } });
+
+    document.addEventListener('keydown', function (e) {
+      if (!viewer.classList.contains('is-open')) return;
+      if (e.key === 'Escape') close();
+      else if (e.key === 'ArrowLeft') prev();
+      else if (e.key === 'ArrowRight') next();
+    });
+
+    // Deep link: /stories/#<slug> (e.g. from the home or /now tray) opens that story
+    function openFromHash() {
+      var slug = (location.hash || '').replace(/^#/, '');
+      if (!slug) return;
+      for (var i = 0; i < cards.length; i++) {
+        if (cards[i].getAttribute('data-slug') === slug) { open(i); break; }
+      }
+    }
+    openFromHash();
+    window.addEventListener('hashchange', openFromHash);
+  })();
+</script>
+
+{{- end }}

@@ -169,6 +169,10 @@ menu:
       name: Library
       url: /library/
       weight: 40
+    - identifier: micro
+      name: Micro
+      url: /micro/
+      weight: 45
     - identifier: Now
       name: Now
       url: /now/
@@ -192,6 +196,12 @@ outputFormats:
     baseName: "index"
     isPlainText: true
     suffix: "md"
+  OPENSTORIES:
+    mediaType: "application/json"
+    baseName: "feed"
+    isPlainText: true
+    rel: "alternate"
+    noUgly: true
 
 mediaTypes:
   application/atom+xml:
