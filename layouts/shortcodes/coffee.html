@@ -1,0 +1,147 @@
+{{- /*
+  Coffee journal — parses data/coffee.txt (coffee.txt plain-text format) and
+  renders it grouped by day, newest first.
+  Each brew is a block: --- , key: value lines, --- , free-text notes.
+*/ -}}
+{{- $raw := os.ReadFile "data/coffee.txt" | default "" -}}
+{{- /* prepend a newline so a leading "---" is recognised as a delimiter */ -}}
+{{- $parts := split (printf "\n%s" $raw) "\n---\n" -}}
+
+{{- $brews := slice -}}
+{{- range $i, $p := $parts -}}
+  {{- if and (gt $i 0) (eq (mod $i 2) 1) -}}
+    {{- $fields := dict -}}
+    {{- range $line := split $p "\n" -}}
+      {{- $line = trim $line " \t\r" -}}
+      {{- if and $line (in $line ":") -}}
+        {{- $kv := split $line ":" -}}
+        {{- $key := lower (trim (index $kv 0) " ") -}}
+        {{- $val := trim (delimit (after 1 $kv) ":") " " -}}
+        {{- if $key -}}{{- $fields = merge $fields (dict $key $val) -}}{{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $notes := "" -}}
+    {{- if lt (add $i 1) (len $parts) -}}{{- $notes = trim (index $parts (add $i 1)) " \t\r\n" -}}{{- end -}}
+    {{- if $fields.date -}}
+      {{- $key := printf "%s %s" $fields.date ($fields.at | default "00:00") -}}
+      {{- $brews = $brews | append (merge $fields (dict "notes" $notes "sortkey" $key)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $brews = sort $brews "sortkey" "desc" -}}
+
+{{- /* per-day counts + distinct methods */ -}}
+{{- $counts := dict -}}
+{{- $methods := slice -}}
+{{- range $brews -}}
+  {{- $counts = merge $counts (dict .date (add (int (index $counts .date | default 0)) 1)) -}}
+  {{- with .method -}}{{- $methods = $methods | append . -}}{{- end -}}
+{{- end -}}
+{{- $methods = $methods | uniq -}}
+{{- $total := len $brews -}}
+{{- $beans := slice -}}
+{{- range $brews -}}{{- with .bean -}}{{- $beans = $beans | append . -}}{{- end -}}{{- end -}}
+
+<div class="coffee-journal">
+  {{- if gt $total 0 }}
+  <p class="coffee-stats">{{ $total }} brew{{ if ne $total 1 }}s{{ end }} · {{ len ($beans | uniq) }} bean{{ if ne (len ($beans | uniq)) 1 }}s{{ end }}</p>
+  {{- end }}
+
+  {{- if gt (len $methods) 1 }}
+  <div class="til-filters coffee-filters">
+    <button class="til-filter-tag active" data-method="all">All</button>
+    {{- range $methods }}
+    <button class="til-filter-tag" data-method="{{ . }}">{{ . }}</button>
+    {{- end }}
+  </div>
+  {{- end }}
+
+  {{- $lastDate := "" }}
+  {{- range $brews }}
+  {{- if ne .date $lastDate }}
+  <h2 class="coffee-day">{{ dateFormat "January 2, 2006" .date }}<span class="coffee-day-count">{{ index $counts .date }} brew{{ if ne (index $counts .date) 1 }}s{{ end }}</span></h2>
+  {{- $lastDate = .date }}
+  {{- end }}
+  {{- $doseN := replaceRE "[^0-9.]" "" (.dose | default "") -}}
+  {{- $waterN := replaceRE "[^0-9.]" "" (.water | default "") -}}
+  <article class="coffee-card" data-method="{{ .method }}">
+    <div class="coffee-card__top">
+      {{- with .at }}<time class="coffee-card__time">{{ . }}</time>{{ else }}<span class="coffee-card__time"></span>{{ end }}
+      <div class="coffee-card__id">
+        <span class="coffee-card__bean">{{ .bean }}</span>
+        {{- with .roaster }}<span class="coffee-card__roaster">{{ . }}</span>{{ end }}
+      </div>
+      {{- with .rating }}<span class="coffee-card__rating">{{ . }}<span class="coffee-card__rating-max">/10</span></span>{{ end }}
+    </div>
+
+    <div class="coffee-card__spec">
+      {{- $spec := slice -}}
+      {{- with .method }}{{ $spec = $spec | append (printf "<strong>%s</strong>" .) }}{{ end -}}
+      {{- if and $doseN $waterN -}}
+        {{- $ratio := "" -}}
+        {{- if gt (float $doseN) 0.0 }}{{ $ratio = printf " <span class=\"coffee-ratio\">1:%.0f</span>" (div (float $waterN) (float $doseN)) }}{{ end -}}
+        {{ $spec = $spec | append (printf "%s &rarr; %s%s" .dose .water $ratio) }}
+      {{- else -}}
+        {{- with .dose }}{{ $spec = $spec | append (printf "%s in" .) }}{{ end -}}
+        {{- with .yield }}{{ $spec = $spec | append (printf "%s out" .) }}{{ end -}}
+      {{- end -}}
+      {{- with .grind }}{{ $spec = $spec | append . }}{{ end -}}
+      {{- with .temp }}{{ $spec = $spec | append . }}{{ end -}}
+      {{- with .brew }}{{ $spec = $spec | append (printf "%s brew" .) }}{{ end -}}
+      {{ delimit $spec "<span class=\"coffee-dot\">·</span>" | safeHTML }}
+    </div>
+
+    {{- $detail := slice -}}
+    {{- with .origin }}{{ $detail = $detail | append . }}{{ end -}}
+    {{- with .process }}{{ $detail = $detail | append . }}{{ end -}}
+    {{- with .roast }}{{ $detail = $detail | append (printf "roasted %s" .) }}{{ end -}}
+    {{- if $detail }}
+    <div class="coffee-card__detail">{{ delimit $detail " · " }}</div>
+    {{- end }}
+
+    {{- with .notes }}
+    <div class="coffee-card__notes">{{ . | $.Page.RenderString }}</div>
+    {{- end }}
+
+    {{- with .tags }}
+    <div class="coffee-card__tags">
+      {{- range split . "," }}<span class="coffee-tag">{{ trim . " " }}</span>{{ end }}
+    </div>
+    {{- end }}
+  </article>
+  {{- end }}
+
+  {{- if eq $total 0 }}
+  <p class="coffee-empty">No brews logged yet.</p>
+  {{- end }}
+</div>
+
+<script>
+  (function() {
+    var buttons = document.querySelectorAll('.coffee-filters .til-filter-tag');
+    var cards = document.querySelectorAll('.coffee-card');
+    var days = document.querySelectorAll('.coffee-day');
+    function apply(method) {
+      cards.forEach(function(c) {
+        c.style.display = (method === 'all' || c.dataset.method === method) ? '' : 'none';
+      });
+      // hide a day header whose brews are all filtered out
+      days.forEach(function(h) {
+        var n = h.nextElementSibling, any = false;
+        while (n && n.classList.contains('coffee-card')) {
+          if (n.style.display !== 'none') { any = true; break; }
+          n = n.nextElementSibling;
+        }
+        h.style.display = any ? '' : 'none';
+      });
+    }
+    buttons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        buttons.forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        apply(this.dataset.method);
+      });
+    });
+  })();
+</script>

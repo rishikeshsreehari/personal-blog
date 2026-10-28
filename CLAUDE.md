@@ -138,6 +138,15 @@ Hugo-based personal blog at rishikeshs.com. Migrated from PaperMod to a custom t
 - Sortable table: book title (linked), author, star rating, read date
 - Sort controls: Newest→Oldest or Best→Worst
 
+### Coffee Journal
+- Page: `content/coffee.md` (`/coffee/`, shorturl `coffee`) → `{{< coffee >}}` shortcode
+- Data: `data/coffee.txt` — plain-text **coffee.txt format** (one brew per block: `---` / `key: value` lines / `---` / free-text notes). Suggested keys: `date at bean roaster method dose water grind temp brew rating`; optional: `origin process roast bloom yield tags`
+- **Hugo data-loader gotcha**: a raw `.txt` in `data/` crashes the build (`unmarshal of format "" is not supported`). `config.yml` has `ignoreFiles: ["coffee\\.txt$"]` so the loader skips it; the shortcode reads it with `os.ReadFile`
+- Shortcode `layouts/shortcodes/coffee.html`: parses blocks (prepend `\n`, split on `\n---\n`, odd segments = headers, even = notes), sorts by `date + at` desc, groups by day with per-day counts, method filter buttons (reuses `.til-filter-tag`). Derives `1:N` ratio at render time (not stored). Espresso (dose + yield, no water) shows `in / out`
+- CSS: `.coffee-*` block at end of `main.css` — time rail + bean/roaster + rating top row; spec/notes indent to align past the rail; collapses on mobile (600px)
+- **Knowledgebase** (roaster/grinder/method lists + defaults): `data/coffee-meta.json` — single source of truth, editable in git with no CMS redeploy. The CMS fetches it via its `/api/coffee-meta` route (baked-in fallback if unreachable). Not stored in coffee.txt (keeps the log portable)
+- **Entry via CMS** (personal-feed): Coffee tab in `cms/src/index.js` — datalist dropdowns from coffee-meta, interactive dose↔ratio↔water (type any two, third auto-fills), 1–10 rating slider, grinder+clicks → `grind`. Commits `coffee/<ts>/brew.txt` to the inbox → `micro_intake.py` `drain_coffee()` appends the block to `data/coffee.txt` (workflow's `git add -A` commits it; no syndication)
+
 ### Watch Pages
 - List page (`/watch/`): uses `{{< watch >}}` shortcode — rows of name · stars · language · type · date
 - Items with a `/watch/slug` URL in `data/watch.yaml` link to individual review pages

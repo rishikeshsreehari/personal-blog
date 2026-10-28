@@ -2748,3 +2748,176 @@ pre code {
     padding-left: 0;
   }
 }
+
+/* ── Coffee journal ──────────────────────────── */
+
+.coffee-stats {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin-bottom: var(--space-6);
+}
+
+.coffee-filters {
+  margin-bottom: var(--space-8);
+}
+
+/* day grouping header */
+.coffee-day {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-4);
+  font-size: var(--text-base);
+  font-weight: 600;
+  margin: var(--space-8) 0 var(--space-2);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.coffee-day:first-of-type { margin-top: 0; }
+
+.coffee-day-count {
+  font-size: var(--text-xs);
+  font-weight: 400;
+  color: var(--text-faint);
+  letter-spacing: 0.02em;
+}
+
+.coffee-card {
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.coffee-day + .coffee-card { padding-top: var(--space-3); }
+
+/* top row: time rail · bean/roaster · rating */
+.coffee-card__top {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+}
+
+.coffee-card__time {
+  flex-shrink: 0;
+  width: 3.2em;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-faint);
+  font-variant-numeric: tabular-nums;
+}
+
+.coffee-card__id {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.coffee-card__bean {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.coffee-card__roaster {
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.coffee-card__rating {
+  flex-shrink: 0;
+  font-family: var(--font-ui);
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.coffee-card__rating-max {
+  font-weight: 400;
+  color: var(--text-faint);
+  font-size: var(--text-xs);
+}
+
+/* the spec, detail and notes align under the bean, past the time rail */
+.coffee-card__spec,
+.coffee-card__detail,
+.coffee-card__notes,
+.coffee-card__tags {
+  margin-left: calc(3.2em + var(--space-3));
+}
+
+.coffee-card__spec {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-top: var(--space-2);
+  line-height: 1.7;
+}
+
+.coffee-card__spec strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.coffee-dot {
+  color: var(--text-faint);
+  margin: 0 0.5em;
+}
+
+.coffee-ratio { color: var(--text-faint); }
+
+.coffee-card__detail {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--text-faint);
+  margin-top: var(--space-1);
+}
+
+.coffee-card__notes {
+  font-family: var(--font-body);
+  color: var(--text);
+  line-height: 1.7;
+  margin-top: var(--space-3);
+}
+
+.coffee-card__notes p { margin-bottom: var(--space-2); }
+.coffee-card__notes p:last-child { margin-bottom: 0; }
+
+.coffee-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.coffee-tag {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: var(--space-1) var(--space-2);
+}
+
+.coffee-empty {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+@media (max-width: 600px) {
+  /* drop the time rail to its own line; everything left-aligns */
+  .coffee-card__spec,
+  .coffee-card__detail,
+  .coffee-card__notes,
+  .coffee-card__tags {
+    margin-left: 0;
+  }
+  .coffee-card__top { flex-wrap: wrap; }
+  .coffee-card__time { order: 1; width: auto; }
+  .coffee-card__rating { order: 2; margin-left: auto; }
+  .coffee-card__id { order: 3; flex: 0 0 100%; }
+}

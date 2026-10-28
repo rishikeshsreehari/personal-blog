@@ -1,0 +1,26 @@
+{
+  "roasters": [
+    "Tunga Organics",
+    "EveryDay Roastery"
+  ],
+  "grinders": [
+    "Timemore C3S"
+  ],
+  "methods": [
+    "V60",
+    "Aeropress",
+    "Espresso",
+    "Moka",
+    "FrenchPress",
+    "Chemex",
+    "Kalita",
+    "ColdBrew"
+  ],
+  "defaults": {
+    "method": "V60",
+    "grinder": "Timemore C3S",
+    "ratio": 16,
+    "dose": 20,
+    "temp": 94
+  }
+}

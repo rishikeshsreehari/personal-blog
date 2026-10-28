@@ -19,7 +19,46 @@ import tempfile
 INBOX_REPO = os.environ.get("INBOX_REPO", "rishikeshsreehari/personal-feed")
 PAT = os.environ.get("INBOX_PAT")
 CONTENT = os.path.join(os.getcwd(), "content")
+COFFEE_FILE = os.path.join(os.getcwd(), "data", "coffee.txt")
 SECTIONS = ("micro", "stories")
+
+
+def drain_coffee(tmp, moved):
+    """Append coffee/<ts>/brew.txt bundles to data/coffee.txt (coffee.txt format).
+
+    Unlike micro/stories (one bundle -> one content dir), every coffee brew is a
+    block appended to a single file. Bundle dirs are added to `moved` so the
+    caller deletes them from the inbox after a successful append.
+    """
+    src_section = os.path.join(tmp, "coffee")
+    if not os.path.isdir(src_section):
+        return
+    blocks = []
+    for name in sorted(os.listdir(src_section)):
+        src = os.path.join(src_section, name)
+        if not os.path.isdir(src):
+            continue
+        brew = os.path.join(src, "brew.txt")
+        if not os.path.exists(brew):
+            print(f"skip incomplete coffee/{name}")
+            continue
+        with open(brew, encoding="utf-8") as fh:
+            block = fh.read().strip()
+        if block:
+            blocks.append(block)
+            print(f"intake coffee/{name}")
+        moved.append(src)
+    if not blocks:
+        return
+    existing = ""
+    if os.path.exists(COFFEE_FILE):
+        with open(COFFEE_FILE, encoding="utf-8") as fh:
+            existing = fh.read()
+    parts = [existing.rstrip()] if existing.strip() else []
+    parts.extend(blocks)
+    os.makedirs(os.path.dirname(COFFEE_FILE), exist_ok=True)
+    with open(COFFEE_FILE, "w", encoding="utf-8") as fh:
+        fh.write("\n\n".join(parts).rstrip() + "\n")
 
 
 def run(cmd, cwd=None, check=True):
@@ -58,6 +97,8 @@ def main():
                 shutil.copytree(src, dst)
                 print(f"intake {section}/{name}")
             moved.append(src)
+
+    drain_coffee(tmp, moved)
 
     if not moved:
         print("nothing to intake")

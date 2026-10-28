@@ -10,6 +10,11 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+# coffee.txt is a plain-text log (coffee.txt format), not structured data.
+# Keep Hugo's data loader from trying to unmarshal it; it's read via os.ReadFile.
+ignoreFiles:
+  - "coffee\\.txt$"
+
 minify:
   disableXML: true
   minifyOutput: true
