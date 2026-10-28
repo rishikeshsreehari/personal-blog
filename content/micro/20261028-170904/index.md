@@ -1,14 +1,18 @@
 ---
-date: 2026-10-28T17:09:04+04:00
-title: ""
+date: 2026-10-28 17:09:04+04:00
 syndicate_to:
-  - bluesky
-  - mastodon
+- bluesky
+- mastodon
 syndication:
-  - platform: "x"
-    url: "https://x.com/rishikeshshari/status/2115430440710619146"
-  - platform: "substack"
-    url: "https://substack.com/profile/4170946-rishikesh-sreehari/note/c-372444565"
+- platform: x
+  url: https://x.com/rishikeshshari/status/2115430440710619146
+- platform: substack
+  url: https://substack.com/profile/4170946-rishikesh-sreehari/note/c-372444565
+- platform: bluesky
+  url: https://bsky.app/profile/rishikeshs.com/post/3mywu2vb4xc2h
+- platform: mastodon
+  url: https://indieweb.social/@rishikesh/117518760331779747
+title: ''
 ---
 
 A client just sent me a scope of work document with 66 pages!
