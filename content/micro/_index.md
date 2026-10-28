@@ -2,7 +2,7 @@
 title: "Micro"
 url: "/micro"
 layout: "micro"
-summary: "Short notes, posted often. The micro-blog — syndicated out to a few other places, but this is home."
+summary: "Short notes, posted often. A micro-blog. Syndicated to multiple platforms."
 disable_comments: true
 ShowReadingTime: false
 outputs:
