@@ -1,7 +1,13 @@
 {
   "roasters": [
-    "Tunga Organics",
-    "EveryDay Roastery"
+    {
+      "name": "Tunga Organics",
+      "beans": ["Tunga"]
+    },
+    {
+      "name": "EveryDay Roastery",
+      "beans": []
+    }
   ],
   "grinders": [
     "Timemore C3S"
