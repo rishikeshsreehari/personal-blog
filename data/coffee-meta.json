@@ -3,12 +3,39 @@
     {
       "name": "Tunga Organics",
       "beans": [
-        { "name": "Tunga", "origin": "", "process": "", "roast_level": "" }
+        {
+          "name": "Tunga",
+          "origin": "Karnataka, India",
+          "process": "",
+          "roast_level": "Light",
+          "varietal": "",
+          "elevation": "",
+          "tasting": ""
+        }
       ]
     },
     {
       "name": "EveryDay Roastery",
-      "beans": []
+      "beans": [
+        {
+          "name": "Ethiopia Hambella",
+          "origin": "Ethiopia",
+          "process": "Natural",
+          "roast_level": "Medium",
+          "varietal": "",
+          "elevation": "2200 MASL",
+          "tasting": "Blueberry, Floral, Honey"
+        },
+        {
+          "name": "Colombia Supremo",
+          "origin": "Colombia",
+          "process": "Washed",
+          "roast_level": "",
+          "varietal": "Excelso",
+          "elevation": "1700 MASL",
+          "tasting": "Sweet, Floral, Caramel"
+        }
+      ]
     }
   ],
   "grinders": [
