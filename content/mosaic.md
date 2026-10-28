@@ -14,4 +14,4 @@ I built this page for fun, inspired by Aaron Parecki's [Pixel Art](https://aaron
 
 {{< mosaic >}}
 
-##### If you like this page, you might like [The Button](/button/)
+##### If you like this page, you might like the [Useless Button](/button/)

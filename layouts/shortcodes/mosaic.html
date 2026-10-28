@@ -1,3 +1,4 @@
+{{- $map := resources.Get "maps/world.svg" -}}
 <style>
   .mosaic-container {
     display: grid;
@@ -11,8 +12,8 @@
   .mosaic-cell {
     margin: 0;
     padding-bottom: 100%;
-    background-color: transparent; /* Make the background transparent */
-    border: 1px solid white; /* Add a small white border */
+    background-color: transparent;
+    border: 1px solid var(--border);
     cursor: pointer;
   }
 
@@ -31,8 +32,56 @@
 
   .mosaic-info {
     text-align: center;
-    margin-top: 20px;
-    color: white;
+    margin-top: var(--space-6);
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+  }
+
+  #mosaic-updated {
+    margin: 0 0 var(--space-6);
+  }
+
+  /* --- World map of contributing countries --- */
+  .mosaic-map-wrap {
+    max-width: 640px;
+    margin: 0 auto var(--space-4);
+  }
+
+  .mosaic-map {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* default land */
+  .mosaic-map path {
+    fill: var(--border);
+    stroke: var(--bg);
+    stroke-width: 0.5;
+    transition: fill 0.25s ease;
+  }
+
+  /* countries a visitor has contributed from */
+  .mosaic-map path.lit {
+    fill: var(--text);
+  }
+
+  #mosaic-count {
+    margin: 0 0 var(--space-2);
+    color: var(--text);
+    font-size: var(--text-base);
+  }
+
+  #mosaic-count strong {
+    font-variant-numeric: tabular-nums;
+  }
+
+  #mosaic-countries {
+    margin: 0;
+    color: var(--text-faint);
+    font-size: var(--text-xs);
+    line-height: 1.6;
+    word-break: break-word;
   }
 </style>
 
@@ -44,6 +93,12 @@
 
 <div class="mosaic-info">
   <p id="mosaic-updated"></p>
+
+  <div class="mosaic-map-wrap">
+    {{ with $map }}{{ .Content | safeHTML }}{{ end }}
+  </div>
+
+  <p id="mosaic-count"></p>
   <p id="mosaic-countries"></p>
 </div>
 
@@ -78,7 +133,7 @@
     }
     return { cells: Array(64).fill('transparent'), updatedTime: '', countries: [] }; // Default state for an 8x8 grid
   }
-  
+
   // Fetch and apply the saved mosaic state on page load
   document.addEventListener('DOMContentLoaded', async () => {
     const mosaicState = await fetchMosaicState();
@@ -89,9 +144,29 @@
 
   function updateMosaicInfo(updatedTime, countries) {
     const updatedText = `This mosaic was last updated on ${new Date(updatedTime).toLocaleString()}`;
-    const countriesText = `It has been updated by people from: ${countries.join(', ')}`;
     document.getElementById('mosaic-updated').textContent = updatedText;
-    document.getElementById('mosaic-countries').textContent = countriesText;
+
+    const list = Array.isArray(countries) ? countries : [];
+    highlightCountries(list);
+
+    const n = list.length;
+    const countEl = document.getElementById('mosaic-count');
+    countEl.innerHTML = `Clicked by people from <strong>${n}</strong> ${n === 1 ? 'country' : 'countries'}`;
+
+    document.getElementById('mosaic-countries').textContent = list.join(' · ');
+  }
+
+  function highlightCountries(codes) {
+    const svg = document.querySelector('.mosaic-map');
+    if (!svg) return;
+    // reset
+    svg.querySelectorAll('path.lit').forEach(p => p.classList.remove('lit'));
+    // light up each contributing country (ids are uppercase ISO-3166 alpha-2)
+    codes.forEach(code => {
+      if (!code) return;
+      const el = svg.querySelector('#' + CSS.escape(String(code).trim().toUpperCase()));
+      if (el) el.classList.add('lit');
+    });
   }
 
   function getRandomColor() {
