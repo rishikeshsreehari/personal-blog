@@ -613,6 +613,11 @@
   custom: true
   title: Useless Button
   content_type: page
+- content_url: /coffee/
+  short_url: /coffee
+  custom: true
+  title: Coffee Journal
+  content_type: page
 - content_url: /colophon/
   short_url: /5319fe
   custom: false
