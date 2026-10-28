@@ -2,7 +2,9 @@
   "roasters": [
     {
       "name": "Tunga Organics",
-      "beans": ["Tunga"]
+      "beans": [
+        { "name": "Tunga", "origin": "", "process": "", "roast_level": "" }
+      ]
     },
     {
       "name": "EveryDay Roastery",
@@ -21,6 +23,14 @@
     "Chemex",
     "Kalita",
     "ColdBrew"
+  ],
+  "roast_levels": [
+    "Light",
+    "Medium-Light",
+    "Medium",
+    "Medium-Dark",
+    "Dark",
+    "Omni"
   ],
   "defaults": {
     "method": "V60",

@@ -95,6 +95,7 @@
     {{- $detail := slice -}}
     {{- with .origin }}{{ $detail = $detail | append . }}{{ end -}}
     {{- with .process }}{{ $detail = $detail | append . }}{{ end -}}
+    {{- with (index . "roast_level") }}{{ $detail = $detail | append (printf "%s roast" .) }}{{ end -}}
     {{- with .roast }}{{ $detail = $detail | append (printf "roasted %s" .) }}{{ end -}}
     {{- if $detail }}
     <div class="coffee-card__detail">{{ delimit $detail " · " }}</div>
