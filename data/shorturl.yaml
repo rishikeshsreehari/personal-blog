@@ -378,6 +378,11 @@
   custom: false
   title: ''
   content_type: micro
+- content_url: /micro/20261029-012752/
+  short_url: /85c70a
+  custom: false
+  title: ''
+  content_type: micro
 - content_url: /now-2024-06-09/
   short_url: /cbd877
   custom: false
@@ -765,6 +770,11 @@
   content_type: stories
 - content_url: /stories/20261028-194635/
   short_url: /8f2d86
+  custom: false
+  title: ''
+  content_type: stories
+- content_url: /stories/20261029-184313/
+  short_url: /351e38
   custom: false
   title: ''
   content_type: stories
