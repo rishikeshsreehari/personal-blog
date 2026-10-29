@@ -43,6 +43,12 @@
 {{- $beans := slice -}}
 {{- range $brews -}}{{- with .bean -}}{{- $beans = $beans | append . -}}{{- end -}}{{- end -}}
 
+{{- /* only the last 30 days show by default; older brews hide behind a toggle */ -}}
+{{- $cutoff := now.AddDate 0 0 -30 -}}
+{{- $recent := 0 -}}
+{{- range $brews }}{{ if (time.AsTime .date).After $cutoff }}{{ $recent = add $recent 1 }}{{ end }}{{ end -}}
+{{- $olderCount := sub $total $recent -}}
+
 {{- /* coffee-origin country -> flag emoji (lowercase keys); unmatched origins show plain text */ -}}
 {{- $flags := dict
   "ethiopia" "🇪🇹" "kenya" "🇰🇪" "colombia" "🇨🇴" "brazil" "🇧🇷"
@@ -54,22 +60,54 @@
   "thailand" "🇹🇭" "congo" "🇨🇩" "jamaica" "🇯🇲" "papua new guinea" "🇵🇬"
 -}}
 
+{{- /* spec field -> inline line-icon (feather-style, currentColor); title gives the label on hover */ -}}
+{{- $icons := dict
+  "Dose"    "<path d=\"M12 2.7l5.7 5.6a8 8 0 1 1-11.4 0z\"/>"
+  "Shot"    "<path d=\"M4 8h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z\"/><path d=\"M17 9h2a2 2 0 0 1 0 4h-2\"/><line x1=\"4\" y1=\"21\" x2=\"17\" y2=\"21\"/>"
+  "Ratio"   "<line x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"/><circle cx=\"12\" cy=\"6\" r=\"1.3\"/><circle cx=\"12\" cy=\"18\" r=\"1.3\"/>"
+  "Grind"   "<circle cx=\"12\" cy=\"12\" r=\"9\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/>"
+  "Temp"    "<path d=\"M14 14.76V3.5a2.5 2.5 0 0 0-5 0v11.26a4.5 4.5 0 1 0 5 0z\"/>"
+  "Time"    "<circle cx=\"12\" cy=\"12\" r=\"9\"/><polyline points=\"12 7 12 12 16 14\"/>"
+  "Process" "<path d=\"M9 3h6M10 3v6l-5 9a1 1 0 0 0 .9 1.5h12.2a1 1 0 0 0 .9-1.5l-5-9V3\"/>"
+  "Roast"   "<path d=\"M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.4-.5-2-1-3-1.1-2.1-.2-4 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.2.4-2.3 1-3a2.5 2.5 0 0 0 2.5 2.5z\"/>"
+  "Roasted" "<rect x=\"3\" y=\"5\" width=\"18\" height=\"16\" rx=\"2\"/><line x1=\"3\" y1=\"9\" x2=\"21\" y2=\"9\"/><line x1=\"8\" y1=\"3\" x2=\"8\" y2=\"6\"/><line x1=\"16\" y1=\"3\" x2=\"16\" y2=\"6\"/>"
+-}}
+
+{{- /* brew method -> icon (lowercase keys); unknown methods fall back to the cup */ -}}
+{{- $cupIcon := "<path d=\"M4 8h13v4a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z\"/><path d=\"M17 9h2a2 2 0 0 1 0 4h-2\"/><line x1=\"4\" y1=\"21\" x2=\"17\" y2=\"21\"/>" -}}
+{{- $funnelIcon := "<polygon points=\"21 4 3 4 10 12.5 10 19 14 21 14 12.5 21 4\"/>" -}}
+{{- $pressIcon := "<rect x=\"7\" y=\"4\" width=\"10\" height=\"15\" rx=\"1.5\"/><path d=\"M12 4V2M9 2h6\"/><line x1=\"7\" y1=\"9\" x2=\"17\" y2=\"9\"/>" -}}
+{{- $methodIcons := dict
+  "v60" $funnelIcon "pour over" $funnelIcon "pourover" $funnelIcon
+  "chemex" $funnelIcon "kalita" $funnelIcon "origami" $funnelIcon
+  "espresso" $cupIcon "moka" $cupIcon "moka pot" $cupIcon
+  "aeropress" $pressIcon "french press" $pressIcon "frenchpress" $pressIcon
+-}}
+
 <div class="coffee-journal">
   {{- if gt $total 0 }}
-  <p class="coffee-stats">{{ $total }} brew{{ if ne $total 1 }}s{{ end }} · {{ len ($beans | uniq) }} bean{{ if ne (len ($beans | uniq)) 1 }}s{{ end }}</p>
+  <p class="coffee-stats">{{ $recent }} brew{{ if ne $recent 1 }}s{{ end }} in the last 30 days</p>
   {{- end }}
 
-  {{- if gt (len $methods) 1 }}
+  {{- if gt (len $methods) 0 }}
   <div class="til-filters coffee-filters">
     <button class="til-filter-tag active" data-method="all">All</button>
     {{- range $methods }}
-    <button class="til-filter-tag" data-method="{{ . }}">{{ . }}</button>
+    {{- $mi := index $methodIcons (lower .) | default $cupIcon }}
+    <button class="til-filter-tag" data-method="{{ . }}"><svg class="coffee-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ $mi | safeHTML }}</svg>{{ . }}</button>
     {{- end }}
   </div>
   {{- end }}
 
   {{- $lastDate := "" }}
+  {{- $olderOpen := false }}
   {{- range $brews }}
+  {{- if and (not ((time.AsTime .date).After $cutoff)) (not $olderOpen) }}
+  <button type="button" class="coffee-older-toggle" aria-expanded="false" aria-controls="coffee-older" data-count="{{ $olderCount }}">Show older brews ({{ $olderCount }})</button>
+  <div class="coffee-older" id="coffee-older" hidden>
+  {{- $olderOpen = true }}
+  {{- $lastDate = "" }}
+  {{- end }}
   {{- if ne .date $lastDate }}
   <h2 class="coffee-day">{{ dateFormat "January 2, 2006" .date }}<span class="coffee-day-count">{{ index $counts .date }} brew{{ if ne (index $counts .date) 1 }}s{{ end }}</span></h2>
   {{- $lastDate = .date }}
@@ -93,38 +131,35 @@
     {{- end -}}
     {{- $tags := slice -}}
     {{- with $origin }}{{ $tags = $tags | append (dict "class" "coffee-tag coffee-origin" "label" .) }}{{ end -}}
-    {{- with .method }}{{ $tags = $tags | append (dict "class" "coffee-tag" "label" .) }}{{ end -}}
+    {{- with .method }}{{ $mi := index $methodIcons (lower .) | default $cupIcon }}{{ $tags = $tags | append (dict "class" "coffee-tag coffee-method" "label" . "icon" $mi) }}{{ end -}}
     {{- with .roaster }}{{ $tags = $tags | append (dict "class" "coffee-tag" "label" .) }}{{ end -}}
     {{- with .tags }}{{ range split . "," }}{{ $tags = $tags | append (dict "class" "coffee-tag" "label" (trim . " ")) }}{{ end }}{{ end -}}
     {{- if $tags }}
     <div class="coffee-tags">
-      {{- range $tags }}<span class="{{ .class }}">{{ .label }}</span>{{ end }}
+      {{- range $tags }}<span class="{{ .class }}">{{ with .icon }}<svg class="coffee-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ . | safeHTML }}</svg>{{ end }}{{ .label }}</span>{{ end }}
     </div>
     {{- end }}
 
+    {{- /* each spec item carries a small label so the value is never ambiguous */ -}}
     {{- $spec := slice -}}
     {{- if and $doseN $waterN -}}
-      {{- $ratio := "" -}}
-      {{- if gt (float $doseN) 0.0 }}{{ $ratio = printf " <span class=\"coffee-ratio\">1:%.0f</span>" (div (float $waterN) (float $doseN)) }}{{ end -}}
-      {{ $spec = $spec | append (printf "%s &rarr; %s%s" .dose .water $ratio) }}
+      {{ $spec = $spec | append (dict "label" "Dose" "value" (printf "%s &rarr; %s" .dose .water)) }}
+      {{- if gt (float $doseN) 0.0 }}{{ $spec = $spec | append (dict "label" "Ratio" "value" (printf "1:%.0f" (div (float $waterN) (float $doseN)))) }}{{ end -}}
     {{- else if and .dose .yield -}}
-      {{ $spec = $spec | append (printf "%s in &rarr; %s out" .dose .yield) }}
+      {{ $spec = $spec | append (dict "label" "Shot" "value" (printf "%s &rarr; %s" .dose .yield)) }}
     {{- else -}}
-      {{- with .dose }}{{ $spec = $spec | append . }}{{ end -}}
+      {{- with .dose }}{{ $spec = $spec | append (dict "label" "Dose" "value" .) }}{{ end -}}
     {{- end -}}
-    {{- with .grind }}{{ $spec = $spec | append . }}{{ end -}}
-    {{- with .temp }}{{ $spec = $spec | append . }}{{ end -}}
-    {{- with .brew }}{{ $spec = $spec | append . }}{{ end -}}
+    {{- with .grind }}{{ $g := replaceRE "^.*?([0-9][0-9.]*)\\s*$" "$1" . }}{{ $spec = $spec | append (dict "label" "Grind" "value" $g) }}{{ end -}}
+    {{- with .temp }}{{ $spec = $spec | append (dict "label" "Temp" "value" (replaceRE "([0-9])\\s*([CF])$" "$1°$2" .)) }}{{ end -}}
+    {{- with .brew }}{{ $spec = $spec | append (dict "label" "Time" "value" .) }}{{ end -}}
+    {{- with .process }}{{ $spec = $spec | append (dict "label" "Process" "value" .) }}{{ end -}}
+    {{- with (index . "roast_level") }}{{ $spec = $spec | append (dict "label" "Roast" "value" .) }}{{ end -}}
+    {{- with .roast }}{{ $spec = $spec | append (dict "label" "Roasted" "value" .) }}{{ end -}}
     {{- if $spec }}
-    <p class="coffee-spec">{{ delimit $spec "<span class=\"coffee-sep\">·</span>" | safeHTML }}</p>
-    {{- end }}
-
-    {{- $detail := slice -}}
-    {{- with .process }}{{ $detail = $detail | append . }}{{ end -}}
-    {{- with (index . "roast_level") }}{{ $detail = $detail | append (printf "%s roast" .) }}{{ end -}}
-    {{- with .roast }}{{ $detail = $detail | append (printf "roasted %s" .) }}{{ end -}}
-    {{- if $detail }}
-    <p class="coffee-detail">{{ delimit $detail " · " }}</p>
+    <div class="coffee-spec">
+      {{- range $spec }}<span class="coffee-spec-item" title="{{ .label }}"><svg class="coffee-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-label="{{ .label }}" role="img">{{ index $icons .label | safeHTML }}</svg>{{ .value | safeHTML }}</span>{{ end }}
+    </div>
     {{- end }}
 
     {{- with .notes }}
@@ -132,6 +167,7 @@
     {{- end }}
   </article>
   {{- end }}
+  {{- if $olderOpen }}</div>{{ end }}
 
   {{- if eq $total 0 }}
   <p class="coffee-empty">No brews logged yet.</p>
@@ -164,5 +200,17 @@
         apply(this.dataset.method);
       });
     });
+
+    // show older brews toggle
+    var toggle = document.querySelector('.coffee-older-toggle');
+    var older = document.getElementById('coffee-older');
+    if (toggle && older) {
+      toggle.addEventListener('click', function() {
+        var open = older.hasAttribute('hidden');
+        if (open) { older.removeAttribute('hidden'); } else { older.setAttribute('hidden', ''); }
+        this.setAttribute('aria-expanded', open ? 'true' : 'false');
+        this.textContent = (open ? 'Hide older brews' : 'Show older brews') + ' (' + this.dataset.count + ')';
+      });
+    }
   })();
 </script>

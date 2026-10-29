@@ -2861,28 +2861,42 @@ pre code {
   font-weight: 500;
 }
 
-/* brew spec — calm sans line, not mono */
+/* brew spec — labelled key/value pairs, wrapped and spaced (no dots) */
 .coffee-spec {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
   font-family: var(--font-ui);
   font-size: var(--text-sm);
-  color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0 0 var(--space-2);
 }
 
-.coffee-sep {
-  color: var(--text-faint);
-  margin: 0 0.4em;
+.coffee-spec-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
-.coffee-ratio { color: var(--text-faint); }
-
-.coffee-detail {
-  font-family: var(--font-ui);
-  font-size: var(--text-xs);
+.coffee-ico {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
   color: var(--text-faint);
-  margin: 0 0 var(--space-2);
 }
+
+/* icon inside a method pill or a filter button */
+.coffee-method,
+.coffee-filters .til-filter-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+}
+
+.coffee-filters .til-filter-tag .coffee-ico { color: inherit; }
 
 .coffee-notes {
   font-size: var(--text-sm);
@@ -2897,4 +2911,28 @@ pre code {
 .coffee-empty {
   color: var(--text-muted);
   font-style: italic;
+}
+
+/* show older brews toggle */
+.coffee-older-toggle {
+  display: block;
+  width: 100%;
+  margin: var(--space-6) 0 var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.coffee-older-toggle:hover {
+  color: var(--text);
+  border-color: var(--text);
+  background: var(--bg-alt);
 }
