@@ -43,6 +43,17 @@
 {{- $beans := slice -}}
 {{- range $brews -}}{{- with .bean -}}{{- $beans = $beans | append . -}}{{- end -}}{{- end -}}
 
+{{- /* coffee-origin country -> flag emoji (lowercase keys); unmatched origins show plain text */ -}}
+{{- $flags := dict
+  "ethiopia" "🇪🇹" "kenya" "🇰🇪" "colombia" "🇨🇴" "brazil" "🇧🇷"
+  "guatemala" "🇬🇹" "india" "🇮🇳" "indonesia" "🇮🇩" "rwanda" "🇷🇼"
+  "costa rica" "🇨🇷" "peru" "🇵🇪" "honduras" "🇭🇳" "panama" "🇵🇦"
+  "yemen" "🇾🇪" "el salvador" "🇸🇻" "burundi" "🇧🇮" "tanzania" "🇹🇿"
+  "uganda" "🇺🇬" "mexico" "🇲🇽" "nicaragua" "🇳🇮" "vietnam" "🇻🇳"
+  "bolivia" "🇧🇴" "ecuador" "🇪🇨" "myanmar" "🇲🇲" "china" "🇨🇳"
+  "thailand" "🇹🇭" "congo" "🇨🇩" "jamaica" "🇯🇲" "papua new guinea" "🇵🇬"
+-}}
+
 <div class="coffee-journal">
   {{- if gt $total 0 }}
   <p class="coffee-stats">{{ $total }} brew{{ if ne $total 1 }}s{{ end }} · {{ len ($beans | uniq) }} bean{{ if ne (len ($beans | uniq)) 1 }}s{{ end }}</p>
@@ -65,50 +76,59 @@
   {{- end }}
   {{- $doseN := replaceRE "[^0-9.]" "" (.dose | default "") -}}
   {{- $waterN := replaceRE "[^0-9.]" "" (.water | default "") -}}
-  <article class="coffee-card" data-method="{{ .method }}">
-    <div class="coffee-card__top">
-      {{- with .at }}<time class="coffee-card__time">{{ . }}</time>{{ else }}<span class="coffee-card__time"></span>{{ end }}
-      <div class="coffee-card__id">
-        <span class="coffee-card__bean">{{ .bean }}</span>
-        {{- with .roaster }}<span class="coffee-card__roaster">{{ . }}</span>{{ end }}
-      </div>
-      {{- with .rating }}<span class="coffee-card__rating">{{ . }}<span class="coffee-card__rating-max">/10</span></span>{{ end }}
+  <article class="coffee-entry" data-method="{{ .method }}">
+    <div class="coffee-entry-header">
+      <span class="coffee-entry-title">{{ .bean }}</span>
+      <span class="coffee-entry-aside">
+        {{- with .at }}<time class="coffee-entry-time">{{ . }}</time>{{ end -}}
+        {{- with .rating }}<span class="coffee-entry-rating">{{ . }}<span>/10</span></span>{{ end -}}
+      </span>
     </div>
 
-    <div class="coffee-card__spec">
-      {{- $spec := slice -}}
-      {{- with .method }}{{ $spec = $spec | append (printf "<strong>%s</strong>" .) }}{{ end -}}
-      {{- if and $doseN $waterN -}}
-        {{- $ratio := "" -}}
-        {{- if gt (float $doseN) 0.0 }}{{ $ratio = printf " <span class=\"coffee-ratio\">1:%.0f</span>" (div (float $waterN) (float $doseN)) }}{{ end -}}
-        {{ $spec = $spec | append (printf "%s &rarr; %s%s" .dose .water $ratio) }}
-      {{- else -}}
-        {{- with .dose }}{{ $spec = $spec | append (printf "%s in" .) }}{{ end -}}
-        {{- with .yield }}{{ $spec = $spec | append (printf "%s out" .) }}{{ end -}}
-      {{- end -}}
-      {{- with .grind }}{{ $spec = $spec | append . }}{{ end -}}
-      {{- with .temp }}{{ $spec = $spec | append . }}{{ end -}}
-      {{- with .brew }}{{ $spec = $spec | append (printf "%s brew" .) }}{{ end -}}
-      {{ delimit $spec "<span class=\"coffee-dot\">·</span>" | safeHTML }}
+    {{- $origin := "" -}}
+    {{- with .origin -}}
+      {{- $o := trim . " " -}}
+      {{- $flag := index $flags (lower $o) -}}
+      {{- $origin = cond (ne $flag "") (printf "%s %s" $flag $o) $o -}}
+    {{- end -}}
+    {{- $tags := slice -}}
+    {{- with $origin }}{{ $tags = $tags | append (dict "class" "coffee-tag coffee-origin" "label" .) }}{{ end -}}
+    {{- with .method }}{{ $tags = $tags | append (dict "class" "coffee-tag" "label" .) }}{{ end -}}
+    {{- with .roaster }}{{ $tags = $tags | append (dict "class" "coffee-tag" "label" .) }}{{ end -}}
+    {{- with .tags }}{{ range split . "," }}{{ $tags = $tags | append (dict "class" "coffee-tag" "label" (trim . " ")) }}{{ end }}{{ end -}}
+    {{- if $tags }}
+    <div class="coffee-tags">
+      {{- range $tags }}<span class="{{ .class }}">{{ .label }}</span>{{ end }}
     </div>
+    {{- end }}
+
+    {{- $spec := slice -}}
+    {{- if and $doseN $waterN -}}
+      {{- $ratio := "" -}}
+      {{- if gt (float $doseN) 0.0 }}{{ $ratio = printf " <span class=\"coffee-ratio\">1:%.0f</span>" (div (float $waterN) (float $doseN)) }}{{ end -}}
+      {{ $spec = $spec | append (printf "%s &rarr; %s%s" .dose .water $ratio) }}
+    {{- else if and .dose .yield -}}
+      {{ $spec = $spec | append (printf "%s in &rarr; %s out" .dose .yield) }}
+    {{- else -}}
+      {{- with .dose }}{{ $spec = $spec | append . }}{{ end -}}
+    {{- end -}}
+    {{- with .grind }}{{ $spec = $spec | append . }}{{ end -}}
+    {{- with .temp }}{{ $spec = $spec | append . }}{{ end -}}
+    {{- with .brew }}{{ $spec = $spec | append . }}{{ end -}}
+    {{- if $spec }}
+    <p class="coffee-spec">{{ delimit $spec "<span class=\"coffee-sep\">·</span>" | safeHTML }}</p>
+    {{- end }}
 
     {{- $detail := slice -}}
-    {{- with .origin }}{{ $detail = $detail | append . }}{{ end -}}
     {{- with .process }}{{ $detail = $detail | append . }}{{ end -}}
     {{- with (index . "roast_level") }}{{ $detail = $detail | append (printf "%s roast" .) }}{{ end -}}
     {{- with .roast }}{{ $detail = $detail | append (printf "roasted %s" .) }}{{ end -}}
     {{- if $detail }}
-    <div class="coffee-card__detail">{{ delimit $detail " · " }}</div>
+    <p class="coffee-detail">{{ delimit $detail " · " }}</p>
     {{- end }}
 
     {{- with .notes }}
-    <div class="coffee-card__notes">{{ . | $.Page.RenderString }}</div>
-    {{- end }}
-
-    {{- with .tags }}
-    <div class="coffee-card__tags">
-      {{- range split . "," }}<span class="coffee-tag">{{ trim . " " }}</span>{{ end }}
-    </div>
+    <div class="coffee-notes">{{ . | $.Page.RenderString }}</div>
     {{- end }}
   </article>
   {{- end }}
@@ -121,7 +141,7 @@
 <script>
   (function() {
     var buttons = document.querySelectorAll('.coffee-filters .til-filter-tag');
-    var cards = document.querySelectorAll('.coffee-card');
+    var cards = document.querySelectorAll('.coffee-entry');
     var days = document.querySelectorAll('.coffee-day');
     function apply(method) {
       cards.forEach(function(c) {
@@ -130,7 +150,7 @@
       // hide a day header whose brews are all filtered out
       days.forEach(function(h) {
         var n = h.nextElementSibling, any = false;
-        while (n && n.classList.contains('coffee-card')) {
+        while (n && n.classList.contains('coffee-entry')) {
           if (n.style.display !== 'none') { any = true; break; }
           n = n.nextElementSibling;
         }
