@@ -31,3 +31,20 @@ brew:    01:55
 rating:  7
 ---
 Not sweet, not bitter, slightly floral and caramel notes. Not bad. But brew was a bit fast, may be grind fine next time?
+
+---
+date:    2026-11-02
+at:      17:31
+bean:    Colombia Supremo
+roaster: EveryDay Roastery
+origin:  Colombia
+process: Medium
+method:  V60
+dose:    15g
+water:   255g
+grind:   Timemore C3S 17
+temp:    92C
+brew:    1:50
+rating:  6
+---
+Still slightly bitter no notes.
