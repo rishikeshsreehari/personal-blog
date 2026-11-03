@@ -48,3 +48,21 @@ brew:    1:50
 rating:  6
 ---
 Still slightly bitter no notes.
+
+---
+date:    2026-11-03
+at:      18:00
+bean:    Tunga
+roaster: Tunga Organics
+origin:  India
+roast_level:Light
+method:  V60
+dose:    20g
+water:   320g
+grind:   Timemore C3S 18
+temp:    94C
+brew:    2:40
+rating:  7
+---
+Pretty good. Not bitter at all.
+Not much flavours, slightly bland, but some complex flavours are there.
