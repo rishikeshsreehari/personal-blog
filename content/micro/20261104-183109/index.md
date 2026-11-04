@@ -1,12 +1,14 @@
 ---
-date: 2026-11-04T18:31:09+04:00
-title: ""
+date: 2026-11-04 18:31:09+04:00
 syndicate_to:
-  - bluesky
-  - mastodon
+- bluesky
+- mastodon
 syndication:
-  - platform: "x"
-    url: "https://x.com/rishikeshshari/status/2117987881772097924"
+- platform: x
+  url: https://x.com/rishikeshshari/status/2117987881772097924
+- platform: mastodon
+  url: https://indieweb.social/@rishikesh/117558769201242766
+title: ''
 ---
 
 Trying to get a Brazilian number for http://FormBeep.com so I can send WhatsApp notifications to Brazil.
