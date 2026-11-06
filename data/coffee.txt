@@ -102,3 +102,21 @@ brew:    2:15
 rating:  6
 ---
 Not that good. Slightly bitter, a lingering sourness.
+
+---
+date:    2026-11-06
+at:      17:15
+bean:    Ethiopia Hambella
+roaster: EveryDay Roastery
+origin:  Ethiopia
+process: Natural
+roast_level:Medium
+method:  V60
+dose:    12.5g
+water:   200g
+grind:   Timemore C3S 17
+temp:    94C
+brew:    02:10
+rating:  7
+---
+Less fruity, but definitely better. No bitterness at all.
